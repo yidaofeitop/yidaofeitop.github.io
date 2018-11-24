@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on  易道非 Blog</title>
+    <link>https://yidaofei.com/post/</link>
+    <description>Recent content in Posts on  易道非 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 19 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://yidaofei.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo 集成 Algolia 搜索</title>
+      <link>https://yidaofei.com/post/20181119-hugo-algolia-search/</link>
+      <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181119-hugo-algolia-search/</guid>
+      <description>&lt;p&gt;Algolia 是为你的 APP 或者网站添加搜索的最佳方式。 开发人员可以使用 API 上传并同步希望搜索的数据，
+然后可以进行相关的配置，比如产品转化率等等。可以使用 InstantSearch 等前端框架进行自定义搜索，为
+用户创造最佳的搜索体验&lt;/p&gt;
+
+&lt;p&gt;本文主要参考&lt;a href=&#34;https://www.qikqiak.com/post/hugo-integrated-algolia-search/&#34; title=&#34;Hugo 集成 Algolia 搜索&#34;&gt;Hugo 集成 Algolia 搜索&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;前半部分关于 Algolia 官网操作细节请大家直接访问上面的参考文章，本文主要是针对性补充相关的元素：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;增加关于配合 JS：&lt;a href=&#34;https://github.com/algolia/autocomplete.js/&#34;&gt;autocomplete.js&lt;/a&gt; 相关说明&lt;/li&gt;
+&lt;li&gt;“ ADMIN API Key”等可动态配置&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>指纹锁故障列表</title>
+      <link>https://yidaofei.com/post/20181119-smartlock-malfunctions/</link>
+      <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181119-smartlock-malfunctions/</guid>
+      <description>&lt;p&gt;本文主要是收集指纹锁故障，用于分析指纹锁的设计思路！&lt;/p&gt;
+
+&lt;p&gt;版权问题：本文很多资料均来自网络博文等，本人会一律保留相关的著作人与原始链接，如著作人不同意相关的转载请与我联系！&lt;/p&gt;
+
+&lt;p&gt;问题分类列表：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>知乎-关于指纹锁相关回答</title>
+      <link>https://yidaofei.com/post/20181119-smartlock-zhihu/</link>
+      <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181119-smartlock-zhihu/</guid>
+      <description>&lt;p&gt;本文的启由：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;2018年11月19日完成《如何挑选一款适合自己的指纹锁》，发布至知乎话题：&lt;a href=&#34;https://www.zhihu.com/question/28621864&#34;&gt;智能锁选择什么品牌的比较好?&lt;/a&gt;后
+回答其他问题有部分花心思回答的问题被 &lt;strong&gt;无声删除&lt;/strong&gt;，简直想 f**ck!&lt;/li&gt;
+&lt;li&gt;相关的客户能够从本文中分析出一些终端的客户对于指纹锁的想法&lt;/li&gt;
+&lt;li&gt;同步记录自己对于某些事情的看法&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何挑选一款适合自己的指纹锁</title>
+      <link>https://yidaofei.com/post/20181118-smartlock-how-to-select-a-good-smartlock/</link>
+      <pubDate>Sun, 18 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181118-smartlock-how-to-select-a-good-smartlock/</guid>
+      <description>&lt;p&gt;本文主要是针对知乎关于指纹锁相关的话题的一个回答，主要是解答如何从众多的指纹锁品牌中挑选出一款适合自己的指纹锁！&lt;/p&gt;
+
+&lt;p&gt;知乎相关话题：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/question/28621864#draft&#34;&gt;智能锁选择什么品牌的比较好?&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;fuck 知乎！答案都编辑完成再次修改时说答案已经删除！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>指纹锁工作原理及结构设计要点</title>
+      <link>https://yidaofei.com/post/20181117-smartlock-how-fingerprint-lock-works/</link>
+      <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181117-smartlock-how-fingerprint-lock-works/</guid>
+      <description>&lt;p&gt;指纹锁分类按照动力可以分为半自动与全自动，两者在实现开锁原理也有很大的差别：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;半自动指纹锁：电机向上或向下动作&amp;mdash;&amp;gt;离合的销子向上或向下动作&amp;mdash;&amp;gt;把手与离合结合/分离&amp;mdash;&amp;gt;锁体动作（电子锁体方式类似）&lt;/li&gt;
+&lt;li&gt;全自动指纹锁（ &lt;strong&gt;非全自动锁体&lt;/strong&gt;）：电机与顺时针/逆时针转动&amp;mdash;&amp;gt;全自动锁芯顺时针/逆时针转动&amp;mdash;&amp;gt;锁体动作&lt;/li&gt;
+&lt;li&gt;全自动指纹锁 （ &lt;strong&gt;全自动锁体&lt;/strong&gt;）：当关门时，锁舌被压下，电子开关打开，电机转动，带动变速器，变速器带动推拉杆，主锁舌推出，反之开门&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2018年11月15日 指纹锁安装总结</title>
+      <link>https://yidaofei.com/post/20181115-smartlock-install-lock-summary/</link>
+      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181115-smartlock-install-lock-summary/</guid>
+      <description>&lt;p&gt;2018年11月13日 接了一个朋友的安装单，此次安装过程中出现了以下3个最大的问题：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;锁体与门原有锁体不配&amp;mdash;》第一天 GAME OVER&lt;/li&gt;
+&lt;li&gt;配件包缺弹簧配件&amp;mdash;》第二天完成基本安装，第三天追加弹簧配件&lt;/li&gt;
+&lt;li&gt;天地钩很难稳定的挂上去&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;以上安装问题在2018年11月15日 9:05基本解决，仅剩由于天地钩难挂开的一个孔等待快递到达！&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>指纹锁安装工具清单</title>
+      <link>https://yidaofei.com/post/20181115-smartlock-install-lock-toolslist/</link>
+      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181115-smartlock-install-lock-toolslist/</guid>
+      <description>&lt;p&gt;指纹锁安装工具列表，请大家按照自己的需求自行在此基础上调整！&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>指纹锁安装简易流程</title>
+      <link>https://yidaofei.com/post/20181115-smartlock-install-lock-guild/</link>
+      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181115-smartlock-install-lock-guild/</guid>
+      <description>&lt;p&gt;本文主要是从指纹锁安装过程中的一些问题出发整理的指纹锁安装流程！&lt;/p&gt;
+
+&lt;h3 id=&#34;安装测试数据&#34;&gt;安装测试数据&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://piwigo.yidaofei.com/galleries/201811/install-lock-data.jpg&#34; alt=&#34;智能锁安装前测量数据&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;测试数据汇总表格&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;项目&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;内容&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;是否有天地钩&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;锁体导向片长*宽&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;门厚度&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;PS：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;建议测量数据时直接拍摄相关的图片&lt;/li&gt;
+&lt;li&gt;如有&lt;strong&gt;&lt;em&gt;两道门&lt;/em&gt;&lt;/strong&gt;需要与安装人员联系再次确认，具体提供的数据为两道门之间的间距与后门把手的高度&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>深圳驾照考试总结</title>
+      <link>https://yidaofei.com/post/20181115-driver-summary/</link>
+      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181115-driver-summary/</guid>
+      <description>&lt;p&gt;前面已经总结了科目二、三的相关细节总结，列表如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181013-driver-part2-rule/&#34;&gt;深圳驾照科目二五项场地及规则讲解&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181013-driver-ramp-fixed-parking-and-starting/&#34;&gt;2018深圳驾照水头考场科目二-坡道定点停车与起步&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181013-driver-reversing-into-the-warehouse/&#34;&gt;2018深圳驾照水头考场科目二-倒车入库&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181013-driver-side-parking/&#34;&gt;2018深圳驾照水头考场科目二-侧方位停车&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181013-driver-curve-driving/&#34;&gt;2018深圳驾照水头考场科目二-曲线行驶&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181013-driver-right-angle-turn/&#34;&gt;2018深圳驾照水头考场科目二-直角转弯&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181018-driver-part3/&#34;&gt;2018深圳驾照科目三评分规则&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181018-driver-part3-rule/&#34;&gt;2018深圳驾照水头考场科目三教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;而本文主要是从整理上去总结2018年深圳驾照考试，请大家注意时间与地点，有部分的细节可能由于时间与地点有所变化！&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>个人建站-Hugo-快速开始</title>
+      <link>https://yidaofei.com/post/20181108-hugo-quick-start/</link>
+      <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181108-hugo-quick-start/</guid>
+      <description>&lt;p&gt;个人博客建站大致可以分为两类：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;动态博客&lt;/li&gt;
+&lt;li&gt;静态博客&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;动态博客典型的代表就是：WordPress、Ghost 以及类似静态 FarBox
+静态博客典型的代表就是：Jekyll、Hexo、Hugo&lt;/p&gt;
+
+&lt;p&gt;如果仅仅用于个人写作无任何定制化需求推荐使用 Farbox，&lt;a href=&#34;https://www.zhihu.com/question/21981094/answer/23750005&#34;&gt;Why?-5分钟了解 Farbox&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;如果是用于个人写作且愿意部分定制化的推荐 Hugo，Why?-安装难度小、文档齐全、&lt;a href=&#34;https://mrcpp.com/hexo-and-hugo-generate-10000-article-speed-comparisons/&#34;&gt;生成速度最快&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;如果是用于商业等网站构建，可以使用 WordPress，教程多、插件齐全、功能多&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JavaScript-修复由导航栏固定导致的页面锚点偏差 Bug</title>
+      <link>https://yidaofei.com/post/20181107-js-fix-anchor-of-fixed-nav-header/</link>
+      <pubDate>Wed, 07 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181107-js-fix-anchor-of-fixed-nav-header/</guid>
+      <description>&lt;p&gt;问题现象：点击侧面 TOC 的链接跳转到锚点内容的下方，在手机浏览器上效果偏移更大
+分析现象：参考相关资料后并对应网站是由于 &lt;strong&gt;头部导航栏采用的绝对布局——固定在顶部&lt;/strong&gt;，页面上滑动的距离需要减去头部导航栏的高度
+解决方法：在页面锚点上前加上一个隐藏的 &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; 标签，采用相对布局固定在锚点上方，并设定相关的 &lt;code&gt;top&lt;/code&gt;数据&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2018深圳驾照水头考场科目三教程</title>
+      <link>https://yidaofei.com/post/20181018-driver-part3/</link>
+      <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181018-driver-part3/</guid>
+      <description>以下所有的细节以葵涌练习场与水头考场为例说明 水头科目三考场路线路 水头考场高德地图线路图 水头考场线路1图 水头考场线路2图 整体流程 路线二 路线一 起步 起步 会车 会车 第一个左 靠边停车- 可上 2-3挡 靠边停车 第一个左 第二个左- 可上 2-3挡 公交区域 掉头- 可上</description>
+    </item>
+    
+    <item>
+      <title>2018深圳驾照科目三评分规则</title>
+      <link>https://yidaofei.com/post/20181018-driver-part3-rule/</link>
+      <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181018-driver-part3-rule/</guid>
+      <description>&lt;p&gt;2018 深圳驾照科目三评分规则，基本全部是扣除100分，注意看加强字体就可！&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2018深圳驾照水头考场科目二-侧方位停车</title>
+      <link>https://yidaofei.com/post/20181013-driver-side-parking/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181013-driver-side-parking/</guid>
+      <description>侧方位停车尺寸及评判标准 L（车库长）：1.5倍车长加1米 w（车库宽）：车宽加80厘米 W（车道宽）：1.5倍车宽加80厘米 2018新规评分标准： 1、车辆入库停止后车身出线，不合格 2、出库时不使用或错误使用转向灯，扣10分 3、项目完成时间超过9</description>
+    </item>
+    
+    <item>
+      <title>2018深圳驾照水头考场科目二-倒车入库</title>
+      <link>https://yidaofei.com/post/20181013-driver-reversing-into-the-warehouse/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181013-driver-reversing-into-the-warehouse/</guid>
+      <description>倒车入库尺寸图与评判标准 W（库宽）：车身宽（不含倒车镜）加60cm L（库位长）：车身长加70cm S（车道宽）：车身宽的1.5倍 H（车库距控制线）：车身长的1.5倍 评分标准： 1、不按规定线路顺序行驶，不合格 2、车身出线，不合格 3、倒库不入，不</description>
+    </item>
+    
+    <item>
+      <title>2018深圳驾照水头考场科目二-坡道定点停车与起步</title>
+      <link>https://yidaofei.com/post/20181013-driver-ramp-fixed-parking-and-starting/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181013-driver-ramp-fixed-parking-and-starting/</guid>
+      <description>坡道定点停车与起步尺寸及评判标准 相关尺寸下图所示： 2018新规坡道定点停车与起步评分标准： 1、车辆停止后，汽车前保险杠未定于桩杆上，且前后超出50cm，不合格 2、车辆停止后，汽车前保险杠未定于桩杆上，且前后不超出50cm，扣10分 3、车辆停</description>
+    </item>
+    
+    <item>
+      <title>2018深圳驾照水头考场科目二-曲线行驶 </title>
+      <link>https://yidaofei.com/post/20181013-driver-curve-driving/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181013-driver-curve-driving/</guid>
+      <description>曲线行驶尺寸及评判标准 路宽：大型车辆为4米，小型车辆为3.5米，摩托车为2.5米。 半径：大型车辆为12米，小型车辆为7.5米，摩托车为5米。 弧长：3/8个圆周。 2018新规评分标准 1、车轮轧道路边缘线，不合格 2、中途停车时间超过2s，不合格</description>
+    </item>
+    
+    <item>
+      <title>2018深圳驾照水头考场科目二-直角转弯 </title>
+      <link>https://yidaofei.com/post/20181013-driver-right-angle-turn/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181013-driver-right-angle-turn/</guid>
+      <description>直角转弯与起步尺寸及评判标准 相关尺寸下图所示： 路长：大于等于1.5倍车长; 路宽：小型车辆为轴距加1米，半挂牵引车为牵引车轴距加3米，其他车辆为轴距加50厘米。 2018新规直角转弯评分标准 1、车轮轧道路边缘线，不合格 2、转弯时不使用或错误使用</description>
+    </item>
+    
+    <item>
+      <title>小米5S TWRP 刷机教程</title>
+      <link>https://yidaofei.com/post/20181013-software-skills-mi5s-twrp-brush/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181013-software-skills-mi5s-twrp-brush/</guid>
+      <description>&lt;p&gt;以下所有的操作全部是基于 Mi5S,此方法主要是用于如 MIUI 俄罗斯、魔趣等第三方 ROM&lt;/p&gt;
+
+&lt;p&gt;【注意】：Mi5S 等官方有 Bootloader 锁的机型请先向官方申请解锁，未解锁的手机是无法透过 Fastboot 对手机刷入 Recovery 的&lt;br /&gt;
+解锁请参考文章：&lt;a href=&#34;http://www.miui.com/unlock/&#34;&gt;http://www.miui.com/unlock/&lt;/a&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>搭建 shadowsocks 翻墙教程</title>
+      <link>https://yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/</guid>
+      <description>第一步 购买 VPS 如果纯粹作为翻墙使用建议购买 bandwagon 具体的入口可以可以参考搬瓦工 VPS ,选择最便宜的年 $ 19.99 方案（ KVM 架构）即可 第二步 搭建 shadowsocks 服务器端 进入 VPS 管理页面 MyService-&amp;gt;服务器实例-&amp;gt;kiwivm Control Panel 下载 Xshell Xshell-360 终端安装 shadowsocks 服务器 Step 1：配</description>
+    </item>
+    
+    <item>
+      <title>深圳驾照科目二五项场地及规则讲解</title>
+      <link>https://yidaofei.com/post/20181013-driver-part2-rule/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181013-driver-part2-rule/</guid>
+      <description>倒车入库 侧方位停车 曲线行驶 坡道定点停车起步 右转弯 左转弯 参考资料 [1]教练认证：科目二五项新规图解，这些操作不能有！</description>
+    </item>
+    
+    <item>
+      <title>JavaScript-重建 hugo 侧边导航栏 TOC</title>
+      <link>https://yidaofei.com/post/20181107-js-rebuild-hugo-sider-toc/</link>
+      <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181107-js-rebuild-hugo-sider-toc/</guid>
+      <description>&lt;p&gt;本文主要解决以下问题：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;控制 hugo TOC 展现层次，如只显示前3层&lt;/li&gt;
+&lt;li&gt;美化 hugo TOC 样式&lt;/li&gt;
+&lt;li&gt;采用点击弹出层的方式呈现&lt;/li&gt;
+&lt;li&gt;页面锚点与导航栏同步&lt;/li&gt;
+&lt;li&gt;优化锚点跳转页面滑动效果&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;相关主体代码地址：&lt;a href=&#34;https://gist.github.com/yidaofeicn/1575ee1fb853f5281f535e72b0fa8d91&#34;&gt;https://gist.github.com/yidaofeicn/1575ee1fb853f5281f535e72b0fa8d91&lt;/a&gt;
+具体效果点击&lt;strong&gt;右边的锚点按钮&lt;/strong&gt;就可体验
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gitbook 教程</title>
+      <link>https://yidaofei.com/post/20180920-software-skills-gitbook-guide/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20180920-software-skills-gitbook-guide/</guid>
+      <description>&lt;p&gt;GitBook 是一个提供 Markdown 书籍托管的网络平台， 支持通过 git 以及 GitHub 进行文档管理，使用它可以很简单地生
+成、发布电子图书。 同时，GitBook 也是一个 Node.js 命令行工具，可以使用它搭建自己的 GitBook 站点。&lt;/p&gt;
+
+&lt;p&gt;除了命令行程序和 web 服务外，GitBook 官方还提供了 跨平台的编辑器，提供直接编辑、发布电子书的功能， 不过实际上
+仅相当于自启动的 GitBook 控制台程序，并不推荐安装，尤其对于 *nix 系统而言。&lt;/p&gt;
+
+&lt;p&gt;GitBook 网站使用简单，这里就不再赘述了，GitBook 控制台提供强大的本地服务， 自启动的站点能够提供和网站完全一样
+的编辑服务， 对于不方便登录其网站的用户来说非常方便。 GitBook 甚至提供 GitHub hook，在每一次 push 时自动更新
+书籍内容。&lt;/p&gt;
+
+&lt;p&gt;本文章内容为 &lt;a href=&#34;https://yidaofeicn.github.io/softwareGit/gitbook&#34;&gt;Gitbook教程&lt;/a&gt; 简单版，如需要查看更多细节的请访问以上链接。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sublime教程： 第一章 基础配置</title>
+      <link>https://yidaofei.com/post/20180920-software-skills-sublime-base-config/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20180920-software-skills-sublime-base-config/</guid>
+      <description>&lt;p&gt;本文主要是介绍 Sublime text 2 的安装以及基本的包、相关快捷键推荐&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>分离式离合设计——关于两道门安装问题的延伸</title>
+      <link>https://yidaofei.com/post/20181117-smartlock-separation-clutch-design-of-lock/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181117-smartlock-separation-clutch-design-of-lock/</guid>
+      <description>&lt;p&gt;在指纹锁安装过程中可能会出现一种很特殊的情况，两道门要装1把指纹锁，我就碰到过类似的情况，解决方法在 &lt;strong&gt;把手有一点错位的情况下&lt;/strong&gt;使用
+前后把手不联动方案就可以解决，关于此方案有两个以下的特点：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;锁体方钢孔位前后分离，即锁孔不联动，典型代表电子锁体、分体拨桃机械锁体，配合配件为分离式方钢&lt;/li&gt;
+&lt;li&gt;如非电子锁体则要求把手能做到下压后方钢能正常归位中心线，这就是本文需要具体讨论的点，其关键的部件就是离合的设计。&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title> 《金字塔原理》读书笔记</title>
+      <link>https://yidaofei.com/post/20180819-readnote-minto-pyramid-principle/</link>
+      <pubDate>Sun, 19 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20180819-readnote-minto-pyramid-principle/</guid>
+      <description>第六章 应用逻辑顺序 金字塔第二条规则：所有列入同一组中的思想必须具有某种逻辑顺序 PS:以下所有文字注意加粗关键词 时间顺序 行为产生某种特定的结果，多组行为组合成过程或系统，完成该过程或系统需要的采取的行动只能按照时间顺序排列，而对该过程 或系统的</description>
+    </item>
+    
+    <item>
+      <title>如何保护牙齿</title>
+      <link>https://yidaofei.com/post/20170804-health-how-to-protect-teeth/</link>
+      <pubDate>Fri, 04 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20170804-health-how-to-protect-teeth/</guid>
+      <description>&lt;p&gt;本文主要是介绍“巴氏刷牙法”以及牙线的相关使用&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>书法基础认知</title>
+      <link>https://yidaofei.com/post/20181013-love-calligraphy-base-knowledge/</link>
+      <pubDate>Tue, 03 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181013-love-calligraphy-base-knowledge/</guid>
+      <description>硬笔书法 硬笔字帖 硬笔字帖主要是选择田英章、田蕴章两位先生,推荐《毛笔楷书入门教程-基本笔画》《田英章硬笔楷书标准教程(附光盘)》，另外可以参考 其《每日一题每日一字――田蕴章书法讲座》 PS:绝对不要选择庞中华 练习方式 正确的执笔方式: 关于描红与</description>
+    </item>
+    
+    <item>
+      <title>百度竞价排名思考-血友病</title>
+      <link>https://yidaofei.com/post/20160503-event-hotspot-baidu-paid-listing/</link>
+      <pubDate>Tue, 03 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20160503-event-hotspot-baidu-paid-listing/</guid>
+      <description>凤巢系统是百度搜索推广服务管理平台的内部开发代号，2009年4月20日 推出，2009年12月1日 全面启用，其用意在于替代原有的搜素营销经典版(即竞价排名)，相对于原有的竞价排名系统提供了更多的功 能如投放地域时段设定、关键词推荐工具、预算设置</description>
+    </item>
+    
+    <item>
+      <title>如何购买保险</title>
+      <link>https://yidaofei.com/post/20150620-financial-management-how-buy-insurance/</link>
+      <pubDate>Sat, 20 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20150620-financial-management-how-buy-insurance/</guid>
+      <description>&lt;h2 id=&#34;导言&#34;&gt;导言&lt;/h2&gt;
+
+&lt;p&gt;为何写这篇文章？在动笔写这篇文章之前我还在心底问自己这个问题，其实很好解答——一方面是由于在确定自己保险方案时亲朋好友（包含&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E4%BF%9D%E9%99%A9%E4%B8%AD%E4%BB%8B#.E4.BF.9D.E9.99.A9.E4.BB.A3.E7.90.86.E4.BA.BA&#34;&gt;保险代理人&lt;/a&gt;）都对于保险的了解流于表面，另外一部分也是将自己保险知识做一个梳理，而输出是最好的梳理:）!&lt;/p&gt;
+
+&lt;p&gt;好的，开始预热 😄 ,本文主要是仿照@李元霸文档结构主要的内容如下：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;行业架构&lt;/li&gt;
+&lt;li&gt;保险基础知识&lt;/li&gt;
+&lt;li&gt;保险方案设计&lt;/li&gt;
+&lt;li&gt;推荐产品&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;如只需要看结论的请直接拉到本文章底部即可！&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

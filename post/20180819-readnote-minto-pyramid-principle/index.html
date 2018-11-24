@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <meta charset="UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" >
+
+  
+  
+    
+    <meta charset="utf-8" name="keywords" content="金字塔原理," > 
+  
+   
+  <meta charset="utf-8" name="description" content="第六章 应用逻辑顺序 金字塔第二条规则：所有列入同一组中的思想必须具有某种逻辑顺序 PS:以下所有文字注意加粗关键词 时间顺序 行为产生某种特定的结果，多组行为组合成过程或系统，完成该过程或系统需要的采取的行动只能按照时间顺序排列，而对该过程 或系统的" >
+  
+  
+    <meta name="author" content="易道非">
+  
+  
+    
+        <link rel="icon" type="image/png" href="https://yidaofei.com//image/favicon-32x32.png" > 
+    
+  
+  
+  
+  
+  <title> 《金字塔原理》读书笔记- 易道非 Blog</title> 
+ 
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/fontawesome/css/font-awesome.min.css">
+
+   
+   
+  <script type="text/javascript" src="https://yidaofei.com/js/jquery-3.3.1.js"></script> 
+  <script type="text/javascript" src="https://yidaofei.com/js/jquery-ui.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/scrollToTopBottom/jquery.elevator.min.css">
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/scrollToTopBottom/jquery.elevator.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.css">
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.js"></script> 
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/algoliasearch/algoliasearch.min.js"></script>
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/algoliasearch/autocomplete.jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/algoliasearch/algolia-autocomplete.css">
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/remodal/remodal.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/remodal/remodal.css">
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/remodal/remodal-default-theme.css" >
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js"></script>
+ 
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+
+  
+  <link href="https://yidaofei.com//css/bootstrap/bootstrap.css" rel="stylesheet" >  
+  <script src="https://yidaofei.com//js/bootstrap.min.js"></script>
+   
+  
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/prismjs/prism.css">
+  <script type="text/javascript" src="https://yidaofei.com//thirdParty/prismjs/prism.js"></script>
+  
+  
+  
+  <script type="text/javascript" src="https://yidaofei.com//js/flybird.js"></script> 
+  <script type="text/javascript" src="https://yidaofei.com//js/main.js"></script> 
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css" >
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/markdown.css" >  
+   
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-126184892-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+<body> 
+ 
+
+ 
+<div id="top-element" data-title="到达顶点"></div>
+
+<header class="container-fluid row site-header">  
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top scrolling-navbar top-nav-collapse"> <div class="col-md-3 offset-md-1">   
+       
+        <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="site-title">
+        <a class=" navbar-brand " href="https://yidaofei.com/" title=" 易道非 Blog"> 
+               
+              
+            <img class="header-logoImg" title="logoImg" src="https://yidaofei.com//image/logo.png" >
+           
+
+               易道非 Blog
+          </a> 
+        </div>  
+    </div>  
+      <div class="col-md-5 offset-md-2  collapse navbar-collapse" id="collapsibleNavbar" >
+        <ul class="navbar-nav">
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/">Home</a>
+              </li>
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/categories/">Categories</a>
+              </li>
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/tags">Tags</a>
+              </li>
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/wiki">Wiki</a>
+              </li>
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/about">About</a>
+              </li>
+            
+
+            
+              <li class="nav-item site-header-navItem text-center">
+                 
+                   <a href="#searchinput" class="nav-link">search</a>  
+                </li>
+             
+
+          </ul>   
+      </div>   
+  </nav>  
+</header>
+
+ 
+ 
+
+
+
+<div class="remodal" data-remodal-id="searchinput" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> 
+  <span id="algoliaData" style="display:none;" data-appid="NYC6MHRISW" 
+		data-searchkey="7f131a263a8820645ee9fc65ed97b22f" 
+		data-initindex="github-yidaofeicnBlog"></span>
+
+<div class="search-input-card" >
+    <input type="search" id="search-input" class="search-input" placeholder="Search for titles or URIs..." name="search" autocomplete="off" />
+     <span class="input-search-icon"><i class="fa fa-search"></i></span> 
+</div>
+
+ 
+
+ 
+   
+</div> 
+
+
+
+<article class="main-content markdown article-card">
+	<header class="article-header"> 
+	   <p class="article-title"> 《金字塔原理》读书笔记</p>
+   		<div class="article-meta">
+			
+			<div>
+				<i class="fa fa-calendar" >
+					2018年08月19日
+				</i> 
+			</div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://yidaofei.com/categories/%e8%af%bb%e4%b9%a6%e7%ac%94%e8%ae%b0">读书笔记</a> 
+				   
+				</i>  
+			</div>
+			
+			 
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-tags">&nbsp;Tags:
+				
+					<a href="https://yidaofei.com/tags/j%e9%87%91%e5%ad%97%e5%a1%94%e5%8e%9f%e7%90%86">J金字塔原理</a>
+	    		
+	    		</i>   
+			</div> 
+		</div>  
+	</header>  
+	<content>
+
+<h2 id="第六章-应用逻辑顺序">第六章 应用逻辑顺序</h2>
+
+<p>金字塔第二条规则：所有列入同一组中的思想必须具有某种逻辑顺序</p>
+
+<p>PS:以下所有文字注意<strong><em>加粗关键词</em></strong></p>
+
+<h3 id="时间顺序">时间顺序</h3>
+
+<p>行为产生某种特定的结果，多组行为组合成过程或系统，完成该过程或系统需要的采取的行动只能按照时间顺序排列，而对该过程
+或系统的概括必定是采取这些行为而要取得的结果或达到的目标</p>
+
+<ul>
+<li>主题：行为的结果或目标</li>
+<li>条目：具体行为(控制在5步骤之内)</li>
+</ul>
+
+<h4 id="由结果寻找原因-破解罗列步骤时难以区分原因和结果">由结果寻找原因——破解罗列步骤时难以区分原因和结果</h4>
+
+<p>同一组行动只是为了达到同一个特定的结果，但是，如果某个过程或流程过长，且包含多个步骤，那么就一定会存在多个层次的原因
+和结果</p>
+
+<h5 id="子主题内部条目不处于同一层次案例">子主题内部条目不处于同一层次案例</h5>
+
+<blockquote>
+<p>在第一阶段应该采取以下措施：
+1.与主要管理人员及监管人员谈话
+2.跟踪并记录交易行为和工作流程
+3.确定所有关键业务环节
+4.分析组织架构
+5.理解服务和绩效措施
+6.评估业务职能的绩效水平
+7.找出问题和原因
+8.发现提高生产效率的潜在机会</p>
+</blockquote>
+
+<p>以上内容<strong><em>有些步骤是为了实现另外一个步骤</em></strong>（修正内容1-&gt;2-3），就是说在总的过程中存在一些具有完整的<strong><em>子过程</em></strong>，以上内容修正如下：</p>
+
+<blockquote>
+<p>在第一阶段，我们将确定提高生产效率的可能领域
+1.<strong>确定企业的关键业务环节（3）</strong>
+——与主要人员谈话（3）
+——跟踪并记录交易行为和工作流程（2）
+2.<strong>找出在开展业务时存在的弱点（7）</strong>
+——调整组织结构（4）
+——制定及实施服务和绩效管理措施
+——评估绩效水平<br />
+3.<strong>提出实用可行的改革建议</strong></p>
+</blockquote>
+
+<h4 id="揭示隐含的逻辑思路-破解子主题隐含的思维逻辑过程">揭示隐含的逻辑思路——破解子主题隐含的思维逻辑过程</h4>
+
+<p>你得出的结论可能是基于某个隐含的逻辑过程——很多时候，人们列举的结论只是含糊的提到，并没有明确的说明其真实的思想
+（模糊性的描述某个事物的发展特点，未站在时间发展顺序上去说明）</p>
+
+<h5 id="模糊性思维逻辑说明案例">模糊性思维逻辑说明案例</h5>
+
+<blockquote>
+<p>经营的定义
+1.主要依赖创造性过程
+——按需求细化
+——按供给细化
+2.随时间变化
+——生命周期的早晚期
+——竞争动态
+3.在某个行业中不必独一无二
+4.受自身优势和市场竞争的影响</p>
+</blockquote>
+
+<p>修正后的文本：</p>
+
+<blockquote>
+<p>确定你所在企业的性质，需要认真分析
+1.对市场进行 <strong>细分</strong><br />
+2.评估企业在各个 <strong>细分市场</strong>中的竞争定位
+3.长期跟踪 <strong>竞争定位</strong> 的变化</p>
+</blockquote>
+
+<h4 id="如何判定条目处于同一层次">如何判定条目处于同一层次</h4>
+
+<p>想象自己亲自采取行动，并想象结果，符合时间发展顺序吗？</p>
+
+<h3 id="结构顺序">结构顺序</h3>
+
+<p>结构顺序就是你使用示意图、地图等形象的方式将某个事物分解成不同的部分</p>
+
+<p>结构顺序关键点为 MECE 原则与内部的描述逻辑：</p>
+
+<ol>
+<li><p>MECE 原则</p>
+
+<blockquote>
+<p>a. 各部分之间相互独立，没有重叠、有排他性
+b. 所有部分完全穷举，没有遗漏</p>
+</blockquote></li>
+
+<li><p>内部描述的方式可以多变，但是必定要遵循某种思维逻辑方式说明，如中国地缘政治，可以采用顺时针方式说明等</p></li>
+</ol>
+
+<h4 id="使用结构顺序检查思路案例">使用结构顺序检查思路案例</h4>
+
+<p>原文：</p>
+
+<blockquote>
+<p>我们认为，此项工作的目标包含：<br />
+1.评估和分析维护区域及建筑区域的现场施工情况<br />
+2.了解现场工程师是否具有足够的组织和管理灵活性，以便对共总提出的日程使用问题和要求做成适当的反应<br />
+3.评估和分析初期工程、道路和桥梁设计、环保设计、用地许可和交通管理等方面的问题<br />
+4.评估和分析交通局的组织结构<br />
+5.找出每一个研究领域的优势和劣势</p>
+</blockquote>
+
+<p>分析，第5点针对的是前面4点，分析前面4点主题为：</p>
+
+<blockquote>
+<p>1.维修及建造
+2.日常运营（2）<br />
+3.初期工程
+——道路和桥梁设计
+——环保设计
+——用地许可
+——交通管理等<br />
+4.组织结构</p>
+</blockquote>
+
+<p>如果从<strong><em>道路建设</em></strong>等过程来看，可以假定以上思想包含以下4个步骤</p>
+
+<blockquote>
+<p>1.设计
+2.建造
+3.运营
+4.维护</p>
+</blockquote>
+
+<p>因此，原文作者的意思为：</p>
+
+<blockquote>
+<p>该项工作的主要目的是检查交通局的组织架构和管理是否适应履行其职责。其职责包含4个方面：设计、建造、运营、维护。</p>
+</blockquote>
+
+<h3 id="重要性顺序">重要性顺序</h3>
+
+<p>明确指明每组中的项目（思想、观点等）具有共同 <strong>特性</strong>，确保将所有具有 <strong>该特性</strong> 的项目列入该组，并按照 <strong>该特性</strong>的
+程度高低排序</p>
+
+<h3 id="逻辑顺序操作过程">逻辑顺序操作过程</h3>
+
+<p>想要了解某一组思想真正想表达的思想观点，主要通过以下过程逐步的确定</p>
+
+<blockquote>
+<p>1.确定该组思想的类别（只保留主谓宾）<br />
+2.将同一类别的思想归类、分组<br />
+3.找出各类别思想之间的顺序</p>
+</blockquote>
+
+<h4 id="逻辑顺序调整过程案例">逻辑顺序调整过程案例</h4>
+
+<blockquote>
+<p>客户对销售报告和库存报告不满意
+1.提交的报告的周期不恰当
+2.库存数据不和靠
+3.获得库存数据的时间太迟
+4.库存数据与销售数据不吻合
+5.客户希望改进报告的格式
+6.客户希望去除无意义的数据
+7.客户希望突出说明特殊情况
+8.客户希望减少手工计算</p>
+</blockquote>
+
+<p>首先归纳出问题：1.时机不好 2.数据不符合要求 3.格式不对，对应的表格如下：</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">客户意见</th>
+<th align="left">问题所属类别</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">1、3</td>
+<td align="left">时机不好</td>
+</tr>
+
+<tr>
+<td align="left">2、4、6</td>
+<td align="left">数据不符合要求</td>
+</tr>
+
+<tr>
+<td align="left">5、7、8</td>
+<td align="left">格式不对</td>
+</tr>
+</tbody>
+</table>
+
+<p>所有从客户的意见中抽取了3个问题，那这个3个问题应该如何排序？这取决于你现在讨论的是编制报告的过程、阅读报告的过程还是解决问题的过程，如表所示</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">为什么系统会生成无意义的报告</th>
+<th align="left">为什么客户不喜欢这种报告</th>
+<th align="left">如何解决此问题</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">2.收集的数据不可靠</td>
+<td align="left">1.提交报告的时间太晚</td>
+<td align="left">3.确认所需的数据及格式</td>
+</tr>
+
+<tr>
+<td align="left">3.数据格式混乱</td>
+<td align="left">3.阅读报告时无法找到所需的数据</td>
+<td align="left">2.确保报告中的数据可靠性</td>
+</tr>
+
+<tr>
+<td align="left">1.生产报告太晚，无法采取有效行动</td>
+<td align="left">2.即使找到数据，数据也是错误</td>
+<td align="left">1.确保及时提交报告</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="第七章-概括各组思想">第七章 概括各组思想</h2>
+
+<p>金字塔核心规则：位于金字塔结构每一层次上的思想，都必须是对其下面一个层次思想的提炼、概括</p>
+
+<p><strong>20180802</strong><br />
+以下内容紧扣“结果/目标-&gt;行动/分组”就可以快速理解
+每一组思想都隐含着一个总结性的思想，这个思想能够呈现该组思想之间关系的本质，所以我们应该首先做到明确了解各组思想
+之间的关系然后向读者指明这种关系</p>
+
+<p><strong>20180802待修改内容</strong><br />
+需要将行动性思想与描述性思想归类分解</p>
+
+<h3 id="总结句要求">总结句要求</h3>
+
+<h4 id="避免使用-缺乏思想-的句子">避免使用“缺乏思想”的句子</h4>
+
+<p>缺乏思想的句子对他人对自己都是一种不负责任的行为：
+1.如过多则会引发读者的乏味
+2.掩盖思考不完整性的事实，错失一个进行有逻辑性和创造性思考的绝好机会</p>
+
+<p>比如说</p>
+
+<blockquote>
+<p>约翰.韦恩说他是最适合写赛廖尔.约翰逊传记的人，他有3个理由</p>
+</blockquote>
+
+<p>修改后的内容</p>
+
+<blockquote>
+<p>约翰.韦恩说他是最适合写赛廖尔.约翰逊传记的人，因为他和约翰逊是同一类人</p>
+</blockquote>
+
+<p>因此，原文作者的意思为：</p>
+
+<blockquote>
+<p>该项工作的主要目的是检查交通局的组织架构和管理是否适应履行其职责。其职责包含4个方面：设计、建造、运营、维护。</p>
+</blockquote>
+
+<h5 id="如何提出-思想-的总结句">如何提出“思想”的总结句</h5>
+
+<blockquote>
+<p>1.检查该组思想的分组基础，保证其相互独立、完全穷尽（即其逻辑顺序呈现的是一个有效的过程、结构、分类）
+2.确定准备得出的概括性思想的语句类型</p>
+</blockquote>
+
+<p>语句类型可以分为行动性思想与描述性思想</p>
+
+<blockquote>
+<p>1.概括性行动性思想（介绍采取的行动、行为、动作、步骤、流程）时，应说明采取行动后取得的 <strong>结果（效果、达到的目标）</strong><br />
+2.概括性描述性思想（介绍背景、信息）时，应说明这些思想具有的 <strong>共同点</strong> 的含义（共同点的意义）</p>
+</blockquote>
+
+<h3 id="如何提炼出行动结果">如何提炼出行动结果</h3>
+
+<p>Step 1. 明确描述各行动（步骤流程）——省略至主谓宾（明确到无需思考，即刻能做）</p>
+
+<blockquote>
+<p>使用明确的词汇、语句主要是为了用于验证行动是否独立穷尽；判断依据：想象自己确实采取了这些行动，然后根据完成这些行动将产生的明确的结果，修改各行动步骤的措辞，使之更加<strong><em>明确、具体</em></strong></p>
+</blockquote>
+
+<p>Step 2.找出因果关系组合，将其分不同的层次，控制同一层次在5个左右</p>
+
+<blockquote>
+<p>这里涉及到如何区分行动区分行动、步骤方式层次：如果你希望读者在采取下一项行动之前<strong><em>先采取某项行动</em></strong>，那么这两项行动就属于同一层次，如果你希望读者采取前一项行动<strong><em>以便产生</em></strong>后一项行动，那前一项行动就是后一项行动的下一个层次</p>
+</blockquote>
+
+<p>Step 3.直接概括行动的结果</p>
+
+<h4 id="结果明确过程范例">结果明确过程范例</h4>
+
+<p><strong>Step 1</strong>
+原文：</p>
+
+<blockquote>
+<p>统计和追收逾期应收账款：
+1.定期统计大额和中等金额应收账款的逾期时间
+2.跟进欠款金额和逾期时间发出催款通知
+3.追收逾期账款
+4.长期逾期应收款由公司董事会解决
+5.必要时使用收款公司</p>
+</blockquote>
+
+<p>该作者认为采取 <strong>以上步骤</strong> 就能够实现 <strong>最上面列出的目的</strong>，但目标本身就是不明确（如何追收逾期账款以及如何分级别），
+进一步的分解为：</p>
+
+<p><strong>Step 2</strong>
+<strong>逾期账款时间表</strong></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">金额</th>
+<th align="left">1个月</th>
+<th align="left">2个月</th>
+<th align="left">3个月</th>
+<th align="left">4个月</th>
+<th align="left">5个月</th>
+<th align="left">6个月</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">10万美元以上</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">1-10万美元</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">1万美元以下</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+<p>应收账的逾期时间在1-6个月，金额在10万美元，他会这样做：<br />
+1.逾期1个月的账款，不采取任何行动，财务部门按照正常途径寄出账单<br />
+2.逾期2个月的账款，应又财务部门寄出催款通知&hellip;.<br />
+3.逾期2个月的账款，应销售人员上门催收&hellip;.<br />
+4.逾期4个月的账款，应公司董事会催收&hellip;.</p>
+</blockquote>
+
+<p>所以文章的结构为：</p>
+
+<blockquote>
+<p>减少应收账款：
+1.将逾期账款按照预期时间和金额分类
+2.按照逾期账款的严重性分别按照以下方式催收
+  -财务部门 -销售人员
+  -公司董事 -追账公司</p>
+</blockquote>
+
+<p>但是以上行为应该是都是发生在逾期之后的追账行为，具体来说应该是逾期应收账款追讨机制，如果目的是此的话则还需要进一步调整</p>
+
+<p><strong>Step 3</strong></p>
+
+<blockquote>
+<p><strong>逾期应收账款追讨机制：</strong><br />
+1.将逾期账款按照预期时间和金额分类
+2.按照逾期账款的严重性分别按照以下方式催收
+  -财务部门 -销售人员
+  -公司董事 -追账公司
+3.销售人员不再向长期未付款客户发货</p>
+</blockquote>
+
+<h4 id="行动结果层次不分明-目的不明确的范例">行动结果层次不分明、目的不明确的范例</h4>
+
+<p>关于一家公司的产品开发问题：</p>
+
+<blockquote>
+<p>1.如何将公司和市场希望该产品的应该具有的功能，融入产品开发过程
+2.如何针对不同项目安排和分配公司资源
+3.如何缩短产品开发时间，同时考虑到营销人员的需求
+4.如何组织和管理公司的研发资源，以满足投产时间的要求
+5.如何使公司内、外了解有关消息，以尽量提高产品上市的力度
+6.如何促进研发人员和管理人员在产品开发方面的合作</p>
+</blockquote>
+
+<p><strong>Step one</strong><br />
+语句简化：</p>
+
+<blockquote>
+<p>1.开发适当的产品
+2.合理分配资源
+3.搞笑完成
+4.及时完成<br />
+5.有效营销
+6.研发/管理人员合作</p>
+</blockquote>
+
+<p><strong>Step two</strong>
+行动区分层次</p>
+
+<blockquote>
+<p>1.确定满足市场需求的产品
+——包含所需的功能（1）
+——满足营销人员的需求（3b）
+2.尽量在最短时间内完成开发（3a）
+——合理分配资源（2）
+——使研发时间符合投产需求（4）
+——加强研发人员及管理人员的合作（6）
+3.以最有力有效的方式将产品推向市场</p>
+</blockquote>
+
+<p><strong>Step three</strong><br />
+概括主题思想</p>
+
+<p>如果完成以上3个步骤，<strong>将要得到什么结果</strong>？显然是我们将抢在别人前面推出市场所需的产品，并达到最高销量
+在 <strong>作出概括之前</strong>，我们应当回过头看，想想一般人对于产品开发问题都了解些什么。我们知道，最先推出某种产品的企业能够
+抢占市场先机，而且产品更新迭代的速度越来越快，因此对于企业来说，缩短研发周期是首要任务。具有这些背景知识后，可以理顺
+为：</p>
+
+<blockquote>
+<p>产品开发面临的主要问题，是我们能否比竞争对手更有效的应对市场需求。<br />
+（我们如何速度有效地应对市场需求）
+1.我们能否发现市场需求的适当的产品？
+2.我们能否缩短产品上市前不必要的时间延误？
+3.我们能否进行有效的营销，以最大限度地提高销量？</p>
+</blockquote>
+
+<h3 id="如何提炼描述性思想结果">如何提炼描述性思想结果</h3>
+
+<p>Step1：列出一些值得思考的思想<br />
+Step2：列出思想上的共性，证明这些思想属于同一层次，并有理由将其与其他组分离</p>
+
+<p>表达思想的语句必定有一个由主语与谓语组成的结构，因此语句符合以下要求的必定有共性</p>
+
+<blockquote>
+<p>针对同一类主语<br />
+针对同一谓语（动作或对象）
+针对同一类隐含的思想</p>
+</blockquote>
+
+<p>Step3：明确说明这些思想之间的共同点所具有的普遍意义，提出一个新的 <strong>更高层次</strong>的思想</p>
+
+<h2 id="第八章-界定问题">第八章 界定问题</h2>
+
+<h3 id="逻辑树">逻辑树</h3>
+
+<blockquote>
+<p>第一层次 界定问题——序言
+1.是否有/是否可能有问题（或机会）
+2.问题在哪里
+第二层次 结构化分析问题
+3.为什么存在（产生问题的根源、原因）
+第三层次 寻找问题解决方案
+4.我们能做什么
+5.我们应该做什么</p>
+</blockquote>
+
+<h3 id="界定问题">界定问题</h3>
+
+<p>界定问题的框架：<br />
+问题定义：已有（现状）与你想要的（目标）之间存在的差距
+解决入口：了解其发展历史和背景，是确定差距之性质和把握其重要性最基本的过程</p>
+
+<p>界定问题需要回答3个问题：</p>
+
+<blockquote>
+<p>1.发生了什么事情？【背景（切入点/序幕+困扰/困惑）】
+2.我们不喜欢他什么？（非期望结果R1）<br />
+3.我们想要什么？（期望结果R2）</p>
+</blockquote>
+
+<p>展开问题各要素</p>
+
+<blockquote>
+<p>1.切入点/序幕——构建场景基础，如在茂盛的森林中，有一栋红色的房子
+2.困扰/困惑——对序幕中相对稳定的背景构成威胁，并引发非期望结果
+3.现状，非期望结果（R1）——需要设法解决或有可能面临的问题或机会
+4.目标，期望结果（R2）——</p>
+</blockquote>
+
+<p>发掘问题如序言模式：</p>
+
+<blockquote>
+<p>1.如何从现状到目标
+2.无法判断方案是否正确
+3.不知道如何施展方案
+4.方案已经实施但未解决
+5.最优秀方案是哪个？
+6.无法具体描述目标
+7.知道目标但是不知道自身状况</p>
+</blockquote>
+
+<h2 id="第九章-结构化分析问题">第九章 结构化分析问题</h2>
+
+<h3 id="结构化分析方法步骤">结构化分析方法步骤</h3>
+
+<p>结构化分析方法主要是通过一些假设并加以验证去获取问题的解决方法，其具体的步骤如下：</p>
+
+<blockquote>
+<p>1.提出各种假设
+2.设计一项或几项重要的实验，根据产生的结果排除一个或多个假设
+3.通过实验得出明确结论
+4.相应地采取补救措施</p>
+</blockquote>
+
+<h3 id="2种低效分析方法">2种低效分析方法</h3>
+
+<ol>
+<li>从信息资料入手——收入与产出不成正比</li>
+<li>是非问题分析——过于复杂，衡量因素多，难以掌控</li>
+</ol>
+
+<h3 id="设计诊断框架">设计诊断框架</h3>
+
+<ol>
+<li>有形结构——结构逻辑</li>
+
+<li><p>寻找因果关系——时间逻辑</p>
+
+<blockquote>
+<p>1.财务结构
+2.任务结构
+3.活动结构（行动、措施）</p>
+</blockquote></li>
+</ol>
+
+<p>3.产生问题的原因分类</p>
+
+<h3 id="使用诊断框架">使用诊断框架</h3>
+
+<p>Step 1：界定问题
+Step 2：使用诊断框架（结合行业知识）——确认关键问题
+Step 3：建立逻辑树——从逻辑上分解不同独立的可能性去寻找解决方案</p>
+
+<p>备注：案例P206-208</p>
+
+<h2 id="第10章-在书面上呈现金字塔">第10章 在书面上呈现金字塔</h2>
+
+<h3 id="突出显示文章的框架结构">突出显示文章的框架结构</h3>
+
+<blockquote>
+<p>1.多级标题法
+2.下划线法
+3.数字编号法
+4.行首缩进法
+5.项目符号法</p>
+</blockquote>
+
+<h3 id="上下文之间的过渡">上下文之间的过渡</h3>
+
+<p>在篇幅较长的文章中，也应该在每一组主要思想的开始或结束的地方稍作铺垫，让读者知道已经论述的和下一步计划论述的内容，同
+时保证论点和论点之间的连接流畅且不 <strong>机械</strong></p>
+
+<p>PS：过渡是思想是的协调一致，而非机械式样的介绍本章节主题与下章节主题，而要将他们的论述连接起来，让读者在读下一个小节
+的时候能够清楚的知道是从哪里引申过来？</p>
+
+<h4 id="如何写过渡部分">如何写过渡部分</h4>
+
+<h5 id="讲故事">讲故事</h5>
+
+<p>采用背景-&gt;冲突-&gt;疑问序言式的方式写，具体案例P234，其 <strong>手法</strong>主要是已经采取了这些手段，你能够保证一定如你所愿吗？</p>
+
+<h5 id="呈上启下">呈上启下</h5>
+
+<p>从金字塔结构的前一部分挑选一个词、一句短语或总结其中心思想，把他用在下一部分的起始句中！</p>
+
+<p>涉及的内容：</p>
+
+<blockquote>
+<p>总结各部分内容
+a.得出完整结论
+b.说明下一步行动</p>
+</blockquote>
+
+<h2 id="附-思维导图">附：思维导图</h2>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/xmind/20180819-xmind-minto-pyramid-principle.png" alt="" /></p>
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="left">日期</th>
+<th align="left">调整内容</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">2018年08月19日</td>
+<td align="left">初创</td>
+</tr>
+</tbody>
+</table>
+</content>  
+
+
+  <div class="article-ref-nav">
+     
+      <div class="prev" >
+        <a href="https://yidaofei.com/post/20181117-smartlock-separation-clutch-design-of-lock/"><i class="fa fa-angle-double-left"></i>&nbsp;分离式离合设计——关于两道门安装问题的延伸  </a>
+      </div>
+    
+     
+      <div class="next" >
+      	<a href="https://yidaofei.com/post/20170804-health-how-to-protect-teeth/">如何保护牙齿&nbsp;<i class="fa fa-angle-double-right"></i></a>
+      </div>
+     
+  </div> 
+</article> 
+
+ 
+<div class="main-content article-card">
+   
+  
+
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeicn/yidaofeicnHugoBlog-utterances"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+
+</div>
+ 
+ 
+
+
+ 
+ 
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#第六章-应用逻辑顺序">第六章 应用逻辑顺序</a>
+<ul>
+<li><a href="#时间顺序">时间顺序</a>
+<ul>
+<li><a href="#由结果寻找原因-破解罗列步骤时难以区分原因和结果">由结果寻找原因——破解罗列步骤时难以区分原因和结果</a>
+<ul>
+<li><a href="#子主题内部条目不处于同一层次案例">子主题内部条目不处于同一层次案例</a></li>
+</ul></li>
+<li><a href="#揭示隐含的逻辑思路-破解子主题隐含的思维逻辑过程">揭示隐含的逻辑思路——破解子主题隐含的思维逻辑过程</a>
+<ul>
+<li><a href="#模糊性思维逻辑说明案例">模糊性思维逻辑说明案例</a></li>
+</ul></li>
+<li><a href="#如何判定条目处于同一层次">如何判定条目处于同一层次</a></li>
+</ul></li>
+<li><a href="#结构顺序">结构顺序</a>
+<ul>
+<li><a href="#使用结构顺序检查思路案例">使用结构顺序检查思路案例</a></li>
+</ul></li>
+<li><a href="#重要性顺序">重要性顺序</a></li>
+<li><a href="#逻辑顺序操作过程">逻辑顺序操作过程</a>
+<ul>
+<li><a href="#逻辑顺序调整过程案例">逻辑顺序调整过程案例</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#第七章-概括各组思想">第七章 概括各组思想</a>
+<ul>
+<li><a href="#总结句要求">总结句要求</a>
+<ul>
+<li><a href="#避免使用-缺乏思想-的句子">避免使用“缺乏思想”的句子</a>
+<ul>
+<li><a href="#如何提出-思想-的总结句">如何提出“思想”的总结句</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#如何提炼出行动结果">如何提炼出行动结果</a>
+<ul>
+<li><a href="#结果明确过程范例">结果明确过程范例</a></li>
+<li><a href="#行动结果层次不分明-目的不明确的范例">行动结果层次不分明、目的不明确的范例</a></li>
+</ul></li>
+<li><a href="#如何提炼描述性思想结果">如何提炼描述性思想结果</a></li>
+</ul></li>
+<li><a href="#第八章-界定问题">第八章 界定问题</a>
+<ul>
+<li><a href="#逻辑树">逻辑树</a></li>
+<li><a href="#界定问题">界定问题</a></li>
+</ul></li>
+<li><a href="#第九章-结构化分析问题">第九章 结构化分析问题</a>
+<ul>
+<li><a href="#结构化分析方法步骤">结构化分析方法步骤</a></li>
+<li><a href="#2种低效分析方法">2种低效分析方法</a></li>
+<li><a href="#设计诊断框架">设计诊断框架</a></li>
+<li><a href="#使用诊断框架">使用诊断框架</a></li>
+</ul></li>
+<li><a href="#第10章-在书面上呈现金字塔">第10章 在书面上呈现金字塔</a>
+<ul>
+<li><a href="#突出显示文章的框架结构">突出显示文章的框架结构</a></li>
+<li><a href="#上下文之间的过渡">上下文之间的过渡</a>
+<ul>
+<li><a href="#如何写过渡部分">如何写过渡部分</a>
+<ul>
+<li><a href="#讲故事">讲故事</a></li>
+<li><a href="#呈上启下">呈上启下</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#附-思维导图">附：思维导图</a>
+<ul>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
+
+ 
+<footer class="bg-dark  text-center site-footer ">
+  <div class="social" > 
+     
+          <a href=" mailto:yidaofeicn@gmail.com "><i class="fa fa-envelope-open-o"></i></span></a>
+      
+       
+          <a href=" https://github.com/yidaofeicn "  ><i class="fa fa-github"></i></span></a>
+      
+    
+      
+                <a href="https://yidaofei.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml" target="_blank"> <i class="fa fa-rss"></i>
+                </a>
+          </div>
+   
+  <div class="copyright"  >
+    Powered by &nbsp;<a href="https://gohugo.io/">Hugo</a>&nbsp;|&nbsp;
+    Theme-<a href="">Flybird</a>  
+  </div>
+  <div class="copyright">
+      <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">© 自由转载-非商用-非衍生-保持署名</a>
+  </div> 
+  <div class="copyright"> 
+
+      
+    
+      <span id="busuanzi_container">
+        访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+</footer>
+
+<div id="bottom-element" data-title="定位底部"></div>
+
+ 
+
+
+<script type="text/javascript" color="#1D1D1D" opacity='1' zIndex="-2" count="400" src="https://yidaofei.com//thirdParty/canvasnest/canvas-nest.js"></script>
+
+
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/smooth-scroll/smooth-scroll.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+ 
+</style>
+</body>
+</html>
+
+
+ 

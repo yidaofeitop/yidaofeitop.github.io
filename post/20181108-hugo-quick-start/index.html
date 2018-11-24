@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <meta charset="UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" >
+
+  
+  
+    
+    <meta charset="utf-8" name="keywords" content="hugo,个人建站,教程,主题," > 
+  
+   
+  <meta charset="utf-8" name="description" content="个人博客建站大致可以分为两类：
+
+
+动态博客
+静态博客
+
+
+动态博客典型的代表就是：WordPress、Ghost 以及类似静态 FarBox
+静态博客典型的代表就是：Jekyll、Hexo、Hugo
+
+如果仅仅用于个人写作无任何定制化需求推荐使用 Farbox，Why?-5分钟了解 Farbox
+
+如果是用于个人写作且愿意部分定制化的推荐 Hugo，Why?-安装难度小、文档齐全、生成速度最快
+
+如果是用于商业等网站构建，可以使用 WordPress，教程多、插件齐全、功能多
+
+" >
+  
+  
+    <meta name="author" content="易道非">
+  
+  
+    
+        <link rel="icon" type="image/png" href="https://yidaofei.com//image/favicon-32x32.png" > 
+    
+  
+  
+  
+  
+  <title>个人建站-Hugo-快速开始- 易道非 Blog</title> 
+ 
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/fontawesome/css/font-awesome.min.css">
+
+   
+   
+  <script type="text/javascript" src="https://yidaofei.com/js/jquery-3.3.1.js"></script> 
+  <script type="text/javascript" src="https://yidaofei.com/js/jquery-ui.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/scrollToTopBottom/jquery.elevator.min.css">
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/scrollToTopBottom/jquery.elevator.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.css">
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.js"></script> 
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/algoliasearch/algoliasearch.min.js"></script>
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/algoliasearch/autocomplete.jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/algoliasearch/algolia-autocomplete.css">
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/remodal/remodal.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/remodal/remodal.css">
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/remodal/remodal-default-theme.css" >
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js"></script>
+ 
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+
+  
+  <link href="https://yidaofei.com//css/bootstrap/bootstrap.css" rel="stylesheet" >  
+  <script src="https://yidaofei.com//js/bootstrap.min.js"></script>
+   
+  
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/prismjs/prism.css">
+  <script type="text/javascript" src="https://yidaofei.com//thirdParty/prismjs/prism.js"></script>
+  
+  
+  
+  <script type="text/javascript" src="https://yidaofei.com//js/flybird.js"></script> 
+  <script type="text/javascript" src="https://yidaofei.com//js/main.js"></script> 
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css" >
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/markdown.css" >  
+   
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-126184892-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+<body> 
+ 
+
+ 
+<div id="top-element" data-title="到达顶点"></div>
+
+<header class="container-fluid row site-header">  
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top scrolling-navbar top-nav-collapse"> <div class="col-md-3 offset-md-1">   
+       
+        <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="site-title">
+        <a class=" navbar-brand " href="https://yidaofei.com/" title=" 易道非 Blog"> 
+               
+              
+            <img class="header-logoImg" title="logoImg" src="https://yidaofei.com//image/logo.png" >
+           
+
+               易道非 Blog
+          </a> 
+        </div>  
+    </div>  
+      <div class="col-md-5 offset-md-2  collapse navbar-collapse" id="collapsibleNavbar" >
+        <ul class="navbar-nav">
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/">Home</a>
+              </li>
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/categories/">Categories</a>
+              </li>
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/tags">Tags</a>
+              </li>
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/wiki">Wiki</a>
+              </li>
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/about">About</a>
+              </li>
+            
+
+            
+              <li class="nav-item site-header-navItem text-center">
+                 
+                   <a href="#searchinput" class="nav-link">search</a>  
+                </li>
+             
+
+          </ul>   
+      </div>   
+  </nav>  
+</header>
+
+ 
+ 
+
+
+
+<div class="remodal" data-remodal-id="searchinput" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> 
+  <span id="algoliaData" style="display:none;" data-appid="NYC6MHRISW" 
+		data-searchkey="7f131a263a8820645ee9fc65ed97b22f" 
+		data-initindex="github-yidaofeicnBlog"></span>
+
+<div class="search-input-card" >
+    <input type="search" id="search-input" class="search-input" placeholder="Search for titles or URIs..." name="search" autocomplete="off" />
+     <span class="input-search-icon"><i class="fa fa-search"></i></span> 
+</div>
+
+ 
+
+ 
+   
+</div> 
+
+
+
+<article class="main-content markdown article-card">
+	<header class="article-header"> 
+	   <p class="article-title">个人建站-Hugo-快速开始</p>
+   		<div class="article-meta">
+			
+			<div>
+				<i class="fa fa-calendar" >
+					2018年11月08日
+				</i> 
+			</div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://yidaofei.com/categories/%e4%b8%aa%e4%ba%ba%e5%bb%ba%e7%ab%99">个人建站</a> 
+				   
+				</i>  
+			</div>
+			
+			 
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-tags">&nbsp;Tags:
+				
+					<a href="https://yidaofei.com/tags/%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e5%bb%ba%e7%ab%99">个人博客建站</a>
+	    		
+					<a href="https://yidaofei.com/tags/hugo">Hugo</a>
+	    		
+	    		</i>   
+			</div> 
+		</div>  
+	</header>  
+	<content><p>个人博客建站大致可以分为两类：</p>
+
+<ol>
+<li>动态博客</li>
+<li>静态博客</li>
+</ol>
+
+<p>动态博客典型的代表就是：WordPress、Ghost 以及类似静态 FarBox
+静态博客典型的代表就是：Jekyll、Hexo、Hugo</p>
+
+<p>如果仅仅用于个人写作无任何定制化需求推荐使用 Farbox，<a href="https://www.zhihu.com/question/21981094/answer/23750005">Why?-5分钟了解 Farbox</a></p>
+
+<p>如果是用于个人写作且愿意部分定制化的推荐 Hugo，Why?-安装难度小、文档齐全、<a href="https://mrcpp.com/hexo-and-hugo-generate-10000-article-speed-comparisons/">生成速度最快</a></p>
+
+<p>如果是用于商业等网站构建，可以使用 WordPress，教程多、插件齐全、功能多</p>
+
+<p></p>
+
+<h3 id="静态博客-vs-动态博客">静态博客 VS 动态博客</h3>
+
+<p>关于动态和静态的区别主要有以下几点:</p>
+
+<ol>
+<li>资源占用上，静态的相比动态占用服务器资源少，还可以托管在Github Pages上；</li>
+<li>发布更新操作上，由于静态博客没有管理后台，所以发布更新内容要比动态博客繁琐；</li>
+<li>访问速度上，由于静态博客没有数据库，所以访问速度更快；</li>
+<li>安全性上，静态博客相比动态博客免疫了很多Web攻击套路；</li>
+</ol>
+
+<p>所以如果是个人使用如博客等，完全可以使用 <strong>hugo+Github Pages+微博图床/flickr</strong> 构建一个人博客，推荐几个博客给大家欣赏一下：</p>
+
+<ol>
+<li>极简风格：贤明的比特记忆：<a href="https://www.xianmin.org/">https://www.xianmin.org/</a><br /></li>
+<li>极简风格：shawpo：<a href="http://www.shawpo.me/">http://www.shawpo.me/</a></li>
+<li>颜色配置超好：ZHENG ZI&rsquo;ou <a href="https://orianna-zzo.github.io/">https://orianna-zzo.github.io/</a></li>
+<li>杂：Jimmy Song(宋净超)：<a href="https://jimmysong.io/">https://jimmysong.io/</a></li>
+</ol>
+
+<p>同时也推荐几个鄙人比较喜欢的 Jekyll 与 Hexo 网站，供大家比较</p>
+
+<ol>
+<li>Jekyll 码志：<a href="https://mazhuang.org/about/">https://mazhuang.org/about/</a></li>
+<li>Hexo Next 主题：<a href="https://notes.iissnan.com/">https://notes.iissnan.com/</a>  ：应用最多的吧&hellip;&hellip;</li>
+<li>Hexo Next 主题极致美化：<a href="https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html">https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html</a></li>
+<li>Hexo :<a href="http://litten.me/">http://litten.me/</a></li>
+<li>Jekyell 美：<a href="https://www.chairyfish.com/BeautifulJekyllTheme/">https://www.chairyfish.com/BeautifulJekyllTheme/</a></li>
+</ol>
+
+<p>只能说 Hugo 漂亮的主题实在是有点少😄 ——可能我没有遇到对的哪个！</p>
+
+<h3 id="hugo-基本操作">Hugo 基本操作</h3>
+
+<p>Hugo 安装、使用、发布非常简单，不做过多的介绍，本章节主要是记录基本的命令</p>
+
+<h4 id="hugo-安装">Hugo 安装</h4>
+
+<p>Hugo 有两种安装方式：</p>
+
+<ol>
+<li>直接使用二进制文件安装
+到Hugo release下载对应系统的安装包，解压后放到$PATH目录下即可使用</li>
+<li>使用go get安装
+这种安装方式的前提是您的电脑上已经配置了Go开发环境，为了简单起见，建议直接下载编译好的发型版安装。
+<code>go get -u -v github.com/gohugoio/hugo</code></li>
+</ol>
+
+<h4 id="hugo-快速部署">Hugo 快速部署</h4>
+
+<p>相关命令如下：</p>
+
+<pre><code class="language-batch">#创建一个网站
+hugo new site quickstart  
+
+#获取主题，可访问 https://themes.gohugo.io/
+cd quickstart/themes
+git clone https://github.com/xianmin/hugo-theme-jane.git 
+
+#将 exampleSite 文件复制到 quickstart，以下命令为 windows 命令
+xcopy exampleSite/*  xx/quickstart/ 
+
+#启动 Hugo 
+cd quickstart
+hugo server
+</code></pre>
+
+<p>如输出：</p>
+
+<pre><code class="language-batch">Building sites …
+                   | EN
++------------------+----+
+  Pages            | 84
+  Paginator pages  |  2
+  Non-page files   |  8
+  Static files     | 90
+  Processed images |  0
+  Aliases          | 27
+  Sitemaps         |  1
+  Cleaned          |  0
+
+Total in 77 ms
+Watching for changes in E:\03blog\yidaofeicn.github.io\{content,data,layouts,static,themes}
+Watching for config changes in E:\03blog\yidaofeicn.github.io\config.toml
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+</code></pre>
+
+<p>其他相关命令：</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">命令</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>hugo new post/first.md</code></td>
+<td align="left">在 content/post/ 下新建一个 first.md 文件</td>
+</tr>
+
+<tr>
+<td align="left"><code>hugo server --theme=hugo-jane-theme --buildDrafts</code></td>
+<td align="left">使用 [hugo-jane-theme]主题包含草稿内容</td>
+</tr>
+
+<tr>
+<td align="left"><code>hugo new theme flybird</code></td>
+<td align="left">新建一个[flybird]主题</td>
+</tr>
+
+<tr>
+<td align="left"><code>hugo undraft post/post-name.md</code></td>
+<td align="left">将文章从草稿状态修改为可发布状态</td>
+</tr>
+</tbody>
+</table>
+
+<p>更多命令请使用 <code>hugo --help</code></p>
+
+<h4 id="hugo-快速发布">Hugo 快速发布</h4>
+
+<p>本次发布使用的是 GitHub gh-pages部分功能，所以请先注册 GitHub 账号，并建立一个名为：&raquo;xxxx.github.io&raquo; 的仓库，如鄙人使用的是 <strong>yidaofeicn.github.io</strong>否则访问链接就不是&raquo;yidaofeicn.github.io&raquo;</p>
+
+<pre><code class="language-batch">#生成静态文件
+hugo 
+#上传到 GitHub 仓库
+cd public
+git init 
+git remote add origin https://github.com/yidaofeicn/yidaofeicn.github.io.git
+git add .
+git commit -m &quot;first commit&quot;
+git push -u origin master 
+</code></pre>
+
+<h3 id="关于-hugo-配置">关于 Hugo 配置</h3>
+
+<pre><code class="language-yaml"># 归档目录
+archetypeDir:               &quot;archetypes&quot;
+# 域名，比如 http://spf13.com/
+baseURL:                    &quot;&quot;
+# 是否编译草稿
+buildDrafts:                false
+# 是否编译尚未达到发布日期的文章
+buildFuture:                false
+# 是否编译过期的文章
+buildExpired:               false
+# 是否使用相对路径，该选项不影响使用绝对路径的链接
+relativeURLs:               false
+canonifyURLs:               false
+# 配置文件，默认值查找项目根目录下的 config.yaml、config.json 和 config.toml
+config:                     &quot;config.toml&quot;
+# 内容目录
+contentDir:                 &quot;content&quot;
+# 数据目录
+dataDir:                    &quot;data&quot;
+# 默认的扩展名
+defaultExtension:           &quot;html&quot;
+# 默认的布局模版
+defaultLayout:              &quot;post&quot;
+# 默认的内容语言
+defaultContentLanguage:     &quot;en&quot;
+# 是否将生成的默认语言文件存放在子目录中，比如对默认的 /en/，根目录会自动从 / 重定向到 /en/
+defaultContentLanguageInSubdir: false
+# 是否禁用实时重载功能
+disableLiveReload:          false
+# 是否禁用 RSS
+disableRSS:                 false
+# 是否禁用 Sitemap
+disableSitemap:             false
+# 是否使用 GitInfo
+enableGitInfo:              false
+# 是否生成 Robots
+enableRobotsTXT:            false
+# 是否禁用 404
+disable404:                 false
+# 是否不向主页注入生成器信息
+disableHugoGeneratorInject: false
+# 使用指定编辑器编辑新文章
+editor:                     &quot;&quot;
+# 是否允许使用 Emoji
+# See www.emoji-cheat-sheet.com
+enableEmoji:                false
+# Show a placeholder instead of the default value or an empty string if a translation is missing
+enableMissingTranslationPlaceholders: false
+footnoteAnchorPrefix:       &quot;&quot;
+footnoteReturnLinkContents: &quot;&quot;
+# google analytics tracking id
+googleAnalytics:            &quot;&quot;
+languageCode:               &quot;&quot;
+layoutDir:                  &quot;layouts&quot;
+# 是否启用日志功能
+log:                        false
+# 日志文件位置
+logFile:                    &quot;&quot;
+# 元数据的扩展名：&quot;yaml&quot;, &quot;toml&quot;, &quot;json&quot;
+metaDataFormat:             &quot;toml&quot;
+newContentEditor:           &quot;&quot;
+# 是否禁用同步文件的权限信息
+noChmod:                    false
+# 是否禁用同步文件的修改事件
+noTimes:                    false
+# 每页的文章数量
+paginate:                   10
+# 分页页面的路径
+paginatePath:               &quot;page&quot;
+permalinks:
+# Pluralize titles in lists using inflect
+pluralizeListTitles:        true
+# 是否允许在术语名称中使用特殊字符，比如 &quot;Gérard Depardieu&quot;
+preserveTaxonomyNames:      false
+# 部署目录
+publishDir:                 &quot;public&quot;
+# 是否允许对未指定语言的代码进行代码类型预测
+pygmentsCodeFencesGuessSyntax: false
+# 语法高亮主题名称
+pygmentsStyle:              &quot;monokai&quot;
+# true: use pygments-css or false: color-codes directly
+pygmentsUseClasses:         false
+# default sitemap configuration map
+sitemap:
+# 资源目录
+source:                     &quot;&quot;
+staticDir:                  &quot;static&quot;
+# 是否追踪编译过程中的内存和时间使用信息
+stepAnalysis:               false
+# 主题目录
+themesDir:                  &quot;themes&quot;
+# 主题名称
+theme:                      &quot;&quot;
+title:                      &quot;&quot;
+# 是否将 filename.html 替换为 /filename/
+uglyURLs:                   false
+# 是否禁用自动将 url/path 转换为小写字符
+disablePathToLower:         false
+# if true, auto-detect Chinese/Japanese/Korean Languages in the content. (.Summary and .WordCount can work properly in CJKLanguage)
+hasCJKLanguage:             false
+# 是否输出编译详情
+verbose:                    false
+# 是否启用日志记录编译详情
+verboseLog:                 false
+# 是否监视文件变动并重新编译资源
+watch:                      true
+# 指定编译时忽略的文件
+ignoreFiles = [&quot;\\.foo$&quot;, &quot;\\.boo$&quot;]
+</code></pre>
+
+<p>Hugo 使用 Blackfriday 作为 Markdown 语法的渲染引擎，与之相关的配置信息也可以写入 config.toml 文件中，比如：</p>
+
+<pre><code class="language-yaml">[blackfriday]
+    angledQuotes: true
+    fractions: false
+    plainIDAnchors: true
+    extensions: [&quot;hardLineBreak&quot;]
+</code></pre>
+
+<p>Blackfriday 的详细配置信息可以参考 <a href="https://gohugo.io/getting-started/configuration/#configure-blackfriday">https://gohugo.io/getting-started/configuration/#configure-blackfriday</a></p>
+
+<h3 id="关于-hugo-文件架构">关于 Hugo 文件架构</h3>
+
+<p>Hugo 文件架构如下</p>
+
+<blockquote>
+<p>├── archetypes<br />
+├── assets<br />
+├── config.toml<br />
+├── content<br />
+├── data<br />
+├── layouts<br />
+├── static<br />
+└── themes</p>
+</blockquote>
+
+<p>相关的用途如下：</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">文件名</th>
+<th align="left">用途</th>
+<th align="left">Hugo 进一步说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">archetypes</td>
+<td align="left">文章模版</td>
+<td align="left"><a href="https://gohugo.io/content-management/archetypes/">Archetypes</a></td>
+</tr>
+
+<tr>
+<td align="left">assets</td>
+<td align="left">Hugo 管道资源</td>
+<td align="left"><a href="https://gohugo.io/hugo-pipes/">Hugo Pipes Overview</a></td>
+</tr>
+
+<tr>
+<td align="left">config.toml</td>
+<td align="left">配置文件，可用格式 “toml/yaml/json”</td>
+<td align="left"><a href="https://gohugo.io/getting-started/configuration/#all-variables-yaml">Configure Hugo</a></td>
+</tr>
+
+<tr>
+<td align="left">content</td>
+<td align="left">内容页面</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">data</td>
+<td align="left">数据</td>
+<td align="left"><a href="https://gohugo.io/templates/data-templates/">data template</a></td>
+</tr>
+
+<tr>
+<td align="left">Layouts</td>
+<td align="left">模板存储位置</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">static</td>
+<td align="left">JavaScript、CSS、Image等静态文件存储</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">themes</td>
+<td align="left">Hugo 主题存储地址</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="关于创建默认文件">关于创建默认文件</h3>
+
+<p>使用 <code>hugo new wiki/20181108-hugo-simple-guild.md</code> 将会在 <strong>content/wiki/</strong> 文件下创建一个名为 &laquo;20181108-hugo-simple-guild.md&raquo; 的文件，打开会出现如下内容：</p>
+
+<pre><code class="language-json">---
+draft: true
+
+title: &quot;20181108 Hugo Simple Guild&quot;
+author: &quot;&quot;
+date: 2018-11-08
+Keywords: [&quot;&quot;]
+categories: []
+tags: []
+Topics: []
+description: [] 
+toc: true 默认开启，可false关闭 
+comment: true   默认开启，可false关闭 
+---
+**Markdown**  提示内容
+&lt;!--more--&gt;
+---
+## 文章标题
+### 参考资料
+### 版本信息
+
+|Version|Action |Time |
+|:--:|:--:|:--:|
+|1.0|init|2018-11-08|
+
+</code></pre>
+
+<p>以上内容是定义在 &laquo;archetypes\default.md&raquo;，可能存放的位置为 网站目录或者是主题文件夹，Hugo 会先加载网站目录后加载主题文件，此
+顺序也是 Hugo 模板解析的顺序。</p>
+
+<h3 id="关于内容格式">关于内容格式</h3>
+
+<blockquote>
+<p>Both HTML and Markdown are supported content formats.
+Markdown is the main content format and comes in two flavours: The excellent Blackfriday project (name your files *.md or set markup = &laquo;markdown&raquo; in front matter) or its fork Mmark (name your files *.mmark or set markup = &laquo;mmark&raquo; in front matter), both very fast markdown engines written in Go.</p>
+</blockquote>
+
+<p>以上是关于 Hugo 支持的内容格式的说明，推荐使用 Markdown 语法，关于 Markdwon 语法请参考 <a href="https://yidaofeicn.github.io/softwareGit/markdown/">markdown 简易教程</a></p>
+
+<p>另外关于 <a href="https://gohugo.io/content-management/shortcodes/">Hugo ShortCode</a> 鄙人建议不要过分使用与配置，毕竟 Markdown 本身就是为了“易读易写”提出的</p>
+
+<h3 id="参考资料">参考资料</h3>
+
+<p>[1]<a href="http://blog.mingguilu.com/2016/12/14/%E4%BD%BF%E7%94%A8Hugo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E4%B9%8B%E5%A1%AB%E5%9D%91/" title="github发布地址BseURL应该为：https 开头">使用Hugo和Github搭建静态博客之填坑</a>：Hugo 发布无样式 Bug：<br />
+[2]<a href="https://soulteary.com/2017/06/28/welcome-to-hugo.html" title="比较 WordPress、Hexo、Hugo">主题极简激情：苏洋博客</a><br />
+[3]<a href="https://imys.net/20150513/wordpress-to-hexo.html">主题Material Design </a></p>
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Version</th>
+<th align="center">Action</th>
+<th align="center">Time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1.0</td>
+<td align="center">init</td>
+<td align="center">2018-11-08</td>
+</tr>
+</tbody>
+</table></content>  
+
+
+  <div class="article-ref-nav">
+     
+      <div class="prev" >
+        <a href="https://yidaofei.com/post/20181115-driver-summary/"><i class="fa fa-angle-double-left"></i>&nbsp;深圳驾照考试总结  </a>
+      </div>
+    
+     
+      <div class="next" >
+      	<a href="https://yidaofei.com/post/20181107-js-fix-anchor-of-fixed-nav-header/">JavaScript-修复由导航栏固定导致的页面锚点偏差 Bug&nbsp;<i class="fa fa-angle-double-right"></i></a>
+      </div>
+     
+  </div> 
+</article> 
+
+ 
+<div class="main-content article-card">
+   
+  
+
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeicn/yidaofeicnHugoBlog-utterances"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+
+</div>
+ 
+ 
+
+
+ 
+ 
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#静态博客-vs-动态博客">静态博客 VS 动态博客</a></li>
+<li><a href="#hugo-基本操作">Hugo 基本操作</a>
+<ul>
+<li><a href="#hugo-安装">Hugo 安装</a></li>
+<li><a href="#hugo-快速部署">Hugo 快速部署</a></li>
+<li><a href="#hugo-快速发布">Hugo 快速发布</a></li>
+</ul></li>
+<li><a href="#关于-hugo-配置">关于 Hugo 配置</a></li>
+<li><a href="#关于-hugo-文件架构">关于 Hugo 文件架构</a></li>
+<li><a href="#关于创建默认文件">关于创建默认文件</a></li>
+<li><a href="#关于内容格式">关于内容格式</a></li>
+<li><a href="#参考资料">参考资料</a></li>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
+
+ 
+<footer class="bg-dark  text-center site-footer ">
+  <div class="social" > 
+     
+          <a href=" mailto:yidaofeicn@gmail.com "><i class="fa fa-envelope-open-o"></i></span></a>
+      
+       
+          <a href=" https://github.com/yidaofeicn "  ><i class="fa fa-github"></i></span></a>
+      
+    
+      
+                <a href="https://yidaofei.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml" target="_blank"> <i class="fa fa-rss"></i>
+                </a>
+          </div>
+   
+  <div class="copyright"  >
+    Powered by &nbsp;<a href="https://gohugo.io/">Hugo</a>&nbsp;|&nbsp;
+    Theme-<a href="">Flybird</a>  
+  </div>
+  <div class="copyright">
+      <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">© 自由转载-非商用-非衍生-保持署名</a>
+  </div> 
+  <div class="copyright"> 
+
+      
+    
+      <span id="busuanzi_container">
+        访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+</footer>
+
+<div id="bottom-element" data-title="定位底部"></div>
+
+ 
+
+
+<script type="text/javascript" color="#1D1D1D" opacity='1' zIndex="-2" count="400" src="https://yidaofei.com//thirdParty/canvasnest/canvas-nest.js"></script>
+
+
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/smooth-scroll/smooth-scroll.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+ 
+</style>
+</body>
+</html>
+
+
+ 

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jquery组件 on  易道非 Blog</title>
+    <link>https://yidaofei.com/tags/jquery%E7%BB%84%E4%BB%B6/</link>
+    <description>Recent content in Jquery组件 on  易道非 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 07 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://yidaofei.com/tags/jquery%E7%BB%84%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JavaScript-重建 hugo 侧边导航栏 TOC</title>
+      <link>https://yidaofei.com/post/20181107-js-rebuild-hugo-sider-toc/</link>
+      <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181107-js-rebuild-hugo-sider-toc/</guid>
+      <description>&lt;p&gt;本文主要解决以下问题：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;控制 hugo TOC 展现层次，如只显示前3层&lt;/li&gt;
+&lt;li&gt;美化 hugo TOC 样式&lt;/li&gt;
+&lt;li&gt;采用点击弹出层的方式呈现&lt;/li&gt;
+&lt;li&gt;页面锚点与导航栏同步&lt;/li&gt;
+&lt;li&gt;优化锚点跳转页面滑动效果&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;相关主体代码地址：&lt;a href=&#34;https://gist.github.com/yidaofeicn/1575ee1fb853f5281f535e72b0fa8d91&#34;&gt;https://gist.github.com/yidaofeicn/1575ee1fb853f5281f535e72b0fa8d91&lt;/a&gt;
+具体效果点击&lt;strong&gt;右边的锚点按钮&lt;/strong&gt;就可体验
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

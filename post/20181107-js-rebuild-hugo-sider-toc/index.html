@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <meta charset="UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" >
+
+  
+  
+    
+    <meta charset="utf-8" name="keywords" content="JavaScript,hugo 导航栏,TOC,建站,侧边弹出,树," > 
+  
+   
+  <meta charset="utf-8" name="description" content="本文主要解决以下问题：
+
+
+控制 hugo TOC 展现层次，如只显示前3层
+美化 hugo TOC 样式
+采用点击弹出层的方式呈现
+页面锚点与导航栏同步
+优化锚点跳转页面滑动效果
+
+
+相关主体代码地址：https://gist.github.com/yidaofeicn/1575ee1fb853f5281f535e72b0fa8d91
+具体效果点击右边的锚点按钮就可体验
+" >
+  
+  
+    <meta name="author" content="易道非">
+  
+  
+    
+        <link rel="icon" type="image/png" href="https://yidaofei.com//image/favicon-32x32.png" > 
+    
+  
+  
+  
+  
+  <title>JavaScript-重建 hugo 侧边导航栏 TOC- 易道非 Blog</title> 
+ 
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/fontawesome/css/font-awesome.min.css">
+
+   
+   
+  <script type="text/javascript" src="https://yidaofei.com/js/jquery-3.3.1.js"></script> 
+  <script type="text/javascript" src="https://yidaofei.com/js/jquery-ui.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/scrollToTopBottom/jquery.elevator.min.css">
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/scrollToTopBottom/jquery.elevator.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.css">
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.js"></script> 
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/algoliasearch/algoliasearch.min.js"></script>
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/algoliasearch/autocomplete.jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/algoliasearch/algolia-autocomplete.css">
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/remodal/remodal.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/remodal/remodal.css">
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/remodal/remodal-default-theme.css" >
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js"></script>
+ 
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+
+  
+  <link href="https://yidaofei.com//css/bootstrap/bootstrap.css" rel="stylesheet" >  
+  <script src="https://yidaofei.com//js/bootstrap.min.js"></script>
+   
+  
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/prismjs/prism.css">
+  <script type="text/javascript" src="https://yidaofei.com//thirdParty/prismjs/prism.js"></script>
+  
+  
+  
+  <script type="text/javascript" src="https://yidaofei.com//js/flybird.js"></script> 
+  <script type="text/javascript" src="https://yidaofei.com//js/main.js"></script> 
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css" >
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/markdown.css" >  
+   
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-126184892-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+<body> 
+ 
+
+ 
+<div id="top-element" data-title="到达顶点"></div>
+
+<header class="container-fluid row site-header">  
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top scrolling-navbar top-nav-collapse"> <div class="col-md-3 offset-md-1">   
+       
+        <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="site-title">
+        <a class=" navbar-brand " href="https://yidaofei.com/" title=" 易道非 Blog"> 
+               
+              
+            <img class="header-logoImg" title="logoImg" src="https://yidaofei.com//image/logo.png" >
+           
+
+               易道非 Blog
+          </a> 
+        </div>  
+    </div>  
+      <div class="col-md-5 offset-md-2  collapse navbar-collapse" id="collapsibleNavbar" >
+        <ul class="navbar-nav">
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/">Home</a>
+              </li>
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/categories/">Categories</a>
+              </li>
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/tags">Tags</a>
+              </li>
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/wiki">Wiki</a>
+              </li>
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/about">About</a>
+              </li>
+            
+
+            
+              <li class="nav-item site-header-navItem text-center">
+                 
+                   <a href="#searchinput" class="nav-link">search</a>  
+                </li>
+             
+
+          </ul>   
+      </div>   
+  </nav>  
+</header>
+
+ 
+ 
+
+
+
+<div class="remodal" data-remodal-id="searchinput" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> 
+  <span id="algoliaData" style="display:none;" data-appid="NYC6MHRISW" 
+		data-searchkey="7f131a263a8820645ee9fc65ed97b22f" 
+		data-initindex="github-yidaofeicnBlog"></span>
+
+<div class="search-input-card" >
+    <input type="search" id="search-input" class="search-input" placeholder="Search for titles or URIs..." name="search" autocomplete="off" />
+     <span class="input-search-icon"><i class="fa fa-search"></i></span> 
+</div>
+
+ 
+
+ 
+   
+</div> 
+
+
+
+<article class="main-content markdown article-card">
+	<header class="article-header"> 
+	   <p class="article-title">JavaScript-重建 hugo 侧边导航栏 TOC</p>
+   		<div class="article-meta">
+			
+			<div>
+				<i class="fa fa-calendar" >
+					2018年10月07日
+				</i> 
+			</div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://yidaofei.com/categories/javascript">JavaScript</a> 
+				   
+				</i>  
+			</div>
+			
+			 
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-tags">&nbsp;Tags:
+				
+					<a href="https://yidaofei.com/tags/hugo">hugo</a>
+	    		
+					<a href="https://yidaofei.com/tags/jquery%e7%bb%84%e4%bb%b6">JQuery组件</a>
+	    		
+					<a href="https://yidaofei.com/tags/toc">toc</a>
+	    		
+	    		</i>   
+			</div> 
+		</div>  
+	</header>  
+	<content><p>本文主要解决以下问题：</p>
+
+<ol>
+<li>控制 hugo TOC 展现层次，如只显示前3层</li>
+<li>美化 hugo TOC 样式</li>
+<li>采用点击弹出层的方式呈现</li>
+<li>页面锚点与导航栏同步</li>
+<li>优化锚点跳转页面滑动效果</li>
+</ol>
+
+<p>相关主体代码地址：<a href="https://gist.github.com/yidaofeicn/1575ee1fb853f5281f535e72b0fa8d91">https://gist.github.com/yidaofeicn/1575ee1fb853f5281f535e72b0fa8d91</a>
+具体效果点击<strong>右边的锚点按钮</strong>就可体验
+</p>
+
+<h3 id="hugo-toc-原有样式">Hugo TOC 原有样式</h3>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201811/hugo-toc.png" alt="hugo TOC 原有样式" /></p>
+
+<h3 id="控制-hugo-toc-展现层次">控制 Hugo TOC 展现层次</h3>
+
+<h4 id="第一解决方案-自建数据节点-递归算法">第一解决方案——自建数据节点，递归算法</h4>
+
+<p>参考文章：<a href="https://linuxer.io/posts/hugo-toc/">https://linuxer.io/posts/hugo-toc/</a> 调整（链接似乎失效 😱）</p>
+
+<ol>
+<li>将元素数据抽离，组合成类似 树的数据结构</li>
+<li>循环处理重新组合成相关的 DOM 结构，中间插入相关的数据</li>
+</ol>
+
+<p>关键代码 JavaScript 如下：</p>
+
+<pre><code class="language-javascript">/*
+@param rootDom：根dom 
+*/
+function iterativeSplit(rootDom){
+  var liTagList=[];
+  $(rootDom).children(&quot;li&quot;).each(function(i, item) {
+        var liTag = { 
+            url: $(item).children(&quot;a&quot;).attr(&quot;href&quot;), 
+            name: $(item).children(&quot;a&quot;).text(),
+            children: []
+        }   
+        $subUlTag = $(item).children(&quot;ul&quot;);
+        if ($subUlTag.length &gt; 0) {
+            liTag.children = iterativeSplit($subUlTag);
+        }   
+        liTagList.push(liTag);
+    })  
+    return liTagList;
+}
+
+
+/*
+TOC递归合成模板 
+@param root：数据的起始点
+@param template：合成HTML模板
+@param SNPrefix：序号前缀 
+@param startLevel：开始处理层次，以root展开层次为标准
+@param endLevel:最大处理层次，数值最大为6或者是root最深的层
+@param currentLevel：正处理层次
+*/
+function iterativeCreate(root,template,SNPrefix,startLevel,endLevel,currentLevel){
+    //如需处理层次不在处理范围，或者无子元素直接返回
+    if(currentLevel&gt;endLevel||$(root).children.length&lt;0){
+        return template;
+    }
+    //开始处理相关数据
+    if(startLevel&lt;=currentLevel&amp;&amp;currentLevel&lt;=endLevel){
+        template += '&lt;ul&gt;' 
+    }
+    $.each(root, function(index, tocItem) {
+      if(startLevel&lt;=currentLevel&amp;&amp;currentLevel&lt;=endLevel){
+        var nextSNPrefix=&quot;&quot;;
+        //处理前缀
+        if(tocItem.name!=&quot;&quot;){
+          nextSNPrefix = SNPrefix + String(index+1) + &quot;.&quot; ;
+          if(endLevel==currentLevel){
+              nextSNPrefix = SNPrefix + String(index+1);
+          }
+          template += '&lt;li&gt;'+ 
+                            '&lt;a href=&quot;navURL&quot;&gt;&lt;b&gt;navSerial  &lt;/b&gt;navName&lt;/a&gt;'
+                               .replace(&quot;navURL&quot;, tocItem.url)
+                               .replace(&quot;navName&quot;, tocItem.name)
+                               .replace(&quot;navSerial&quot;, nextSNPrefix) +
+                        '&lt;/li&gt;';
+        } 
+      } 
+      if (tocItem.children.length &gt; 0) { 
+          if(startLevel&lt;=currentLevel&amp;&amp;currentLevel&lt;=endLevel){  
+            template = iterativeCreate(tocItem.children, template, nextSNPrefix,startLevel,endLevel,currentLevel+1);
+          }else{ 
+            template = iterativeCreate(tocItem.children, template, SNPrefix,startLevel,endLevel,currentLevel+1);
+          }
+       }   
+    }); 
+    if(template.length&gt;0){
+         template += &quot;&lt;/ul&gt;&quot;;   
+         return template;
+    } 
+    
+}
+</code></pre>
+
+<p>最终呈现的样式为：</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201811/adjust-hugo-toc.png" alt="重建 hugo " /></p>
+
+<h4 id="20181108-序号错乱">20181108 序号错乱</h4>
+
+<p>以上版本是否解决全部问题？在 hugo 编写内容的过程中发现有以下需求：</p>
+
+<ul>
+<li>如特定需求——*只需要*展示第2层-第3层标题，调用代码<code>var html=iterativeCreate(root,&quot; &quot;,' ',2,3,0);</code></li>
+</ul>
+
+<p>在此情况下会出现序号错乱情况如下：</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201811/sn-error-adjust-hugo-toc.png" alt="重建 hugo 序号错误" /></p>
+
+<p>分析主要问题是出现在递归调用变量栈数据 <code>nextSNPrefix</code> 通信问题，结构简化分析</p>
+
+<pre><code class="language-html">&lt;ul&gt;
+  &lt;li&gt;&lt;/li&gt;-----------------第一层标题
+  &lt;li&gt;
+    &lt;ul&gt;--------------------第1部分
+      &lt;li&gt;------------------第二层标题  递归调用 SNPrefix='' , 函数内部逻辑：nextSNPrefix 1
+        &lt;ul&gt;
+          &lt;li&gt;&lt;/li&gt;---------第三层标题  递归调用 SNPrefix='1', 函数内部逻辑：nextSNPrefix 1.1
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;-------------第二层标题  递归调用 SNPrefix='' , 函数内部逻辑：nextSNPrefix 1.1
+    &lt;/ul&gt; 
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;--------------------第2部分
+      &lt;li&gt;------------------第二层标题  递归调用 SNPrefix='' , 函数内部逻辑：nextSNPrefix 1
+        &lt;ul&gt;
+          &lt;li&gt;&lt;/li&gt;---------第三层标题 
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;-------------第二层标题
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<h4 id="第二解决方案-利用-html-dom">第二解决方案-利用 HTML DOM</h4>
+
+<p>问题主要是由于调用过程中第1部分与第2部分处于不同的层次导致，所以方法就是将第1部分与第2部分抽调出来放入同一个层次即可</p>
+
+<p>具体步骤如下：</p>
+
+<ol>
+<li>利用 Hugo 建立的 TOC 结构，抽取对应的结构，主要处理 开始节点，结束节点可以在处理内容时期处理</li>
+<li>处理抽取出来的结构-如赋值，加样式等</li>
+</ol>
+
+<p>相比较第一个版本而言代码具有以下优势：</p>
+
+<ol>
+<li>可阅读性更高，递归算法，变量追踪难</li>
+<li>内存开销降低，时间复杂度也明显降低</li>
+<li>利用 HTML DOM 节点，数据读取更加的便捷</li>
+<li><code>addSNTocNav</code> 方法可针对不同的层次的锚点加入更多不同的属性（<code>addSNTocNav</code> 为树的遍历算法的简化版）</li>
+</ol>
+
+<p>相关实现原理请结合注释与代码查看，JavaScript 如下：</p>
+
+<pre><code class="language-javascript">$(document).ready(function() {
+     
+  var navSelector=&quot;nav#TableOfContents&quot;;
+  var startLevel=2;
+  var endLevel=3;
+  var $navigations=$(navSelector); 
+
+
+  /*第二种解决方案 */
+  
+  var replaceHTML=extraStartTocDom(navSelector,startLevel)
+  $navigations.html(replaceHTML); 
+  //增加SN序号()
+  addSNTocNav(navSelector,startLevel,endLevel)
+
+
+  $navigations.find('ul').addClass(&quot;article-toc-item-ul&quot;); 
+    $navigations.find('li').addClass(&quot;article-toc-item-li&quot;); 
+  });
+
+/*
+抽取开始层次的DOM
+@param navSelector 导航栏选择器
+@param startLevel 开始层次
+基本逻辑：
+主要是利用了 HTML DOM 的节点属性，利用栈循环将某个层次的节点全部压入取出，最后符合条件的即为 DOM 结构的中起始节点
+*/
+function extraStartTocDom(navSelector,startLevel){
+  var extraStack=new Array(); 
+  extraStack.push($(navSelector).children(&quot;ul&quot;));
+
+ 
+  for (var currentLevel = 0; currentLevel &lt;startLevel-1; currentLevel++) {
+    var statckLength=extraStack.length;
+    for (var index = 0; index &lt; statckLength; index++) {
+      var ulTag=extraStack.shift();
+      $.each($(ulTag).children(&quot;li&quot;).children('ul'), function(index, val) {
+         extraStack.push($(val));
+      });
+    }
+  } 
+  
+  var replaceHTML=null;
+  //组合成对应的HTML
+  var statckLength=extraStack.length;
+
+  replaceHTML=&quot;&lt;ul&gt;&quot;
+  for (var index = 0; index &lt; statckLength; index++) {
+     replaceHTML=replaceHTML+$(extraStack.shift()).html(); 
+  }
+  replaceHTML=replaceHTML+&quot;&lt;ul&gt;&quot;
+   
+  return replaceHTML;
+}
+
+/*
+抽取开始层次的DOM
+@param navSelector 导航栏选择器
+@param startLevel 开始层次
+@param endLevel 结束层次
+
+基本逻辑：
+数据存储部分：赋予&lt;ul&gt;节点 data-sn,data-level 属性管理编码与所处水平，类似树节点中的值
+逻辑部分：开始循环时，将第一个节点（本次即为最开始的根节点），处理当前节点下的&lt;li&gt;标签数据，如&lt;li&gt;标签有子节点&lt;ul&gt;则赋予data-sn,data-level
+值，并压入栈中，继续循环
+
+*/
+function addSNTocNav(navSelector,startLevel,endLevel){ 
+  var tocNavStack=new Array();
+  tocNavStack.push($(navSelector).children(&quot;ul&quot;));
+
+  var currentLevel=startLevel;
+
+  while(tocNavStack.length&gt;0){
+    //处理相关元素
+    var tocNavItem=tocNavStack.shift();
+    var brotherValue=$(tocNavItem).children(&quot;li&quot;).children(&quot;a&quot;).length&gt;0?true:false;
+    //brotherValue 处理特殊情况  
+    /**&lt;ul&gt;
+       &lt;li&gt;&lt;ul&gt;&lt;/ul&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/li&gt;
+       &lt;li&gt;&lt;ul&gt;&lt;/ul&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/li&gt;
+       &lt;/ul&gt;**/
+
+    $.each($(tocNavItem).children(&quot;li&quot;), function(index, liTag) {
+      //处理SN与level数据
+      var parentTagSN=$(tocNavItem).attr(&quot;data-sn&quot;);
+      var parentLevel=$(tocNavItem).attr(&quot;data-level&quot;);
+      var currentTagSN=parentTagSN+&quot;.&quot;+String(index+1);
+      var currentLevel=parseInt(parentLevel)+1;
+
+      if(parentTagSN==&quot;&quot; || parentTagSN==null||parentTagSN==undefined){
+        currentTagSN=String(index+1);
+        currentLevel=startLevel;
+      }
+      
+      //加入序号
+      var anchorTag=$(liTag).children(&quot;a&quot;);
+      $(anchorTag).text(currentTagSN+&quot; &quot;+$(anchorTag).text()); 
+      //判断是否有子元素，如有设置相关的属性
+      var childULTag=$(liTag).children(&quot;ul&quot;);
+      if(childULTag.length&gt;0&amp;&amp;(currentLevel&lt;=endLevel)){ 
+        //对应brotherValue看说明 
+        if(brotherValue){
+           $(childULTag).attr(&quot;data-sn&quot;,currentTagSN);
+           $(childULTag).attr(&quot;data-level&quot;,currentLevel);
+        }
+        //推入栈中处理  
+        tocNavStack.push($(childULTag));
+      }
+      //删除超出endLevel的节点数据
+      if(currentLevel&gt;=endLevel&amp;&amp;childULTag.length&gt;0){
+        childULTag.remove();
+      }
+    });  
+  } 
+}
+</code></pre>
+
+<h3 id="css-调整样式">CSS 调整样式</h3>
+
+<p>调整后 Hugo TOC 的 HTML 结构与 CSS 代码结构如下：</p>
+
+<p><strong>HTML代码</strong></p>
+
+<pre><code class="language-html">&lt;div class=&quot;sidebar main right&quot;&gt;
+&lt;nav id=&quot;TableOfContents&quot;&gt;
+ &lt;center&gt;
+  目录
+ &lt;/center&gt;
+ &lt;br /&gt; 
+ &lt;ul class=&quot;article-toc-item-ul&quot;&gt;
+  &lt;li class=&quot;article-toc-item-li&quot;&gt;&lt;a href=&quot;#侧方位停车尺寸及评判标准&quot;&gt;&lt;b&gt; 1. &lt;/b&gt;侧方位停车尺寸及评判标准&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;article-toc-item-li&quot;&gt;&lt;a href=&quot;#考试流程及操作要点&quot;&gt;&lt;b&gt; 2. &lt;/b&gt;考试流程及操作要点&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt; 
+&lt;/div&gt;
+
+</code></pre>
+
+<p><strong>CSS代码</strong></p>
+
+<pre><code class="language-css">.sidebar .categories-toc-item-li {
+  border-bottom: 0.1em dotted;
+  text-align: left;
+  list-style-type: none;
+  margin: 1rem auto 1rem 0rem; }
+.sidebar .article-toc-item-ul {
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  max-width: 99%; }
+.sidebar .article-toc-item-ul .article-toc-item-li {
+  border-bottom: 0.1em dotted;
+  text-align: left;
+  list-style-type: none; }
+.sidebar .article-toc-item-ul .article-toc-item-li a {
+  text-decoration: none;
+  border-bottom: none;
+  font-size: 0.8rem;
+  padding-left: 0.5rem;
+  color: #364149;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  max-width: 99%; }
+.sidebar .article-toc-item-ul .article-toc-item-li a:hover {
+  font-weight: bolder;
+  color: #4183c4; }
+.sidebar .toc-item-scrollSync {
+  border-left: 5px solid #3f51b5; }
+
+</code></pre>
+
+<h3 id="采用点击弹出层的方式呈现">采用点击弹出层的方式呈现</h3>
+
+<p>参考很多的 Hugo 博客，均采用的导航栏为阅读页面侧边浮动方式，感觉此类方式比较人性化，所以加入插件：<a href="https://simple-sidebar.github.io/simpler-sidebar/">simple-siderbar</a></p>
+
+<p>选用此插件的原因是对原有代码侵入小，如我的 <code>single.html</code> 侧边导航栏页面代码为：</p>
+
+<pre><code class="language-html">&lt;div id=&quot;sidebar-main-trigger&quot; class=&quot;tableContentToc&quot;&gt;
+    &lt;i class=&quot;fa fa-anchor&quot;&gt;&lt;/i&gt; 
+&lt;/div&gt;
+
+&lt;div class=&quot;sidebar main right&quot; id=&quot;sidebar-main&quot;&gt; 
+  &lt;div class=&quot;wrapper&quot;&gt;  
+      {{ .TableOfContents }} 
+  &lt;/div&gt; 
+&lt;/div&gt; 
+</code></pre>
+
+<p>如使用 <a href="https://github.com/blivesta/drawer">Drawer</a>、<a href="https://slideout.js.org/">slideout js</a>，均对原有结构都有侵入，如下</p>
+
+<pre><code class="language-html"> &lt;header role=&quot;banner&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;drawer-toggle drawer-hamburger&quot;&gt;
+      &lt;span class=&quot;sr-only&quot;&gt;toggle navigation&lt;/span&gt;
+      &lt;span class=&quot;drawer-hamburger-icon&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt; 
+  &lt;/header&gt;
+
+  &lt;main role=&quot;main&quot;&gt;
+    &lt;!-- Page content --&gt;
+    页面部分主体
+  &lt;/main&gt;
+</code></pre>
+
+<p>关于具体的配置等请参考 [slideout js] 的 demo 进行调试</p>
+
+<h3 id="页面锚点与导航栏同步">页面锚点与导航栏同步</h3>
+
+<p>主要参考<a href="https://orianna-zzo.github.io/sci-tech/2018-08/blog养成记16-自建hugo的toc模板/">Blog养成记(16) 自建Hugo的TOC模板</a>，如不采用bootstrap 插件，文章的价值主要是在监控问题与文本超出问题处理。</p>
+
+<p>同步的主要原理是：
+判断当前页面的 SrollTop，与锚点的 SrollTop 比对查找出上一个节点即可，关键的 JavaScript 代码结构如下：</p>
+
+<pre><code class="language-javascript">//TOC对应问题
+$(window).bind(&quot;scroll&quot;,function(){
+  //加其他参数原因：[Blog养成记(16) 自建Hugo的TOC模板] 
+  var scrollTop = $(this).scrollTop()+1+$(&quot;header[class$='site-header']&quot;).outerHeight(true);
+  tocAnchorSync(&quot;a[class='TocAnchor']&quot;,scrollTop); 
+});
+
+/*
+TOC 导航与页面锚点同步显示
+@param anchorSelector 锚点选择器
+@param scrollTop 滚动栏与顶部高度
+*/
+function tocAnchorSync(navSelector,anchorSelector,scrollTop){
+  var topAnchor=null; 
+
+  var pageAnchorAarray=$(anchorSelector);
+
+  //判断当前位置的上一个 Anchor
+  $.each(pageAnchorAarray, function(index, anchor) {
+      //先判处小于情况
+      if(anchor.offsetTop&lt;scrollTop){
+        topAnchor=anchor;
+      }
+      else if(anchor.offsetTop&gt;=scrollTop&amp;&amp;topAnchor!=null){
+         return false;
+      }  
+  }); 
+
+   //定位相关的定位
+  if(topAnchor!=null){
+   
+    var anchorID=$(topAnchor).attr(&quot;id&quot;);
+    var selectorStr=&quot;a[href='#&quot;+anchorID+&quot;']&quot;;
+
+    $(navSelector).find(&quot;a&quot;).removeClass(&quot;toc-item-scrollSync&quot;);
+    $(navSelector).find(selectorStr).toggleClass(&quot;toc-item-scrollSync&quot;);
+  }  
+}
+ 
+</code></pre>
+
+<p>加入 <code>$(&quot;header[class$='site-header']&quot;).outerHeight(true)</code>; 的原因在于本人网站采用的是头部导航栏固定方法，需要修正相关的偏差,关于偏差请参考文章<a href="/post/20181107-js-fix-anchor-of-fixed-nav-header">JavaScript-修复由导航栏固定导致的页面锚点偏差Bug</a></p>
+
+<h3 id="优化锚点跳转页面滑动效果">优化锚点跳转页面滑动效果</h3>
+
+<p>主要参考<a href="https://orianna-zzo.github.io/sci-tech/2018-08/blog养成记14-让同页滚动更平滑/">Blog养成记(14) 让同页滚动更平滑</a>，
+了解到 <strong>同页滚动更平滑</strong> 但是又不想使用 bootstrap 4 的相关插件——侵入式太大，计划后期全部移除！</p>
+
+<p>最后定位 JQUERY 插件 <a href="https://kswedberg.github.io/jquery-smooth-scroll/demo/">smooth-scroll</a>，选中的理由是足够简单
+只需要在最后加一行代码即可 :😄:</p>
+
+<pre><code class="language-javascript">&lt;!--加载完成后使用 smooth-scroll--&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;{{ .Site.BaseURL }}/thirdParty/smooth-scroll/smooth-scroll.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<h3 id="参考资料">参考资料</h3>
+
+<p>[1]<a href="https://orianna-zzo.github.io/sci-tech/2018-08/blog养成记14-让同页滚动更平滑/">Blog养成记(14) 让同页滚动更平滑</a><br />
+[2]<a href="https://orianna-zzo.github.io/sci-tech/2018-08/blog养成记16-自建hugo的toc模板/">Blog养成记(16) 自建Hugo的TOC模板</a></p>
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Version</th>
+<th align="center">Action</th>
+<th align="center">Time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1.0</td>
+<td align="center">init</td>
+<td align="center">2018-10-07</td>
+</tr>
+
+<tr>
+<td align="center">1.1</td>
+<td align="center">修复重建 TOC 序号问题</td>
+<td align="center">2018-11-08</td>
+</tr>
+</tbody>
+</table></content>  
+
+
+  <div class="article-ref-nav">
+     
+      <div class="prev" >
+        <a href="https://yidaofei.com/post/20181013-driver-part2-rule/"><i class="fa fa-angle-double-left"></i>&nbsp;深圳驾照科目二五项场地及规则讲解  </a>
+      </div>
+    
+     
+      <div class="next" >
+      	<a href="https://yidaofei.com/post/20180920-software-skills-gitbook-guide/">Gitbook 教程&nbsp;<i class="fa fa-angle-double-right"></i></a>
+      </div>
+     
+  </div> 
+</article> 
+
+ 
+<div class="main-content article-card">
+   
+  
+
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeicn/yidaofeicnHugoBlog-utterances"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+
+</div>
+ 
+ 
+
+
+ 
+ 
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#hugo-toc-原有样式">Hugo TOC 原有样式</a></li>
+<li><a href="#控制-hugo-toc-展现层次">控制 Hugo TOC 展现层次</a>
+<ul>
+<li><a href="#第一解决方案-自建数据节点-递归算法">第一解决方案——自建数据节点，递归算法</a></li>
+<li><a href="#20181108-序号错乱">20181108 序号错乱</a></li>
+<li><a href="#第二解决方案-利用-html-dom">第二解决方案-利用 HTML DOM</a></li>
+</ul></li>
+<li><a href="#css-调整样式">CSS 调整样式</a></li>
+<li><a href="#采用点击弹出层的方式呈现">采用点击弹出层的方式呈现</a></li>
+<li><a href="#页面锚点与导航栏同步">页面锚点与导航栏同步</a></li>
+<li><a href="#优化锚点跳转页面滑动效果">优化锚点跳转页面滑动效果</a></li>
+<li><a href="#参考资料">参考资料</a></li>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
+
+ 
+<footer class="bg-dark  text-center site-footer ">
+  <div class="social" > 
+     
+          <a href=" mailto:yidaofeicn@gmail.com "><i class="fa fa-envelope-open-o"></i></span></a>
+      
+       
+          <a href=" https://github.com/yidaofeicn "  ><i class="fa fa-github"></i></span></a>
+      
+    
+      
+                <a href="https://yidaofei.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml" target="_blank"> <i class="fa fa-rss"></i>
+                </a>
+          </div>
+   
+  <div class="copyright"  >
+    Powered by &nbsp;<a href="https://gohugo.io/">Hugo</a>&nbsp;|&nbsp;
+    Theme-<a href="">Flybird</a>  
+  </div>
+  <div class="copyright">
+      <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">© 自由转载-非商用-非衍生-保持署名</a>
+  </div> 
+  <div class="copyright"> 
+
+      
+    
+      <span id="busuanzi_container">
+        访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+</footer>
+
+<div id="bottom-element" data-title="定位底部"></div>
+
+ 
+
+
+<script type="text/javascript" color="#1D1D1D" opacity='1' zIndex="-2" count="400" src="https://yidaofei.com//thirdParty/canvasnest/canvas-nest.js"></script>
+
+
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/smooth-scroll/smooth-scroll.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+ 
+</style>
+</body>
+</html>
+
+
+ 

@@ -1,0 +1,30 @@
+.sidebar {
+  position: fixed;
+  top: 56px;
+  bottom: 0;
+  width: 300px;
+  background-color: #FFF;
+}
+
+.sidebar.right {
+  right: -300px;
+  text-align: right;
+}
+
+.sidebar.left {
+  left: -300px;
+}
+
+ 
+.sidebar .wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 1em;
+  padding-top: 1.5em;
+  overflow-y: auto;
+
+  -webkit-box-sizig: border-box
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} 

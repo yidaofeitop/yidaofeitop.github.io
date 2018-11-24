@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <meta charset="UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" >
+
+  
+  
+    
+    <meta charset="utf-8" name="keywords" content="百度,竞价排名,血友吧," > 
+  
+   
+  <meta charset="utf-8" name="description" content="凤巢系统是百度搜索推广服务管理平台的内部开发代号，2009年4月20日 推出，2009年12月1日 全面启用，其用意在于替代原有的搜素营销经典版(即竞价排名)，相对于原有的竞价排名系统提供了更多的功 能如投放地域时段设定、关键词推荐工具、预算设置" >
+  
+  
+    <meta name="author" content="易道非">
+  
+  
+    
+        <link rel="icon" type="image/png" href="https://yidaofei.com//image/favicon-32x32.png" > 
+    
+  
+  
+  
+  
+  <title>百度竞价排名思考-血友病- 易道非 Blog</title> 
+ 
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/fontawesome/css/font-awesome.min.css">
+
+   
+   
+  <script type="text/javascript" src="https://yidaofei.com/js/jquery-3.3.1.js"></script> 
+  <script type="text/javascript" src="https://yidaofei.com/js/jquery-ui.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/scrollToTopBottom/jquery.elevator.min.css">
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/scrollToTopBottom/jquery.elevator.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.css">
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.js"></script> 
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/algoliasearch/algoliasearch.min.js"></script>
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/algoliasearch/autocomplete.jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/algoliasearch/algolia-autocomplete.css">
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/remodal/remodal.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/remodal/remodal.css">
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/remodal/remodal-default-theme.css" >
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js"></script>
+ 
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+
+  
+  <link href="https://yidaofei.com//css/bootstrap/bootstrap.css" rel="stylesheet" >  
+  <script src="https://yidaofei.com//js/bootstrap.min.js"></script>
+   
+  
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/prismjs/prism.css">
+  <script type="text/javascript" src="https://yidaofei.com//thirdParty/prismjs/prism.js"></script>
+  
+  
+  
+  <script type="text/javascript" src="https://yidaofei.com//js/flybird.js"></script> 
+  <script type="text/javascript" src="https://yidaofei.com//js/main.js"></script> 
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css" >
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/markdown.css" >  
+   
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-126184892-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+<body> 
+ 
+
+ 
+<div id="top-element" data-title="到达顶点"></div>
+
+<header class="container-fluid row site-header">  
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top scrolling-navbar top-nav-collapse"> <div class="col-md-3 offset-md-1">   
+       
+        <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="site-title">
+        <a class=" navbar-brand " href="https://yidaofei.com/" title=" 易道非 Blog"> 
+               
+              
+            <img class="header-logoImg" title="logoImg" src="https://yidaofei.com//image/logo.png" >
+           
+
+               易道非 Blog
+          </a> 
+        </div>  
+    </div>  
+      <div class="col-md-5 offset-md-2  collapse navbar-collapse" id="collapsibleNavbar" >
+        <ul class="navbar-nav">
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/">Home</a>
+              </li>
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/categories/">Categories</a>
+              </li>
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/tags">Tags</a>
+              </li>
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/wiki">Wiki</a>
+              </li>
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/about">About</a>
+              </li>
+            
+
+            
+              <li class="nav-item site-header-navItem text-center">
+                 
+                   <a href="#searchinput" class="nav-link">search</a>  
+                </li>
+             
+
+          </ul>   
+      </div>   
+  </nav>  
+</header>
+
+ 
+ 
+
+
+
+<div class="remodal" data-remodal-id="searchinput" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> 
+  <span id="algoliaData" style="display:none;" data-appid="NYC6MHRISW" 
+		data-searchkey="7f131a263a8820645ee9fc65ed97b22f" 
+		data-initindex="github-yidaofeicnBlog"></span>
+
+<div class="search-input-card" >
+    <input type="search" id="search-input" class="search-input" placeholder="Search for titles or URIs..." name="search" autocomplete="off" />
+     <span class="input-search-icon"><i class="fa fa-search"></i></span> 
+</div>
+
+ 
+
+ 
+   
+</div> 
+
+
+
+<article class="main-content markdown article-card">
+	<header class="article-header"> 
+	   <p class="article-title">百度竞价排名思考-血友病</p>
+   		<div class="article-meta">
+			
+			<div>
+				<i class="fa fa-calendar" >
+					2016年05月03日
+				</i> 
+			</div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://yidaofei.com/categories/%e6%97%b6%e4%ba%8b%e7%83%ad%e8%af%84">时事热评</a> 
+				   
+				</i>  
+			</div>
+			
+			 
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-tags">&nbsp;Tags:
+				
+					<a href="https://yidaofei.com/tags/%e5%a4%a7%e6%95%b0%e6%8d%ae%e5%af%bc%e5%90%91">大数据导向</a>
+	    		
+					<a href="https://yidaofei.com/tags/%e8%88%86%e8%ae%ba%e5%af%bc%e5%90%91">舆论导向</a>
+	    		
+	    		</i>   
+			</div> 
+		</div>  
+	</header>  
+	<content>
+
+<p><a href="http://baike.so.com/doc/5786194-5998980.html">凤巢系统</a>是百度搜索推广服务管理平台的内部开发代号，2009年4月20日
+推出，2009年12月1日 全面启用，其用意在于替代原有的搜素营销经典版(即竞价排名)，相对于原有的竞价排名系统提供了更多的功
+能如投放地域时段设定、关键词推荐工具、预算设置、最低展现价格、创意轮显、IP 排除和否定匹配等.</p>
+
+<h2 id="相关争议">相关争议</h2>
+
+<h3 id="央视竞价排名黑幕">央视竞价排名黑幕</h3>
+
+<p>2008年11月12日，新华社发表<a href="http://news.163.com/08/1121/16/4R9NRUG100012Q9L.html">《假药网络肆虐 竞价排名是祸根》</a>
+专文，指出假医药在百度竞价排名中只是冰山一角，同时指出百度关键词“老虎机”是中华人民共和国明令禁止出售的商品，但是百度
+却完全无视法律的存在，依然推广显示“老虎机”的大量广告。</p>
+
+<p>2008年11月16日，中央电视台财经频道《新闻30分》报道由于百度竞价排名导致部分用户进入虚假网站上当受骗，李宏彦在<a href="http://blog.sina.com.cn/s/blog_4cc015f60100bb7j.html">内部邮件</a>的回应如下:</p>
+
+<blockquote>
+<p>各位亲爱的同事及合作伙伴:<br />
+  11月15日和16日两天,中央电视台新闻30分栏目就百度竞价排名搜索结果中存在的问题,竞价排名销售过程中存在管理漏洞等进行
+了连续报道.</p>
+
+<p>这是近一段时间以来,广大媒体、广大网民对百度搜索体验、商业运作和销售运营等问题重点关注和集中探讨的一次集中展现,将百度
+目前所存在的问题全面 的挖掘 和呈现出来,对百度的品牌形象造成了伤害,也伤害了广大的百度用户和竞价排名客户的感情.我作为
+公司的CEO,在感到十分难过、痛心疾首的同时,也将承担 起全部的责任,与大家一起努力,共度难关</p>
+
+<p>在百度八年的成长过程中,我们通过对中文语言搜索技术对中国网民搜索需求的专注,实现了从无到有,从挑战到领先的成就.今天有
+  中国最广大的网民群体 使用百 度,信任百度,这是对我们所付出辛勤努力的认同,也是对我们在技术、运营、服务等方面的更高要求.
+作为产业领导者,我们在引领发展方向的过程中,也不可避 免面临更严酷甚至恶劣的市场环境,这更要求我们把每个环节,每个细节做
+得更好,打造良性健康的产业生态链,才能实现自身的发展和产业的进步,实现我们一直 坚持的目标和理想.</p>
+
+<p>今天我们面对的质疑和批评,是挑战也是机遇,让我们在快速成长的过程中冷静下来,深刻反思自己走过的道路,看清百度生存和
+发展的基石和未来前进的方 向.公 司的成长都会经历阵痛,互联网的大幕才刚刚拉开,百度不仅要对自己越来越严格要求,同时也会在引领互联网产业向更健康的方向发展起到关键作用.
+古人说过,有错能改,善莫大焉.我诚挚的期盼与亲爱的同事们一起,用我们最大的努力,通过为用户和客户提供真实的信息和有效的服务,来实现我们的价值和百度的使命.</p>
+
+<p>另外,媒体所报道的不给钱就封站的事,我们从来没有干过,以后也不会干,请大家放心!</p>
+
+<p>谢谢<br />
+Robin</p>
+</blockquote>
+
+<p>2010年7月11日，央视《每周质量报告》再次曝光<a href="http://v.17173.com/playlist_50109/NzQ0NTkw.html">百度帮助卖假药</a>的事件，
+百度帮助卖假药后获得竞价利润 75 %。<br />
+2010年7月20日，《中国山东网》发文<a href="http://news.sdchina.com/show/306548.html">不惧被央视曝光 百度今天仍然还在推广假药</a><br />
+2011年8月，中国中央电视台经济频道《经济与法》再次对<a href="http://www.xker.com/page/e2011/0816/102235.html">百度竞价排名黑幕</a>进行曝光</p>
+
+<h3 id="血友吧事件-http-finance-qq-com-a-20160112-061586-htm"><a href="http://finance.qq.com/a/20160112/061586.htm">血友吧事件</a></h3>
+
+<p>2015年11月         血友病吧被空降名为「血友病专家」的官方吧主<br />
+2016年01月06日     血友病吧原吧主及吧务组全部被撤换，并在血友病吧被禁言<br />
+2016年01月10日     知乎网友“蚂蚁菜”以第2吧主的身份讲述相关的情况<br />
+2016年01月11日     新吧主ID“血友病专家”在上任后在吧内发帖，表示自己已经和“多名与血友病相关的专家组成顾问团队，对患者咨询的问题进行准确解答”</p>
+
+<p>后续发酵,未证实:<br />
+知乎网友ytytytyt继血友病吧被卖曝光之后，称实际上<a href="https://www.zhihu.com/question/39362753" title="贴吧整改后已无法验证">“百度40%的热门疾病吧已经被卖，而大多数用户都会通过百度搜索医疗信息甚至完全信任这些信息”</a></p>
+
+<p>另外此事件还附带了一个关于蚂蚁菜的诉讼案件，关于此案件相关内容大家可以咨询此处<a href="https://zhuanlan.zhihu.com/p/20856716">关于“刘陕西起诉蚂蚁菜侵犯他名誉权的官司”求助汇总</a></p>
+
+<h3 id="魏泽西事件">魏泽西事件</h3>
+
+<p>魏则西，生前就读于西安电子科技大学，计算机专业。被查出患有“滑膜肉瘤”这种罕见病的大学生魏则西，辗转多家医院，病情不见好转。后通过百度搜索找到北京武警总队第二医院，在接受4次治疗、花费20余万元后，仍没有明显效果，于2016年4月12日去世。</p>
+
+<p>2016年5月1日，关于魏则西相关文章<a href="http://mp.weixin.qq.com/s?__biz=MzI5NDEzMjc0OQ==&amp;mid=3045317271&amp;idx=1&amp;sn=9cca5718716cb641a9a081cba60c0cc3&amp;scene=23&amp;srcid=0501aPeNW1CjDrsYYn0GU3Ct">《一个死在百度和部队医院之手的年轻人》</a>在微信朋友圈开始传播发酵，其后发现武警北京总队第二医院的ICP备案被发现是个人，域名注册信息被发现是一家医院投资管理有限公司，这家公司则被认为有莆田系背景。</p>
+
+<p>2016年5月2日，百度公司公关部负责人回应称，很多传统行业其实并不具备独立的网页运营能力，因此外包也是比较普遍的现象。作为百度公司来说，他们主要是审核医院主体的资质是否真实有效，是不是冒充行为，并表明武警北京总队第二医院提供的资质审查是真实有效的。与之同时也与魏则西父亲联系沟通长达13分钟。
+同期发布内部文章<a href="http://www.cnblogs.com/zgblog/p/5461601.html">《砥砺风雨坚守使命》</a></p>
+
+<p>2016年5月2日，国家互联网信息办公室发言人姜军指出，根据网民举报，国家网信办会同国家工商总局、国家卫计委成立联合调查组进驻百度公司，对魏则西事件及互联网企业依法经营事项进行调查并依法处理，联合调查组将适时公布调查和处理结果。</p>
+
+<p>2016年5月3日，国家卫计委新闻发言人表示，国家网信办会同国家工商总局、国家卫计委已成立联合调查组对“魏则西事件”进行调查。国家卫计委、中央军委后勤保障部卫生局、武警部队后勤部卫生局联合对武警北京市总队第二医院进行调查。</p>
+
+<p>2016年5月4日，武警部队对广受关注的“魏则西事件”高度重视，已组成工作组进驻武警北京总队第二医院。有关领导表示，将全力配合国家卫生计生委和中央军委后勤保障部卫生局调查，对发现的问题将依法依纪严肃查处，绝不姑息迁就</p>
+
+<p>其后360发表&raquo;<a href="http://tech.ifeng.com/a/20160504/41603237_0.shtml?_cpb_shenghuo">360搜索放弃一切消费者医疗商业推广业务</a>&laquo;：
+<img src="https://piwigo.yidaofei.com/galleries/201810/360-give-up-medical-ad.jpg" alt="" /></p>
+
+<p>5月8日 搜狗王小川发表公开信，宣布搜狗搜索推出新功能“搜狗明医”：<a href="http://www.ebrun.com/20160509/175091.shtml">http://www.ebrun.com/20160509/175091.shtml</a></p>
+
+<h3 id="国家网信办进驻结果">国家网信办进驻结果</h3>
+
+<p>2015年5月10日 <a href="http://www.dangjian.cn/jrrd/201605/t20160510_3346381.shtml">国家网信办公布进驻百度结果</a>:
+<img src="https://piwigo.yidaofei.com/galleries/201810/survey-results-wzx.png" alt="" /></p>
+
+<h2 id="不成熟的看法">不成熟的看法</h2>
+
+<p>作为一名农村的90后谈谈我的“百度”：</p>
+
+<p>第一次接触百度是在09年的高二，当时叔叔曾经告诉我的“世界上最大的搜索引擎 Google 已经不知何方，由于当时主要是在查询
+小说以及MP3所以当时感觉真的很好，无知的少年总是那么的快乐！</p>
+
+<p>这种情况一直持续到大二时期，偶然的一个朋友告诉我利用 Goagnet 翻墙进入 Google,第一次借助 Google 与世界相连，后面的
+日子还是没有多大的改变因为 Goagent 速度太慢，相比较而言一些不重要的事情还是用 baidu 比较多，工作以后发现还有更多的
+搜索引擎替代品以及 shadowsocks 之后就直接将 baidu 拉入黑名单了。</p>
+
+<p>上面是我搜索引擎的基本历程，我首先要讲的几个问题：</p>
+
+<h3 id="baidu是网络信息的第一道筛子">baidu是网络信息的第一道筛子</h3>
+
+<p>第一个问题是：百度在我们互联网生活中扮演者一个怎样的角色？</p>
+
+<p>baidu 是一种并不是简简单单的工具，比如说类似字典，他是一个思想的汇集点，是众人智慧的一个存放地。你现在随便到街上找一
+个人问一下他了解某件事情最常使用的方式是什么？我敢肯定的是只要他会上网绝对是网络搜索相关资料。百度占有的市场比率为 50%+[11],
+也就是说中国 6.88 亿人[12]中就近乎有一半多的人在使用百度搜索寻找与获取各种信息，百度已经是社会思想交流与碰撞的一个
+大平台，就像咖喱鸡说的一样“在互联网时代，它已经成为了绝大多数百姓心中的权威”[4]。</p>
+
+<p>人们常说思想指导行动，而人的思想来自于哪两个方面？</p>
+
+<p>我认为是自我思考与外界信息，而后者是前者产生的一个基础，两个的关系就像是生产力与生产关系一样，所以人的思考不是无根之
+萍，他是来自对现实世界获取的所有信息的一种加以整理后的结果，整理的方式则是来自前面信息的一个整理与思考，可想而知的是
+当我们生活中很多的信息来自互联网，来自百度类似搜索引擎挑选给我的时候，所以你可以很清晰的知道互联网对我们的行为有多大
+的引导作用。</p>
+
+<p>举一个极端的例子<a href="http://v.qq.com/cover/h/hssas58h50kq93u.html">《官员被曝开房200多次卧轨自杀 》</a>，
+这个例子并不是很好，但是很能够说明问题在我们从网络获取到片面的信息后，思维方式是:官员-&gt;开发200多次-&gt;贪污腐败-&gt;讨伐他，
+这就是一条典型的信息与思维的交互，为什么会有如此的一个推理过程？其关键原因在于你过去获取的信息是很多官员拥有与身份不
+匹配的“事物”的时候就被爆出贪污腐败，这是一个多次类似信息的获取之后的范式&hellip;</p>
+
+<p>所以互联网的信息势必要有一张网筛一筛，而百度就是第一道这样的筛子！可是他现在给我们的是什么？简直可以用互联网的一个流行词:呵呵:)</p>
+
+<h3 id="竞价排名是恶吗">竞价排名是恶吗</h3>
+
+<p>关于竞价排名的基础介绍不在多说什么，上面文章已经做了很细致的介绍<br />
+竞价排名是否只有百度专有呢？答案当然是否定的，下面例举几个比较有名的搜索引擎的竞价排名政策[14]</p>
+
+<ol>
+<li><a href="https://support.google.com/adwordspolicy/answer/6008942?hl=zh-Hans&amp;rd=1">Adwords</a><br /></li>
+<li><a href="http://advertise.bingads.microsoft.com/en-us/bing-ads-policies">Bing Ads</a><br /></li>
+<li><a href="https://adspecs.yahoo.com/pages/yahooadpolicies/">Yahoo Advertising Policies</a><br /></li>
+<li><a href="http://e.baidu.com/accept?subsite=gd">百度推广服务合同</a><br /></li>
+<li><a href="http://fuwu.sogou.com/cpc/bidding_term.html">《搜狗公司推广服务协议》</a><br /></li>
+<li><a href="https://www.so.com/help/help_anticheat.html">360搜索推广赔付协议</a><br /></li>
+<li><a href="http://aa.360-cd.com/360/agreement.jsp">奇思点睛软件服务条款</a><br /></li>
+</ol>
+
+<p>关于协议之间的差别可以从上面的国内关于竞价排名推广的政策中基本上是一样的，都没有详细的说明哪些广告是不能做的，只是
+大致的框定&raquo;包括但不限于危害国家安全、淫秽色情、虚假、侮辱、诽谤、恐吓或骚扰、侵犯他人知识产权、人身权或其他合法权益以及
+有违社会公序良俗的内容或指向这些内容的链接&raquo;，而 google 等国外引擎呢？</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201810/google-paid-listing-content-limit.png" alt="" /></p>
+
+<p>你看竞价排名在国外是否有像在国内如此之大的恶名？没有，在我看来竞价排名就像是是在传统媒体刊登广告，就是一种推广的方式，
+但是工具要看是在什么样的人手中或者有什么样的规则加以限定，就像是墙纸一样，使用正确就会产生积极的效果，反之则必定反噬
+己，baidu推广就是在一个错误的指导思想上犯下了大错！</p>
+
+<h3 id="为何这么疯狂">为何这么疯狂？</h3>
+
+<p>在百度的历史上是否只有作恶，我详细并确定不是，比如说<a href="https://www.zhihu.com/question/39322261/answer/81317373">《朱良春治疗癌症时间》</a>,
+还有比如说以前的百度贴吧、知道确实是为大家的知识交流提供了一个平台。</p>
+
+<p>但是那些基本上都是历史了，现在的百度在知识界基本可以说臭名昭著了。但是我们现在要想的问题是为什么以及怎样来改善甚至解决？
+一个问题要解决都必须明白其原因，所以我们首先做的就是分析百度为什么如此的疯狂？</p>
+
+<p>百度的疯狂主要是基于以下的几个要点:</p>
+
+<ol>
+<li>垄断的权利，在 google 退出中国与 360 搜索崛起之间百多可以说是中国搜索引擎市场的绝对王者，当然现在仍旧是，这是作恶
+的基础条件。</li>
+<li>公司产品线急于变现</li>
+<li>信息不对等或者说信息收集能力不够</li>
+</ol>
+
+<p>如何阻止百度作恶:</p>
+
+<ol>
+<li>引入竞争机制,如扶持如搜狗、盘古等搜索等,最好是与 google 等国外搜索达成协议引入中国[21]</li>
+<li>加强相关的法制建设，如核定推广为广告</li>
+<li>加强相关的宣传,如相关的医疗专业论坛、医院主网加强相关的医疗知识的介绍，而非公式化的介绍某某人</li>
+<li>民众加强相关的博弈思维[22]</li>
+</ol>
+
+<h2 id="结语">结语</h2>
+
+<p>权力往往是一把双刃剑，用得好强身健体，用不好反伤自身。任何互联网企业的权力，从本质上来说都是网民赋予的。对于百度来说，
+网民之所以选择它、信任它，就在于它的公正客观，在于它的创新服务能力。对这种对网民信任的珍惜、对企业核心竞争力的把握，
+虽然不能瞬间获利，却能拒绝金钱权力的诱惑、杜绝杀鸡取卵式的发展。反之，如果在价值观上产生偏颇，被财富和权力冲昏了头脑，
+利用此前积累的公信力和市场地位唯利是图、选择短期行为，必将为广大网民所抛弃</p>
+
+<p>参考资料：<br />
+[1]<a href="http://bbs.tianya.cn/post-free-2645688-1.shtml">上万站长PK百度，反百度联盟站长霸气回复百度律师函</a><br />
+[2]<a href="https://zh.wikipedia.org/wiki/%E7%99%BE%E5%BA%A6%E7%AB%9E%E4%BB%B7%E6%8E%92%E5%90%8D%E4%BA%8B%E4%BB%B6">百度竞价排名事件 - 维基百科，自由的百科全书</a>
+[3]<a href="http://news.cntv.cn/special/uncommon/11/0818/">百度，垄断下的恶</a><br />
+[4]<a href="https://www.zhihu.com/question/39322261">如何看待百度将「血友病吧」吧主撤掉并售卖贴吧的行为？</a><br />
+[5]<a href="https://www.zhihu.com/question/39399139">如何看待百度将血友病吧归还给原吧主？是一次网民的胜利吗？</a><br />
+[6]<a href="https://www.zhihu.com/question/45366101">怎样看待 360 搜索再次宣布放弃一切消费者医疗商业推广业务？</a><br />
+[7]<a href="https://www.zhihu.com/question/45109599">如何看待「每一个入职百度的程序员都会被钉在互联网的耻辱柱上」这句话？</a><br />
+[8]<a href="https://www.zhihu.com/question/34430247">作为医生，你有哪些「一般人我都告诉他，但他都不听啊」的忠告？</a><br />
+[9]<a href="https://www.zhihu.com/question/45149434">医生们如何评价魏则西事件？</a><br />
+[10]<a href="https://www.zhihu.com/question/43677446">魏则西由生病到离世，给你带来的人生思考有哪些？</a><br />
+[11]<a href="http://www.xin4jie.com/youhaucelue/2298.html">2016国内搜索引擎市场份额</a><br />
+[12]<a href="http://www.hongjier.cn/news_599.htm">2016年中国网民的数量有多少？已超过6.68亿！</a><br />
+[13]<a href="https://zh.wikipedia.org/wiki/%E5%AF%B9%E7%99%BE%E5%BA%A6%E7%9A%84%E4%BA%89%E8%AE%AE">对百度的争议</a><br />
+[14]<a href="https://www.zhihu.com/question/20381615">谷歌的搜索结果有竞价排名么？如果有，和百度有什么区别？</a><br />
+[16]<a href="https://www.zhihu.com/question/23539856/answer/32283151">哪些民营医院（包括被承包的公立医院）属于「莆田系」？</a><br />
+[17]<a href="http://www.epochtimes.com/gb/16/5/4/n7803246.htm">连清川：百度，垄断者的暴政</a><br />
+[18]<a href="https://www.zhihu.com/question/39322261/answer/90524960">百度贴吧买卖过程解析</a><br />
+[19]<a href="https://www.zhihu.com/question/39365642/answer/81051699" title="制度建设">批评百度的同时要看到如何防止</a><br />
+[20]<a href="https://www.zhihu.com/question/39322261/answer/81667900">小屠龙术：携程售假、百度吸血——论如何用效率与公平的博弈论与互联网巨头掰手腕</a>
+[21]<a href="https://www.zhihu.com/question/39448356/answer/98454953">百度能够作恶是来自环境，我们的纵容</a><br />
+[22]<a href="https://www.zhihu.com/question/39322261/answer/81667900" title="博弈论分析，GOOD">小屠龙术：携程售假、百度吸血——论如何用效率与公平的博弈论与互联网巨头掰手腕</a></p>
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="left">日期</th>
+<th align="left">调整内容</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">2016年5月3日</td>
+<td align="left">初创</td>
+</tr>
+</tbody>
+</table>
+</content>  
+
+
+  <div class="article-ref-nav">
+     
+      <div class="prev" >
+        <a href="https://yidaofei.com/post/20181013-love-calligraphy-base-knowledge/"><i class="fa fa-angle-double-left"></i>&nbsp;书法基础认知  </a>
+      </div>
+    
+     
+      <div class="next" >
+      	<a href="https://yidaofei.com/post/20150620-financial-management-how-buy-insurance/">如何购买保险&nbsp;<i class="fa fa-angle-double-right"></i></a>
+      </div>
+     
+  </div> 
+</article> 
+
+ 
+<div class="main-content article-card">
+   
+  
+
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeicn/yidaofeicnHugoBlog-utterances"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+
+</div>
+ 
+ 
+
+
+ 
+ 
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#相关争议">相关争议</a>
+<ul>
+<li><a href="#央视竞价排名黑幕">央视竞价排名黑幕</a></li>
+<li><a href="#血友吧事件-http-finance-qq-com-a-20160112-061586-htm"><a href="http://finance.qq.com/a/20160112/061586.htm">血友吧事件</a></a></li>
+<li><a href="#魏泽西事件">魏泽西事件</a></li>
+<li><a href="#国家网信办进驻结果">国家网信办进驻结果</a></li>
+</ul></li>
+<li><a href="#不成熟的看法">不成熟的看法</a>
+<ul>
+<li><a href="#baidu是网络信息的第一道筛子">baidu是网络信息的第一道筛子</a></li>
+<li><a href="#竞价排名是恶吗">竞价排名是恶吗</a></li>
+<li><a href="#为何这么疯狂">为何这么疯狂？</a></li>
+</ul></li>
+<li><a href="#结语">结语</a>
+<ul>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
+
+ 
+<footer class="bg-dark  text-center site-footer ">
+  <div class="social" > 
+     
+          <a href=" mailto:yidaofeicn@gmail.com "><i class="fa fa-envelope-open-o"></i></span></a>
+      
+       
+          <a href=" https://github.com/yidaofeicn "  ><i class="fa fa-github"></i></span></a>
+      
+    
+      
+                <a href="https://yidaofei.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml" target="_blank"> <i class="fa fa-rss"></i>
+                </a>
+          </div>
+   
+  <div class="copyright"  >
+    Powered by &nbsp;<a href="https://gohugo.io/">Hugo</a>&nbsp;|&nbsp;
+    Theme-<a href="">Flybird</a>  
+  </div>
+  <div class="copyright">
+      <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">© 自由转载-非商用-非衍生-保持署名</a>
+  </div> 
+  <div class="copyright"> 
+
+      
+    
+      <span id="busuanzi_container">
+        访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+</footer>
+
+<div id="bottom-element" data-title="定位底部"></div>
+
+ 
+
+
+<script type="text/javascript" color="#1D1D1D" opacity='1' zIndex="-2" count="400" src="https://yidaofei.com//thirdParty/canvasnest/canvas-nest.js"></script>
+
+
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/smooth-scroll/smooth-scroll.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+ 
+</style>
+</body>
+</html>
+
+
+ 

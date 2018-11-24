@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on  易道非 Blog</title>
+    <link>https://yidaofei.com/tags/hugo/</link>
+    <description>Recent content in Hugo on  易道非 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 19 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://yidaofei.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo 集成 Algolia 搜索</title>
+      <link>https://yidaofei.com/post/20181119-hugo-algolia-search/</link>
+      <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181119-hugo-algolia-search/</guid>
+      <description>&lt;p&gt;Algolia 是为你的 APP 或者网站添加搜索的最佳方式。 开发人员可以使用 API 上传并同步希望搜索的数据，
+然后可以进行相关的配置，比如产品转化率等等。可以使用 InstantSearch 等前端框架进行自定义搜索，为
+用户创造最佳的搜索体验&lt;/p&gt;
+
+&lt;p&gt;本文主要参考&lt;a href=&#34;https://www.qikqiak.com/post/hugo-integrated-algolia-search/&#34; title=&#34;Hugo 集成 Algolia 搜索&#34;&gt;Hugo 集成 Algolia 搜索&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;前半部分关于 Algolia 官网操作细节请大家直接访问上面的参考文章，本文主要是针对性补充相关的元素：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;增加关于配合 JS：&lt;a href=&#34;https://github.com/algolia/autocomplete.js/&#34;&gt;autocomplete.js&lt;/a&gt; 相关说明&lt;/li&gt;
+&lt;li&gt;“ ADMIN API Key”等可动态配置&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>个人建站-Hugo-快速开始</title>
+      <link>https://yidaofei.com/post/20181108-hugo-quick-start/</link>
+      <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181108-hugo-quick-start/</guid>
+      <description>&lt;p&gt;个人博客建站大致可以分为两类：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;动态博客&lt;/li&gt;
+&lt;li&gt;静态博客&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;动态博客典型的代表就是：WordPress、Ghost 以及类似静态 FarBox
+静态博客典型的代表就是：Jekyll、Hexo、Hugo&lt;/p&gt;
+
+&lt;p&gt;如果仅仅用于个人写作无任何定制化需求推荐使用 Farbox，&lt;a href=&#34;https://www.zhihu.com/question/21981094/answer/23750005&#34;&gt;Why?-5分钟了解 Farbox&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;如果是用于个人写作且愿意部分定制化的推荐 Hugo，Why?-安装难度小、文档齐全、&lt;a href=&#34;https://mrcpp.com/hexo-and-hugo-generate-10000-article-speed-comparisons/&#34;&gt;生成速度最快&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;如果是用于商业等网站构建，可以使用 WordPress，教程多、插件齐全、功能多&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JavaScript-重建 hugo 侧边导航栏 TOC</title>
+      <link>https://yidaofei.com/post/20181107-js-rebuild-hugo-sider-toc/</link>
+      <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181107-js-rebuild-hugo-sider-toc/</guid>
+      <description>&lt;p&gt;本文主要解决以下问题：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;控制 hugo TOC 展现层次，如只显示前3层&lt;/li&gt;
+&lt;li&gt;美化 hugo TOC 样式&lt;/li&gt;
+&lt;li&gt;采用点击弹出层的方式呈现&lt;/li&gt;
+&lt;li&gt;页面锚点与导航栏同步&lt;/li&gt;
+&lt;li&gt;优化锚点跳转页面滑动效果&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;相关主体代码地址：&lt;a href=&#34;https://gist.github.com/yidaofeicn/1575ee1fb853f5281f535e72b0fa8d91&#34;&gt;https://gist.github.com/yidaofeicn/1575ee1fb853f5281f535e72b0fa8d91&lt;/a&gt;
+具体效果点击&lt;strong&gt;右边的锚点按钮&lt;/strong&gt;就可体验
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

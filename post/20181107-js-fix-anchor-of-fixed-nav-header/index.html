@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <meta charset="UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" >
+
+  
+  
+    
+    <meta charset="utf-8" name="keywords" content="固定导航栏,页面锚点,偏差," > 
+  
+   
+  <meta charset="utf-8" name="description" content="问题现象：点击侧面 TOC 的链接跳转到锚点内容的下方，在手机浏览器上效果偏移更大
+分析现象：参考相关资料后并对应网站是由于 头部导航栏采用的绝对布局——固定在顶部，页面上滑动的距离需要减去头部导航栏的高度
+解决方法：在页面锚点上前加上一个隐藏的 &lt;a&gt; 标签，采用相对布局固定在锚点上方，并设定相关的 top数据
+
+" >
+  
+  
+    <meta name="author" content="易道非">
+  
+  
+    
+        <link rel="icon" type="image/png" href="https://yidaofei.com//image/favicon-32x32.png" > 
+    
+  
+  
+  
+  
+  <title>JavaScript-修复由导航栏固定导致的页面锚点偏差 Bug- 易道非 Blog</title> 
+ 
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/fontawesome/css/font-awesome.min.css">
+
+   
+   
+  <script type="text/javascript" src="https://yidaofei.com/js/jquery-3.3.1.js"></script> 
+  <script type="text/javascript" src="https://yidaofei.com/js/jquery-ui.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/scrollToTopBottom/jquery.elevator.min.css">
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/scrollToTopBottom/jquery.elevator.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.css">
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.js"></script> 
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/algoliasearch/algoliasearch.min.js"></script>
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/algoliasearch/autocomplete.jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/algoliasearch/algolia-autocomplete.css">
+  <script type="text/javascript" src="https://yidaofei.com/thirdParty/remodal/remodal.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/remodal/remodal.css">
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/remodal/remodal-default-theme.css" >
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js"></script>
+ 
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+
+  
+  <link href="https://yidaofei.com//css/bootstrap/bootstrap.css" rel="stylesheet" >  
+  <script src="https://yidaofei.com//js/bootstrap.min.js"></script>
+   
+  
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/prismjs/prism.css">
+  <script type="text/javascript" src="https://yidaofei.com//thirdParty/prismjs/prism.js"></script>
+  
+  
+  
+  <script type="text/javascript" src="https://yidaofei.com//js/flybird.js"></script> 
+  <script type="text/javascript" src="https://yidaofei.com//js/main.js"></script> 
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css" >
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/markdown.css" >  
+   
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-126184892-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+<body> 
+ 
+
+ 
+<div id="top-element" data-title="到达顶点"></div>
+
+<header class="container-fluid row site-header">  
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top scrolling-navbar top-nav-collapse"> <div class="col-md-3 offset-md-1">   
+       
+        <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="site-title">
+        <a class=" navbar-brand " href="https://yidaofei.com/" title=" 易道非 Blog"> 
+               
+              
+            <img class="header-logoImg" title="logoImg" src="https://yidaofei.com//image/logo.png" >
+           
+
+               易道非 Blog
+          </a> 
+        </div>  
+    </div>  
+      <div class="col-md-5 offset-md-2  collapse navbar-collapse" id="collapsibleNavbar" >
+        <ul class="navbar-nav">
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/">Home</a>
+              </li>
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/categories/">Categories</a>
+              </li>
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/tags">Tags</a>
+              </li>
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/wiki">Wiki</a>
+              </li>
+            
+              <li class="nav-item site-header-navItem text-center" >
+                <a class="nav-link" href="/about">About</a>
+              </li>
+            
+
+            
+              <li class="nav-item site-header-navItem text-center">
+                 
+                   <a href="#searchinput" class="nav-link">search</a>  
+                </li>
+             
+
+          </ul>   
+      </div>   
+  </nav>  
+</header>
+
+ 
+ 
+
+
+
+<div class="remodal" data-remodal-id="searchinput" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> 
+  <span id="algoliaData" style="display:none;" data-appid="NYC6MHRISW" 
+		data-searchkey="7f131a263a8820645ee9fc65ed97b22f" 
+		data-initindex="github-yidaofeicnBlog"></span>
+
+<div class="search-input-card" >
+    <input type="search" id="search-input" class="search-input" placeholder="Search for titles or URIs..." name="search" autocomplete="off" />
+     <span class="input-search-icon"><i class="fa fa-search"></i></span> 
+</div>
+
+ 
+
+ 
+   
+</div> 
+
+
+
+<article class="main-content markdown article-card">
+	<header class="article-header"> 
+	   <p class="article-title">JavaScript-修复由导航栏固定导致的页面锚点偏差 Bug</p>
+   		<div class="article-meta">
+			
+			<div>
+				<i class="fa fa-calendar" >
+					2018年11月07日
+				</i> 
+			</div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://yidaofei.com/categories/javascript">JavaScript</a> 
+				   
+				</i>  
+			</div>
+			
+			 
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-tags">&nbsp;Tags:
+				
+					<a href="https://yidaofei.com/tags/javascript">JavaScript</a>
+	    		
+					<a href="https://yidaofei.com/tags/bug">Bug</a>
+	    		
+					<a href="https://yidaofei.com/tags/toc">TOC</a>
+	    		
+	    		</i>   
+			</div> 
+		</div>  
+	</header>  
+	<content><p>问题现象：点击侧面 TOC 的链接跳转到锚点内容的下方，在手机浏览器上效果偏移更大
+分析现象：参考相关资料后并对应网站是由于 <strong>头部导航栏采用的绝对布局——固定在顶部</strong>，页面上滑动的距离需要减去头部导航栏的高度
+解决方法：在页面锚点上前加上一个隐藏的 <code>&lt;a&gt;</code> 标签，采用相对布局固定在锚点上方，并设定相关的 <code>top</code>数据</p>
+
+<p></p>
+
+<hr />
+
+<h3 id="css-方案与原理">CSS 方案与原理</h3>
+
+<p>本文主要<a href="#ref3">参考资料3</a>，具体逻辑为：</p>
+
+<ol>
+<li>在页面html中需要锚定的位置(可以有任意多个）插入锚点a，锚点拥有id和class</li>
+<li>固定导航栏之后第一个元素增加 <code>margin-top</code> 要素</li>
+</ol>
+
+<p>展示demo 优化简化如下：</p>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Anchor And Position Fixed Solutions&lt;/title&gt;
+  &lt;script src=&quot;http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+
+  /*演示使用*/
+    $(document).ready(function(){
+      $(&quot;#reset&quot;).click(reset);
+      $(&quot;#avoidContentHidden&quot;).click(avoidContentHidden);
+      $(&quot;#linkSolution1&quot;).click(linkSolution1);
+    });
+    function reset() {
+      location.reload();
+    }
+
+    function avoidContentHidden () {
+      $(&quot;#content&quot;).addClass(&quot;avoidContentHidden&quot;);
+    }
+
+    function linkSolution1 (){
+      $(&quot;.anchor&quot;).addClass(&quot;anchor_fixed&quot;);
+      $(&quot;#content&quot;).addClass(&quot;avoidContentHidden&quot;)
+    }
+  &lt;/script&gt;
+
+  &lt;style type=&quot;text/css&quot;&gt;
+    #header {
+      height: 120px;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+
+      background-color: #722873;
+      text-align: center;
+      font-size: 2.1rem;
+      line-height: 30px;
+      color: white;
+    }
+
+    #nav {
+      margin-top: 10px;
+    }
+
+    #nav span {
+      font-size: 1.2rem;
+      padding: 0 10px;
+    }
+
+    #nav span:hover {
+      background-color: #888;
+    }
+
+    #header span a {
+      text-decoration: none;
+      color: white;
+
+    }
+
+    .section {
+      background-color: #ccc;
+      min-height: 300px;
+    }
+
+    /*核心样式*/
+    .anchor_fixed{
+      display: block;
+      position: relative;
+      top: -120px;  /*首部元素高度*/
+      visibility: hidden;
+    }
+
+    #header button {
+      margin: 0 10px;
+    }
+    #section1 {
+      background-color: #999;
+    }
+
+    #section2 {
+      background-color: #FFF;
+    }
+
+    #section3 {
+      background-color: #eee;
+    }
+
+    /*
+      核心样式
+      使header之后的元素被遮盖，
+      此外，也避免过于靠前的元素在通过锚点跳转时仍然出现遮盖的情况*/
+    .avoidContentHidden {
+      margin-top: 120px;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;header&quot;&gt;
+  This is header with fixed position!
+  &lt;div id=&quot;nav&quot;&gt;
+    &lt;span&gt;&lt;a href=&quot;#section1_anchor&quot;&gt;瞬移至区域1&lt;/a&gt;&lt;/span&gt;&lt;span&gt;&lt;a href=&quot;#section2_anchor&quot;&gt;瞬移至区域2&lt;/a&gt;&lt;/span&gt;&lt;span&gt;&lt;a href=&quot;#section3_anchor&quot;&gt;瞬移至区域3&lt;/a&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;button id=&quot;reset&quot;&gt;重置&lt;/button&gt;&lt;button id=&quot;avoidContentHidden&quot;&gt;正文不被遮盖&lt;/button&gt;&lt;button id=&quot;linkSolution1&quot;&gt;准确定位1&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&quot;content&quot; class=&quot;&quot;&gt;
+  &lt;a class=&quot;anchor&quot; id=&quot;section1_anchor&quot;&gt;&lt;/a&gt;
+  &lt;div id=&quot;section1&quot; class=&quot;section&quot;&gt;
+    &lt;h3&gt;区域1&lt;/h3&gt;
+    &lt;br/&gt;
+    
+  &lt;/div&gt;
+  &lt;a class=&quot;anchor&quot; id=&quot;section2_anchor&quot;&gt;&lt;/a&gt;
+  &lt;div id=&quot;section2&quot; class=&quot;section&quot;&gt;
+    &lt;h3&gt;区域2&lt;/h3&gt;
+    &lt;p&gt;
+    对于页面首部使用position:fixed的场景（保持首部滚动过程中始终出现在可视区），将导致首部之下的页面正文内容Content部分内容被header遮盖。
+    &lt;/p&gt;
+    如果仅仅是为了使页面正文Content不被遮盖，为content加一个margin-top为header高度即可。请点击“正文不被遮盖”按钮查看效果。
+    &lt;p style=&quot;color: red; font-weight: bolder;&quot;&gt;&lt;em&gt;问题解决了吗？ NO！&lt;/em&gt;&lt;/p&gt;
+    接下来点击页面首部导航标签“区域1”或者“区域2”，期待的效果是页面滑动，相应区域进入可视区，但实际效果是：区域内容同样被header覆盖而不可见。
+    &lt;h3&gt;如何解决在这种场景下，页面内标签跳转正确定位的问题&lt;/h3&gt;
+    &lt;hr/&gt;
+    &lt;p&gt;
+      &lt;p style=&quot;color: red; font-weight: bolder;&quot;&gt;&lt;em&gt;方案1&lt;/em&gt;&lt;/p&gt;
+      在页面html中需要锚定的位置(可以有任意多个）插入锚点a，锚点拥有id和class，比如
+      &lt;pre style=&quot;color: red;&quot;&gt; &lt;code&gt;id=&quot;content&quot; class=&quot;anchor_fixed&quot;&lt;/code&gt;&lt;/pre&gt;
+      
+      样式为：
+      &lt;pre style=&quot;color: red;&quot;&gt;
+        &lt;code&gt;
+          .anchor_fixed{
+            display: block;
+            position: relative;
+            top: -120px;  
+            visibility: hidden;
+          }
+        &lt;/code&gt;
+      &lt;/pre&gt; 
+
+      通俗地讲：增加一个不可见锚点元素，令其在锚点跳转时处于页面顶部，但因为该不可见的锚点元素通过相对定位向前偏移了一定高度，使得真正要展示的元素在锚点元素之后，因为该高度而避开了header的遮盖。完成上述配置后，可以实现大多数情况下的锚点跳转修正。那什么情况下的跳转做不到呢?
+      
+      &lt;p style=&quot;color: red; font-weight: bolder;&quot;&gt;如果第一个锚点元素之前没有其他元素（或者有其他元素但这些元素所占高度小于header的高度），此时通过该方案仍然会出现被遮盖的情况&lt;/p&gt;
+      
+      &lt;p style=&quot;color: red; font-weight: bolder;&quot;&gt;&lt;em&gt;方案2：修正方案&lt;/em&gt;&lt;/p&gt;
+      布局上紧跟着header之后的元素，增加一个margin-top属性，其高度为header的高度。在本demo中，header之后的首个元素是content，我们为content增加该样式：
+      margin-top: 120px;
+    &lt;/p&gt;
+    &lt;p&gt;
+      点击”准确定位1“按钮，查看效果
+    &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;a class=&quot;anchor&quot; id=&quot;section3_anchor&quot;&gt;&lt;/a&gt;
+  &lt;div id=&quot;section3&quot; class=&quot;section&quot;&gt;
+    &lt;h3&gt;区域3&lt;/h3&gt;
+    &lt;p&gt;这是一个纯打酱油的区域！&lt;/p&gt;
+  &lt;/div&gt; 
+&lt;/div&gt;
+&lt;div id=&quot;footer&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+
+<h3 id="进一步进阶方案">进一步进阶方案</h3>
+
+<p>采用 JQUERY 动态获取头部的高度，<code>margin-top</code> 参数全部采用 JQUERY 设定，相关代码如下：</p>
+
+<p>JavaScript 代码</p>
+
+<pre><code class="language-javascript">/**
+修复由于 导航栏 固定引发的侧边栏定位不准问题
+ 
+@param siteNavSelector：必需 固定导航栏选择器 
+@param mainContentSelector：必需 主体内容选择器，即上文中的固定导航栏第一个元素
+@param anchorSelector:必需  锚点选择器
+**/
+function fixTocAnchor(siteNavSelector,mainContentSelector,anchorSelector,dealMainContentMT){
+  //获取固定浮动头部的高度
+  var headerHeight=$(siteNavSelector).outerHeight(true);
+  //处理主体内容偏差
+  if(dealMainContentMT){ 
+    var mainContentMT=$(mainContentSelector).css(&quot;margin-top&quot;);
+    $(mainContentSelector).css(mainContentMT+headerHeight);
+  }
+
+  //处理锚点，在锚点之前插入一个隐形的锚点，并将锚点的ID去掉结束锚点属性
+  var styleStr=&quot;display: block;  position: relative;  top:-&quot;+headerHeight+&quot;px;&quot; 
+  var anchorTag=null; 
+
+  var anchorArray=$(anchorSelector);
+  $.each(anchorArray, function(index, anchor) {
+       if($(anchor).attr(&quot;id&quot;)!=null &amp;&amp; $(anchor).attr(&quot;id&quot;).length&gt;0 ){
+          anchorTag=$(&quot;&lt;a&gt;&lt;/a&gt;&quot;).attr(&quot;id&quot;,$(anchor).attr(&quot;id&quot;)).attr(&quot;style&quot;,styleStr).addClass(&quot;TocAnchor&quot;);
+          
+          $(anchor).before(anchorTag);
+          $(anchor).attr(&quot;id&quot;,&quot;&quot;);
+       }
+   });  
+}
+</code></pre>
+
+<h3 id="参考资料">参考资料</h3>
+
+<p>[1]<a href="https://www.jianshu.com/p/3a4c40d31e5b">CSS 使用CSS3解决因“固定定位”造成页面内锚点跳转内容被遮盖的问题（一）</a>:隐藏标签解决<br />
+[2]<a href="https://www.jianshu.com/p/142571d449d0">CSS 使用CSS3解决因“固定定位”造成页面内锚点跳转内容被遮盖的问题（二）</a>：伪类解决，可能存在样式问题
+[3]<a href="ref3"><a href="https://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header">offsetting an html anchor to adjust for fixed header duplicate</a>
+</a></p>
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Version</th>
+<th align="center">Action</th>
+<th align="center">Time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1.0</td>
+<td align="center">init</td>
+<td align="center">2018-11-07</td>
+</tr>
+</tbody>
+</table></content>  
+
+
+  <div class="article-ref-nav">
+     
+      <div class="prev" >
+        <a href="https://yidaofei.com/post/20181108-hugo-quick-start/"><i class="fa fa-angle-double-left"></i>&nbsp;个人建站-Hugo-快速开始  </a>
+      </div>
+    
+     
+      <div class="next" >
+      	<a href="https://yidaofei.com/post/20181018-driver-part3/">2018深圳驾照水头考场科目三教程&nbsp;<i class="fa fa-angle-double-right"></i></a>
+      </div>
+     
+  </div> 
+</article> 
+
+ 
+<div class="main-content article-card">
+   
+  
+
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeicn/yidaofeicnHugoBlog-utterances"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+
+</div>
+ 
+ 
+
+
+ 
+ 
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#css-方案与原理">CSS 方案与原理</a></li>
+<li><a href="#进一步进阶方案">进一步进阶方案</a></li>
+<li><a href="#参考资料">参考资料</a></li>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
+
+ 
+<footer class="bg-dark  text-center site-footer ">
+  <div class="social" > 
+     
+          <a href=" mailto:yidaofeicn@gmail.com "><i class="fa fa-envelope-open-o"></i></span></a>
+      
+       
+          <a href=" https://github.com/yidaofeicn "  ><i class="fa fa-github"></i></span></a>
+      
+    
+      
+                <a href="https://yidaofei.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml" target="_blank"> <i class="fa fa-rss"></i>
+                </a>
+          </div>
+   
+  <div class="copyright"  >
+    Powered by &nbsp;<a href="https://gohugo.io/">Hugo</a>&nbsp;|&nbsp;
+    Theme-<a href="">Flybird</a>  
+  </div>
+  <div class="copyright">
+      <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">© 自由转载-非商用-非衍生-保持署名</a>
+  </div> 
+  <div class="copyright"> 
+
+      
+    
+      <span id="busuanzi_container">
+        访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+</footer>
+
+<div id="bottom-element" data-title="定位底部"></div>
+
+ 
+
+
+<script type="text/javascript" color="#1D1D1D" opacity='1' zIndex="-2" count="400" src="https://yidaofei.com//thirdParty/canvasnest/canvas-nest.js"></script>
+
+
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/smooth-scroll/smooth-scroll.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+ 
+</style>
+</body>
+</html>
+
+
+ 

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>软件技巧 on  易道非 Blog</title>
+    <link>https://yidaofei.com/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7/</link>
+    <description>Recent content in 软件技巧 on  易道非 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 10 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://yidaofei.com/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Github Flavored Markdown</title>
+      <link>https://yidaofei.com/wiki/20181110-wiki-markdown-of-github-flavored-markdown/</link>
+      <pubDate>Sat, 10 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/wiki/20181110-wiki-markdown-of-github-flavored-markdown/</guid>
+      <description>&lt;h2 id=&#34;markdown简易教程&#34;&gt;Markdown简易教程&lt;/h2&gt;
+
+&lt;p&gt;Markdown 是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法实现「易读易写」。&lt;/p&gt;
+
+&lt;h3 id=&#34;markdown-与-html&#34;&gt;markdown 与 html&lt;/h3&gt;
+
+&lt;p&gt;Markdown 的语法有个主要的目的：用来作为一种网络内容的写作语言&lt;/p&gt;
+
+&lt;p&gt;Markdown 不是要来取代 HTML，甚至也没有要和他相似，他的语法种类不多，只和 HTML 的一部分有关系，他的重点不是
+要创造一种更容易写作 HTML 的语法，我认为 HTML 已经很容易写了，Markdown的重点在于，他能让文件更加容易阅读，
+编写。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;HTML 是一种发布的格式，Markdown 是一种编写的格式&lt;/strong&gt;，因此，Markdown 的格式语法只涵盖文字可以涵盖的范围。
+不在Markdown 涵盖范围之外的标签，都可以直接在文件中用 HTML 撰写，不需要额外标注这是 HTML 或是 Markdown
+只要直接加标签就可以了。&lt;/p&gt;
+
+&lt;p&gt;只有区块元素如&lt;code&gt;&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;等标签，必须在前后加空行，以利于内容区隔。而且这些元素的开始结束标签，不可以用 Tab 或空白来缩排。Markdown 的生产器有智慧型判断，可以避免在区块前后加上没必要的 &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; 标签。&lt;/p&gt;
+
+&lt;p&gt;举例来所，在 Markdown 文件加上一段 HTML 表格：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;This is a regular paragraph.
+
+&amp;lt;table&amp;gt;
+    &amp;lt;tr&amp;gt;
+        &amp;lt;td&amp;gt;Foo&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+&amp;lt;/table&amp;gt;
+
+This is another regular paragraph.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;请注意，Markdown 语法在 HTML 区块标签中将不会被进行处理——例如你无法在 HTML 区块内使用 Markdown 形式的 &lt;code&gt;**情调**&lt;/code&gt; 。
+HTML的区段标签如 &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;cite&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;del&amp;gt;&lt;/code&gt; 則不受限制，可以在 Markdown 的段落、清单或是标题内任意使用。&lt;/p&gt;
+
+&lt;p&gt;依照個个人习惯，甚至可以不用 Markdown格式，而采用 HTML 标签來格式化。举例说明：如果比较喜欢 HTML 的 &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; 或 &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; 标签，可以直接使用这些标签，而不用 Markdown 提供的链接或是图像标签语法。
+HTML区段标签和区块标签不同，在区段标签的范围內，Markdown的语法是有效的。&lt;/p&gt;
+
+&lt;p&gt;PS：以上内容全部 COPY 于&lt;a href=&#34;https://markdown.tw/&#34;&gt;原生 markdown 基础语法-繁体版&lt;/a&gt;概述部分，感觉说的很透！&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>小米5S TWRP 刷机教程</title>
+      <link>https://yidaofei.com/post/20181013-software-skills-mi5s-twrp-brush/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181013-software-skills-mi5s-twrp-brush/</guid>
+      <description>&lt;p&gt;以下所有的操作全部是基于 Mi5S,此方法主要是用于如 MIUI 俄罗斯、魔趣等第三方 ROM&lt;/p&gt;
+
+&lt;p&gt;【注意】：Mi5S 等官方有 Bootloader 锁的机型请先向官方申请解锁，未解锁的手机是无法透过 Fastboot 对手机刷入 Recovery 的&lt;br /&gt;
+解锁请参考文章：&lt;a href=&#34;http://www.miui.com/unlock/&#34;&gt;http://www.miui.com/unlock/&lt;/a&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>搭建 shadowsocks 翻墙教程</title>
+      <link>https://yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/</guid>
+      <description>第一步 购买 VPS 如果纯粹作为翻墙使用建议购买 bandwagon 具体的入口可以可以参考搬瓦工 VPS ,选择最便宜的年 $ 19.99 方案（ KVM 架构）即可 第二步 搭建 shadowsocks 服务器端 进入 VPS 管理页面 MyService-&amp;gt;服务器实例-&amp;gt;kiwivm Control Panel 下载 Xshell Xshell-360 终端安装 shadowsocks 服务器 Step 1：配</description>
+    </item>
+    
+    <item>
+      <title>Gitbook 教程</title>
+      <link>https://yidaofei.com/post/20180920-software-skills-gitbook-guide/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20180920-software-skills-gitbook-guide/</guid>
+      <description>&lt;p&gt;GitBook 是一个提供 Markdown 书籍托管的网络平台， 支持通过 git 以及 GitHub 进行文档管理，使用它可以很简单地生
+成、发布电子图书。 同时，GitBook 也是一个 Node.js 命令行工具，可以使用它搭建自己的 GitBook 站点。&lt;/p&gt;
+
+&lt;p&gt;除了命令行程序和 web 服务外，GitBook 官方还提供了 跨平台的编辑器，提供直接编辑、发布电子书的功能， 不过实际上
+仅相当于自启动的 GitBook 控制台程序，并不推荐安装，尤其对于 *nix 系统而言。&lt;/p&gt;
+
+&lt;p&gt;GitBook 网站使用简单，这里就不再赘述了，GitBook 控制台提供强大的本地服务， 自启动的站点能够提供和网站完全一样
+的编辑服务， 对于不方便登录其网站的用户来说非常方便。 GitBook 甚至提供 GitHub hook，在每一次 push 时自动更新
+书籍内容。&lt;/p&gt;
+
+&lt;p&gt;本文章内容为 &lt;a href=&#34;https://yidaofeicn.github.io/softwareGit/gitbook&#34;&gt;Gitbook教程&lt;/a&gt; 简单版，如需要查看更多细节的请访问以上链接。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sublime教程： 第一章 基础配置</title>
+      <link>https://yidaofei.com/post/20180920-software-skills-sublime-base-config/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20180920-software-skills-sublime-base-config/</guid>
+      <description>&lt;p&gt;本文主要是介绍 Sublime text 2 的安装以及基本的包、相关快捷键推荐&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
