@@ -1,6 +1,7 @@
 //定义文章简介以及文章详情部分，文章内容部分全部采用 markdown 内部样式
 .article-card{
 	@include content-card;
+
 	  
 	//文章头部
 	.article-header{
@@ -21,7 +22,7 @@
 		.article-meta{
 			padding: 1em 0;
 		    border-bottom: 1px dashed #cacaca;
-		    margin-bottom: 1em;
+		    margin-bottom: 1rem;
 		    border-top: 1px dashed #cacaca;
 		    margin-top: 2em;
 		    display: flex;
@@ -30,7 +31,8 @@
 		    justify-content: space-around; 
 		}
 	}
-
+	
+	//此图像处理属于 index.html 列表中图像处理，Markdown 渲染的图片放置在 markdown.scss 文件
 	.article-cover{
 	  	margin: 1rem 0;
 	  	margin-bottom: 2rem;
@@ -61,34 +63,38 @@
 			}
 	  }
 	}
+	
+	//文章末尾版权申明
+	.article-copyright{
+		margin: 2em 0 0;
+		padding: 0.5em 1em;
+		border-left: 3px solid #ff1700;
+		background-color: #f9f9f9;
+		list-style: none;
 
-	.article-footer{
-		margin-top: 1.8rem;
-		padding-top: 0.2rem;
-		border-top: 1px dashed #cacaca; 
+		li{
+			list-style: none;
+		}
+	} 
+
+	.article-footer-meta-between{
 		display: flex;
-		justify-content: space-between; 
-
- 			
-		> .ref-prev,> .ref-next{ 
-		  	font-weight: 600;
-		  	font-size: 1rem;
-		  	transition-property: transform;
-		  	transition-timing-function: ease-out;
-		  	transition-duration: 0.3s;
-		  	border-bottom: none;
-		}
-		> .ref-prev{ 
-			 	&:hover{ 
-					transform: translateX(-4px); 
-			 	}
-		}
-		> .ref-next{ 
-			 	&:hover{ 
-					transform: translateX(4px); 
-			 	}
-		}
-	}  
+		justify-content: space-between;
+	}
+	
+	.refArticle-prev,.refArticle-next{
+		font-weight: 600; 
+	  	transition-property: transform;
+	  	transition-timing-function: ease-out;
+	  	transition-duration: 0.3s;
+	  	border-bottom: none;
+	}
+	.refArticle-prev:hover{
+		transform: translateX(-4px); 
+	}
+	.refArticle-prev:next{
+		transform: translateX(4px); 
+	} 
 }
 
 

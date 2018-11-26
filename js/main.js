@@ -29,7 +29,7 @@ $(document).ready(function() {
 	//https://github.com/revir/need-more-share2
 	shareButtonOptions = {
 		//iconStyle: 'box',   
-		position: 'bottomCenter',  
+		position: 'middleLeft',  
 		networks: 'Weibo,Wechat,Douban,Evernote,Facebook,GooglePlus,Linkedin,Tumblr'
 	};
 	new needShareButton('#i-share',shareButtonOptions); 
