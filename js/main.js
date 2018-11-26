@@ -23,8 +23,16 @@ $(document).ready(function() {
  	bindSidebar("#sidebar-main","#sidebar-main-trigger","sidebar-main","right")
 	//处理锚点效果
 	adjustAnchorScrollEffect();
-
+	//导航栏响应式
 	responsiveNav();
+	//分享按钮
+	//https://github.com/revir/need-more-share2
+	shareButtonOptions = {
+		//iconStyle: 'box',   
+		position: 'bottomCenter',  
+		networks: 'Weibo,Wechat,Douban,Evernote,Facebook,GooglePlus,Linkedin,Tumblr'
+	};
+	new needShareButton('#i-share',shareButtonOptions); 
 });
 
 /*
