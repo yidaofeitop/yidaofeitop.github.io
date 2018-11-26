@@ -8,6 +8,7 @@
   
   <url>
     <loc>https://yidaofei.com/todo/</loc>
+    <lastmod>2018-11-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -68,6 +69,11 @@
   <url>
     <loc>https://yidaofei.com/wiki/20181110-wiki-markdown-of-github-flavored-markdown/</loc>
     <lastmod>2018-11-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/todo/201811-todo-hugo/</loc>
+    <lastmod>2018-11-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -219,13 +225,13 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/categories/javascript/</loc>
+    <loc>https://yidaofei.com/tags/javascript/</loc>
     <lastmod>2018-11-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yidaofei.com/tags/javascript/</loc>
+    <loc>https://yidaofei.com/categories/javascript/</loc>
     <lastmod>2018-11-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -285,6 +291,12 @@
   </url>
   
   <url>
+    <loc>https://yidaofei.com/tags/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99/</loc>
+    <lastmod>2018-11-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yidaofei.com/categories/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2018-11-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -315,13 +327,13 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/categories/%E6%8C%87%E7%BA%B9%E9%94%81/</loc>
+    <loc>https://yidaofei.com/tags/%E6%8C%87%E7%BA%B9%E9%94%81/</loc>
     <lastmod>2018-11-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yidaofei.com/tags/%E6%8C%87%E7%BA%B9%E9%94%81/</loc>
+    <loc>https://yidaofei.com/categories/%E6%8C%87%E7%BA%B9%E9%94%81/</loc>
     <lastmod>2018-11-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

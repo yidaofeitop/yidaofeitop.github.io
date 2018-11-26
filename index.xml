@@ -270,6 +270,36 @@ HTML区段标签和区块标签不同，在区段标签的范围內，Markdown�
     </item>
     
     <item>
+      <title>201811 Hugo Todo</title>
+      <link>https://yidaofei.com/todo/201811-todo-hugo/</link>
+      <pubDate>Fri, 09 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/todo/201811-todo-hugo/</guid>
+      <description>&lt;p&gt;本文主要是记录自了解 Hugo 个人建站后真正开始动手使用 Hugo 的相关体验、todo、优化记录！&lt;/p&gt;
+
+&lt;p&gt;在自定义 Hugo 过程中主要参考以下文档，非常感谢这些作者的付出（相关的评论无任何的偏见，仅是阅读的一些体验）&lt;/p&gt;
+
+&lt;h3 id=&#34;关于参考文档推荐&#34;&gt;关于参考文档推荐&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Hugo 从入门到会用 &lt;a href=&#34;https://blog.olowolo.com/post/hugo-quick-start/&#34;&gt;https://blog.olowolo.com/post/hugo-quick-start/&lt;/a&gt;&lt;br /&gt;
+基础使用，了解基本运转原理，不涉及任何的开发&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@github-heartnn Hugo 基础知识：&lt;a href=&#34;https://github.com/heartnn/hugo-theme-test&#34;&gt;https://github.com/heartnn/hugo-theme-test&lt;/a&gt;&lt;br /&gt;
+同上，主要关注点在于通用函数（通用函数建议在看以下第二点推荐之后）&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;pytool：&lt;a href=&#34;http://blog.pytool.com/tags/hugo/&#34;&gt;http://blog.pytool.com/tags/hugo/&lt;/a&gt;&lt;br /&gt;
+相对来说很容易对于 Hugo 相关开发建立基本的认知，推荐看《Hugo 模板template》、《hugo 模板变量》、《个人博客hugo Taxonomy》，看完以上文章对于模板有基础的
+了解就基本可以看懂主题内的 HTML 文档&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;官方文档：&lt;a href=&#34;https://gohugo.io/&#34;&gt;https://gohugo.io/&lt;/a&gt;&lt;br /&gt;
+最全，最详细的，可协同 &lt;a href=&#34;http://www.g-var.com/tags/hugo/&#34;&gt;http://www.g-var.com/tags/hugo/&lt;/a&gt; 阅读&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>个人建站-Hugo-快速开始</title>
       <link>https://yidaofei.com/post/20181108-hugo-quick-start/</link>
       <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
