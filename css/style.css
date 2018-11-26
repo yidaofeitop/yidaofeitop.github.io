@@ -745,7 +745,7 @@ hr {
   margin-left: 1em;
   position: relative;
   color: #4a4a4a;
-  border-left: 5px solid #e95420; }
+  border-left: 3px solid #ff1700; }
 .markdown blockquote:before {
   content: "\201C";
   font-size: 3rem;
@@ -754,8 +754,11 @@ hr {
   top: 10px;
   color: #e95420; }
 .markdown b, .markdown strong {
-  font-weight: 600;
-  color: #ff4081; }
+  font-weight: 700;
+  color: #363636; }
+.markdown em {
+  color: #797979;
+  font-style: italic; }
 .markdown ul, .markdown ol {
   line-height: 1.2rem;
   margin-top: 0.5rem;
@@ -828,6 +831,14 @@ hr {
   color: #5fbf5e;
   margin-top: 16px;
   margin-top: 1rem; }
+.markdown code {
+  padding: 0;
+  padding-top: .2em;
+  padding-bottom: .2em;
+  margin: 0;
+  color: #e83e8c;
+  font-size: .9em;
+  font-family: SFMono-Regular,Liberation Mono,Roboto Mono,Menlo,Monaco,Consolas,Courier New,Courier,monospace; }
 
 .site-header {
   font-size: 1rem;

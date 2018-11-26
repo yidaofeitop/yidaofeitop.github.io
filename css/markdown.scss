@@ -117,7 +117,7 @@
 	    margin-left: 1em;
 	    position: relative; 
 	    color: #4a4a4a; 
-	    border-left: 5px solid #e95420;  
+	    border-left: 3px solid #ff1700;  
 
 	    &:before{ 
 			content: "\201C";
@@ -131,8 +131,12 @@
 	}
 
 	b,strong{
-		font-weight: 600;
-		color:  #ff4081;;
+		font-weight: 700; 
+		color: #363636;
+	}
+	em{
+		color: #797979;
+    	font-style: italic;
 	}
 
 	ul,ol{ 
@@ -235,6 +239,16 @@
 	    margin-top: 16px;
 	    margin-top: 1rem;
 	} 
+	code{
+		padding: 0;
+	    padding-top: .2em;
+	    padding-bottom: .2em;
+	    margin: 0;
+	    color: #e83e8c;
+	    font-size: .9em;  
+	  
+	    font-family: SFMono-Regular,Liberation Mono,Roboto Mono,Menlo,Monaco,Consolas,Courier New,Courier,monospace;
+	}
 }
 
 
