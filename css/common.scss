@@ -201,29 +201,34 @@ hr{
 		border-color: #4285f4; 
 		background-color: transparent;
 	}
-}
-
-
-
+} 
 //响应式
+@media(max-width:576px){ 
+    .article-card,.categories-card,.tag-card,.comment-card{
+      padding: 2rem 1rem; 
+    }
+    .pagination{ 
+      padding-left:.5rem ;
+    }
+}
 @media (min-width: 576px) {
   .main-content-container {
     max-width: 540px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 2rem 1rem;   
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 1rem;   
   }
   .pagination-content-container{  
     max-width: 540px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 1rem; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; 
   }
   .article-card,.categories-card,.tag-card,.comment-card{
   	padding: 2rem 1.5rem; 
   }
   .pagination{ 
-	padding-left:.5rem ;
+	  padding-left:.5rem ;
   }
 }
 
@@ -231,20 +236,20 @@ hr{
   .main-content-container {
     max-width: 720px;
     margin-left: auto;
-	margin-right: auto; 
-	padding: 2rem 1rem;  
+    margin-right: auto; 
+    padding: 2rem 1.5rem;  
   }
   .pagination-content-container{  
     max-width: 720px;
     margin-left: auto;
-	margin-right: auto; 
-	padding-left: 1rem; 
+    margin-right: auto; 
+    padding-left: 1rem; 
   }
   .article-card,.categories-card,.tag-card,.comment-card{
-  	padding: 2rem 1.5rem; 
+  	padding: 2rem 3rem; 
   }
   .pagination{ 
-	padding-left:.5rem ;
+	 padding-left:.5rem ;
   }
 }
 
@@ -273,13 +278,13 @@ hr{
   .main-content-container {
     max-width: 1140px;
     margin-left: auto;
-	margin-right: auto;
+	  margin-right: auto;
     padding: 2rem 3rem;  
   }
   .pagination-content-container{
-	max-width: 1140px; 
+	  max-width: 1140px; 
     margin-left: auto;
-	margin-right: auto;
+	  margin-right: auto;
     padding-left: 3rem; 
   }
   .article-card,.categories-card,.tag-card,.comment-card{

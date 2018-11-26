@@ -79,20 +79,21 @@
 
 	.article-footer-meta-between{
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-between; 
 	}
 	
-	.refArticle-prev,.refArticle-next{
-		font-weight: 600; 
-	  	transition-property: transform;
-	  	transition-timing-function: ease-out;
-	  	transition-duration: 0.3s;
-	  	border-bottom: none;
+	.refArticle-prev,.refArticle-next{ 
+		padding-bottom: 1rem; 
+		margin-left:0.5rem;
+		overflow:hidden;  
+	  	text-overflow:ellipsis; 
+	  	white-space:nowrap;   
+	  	display: block;
 	}
 	.refArticle-prev:hover{
 		transform: translateX(-4px); 
 	}
-	.refArticle-prev:next{
+	.refArticle-next:hover{
 		transform: translateX(4px); 
 	} 
 }

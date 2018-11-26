@@ -2,8 +2,10 @@ $(document).ready(function() {
 	//页面通用需要调整
 	//建立搜索
 	establishSearch("#search-input");
-	//处理列表页面的图片
+	//处理 markdown 内部的图片
 	 addClassTagParent(".markdown","img","p","article-img"); 
+	//处理 markdown 内部的 Iframe 框架
+	$(".markdown").find("iframe").removeAttr("height").removeAttr("width").addClass('videoIframe');
  	//处理分类页面的导航栏
 	adjustSiteToc(true);  
  	//盘古之白
