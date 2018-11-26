@@ -39,6 +39,7 @@ function tocAnchorSync(navSelector,anchorSelector,scrollTop){
 @param siteNavSelector：必需 固定导航栏选择器 
 @param mainContentSelector：必需 主体内容选择器
 @param anchorSelector:必需  锚点选择器
+@param dealMainContentMT:非必需 是否处理主体容器偏差
 **/
 function fixTocAnchor(siteNavSelector,mainContentSelector,anchorSelector,dealMainContentMT){
   //获取固定浮动头部的高度
@@ -218,3 +219,23 @@ function addSNTocNav(navSelector,startLevel,endLevel){
     });  
   } 
 }
+
+
+
+/*
+锚点滑动，并解决乱码问题
+@param event 事件
+*/
+function anchorSlideSlowly($anchor,event){
+  //滑动相关配置
+  var settings = {navOffset : 55,scrollTime : 1000};  
+  //解决中文乱码问题
+  var target = decodeURIComponent(decodeURIComponent($anchor.attr("href"))); 
+  //解除其他插件利用ID跳转的问题
+  if($(target).length>0){
+    var targetPosition = $(target).offset().top; 
+    event.preventDefault(); 
+    //滑动
+    $("html, body").stop().animate({scrollTop:targetPosition - settings.navOffset}, settings.scrollTime);
+  } 
+};

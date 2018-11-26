@@ -1,0 +1,174 @@
+//定义文章简介以及文章详情部分，文章内容部分全部采用 markdown 内部样式
+.article-card{
+	@include content-card;
+	  
+	//文章头部
+	.article-header{
+		text-align: center;
+		margin-bottom: 0.5rem;
+			
+		.article-title{
+			font-size: 1.875rem;
+			color:#333333; 
+			padding-top: 0.3rem;
+			padding-bottom: 0.3rem;
+
+			&:hover{ 
+				text-decoration:none !important;
+			} 
+		}
+
+		.article-meta{
+			padding: 1em 0;
+		    border-bottom: 1px dashed #cacaca;
+		    margin-bottom: 1em;
+		    border-top: 1px dashed #cacaca;
+		    margin-top: 2em;
+		    display: flex;
+		    display: -webkit-flex;
+		    flex-wrap:  wrap;
+		    justify-content: space-around; 
+		}
+	}
+
+	.article-cover{
+	  	margin: 1rem 0;
+	  	margin-bottom: 2rem;
+
+	 	width: 100%;
+	  	max-height: 50vh;
+	  	overflow: hidden;
+
+	  	display: flex;
+	  	align-items: center; 
+	  	box-shadow: 2px 20px 40px 10px rgba(0,0,0,.15);
+
+	  img{
+	  	 	width: 100%;
+		  	margin-top: 0;
+		  	margin-bottom: 0;
+		  	border-radius: .25rem;
+		  	-moz-transition: -moz-transform 0.2s ease-out;
+		  	-webkit-transition: -webkit-transform 0.2s ease-out;
+		  	-ms-transition: -ms-transform 0.2s ease-out;
+		  	transition: transform 0.2s ease-out;
+
+		  	&:hover{
+				-moz-transform: scale(1.05);
+				-webkit-transform: scale(1.05);
+				-ms-transform: scale(1.05);
+				transform: scale(1.05);
+			}
+	  }
+	}
+
+	.article-footer{
+		margin-top: 1.8rem;
+		padding-top: 0.2rem;
+		border-top: 1px dashed #cacaca; 
+		display: flex;
+		justify-content: space-between; 
+
+ 			
+		> .ref-prev,> .ref-next{ 
+		  	font-weight: 600;
+		  	font-size: 1rem;
+		  	transition-property: transform;
+		  	transition-timing-function: ease-out;
+		  	transition-duration: 0.3s;
+		  	border-bottom: none;
+		}
+		> .ref-prev{ 
+			 	&:hover{ 
+					transform: translateX(-4px); 
+			 	}
+		}
+		> .ref-next{ 
+			 	&:hover{ 
+					transform: translateX(4px); 
+			 	}
+		}
+	}  
+}
+
+
+//分类卡片
+.categories-card {
+	@include content-card;
+	
+	a{ 
+		border-bottom: none;
+
+		&:hover{
+			border-bottom: none;
+			font-weight: bolder;
+		}
+	}
+
+	.categories-title{
+		color:#333;
+		font-weight: bold;
+		line-height: 2;
+	 	text-decoration: none; 
+	}
+	.sectionSup{
+	    display: inline-block;
+	    padding: 0.25em 0.4em; 
+	 	font-size: 50%;
+	    font-weight: 700;
+	    line-height: 1;
+	    text-align: center;
+	    white-space: nowrap;
+	    vertical-align: baseline;
+	    border-radius: 0.25rem;
+	    color: #fff;
+	    background-color: #dc3545; 
+	}
+	ul{
+		padding-left: 0.5rem;
+	}
+	li{ 
+	  margin: 1rem auto 1rem 0rem; 
+	  transition-duration: 0.2s;
+	  transition-timing-function: ease-in-out;
+	  transition-delay: 0s;
+	  transition-property: border;
+	  border-bottom: 1px dashed #ccc; 
+	  list-style-type:none;
+
+	  &:hover{
+	  	 border-bottom-color: #666;
+	  }  
+	}
+}
+
+//标签云
+.tag-card{
+	@include content-card;
+
+	margin: 2rem 2rem;
+    text-align: center;
+    font-family: Athelas,STHeiti,Microsoft Yahei,serif;
+
+
+    .tag-cloud-title {
+	    display: inline-block;
+	    font-size: 1.5rem;
+	    color: #c05b4d;
+	    border-bottom: 2px solid #c05b4d;
+	}
+
+	.tag-cloud-tags a {
+	    display: inline-block;
+	    position: relative;
+	    margin: 5px 10px;
+	    word-wrap: break-word;
+	    transition-duration: .2s;
+	    transition-property: transform;
+	    transition-timing-function: ease-out;
+
+	    &:hover{
+	    	font-weight: bolder;
+	    }
+	} 
+} 
