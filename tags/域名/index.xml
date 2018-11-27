@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>域名 on  易道非 Blog</title>
+    <link>https://yidaofei.com/tags/%E5%9F%9F%E5%90%8D/</link>
+    <description>Recent content in 域名 on  易道非 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 25 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://yidaofei.com/tags/%E5%9F%9F%E5%90%8D/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>为 Github 上的 Hugo 博客绑定个性域名</title>
+      <link>https://yidaofei.com/post/20181127-hugo-how-to-bind-blog-domain/</link>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181127-hugo-how-to-bind-blog-domain/</guid>
+      <description>&lt;p&gt;本文主要是记录在 Hugo 建站过程中关于域名的一些信息，如 Https 协议 VS http 协议、域名购买渠道、域名配置等信息！&lt;/p&gt;
+
+&lt;p&gt;关键点如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;GitHub 将全面启用 Https 协议&amp;mdash;&amp;gt;出现样式、图片等无法加载等情况&lt;/li&gt;
+&lt;li&gt;域名购买渠道比对&lt;/li&gt;
+&lt;li&gt;自有域名如何与 GitHub 通信&lt;/li&gt;
+&lt;li&gt;自由域名二级域名如何使用&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;第三点与第四点基本上就是域名的 DNS 配置方式&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

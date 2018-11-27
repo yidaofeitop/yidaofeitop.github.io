@@ -92,23 +92,33 @@
 &lt;tr&gt;
 &lt;th align=&#34;left&#34;&gt;项目&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;内容&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;用途&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;门厚度&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;预计是否可以装指纹锁、主方钢是否够长&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;是否有天地钩&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;进一步判断锁体情况，主要针对宝德安&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;锁体导向片长*宽&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;配相关的锁体&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;门厚度&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;把手中心点到门边距离&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;进一步判断锁体情况，主要针对小帅&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

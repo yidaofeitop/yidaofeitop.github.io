@@ -6,10 +6,32 @@
     <description>Recent content in Posts on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 19 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://yidaofei.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>为 Github 上的 Hugo 博客绑定个性域名</title>
+      <link>https://yidaofei.com/post/20181127-hugo-how-to-bind-blog-domain/</link>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181127-hugo-how-to-bind-blog-domain/</guid>
+      <description>&lt;p&gt;本文主要是记录在 Hugo 建站过程中关于域名的一些信息，如 Https 协议 VS http 协议、域名购买渠道、域名配置等信息！&lt;/p&gt;
+
+&lt;p&gt;关键点如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;GitHub 将全面启用 Https 协议&amp;mdash;&amp;gt;出现样式、图片等无法加载等情况&lt;/li&gt;
+&lt;li&gt;域名购买渠道比对&lt;/li&gt;
+&lt;li&gt;自有域名如何与 GitHub 通信&lt;/li&gt;
+&lt;li&gt;自由域名二级域名如何使用&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;第三点与第四点基本上就是域名的 DNS 配置方式&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Hugo 集成 Algolia 搜索</title>
@@ -148,23 +170,33 @@
 &lt;tr&gt;
 &lt;th align=&#34;left&#34;&gt;项目&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;内容&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;用途&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;门厚度&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;预计是否可以装指纹锁、主方钢是否够长&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;是否有天地钩&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;进一步判断锁体情况，主要针对宝德安&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;锁体导向片长*宽&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;配相关的锁体&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;门厚度&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;把手中心点到门边距离&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;进一步判断锁体情况，主要针对小帅&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
