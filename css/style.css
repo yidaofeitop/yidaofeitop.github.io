@@ -755,9 +755,9 @@ hr {
   color: #e95420; }
 .markdown b, .markdown strong {
   font-weight: 700;
-  color: #363636; }
+  color: #ff1700; }
 .markdown em {
-  color: #797979;
+  color: #ff1700;
   font-style: italic; }
 .markdown ul, .markdown ol {
   line-height: 1.2rem;

@@ -6,7 +6,7 @@
     <description>Recent content on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 25 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://yidaofei.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,28 +18,6 @@
       
       <guid>https://yidaofei.com/about/</guid>
       <description>道可道，非恒道</description>
-    </item>
-    
-    <item>
-      <title>为 Github 上的 Hugo 博客绑定个性域名</title>
-      <link>https://yidaofei.com/post/20181127-hugo-how-to-bind-blog-domain/</link>
-      <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://yidaofei.com/post/20181127-hugo-how-to-bind-blog-domain/</guid>
-      <description>&lt;p&gt;本文主要是记录在 Hugo 建站过程中关于域名的一些信息，如 Https 协议 VS http 协议、域名购买渠道、域名配置等信息！&lt;/p&gt;
-
-&lt;p&gt;关键点如下：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;GitHub 将全面启用 Https 协议&amp;mdash;&amp;gt;出现样式、图片等无法加载等情况&lt;/li&gt;
-&lt;li&gt;域名购买渠道比对&lt;/li&gt;
-&lt;li&gt;自有域名如何与 GitHub 通信&lt;/li&gt;
-&lt;li&gt;自由域名二级域名如何使用&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;第三点与第四点基本上就是域名的 DNS 配置方式&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -82,8 +60,6 @@
       <description>&lt;p&gt;本文主要是收集指纹锁故障，用于分析指纹锁的设计思路！&lt;/p&gt;
 
 &lt;p&gt;版权问题：本文很多资料均来自网络博文等，本人会一律保留相关的著作人与原始链接，如著作人不同意相关的转载请与我联系！&lt;/p&gt;
-
-&lt;p&gt;问题分类列表：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -140,11 +116,11 @@
     </item>
     
     <item>
-      <title>2018年11月15日 指纹锁安装总结</title>
-      <link>https://yidaofei.com/post/20181115-smartlock-install-lock-summary/</link>
+      <title>20181115-指纹锁安装日总结——流程/细节/选择重要</title>
+      <link>https://yidaofei.com/post/20181115-smartlock-install-lock-day-summary/</link>
       <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181115-smartlock-install-lock-summary/</guid>
+      <guid>https://yidaofei.com/post/20181115-smartlock-install-lock-day-summary/</guid>
       <description>&lt;p&gt;2018年11月13日 接了一个朋友的安装单，此次安装过程中出现了以下3个最大的问题：&lt;/p&gt;
 
 &lt;ol&gt;
@@ -154,6 +130,47 @@
 &lt;/ol&gt;
 
 &lt;p&gt;以上安装问题在2018年11月15日 9:05基本解决，仅剩由于天地钩难挂开的一个孔等待快递到达！&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>LoRa与NB-IoT谁才是下一代的王者？</title>
+      <link>https://yidaofei.com/post/20181127-network-lora-vs-nbiot/</link>
+      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181127-network-lora-vs-nbiot/</guid>
+      <description>&lt;p&gt;物联网应用需要考虑许多因素，例如节点成本，网络成本，电池寿命，数据传输速率(吞吐率)，延迟，移动性，网络覆盖范围以及部署类型等。&lt;/p&gt;
+
+&lt;p&gt;NB-IoT和LoRa两种技术具有不同的技术和商业特性，所以在应用场景方面会有不同。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://piwigo.yidaofei.com/galleries/201811/lora-vs-nb-iot.jpg&#34; alt=&#34;Lora VS NB-IOT&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>各大物联网通信技术对比</title>
+      <link>https://yidaofei.com/post/20181127-network-iot-communication-technology/</link>
+      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181127-network-iot-communication-technology/</guid>
+      <description>&lt;p&gt;主要比较的通信技术如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;GPRS&lt;/li&gt;
+&lt;li&gt;WIFI&lt;/li&gt;
+&lt;li&gt;蓝牙4.0&lt;/li&gt;
+&lt;li&gt;ZIGBEE&lt;/li&gt;
+&lt;li&gt;433/315射频&lt;/li&gt;
+&lt;li&gt;NB-IOT&lt;/li&gt;
+&lt;li&gt;LoRa&lt;/li&gt;
+&lt;li&gt;eMTC&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;仅有一张图：😄&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://piwigo.yidaofei.com/galleries/201811/communication-technology-compare.jpg&#34; alt=&#34;communication-technology-compare&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -170,7 +187,7 @@
     </item>
     
     <item>
-      <title>指纹锁安装简易流程</title>
+      <title>指纹锁安装指导手册</title>
       <link>https://yidaofei.com/post/20181115-smartlock-install-lock-guild/</link>
       <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
       
@@ -187,7 +204,6 @@
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align=&#34;left&#34;&gt;项目&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;内容&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;用途&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
@@ -195,25 +211,21 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;门厚度&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;预计是否可以装指纹锁、主方钢是否够长&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;判断是否可以装指纹锁、配件包配件是否够长&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;是否有天地钩&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;进一步判断锁体情况，主要针对宝德安&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;进一步判断锁体情况&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;锁体导向片长*宽&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;配相关的锁体&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;把手中心点到门边距离&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;进一步判断锁体情况，主要针对小帅&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -575,6 +587,35 @@ HTML区段标签和区块标签不同，在区段标签的范围內，Markdown�
     </item>
     
     <item>
+      <title>指纹锁安装常见问题汇总</title>
+      <link>https://yidaofei.com/post/20180920-smartlock-install-issues-summary/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20180920-smartlock-install-issues-summary/</guid>
+      <description>&lt;p&gt;本文主要是针对指纹锁安装过程的一些常见问题的汇总与汇总，应该已经包含了所有的！&lt;/p&gt;
+
+&lt;p&gt;后续如是简单的问题则继续加入进来，如涉及环节比较多的则直接开单篇文章！&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>指纹锁安装问题——两道门</title>
+      <link>https://yidaofei.com/post/20180920-smartlock-install-issue-two-doors/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20180920-smartlock-install-issue-two-doors/</guid>
+      <description>&lt;h4 id=&#34;问题现象&#34;&gt;问题现象&lt;/h4&gt;
+
+&lt;p&gt;具体案例：
+客户有两道门，现在需要在外门安装一把智能锁，选用天乔智能锁-803款,安装完成之后出现开门时无法正常开门，必须下压之后再回弹才可开锁&lt;/p&gt;
+
+&lt;iframe height=498 width=510 src=&#39;http://player.youku.com/embed/XMzI4ODU5NzQ3Ng==&#39; frameborder=0 &#39;allowfullscreen&#39;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title> 《金字塔原理》读书笔记</title>
       <link>https://yidaofei.com/post/20180819-readnote-minto-pyramid-principle/</link>
       <pubDate>Sun, 19 Aug 2018 00:00:00 +0000</pubDate>
@@ -630,6 +671,10 @@ HTML区段标签和区块标签不同，在区段标签的范围內，Markdown�
 &lt;li&gt;保险方案设计&lt;/li&gt;
 &lt;li&gt;推荐产品&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;xmind 文档图如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://piwigo.yidaofei.com/galleries/201811/insurance-xmind.jpg&#34; alt=&#34;insurance-xmind&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;如只需要看结论的请直接拉到本文章底部即可！&lt;/p&gt;
 

@@ -1,9 +1,10 @@
 $(document).ready(function() {
 	//页面通用需要调整
+	//处理 markdown 内部的图片
+	addClassTagParent(".markdown","img","p","article-img"); 
 	//建立搜索
 	establishSearch("#search-input");
-	//处理 markdown 内部的图片
-	 addClassTagParent(".markdown","img","p","article-img"); 
+	
 	//处理 markdown 内部的 Iframe 框架
 	$(".markdown").find("iframe").removeAttr("height").removeAttr("width").addClass('videoIframe');
  	//处理分类页面的导航栏
@@ -115,7 +116,7 @@ function adjustSiteToc(isCategoriesPage){
    		fixTocAnchor("header[class='site-header fixed-top']","section[class='main-content-container']","a[class='categories-title']",true);
 	}else{
 		//重置文章页面的TOC
-		initNavigations("nav#TableOfContents",2,4,"article-toc-item-ul","article-toc-item-li"); 
+		initNavigations("nav#TableOfContents",2,5,"article-toc-item-ul","article-toc-item-li"); 
 	    //处理文章页面的 TOC 锚点错位问题 
 	    for(var index=1;index<7;index++){
 	        if(index==1){

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>网络技术 on  易道非 Blog</title>
+    <link>https://yidaofei.com/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/</link>
+    <description>Recent content in 网络技术 on  易道非 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 15 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://yidaofei.com/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LoRa与NB-IoT谁才是下一代的王者？</title>
+      <link>https://yidaofei.com/post/20181127-network-lora-vs-nbiot/</link>
+      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181127-network-lora-vs-nbiot/</guid>
+      <description>&lt;p&gt;物联网应用需要考虑许多因素，例如节点成本，网络成本，电池寿命，数据传输速率(吞吐率)，延迟，移动性，网络覆盖范围以及部署类型等。&lt;/p&gt;
+
+&lt;p&gt;NB-IoT和LoRa两种技术具有不同的技术和商业特性，所以在应用场景方面会有不同。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://piwigo.yidaofei.com/galleries/201811/lora-vs-nb-iot.jpg&#34; alt=&#34;Lora VS NB-IOT&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>各大物联网通信技术对比</title>
+      <link>https://yidaofei.com/post/20181127-network-iot-communication-technology/</link>
+      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181127-network-iot-communication-technology/</guid>
+      <description>&lt;p&gt;主要比较的通信技术如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;GPRS&lt;/li&gt;
+&lt;li&gt;WIFI&lt;/li&gt;
+&lt;li&gt;蓝牙4.0&lt;/li&gt;
+&lt;li&gt;ZIGBEE&lt;/li&gt;
+&lt;li&gt;433/315射频&lt;/li&gt;
+&lt;li&gt;NB-IOT&lt;/li&gt;
+&lt;li&gt;LoRa&lt;/li&gt;
+&lt;li&gt;eMTC&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;仅有一张图：😄&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://piwigo.yidaofei.com/galleries/201811/communication-technology-compare.jpg&#34; alt=&#34;communication-technology-compare&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

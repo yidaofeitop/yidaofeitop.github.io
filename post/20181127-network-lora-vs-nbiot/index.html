@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <meta charset="UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" >
+
+  
+  
+    
+    <meta charset="utf-8" name="keywords" content="物联网,NB-IOT,Lora," > 
+  
+   
+  <meta charset="utf-8" name="description" content="物联网应用需要考虑许多因素，例如节点成本，网络成本，电池寿命，数据传输速率(吞吐率)，延迟，移动性，网络覆盖范围以及部署类型等。
+
+NB-IoT和LoRa两种技术具有不同的技术和商业特性，所以在应用场景方面会有不同。
+
+
+
+" >
+  
+  
+  
+    
+        <link rel="icon" type="image/png" href="https://yidaofei.com//image/favicon-32x32.png" > 
+    
+  
+  
+  
+  
+  <title>LoRa与NB-IoT谁才是下一代的王者？- 易道非 Blog</title>  
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-126184892-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+
+  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css">
+
+<body> 
+ 
+
+ 
+<div id="top-element" data-title="到达顶点"></div>
+  
+<header class="site-header fixed-top">
+  <div class="container">
+    <nav id="navigation">  
+      <a href="https://yidaofei.com/" class="site-title">
+        
+        <img title="site-logo" class="site-logo" src="https://yidaofei.com//image/logo.png" >
+           
+         易道非 Blog 
+      </a> 
+      <a aria-label="mobile menu" class="nav-toggle" id="site-nav-toggle"> 
+        <span></span> <span></span> <span></span> 
+      </a>
+      <ul class="menu-left">
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/categories/">Categories</a></li>
+        
+          <li><a href="/tags">Tags</a></li>
+        
+          <li><a href="/wiki">Wiki</a></li>
+        
+          <li><a href="/about">About</a></li>
+        
+
+        
+          <li><a data-remodal-target="searchinput">search</a></li>
+           
+      </ul>
+    </nav>
+  </div>
+</header> 
+
+
+
+<div class="remodal" data-remodal-id="searchinput" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> 
+  <span id="algoliaData" style="display:none;" data-appid="NYC6MHRISW" 
+		data-searchkey="7f131a263a8820645ee9fc65ed97b22f" 
+		data-initindex="github-yidaofeicnBlog"></span>
+
+<div class="search-input-card" >
+    <input type="search" id="search-input" class="search-input" placeholder="Search for titles or URIs..." name="search" autocomplete="off" />
+     <span class="input-search-icon"><i class="fa fa-search"></i></span> 
+</div>
+
+ 
+
+  
+</div>
+
+  
+
+
+
+<section class="main-content-container">
+<article class="article-card">
+	<header class="article-header"> 
+	   <p class="article-title">LoRa与NB-IoT谁才是下一代的王者？</p>
+   		<div class="article-meta">
+			
+			<div><i class="fa fa-calendar" >2018年11月15日</i> </div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://yidaofei.com/categories/%e7%bd%91%e7%bb%9c%e6%8a%80%e6%9c%af">网络技术</a> 
+				   
+				</i>  
+			</div> 
+		</div>  
+	</header>  
+	<content class="markdown">
+		<p>物联网应用需要考虑许多因素，例如节点成本，网络成本，电池寿命，数据传输速率(吞吐率)，延迟，移动性，网络覆盖范围以及部署类型等。</p>
+
+<p>NB-IoT和LoRa两种技术具有不同的技术和商业特性，所以在应用场景方面会有不同。</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201811/lora-vs-nb-iot.jpg" alt="Lora VS NB-IOT" /></p>
+
+<p></p>
+
+<h3 id="一-频段-服务质量和成本">一、频段，服务质量和成本</h3>
+
+<p>LoRa工作在1GHz以下的非授权频段，故在应用时不需要额外付费。NB-IoT和蜂窝通信使用1GHz以下的授权频段。处于500MHz和1GHz之间的频段对于远距离通信是最优的选择，因为天线的实际尺寸和效率是具有相当优势的。
+LoRa使用免费的非授权频段，并且是异步通信协议，对于电池供电和低成本是最佳的选择。LoRa和LoRaWAN协议，在处理干扰、网络重叠、可伸缩性等方面具有独特的特性，但却不能提供像蜂窝协议一样的服务质量(QoS)。据悉授权的Sub-GHz频段的竞拍，每MHz价格超过5亿美金。蜂窝网络和NB-IoT出于对服务质量(QoS)的考虑，并不能提供类似LoRa一样的电池寿命。由于QoS和高昂的频段使用费，需要确保QoS的应用场景推荐使用蜂窝网络和NB-IoT，而低成本和大量连接是首选项的话LoRa是不错的选择。</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201811/lora-vs-nb-iot-details.jpg" alt="lora-vs-nb-iot-details" /></p>
+
+<h3 id="二-电池寿命和下行延迟">二、电池寿命和下行延迟</h3>
+
+<p>蜂窝网络设计的理念是最优的频段利用率，相应的就牺牲了节点成本和电池寿命。相反，LoRaWAN节点是为了低成本和长电池寿命而生，在频段利用率方面有一定的欠缺。</p>
+
+<p>关于电池寿命方面有两个重要的因素需要考虑，节点的电流消耗(峰值电流和平均电流)以及协议内容。LoRaWAN是一种异步的基于ALOHA的协议，也就是说节点可以根据具体应用场景需求进行或长或短的睡眠，而蜂窝等同步协议的节点必须定期地联网。例如，现在市面上的手机工作时每1.5s必须与网络进行同步。在NB-IoT中，这种同步变少但是仍然在定期进行，这样就额外的消耗了电池的电量。</p>
+
+<p>在蜂窝网络中调制是充分利用频段的有效手段，但是从节点的角度这并不是有效的。蜂窝的调制(OFDM或者FDMA)需要一个线性的发射器来产生调制信号，而一个线性的发射器需要的峰值电流比非线性调制多几个数量级，越高的峰值电流会消耗电池更多的电量。</p>
+
+<p>但同步的通信协议在较短的下行延迟方面具有优势，同时NB-IoT可以为需要大量数据吞吐量的应用提供快速的数据传输速率。而LoRaWAN的Class B通过定期地(编程实现)唤醒终端以收取下行消息而缩短了下行通信的延迟。</p>
+
+<p>所以对于需要频繁通信、较短的延迟或者较大数据量的应用来说NB-IoT或许是更好的选择，而对于需要较低的成本、较高的电池寿命和通信并不频繁的场景来说LoRa更好。</p>
+
+<h3 id="三-网络覆盖和部署时间表">三、网络覆盖和部署时间表</h3>
+
+<p>节点工作的本质需求是网络的覆盖，对于NB-IoT来说一个明显的优势是可以通过升级现有的网络设施来提供网络部署，但是这种升级仅限于某些特定的4G/LTE基站，并且花费较高。并且这种升级仅适于已经具有4G/LTE覆盖的城区，对于偏远或者郊区等没有4G覆盖的来说并不合适。NB-IoT标准在16年6月公布，预计模块将于17年上半年量产发布。除网络部署之外，相应的商业化和产业链的建立还需要更长的时间和努力去探索，但是市场需求和机会是否会等待呢?</p>
+
+<p>LoRa的整个产业链相对已经较为成熟了，产品也处于“蓄势待发”的状态，同时全球很多国家正在进行或者已经完成了全国性的网络部署。LoRa产业链一个突出优点是每个环节的成员都掌握着自主性，一些大公司正在计划创造一种混合型的商业模型来部署网络和应用。但NB-IoT产业链会受到频段、运营商等限制。</p>
+
+<h3 id="四-设备成本-网络成本和混合模型">四、设备成本,网络成本和混合模型</h3>
+
+<p>对终端节点来说，LoRaWAN协议比NB-IoT更简单，更容易开发并且对于微处理器的适用和兼容性更好。NB-IoT的调制机制和协议比较复杂，这就需要更复杂的电路和更多的花费，同时NB-IoT和3GPP一样是要收税的。现阶段对于一部手机的税费大概是5美元，但这对于物联网设备来说显得太昂贵了，而且如果贸然的降低税费会引起手机等移动通信市场的价格混乱。所以3GPP组织如何权衡IoT和移动通信两方面税费问题也个大问题。</p>
+
+<p>低成本、技术相对成熟的LoRa模块已经可以在市场上找到了，并且升级版还会接踵而至。LoRa联盟没有过多版权和税费的限制使得在LoRa产业链下模块低于4美元是十分可观的。现在市场上的LoRa模块价格一般在7-10美元，但是随着技术的成熟度提高4-5美元并不是大问题。而现在一个LTE模块的价格却很难低于20美元。</p>
+
+<p>相对于传统的只依靠“铁塔”部网，对于IoT和LPWAN来说部署需要使用不同模型以降低支出和运营成本。LoRaWAN部署花费更少，因为可以利用传统的信号塔、工业基站甚至是便携式家庭网关来进行。现阶段一个塔式的基站价格大概是1000美元，工业基站价格低于500美元，而家庭式的网关只需要100美元左右。但是对于NB-IoT来说，升级现有的4GLTE基站的价格保守估计每个不少于15000美元。</p>
+
+<h3 id="五-应用举例">五、应用举例</h3>
+
+<p>如之前提到的，没有一种技术可以同时满足IoT应用的所有需求。下面将通过几个具体的应用实例来分析NB-IoT 和LoRa 各自适合的应用场景。</p>
+
+<h4 id="智能电表">智能电表</h4>
+
+<p>在智能电表领域相关的公司和部门需要高速率的数据传输、频繁的通信和低延迟。由于电表是由电源供电的，所以并没有超低功耗和长电池使用寿命的需求。并且还需要对线网进行实时监控以便发现隐患时及时处理。LoRaWAN的ClassC可以实现低延迟，但是对于高传输速率和频繁通信的需求NB-IoT是更适合于智能电表的选择。并且电表一般安装在人口密集的地区的固定位置，所以对于运营商部网也较为容易。</p>
+
+<h4 id="智慧农业">智慧农业</h4>
+
+<p>对农业来说，低功耗低成本的传感器是迫切需要的。温湿度、二氧化碳、盐碱度等传感器的应用对于农业提高产量、减少水资源的消耗等有重要的意义，这些传感器需要定期地上传数据。LoRa十分适用于这样的场景。而且很多偏远的农场或者耕地并没有覆盖蜂窝网络，更不用说4G/LTE了，所以NB-IoT并不如LoRa一样适合于智慧农业。</p>
+
+<h4 id="自动化制造">自动化制造</h4>
+
+<p>工厂机器的运行需要实时的监控，不仅可以保证生产效率而且通过远程监控可以提高人工效率。在工厂的自动化制造和生产中，有许多不同类型的传感器和设备。一些场景需要频繁的通信并且确保良好的服务质量(QoS)，这时NB-IoT是较为合适的选择。而一些场景需要低成本的传感器配以低功耗和长寿命的电池来追踪设备、监控状态，这时LoRa便是合理的选择。所以对于自动化生产制造的多样性来说，NB-IoT和LoRa都有用武之地。</p>
+
+<h4 id="智能建筑">智能建筑</h4>
+
+<p>对于建筑的改造，加入温湿度、安全、有害气体、水流监测等传感器并且定时的将监测的信息上传，方便了管理者的监管同时更方便了用户。通常来说这些传感器的通信不需要特别频繁或者保证特别好的服务质量，同时便携式的家庭式网关便可以满足需要。所以该场景LoRa是比较合适的选择。</p>
+
+<h4 id="零售终端-pos">零售终端(POS)</h4>
+
+<p>零售终端(POS)系统往往需要较频繁和高质量的通信，而且这些设备通常有专门供电的设备，所以对于较长的电池使用寿命没有要求。同时对于通信的时效性和低延迟要求较高。所以出于以上考虑NB-IoT比较适合于本应用。</p>
+
+<h4 id="物流追踪">物流追踪</h4>
+
+<p>追踪或者定位市场的一个重要的需求就是终端的电池使用寿命。物流追踪可以作为混合型部署的实际案例。物流企业可以根据定位的需要在需要场所部网，可以是仓库或者运输车辆上，这时便携式的基站便派上了用场。LoRa可以提供这样的部署方案，而对于NB-IoT来说追踪范围过大基站的铺设是很大的问题。同时LoRa有一个特点，在高速移动时通信相对于NB-IoT更稳定。出于以上的考虑，LoRa更适合于物流追踪。</p>
+
+<h3 id="总结">总结</h3>
+
+<p>IoT领域并没有一个没有争议的选择，每一个应用场景都有自己独特的需求和考虑。本文阐述了NB-IoT和LoRa二者各自的特点和商业模式，相信二者在IoT市场上都将有一席之地。</p>
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Version</th>
+<th align="center">Action</th>
+<th align="center">Time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1.0</td>
+<td align="center">init</td>
+<td align="center">2018-11-28</td>
+</tr>
+</tbody>
+</table>
+			  
+		
+		
+			<div class="article-copyright">
+			  	<ul>
+			  		
+			  		<li><strong>本文作者：</strong> </li>
+			  		
+			  		<li><strong>版权申明：</strong>本文内容主要来自 https://blog.csdn.net/wifiadv/article/details/78793585</li>
+			  	</ul>
+			</div>
+		 
+	</content>  
+ 	<hr/>
+ 	
+	<div class="article-footer-meta-between"> 
+		 
+		<div>
+			<i class="fa fa-tags">&nbsp;Tags:
+			
+				<a href="https://yidaofei.com/tags/%e9%80%9a%e4%bf%a1%e6%8a%80%e6%9c%af">通信技术</a>
+    		
+    		</i>   
+		</div> 
+		 
+		<div id="i-share" class="btn btn-default  share-widget">
+		    <i class="fa fa-share-alt"></i>
+		</div> 
+	</div>
+	<hr/>
+	<div class="article-footer-meta-between"> 
+		<div class="refArticle-prev" >
+			  
+		    <a href="https://yidaofei.com/post/20181115-smartlock-install-lock-day-summary/">
+		    	<i class="fa fa-angle-double-left"></i>&nbsp;20181115-指纹锁安装日总结——流程/细节/选择重要  
+		    </a> 
+			
+		</div>
+		 <div class="refArticle-next" >
+		  
+		  	<a href="https://yidaofei.com/post/20181127-network-iot-communication-technology/">各大物联网通信技术对比&nbsp;
+		  		<i class="fa fa-angle-double-right"></i>
+		  	</a> 
+		 
+	    </div>
+	</div>  
+</article> 
+</section>
+ 
+
+  
+ 
+<div class="main-content-container " >
+<div class="comment-card"> 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeicn/comment-utterances-blog-yidaofeicn"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+</div>
+</div>
+
+ 
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#一-频段-服务质量和成本">一、频段，服务质量和成本</a></li>
+<li><a href="#二-电池寿命和下行延迟">二、电池寿命和下行延迟</a></li>
+<li><a href="#三-网络覆盖和部署时间表">三、网络覆盖和部署时间表</a></li>
+<li><a href="#四-设备成本-网络成本和混合模型">四、设备成本,网络成本和混合模型</a></li>
+<li><a href="#五-应用举例">五、应用举例</a>
+<ul>
+<li><a href="#智能电表">智能电表</a></li>
+<li><a href="#智慧农业">智慧农业</a></li>
+<li><a href="#自动化制造">自动化制造</a></li>
+<li><a href="#智能建筑">智能建筑</a></li>
+<li><a href="#零售终端-pos">零售终端(POS)</a></li>
+<li><a href="#物流追踪">物流追踪</a></li>
+</ul></li>
+<li><a href="#总结">总结</a></li>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
+<footer class="site-footer text-center">
+  <div class="social" > 
+     
+          <a href=" mailto:yidaofeicn@gmail.com "><i class="fa fa-envelope-open-o"></i></span></a>
+      
+       
+          <a href=" https://github.com/yidaofeicn "  ><i class="fa fa-github"></i></span></a>
+      
+    
+      
+                <a href="https://yidaofei.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml" target="_blank"> <i class="fa fa-rss"></i>
+                </a>
+          </div>
+   
+  <div class="copyright"  >
+    Powered by &nbsp;<a href="https://gohugo.io/">Hugo</a>&nbsp;|&nbsp;
+    Theme-<a href="">Flybird</a>  
+  </div>
+  <div class="copyright"> Copyright© 2018 Transparent Thoughts. All rights reserved.</div> 
+  <div class="copyright"> 
+
+      
+    
+      <span id="busuanzi_container">
+        访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+</footer>
+
+ 
+
+<div id="bottom-element" data-title="定位底部"></div>
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.css">
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.js"></script>
+ 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.30.0/algoliasearch.jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.32.0/autocomplete.jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/algoliasearch/algolia-autocomplete.css">
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.css"> 
+<script type="text/javascript" src="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.css">
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/prismjs/prism.css">
+
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/prismjs/prism.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js"></script>
+
+<script type="text/javascript" color="#1D1D1D" opacity='1' zIndex="-2" count="400" src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.3/canvas-nest.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+<span id="isPage" data-isPage="true" style="display: none;"></span>
+
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+
+ 
+
+<script type="text/javascript" src="https://yidaofei.com//js/flybird.js"></script> 
+<script type="text/javascript" src="https://yidaofei.com//js/main.js"></script> 
+  
+ 
+</style>
+</body>
+</html>
+
+
+ 

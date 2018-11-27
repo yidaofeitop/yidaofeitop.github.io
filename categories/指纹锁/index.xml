@@ -21,8 +21,6 @@
 
 &lt;p&gt;版权问题：本文很多资料均来自网络博文等，本人会一律保留相关的著作人与原始链接，如著作人不同意相关的转载请与我联系！&lt;/p&gt;
 
-&lt;p&gt;问题分类列表：&lt;/p&gt;
-
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
@@ -78,11 +76,11 @@
     </item>
     
     <item>
-      <title>2018年11月15日 指纹锁安装总结</title>
-      <link>https://yidaofei.com/post/20181115-smartlock-install-lock-summary/</link>
+      <title>20181115-指纹锁安装日总结——流程/细节/选择重要</title>
+      <link>https://yidaofei.com/post/20181115-smartlock-install-lock-day-summary/</link>
       <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181115-smartlock-install-lock-summary/</guid>
+      <guid>https://yidaofei.com/post/20181115-smartlock-install-lock-day-summary/</guid>
       <description>&lt;p&gt;2018年11月13日 接了一个朋友的安装单，此次安装过程中出现了以下3个最大的问题：&lt;/p&gt;
 
 &lt;ol&gt;
@@ -108,7 +106,7 @@
     </item>
     
     <item>
-      <title>指纹锁安装简易流程</title>
+      <title>指纹锁安装指导手册</title>
       <link>https://yidaofei.com/post/20181115-smartlock-install-lock-guild/</link>
       <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
       
@@ -125,7 +123,6 @@
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align=&#34;left&#34;&gt;项目&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;内容&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;用途&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
@@ -133,25 +130,21 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;门厚度&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;预计是否可以装指纹锁、主方钢是否够长&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;判断是否可以装指纹锁、配件包配件是否够长&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;是否有天地钩&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;进一步判断锁体情况，主要针对宝德安&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;进一步判断锁体情况&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;锁体导向片长*宽&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;配相关的锁体&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;把手中心点到门边距离&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;进一步判断锁体情况，主要针对小帅&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -180,6 +173,35 @@
 &lt;li&gt;锁体方钢孔位前后分离，即锁孔不联动，典型代表电子锁体、分体拨桃机械锁体，配合配件为分离式方钢&lt;/li&gt;
 &lt;li&gt;如非电子锁体则要求把手能做到下压后方钢能正常归位中心线，这就是本文需要具体讨论的点，其关键的部件就是离合的设计。&lt;/li&gt;
 &lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>指纹锁安装常见问题汇总</title>
+      <link>https://yidaofei.com/post/20180920-smartlock-install-issues-summary/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20180920-smartlock-install-issues-summary/</guid>
+      <description>&lt;p&gt;本文主要是针对指纹锁安装过程的一些常见问题的汇总与汇总，应该已经包含了所有的！&lt;/p&gt;
+
+&lt;p&gt;后续如是简单的问题则继续加入进来，如涉及环节比较多的则直接开单篇文章！&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>指纹锁安装问题——两道门</title>
+      <link>https://yidaofei.com/post/20180920-smartlock-install-issue-two-doors/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20180920-smartlock-install-issue-two-doors/</guid>
+      <description>&lt;h4 id=&#34;问题现象&#34;&gt;问题现象&lt;/h4&gt;
+
+&lt;p&gt;具体案例：
+客户有两道门，现在需要在外门安装一把智能锁，选用天乔智能锁-803款,安装完成之后出现开门时无法正常开门，必须下压之后再回弹才可开锁&lt;/p&gt;
+
+&lt;iframe height=498 width=510 src=&#39;http://player.youku.com/embed/XMzI4ODU5NzQ3Ng==&#39; frameborder=0 &#39;allowfullscreen&#39;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

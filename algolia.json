@@ -14,13 +14,12 @@
         "content": "",
         "objectID": "about",
         "date": "",
-        "layout": "wiki",
-        "weight": 40
+        "layout": "about"
     },
     {
         "draft": false,
         "uri": "post/20150620-financial-management-how-buy-insurance",
-        "content": "smile                                                                                                                                                                                                                                                                                                                                    Of course                                                                                                                                                                                                                                                                               really                                                                                                 1             2                                                                                                                                                                                                                                                                                                                                                                                                                   3           C ross               4                                                5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       3 4                                                                                                                                                                                                                                                                                                                                                                                                         2016                                                                                                                       3                                                                                                                                                                                                                                                                                                                                                                                                          5   8                5 10                     20         80                                                                                                                        10                                                                         20   10   1 0 06  203 118                                                            Buy term invest difference                                                          30                                                                                                                              25                3                       3                  3                                         65   70                                                                                                                                     3                                                     A                      PK          e v s      A                            20181030                                        2018                                                e        e                                                                                                                                                                                   2 3                                                                                                                                                                                                                                                       C           e                                    2018 7 20                                          A B       e        e      2018 7 20                                            0 6                    e         e                      1 https   www zhihu com question 22316395  2 https   www zhihu com question 55738604  3 http   mp weixin qq com s _biz MzI4MjMyNjAwMA   mid 2247483729 idx 1 sn 1faea9ca50edab2f776db393011de7bb scene 21 wechatredirect  4 https   zhuanlan zhihu com p 23254798  5 https   zhuanlan zhihu com p 24195078  6 https   zhuanlan zhihu com p 21488112  7 https   www zhihu com question 202",
+        "content": "smile                                                   xmind                                                                                                                                                                                                                                                                                         Of course                                                                                                                                                                                                                                                                               really                                                                                                 1             2                                                                                                                                                                                                                                                                                                                                                                                                                   3           C ross               4                                                5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       3 4                                                                                                                                                                                                                                                                                                                                                                                                         2016                                                                                                                       3                                                                                                                                                                                                                                                                                                                                                                                                          5   8                5 10                     20         80                                                                                                                        10                                                                         20   10   1 0 06  203 118                                                            Buy term invest difference                                                          30                                                                                                                              25                3                       3                  3                                         65   70                                                                                                                                     3                                                     A                      PK          e v s      A                            20181030                                        2018                                                e        e                                                                                                                                                                                   2 3                                                                                                                                                                                                                                                       C           e                                    2018 7 20                                          A B       e        e      2018 7 20                                            0 6                    e         e                      1 https   www zhihu com question 22316395  2 https   www zhihu com question 55738604  3 http   mp weixin qq com s _biz MzI4MjMyNjAwMA   mid 2247483729 idx 1 sn 1faea9ca50edab2f776db393011de7bb scene 21 wechatredirect  4 https   zhuanlan zhihu com p 23254798  5 https   zhuanlan zhihu com p 24195078  6 https   zhuanlan zhihu com p 21488112  7 https   www zhihu com",
         "objectID": "post/20150620-financial-management-how-buy-insurance",
         "title": "如何购买保险",
         "date": "2015-06-20T00:00:00.000Z",
@@ -97,6 +96,47 @@
             "读书笔记"
         ],
         "toc": true
+    },
+    {
+        "draft": false,
+        "uri": "post/20180920-smartlock-install-issue-two-doors",
+        "content": "803                                                                                                                                             6068             6065                                                                                                                                                             801                                                                                                                                                                                                                                           9 5cm       6cm            8cm                                   Version Action  Time                     1 0 init 2018 11 27",
+        "objectID": "post/20180920-smartlock-install-issue-two-doors",
+        "title": "指纹锁安装问题——两道门",
+        "date": "2018-09-20T00:00:00.000Z",
+        "Keywords": [
+            "指纹锁",
+            "安装",
+            "问题"
+        ],
+        "categories": [
+            "指纹锁"
+        ],
+        "tags": [
+            "指纹锁",
+            "安装运维"
+        ]
+    },
+    {
+        "draft": false,
+        "uri": "post/20180920-smartlock-install-issues-summary",
+        "content": "1                                                                                                                             2                                                                                                                                                                        3                                                                                                                                                                                                          4                                                                 A                                                             B                                                                                                          5                                                         6                                                                                                              7                                                                                           8                                                                            9                                                                                                                                                                                                                                                                       10                                                                      11                                                                             12                                                                                                                                                a   b                                                  13      13                                                                             14                       15                  2                                                                                                                                                                                   Version Action  Time                     1 0 init 2018 09 20   1 1           2018 09 21",
+        "objectID": "post/20180920-smartlock-install-issues-summary",
+        "title": "指纹锁安装常见问题汇总",
+        "date": "2018-09-20T00:00:00.000Z",
+        "Keywords": [
+            "指纹锁",
+            "安装",
+            "指导",
+            "流程"
+        ],
+        "categories": [
+            "指纹锁"
+        ],
+        "tags": [
+            "指纹锁",
+            "安装运维"
+        ]
     },
     {
         "draft": false,
@@ -407,7 +447,7 @@
     {
         "draft": false,
         "uri": "post/20181108-hugo-quick-start",
-        "content": "WordPress Ghost        FarBox             Jekyll Hexo Hugo                        Farbox Why  5     Farbox                      Hugo Why                                      WordPress                   VS                                                     Github Pages                                                                                          Web                           hugo Github Pages      flickr                                     https   www xianmin org       shawpo http   www shawpo me         ZHENG ZI ou https   orianna zzo github io    Jimmy Song      https   jimmysong io                 Jekyll   Hexo          Jekyll    https   mazhuang org about  Hexo Next    https   notes iissnan com                Hexo Next        https   reuixiy github io technology computer computer aided art 2017 06 09 hexo next optimization html Hexo  http   litten me  Jekyell   https   www chairyfish com BeautifulJekyllTheme      Hugo             smile                 Hugo      Hugo                                    Hugo    Hugo                       Hugo release                 PATH          go get                       Go                             go  u  v github com gohugoio hugo Hugo                      hugo new site quickstart           https   themes gohugo io  cd quickstart themes git clone https   github com xianmin hugo theme jane git    exampleSite       quickstart       windows    xcopy exampleSite   xx quickstart      Hugo cd quickstart hugo server      Building sites     EN                           Pages   84 Paginator pages   2 Non page files   8 Static files   90 Processed images   0 Aliases   27 Sitemaps   1 Cleaned   0 Total 77 ms Watching changes E  03blog yidaofeicn github io  content data layouts static themes  Watching config changes E  03blog yidaofeicn github io config toml Serving pages memory Running Fast Render Mode  full rebuilds change  hugo server   disableFastRender Web Server available http   localhost 1313   bind address 127 0 0 1  Press Ctrl C stop                            hugo new post first md   content post        first md      hugo server   theme hugo jane theme   buildDrafts     hugo jane theme            hugo new theme flybird      flybird      hugo undraft post post name md                           hugo   help Hugo               GitHub gh pages            GitHub             xxxx github io              yidaofeicn github io          yidaofeicn github io          hugo      GitHub    cd public git init git remote add origin https   github com yidaofeicn yidaofeicn github io git git add   git commit  m  first commit  git push  u origin master    Hugo         archetypeDir   archetypes        http   spf13 com  baseURL            buildDrafts  false                 buildFuture  false           buildExpired  false                          relativeURLs  false canonifyURLs  false                   config yaml config json   config toml config   config toml       contentDir   content       dataDir   data         defaultExtension   html          defaultLayout   post          defaultContentLanguage   en                              en                  en  defaultContentLanguageInSubdir  false            disableLiveReload  false      RSS disableRSS  false      Sitemap disableSitemap  false      GitInfo enableGitInfo  false      Robots enableRobotsTXT  false      404 disable404  false               disableHugoGeneratorInject  false              editor            Emoji www emoji cheat sheet com enableEmoji  false Show placeholder instead default value empty string translation missing enableMissingTranslationPlaceholders  false footnoteAnchorPrefix     footnoteReturnLinkContents     google analytics tracking id googleAnalytics     languageCode     layoutDir   layouts           log  false        logFile              yaml    toml    json  metaDataFormat   toml  newContentEditor                   noChmod  false               noTimes  false         paginate  10         paginatePath   page  permalinks  Pluralize titles lists using inflect pluralizeListTitles  true                      G rard Depardieu  preserveTaxonomyNames  false      publishDir   public                        pygmentsCodeFencesGuessSyntax  false          pygmentsStyle   monokai  true  use pygments css false  color codes directly pygmentsUseClasses  false default sitemap configuration map sitemap       source     staticDir   static                      stepAnalysis  false      themesDir   themes       theme     title         filename html      filename  uglyURLs  false         url path         disablePathToLower  false true  auto detect Chinese Japanese Korean Languages content    Summary  WordCount work properly CJKLanguage  hasCJKLanguage  false          verbose  false              verboseLog  false                 watch  true            ignoreFiles        foo        boo    Hugo    Blackfriday    Markdown                        config toml          blackfriday  angledQuotes  true fractions  false plainIDAnchors  true extensions    hardLineBreak   Blackfriday             https   gohugo io getting started configuration  configure blackf",
+        "content": "WordPress Ghost        FarBox             Jekyll Hexo Hugo                        Farbox Why  5     Farbox                      Hugo Why                                      WordPress                   VS                                                     Github Pages                                                                                          Web                           hugo Github Pages      flickr                                     https   www xianmin org       shawpo http   www shawpo me         ZHENG ZI ou https   orianna zzo github io    Jimmy Song      https   jimmysong io                 Jekyll   Hexo          Jekyll    https   mazhuang org about  Hexo Next    https   notes iissnan com                Hexo Next        https   reuixiy github io technology computer computer aided art 2017 06 09 hexo next optimization html Hexo  http   litten me  Jekyell   https   www chairyfish com BeautifulJekyllTheme      Hugo             smile                 Hugo      Hugo                                    Hugo    Hugo                       Hugo release                 PATH          go get                       Go                             go  u  v github com gohugoio hugo Hugo                      hugo new site quickstart           https   themes gohugo io  cd quickstart themes git clone https   github com xianmin hugo theme jane git    exampleSite       quickstart       windows    xcopy exampleSite   xx quickstart      Hugo cd quickstart hugo server      Building sites     EN                           Pages   84 Paginator pages   2 Non page files   8 Static files   90 Processed images   0 Aliases   27 Sitemaps   1 Cleaned   0 Total 77 ms Watching changes E  03blog yidaofeicn github io  content data layouts static themes  Watching config changes E  03blog yidaofeicn github io config toml Serving pages memory Running Fast Render Mode  full rebuilds change  hugo server   disableFastRender Web Server available http   localhost 1313   bind address 127 0 0 1  Press Ctrl C stop                            hugo new post first md   content post        first md      hugo server   theme hugo jane theme   buildDrafts     hugo jane theme            hugo new theme flybird      flybird      hugo undraft post post name md                           hugo   help Hugo               GitHub gh pages            GitHub             xxxx github io              yidaofeicn github io           yidaofeicn github io          hugo      GitHub    cd public git init git remote add origin https   github com yidaofeicn yidaofeicn github io git git add   git commit  m  first commit  git push  u origin master    Hugo         archetypeDir   archetypes        http   spf13 com  baseURL            buildDrafts  false                 buildFuture  false           buildExpired  false                          relativeURLs  false canonifyURLs  false                   config yaml config json   config toml config   config toml       contentDir   content       dataDir   data         defaultExtension   html          defaultLayout   post          defaultContentLanguage   en                              en                  en  defaultContentLanguageInSubdir  false            disableLiveReload  false      RSS disableRSS  false      Sitemap disableSitemap  false      GitInfo enableGitInfo  false      Robots enableRobotsTXT  false      404 disable404  false               disableHugoGeneratorInject  false              editor            Emoji www emoji cheat sheet com enableEmoji  false Show placeholder instead default value empty string translation missing enableMissingTranslationPlaceholders  false footnoteAnchorPrefix     footnoteReturnLinkContents     google analytics tracking id googleAnalytics     languageCode     layoutDir   layouts           log  false        logFile              yaml    toml    json  metaDataFormat   toml  newContentEditor                   noChmod  false               noTimes  false         paginate  10         paginatePath   page  permalinks  Pluralize titles lists using inflect pluralizeListTitles  true                      G rard Depardieu  preserveTaxonomyNames  false      publishDir   public                        pygmentsCodeFencesGuessSyntax  false          pygmentsStyle   monokai  true  use pygments css false  color codes directly pygmentsUseClasses  false default sitemap configuration map sitemap       source     staticDir   static                      stepAnalysis  false      themesDir   themes       theme     title         filename html      filename  uglyURLs  false         url path         disablePathToLower  false true  auto detect Chinese Japanese Korean Languages content    Summary  WordCount work properly CJKLanguage  hasCJKLanguage  false          verbose  false              verboseLog  false                 watch  true            ignoreFiles        foo        boo    Hugo    Blackfriday    Markdown                        config toml          blackfriday  angledQuotes  true fractions  false plainIDAnchors  true extensions    hardLineBreak   Blackfriday             https   gohugo io getting started configuration  configure black",
         "objectID": "post/20181108-hugo-quick-start",
         "title": "个人建站-Hugo-快速开始",
         "author": "yidaofeicn",
@@ -447,17 +487,16 @@
     },
     {
         "draft": false,
-        "uri": "post/20181115-smartlock-install-lock-guild",
-        "content": "PS                                                                            A          1  210x33        2  240x30    B  3  260x24    C  4  280x24    D  5  388x40 388x30         6                     B          1            2                  C                75  68  1  75        2  68               D          4    1            2                                                                                        240 24  16  31          240 30  16  31         210 33  16  34         260 24  36  52          280 24  22  36         388 40 30  19  36                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Version Action  Time                     1 0 init 2018 11 15",
-        "objectID": "post/20181115-smartlock-install-lock-guild",
-        "title": "指纹锁安装简易流程",
+        "uri": "post/20181115-smartlock-install-lock-day-summary",
+        "content": "2018 11 13                         3                          GAME                                                    2018 11 15  9 05                           2018 11 13               2018 11 11       2018 11 12               2018 11 13            12 30      15 15                                      6054 30 388                      30                                                                         4 2     5 0                                                                                                                      cry                                                                                                                                                                        11 00   2018 11 14       13          6054                         8 20           40388 6054           7554                     11                                                                                                                           OK       smile                                                                                                    2018 11 15                                                                                                                                                                                 2018 11 13   8                                                                                                                                               APP   ZIGBEE      WIFI                                                                                                                               APP   ZIGBEE      WIFI                                                                                                                                                                                                                   6068                      6068                6068                                                                            2                                                                                                                                                                                                                                        99 99                                      6068                                    PS                                                     18617106073             Version Action  Time                     1 0 init 2018 11 15",
+        "objectID": "post/20181115-smartlock-install-lock-day-summary",
+        "title": "20181115-指纹锁安装日总结——流程/细节/选择重要",
         "author": "yidaofeicn",
         "date": "2018-11-15T00:00:00.000Z",
         "Keywords": [
             "指纹锁",
             "安装",
-            "指导",
-            "流程"
+            "选用"
         ],
         "categories": [
             "指纹锁"
@@ -469,16 +508,17 @@
     },
     {
         "draft": false,
-        "uri": "post/20181115-smartlock-install-lock-summary",
-        "content": "2018 11 13                         3                          GAME                                                    2018 11 15  9 05                           2018 11 13               2018 11 11       2018 11 12               2018 11 13            12 30      15 15                                      6054 30 388                      30                                                                         4 2     5 0                                                                                                                      cry                                                                                                                                                                        11 00   2018 11 14       13          6054                         8 20           40388 6054           7554                     11                                                                                                                           OK       smile                                                                                                    2018 11 15                                                                                                                                                                                 2018 11 13   8                                                                                                                                               APP   ZIGBEE      WIFI                                                                                                                               APP   ZIGBEE      WIFI                                                                                                                                                                                                                   6068                      6068                6068                                                                            2                                                                                                                                                                                                                                        99 99                                      6068                                    PS                                                     18617106073             Version Action  Time                     1 0 init 2018 11 15",
-        "objectID": "post/20181115-smartlock-install-lock-summary",
-        "title": "2018年11月15日 指纹锁安装总结",
+        "uri": "post/20181115-smartlock-install-lock-guild",
+        "content": "PS                                                                            A          1  210x33        2  240x30    B  3  260x24    C  4  280x24    D  5  388x40 388x30         6                        B          1            2                  C                75  68  1  75        2  68               D          4    1            2                                                                                6068 240 24  16  31          6068 240 30  16  31         6568 210 33  16  34      13     6068 280 24  22  36              6568 250 23  9  29           7568 260 24  34  52     5568      5568 184 28                7568 300 35 32             6068 368 40  96 111             6068 40 395 74 90              6068 40 405 74 90          6068 388 40 30  19  36            7568 300 40                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           1 https   item taobao com item htm spm a230r 1 14 22 46204b49FcmRcl id 572845256887 ns 1 abbucket 10 detail  2 https   jiayonggu taobao com search htm spm 2013 1 0 0 4ce97ccdvL5llt search y        Version Action  Time                     1 0 init 2018 11 15   1 1                                    2018 11 27",
+        "objectID": "post/20181115-smartlock-install-lock-guild",
+        "title": "指纹锁安装指导手册",
         "author": "yidaofeicn",
         "date": "2018-11-15T00:00:00.000Z",
         "Keywords": [
             "指纹锁",
             "安装",
-            "选用"
+            "指导",
+            "流程"
         ],
         "categories": [
             "指纹锁"
@@ -601,7 +641,7 @@
     {
         "draft": false,
         "uri": "post/20181119-smartlock-malfunctions",
-        "content": "4 0                https   www jianshu com p 3c9700d2c0bc                 Email yidaofeicn gmail com WeiXin toDream001                                                 toDream001             Version Action  Time                     1 0 init 2018 11 19",
+        "content": "https   www zhihu com question 20741025 answer 512442555                                Version Action  Time                     1 0 init 2018 11 19",
         "objectID": "post/20181119-smartlock-malfunctions",
         "title": "指纹锁故障列表",
         "author": "yidaofeicn",
@@ -641,6 +681,48 @@
         ]
     },
     {
+        "draft": false,
+        "uri": "post/20181127-network-iot-communication-technology",
+        "content": "GPRS WIFI   4 0 ZIGBEE 433 315   NB IOT LoRa eMTC        smile  GPRS          GSM       TDMA                           850 900 1800 1900mhz    115Kbps                            WIFI    IEEE 802 11b       IEEE 802 11           2 4GHz 5 8GHz    11Mbps 54Mbps                                  4 0                           2 4GHz    1Mbps                        ZIGBEE                                       2 4GHz 868MHz 915 MHz    250kbit s 20kbit s 40kbit s                                  433 315       433mhz 315mhz                       433Mhz    0 3 kbps 19 2 kbps                         50                                       NB IOT                      180Kbit s                         LoRa                           433 868 915 MHz    0 3 kbps 37 5 kbps                                  eMTC                        1 4MHz                  LTE           1Mbps          VoLTE            1 http   imgtec eetrend com forum 11297  2 https   blog csdn net cheng401733277 article details 69103351  3 https   www hachina io docs 407 html        Version Action  Time                     1 0 init 2018 11 27",
+        "objectID": "post/20181127-network-iot-communication-technology",
+        "title": "各大物联网通信技术对比",
+        "author": "<a href='https://me.csdn.net/cheng401733277'>未知电子</a>",
+        "date": "2018-11-15T00:00:00.000Z",
+        "Keywords": [
+            "物联网",
+            "NB-IOT",
+            "Lora"
+        ],
+        "categories": [
+            "网络技术"
+        ],
+        "tags": [
+            "通信技术"
+        ],
+        "CopyrightStatement": "本文内容主要来自 https://blog.csdn.net/cheng401733277/article/details/69103351"
+    },
+    {
+        "draft": false,
+        "uri": "post/20181127-network-lora-vs-nbiot",
+        "content": "NB IoT LoRa                                             LoRa   1GHz                      NB IoT       1GHz          500MHz 1GHz                                         LoRa                                      LoRa LoRaWAN                                                QoS       Sub GHz       MHz    5         NB IoT        QoS            LoRa          QoS              QoS              NB IoT                LoRa                                                           LoRaWAN                                                                               LoRaWAN        ALOHA                                                                  1 5s           NB IoT                                                                             OFDM  FDMA                                                                                            NB IoT                            LoRaWAN Class B                                                               NB IoT                                       LoRa                                   NB IoT                                             4G LTE                       4G LTE                 4G          NB IoT   16 6          17                                                              LoRa                                                           LoRa                                                        NB IoT                                          LoRaWAN   NB IoT                           NB IoT                                NB IoT 3GPP                       5                                                    3GPP      IoT                              LoRa                          LoRa                 LoRa        4               LoRa       7 10               4 5              LTE          20                      IoT LPWAN                       LoRaWAN                                                     1000           500             100         NB IoT        4GLTE              15000                              IoT                         NB IoT  LoRa                                                                                                                LoRaWAN ClassC                         NB IoT                                                                                                                                          LoRa                                      4G LTE    NB IoT   LoRa                                                                                                               QoS    NB IoT                                                LoRa                          NB IoT LoRa                                                                                                                                   LoRa               POS       POS                                                                                NB IoT                                                                                                               LoRa               NB IoT                      LoRa                 NB IoT            LoRa             IoT                                        NB IoT LoRa                  IoT                  Version Action  Time                     1 0 init 2018 11 28",
+        "objectID": "post/20181127-network-lora-vs-nbiot",
+        "title": "LoRa与NB-IoT谁才是下一代的王者？",
+        "author": " ",
+        "date": "2018-11-15T00:00:00.000Z",
+        "Keywords": [
+            "物联网",
+            "NB-IOT",
+            "Lora"
+        ],
+        "categories": [
+            "网络技术"
+        ],
+        "tags": [
+            "通信技术"
+        ],
+        "CopyrightStatement": "本文内容主要来自 https://blog.csdn.net/wifiadv/article/details/78793585"
+    },
+    {
         "title": "Todo",
         "uri": "todo",
         "content": "201811 Hugo todo",
@@ -650,11 +732,36 @@
         "weight": 40
     },
     {
+        "draft": false,
+        "uri": "todo/201811-todo-hugo",
+        "content": "Hugo               Hugo       todo            Hugo                                                         Hugo        https   blog olowolo com post hugo quick start                          github heartnn Hugo      https   github com heartnn hugo theme test                                   pytool http   blog pytool com tags hugo            Hugo                 Hugo   template   hugo            hugo Taxonomy                               HTML         https   gohugo io              http   www g var com tags hugo     Hugo       x        Get Started                Hugo              Content Organization         URL Management         Sections         Taxonomies         Content Summaries         Shortcodes         Related Content         Content Types         Hugo s Lookup Order         Base Templates Blocks         Data Templates         Create Own Shortcodes         Local File Templates Hugo         x   Hugo    Algolia            1              Hugo                          Hugo           Hugo                 Hugo Flybird                x      BootStrap        BootStrap     x  2018 11 26                  Smart Sticky Responsive Navigation With jQuery CSS3   x                              x  2018 11 26          HTTPS                            x  2018 11 26                 x                           https   notes iissnan com 2015 something about next   x  2018 11 26      x            TOC                          x                           TOC                 Note  HTML        CSS     Shortcodes  x          valine                 https   valine js org   x                               algolia                      https   notes iissnan com tags         x                TOC                    Hexo NexT GitHubPages         x                                                      https   soulteary com archives   x                                  Markdown         https   www chairyfish com gallery       x   markdown                    COS  Hugo                          shortcodes x   markdown                            Hugo      x   markdown                         COS  Hugo       Hugo         x   markdown       Card   1                 Hexo NexT GitHubPages         x                  x                                                  1 https   www qikqiak com post hugo integrated algolia search                            2 http   note qidong name 2017 06 24 hugo highlight            Prism JS                    3 https   theme next iissnan com third party services html  Hexo Next             welcome to hugo   https   soulteary com 2017 06 28 welcome to hugo html    Hugo       qcloud cos hugo   http   www shawpo me post qcloud cos hugo        COS  Hugo     my fairy tale4   http   litten me 2017 06 05 my fairy tale4                  hexo next optimization   https   reuixiy github io technology computer computer aided art 2017 06 09 hexo next optimization html       Version Action  Time                     1 0 init 2018 11 09",
+        "objectID": "todo/201811-todo-hugo",
+        "type": "post",
+        "title": "201811 Hugo Todo",
+        "author": "@yidaofeicn",
+        "date": "2018-11-09T00:00:00.000Z",
+        "Keywords": [
+            "hugo",
+            "建站",
+            "hugo",
+            "主题优化"
+        ],
+        "categories": [
+            "个人建站"
+        ],
+        "tags": [
+            "个人建站",
+            "hugo"
+        ],
+        "comment": false
+    },
+    {
         "title": "Wiki",
         "uri": "wiki",
         "content": "xianmin Git                           SASS",
         "objectID": "wiki",
         "date": "",
+        "layout": "wiki",
         "weight": 40
     },
     {
@@ -689,6 +796,7 @@
         "type": "post",
         "title": "中文排版指南",
         "author": "@ Aaklo Xu",
+        "CopyrightStatement": "本文转载自 [中文排版指南](https://github.com/aakloxu/chinese-copywriting-guidelines)，如有侵权请联系删除 ",
         "date": "2018-11-06T00:00:00.000Z",
         "Keywords": [
             "排版",
@@ -742,6 +850,6 @@
         "tags": [
             "纯音乐"
         ],
-        "toc": false
+        "toc": "toc"
     }
 ]
