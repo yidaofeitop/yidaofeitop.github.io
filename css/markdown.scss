@@ -162,12 +162,13 @@
 	}  
 	//内部引用的iframe框架，形成响应式布局
 	.videoIframe{
-		height:60vh; width:80vh;
+		height:60vh; 
+		width:80vh; 
 	}
 	@media(max-width:420px){ 
 		.videoIframe{
 			max-height: 200px;
-			max-width: 300px;
+			max-width: 300px; 
 		}
 	} 
 	//内部图片，需要配合相关插件使用
