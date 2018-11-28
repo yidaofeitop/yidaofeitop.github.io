@@ -1,13 +1,9 @@
 $(document).ready(function() {
 	//页面通用需要调整
-	//处理 markdown 内部的图片
-	addClassTagParent(".markdown","img","p","article-img"); 
+	commonMDAddClass();
 	//建立搜索
-	establishSearch("#search-input");
-	
-	//处理 markdown 内部的 Iframe 框架
-	$(".markdown").find("iframe").removeAttr("height").removeAttr("width").addClass('videoIframe');
- 	//处理分类页面的导航栏
+	establishSearch("#search-input"); 
+	//处理分类页面的导航栏
 	adjustSiteToc(true);  
  	//盘古之白
  	pangu.spacingPage(); 
@@ -37,6 +33,26 @@ $(document).ready(function() {
 	};
 	new needShareButton('#i-share',shareButtonOptions); 
 });
+
+
+/*
+markdown 输出部分样式调整
+*/
+function commonMDAddClass(){
+	//处理 markdown 内部的图片
+	addClassTagParent(".markdown","img","p","article-img"); 
+	//处理 markdown 内部的 Iframe 框架
+	$(".markdown").find("iframe").removeAttr("height").removeAttr("width").addClass('videoIframe');
+	//处理markdown 内部的表格 	
+	var tables=$(".markdown").find("table")
+	$.each(tables, function(index, table) {
+		  var tableDiv=$("<div class='table-responsive'></div>");
+		  $(table).before(tableDiv);
+		  $(tableDiv).prepend($(table).clone());
+		  $(table).remove();
+	}); 
+}
+
 
 /*
 响应式导航栏

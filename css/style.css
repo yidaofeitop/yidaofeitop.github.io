@@ -708,6 +708,14 @@ hr {
   white-space: pre;
   word-wrap: normal;
   word-break: normal; }
+.markdown .table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
+.markdown .table-responsive > .table-bordered {
+  border: 0; }
 .markdown table {
   margin-top: 1rem;
   margin-bottom: 1rem;

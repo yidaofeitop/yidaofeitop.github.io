@@ -69,7 +69,19 @@
 		    word-wrap: normal;
 		    word-break: normal; 
 	}
-	  
+	
+	//响应式表格-http://caibaojian.com/responsive-tables.html
+	.table-responsive {
+	  display: block;
+	  width: 100%;
+	  overflow-x: auto;
+	  -webkit-overflow-scrolling: touch;
+	  -ms-overflow-style: -ms-autohiding-scrollbar;
+	}
+
+	.table-responsive > .table-bordered {
+	  border: 0;
+	}
 	table{
 		margin-top:1rem;
     	margin-bottom:1rem;
