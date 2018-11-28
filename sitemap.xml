@@ -22,6 +22,11 @@
   </url>
   
   <url>
+    <loc>https://yidaofei.com/post/20181128-software-skills-piwigo-guild/</loc>
+    <lastmod>2018-11-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yidaofei.com/wiki/20181123-wiki-pure-music/</loc>
     <lastmod>2018-11-23T00:00:00+00:00</lastmod>
   </url>
@@ -162,6 +167,11 @@
   </url>
   
   <url>
+    <loc>https://yidaofei.com/wiki/20181013-wiki-knowledge-tree-agreement/</loc>
+    <lastmod>2018-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yidaofei.com/post/20181107-js-rebuild-hugo-sider-toc/</loc>
     <lastmod>2018-10-07T00:00:00+00:00</lastmod>
   </url>
@@ -281,7 +291,7 @@
   
   <url>
     <loc>https://yidaofei.com/post/</loc>
-    <lastmod>2018-11-19T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -317,7 +327,7 @@
   
   <url>
     <loc>https://yidaofei.com/tags/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99/</loc>
-    <lastmod>2018-11-09T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -342,6 +352,12 @@
   <url>
     <loc>https://yidaofei.com/tags/%E5%AE%89%E8%A3%85%E8%BF%90%E7%BB%B4/</loc>
     <lastmod>2018-11-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/tags/%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2018-11-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -414,6 +430,12 @@
   <url>
     <loc>https://yidaofei.com/tags/%E8%88%86%E8%AE%BA%E5%AF%BC%E5%90%91/</loc>
     <lastmod>2016-05-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/tags/%E8%A7%84%E5%88%99%E7%BA%A6%E5%AE%9A/</loc>
+    <lastmod>2018-10-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

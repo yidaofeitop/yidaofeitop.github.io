@@ -27,6 +27,29 @@
     </item>
     
     <item>
+      <title>自建图床 Piwigo 建议教程</title>
+      <link>https://yidaofei.com/post/20181128-software-skills-piwigo-guild/</link>
+      <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181128-software-skills-piwigo-guild/</guid>
+      <description>&lt;p&gt;Piwigo是一个开源项目，允许您在网络上创建自己的照片库并上传照片并创建新相册。 该平台包含一些内置的强大功能，如相册，
+标签，水印，地理位置，日历，系统通知，访问控制级别，主题和统计信息。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Piwigo 相比 chevereto 等图床而言&lt;/strong&gt;的特点在于以下两点：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;相册与 FTP 上传的文件系统同步架构&lt;/li&gt;
+&lt;li&gt;图片上传后外链的文件名不变&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;以上两个特点相信很多自建站的站长能够理解有多重要！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://piwigo.yidaofei.com/galleries/201809/piwigo-photo-gallery.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Markdown 语言教程——GFM</title>
       <link>https://yidaofei.com/wiki/20181110-wiki-markdown-github-flavored-markdown/</link>
       <pubDate>Sat, 10 Nov 2018 00:00:00 +0000</pubDate>

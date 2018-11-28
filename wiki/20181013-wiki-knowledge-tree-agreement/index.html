@@ -11,7 +11,8 @@
   
   
    
-  <meta charset="utf-8" name="description" content="Posts" >
+  <meta charset="utf-8" name="description" content="主要是说明知识树构建过程中的一些考虑与约定
+" >
   
   
   
@@ -22,7 +23,7 @@
   
   
   
-  <title>Posts- 易道非 Blog</title>  
+  <title>知识树约定-20181013- 易道非 Blog</title>  
   
   
     
@@ -45,6 +46,9 @@ if (!doNotTrack) {
   <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css">
 
 <body> 
+ 
+
+ 
 <div id="top-element" data-title="到达顶点"></div>
   
 <header class="site-header fixed-top">
@@ -98,148 +102,238 @@ if (!doNotTrack) {
 </div>
 
   
+
+
+
+<section class="main-content-container">
+<article class="article-card">
+	<header class="article-header"> 
+	   <p class="article-title">知识树约定-20181013</p>
+   		<div class="article-meta">
+			
+			<div><i class="fa fa-calendar" >2018年10月13日</i> </div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://yidaofei.com/categories/wiki">Wiki</a> 
+				   
+				</i>  
+			</div> 
+		</div>  
+	</header>  
+	<content class="markdown">
+		<p>主要是说明知识树构建过程中的一些考虑与约定
+</p>
+
+<h2 id="知识软件树">知识软件树</h2>
+
+<table>
+<thead>
+<tr>
+<th align="left">分类</th>
+<th align="left">工具</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">博客</td>
+<td align="left">Gitbook</td>
+<td align="left">系统化知识-如《如何搭建 Piwigo》</td>
+</tr>
+
+<tr>
+<td align="left">博客</td>
+<td align="left">Hugo</td>
+<td align="left">零散式知识或简约输出-如《搭建 shadowsocks》，不可公开采用加密上传</td>
+</tr>
+
+<tr>
+<td align="left">图库</td>
+<td align="left">Piwigo</td>
+<td align="left">开源图库 <a href="http://65.49.227.90:8001/">http://65.49.227.90:8001/</a>, 避免出现图床停止运营</td>
+</tr>
+
+<tr>
+<td align="left">网盘</td>
+<td align="left">Seafile</td>
+<td align="left">开源网盘，支持增量同步，跨平台，构建手册：<a href="https://manual-cn.seafile.com/overview/components.html">Seafile服务器</a></td>
+</tr>
+
+<tr>
+<td align="left">网盘</td>
+<td align="left">googledriver-ydf</td>
+<td align="left">存储私人照片、一般重要性文件</td>
+</tr>
+
+<tr>
+<td align="left">网盘</td>
+<td align="left">googledriver-azlcn.dao</td>
+<td align="left">存储 Pron</td>
+</tr>
+
+<tr>
+<td align="left">网盘</td>
+<td align="left">pcloud-azlcn</td>
+<td align="left">存储工作文件，10个月之后直接用 nutstore代替</td>
+</tr>
+
+<tr>
+<td align="left">网盘</td>
+<td align="left">nutstore-azlcn</td>
+<td align="left">存储工作文件-主要阵地（不限量）</td>
+</tr>
+
+<tr>
+<td align="left">网盘</td>
+<td align="left">baidu</td>
+<td align="left">存储非常不重要的文件-如软件、系统等</td>
+</tr>
+
+<tr>
+<td align="left">加密</td>
+<td align="left">BitLocker</td>
+<td align="left">Windows 自带，建立私人分区，存放整理后资料等</td>
+</tr>
+
+<tr>
+<td align="left">加密</td>
+<td align="left">VeraCrapt</td>
+<td align="left">块加密软件，用于加密 Pron 等极度私密软件</td>
+</tr>
+
+<tr>
+<td align="left">加密</td>
+<td align="left">Cryptomator</td>
+<td align="left">开源网盘上传加密软件，相比较 VeraCrapt 优势在于 <strong>零散文件增量同步</strong></td>
+</tr>
+
+<tr>
+<td align="left">思维</td>
+<td align="left">workflowy</td>
+<td align="left">极简软件</td>
+</tr>
+
+<tr>
+<td align="left">思维</td>
+<td align="left">xmind</td>
+<td align="left">思路整理软件</td>
+</tr>
+
+<tr>
+<td align="left">思维</td>
+<td align="left">滴答清单</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+
+<p>所有的文章全部用 Markdown 格式，格式根据<a href="https://yidaofei.com/wiki/20181106-wiki-chinese-copywriting-guidelines/">《中文排版指南》</a>
+做相关调整</p>
+			  
+		
+		
+			<div class="article-copyright">
+			  	<ul>
+			  		<li><strong>本文作者：</strong>易道非</li>
+			  		<li><strong>本文链接：</strong>https://yidaofei.com/wiki/20181013-wiki-knowledge-tree-agreement/</li>
+			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
+			  	</ul>
+			</div>
+		 
+	</content>  
+ 	<hr/>
+ 	
+	<div class="article-footer-meta-between"> 
+		 
+		<div>
+			<i class="fa fa-tags">&nbsp;Tags:
+			
+				<a href="https://yidaofei.com/tags/%e8%a7%84%e5%88%99%e7%ba%a6%e5%ae%9a">规则约定</a>
+    		
+    		</i>   
+		</div> 
+		 
+		<div id="i-share" class="btn btn-default  share-widget">
+		    <i class="fa fa-share-alt"></i>
+		</div> 
+	</div>
+	<hr/>
+	<div class="article-footer-meta-between"> 
+		<div class="refArticle-prev" >
+			  
+		    <a href="https://yidaofei.com/wiki/20181106-wiki-chinese-copywriting-guidelines/">
+		    	<i class="fa fa-angle-double-left"></i>&nbsp;中文排版指南  
+		    </a> 
+			
+		</div>
+		 <div class="refArticle-next" >
+		 
+	    </div>
+	</div>  
+</article> 
+</section>
  
 
-
-<div class="main-content-container">
-    <div class="archive-title">
-      <span class="archive-post-counter"> 
-      </span>
-    </div> 
-     
-         <section class="categories-card"> 
-          <ul>
-          <h2 class="categories-title">2018</h2>
-      
-      
-        <li>
-          <time datetime="2018-11-28">2018年11月28日&nbsp;&nbsp;</time>
-          <a href="/post/20181128-software-skills-piwigo-guild/"> 自建图床 Piwigo 建议教程</a>  
-        </li>  
-         
-    
-      
-      
-        <li>
-          <time datetime="2018-11-19">2018年11月19日&nbsp;&nbsp;</time>
-          <a href="/post/20181119-smartlock-zhihu/"> 知乎-关于指纹锁相关回答</a>  
-        </li>  
-         
-    
-      
-      
-        <li>
-          <time datetime="2018-11-19">2018年11月19日&nbsp;&nbsp;</time>
-          <a href="/post/20181119-smartlock-malfunctions/"> 指纹锁故障列表</a>  
-        </li>  
-         
-    
-      
-      
-        <li>
-          <time datetime="2018-11-19">2018年11月19日&nbsp;&nbsp;</time>
-          <a href="/post/20181119-hugo-algolia-search/"> Hugo 集成 Algolia 搜索</a>  
-        </li>  
-         
-    
-      
-      
-        <li>
-          <time datetime="2018-11-18">2018年11月18日&nbsp;&nbsp;</time>
-          <a href="/post/20181118-smartlock-how-to-select-a-good-smartlock/"> 如何挑选一款适合自己的指纹锁</a>  
-        </li>  
-         
-    
-      
-      
-        <li>
-          <time datetime="2018-11-17">2018年11月17日&nbsp;&nbsp;</time>
-          <a href="/post/20181117-smartlock-how-fingerprint-lock-works/"> 指纹锁工作原理及结构设计要点</a>  
-        </li>  
-         
-    
-      
-      
-        <li>
-          <time datetime="2018-11-15">2018年11月15日&nbsp;&nbsp;</time>
-          <a href="/post/20181115-driver-summary/"> 深圳驾照考试总结</a>  
-        </li>  
-         
-    
-      
-      
-        <li>
-          <time datetime="2018-11-15">2018年11月15日&nbsp;&nbsp;</time>
-          <a href="/post/20181115-smartlock-install-lock-day-summary/"> 指纹锁安装日总结——流程/细节/选择重要</a>  
-        </li>  
-         
-    
-      
-      
-        <li>
-          <time datetime="2018-11-15">2018年11月15日&nbsp;&nbsp;</time>
-          <a href="/post/20181115-smartlock-install-lock-guild/"> 指纹锁安装指导手册</a>  
-        </li>  
-         
-    
-      
-      
-        <li>
-          <time datetime="2018-11-15">2018年11月15日&nbsp;&nbsp;</time>
-          <a href="/post/20181115-smartlock-install-lock-toolslist/"> 指纹锁安装工具清单</a>  
-        </li>  
-         
-            </ul>  
-            </section> 
-         </div> 
-
-
+  
  
- 
-
-
-
-
+<div class="main-content-container " >
+<div class="comment-card"> 
   
   
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <div class="pagination-content-container">
-    <div class="pagination " > 
-        
-          
-            <a href="/post/" class="page-link page-link-visited"> 1</a> 
-           
-        
-          
-            <a href="/post/page/2/" class="page-link "> 2</a> 
-           
-        
-          
-            <a href="/post/page/3/" class="page-link "> 3</a> 
-           
-        
-          
-            <a href="/post/page/4/" class="page-link "> 4</a> 
-           
-         
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeicn/comment-utterances-blog-yidaofeicn"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
     </div>
-  </div>
   
-   
+
+  
+
+  
+
+  
+</div>
+</div>
 
  
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#知识软件树">知识软件树</a></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
 
 <footer class="site-footer text-center">
   <div class="social" > 
@@ -317,12 +411,22 @@ if (!doNotTrack) {
 
 
 
+<span id="isPage" data-isPage="true" style="display: none;"></span>
+
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+
  
 
 <script type="text/javascript" src="https://yidaofei.com//js/flybird.js"></script> 
 <script type="text/javascript" src="https://yidaofei.com//js/main.js"></script> 
+  
  
- 
+</style>
 </body>
 </html>
+
+
  

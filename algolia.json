@@ -151,7 +151,7 @@
             "个人博客建站"
         ],
         "tags": [
-            "个人博客建站"
+            "个人建站"
         ],
         "categories": [
             "软件技巧"
@@ -722,9 +722,29 @@
         "CopyrightStatement": "本文内容主要来自 https://blog.csdn.net/wifiadv/article/details/78793585"
     },
     {
+        "draft": false,
+        "uri": "post/20181128-software-skills-piwigo-guild",
+        "content": "Piwigo                                                                                           Piwigo    chevereto                     FTP                                                     LAMP        Piwigo                      VPS      CentOS 7       CentOS 7  LAMP              VPS       bandwagon   vultr                 LAMP             LAMP           Piwigo                LAMP      Linux Apache    MySQL  MariaDB   PHP  Perl Python        WEB         LAMP                            Piwigo                                     https   www bt cn bbs thread 19376 1 1 html       CentOS 7         yum install  y wget    wget  O install sh http   download bt cn install install_6 0 sh    bash install sh          http   VPS_IP 8888        LAMP     Piwigo         FPT    Piwigo           Piwigo wget http   piwigo org download dlcounter php code latest  O piwigo zip ls unzip piwigo zip   piwigo         www wwwroot              cp  rf piwigo  www wwwroot  chown  R 777  www wwwroot piwigo                 http   VPS_IP                                                          Piwigo       FTP           FTP        Piwigo galleries              a z A Z 0 9      _                                                                                 Piwigo            Bootstrap Default                 FTP                                  a z A Z 0 9      _                                              FTP                                 1 https   www howtoing com install piwigo photo gallery in centos        Version Action  Time                     1 0 init 2018 11 28",
+        "objectID": "post/20181128-software-skills-piwigo-guild",
+        "title": "自建图床 Piwigo 建议教程",
+        "date": "2018-11-28T00:00:00.000Z",
+        "Keywords": [
+            "开源",
+            "图床",
+            "自建"
+        ],
+        "categories": [
+            "软件技巧"
+        ],
+        "tags": [
+            "个人建站",
+            "开源软件"
+        ]
+    },
+    {
         "title": "Todo",
         "uri": "todo",
-        "content": "201811 Hugo todo",
+        "content": "201811 todo Hugo 20181128 todo software",
         "objectID": "todo",
         "date": "",
         "layout": "wiki",
@@ -766,7 +786,7 @@
     {
         "draft": false,
         "uri": "wiki/2018-wiki-maybe-read-once",
-        "content": "101                               GitLab    Gitlab                    Google                    SSH key            ssh git gitlab com 2farecoverycodes            https   stackoverflow com questions 39142153                 http   love jimmylv info                                   Version Action  Time                     1 0 init 2018 11 10",
+        "content": "101                               GitLab    Gitlab                    Google                    SSH key            ssh git gitlab com 2farecoverycodes            https   stackoverflow com questions 39142153                 http   love jimmylv info                                                                 Version Action  Time                     1 0 init 2018 11 10",
         "objectID": "wiki/2018-wiki-maybe-read-once",
         "type": "post",
         "title": "Maybe read once",
@@ -786,6 +806,21 @@
             "中文排版指南"
         ],
         "comment": false
+    },
+    {
+        "draft": false,
+        "uri": "wiki/20181013-wiki-knowledge-tree-agreement",
+        "content": "Gitbook                Piwigo        Hugo                   shadowsocks                   Piwigo        http   65 49 227 90 8001                    Seafile                        Seafile         googledriver ydf                        googledriver azlcn dao      Pron       pcloud azlcn          10        nutstore         nutstore azlcn                          baidu                            BitLocker   Windows                          VeraCrapt              Pron               Cryptomator                  VeraCrapt                     workflowy             xmind                                 Markdown",
+        "objectID": "wiki/20181013-wiki-knowledge-tree-agreement",
+        "title": "知识树约定-20181013",
+        "date": "2018-10-13T00:00:00.000Z",
+        "tags": [
+            "规则约定"
+        ],
+        "categories": [
+            "Wiki"
+        ],
+        "toc": true
     },
     {
         "draft": false,
