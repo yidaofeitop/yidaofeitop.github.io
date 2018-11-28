@@ -13,7 +13,12 @@
   
   <url>
     <loc>https://yidaofei.com/wiki/</loc>
-    <lastmod>2018-11-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/wiki/20181128-wiki-markdown-github-emoji/</loc>
+    <lastmod>2018-11-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -77,7 +82,7 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/wiki/20181110-wiki-markdown-of-github-flavored-markdown/</loc>
+    <loc>https://yidaofei.com/wiki/20181110-wiki-markdown-github-flavored-markdown/</loc>
     <lastmod>2018-11-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -219,7 +224,7 @@
   
   <url>
     <loc>https://yidaofei.com/</loc>
-    <lastmod>2018-11-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -413,12 +418,6 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/tags/%E8%A1%A5%E5%8A%A9%E8%AF%AD%E8%A8%80/</loc>
-    <lastmod>2018-11-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://yidaofei.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2018-08-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -432,7 +431,13 @@
   
   <url>
     <loc>https://yidaofei.com/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2018-11-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/tags/%E8%BE%85%E5%8A%A9%E8%AF%AD%E8%A8%80/</loc>
+    <lastmod>2018-11-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
