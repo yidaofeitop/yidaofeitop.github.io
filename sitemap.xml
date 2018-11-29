@@ -17,7 +17,22 @@
   </url>
   
   <url>
+    <loc>https://yidaofei.com/draft/20181129-windows-skills/</loc>
+    <lastmod>2018-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yidaofei.com/post/20181129-forward-oppose-to-amend-rule4-of-usa/</loc>
+    <lastmod>2018-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/post/20181129-internationale/</loc>
+    <lastmod>2018-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/post/20181129-the-last-of-the-mohicans/</loc>
     <lastmod>2018-11-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -264,19 +279,25 @@
   </url>
   
   <url>
+    <loc>https://yidaofei.com/draft/</loc>
+    <lastmod>2018-11-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yidaofei.com/tags/hugo/</loc>
     <lastmod>2018-11-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yidaofei.com/categories/javascript/</loc>
+    <loc>https://yidaofei.com/tags/javascript/</loc>
     <lastmod>2018-11-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yidaofei.com/tags/javascript/</loc>
+    <loc>https://yidaofei.com/categories/javascript/</loc>
     <lastmod>2018-11-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -336,19 +357,25 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/categories/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99/</loc>
-    <lastmod>2018-11-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://yidaofei.com/tags/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2018-11-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://yidaofei.com/categories/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99/</loc>
+    <lastmod>2018-11-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yidaofei.com/tags/%E4%BA%92%E8%81%94%E7%BD%91%E9%9A%90%E7%A7%81/</loc>
+    <lastmod>2018-11-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/tags/%E5%85%B1%E4%BA%A7%E4%B8%BB%E4%B9%89/</loc>
     <lastmod>2018-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -384,13 +411,13 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/categories/%E6%8C%87%E7%BA%B9%E9%94%81/</loc>
+    <loc>https://yidaofei.com/tags/%E6%8C%87%E7%BA%B9%E9%94%81/</loc>
     <lastmod>2018-11-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yidaofei.com/tags/%E6%8C%87%E7%BA%B9%E9%94%81/</loc>
+    <loc>https://yidaofei.com/categories/%E6%8C%87%E7%BA%B9%E9%94%81/</loc>
     <lastmod>2018-11-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -404,6 +431,12 @@
   <url>
     <loc>https://yidaofei.com/categories/%E6%97%B6%E4%BA%8B%E7%83%AD%E8%AF%84/</loc>
     <lastmod>2016-05-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/tags/%E6%B0%91%E6%97%8F%E8%90%BD%E5%AF%9E/</loc>
+    <lastmod>2018-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -427,7 +460,7 @@
   
   <url>
     <loc>https://yidaofei.com/tags/%E7%BA%AF%E9%9F%B3%E4%B9%90/</loc>
-    <lastmod>2018-11-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -474,8 +507,14 @@
   </url>
   
   <url>
+    <loc>https://yidaofei.com/tags/%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2018-11-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yidaofei.com/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2018-11-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -494,6 +533,12 @@
   <url>
     <loc>https://yidaofei.com/tags/%E9%87%8D%E7%96%BE%E9%99%A9/</loc>
     <lastmod>2015-06-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/categories/%E9%9F%B3%E4%B9%90%E6%AE%BF%E5%A0%82/</loc>
+    <lastmod>2018-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

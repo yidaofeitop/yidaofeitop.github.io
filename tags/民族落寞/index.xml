@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>纯音乐 on  易道非 Blog</title>
-    <link>https://yidaofei.com/tags/%E7%BA%AF%E9%9F%B3%E4%B9%90/</link>
-    <description>Recent content in 纯音乐 on  易道非 Blog</description>
+    <title>民族落寞 on  易道非 Blog</title>
+    <link>https://yidaofei.com/tags/%E6%B0%91%E6%97%8F%E8%90%BD%E5%AF%9E/</link>
+    <description>Recent content in 民族落寞 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 29 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://yidaofei.com/tags/%E7%BA%AF%E9%9F%B3%E4%B9%90/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yidaofei.com/tags/%E6%B0%91%E6%97%8F%E8%90%BD%E5%AF%9E/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -28,15 +28,6 @@
 &lt;/video&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>纯音乐列表</title>
-      <link>https://yidaofei.com/wiki/20181123-wiki-pure-music/</link>
-      <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://yidaofei.com/wiki/20181123-wiki-pure-music/</guid>
-      <description>&lt;p&gt;本文主要是记录一些关于纯音乐并分享给大家，由于海外版权问题，可能会无法访问&lt;/p&gt;</description>
     </item>
     
   </channel>

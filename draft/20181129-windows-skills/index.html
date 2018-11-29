@@ -10,8 +10,13 @@
 
   
   
+    
+    <meta charset="utf-8" name="keywords" content="windows技巧,优化," > 
+  
    
-  <meta charset="utf-8" name="description" content="Posts" >
+  <meta charset="utf-8" name="description" content="本文主要是记录关于在使用 windows 过程中的技巧，暂定状态为草稿状态，达到一定量后整理为正式文件
+
+" >
   
   
   
@@ -22,7 +27,7 @@
   
   
   
-  <title>Posts- 易道非 Blog</title>  
+  <title>Windows 技巧- 易道非 Blog</title>  
   
   
     
@@ -45,6 +50,9 @@ if (!doNotTrack) {
   <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css">
 
 <body> 
+ 
+
+ 
 <div id="top-element" data-title="到达顶点"></div>
   
 <header class="site-header fixed-top">
@@ -98,148 +106,198 @@ if (!doNotTrack) {
 </div>
 
   
+
+
+
+<section class="main-content-container">
+<article class="article-card">
+	<header class="article-header"> 
+	   <p class="article-title">Windows 技巧</p>
+   		<div class="article-meta">
+			
+			<div><i class="fa fa-calendar" >2018年11月29日</i> </div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://yidaofei.com/categories/%e8%bd%af%e4%bb%b6%e6%8a%80%e5%b7%a7">软件技巧</a> 
+				   
+				</i>  
+			</div> 
+		</div>  
+	</header>  
+	<content class="markdown">
+		<p>本文主要是记录关于在使用 windows 过程中的技巧，暂定状态为草稿状态，达到一定量后整理为正式文件</p>
+
+<p></p>
+
+<h3 id="软连接">软连接</h3>
+
+<p>此需求来自 <a href="https://chrome.google.com/webstore/detail/maoxian-web-clipper/kjahokgdcbohofgdidndeiaigkehdjdc?hl=en">MaoXian Web Clipper </a></p>
+
+<p>此插件只能够访问 Chrome/Firfox 浏览器的下载文件目录，但是由于本人需要将相关的文件存储到对应的需要同步的网盘文件夹，所以采用软连接：</p>
+
+<p>命令行如下：<code>mklink /D D:\download\mx-wc E:\02resource\webCrawling</code></p>
+
+<h4 id="扩展部分">扩展部分</h4>
+
+<p>关于 windows 软链接、硬链接、快捷方式的差别如下：</p>
+
+<p><strong>软连接：</strong></p>
+
+<ol>
+<li>执行命令 <code>mklink /D link_name target_name</code></li>
+<li>在系统中不占用空间，在文件系统中不是一个单独的文件</li>
+<li>如果源文件被删除了，链接就没用了；移除源文件不会影响符号链接；移除链接文件也不会影响源文件</li>
+</ol>
+
+<p><strong>硬连接：</strong></p>
+
+<ol>
+<li>执行命令 <code>mklink /H link_name target_name</code></li>
+<li>在系统中占用的空间与源文件相同，但在系统中引用的是相同的对象（不是拷贝）</li>
+<li>移除源文件不会影响硬链接；移除硬链接不会影响源文件；如果源文件被删除，它的内容依然通过硬链接存在
+硬链接文件的任何更改都会影响到源文件</li>
+</ol>
+
+<p><strong>快捷方式：</strong></p>
+
+<ol>
+<li>创建方式：在选择的源文件上鼠标右键，通过下拉菜单创建</li>
+<li>快捷方式在系统中跟源文件是完全分离的</li>
+<li>如果源文件删除，链接就没用了；移除源文件不会移除快捷方式；移除快捷方式不会影响到源文件</li>
+</ol>
+
+<h4 id="参考资料">参考资料：</h4>
+
+<p>[1]<a href="https://www.cnblogs.com/heqichang/archive/2012/04/26/2471774.html">Windows下硬链接、软链接和快捷方式的区别</a><br />
+[2]<a href="https://mika-cn.github.io/maoxian-web-clipper/faq-zh-CN.html">MaoXian Web Clipper 常见问题</a></p>
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Version</th>
+<th align="center">Action</th>
+<th align="center">Time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1.0</td>
+<td align="center">init</td>
+<td align="center">2018-11-29</td>
+</tr>
+</tbody>
+</table>
+			  
+		
+		
+			<div class="article-copyright">
+			  	<ul>
+			  		<li><strong>本文作者：</strong>易道非</li>
+			  		<li><strong>本文链接：</strong>https://yidaofei.com/draft/20181129-windows-skills/</li>
+			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
+			  	</ul>
+			</div>
+		 
+	</content>  
+ 	<hr/>
+ 	
+	<div class="article-footer-meta-between"> 
+		 
+		<div>
+			<i class="fa fa-tags">&nbsp;Tags:
+			
+				<a href="https://yidaofei.com/tags/%e8%bd%af%e4%bb%b6%e6%8a%80%e5%b7%a7">软件技巧</a>
+    		
+    		</i>   
+		</div> 
+		 
+		<div id="i-share" class="btn btn-default  share-widget">
+		    <i class="fa fa-share-alt"></i>
+		</div> 
+	</div>
+	<hr/>
+	<div class="article-footer-meta-between"> 
+		<div class="refArticle-prev" >
+			
+		</div>
+		 <div class="refArticle-next" >
+		 
+	    </div>
+	</div>  
+</article> 
+</section>
  
 
-
-<div class="main-content-container"> 
-     
-         <section class="categories-card"> 
-          <ul>
-          <h2 class="categories-title">2018</h2>
-      
-      
-        <li>
-          <time datetime="2018-11-15">2018年11月15日&nbsp;&nbsp;</time>
-          <a href="/post/20181115-driver-summary/"> 深圳驾照考试总结</a>  
-        </li>  
-         
-    
-      
-      
-        <li>
-          <time datetime="2018-11-15">2018年11月15日&nbsp;&nbsp;</time>
-          <a href="/post/20181115-smartlock-install-lock-day-summary/"> 指纹锁安装日总结——流程/细节/选择重要</a>  
-        </li>  
-         
-    
-      
-      
-        <li>
-          <time datetime="2018-11-15">2018年11月15日&nbsp;&nbsp;</time>
-          <a href="/post/20181115-smartlock-install-lock-guild/"> 指纹锁安装指导手册</a>  
-        </li>  
-         
-    
-      
-      
-        <li>
-          <time datetime="2018-11-15">2018年11月15日&nbsp;&nbsp;</time>
-          <a href="/post/20181115-smartlock-install-lock-toolslist/"> 指纹锁安装工具清单</a>  
-        </li>  
-         
-    
-      
-      
-        <li>
-          <time datetime="2018-11-15">2018年11月15日&nbsp;&nbsp;</time>
-          <a href="/post/20181127-network-iot-communication-technology/"> 各大物联网通信技术对比</a>  
-        </li>  
-         
-    
-      
-      
-        <li>
-          <time datetime="2018-11-15">2018年11月15日&nbsp;&nbsp;</time>
-          <a href="/post/20181127-network-lora-vs-nbiot/"> LoRa与NB-IoT谁才是下一代的王者？</a>  
-        </li>  
-         
-    
-      
-      
-        <li>
-          <time datetime="2018-11-10">2018年11月10日&nbsp;&nbsp;</time>
-          <a href="/post/20181110-software-skills-markdown-github-flavored-markdown/"> Markdown 语言教程——GFM</a>  
-        </li>  
-         
-    
-      
-      
-        <li>
-          <time datetime="2018-11-08">2018年11月08日&nbsp;&nbsp;</time>
-          <a href="/post/20181108-hugo-quick-start/"> 个人建站-Hugo-快速开始</a>  
-        </li>  
-         
-    
-      
-      
-        <li>
-          <time datetime="2018-11-07">2018年11月07日&nbsp;&nbsp;</time>
-          <a href="/post/20181107-js-fix-anchor-of-fixed-nav-header/"> JavaScript-修复由导航栏固定导致的页面锚点偏差 Bug</a>  
-        </li>  
-         
-    
-      
-      
-        <li>
-          <time datetime="2018-11-06">2018年11月06日&nbsp;&nbsp;</time>
-          <a href="/post/20181106-forward-chinese-copywriting-guidelines/"> 中文排版指南</a>  
-        </li>  
-         
-            </ul>  
-            </section> 
-         </div> 
-
-
+  
  
- 
-
-
-
-
+<div class="main-content-container " >
+<div class="comment-card"> 
   
   
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <div class="pagination-content-container">
-    <div class="pagination " > 
-        
-          
-            <a href="/post/" class="page-link "> 1</a> 
-           
-        
-          
-            <a href="/post/page/2/" class="page-link page-link-visited"> 2</a> 
-           
-        
-          
-            <a href="/post/page/3/" class="page-link "> 3</a> 
-           
-        
-          
-            <a href="/post/page/4/" class="page-link "> 4</a> 
-           
-        
-          
-            <a href="/post/page/5/" class="page-link "> 5</a> 
-           
-         
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeicn/comment-utterances-blog-yidaofeicn"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
     </div>
-  </div>
   
-   
+
+  
+
+  
+
+  
+</div>
+</div>
 
  
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#软连接">软连接</a>
+<ul>
+<li><a href="#扩展部分">扩展部分</a></li>
+<li><a href="#参考资料">参考资料：</a></li>
+</ul></li>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
 
 <footer class="site-footer text-center">
   <div class="social" > 
@@ -317,12 +375,22 @@ if (!doNotTrack) {
 
 
 
+<span id="isPage" data-isPage="true" style="display: none;"></span>
+
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+
  
 
 <script type="text/javascript" src="https://yidaofei.com//js/flybird.js"></script> 
 <script type="text/javascript" src="https://yidaofei.com//js/main.js"></script> 
+  
  
- 
+</style>
 </body>
 </html>
+
+
  
