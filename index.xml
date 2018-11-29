@@ -430,10 +430,10 @@ HTML区段标签和区块标签不同，在区段标签的范围內，Markdown�
     
     <item>
       <title>201811 Hugo Todo</title>
-      <link>https://yidaofei.com/todo/201811-todo-hugo/</link>
+      <link>https://yidaofei.com/post/201811-todo-hugo/</link>
       <pubDate>Fri, 09 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/todo/201811-todo-hugo/</guid>
+      <guid>https://yidaofei.com/post/201811-todo-hugo/</guid>
       <description>&lt;p&gt;本文主要是记录自了解 Hugo 个人建站后真正开始动手使用 Hugo 的相关体验、todo、优化记录！&lt;/p&gt;
 
 &lt;p&gt;在自定义 Hugo 过程中主要参考以下文档，非常感谢这些作者的付出（相关的评论无任何的偏见，仅是阅读的一些体验）&lt;/p&gt;

@@ -727,7 +727,7 @@ hr {
   border-top: 0.08rem solid #000000;
   border-left: 0.08rem solid #000000; }
 .markdown table tbody tr:nth-child(2n+1) {
-  background-color: #DCDCDC; }
+  background-color: #ddd; }
 .markdown hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
