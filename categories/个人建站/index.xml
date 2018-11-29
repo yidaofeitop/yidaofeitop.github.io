@@ -6,10 +6,30 @@
     <description>Recent content in 个人建站 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 19 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://yidaofei.com/categories/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo 主题 flybird 预览 </title>
+      <link>https://yidaofei.com/post/20181129-hugo-flybird-preview/</link>
+      <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181129-hugo-flybird-preview/</guid>
+      <description>&lt;p&gt;这篇文章集中说明本人博客主题所支持的 Markdown 语法和 Hugo Shortcodes 插件，你也可以在这里预览到他们的样子。&lt;/p&gt;
+
+&lt;p&gt;另外针对初次接触 Hugo 以及 Markdown 的用户请访问以下链接：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181106-chinese-copywriting-guidelines/&#34;&gt;中文排版指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181110-software-skills-markdown-github-flavored-markdown/&#34;&gt;Markdown 语言教程——GFM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181128-software-skills-markdown-github-emoji/&#34;&gt;GFM 表情列表&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181108-hugo-quick-start/&#34;&gt;个人建站 - Hugo - 快速开始&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Hugo 集成 Algolia 搜索</title>

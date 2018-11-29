@@ -108,6 +108,55 @@ if (!doNotTrack) {
 
    <article class="article-card">
 	<header class="article-header">  
+		<a href="https://yidaofei.com/post/20181107-js-fix-anchor-of-fixed-nav-header/" title="JavaScript-修复由导航栏固定导致的页面锚点偏差 Bug" class="article-title" >
+			<h4 >JavaScript-修复由导航栏固定导致的页面锚点偏差 Bug</h4>
+		</a>
+		<div class="article-meta"> 
+			<time datetime="2018-11-07">
+				<i class="fa fa-calendar">&nbsp;2018年11月07日</i>
+			</time> 
+			<span><i class="fa fa-pencil">&nbsp;2261 word</i></span>
+			<span><i class="fa fa-hourglass-start">&nbsp;5 min read</i></span>
+		</div> 
+	</header> 
+		
+	<div>   
+		 
+		<div class="markdown">
+		 	<p>问题现象：点击侧面 TOC 的链接跳转到锚点内容的下方，在手机浏览器上效果偏移更大<br />
+分析现象：参考相关资料后并对应网站是由于 <strong>头部导航栏采用的绝对布局——固定在顶部</strong>，页面上滑动的距离需要减去头部导航栏的高度<br />
+解决方法：在页面锚点上前加上一个隐藏的 <code>&lt;a&gt;</code> 标签，采用相对布局固定在锚点上方，并设定相关的 <code>top</code>数据</p>
+
+<p></p> 
+		</div>
+	</div>
+	<hr/>
+	<footer  class="article-footer-meta-between">
+		<div>
+		 
+		 
+		  
+			<span >
+				<i class="fa fa-tags"></i> 
+				
+						<a href="https://yidaofei.com/tags/javascript">JavaScript</a> &nbsp;&nbsp;
+	    		
+						<a href="https://yidaofei.com/tags/bug">Bug</a> &nbsp;&nbsp;
+	    		
+						<a href="https://yidaofei.com/tags/toc">TOC</a> &nbsp;&nbsp;
+	    		   
+    		</span> 
+    	
+		
+		</div> 
+		<div >
+			<a href="https://yidaofei.com/post/20181107-js-fix-anchor-of-fixed-nav-header/" title="JavaScript-修复由导航栏固定导致的页面锚点偏差 Bug" >阅读全文</a> 
+		</div>
+	</footer>
+</article>  
+
+   <article class="article-card">
+	<header class="article-header">  
 		<a href="https://yidaofei.com/wiki/2018-wiki-maybe-read-once/" title="Maybe read once" class="article-title" >
 			<h4 >Maybe read once</h4>
 		</a>
@@ -605,51 +654,6 @@ H（车库距控制线）：车身长的1.5倍</p>
 		</div> 
 		<div >
 			<a href="https://yidaofei.com/post/20181013-driver-right-angle-turn/" title="2018深圳驾照水头考场科目二-直角转弯 " >阅读全文</a> 
-		</div>
-	</footer>
-</article>  
-
-   <article class="article-card">
-	<header class="article-header">  
-		<a href="https://yidaofei.com/post/20181013-software-skills-mi5s-twrp-brush/" title="小米5S TWRP 刷机教程" class="article-title" >
-			<h4 >小米5S TWRP 刷机教程</h4>
-		</a>
-		<div class="article-meta"> 
-			<time datetime="2018-10-13">
-				<i class="fa fa-calendar">&nbsp;2018年10月13日</i>
-			</time> 
-			<span><i class="fa fa-pencil">&nbsp;934 word</i></span>
-			<span><i class="fa fa-hourglass-start">&nbsp;2 min read</i></span>
-		</div> 
-	</header> 
-		
-	<div>   
-		 
-		<div class="markdown">
-		 	<p>以下所有的操作全部是基于 Mi5S,此方法主要是用于如 MIUI 俄罗斯、魔趣等第三方 ROM</p>
-
-<p>【注意】：Mi5S 等官方有 Bootloader 锁的机型请先向官方申请解锁，未解锁的手机是无法透过 Fastboot 对手机刷入 Recovery 的<br />
-解锁请参考文章：<a href="http://www.miui.com/unlock/">http://www.miui.com/unlock/</a>
-</p> 
-		</div>
-	</div>
-	<hr/>
-	<footer  class="article-footer-meta-between">
-		<div>
-		 
-		 
-		  
-			<span >
-				<i class="fa fa-tags"></i> 
-				
-						<a href="https://yidaofei.com/tags/"></a> &nbsp;&nbsp;
-	    		   
-    		</span> 
-    	
-		
-		</div> 
-		<div >
-			<a href="https://yidaofei.com/post/20181013-software-skills-mi5s-twrp-brush/" title="小米5S TWRP 刷机教程" >阅读全文</a> 
 		</div>
 	</footer>
 </article>  
