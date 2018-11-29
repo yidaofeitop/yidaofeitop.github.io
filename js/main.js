@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	//页面通用需要调整
-	commonMDAddClass();
+	markdownBeautify();
 	//建立搜索
 	establishSearch("#search-input"); 
 	//处理分类页面的导航栏
@@ -36,16 +36,15 @@ $(document).ready(function() {
 /*
 markdown 输出部分样式调整
 */
-function commonMDAddClass(){
+function markdownBeautify(){
 	//处理 markdown 内部的图片
-	addClassTagParent(".markdown","img","p","article-img"); 
+	markdownImageBeautify(".markdown","img","p","article-img",true); 
 	//处理 markdown 内部的 Iframe 框架
 	$(".markdown").find("iframe").removeAttr("height").removeAttr("width").addClass('videoIframe');
-	//处理markdown 内部的表格 	
-	var tables=$(".markdown").find("table")
-	//处理音乐
 	//处理音乐部分
- 	musicStyleBeautify();
+ 	markdownMusicBeautify();
+ 	//处理markdown 内部的表格 	
+	var tables=$(".markdown").find("table")
 	$.each(tables, function(index, table) {
 		  var tableDiv=$("<div class='table-responsive'></div>");
 		  $(table).before(tableDiv);
@@ -53,6 +52,7 @@ function commonMDAddClass(){
 		  $(table).remove();
 	}); 
 }
+
 
 
 /*
@@ -189,7 +189,7 @@ function establishSearch(searchInputSelector ){
 music标签美化，利用 aplayer 插件 
 链接：https://aplayer.js.org/#/
 */
-function musicStyleBeautify(){   
+function markdownMusicBeautify(){   
 	//使用 Jquery 获取相关的元素 
 	var musicSourceTags=$(".markdown video[name='media']").children('source');
 	
@@ -223,3 +223,48 @@ function musicStyleBeautify(){
 	});  
 }
 
+/**
+针对某个范围的某个标签的父亲标签添加某个样式
+如下文针对P设定相关样式
+
+<div class="main-content">
+  <p>
+    <img></img>
+  </p>
+</div>
+
+@param topSelector：最顶层选择器
+@param aimTag：必需 目标标签
+@param parentTag:必需 目标标签父标签 
+@param addParentClass：必需 绑定 CSS
+@param enableTitle：非必须，是否启用标题
+**/
+function markdownImageBeautify(topSelector,aimTag,parentTag,addParentClass,addTitle){
+	//增加样式
+	//处理顶层元素
+	var topTagArr=$(topSelector); 
+	if(topTagArr==null || topTagArr.length<1){
+	return -1;
+	} 
+	//处理目标元素
+	var aimTagArr=$(topTagArr).find(aimTag); 
+	if(aimTagArr==null || aimTagArr.length<1){
+		return 0;
+	}
+	//处理父辈元素
+	aimTagArr.parent(parentTag).addClass(addParentClass);  
+
+	//不处理标题
+	if(!addTitle){
+		return;
+	}
+	//处理标题
+	$.each(aimTagArr, function(index, imageTag) {
+		var imageTitle=$(imageTag).attr("alt");
+		
+		if(imageTitle!=null&&imageTitle!="undefind"){
+			var imageTitleTag=$("<center></center>").html(imageTitle);
+		 	$(imageTag).parent(parentTag).after(imageTitleTag);
+		}
+	});
+}
