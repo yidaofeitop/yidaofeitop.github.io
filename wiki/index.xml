@@ -6,25 +6,10 @@
     <description>Recent content in Wiki on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 28 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://yidaofei.com/wiki/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>GFM 表情列表</title>
-      <link>https://yidaofei.com/wiki/20181128-wiki-markdown-github-emoji/</link>
-      <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://yidaofei.com/wiki/20181128-wiki-markdown-github-emoji/</guid>
-      <description>&lt;p&gt;GFM(GitHub Flavored Markdown) 表情包，以便随时使用！&lt;/p&gt;
-
-&lt;p&gt;官方网页 &lt;a href=&#34;http://www.emoji-cheat-sheet.com&#34;&gt;http://www.emoji-cheat-sheet.com&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;以下代码中的请 &lt;strong&gt;删除:与字母之间的空格&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title>纯音乐列表</title>
@@ -33,54 +18,6 @@
       
       <guid>https://yidaofei.com/wiki/20181123-wiki-pure-music/</guid>
       <description>&lt;p&gt;本文主要是记录一些关于纯音乐并分享给大家，由于海外版权问题，可能会无法访问&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Markdown 语言教程——GFM</title>
-      <link>https://yidaofei.com/wiki/20181110-wiki-markdown-github-flavored-markdown/</link>
-      <pubDate>Sat, 10 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://yidaofei.com/wiki/20181110-wiki-markdown-github-flavored-markdown/</guid>
-      <description>&lt;h2 id=&#34;markdown简易教程&#34;&gt;Markdown简易教程&lt;/h2&gt;
-
-&lt;p&gt;Markdown 是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法实现「易读易写」。&lt;/p&gt;
-
-&lt;h3 id=&#34;markdown-与-html&#34;&gt;markdown 与 html&lt;/h3&gt;
-
-&lt;p&gt;Markdown 的语法有个主要的目的：用来作为一种网络内容的写作语言&lt;/p&gt;
-
-&lt;p&gt;Markdown 不是要来取代 HTML，甚至也没有要和他相似，他的语法种类不多，只和 HTML 的一部分有关系，他的重点不是
-要创造一种更容易写作 HTML 的语法，我认为 HTML 已经很容易写了，Markdown的重点在于，他能让文件更加容易阅读，
-编写。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;HTML 是一种发布的格式，Markdown 是一种编写的格式&lt;/strong&gt;，因此，Markdown 的格式语法只涵盖文字可以涵盖的范围。
-不在Markdown 涵盖范围之外的标签，都可以直接在文件中用 HTML 撰写，不需要额外标注这是 HTML 或是 Markdown
-只要直接加标签就可以了。&lt;/p&gt;
-
-&lt;p&gt;只有区块元素如&lt;code&gt;&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;等标签，必须在前后加空行，以利于内容区隔。而且这些元素的开始结束标签，不可以用 Tab 或空白来缩排。Markdown 的生产器有智慧型判断，可以避免在区块前后加上没必要的 &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; 标签。&lt;/p&gt;
-
-&lt;p&gt;举例来所，在 Markdown 文件加上一段 HTML 表格：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;This is a regular paragraph.
-
-&amp;lt;table&amp;gt;
-    &amp;lt;tr&amp;gt;
-        &amp;lt;td&amp;gt;Foo&amp;lt;/td&amp;gt;
-    &amp;lt;/tr&amp;gt;
-&amp;lt;/table&amp;gt;
-
-This is another regular paragraph.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;请注意，Markdown 语法在 HTML 区块标签中将不会被进行处理——例如你无法在 HTML 区块内使用 Markdown 形式的 &lt;code&gt;**情调**&lt;/code&gt; 。
-HTML的区段标签如 &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;cite&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;del&amp;gt;&lt;/code&gt; 則不受限制，可以在 Markdown 的段落、清单或是标题内任意使用。&lt;/p&gt;
-
-&lt;p&gt;依照個个人习惯，甚至可以不用 Markdown格式，而采用 HTML 标签來格式化。举例说明：如果比较喜欢 HTML 的 &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; 或 &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; 标签，可以直接使用这些标签，而不用 Markdown 提供的链接或是图像标签语法。
-HTML区段标签和区块标签不同，在区段标签的范围內，Markdown的语法是有效的。&lt;/p&gt;
-
-&lt;p&gt;PS：以上内容全部 COPY 于&lt;a href=&#34;https://markdown.tw/&#34;&gt;原生 markdown 基础语法-繁体版&lt;/a&gt;概述部分，感觉说的很透！&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -103,26 +40,12 @@ HTML区段标签和区块标签不同，在区段标签的范围內，Markdown�
     </item>
     
     <item>
-      <title>中文排版指南</title>
-      <link>https://yidaofei.com/wiki/20181106-wiki-chinese-copywriting-guidelines/</link>
+      <title>自用软件记录</title>
+      <link>https://yidaofei.com/wiki/20181129-wiki-software/</link>
       <pubDate>Tue, 06 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/wiki/20181106-wiki-chinese-copywriting-guidelines/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;本文转载自 &lt;a href=&#34;https://github.com/aakloxu/chinese-copywriting-guidelines&#34;&gt;中文排版指南&lt;/a&gt;，如有侵权请联系删除&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;中文排版指南&#34;&gt;中文排版指南&lt;/h2&gt;
-
-&lt;p&gt;大陆中文网站、出版物和文案等相关的排版指南，准备排版中文博客或书写中文的技术图书的作者可以参考本指南。&lt;/p&gt;
-
-&lt;p&gt;内容主要根据&lt;a href=&#34;https://github.com/sparanoid/chinese-copywriting-guidelines&#34;&gt;中文文案排版指北&lt;/a&gt;编写，但该指北仅适用于台湾的中文的排版，所以有少数内容对大陆的中文（包括简体中文和繁体中文）排版并不合适，比如“「”、“」”、“『”、“』”是不能在大陆出版的图书、中小学考试和正规网站的中文横排排版中使用的。本指南严格遵循中华人民共和国教育部所颁布的&lt;a href=&#34;http://www.moe.gov.cn/ewebeditor/uploadfile/2015/01/13/20150113091548267.pdf&#34;&gt;《中华人民共和国标点符号用法》&lt;/a&gt;的规定，同时还参考了&lt;a href=&#34;https://github.com/Haixing-Hu/typesetting-standard&#34;&gt;中文书刊排版相关标准和规范&lt;/a&gt;和&lt;a href=&#34;https://github.com/chenshuo/typeset&#34;&gt;用 LaTeX 排版技术书籍&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;需特别注意的是，&lt;a href=&#34;https:www.zhihu.com&#34;&gt;知乎&lt;/a&gt;官方强制使用“「”、“」”、“『”、“』”作为中文引号不符合教育部规定的符号用法。知乎的行为（知乎规定使用直角引号曾在知乎网内部引起了&lt;a href=&#34;https://www.zhihu.com/question/20595340&#34;&gt;激烈的讨论&lt;/a&gt;）和网友使用火星文、网络流行词汇的行为一样，他们也有权利作出自己的选择，不过不符合教育部规定的语言文字规范，在大陆写技术图书的朋友特别要注意这点。在 &lt;a href=&#34;http://www.alexa.com/topsites/countries/CN&#34;&gt;Alexa 中国排名前 500 的网站&lt;/a&gt;中，只有知乎使用的标点符号标准违反了国家标准。或许知乎官方将他们网站定位为海外网站或是全球性网站，这样的话知乎就不存在遵不遵循国家标点规范的问题了。&lt;/p&gt;
-
-&lt;p&gt;参见：
-- &lt;a href=&#34;https://github.com/sparanoid/chinese-copywriting-guidelines&#34;&gt;台湾的中文文案排版指北&lt;/a&gt;
-&lt;/p&gt;</description>
+      <guid>https://yidaofei.com/wiki/20181129-wiki-software/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

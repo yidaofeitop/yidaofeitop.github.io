@@ -6,7 +6,7 @@
     <description>Recent content on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 28 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://yidaofei.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -21,11 +21,26 @@
     </item>
     
     <item>
+      <title>[转]反对修订《美国联邦刑事诉讼规则和证据规则》第 41 条——已过期，仅纪念</title>
+      <link>https://yidaofei.com/post/20181129-forward-oppose-to-amend-rule4-of-usa/</link>
+      <pubDate>Thu, 29 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181129-forward-oppose-to-amend-rule4-of-usa/</guid>
+      <description>&lt;p&gt;建议转发&lt;a href=&#34;https://zh.vpnmentor.com/blog/fight-rule-41/&#34;&gt;对美国拟修订第41条规则的抵制&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;大概研究了一下，《美国联邦刑事诉讼规则和证据规则》第 41 条为“&lt;a href=&#34;https://www.law.cornell.edu/rules/frcrmp/rule_41&#34;&gt;搜查和扣押&lt;/a&gt;” 。
+美国政府准备修订相关条款，而该修订行为会对个人信息安全造成损害。美国很多科技媒体、社群、个人，都在抵制这一修订。
+转发一下，也欢迎大家发表意见。毕竟，这个世界是紧密联系在一起的！&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>GFM 表情列表</title>
-      <link>https://yidaofei.com/wiki/20181128-wiki-markdown-github-emoji/</link>
+      <link>https://yidaofei.com/post/20181128-software-skills-markdown-github-emoji/</link>
       <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/wiki/20181128-wiki-markdown-github-emoji/</guid>
+      <guid>https://yidaofei.com/post/20181128-software-skills-markdown-github-emoji/</guid>
       <description>&lt;p&gt;GFM(GitHub Flavored Markdown) 表情包，以便随时使用！&lt;/p&gt;
 
 &lt;p&gt;官方网页 &lt;a href=&#34;http://www.emoji-cheat-sheet.com&#34;&gt;http://www.emoji-cheat-sheet.com&lt;/a&gt;&lt;/p&gt;
@@ -324,10 +339,10 @@
     
     <item>
       <title>Markdown 语言教程——GFM</title>
-      <link>https://yidaofei.com/wiki/20181110-wiki-markdown-github-flavored-markdown/</link>
+      <link>https://yidaofei.com/post/20181110-software-skills-markdown-github-flavored-markdown/</link>
       <pubDate>Sat, 10 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/wiki/20181110-wiki-markdown-github-flavored-markdown/</guid>
+      <guid>https://yidaofei.com/post/20181110-software-skills-markdown-github-flavored-markdown/</guid>
       <description>&lt;h2 id=&#34;markdown简易教程&#34;&gt;Markdown简易教程&lt;/h2&gt;
 
 &lt;p&gt;Markdown 是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法实现「易读易写」。&lt;/p&gt;
@@ -459,10 +474,10 @@ HTML区段标签和区块标签不同，在区段标签的范围內，Markdown�
     
     <item>
       <title>中文排版指南</title>
-      <link>https://yidaofei.com/wiki/20181106-wiki-chinese-copywriting-guidelines/</link>
+      <link>https://yidaofei.com/post/20181106-forward-chinese-copywriting-guidelines/</link>
       <pubDate>Tue, 06 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/wiki/20181106-wiki-chinese-copywriting-guidelines/</guid>
+      <guid>https://yidaofei.com/post/20181106-forward-chinese-copywriting-guidelines/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;本文转载自 &lt;a href=&#34;https://github.com/aakloxu/chinese-copywriting-guidelines&#34;&gt;中文排版指南&lt;/a&gt;，如有侵权请联系删除&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -478,6 +493,15 @@ HTML区段标签和区块标签不同，在区段标签的范围內，Markdown�
 &lt;p&gt;参见：
 - &lt;a href=&#34;https://github.com/sparanoid/chinese-copywriting-guidelines&#34;&gt;台湾的中文文案排版指北&lt;/a&gt;
 &lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>自用软件记录</title>
+      <link>https://yidaofei.com/wiki/20181129-wiki-software/</link>
+      <pubDate>Tue, 06 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/wiki/20181129-wiki-software/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
