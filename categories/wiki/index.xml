@@ -31,6 +31,29 @@
     </item>
     
     <item>
+      <title>中文排版指南</title>
+      <link>https://yidaofei.com/post/20181106-chinese-copywriting-guidelines/</link>
+      <pubDate>Tue, 06 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181106-chinese-copywriting-guidelines/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本文转载自 &lt;a href=&#34;https://github.com/aakloxu/chinese-copywriting-guidelines&#34;&gt;中文排版指南&lt;/a&gt;，如有侵权请联系删除&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;中文排版指南&#34;&gt;中文排版指南&lt;/h2&gt;
+
+&lt;p&gt;大陆中文网站、出版物和文案等相关的排版指南，准备排版中文博客或书写中文的技术图书的作者可以参考本指南。&lt;/p&gt;
+
+&lt;p&gt;内容主要根据&lt;a href=&#34;https://github.com/sparanoid/chinese-copywriting-guidelines&#34;&gt;中文文案排版指北&lt;/a&gt;编写，但该指北仅适用于台湾的中文的排版，所以有少数内容对大陆的中文（包括简体中文和繁体中文）排版并不合适，比如“「”、“」”、“『”、“』”是不能在大陆出版的图书、中小学考试和正规网站的中文横排排版中使用的。本指南严格遵循中华人民共和国教育部所颁布的&lt;a href=&#34;http://www.moe.gov.cn/ewebeditor/uploadfile/2015/01/13/20150113091548267.pdf&#34;&gt;《中华人民共和国标点符号用法》&lt;/a&gt;的规定，同时还参考了&lt;a href=&#34;https://github.com/Haixing-Hu/typesetting-standard&#34;&gt;中文书刊排版相关标准和规范&lt;/a&gt;和&lt;a href=&#34;https://github.com/chenshuo/typeset&#34;&gt;用 LaTeX 排版技术书籍&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;需特别注意的是，&lt;a href=&#34;https:www.zhihu.com&#34;&gt;知乎&lt;/a&gt;官方强制使用“「”、“」”、“『”、“』”作为中文引号不符合教育部规定的符号用法。知乎的行为（知乎规定使用直角引号曾在知乎网内部引起了&lt;a href=&#34;https://www.zhihu.com/question/20595340&#34;&gt;激烈的讨论&lt;/a&gt;）和网友使用火星文、网络流行词汇的行为一样，他们也有权利作出自己的选择，不过不符合教育部规定的语言文字规范，在大陆写技术图书的朋友特别要注意这点。在 &lt;a href=&#34;http://www.alexa.com/topsites/countries/CN&#34;&gt;Alexa 中国排名前 500 的网站&lt;/a&gt;中，只有知乎使用的标点符号标准违反了国家标准。或许知乎官方将他们网站定位为海外网站或是全球性网站，这样的话知乎就不存在遵不遵循国家标点规范的问题了。&lt;/p&gt;
+
+&lt;p&gt;参见：
+- &lt;a href=&#34;https://github.com/sparanoid/chinese-copywriting-guidelines&#34;&gt;台湾的中文文案排版指北&lt;/a&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>知识树约定-20181013</title>
       <link>https://yidaofei.com/wiki/20181013-wiki-knowledge-tree-agreement/</link>
       <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>

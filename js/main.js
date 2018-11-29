@@ -9,9 +9,7 @@ $(document).ready(function() {
  	pangu.spacingPage(); 
 
  	//判断当前页面是否是单个页面
- 	if($("#isPage").attr("data-isPage")=="true"){
- 		//处理音乐部分
- 		musicStyleBeautify();
+ 	if($("#isPage").attr("data-isPage")=="true"){ 
  		//处理单页的导航栏
  		adjustSiteToc(false);
  		 
@@ -45,6 +43,9 @@ function commonMDAddClass(){
 	$(".markdown").find("iframe").removeAttr("height").removeAttr("width").addClass('videoIframe');
 	//处理markdown 内部的表格 	
 	var tables=$(".markdown").find("table")
+	//处理音乐
+	//处理音乐部分
+ 	musicStyleBeautify();
 	$.each(tables, function(index, table) {
 		  var tableDiv=$("<div class='table-responsive'></div>");
 		  $(table).before(tableDiv);
@@ -190,7 +191,7 @@ music标签美化，利用 aplayer 插件
 */
 function musicStyleBeautify(){   
 	//使用 Jquery 获取相关的元素 
-	var musicSourceTags=$("video[name='media']").children('source');
+	var musicSourceTags=$(".markdown video[name='media']").children('source');
 	
 	if(musicSourceTags.length<=0){
 		return;
