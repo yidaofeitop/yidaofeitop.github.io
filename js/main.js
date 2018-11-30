@@ -4,14 +4,17 @@ $(document).ready(function() {
 	//建立搜索
 	establishSearch("#search-input"); 
 	//处理分类页面的导航栏
-	adjustSiteToc(true);  
+	adjustSiteToc(true,0,0);  
  	//盘古之白
  	pangu.spacingPage(); 
 
  	//判断当前页面是否是单个页面
  	if($("#isPage").attr("data-isPage")=="true"){ 
  		//处理单页的导航栏
- 		adjustSiteToc(false);
+ 		//获取预埋点信息
+ 		var startLevel=$("#tocLevel").attr("data-startLevel");
+ 		var endLevel=$("#tocLevel").attr("data-endLevel");
+ 		adjustSiteToc(false,startLevel,endLevel);
  		 
  	} 
  	//回到顶点与定位底部插件
@@ -126,14 +129,21 @@ function bindSidebar(targetSelector,anchorSelector,attrValue,alignValue){
 /*
 调整网站侧面TOC问题
 @param isCategoriesPage 是否是分类  默认false
+@param startLevel 开始标题层次
+@param endLevel   结束标题层次
 */
-function adjustSiteToc(isCategoriesPage){
+function adjustSiteToc(isCategoriesPage,startLevel,endLevel){
 	if(isCategoriesPage){
 		//处理分类页面的 TOC 锚点错位问题
    		fixTocAnchor("header[class='site-header fixed-top']","section[class='main-content-container']","a[class='categories-title']",true);
 	}else{
 		//重置文章页面的TOC
-		initNavigations("nav#TableOfContents",2,5,"article-toc-item-ul","article-toc-item-li"); 
+		//处理startLevel endLevel
+		if(!(startLevel<=endLevel&&startLevel>0&&endLevel<7)){
+			startLevel=1;  //第一层标题
+			endLevel=4;	   //第二层标题
+		}
+		initNavigations("nav#TableOfContents",startLevel,endLevel,"article-toc-item-ul","article-toc-item-li"); 
 	    //处理文章页面的 TOC 锚点错位问题 
 	    for(var index=1;index<7;index++){
 	        if(index==1){
