@@ -137,15 +137,6 @@
     </item>
     
     <item>
-      <title>纯音乐列表</title>
-      <link>https://yidaofei.com/wiki/20181123-wiki-pure-music/</link>
-      <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://yidaofei.com/wiki/20181123-wiki-pure-music/</guid>
-      <description>&lt;p&gt;本文主要是记录一些关于纯音乐并分享给大家，由于海外版权问题，可能会无法访问&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Hugo 集成 Algolia 搜索</title>
       <link>https://yidaofei.com/post/20181119-hugo-algolia-search/</link>
       <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
@@ -556,6 +547,17 @@ HTML区段标签和区块标签不同，在区段标签的范围內，Markdown�
 &lt;p&gt;参见：
 - &lt;a href=&#34;https://github.com/sparanoid/chinese-copywriting-guidelines&#34;&gt;台湾的中文文案排版指北&lt;/a&gt;
 &lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>网站&amp;网站工具</title>
+      <link>https://yidaofei.com/wiki/20181130-wiki-website-tools/</link>
+      <pubDate>Tue, 06 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/wiki/20181130-wiki-website-tools/</guid>
+      <description>&lt;p&gt;本文主要是记录一些比较有意思的网站或者是一些可能用到的网站工具&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
