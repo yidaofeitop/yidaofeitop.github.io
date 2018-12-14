@@ -18,9 +18,9 @@
     },
     {
         "draft": false,
-        "uri": "draft/20181129-windows-skills",
+        "uri": "drafts/20181129-windows-skills",
         "content": "windows                                          MaoXian Web Clipper          Chrome Firfox                                                           mklink  D D  download mx wc E  02resource webCrawling         windows                              mklink  D linkname targetname                                                                                   mklink  H linkname targetname                                                                                                                                                                                                                1 https   www cnblogs com heqichang archive 2012 04 26 2471774 html  2 https   mika cn github io maoxian web clipper faq zh CN html        Version Action  Time                     1 0 init 2018 11 29",
-        "objectID": "draft/20181129-windows-skills",
+        "objectID": "drafts/20181129-windows-skills",
         "title": "Windows 技巧",
         "date": "2018-11-29T00:00:00.000Z",
         "Keywords": [
@@ -944,6 +944,121 @@
             "诗歌"
         ],
         "CopyrightStatement": "本文摘录自 《你为生存做些什么，我不关心》一帖搞错了！ https://www.douban.com/group/topic/20286000/"
+    },
+    {
+        "draft": false,
+        "uri": "post/20181208-readnote-upwith-year-plan-personal-classification",
+        "content": "PS                                                                                                                                                                                                                                                            1                                      2                                        3                                   4                            5       2015                        6              2016                                   1                                     2                      3                               4                 5  20                                      1                                  2                                       3                  4                                 5                                        1                     2                3                                         2015 12 26 20 00                          1             2                                    3  Doit                  4                         5                       6                      7                                                1             2                        3                          4                          5            6                                          1                            2           2000                     3                   4                                    5                                 6                                      7                            900                                                                                                    30 30                        PS              COUNTIF B3 AE32     900 100              echo          7                                                     7                                                         7                                                              1                                                                7                7                     7                               7                                                                                                                         7                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    100                                                                                                                                                                                                                                                                                                                     7 2                                               MECE                                                                                                                         1 https   www jianshu com p e858069c0181        Version Action  Time                     1 0 init 2018 12 14",
+        "objectID": "post/20181208-readnote-upwith-year-plan-personal-classification",
+        "title": "幸福进化俱乐部—年度计划课程笔记1—宣言、人生7年、分类",
+        "date": "2018-12-08T00:00:00.000Z",
+        "type": "post",
+        "Keywords": [
+            "幸福进化俱乐部",
+            "年度计划课程",
+            "宣言",
+            "人生7年",
+            "分类"
+        ],
+        "categories": [
+            "人生管理课程"
+        ],
+        "tags": [
+            "年度计划",
+            "目标管理"
+        ],
+        "CopyrightStatement": "本文大部分内容摘录自《年目标课程笔记03——方法论1：准备》：https://www.jianshu.com/p/e858069c0181 ，本文参考其他文章做出部分调整"
+    },
+    {
+        "draft": false,
+        "uri": "post/20181208-readnote-upwith-year-plan-personal-growth-positioning-system",
+        "content": "2                                                                                                                         0   0           0                            A                                                                         A                                             B                                                                                                                         B                           10      B                         B                                                                                            PS   B                                C                                                                                                                                                             C                                                                                 C                                                                                                                                        Mentor                                                        PS   C                                                                                     D                                                                                                        D                                                                                           mentor                     so                                                                                                                                                                                                 1479                                                          2  47                       100      no                100                                                                                                                                                                                                                                      Version Action  Time                     1 0 init 2018 12 14",
+        "objectID": "post/20181208-readnote-upwith-year-plan-personal-growth-positioning-system",
+        "title": "幸福进化俱乐部—年度计划课程笔记3—补充：个人成长定位系统",
+        "date": "2018-12-14T00:00:00.000Z",
+        "type": "post",
+        "Keywords": [
+            "幸福进化俱乐部",
+            "年度计划课程",
+            "动机"
+        ],
+        "categories": [
+            "人生管理课程"
+        ],
+        "tags": [
+            "年度计划",
+            "目标管理"
+        ],
+        "CopyrightStatement": "本文大部分内容摘录自《2016-在爱中前行@柒柒》：http://bbs.upwith.me/club-3657-1-1.html ，本文仅作格式调整"
+    },
+    {
+        "draft": false,
+        "uri": "post/20181210-readnote-upwith-year-plan-motivation",
+        "content": "GROW                         EG                                              EG                                      EG                                                                               EG               XX                                                                                                                                            KTV                                                                                                                                                                                                                                                                                                                                                                                                                                                        5WHY    https   www douban com note 577456489                            5                                                                                             1 http   yc upwith me archives 2493  5                                                5                                                                                                                                                           5                            5                                               30          150                                                                 SOMEDAY MAYBE        SM                       VS      VS                                                                                          05     3                                                                                                                                                                                                                   1                                                                                                                                                                               5 Why                                                                                                                5Why                                                                                                                                                                                                                   S M         Version Action  Time                     1 0 init 2018 12 10",
+        "objectID": "post/20181210-readnote-upwith-year-plan-motivation",
+        "title": "幸福进化俱乐部—年度计划课程笔记3—动机",
+        "date": "2018-12-10T00:00:00.000Z",
+        "type": "post",
+        "Keywords": [
+            "幸福进化俱乐部",
+            "年度计划课程",
+            "动机"
+        ],
+        "categories": [
+            "人生管理课程"
+        ],
+        "tags": [
+            "年度计划",
+            "目标管理"
+        ],
+        "CopyrightStatement": "本文大部分内容摘录自《简书-老包姑娘-年目标课程笔记05——方法论3：动机》https://www.jianshu.com/p/d2e1ed67cd1a ，本文参考其他文章做出部分调整"
+    },
+    {
+        "draft": false,
+        "uri": "post/20181214-readnote-upwith-year-plan-expectation-to-goal",
+        "content": "03                                                                                                                                                                   1 5                  20                                                                                                                                                                                                                                                                                                                                                                                        part1                         part2                                         GROW                                                                                                                       SMART                                       5     S                                     M                        A              R                                                                                                                                  T                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     1     2016                  smart                                                                            2                smart                                                                2016                                                                                               1 4                                                4                                             3                    SMART                                                  smart                                                                                                 4                        2                                   samrt                                                                                      5                                                                                                                     6                                                  1       2                  3            4       5         http   maqi link 151013        7                                      50                                  50                                         50                                                8                                                                9               8                    8                                                                                                      X        10                                                                                                                           11                          X     XXX     SMART                  1 https   www jianshu com p abc138dbff0d            2 http   nianmubiao com cycg 2 html         3 http   nianmubiao com cycg 1 html                 Version Action  Time                     1 0 init 2018 12 14",
+        "objectID": "post/20181214-readnote-upwith-year-plan-expectation-to-goal",
+        "title": "幸福进化俱乐部—年度计划课程笔记4—目标",
+        "date": "2018-12-14T00:00:00.000Z",
+        "type": "post",
+        "Keywords": [
+            "幸福进化俱乐部",
+            "年度计划课程",
+            "目标",
+            "SMART方法"
+        ],
+        "categories": [
+            "人生管理课程"
+        ],
+        "tags": [
+            "年度计划",
+            "目标管理"
+        ],
+        "CopyrightStatement": "本文大部分内容摘录自《简书-老包姑娘-年目标课程笔记06——方法论4：目标》https://www.jianshu.com/p/abc138dbff0d ，本文参考其他文章做出部分调整，详情请见参考资料"
+    },
+    {
+        "draft": false,
+        "uri": "post/20181214-readnote-upwith-year-plan-position",
+        "content": "A6                                                                                                                         a          b                                                                                                        3                                                       H          WVI         MBTI             16PF                            adminxxx jsp   admin jsp                                                    SWOT                                             SWOT                                                                                                                                SWOT         SW    S strength    W weakness                                                S     W                                                                                                                                                                                                                                    OT    O    opportunity     T    threat                                                                                                                SWOT    PEST                                                                                                                                                                                                             SWOT                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             10  2016   3660                                                                                                                                                                   0 5h      3             0 5              1                                                                                                1      SWOT                                                                         SWOT               2     swot                            3          swot                            O T                                                                                            SO WT    SO            WT                     4     SWOT                              SWOT           W                            SO    5                                                                                      3            2       6                                     SWOT                                                                                   7                                                                                                                               8                                                                                                                                                                04     2               2016                      Version Action  Time                     1 0 init 2018 12 14",
+        "objectID": "post/20181214-readnote-upwith-year-plan-position",
+        "title": "幸福进化俱乐部—年度计划课程笔记2—定位、选择、布局",
+        "date": "2018-12-09T00:00:00.000Z",
+        "type": "post",
+        "Keywords": [
+            "幸福进化俱乐部",
+            "年度计划课程",
+            "定位",
+            "SWOT",
+            "资源布局"
+        ],
+        "categories": [
+            "人生管理课程"
+        ],
+        "tags": [
+            "年度计划",
+            "目标管理"
+        ],
+        "CopyrightStatement": "本文大部分内容摘录自《简书-老包姑娘-年目标课程笔记04——方法论2：战略》https://www.jianshu.com/p/64e4239690ea ，本文参考其他文章做出部分调整，详见参考资料部分"
     },
     {
         "title": "Wiki",
