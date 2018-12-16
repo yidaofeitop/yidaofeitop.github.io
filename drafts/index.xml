@@ -6,10 +6,30 @@
     <description>Recent content in Drafts on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 29 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://yidaofei.com/drafts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>widows 教程1-如何下载官方 ISO</title>
+      <link>https://yidaofei.com/drafts/20181216-windows-skill-how-download-iso/</link>
+      <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/drafts/20181216-windows-skill-how-download-iso/</guid>
+      <description>&lt;p&gt;大家重装系统会去哪里下载镜像呢？百度搜索是不可能的，一辈子都不可能！（具体见[《百度竞价排名思考 - 血友病》(&lt;a href=&#34;http://yidaofei.com/post/20160503-event-hotspot-baidu-paid-listing/)]）&#34;&gt;http://yidaofei.com/post/20160503-event-hotspot-baidu-paid-listing/)]）&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;后续查询相关的资料整理如下2种比较好的方式给大家：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://msdn.itellyou.cn/&#34;&gt;MSDN，我告诉你&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;微软官方——手机页面&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;前者非常简单选用相应的版本直接下载即可，后者则是利用浏览器模拟手机端的方式获取下载地址，但是截至2018年12月16日为止 &lt;strong&gt;仅适用「Windows 10」&lt;/strong&gt; 具体操作请见下文。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Windows 技巧</title>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows 教程 on  易道非 Blog</title>
+    <link>https://yidaofei.com/categories/windows-%E6%95%99%E7%A8%8B/</link>
+    <description>Recent content in Windows 教程 on  易道非 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 16 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://yidaofei.com/categories/windows-%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows 技巧1-如何创建软连接</title>
+      <link>https://yidaofei.com/post/20181129-windows-skill-soft-connection/</link>
+      <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181129-windows-skill-soft-connection/</guid>
+      <description>&lt;h3 id=&#34;软连接&#34;&gt;软连接&lt;/h3&gt;
+
+&lt;p&gt;此需求来自 &lt;a href=&#34;https://chrome.google.com/webstore/detail/maoxian-web-clipper/kjahokgdcbohofgdidndeiaigkehdjdc?hl=en&#34;&gt;MaoXian Web Clipper &lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;此插件只能够访问 Chrome/Firfox 浏览器的下载文件目录，但是由于本人需要将相关的文件存储到对应的需要同步的网盘文件夹，所以采用软连接：&lt;/p&gt;
+
+&lt;p&gt;命令行如下：&lt;code&gt;mklink /D D:\download\mx-wc E:\02resource\webCrawling&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows 教程1-如何下载官方 ISO</title>
+      <link>https://yidaofei.com/post/20181216-windows-guide-how-download-iso/</link>
+      <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181216-windows-guide-how-download-iso/</guid>
+      <description>&lt;p&gt;大家重装系统会去哪里下载镜像呢？百度搜索是不可能的，一辈子都不可能！（具体见&lt;a href=&#34;http://yidaofei.com/post/20160503-event-hotspot-baidu-paid-listing/&#34;&gt;《百度竞价排名思考 - 血友病》&lt;/a&gt;）&lt;/p&gt;
+
+&lt;p&gt;后续查询相关的资料整理如下2种比较好的方式给大家：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://msdn.itellyou.cn/&#34;&gt;MSDN，我告诉你&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;微软官方——手机页面&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;前者非常简单选用相应的版本直接下载即可&lt;br /&gt;
+后者则是利用浏览器模拟手机端的方式获取下载地址，但是截至2018年12月16日为止 &lt;strong&gt;仅适用「Windows 10」&lt;/strong&gt; 具体操作请见下文。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
