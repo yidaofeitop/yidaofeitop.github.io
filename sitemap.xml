@@ -12,6 +12,11 @@
   </url>
   
   <url>
+    <loc>https://yidaofei.com/post/20181218-knowledge-management-system-input-v1/</loc>
+    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yidaofei.com/post/20181129-windows-skill-soft-connection/</loc>
     <lastmod>2018-12-16T00:00:00+00:00</lastmod>
   </url>
@@ -289,7 +294,7 @@
   
   <url>
     <loc>https://yidaofei.com/</loc>
-    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -346,7 +351,7 @@
   
   <url>
     <loc>https://yidaofei.com/post/</loc>
-    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -513,6 +518,12 @@
   </url>
   
   <url>
+    <loc>https://yidaofei.com/tags/%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yidaofei.com/tags/%E7%BA%AF%E9%9F%B3%E4%B9%90/</loc>
     <lastmod>2018-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -527,6 +538,12 @@
   <url>
     <loc>https://yidaofei.com/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2018-11-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/categories/%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
