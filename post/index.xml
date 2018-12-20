@@ -12,6 +12,29 @@
     
     
     <item>
+      <title>知识管理系统——知识存储及发布端 V1.0版</title>
+      <link>https://yidaofei.com/post/201811219-knowledge-management-system-storage-v1/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/201811219-knowledge-management-system-storage-v1/</guid>
+      <description>&lt;p&gt;前文&lt;a href=&#34;https://yidaofei.com/post/20181218-knowledge-management-system-input-v1/&#34;&gt;《知识管理系统——高质量知识输入端 V1.0版》&lt;/a&gt;已初步的梳理清楚
+「知识输入端」。&lt;/p&gt;
+
+&lt;p&gt;按照「知识金字塔模型」后续的过程就是「知识内化」，关于「如何将知识内化」由于各个知识点之间的不同以及个人局限不详细展开说明，本文
+主要将本人知识存储及发布端的梳理清楚，内容分为以下部分：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;文件写作规范&lt;/li&gt;
+&lt;li&gt;资料存储规范&lt;/li&gt;
+&lt;li&gt;主题输出平台&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://piwigo.yidaofei.com/galleries/201812/knowledge-storage-and-publishing-mind.png&#34; alt=&#34;知识输入端架构&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>知识管理系统——高质量知识输入端 V1.0版</title>
       <link>https://yidaofei.com/post/20181218-knowledge-management-system-input-v1/</link>
       <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
@@ -44,7 +67,9 @@
 &lt;li&gt;构建/选用一个输出平台&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;以上三部分构成「知识管理系统」，本文主要针对第一个事项进行相关的拆解！&lt;/p&gt;
+&lt;p&gt;以上三部分构成「知识管理系统」，本文主要针对第一个事项进行相关的拆解，思维导图如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://piwigo.yidaofei.com/galleries/201812/knowledge-input-mind.png&#34; alt=&#34;知识输入端架构&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -268,7 +293,7 @@
     </item>
     
     <item>
-      <title>自建图床 Piwigo 建议教程</title>
+      <title>个人建站-自建图床 Piwigo </title>
       <link>https://yidaofei.com/post/20181128-software-skills-piwigo-guild/</link>
       <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
       
@@ -291,7 +316,7 @@
     </item>
     
     <item>
-      <title>Hugo 集成 Algolia 搜索</title>
+      <title>个人建站-Hugo 集成 Algolia 搜索</title>
       <link>https://yidaofei.com/post/20181119-hugo-algolia-search/</link>
       <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
       
@@ -391,6 +416,30 @@
 &lt;li&gt;全自动指纹锁（ &lt;strong&gt;非全自动锁体&lt;/strong&gt;）：电机与顺时针/逆时针转动&amp;mdash;&amp;gt;全自动锁芯顺时针/逆时针转动&amp;mdash;&amp;gt;锁体动作&lt;/li&gt;
 &lt;li&gt;全自动指纹锁 （ &lt;strong&gt;全自动锁体&lt;/strong&gt;）：当关门时，锁舌被压下，电子开关打开，电机转动，带动变速器，变速器带动推拉杆，主锁舌推出，反之开门&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2018年深圳驾照考试总结</title>
+      <link>https://yidaofei.com/post/20181115-driver-summary/</link>
+      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181115-driver-summary/</guid>
+      <description>&lt;p&gt;前面已经总结了科目二、三的相关细节总结，列表如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181013-driver-part2-rule/&#34;&gt;深圳驾照科目二五项场地及规则讲解&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181013-driver-ramp-fixed-parking-and-starting/&#34;&gt;2018深圳驾照水头考场科目二-坡道定点停车与起步&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181013-driver-reversing-into-the-warehouse/&#34;&gt;2018深圳驾照水头考场科目二-倒车入库&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181013-driver-side-parking/&#34;&gt;2018深圳驾照水头考场科目二-侧方位停车&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181013-driver-curve-driving/&#34;&gt;2018深圳驾照水头考场科目二-曲线行驶&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181013-driver-right-angle-turn/&#34;&gt;2018深圳驾照水头考场科目二-直角转弯&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181018-driver-part3/&#34;&gt;2018深圳驾照科目三评分规则&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181018-driver-part3-rule/&#34;&gt;2018深圳驾照水头考场科目三教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;而本文主要是从整理上去总结2018年深圳驾照考试，请大家注意时间与地点，有部分的细节可能由于时间与地点有所变化！&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -522,30 +571,6 @@
     </item>
     
     <item>
-      <title>深圳驾照考试总结</title>
-      <link>https://yidaofei.com/post/20181115-driver-summary/</link>
-      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://yidaofei.com/post/20181115-driver-summary/</guid>
-      <description>&lt;p&gt;前面已经总结了科目二、三的相关细节总结，列表如下：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181013-driver-part2-rule/&#34;&gt;深圳驾照科目二五项场地及规则讲解&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181013-driver-ramp-fixed-parking-and-starting/&#34;&gt;2018深圳驾照水头考场科目二-坡道定点停车与起步&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181013-driver-reversing-into-the-warehouse/&#34;&gt;2018深圳驾照水头考场科目二-倒车入库&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181013-driver-side-parking/&#34;&gt;2018深圳驾照水头考场科目二-侧方位停车&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181013-driver-curve-driving/&#34;&gt;2018深圳驾照水头考场科目二-曲线行驶&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181013-driver-right-angle-turn/&#34;&gt;2018深圳驾照水头考场科目二-直角转弯&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181018-driver-part3/&#34;&gt;2018深圳驾照科目三评分规则&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181018-driver-part3-rule/&#34;&gt;2018深圳驾照水头考场科目三教程&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;而本文主要是从整理上去总结2018年深圳驾照考试，请大家注意时间与地点，有部分的细节可能由于时间与地点有所变化！&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Markdown 语言教程——GFM</title>
       <link>https://yidaofei.com/post/20181110-software-skills-markdown-github-flavored-markdown/</link>
       <pubDate>Sat, 10 Nov 2018 00:00:00 +0000</pubDate>
@@ -624,7 +649,7 @@ HTML区段标签和区块标签不同，在区段标签的范围內，Markdown�
     </item>
     
     <item>
-      <title>个人建站-Hugo-快速开始</title>
+      <title>个人建站-Hugo 快速开始</title>
       <link>https://yidaofei.com/post/20181108-hugo-quick-start/</link>
       <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
       
@@ -708,6 +733,17 @@ HTML区段标签和区块标签不同，在区段标签的范围內，Markdown�
       
       <guid>https://yidaofei.com/post/20181018-driver-part3-rule/</guid>
       <description>&lt;p&gt;2018 深圳驾照科目三评分规则，基本全部是扣除100分，注意看加强字体就可！&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2018年深圳驾照科目二五项场地及规则讲解</title>
+      <link>https://yidaofei.com/post/20181013-driver-part2-rule/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181013-driver-part2-rule/</guid>
+      <description>&lt;p&gt;本文主要系统的列明深圳科目二五项的基本流程与评判规则&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -877,17 +913,6 @@ H（车库距控制线）：车身长的1.5倍&lt;/p&gt;
       
       <guid>https://yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/</guid>
       <description>第一步 购买 VPS 如果纯粹作为翻墙使用建议购买 bandwagon 具体的入口可以可以参考搬瓦工 VPS ,选择最便宜的年 $ 19.99 方案（ KVM 架构）即可 第二步 搭建 shadowsocks 服务器端 进入 VPS 管理页面 MyService-&amp;gt;服务器实例-&amp;gt;kiwivm Control Panel 下载 Xshell Xshell-360 终端安装 shadowsocks 服务器 Step 1：配</description>
-    </item>
-    
-    <item>
-      <title>深圳驾照科目二五项场地及规则讲解</title>
-      <link>https://yidaofei.com/post/20181013-driver-part2-rule/</link>
-      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://yidaofei.com/post/20181013-driver-part2-rule/</guid>
-      <description>&lt;p&gt;本文主要系统的列明深圳科目二五项的基本流程与评判规则&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

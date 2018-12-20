@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <meta charset="UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" >
+
+  
+  
+    
+    <meta charset="utf-8" name="keywords" content="知识管理系统,效率工具,知识信息渠道体系,知识输入端," > 
+  
+   
+  <meta charset="utf-8" name="description" content="前文《知识管理系统——高质量知识输入端 V1.0版》已初步的梳理清楚
+「知识输入端」。
+
+按照「知识金字塔模型」后续的过程就是「知识内化」，关于「如何将知识内化」由于各个知识点之间的不同以及个人局限不详细展开说明，本文
+主要将本人知识存储及发布端的梳理清楚，内容分为以下部分：
+
+
+文件写作规范
+资料存储规范
+主题输出平台
+
+
+
+
+" >
+  
+  
+  
+    
+        <link rel="icon" type="image/png" href="https://yidaofei.com//image/favicon-32x32.png" > 
+    
+  
+  
+  
+  
+  <title>知识管理系统——知识存储及发布端 V1.0版- 易道非 Blog</title>  
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-126184892-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+
+  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css">
+
+<body> 
+ 
+
+ 
+<div id="top-element" data-title="到达顶点"></div>
+  
+<header class="site-header fixed-top">
+  <div class="container">
+    <nav id="navigation">  
+      <a href="https://yidaofei.com/" class="site-title">
+        
+        <img title="site-logo" class="site-logo" src="https://yidaofei.com//image/logo.png" >
+           
+         易道非 Blog 
+      </a> 
+      <a aria-label="mobile menu" class="nav-toggle" id="site-nav-toggle"> 
+        <span></span> <span></span> <span></span> 
+      </a>
+      <ul class="menu-left">
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/categories/">Categories</a></li>
+        
+          <li><a href="/tags">Tags</a></li>
+        
+          <li><a href="/wiki">Wiki</a></li>
+        
+          <li><a href="/about">About</a></li>
+        
+
+        
+          <li><a data-remodal-target="searchinput">search</a></li>
+           
+      </ul>
+    </nav>
+  </div>
+</header> 
+
+
+
+<div class="remodal" data-remodal-id="searchinput" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> 
+  <span id="algoliaData" style="display:none;" data-appid="NYC6MHRISW" 
+		data-searchkey="7f131a263a8820645ee9fc65ed97b22f" 
+		data-initindex="github-yidaofeicnBlog"></span>
+
+<div class="search-input-card" >
+    <input type="search" id="search-input" class="search-input" placeholder="Search for titles or URIs..." name="search" autocomplete="off" />
+     <span class="input-search-icon"><i class="fa fa-search"></i></span> 
+</div>
+
+ 
+
+  
+</div>
+
+  
+
+
+
+<section class="main-content-container">
+<article class="article-card">
+	<header class="article-header"> 
+	   <p class="article-title">知识管理系统——知识存储及发布端 V1.0版</p>
+   		<div class="article-meta">
+			
+			<div><i class="fa fa-calendar" >2018年12月18日</i> </div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://yidaofei.com/categories/%e8%87%aa%e6%88%91%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f">自我管理系统</a> 
+				   
+				</i>  
+			</div> 
+		</div>  
+	</header>  
+	<content class="markdown">
+		<p>前文<a href="/post/20181218-knowledge-management-system-input-v1/">《知识管理系统——高质量知识输入端 V1.0版》</a>已初步的梳理清楚
+「知识输入端」。</p>
+
+<p>按照「知识金字塔模型」后续的过程就是「知识内化」，关于「如何将知识内化」由于各个知识点之间的不同以及个人局限不详细展开说明，本文
+主要将本人知识存储及发布端的梳理清楚，内容分为以下部分：</p>
+
+<ol>
+<li>文件写作规范</li>
+<li>资料存储规范</li>
+<li>主题输出平台</li>
+</ol>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201812/knowledge-storage-and-publishing-mind.png" alt="知识输入端架构" /></p>
+
+<p></p>
+
+<h3 id="文章写作规范">文章写作规范</h3>
+
+<p>本部分主要分为两个部分：</p>
+
+<ol>
+<li>文件命名规范</li>
+<li>文件信息头规范</li>
+</ol>
+
+<h4 id="文件命名规范">文件命名规范</h4>
+
+<p>参考<a href="https://jingyan.baidu.com/article/636f38bb5e48ead6b84610ff.html" title="个人文档命名规范和文件夹分类">个人文档命名规范和文件夹分类</a>以及<a href="https://www.cnblogs.com/BreezeWoo/p/SaveYourDesktop.html">拯救你的电脑之文件命名规范与目录规划</a>
+以及工作经验整理如下「文件命名规范」：</p>
+
+<blockquote>
+<p>文件主题+版本号+相关部门+文件作者+相关日期</p>
+
+<p>eg:知识管理系统之知识存储及发布端 V1.0-研发部-易道非-20181219</p>
+</blockquote>
+
+<p>关于其中的版本号可以采用采用不同的粒度控制，如 <code>V1.0.0</code>、<code>V1.0.0.0</code>等，另外注意此版本号与「文件信息头规范」
+内部的版本相关联！</p>
+
+<h4 id="文件信息头规范">文件信息头规范</h4>
+
+<p>此部分参考<a href="https://github.com/yidaofeicn/hugo-theme-flybird">「Hugo-Flybird-theme 主题」</a>文件文件头制定，
+主要的目的如下：</p>
+
+<ol>
+<li>Wiz Markdown笔记与 Hugo Markdown博文通用，可以防御后期 Wiz 笔记可能停止运营的风险</li>
+<li>Hugo Markdown 模板已包含文章关键词、分类、标签、版本说明……，配合相关的<a href="https://www.appinn.com/filelocator-pro-gift/">「FileLocator Pro 」</a>
+或<a href="https://www.appinn.com/docfetcher/">「docfetcher」</a>，可快速定位相关文件，降低管理成本</li>
+</ol>
+
+<p>针对不同的文件类型设置不同的格式如下：</p>
+
+<h5 id="文摘类">文摘类</h5>
+
+<p>统一采用在主题资料库下建「README.md」文档加以说明，线索参考资料名，其条目格式为：</p>
+
+<pre><code class="language-markdown">### 文章名：为自己所爱的人努力——是什么可以带来源源不断的勇气？
+原始链接：https://www.jianshu.com/p/d9ead43424d1
+裁剪文章地址：file://……
+
+COPY 原文
+
+&gt;**勇气，来自于爱，她爱我、他们爱我，同时，我也爱着她，爱着他们！**
+爱，会带来责任，责任是明确的身份、清晰的标准、果决的行动！想想看，当我要想成为一个好丈夫、团队带头人、成长者，
+
+</code></pre>
+
+<h5 id="markdown-类">Markdown 类</h5>
+
+<pre><code class="language-yaml">---
+draft: true
+title: &quot;&quot;
+date: 2018-12-19
+type: &quot;post&quot;        #分页过滤 post
+Keywords: [&quot;&quot;]  
+categories: []
+tags: []
+
+#以下为默认设置居多，可直接删除
+toc:                #默认开启，可false关闭 
+tocStartLevel: 2    #toc导航开始层次，最小为1
+tocEndLevel: 4      #toc导航结束层次，最大为6
+comment:        #默认开启，可false关闭 
+author: &quot;&quot;
+CopyrightStatement: &quot;&quot;  #文章版权说明，一般默认为原创
+
+#内容与---空一行以便与 wiz 笔记markdown渲染兼容
+---
+
+**Markdown**  提示内容
+
+&lt;!--more--&gt;
+
+### 参考资料
+
+### 版本信息
+
+|Version|Action |Time |
+|:--:|:--:|:--:|
+|1.0|init|2018-12-19|
+
+</code></pre>
+
+<h5 id="word-excel-类">Word/Excel 类</h5>
+
+<p><div style="margin-left: auto;margin-right: auto;width:inherit;">
+    <table style="width: 100%;">
+      <thead>
+            <tr><td colspan="3" style="text-align: center;">文章标题</td></tr>
+            <tr><td>作者：</td><td>分类：</td><td>标签：</td></tr>
+            <tr><td colspan="3">关键词</td></tr>
+      </thead>
+      <tfoot>
+            <tr><td colspan="3">参考文献：</td></tr>
+            <tr><td>版本号</td><td>修正说明</td><td>时间</td></tr>
+            <tr><td>-</td><td>-</td><td>-</td></tr>
+      </tfoot>
+       <tbody>
+            <tr><td colspan="3">文章内容……</td></tr>
+      </tbody>
+    </table>
+<div></p>
+
+<p>当然以「版本号、修正说明、时间」与Word、Excel 类的 <strong>批注功能</strong> 相比后者细腻度更高，在使用过程中需要针对性的调整！</p>
+
+<h5 id="ppt-类-设计类">PPT 类/设计类</h5>
+
+<p>如迭代版本多且设计相关细节比较多，全部采用「README.md」文档加以说明，线索为图片版本号，与文摘类类似</p>
+
+<h3 id="资料存储规范">资料存储规范</h3>
+
+<h4 id="最完美的分盘方案">最完美的分盘方案</h4>
+
+<p>不知道大家的硬盘是怎样分盘的，是一台电脑就一个C盘，还是说分成C、D两个盘……</p>
+
+<p>我将我的分盘方案列出并说明为什么如何分盘？</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">盘名</th>
+<th align="left">大小</th>
+<th align="left">原因</th>
+<th align="left">追加</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">C 盘</td>
+<td align="left">50 G</td>
+<td align="left">1. 系统盘分离可防御如系统崩溃重装导致资料丢失风险 2. Windows系统安装完成一般为35 G</td>
+<td align="left">最大60G</td>
+</tr>
+
+<tr>
+<td align="left">D 盘</td>
+<td align="left">80 G</td>
+<td align="left">1. 公共资料盘，主要用于存放程序安装文件、公共资料 2. 系统重装部分软件无需重新配置，节省时间</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">E 盘</td>
+<td align="left">80 G</td>
+<td align="left">1. 私人资料盘，主要用于存放个人资料——利用 windows 自身的 「BitLocker」加密，需密码访问</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">空白</td>
+<td align="left">27.22 G</td>
+<td align="left">1. 用于后期备用</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+
+<p>以上分区可以说是我使用电脑以来做出的最完美的分区方案——<strong>系统崩溃风险、公共使用、个人隐私三者全部兼顾</strong>！</p>
+
+<blockquote>
+<p>任务1：以上方案针对的情景是哪种情景？是否适用工作情景</p>
+
+<p>任务2：请思考如不新分盘如何进一步加强隐私？如无任何规定如何进一步加强隐私？</p>
+</blockquote>
+
+<h4 id="恰到好处的文件夹分类">恰到好处的文件夹分类</h4>
+
+<p>同样的问题</p>
+
+<ol>
+<li>不知道大家的文件是怎样分，是电影一个文件夹、音乐一个文件夹还是……</li>
+<li>如果不借助搜索你能够在打开几层夹就能找到你要的文件</li>
+</ol>
+
+<p>在<a href="https://jingyan.baidu.com/article/636f38bb5e48ead6b84610ff.html" title="个人文档命名规范和文件夹分类">个人文档命名规范和文件夹分类</a>中提出「分类需要根据自己的知识体系做好文件夹分类；同时文件夹嵌套不超过4级」
+提出以下的分类方式：</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201812/document-classification-theme.jpg" alt="文件分类方式-主题" /></p>
+
+<p>类似的有<a href="http://www.360doc.com/content/16/0502/21/17286512_555717969.shtml">《强力底版的多领域实践 | 知行，在路上》</a>的
+「六个部分分别是：工作、素质、爱好、身体、家庭、社交」</p>
+
+<p>以上的分类方式初看没有任何的问题，能够将人的相关活动分的非常的详细，可以将生活的各个面包含进去，「Very Good」！<br />
+但是对我而言没有考虑以下相关的问题：</p>
+
+<ol>
+<li>一份文件如果从时间的角度看应该会经历 <strong>草稿&mdash;&gt;正式&mdash;&gt;归档</strong>，与之对应的参考资料会经历 <strong>收集&mdash;&gt;提取&mdash;&gt;存档</strong>，
+如不考虑 <strong>时间的因素</strong> 那么就会引发后期各种状态的文件存放在一起，管理存在混乱，尤其是针对我这类强迫症的人</li>
+<li>此类结构未将 <strong>笔记系统、wiz</strong>等考虑</li>
+</ol>
+
+<p>本次以<a href="https://www.zhihu.com/question/23427617/answer/28206585">《如何构建自己的笔记系统？ - Lachel的回答》</a>原则为核心调整 E 盘目录如下：</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201812/document-classification-20181220.jpg" alt="文件夹分类" /></p>
+
+<p>内在原则如下（Copy 自<a href="https://www.zhihu.com/question/23427617/answer/28206585">《如何构建自己的笔记系统？ - Lachel的回答》</a>
+）：</p>
+
+<blockquote>
+<p>1.一切以「用」为主。记笔记是为了用，不用的笔记没有价值</p>
+
+<p>2.以「主题」为核心。「主题」即「项目」，也就是「笔记可能的用途」。记笔记的目的，在于支撑主题，一切流程都是为主题服务。</p>
+</blockquote>
+
+<p>类似的可以将 RSS/浏览器书签等进行相关的分类！</p>
+
+<h4 id="逐步完善的笔记系统">逐步完善的笔记系统</h4>
+
+<p>参照上文「恰到好处的文件夹分类」进行相关的调整呈现如下：</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201812/wiz-classification-20181220.jpg" alt="wiz 笔记分类" /></p>
+
+<h4 id="初步完成的网络存储体系">初步完成的网络存储体系</h4>
+
+<p>不知道有多少人有关键文件备份的习惯，反正我是一定要做的！</p>
+
+<p>因为我清楚的记得2016年我自己一块西部数据的硬盘忽然挂掉时的感觉——「fu**ck，这种事情怎么会发生」！
+同时在网络上也可以随时找到类似的「数据丢失，损失惨重」的案例：</p>
+
+<ol>
+<li><a href="http://www.10tiao.com/html/188/201808/2650279111/1.html">静默错误：为什么看了那么多灾难，还是过不好备份这一关？</a>：静默错误导致「前沿数控」2年核心数据丢失，由于无备份公司直接从0开始</li>
+<li><a href="https://www.easyaq.com/news/1966946108.shtml">传华为被罚5亿，因数据丢失事件遭中国移动“全国系统排查”</a>：数据误删导致广西80万移动用户2G/3G/4G业务无法使用</li>
+<li><a href="http://www.cnblogs.com/lixigang/articles/5091621.html">下厨房6月26日数据丢失事故总结</a></li>
+<li>……</li>
+</ol>
+
+<p>构建网络存储体系大致分为以下2步：</p>
+
+<ol>
+<li>文件分类：按照来源、恢复难度、价值大小、隐私性分类</li>
+<li>针对文件分类选用合理的存储方案存储</li>
+</ol>
+
+<p>本人梳理的表格如下：</p>
+
+<p><strong>混合格式</strong>：即包含 Word、Excel、PPT等类型格式</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">来源</th>
+<th align="left">文件类型</th>
+<th align="left">恢复难度</th>
+<th align="left">价值大小</th>
+<th align="left">隐私性</th>
+<th align="left">存储方案</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">网络</td>
+<td align="left">音乐/电影/小说</td>
+<td align="left">小，清单备份</td>
+<td align="left">小</td>
+<td align="left">无</td>
+<td align="left">百度云</td>
+</tr>
+
+<tr>
+<td align="left">网络</td>
+<td align="left">软件/操作系统/通用类库</td>
+<td align="left">小，清单备份</td>
+<td align="left">小</td>
+<td align="left">无</td>
+<td align="left">百度云</td>
+</tr>
+
+<tr>
+<td align="left">网络</td>
+<td align="left">电子图书/教学视频</td>
+<td align="left">小</td>
+<td align="left">小</td>
+<td align="left">无</td>
+<td align="left">百度云</td>
+</tr>
+
+<tr>
+<td align="left">网络</td>
+<td align="left">主题整合资料</td>
+<td align="left">大，README.md 备份</td>
+<td align="left">中</td>
+<td align="left">无</td>
+<td align="left">坚果云/GoogleDrive(P)</td>
+</tr>
+
+<tr>
+<td align="left">工作</td>
+<td align="left">非机密产品资料</td>
+<td align="left">大</td>
+<td align="left">小</td>
+<td align="left">无</td>
+<td align="left">百度云</td>
+</tr>
+
+<tr>
+<td align="left">工作</td>
+<td align="left">其他资料</td>
+<td align="left">大</td>
+<td align="left">大</td>
+<td align="left">高</td>
+<td align="left">pcloud</td>
+</tr>
+
+<tr>
+<td align="left">学习</td>
+<td align="left"></td>
+<td align="left">大</td>
+<td align="left">中</td>
+<td align="left">中</td>
+<td align="left">pcloud/GoogleDrive(Y)</td>
+</tr>
+
+<tr>
+<td align="left">生活</td>
+<td align="left"></td>
+<td align="left">大</td>
+<td align="left">大</td>
+<td align="left">高</td>
+<td align="left">GoogleDrive(Y)</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>代码格式/博客/笔记系统</strong>：</p>
+
+<ol>
+<li>备份1：采用 Github 或 GitLab 备份<br /></li>
+<li>备份2：PCloud/googleDrive</li>
+</ol>
+
+<h3 id="搭建输出平台">搭建输出平台</h3>
+
+<p>输出平台主要分为两类：自建博客/平台博客，前者保证站点的独立，后者保证相关的流量来源！</p>
+
+<p>关于平台博客对我而言由于要兼顾自建博客文本格式，所以优先选用能够写「Markdown」的平台博客，我的选择是<a href="www.jianshu.com">简书</a>！</p>
+
+<p>关于自建博客在 「FarBox」、「Jekyll」、「Hexo」、「Hugo」静态博客选用「Hugo」，关于「Hugo」博客搭建请参考以下文章：</p>
+
+<ol>
+<li><a href="/post/20181108-hugo-quick-start/">个人建站 - Hugo - 快速开始</a>：快速使用 Hugo</li>
+<li><a href="/post/20181128-software-skills-piwigo-guild/">自建图床 Piwigo 建议教程</a>：配合博客的自建图床</li>
+</ol>
+
+<h3 id="参考资料">参考资料</h3>
+
+<p>[1]<a href="https://blog.blahgeek.com/2014/05/17/something-about-backup/">我是怎么存储/同步/备份我的数据的</a>：「Crashplan」？？？</p>
+
+<!--页面链接-->
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Version</th>
+<th align="center">Action</th>
+<th align="center">Time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1.0</td>
+<td align="center">init</td>
+<td align="center">2018-12-19</td>
+</tr>
+</tbody>
+</table>
+			  
+		
+		
+			<div class="article-copyright">
+			  	<ul>
+			  		<li><strong>本文作者：</strong>易道非</li>
+			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/201811219-knowledge-management-system-storage-v1/</li>
+			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
+			  	</ul>
+			</div>
+		 
+	</content>  
+ 	<hr/>
+ 	
+	<div class="article-footer-meta-between"> 
+		 
+		<div>
+			<i class="fa fa-tags">&nbsp;Tags:
+			
+				<a href="https://yidaofei.com/tags/%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f">管理系统</a>
+    		
+    		</i>   
+		</div> 
+		 
+		<div id="i-share" class="btn btn-default  share-widget">
+		    <i class="fa fa-share-alt"></i>
+		</div> 
+	</div>
+	<hr/>
+	<div class="article-footer-meta-between"> 
+		<div class="refArticle-prev" >
+			
+		</div>
+		 <div class="refArticle-next" >
+		  
+		  	<a href="https://yidaofei.com/post/20181218-knowledge-management-system-input-v1/">知识管理系统——高质量知识输入端 V1.0版&nbsp;
+		  		<i class="fa fa-angle-double-right"></i>
+		  	</a> 
+		 
+	    </div>
+	</div>  
+</article> 
+</section>
+ 
+
+  
+ 
+<div class="main-content-container " >
+<div class="comment-card"> 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeicn/comment-utterances-blog-yidaofeicn"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+</div>
+</div>
+
+ 
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+	
+	
+	<span id="tocLevel" data-startLevel="" data-endLevel=""></span>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#文章写作规范">文章写作规范</a>
+<ul>
+<li><a href="#文件命名规范">文件命名规范</a></li>
+<li><a href="#文件信息头规范">文件信息头规范</a>
+<ul>
+<li><a href="#文摘类">文摘类</a></li>
+<li><a href="#markdown-类">Markdown 类</a></li>
+<li><a href="#word-excel-类">Word/Excel 类</a></li>
+<li><a href="#ppt-类-设计类">PPT 类/设计类</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#资料存储规范">资料存储规范</a>
+<ul>
+<li><a href="#最完美的分盘方案">最完美的分盘方案</a></li>
+<li><a href="#恰到好处的文件夹分类">恰到好处的文件夹分类</a></li>
+<li><a href="#逐步完善的笔记系统">逐步完善的笔记系统</a></li>
+<li><a href="#初步完成的网络存储体系">初步完成的网络存储体系</a></li>
+</ul></li>
+<li><a href="#搭建输出平台">搭建输出平台</a></li>
+<li><a href="#参考资料">参考资料</a></li>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
+<footer class="site-footer text-center">
+  <div class="social" > 
+     
+          <a href=" mailto:yidaofeicn@gmail.com "><i class="fa fa-envelope-open-o"></i></span></a>
+      
+       
+          <a href=" https://github.com/yidaofeicn "  ><i class="fa fa-github"></i></span></a>
+      
+    
+      
+                <a href="https://yidaofei.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml" target="_blank"> <i class="fa fa-rss"></i>
+                </a>
+          </div>
+   
+  <div class="copyright"  >
+    Powered by &nbsp;<a href="https://gohugo.io/">Hugo</a>&nbsp;|&nbsp;
+    Theme-<a href="">Flybird</a>  
+  </div>
+  <div class="copyright"> Copyright© 2018 Transparent Thoughts. All rights reserved.</div> 
+  <div class="copyright"> 
+
+      
+    
+      <span id="busuanzi_container">
+        访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+</footer>
+
+ 
+
+<div id="bottom-element" data-title="定位底部"></div>
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.css">
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.js"></script>
+ 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.30.0/algoliasearch.jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.32.0/autocomplete.jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/algoliasearch/algolia-autocomplete.css">
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.css"> 
+<script type="text/javascript" src="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.css">
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/prismjs/prism.css">
+
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/prismjs/prism.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js"></script>
+
+<script type="text/javascript" color="#1D1D1D" opacity='1' zIndex="-2" count="400" src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.3/canvas-nest.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+<span id="isPage" data-isPage="true" style="display: none;"></span>
+
+
+ 
+
+<script type="text/javascript" src="https://yidaofei.com//js/flybird.js"></script> 
+<script type="text/javascript" src="https://yidaofei.com//js/main.js"></script> 
+  
+ 
+</style>
+</body>
+</html>
+
+
+ 

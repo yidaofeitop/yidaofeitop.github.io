@@ -12,6 +12,11 @@
   </url>
   
   <url>
+    <loc>https://yidaofei.com/post/201811219-knowledge-management-system-storage-v1/</loc>
+    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yidaofei.com/post/20181218-knowledge-management-system-input-v1/</loc>
     <lastmod>2018-12-18T00:00:00+00:00</lastmod>
   </url>
@@ -112,6 +117,11 @@
   </url>
   
   <url>
+    <loc>https://yidaofei.com/post/20181115-driver-summary/</loc>
+    <lastmod>2018-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yidaofei.com/post/20181127-network-lora-vs-nbiot/</loc>
     <lastmod>2018-11-15T00:00:00+00:00</lastmod>
   </url>
@@ -133,11 +143,6 @@
   
   <url>
     <loc>https://yidaofei.com/post/20181115-smartlock-install-lock-day-summary/</loc>
-    <lastmod>2018-11-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yidaofei.com/post/20181115-driver-summary/</loc>
     <lastmod>2018-11-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -192,6 +197,11 @@
   </url>
   
   <url>
+    <loc>https://yidaofei.com/post/20181013-driver-part2-rule/</loc>
+    <lastmod>2018-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yidaofei.com/post/20181013-driver-side-parking/</loc>
     <lastmod>2018-10-13T00:00:00+00:00</lastmod>
   </url>
@@ -223,11 +233,6 @@
   
   <url>
     <loc>https://yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/</loc>
-    <lastmod>2018-10-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yidaofei.com/post/20181013-driver-part2-rule/</loc>
     <lastmod>2018-10-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -561,6 +566,12 @@
   
   <url>
     <loc>https://yidaofei.com/tags/%E8%AF%97%E6%AD%8C/</loc>
+    <lastmod>2018-11-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/categories/%E8%AF%97%E6%AD%8C/</loc>
     <lastmod>2018-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
