@@ -6,38 +6,23 @@
     <description>Recent content in Drafts on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 16 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://yidaofei.com/drafts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>widows 教程1-如何下载官方 ISO</title>
-      <link>https://yidaofei.com/drafts/20181216-windows-skill-how-download-iso/</link>
-      <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Windows 技巧2-如何去除快捷方式箭头</title>
+      <link>https://yidaofei.com/drafts/20181221-windows-skill-how-to-remove-shortcut-arrow/</link>
+      <pubDate>Fri, 21 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/drafts/20181216-windows-skill-how-download-iso/</guid>
-      <description>&lt;p&gt;大家重装系统会去哪里下载镜像呢？百度搜索是不可能的，一辈子都不可能！（具体见[《百度竞价排名思考 - 血友病》(&lt;a href=&#34;http://yidaofei.com/post/20160503-event-hotspot-baidu-paid-listing/)]）&#34;&gt;http://yidaofei.com/post/20160503-event-hotspot-baidu-paid-listing/)]）&lt;/a&gt;&lt;/p&gt;
+      <guid>https://yidaofei.com/drafts/20181221-windows-skill-how-to-remove-shortcut-arrow/</guid>
+      <description>&lt;p&gt;Windows 安装完成之后如没有在安装之时进行相关的优化（具体的细节可以查看&lt;a href=&#34;https://yidaofei.com/post/20181217-how-to-install-windows-iso/#正式安装工作&#34;&gt;「微PE」安装Windows-第三步：Windows 安装器输入选项安装-优化调整&lt;/a&gt;）创建的快捷方式
+都会有一个「箭头」，如下：&lt;/p&gt;
 
-&lt;p&gt;后续查询相关的资料整理如下2种比较好的方式给大家：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://piwigo.yidaofei.com/galleries/201812/shortcut-arrow.png&#34; alt=&#34;难看的快捷方式箭头&#34; /&gt;&lt;/p&gt;
 
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://msdn.itellyou.cn/&#34;&gt;MSDN，我告诉你&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;微软官方——手机页面&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;前者非常简单选用相应的版本直接下载即可，后者则是利用浏览器模拟手机端的方式获取下载地址，但是截至2018年12月16日为止 &lt;strong&gt;仅适用「Windows 10」&lt;/strong&gt; 具体操作请见下文。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Windows 技巧</title>
-      <link>https://yidaofei.com/drafts/20181129-windows-skills/</link>
-      <pubDate>Thu, 29 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://yidaofei.com/drafts/20181129-windows-skills/</guid>
-      <description>&lt;p&gt;本文主要是记录关于在使用 windows 过程中的技巧，暂定状态为草稿状态，达到一定量后整理为正式文件&lt;/p&gt;
+&lt;p&gt;那么如何去掉这些难看的箭头呢？&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

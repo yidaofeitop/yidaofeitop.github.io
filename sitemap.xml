@@ -12,6 +12,11 @@
   </url>
   
   <url>
+    <loc>https://yidaofei.com/drafts/20181221-windows-skill-how-to-remove-shortcut-arrow/</loc>
+    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yidaofei.com/post/20181219-knowledge-management-system-storage-v1/</loc>
     <lastmod>2018-12-18T00:00:00+00:00</lastmod>
   </url>
@@ -19,6 +24,11 @@
   <url>
     <loc>https://yidaofei.com/post/20181218-knowledge-management-system-input-v1/</loc>
     <lastmod>2018-12-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/post/20181217-how-to-install-windows-iso/</loc>
+    <lastmod>2018-12-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -299,7 +309,7 @@
   
   <url>
     <loc>https://yidaofei.com/</loc>
-    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -315,6 +325,12 @@
   
   <url>
     <loc>https://yidaofei.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/drafts/</loc>
+    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -386,13 +402,13 @@
   
   <url>
     <loc>https://yidaofei.com/tags/windows-%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://yidaofei.com/categories/windows-%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

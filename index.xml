@@ -6,7 +6,7 @@
     <description>Recent content on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 18 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://yidaofei.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,6 +18,22 @@
       
       <guid>https://yidaofei.com/about/</guid>
       <description>道可道，非恒道</description>
+    </item>
+    
+    <item>
+      <title>Windows 技巧2-如何去除快捷方式箭头</title>
+      <link>https://yidaofei.com/drafts/20181221-windows-skill-how-to-remove-shortcut-arrow/</link>
+      <pubDate>Fri, 21 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/drafts/20181221-windows-skill-how-to-remove-shortcut-arrow/</guid>
+      <description>&lt;p&gt;Windows 安装完成之后如没有在安装之时进行相关的优化（具体的细节可以查看&lt;a href=&#34;https://yidaofei.com/post/20181217-how-to-install-windows-iso/#正式安装工作&#34;&gt;「微PE」安装Windows-第三步：Windows 安装器输入选项安装-优化调整&lt;/a&gt;）创建的快捷方式
+都会有一个「箭头」，如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://piwigo.yidaofei.com/galleries/201812/shortcut-arrow.png&#34; alt=&#34;难看的快捷方式箭头&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;那么如何去掉这些难看的箭头呢？&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -79,6 +95,39 @@
 &lt;p&gt;以上三部分构成「知识管理系统」，本文主要针对第一个事项进行相关的拆解，思维导图如下：&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://piwigo.yidaofei.com/galleries/201812/knowledge-input-mind.png&#34; alt=&#34;知识输入端架构&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows 教程2-如何安装 Windows 系统</title>
+      <link>https://yidaofei.com/post/20181217-how-to-install-windows-iso/</link>
+      <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181217-how-to-install-windows-iso/</guid>
+      <description>&lt;p&gt;Windows 安装大致可以分为以下几种情况：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;终极效果
+
+&lt;ul&gt;
+&lt;li&gt;单系统安装&lt;/li&gt;
+&lt;li&gt;双系统安装（Linux 与 Windows 并存/Mac 与 windows）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;安装方式
+
+&lt;ul&gt;
+&lt;li&gt;外部介质安装&lt;/li&gt;
+&lt;li&gt;硬盘安装&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;由于双系统安装（非虚拟机）一般都是专业人员需求，所以本文不做过多的论述，仅推荐 Google 搜索的教程文章：&lt;/p&gt;
+
+&lt;p&gt;[1]&lt;a href=&#34;https://www.jianshu.com/p/99903f850fbb&#34;&gt;Mac上安装双系统（传统BootCamp傻瓜式）图文教程&lt;/a&gt;&lt;br /&gt;
+[2]&lt;a href=&#34;http://www.cnblogs.com/Duane/p/6776302.html&#34;&gt;Windows + Ubuntu 16.04 &amp;mdash;&amp;gt; 双系统&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;本文仅讨论 &lt;strong&gt;Windows 单系统&lt;/strong&gt; 安装&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
