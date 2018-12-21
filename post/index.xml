@@ -6,10 +6,26 @@
     <description>Recent content in Posts on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 18 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://yidaofei.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Windows 技巧2-如何去除快捷方式箭头</title>
+      <link>https://yidaofei.com/post/20181221-windows-skill-how-to-remove-shortcut-arrow/</link>
+      <pubDate>Fri, 21 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181221-windows-skill-how-to-remove-shortcut-arrow/</guid>
+      <description>&lt;p&gt;Windows 安装完成之后如没有在安装之时进行相关的优化（具体的细节可以查看&lt;a href=&#34;https://yidaofei.com/post/20181217-how-to-install-windows-iso/#正式安装工作&#34;&gt;「微PE」安装Windows-第三步：Windows 安装器输入选项安装-优化调整&lt;/a&gt;）创建的快捷方式
+都会有一个「箭头」，如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://piwigo.yidaofei.com/galleries/201812/shortcut-arrow.png&#34; alt=&#34;难看的快捷方式箭头&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;那么如何去掉这些难看的箭头呢？&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>知识管理系统——知识存储及发布端 V1.0版</title>
