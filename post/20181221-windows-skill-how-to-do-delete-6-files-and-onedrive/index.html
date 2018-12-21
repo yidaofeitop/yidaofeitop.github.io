@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <meta charset="UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" >
+
+  
+  
+    
+    <meta charset="utf-8" name="keywords" content="windows 教程,windows 10,图片文件夹,oneDrive快捷方式," > 
+  
+   
+  <meta charset="utf-8" name="description" content="完成《Windows 技巧3-保护隐私—清除 「windows 10」 快速访问》相关操作后发现「图片、视频等文件夹」
+很是碍眼（如下图），决定清理！
+
+
+
+以下分为两部分：
+
+
+利用注册表清理/恢复/隐藏「视频、图片、文档、下载、音乐、桌面」
+
+
+
+" >
+  
+  
+  
+    
+        <link rel="icon" type="image/png" href="https://yidaofei.com//image/favicon-32x32.png" > 
+    
+  
+  
+  
+  
+  <title>Windows 技巧4-清除 「windows 10」 图片等6个文件夹/oneDrive- 易道非 Blog</title>  
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-126184892-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+
+  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css">
+
+<body> 
+ 
+
+ 
+<div id="top-element" data-title="到达顶点"></div>
+  
+<header class="site-header fixed-top">
+  <div class="container">
+    <nav id="navigation">  
+      <a href="https://yidaofei.com/" class="site-title">
+        
+        <img title="site-logo" class="site-logo" src="https://yidaofei.com//image/logo.png" >
+           
+         易道非 Blog 
+      </a> 
+      <a aria-label="mobile menu" class="nav-toggle" id="site-nav-toggle"> 
+        <span></span> <span></span> <span></span> 
+      </a>
+      <ul class="menu-left">
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/categories/">Categories</a></li>
+        
+          <li><a href="/tags">Tags</a></li>
+        
+          <li><a href="/wiki">Wiki</a></li>
+        
+          <li><a href="/about">About</a></li>
+        
+
+        
+          <li><a data-remodal-target="searchinput">search</a></li>
+           
+      </ul>
+    </nav>
+  </div>
+</header> 
+
+
+
+<div class="remodal" data-remodal-id="searchinput" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> 
+  <span id="algoliaData" style="display:none;" data-appid="NYC6MHRISW" 
+		data-searchkey="7f131a263a8820645ee9fc65ed97b22f" 
+		data-initindex="github-yidaofeicnBlog"></span>
+
+<div class="search-input-card" >
+    <input type="search" id="search-input" class="search-input" placeholder="Search for titles or URIs..." name="search" autocomplete="off" />
+     <span class="input-search-icon"><i class="fa fa-search"></i></span> 
+</div>
+
+ 
+
+  
+</div>
+
+  
+
+
+
+<section class="main-content-container">
+<article class="article-card">
+	<header class="article-header"> 
+	   <p class="article-title">Windows 技巧4-清除 「windows 10」 图片等6个文件夹/oneDrive</p>
+   		<div class="article-meta">
+			
+			<div><i class="fa fa-calendar" >2018年12月21日</i> </div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://yidaofei.com/categories/windows-%e6%95%99%e7%a8%8b">windows 教程</a> 
+				   
+				</i>  
+			</div> 
+		</div>  
+	</header>  
+	<content class="markdown">
+		<p>完成<a href="https://yidaofei.com/post/20181221-windows-skill-how-to-remove-quick-access/">《Windows 技巧3-保护隐私—清除 「windows 10」 快速访问》</a>相关操作后发现「图片、视频等文件夹」
+很是碍眼（如下图），决定清理！</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201812/remove-common-and-recent-project.jpg" alt="windows 10 文件管理器主页" /></p>
+
+<p>以下分为两部分：</p>
+
+<ol>
+<li>利用注册表清理/恢复/隐藏「视频、图片、文档、下载、音乐、桌面」</li>
+<li></li>
+</ol>
+
+<p></p>
+
+<h3 id="清理-恢复-隐藏-视频-图片-文档-下载-音乐-桌面-文件">清理/恢复/隐藏「视频、图片、文档、下载、音乐、桌面」文件</h3>
+
+<ol>
+<li>在「Windows」的桌面上单击鼠标右键，然后选择「新建一个文本文档」。</li>
+<li>按照需求将以下代码复制粘贴保存</li>
+<li>将文件扩展名改为后缀扩展名为 「reg」 ，例如「Clear 6 File.bat」</li>
+<li>单击确认执行即可</li>
+</ol>
+
+<p>以下代码:
+1. 清理/恢复代码来自<a href="https://jingyan.baidu.com/article/a3aad71ac44d98b1fb00963b.html">Win10此电脑视频、图片等6个文件夹怎么去除-百度知道</a>
+2. 隐藏/恢复代码来自<a href="https://blog.csdn.net/yaoyuanyylyy/article/details/51592808">删除 Win10 资源管理器中的6个文件夹</a></p>
+
+<h4 id="清理代码">清理代码</h4>
+
+<pre><code class="language-batch">Windows Registry Editor Version 5.00
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{f86fa3ab-70d2-4fc7-9c99-fcbf05467f3a}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{d3162b92-9365-467a-956b-92703aca08af}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{3dfdf296-dbec-4fb4-81d1-6a3438bcf4de}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{088e3905-0323-4b02-9826-5d99428e115f}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{24ad3ad4-a569-4530-98e1-ab02f9417aa8}]
+</code></pre>
+
+<h4 id="恢复代码">恢复代码</h4>
+
+<pre><code class="language-batch">Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{f86fa3ab-70d2-4fc7-9c99-fcbf05467f3a}]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{d3162b92-9365-467a-956b-92703aca08af}]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{3dfdf296-dbec-4fb4-81d1-6a3438bcf4de}]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{088e3905-0323-4b02-9826-5d99428e115f}]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{24ad3ad4-a569-4530-98e1-ab02f9417aa8}]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}]
+
+</code></pre>
+
+<h4 id="隐藏代码">隐藏代码</h4>
+
+<pre><code class="language-batch">Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{0ddd015d-b06c-45d5-8c4c-f59713854639}\PropertyBag]
+&quot;ThisPCPolicy&quot;=&quot;Hide&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{35286a68-3c57-41a1-bbb1-0eae73d76c95}\PropertyBag]
+&quot;ThisPCPolicy&quot;=&quot;Hide&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{7d83ee9b-2244-4e70-b1f5-5393042af1e4}\PropertyBag]
+&quot;ThisPCPolicy&quot;=&quot;Hide&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{a0c69a99-21c8-4671-8703-7934162fcf1d}\PropertyBag]
+&quot;ThisPCPolicy&quot;=&quot;Hide&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}\PropertyBag]
+&quot;ThisPCPolicy&quot;=&quot;Hide&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{f42ee2d3-909f-4907-8871-4c22fc0bf756}\PropertyBag]
+&quot;ThisPCPolicy&quot;=&quot;Hide&quot;
+</code></pre>
+
+<h4 id="显示代码">显示代码</h4>
+
+<pre><code class="language-batch">Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{0ddd015d-b06c-45d5-8c4c-f59713854639}\PropertyBag]
+&quot;ThisPCPolicy&quot;=&quot;Show&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{35286a68-3c57-41a1-bbb1-0eae73d76c95}\PropertyBag]
+&quot;ThisPCPolicy&quot;=&quot;Show&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{7d83ee9b-2244-4e70-b1f5-5393042af1e4}\PropertyBag]
+&quot;ThisPCPolicy&quot;=&quot;Show&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{a0c69a99-21c8-4671-8703-7934162fcf1d}\PropertyBag]
+&quot;ThisPCPolicy&quot;=&quot;Show&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}\PropertyBag]
+&quot;ThisPCPolicy&quot;=&quot;Show&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{f42ee2d3-909f-4907-8871-4c22fc0bf756}\PropertyBag]
+&quot;ThisPCPolicy&quot;=&quot;Show&quot;
+</code></pre>
+
+<p>代码内部注册表对应的文件清单如下：</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">代码名称</th>
+<th align="left">文件名称</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">B4BFCC3A-DB2C-424C-B029-7FE99A87C641</td>
+<td align="left">桌面文件夹</td>
+</tr>
+
+<tr>
+<td align="left">A8CDFF1C-4878-43be-B5FD-F8091C1C60D0</td>
+<td align="left">文档文件夹</td>
+</tr>
+
+<tr>
+<td align="left">374DE290-123F-4565-9164-39C4925E467B</td>
+<td align="left">下载文件夹</td>
+</tr>
+
+<tr>
+<td align="left">1CF1260C-4DD0-4ebb-811F-33C572699FDE</td>
+<td align="left">音乐文件夹</td>
+</tr>
+
+<tr>
+<td align="left">24ad3ad4-a569-4530-98e1-ab02f9417aa8</td>
+<td align="left">图片文件夹</td>
+</tr>
+
+<tr>
+<td align="left">A0953C92-50DC-43bf-BE83-3742FED03C9C</td>
+<td align="left">视频文件夹</td>
+</tr>
+
+<tr>
+<td align="left">0DB7E03F-FC29-4DC6-9020-FF41B59E513A</td>
+<td align="left">3D 对象</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="删除-onedrive">删除 oneDrive</h3>
+
+<h4 id="分步删除">分步删除</h4>
+
+<p>以下内容全部来自<a href="https://www.sysgeek.cn/disable-or-uninstall-onedrive-in-windows-10/">如何完全禁用或卸载Windows 10中的OneDrive</a></p>
+
+<ol>
+<li><p>以管理员方式打开命令提示符，先输入如下命令结束 「OneDrive」 进程</p>
+
+<pre><code class="language-batch">taskkill /f /im OneDrive.exe
+</code></pre></li>
+
+<li><p>32位 「Windows 10 (x86) 」 使用如下命令卸载 「OneDrive」 应用</p>
+
+<pre><code class="language-batch">%SystemRoot%\System32\OneDriveSetup.exe /uninstall
+</code></pre></li>
+
+<li><p>64位 「Windows 10 (x64)」 使用如下命令卸载 「OneDrive」 应用</p>
+
+<pre><code class="language-batch">%SystemRoot%\SysWOW64\OneDriveSetup.exe /uninstall
+</code></pre></li>
+
+<li><p>清理「OneDrive」残留数据<br />
+执行卸载命令后，「OneDrive」应用程序就算是完全删除了。但还是会遗留下一些残余数据，例如 「OneDrive」文件夹啥的。此时，我们可以使用如下命令来进行清理：</p>
+
+<pre><code class="language-batch">rd &quot;%UserProfile%\OneDrive&quot; /Q /S
+rd &quot;%LocalAppData%\Microsoft\OneDrive&quot; /Q /S
+rd &quot;%ProgramData%\Microsoft OneDrive&quot; /Q /S
+rd &quot;C:\OneDriveTemp&quot; /Q /S
+</code></pre>
+
+<blockquote>
+<p>注意：清理如上文件夹时，请先确保里面不再有需要使用的数据文件。</p>
+</blockquote></li>
+
+<li><p>清理 「OneDrive」 注册表<br />
+「OneDrive」 默认会添加到「Windows 10 」文件夹的导航窗格中，既然我们已经将其卸载，则可以将其注册表项也删除掉：</p>
+
+<pre><code class="language-batch">REG Delete &quot;HKEY_CLASSES_ROOT\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}&quot; /f
+REG Delete &quot;HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}&quot; /f
+</code></pre></li>
+</ol>
+
+<h4 id="批处理命令删除">批处理命令删除</h4>
+
+<p>以下内容全部来自<a href="https://zhuanlan.zhihu.com/p/21278319">一键删除Windows 10自带的OneDrive组件</a></p>
+
+<pre><code class="language-batch">@echo off
+title 一键删除OneDrive
+::获取管理员权限
+%Windir%\System32\FLTMC.exe &gt;nul 2&gt;&amp;1 || (
+    IF EXIST &quot;%TEMP%\AdminRun.vbs&quot; DEL /f /q &quot;%TEMP%\AdminRun.vbs&quot; 2&gt;nul
+    ECHO CreateObject^(&quot;Shell.Application&quot;^).ShellExecute &quot;%~f0&quot;, &quot;%1&quot;, &quot;&quot;, &quot;runas&quot;, 1 &gt;&gt; &quot;%TEMP%\AdminRun.vbs&quot;
+    ECHO CreateObject^(&quot;Scripting.filesystemobject&quot;^).DeleteFile ^(WScript.ScriptFullName^) &gt;&gt; &quot;%TEMP%\AdminRun.vbs&quot;
+    %Windir%\System32\CSCRIPT.exe //Nologo &quot;%TEMP%\AdminRun.vbs&quot;
+    Exit /b
+)
+echo.
+echo 即将删除OneDrive，是否继续？
+echo.
+echo 是：请按任意键继续。
+echo 否：点击右上角，关闭本窗口。
+echo.
+echo 如有安全软件弹出拦截提示，放行即可。
+pause
+echo 正在调用OneDrive自带卸载功能，请稍后。
+for /d %%f in (%localappdata%\Microsoft\OneDrive\*) do (if exist &quot;%%f\OneDriveSetup.exe&quot; %%f\OneDriveSetup.exe /uninstall)
+echo OneDrive卸载完成！
+del /f /s /q %localappdata%\Microsoft\OneDrive\*.*
+rd /s /q %localappdata%\Microsoft\OneDrive\
+echo OneDrive残留文件删除完成！
+reg add &quot;HKEY_CLASSES_ROOT\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}\ShellFolder&quot; /v Attributes /t REG_DWORD /d &quot;0xf090004d&quot; /f
+echo OneDrive导航栏选项删除完成！
+echo 删除导航栏OneDrive图标将会在重启Windows资源管理器后生效。
+echo.
+echo.
+echo 已将OneDrive彻底卸载。如有残留文件无法删除，重启后手工删除即可。
+echo 请按任意键退出本程序。
+pause
+</code></pre>
+
+<h3 id="最终效果">最终效果</h3>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201812/windows10-delete-6-files-and-onedrive.jpg" alt="清理多余文件及 oneDrive" /></p>
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Version</th>
+<th align="center">Action</th>
+<th align="center">Time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1.0</td>
+<td align="center">init</td>
+<td align="center">2018-12-21</td>
+</tr>
+</tbody>
+</table>
+			  
+		
+		
+			<div class="article-copyright">
+			  	<ul>
+			  		<li><strong>本文作者：</strong>易道非</li>
+			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20181221-windows-skill-how-to-do-delete-6-files-and-onedrive/</li>
+			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
+			  	</ul>
+			</div>
+		 
+	</content>  
+ 	<hr/>
+ 	
+	<div class="article-footer-meta-between"> 
+		 
+		<div>
+			<i class="fa fa-tags">&nbsp;Tags:
+			
+				<a href="https://yidaofei.com/tags/windows-%e6%95%99%e7%a8%8b">windows 教程</a>
+    		
+    		</i>   
+		</div> 
+		 
+		<div id="i-share" class="btn btn-default  share-widget">
+		    <i class="fa fa-share-alt"></i>
+		</div> 
+	</div>
+	<hr/>
+	<div class="article-footer-meta-between"> 
+		<div class="refArticle-prev" >
+			  
+		    <a href="https://yidaofei.com/post/20181221-windows-skill-how-to-remove-quick-access/">
+		    	<i class="fa fa-angle-double-left"></i>&nbsp;Windows 技巧3-保护隐私—清除 「windows 10」 快速访问  
+		    </a> 
+			
+		</div>
+		 <div class="refArticle-next" >
+		  
+		  	<a href="https://yidaofei.com/post/20181221-windows-skill-how-to-remove-shortcut-arrow/">Windows 技巧2-如何去除快捷方式箭头&nbsp;
+		  		<i class="fa fa-angle-double-right"></i>
+		  	</a> 
+		 
+	    </div>
+	</div>  
+</article> 
+</section>
+ 
+
+  
+ 
+<div class="main-content-container " >
+<div class="comment-card"> 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeicn/comment-utterances-blog-yidaofeicn"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+</div>
+</div>
+
+ 
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+	
+	
+	<span id="tocLevel" data-startLevel="" data-endLevel=""></span>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#清理-恢复-隐藏-视频-图片-文档-下载-音乐-桌面-文件">清理/恢复/隐藏「视频、图片、文档、下载、音乐、桌面」文件</a>
+<ul>
+<li><a href="#清理代码">清理代码</a></li>
+<li><a href="#恢复代码">恢复代码</a></li>
+<li><a href="#隐藏代码">隐藏代码</a></li>
+<li><a href="#显示代码">显示代码</a></li>
+</ul></li>
+<li><a href="#删除-onedrive">删除 oneDrive</a>
+<ul>
+<li><a href="#分步删除">分步删除</a></li>
+<li><a href="#批处理命令删除">批处理命令删除</a></li>
+</ul></li>
+<li><a href="#最终效果">最终效果</a></li>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
+<footer class="site-footer text-center">
+  <div class="social" > 
+     
+          <a href=" mailto:yidaofeicn@gmail.com "><i class="fa fa-envelope-open-o"></i></span></a>
+      
+       
+          <a href=" https://github.com/yidaofeicn "  ><i class="fa fa-github"></i></span></a>
+      
+    
+      
+                <a href="https://yidaofei.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml" target="_blank"> <i class="fa fa-rss"></i>
+                </a>
+          </div>
+   
+  <div class="copyright"  >
+    Powered by &nbsp;<a href="https://gohugo.io/">Hugo</a>&nbsp;|&nbsp;
+    Theme-<a href="">Flybird</a>  
+  </div>
+  <div class="copyright"> Copyright© 2018 Transparent Thoughts. All rights reserved.</div> 
+  <div class="copyright"> 
+
+      
+    
+      <span id="busuanzi_container">
+        访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+</footer>
+
+ 
+
+<div id="bottom-element" data-title="定位底部"></div>
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.css">
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.js"></script>
+ 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.30.0/algoliasearch.jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.32.0/autocomplete.jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/algoliasearch/algolia-autocomplete.css">
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.css"> 
+<script type="text/javascript" src="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.css">
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/prismjs/prism.css">
+
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/prismjs/prism.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js"></script>
+
+<script type="text/javascript" color="#1D1D1D" opacity='1' zIndex="-2" count="400" src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.3/canvas-nest.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+<span id="isPage" data-isPage="true" style="display: none;"></span>
+
+
+ 
+
+<script type="text/javascript" src="https://yidaofei.com//js/flybird.js"></script> 
+<script type="text/javascript" src="https://yidaofei.com//js/main.js"></script> 
+  
+ 
+</style>
+</body>
+</html>
+
+
+ 

@@ -12,13 +12,23 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/drafts/20181221-windows-skill-how-to-remove-shortcut-arrow---%E5%89%AF%E6%9C%AC/</loc>
+    <loc>https://yidaofei.com/post/20181221-windows-skill-how-to-remove-quick-access/</loc>
+    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/post/20181221-windows-skill-how-to-do-delete-6-files-and-onedrive/</loc>
     <lastmod>2018-12-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://yidaofei.com/post/20181221-windows-skill-how-to-remove-shortcut-arrow/</loc>
-    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/post/20181221-windows-skill-how-to-close-dynamic-tile/</loc>
+    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -334,12 +344,6 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/drafts/</loc>
-    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://yidaofei.com/tags/hugo/</loc>
     <lastmod>2018-11-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -432,6 +436,12 @@
   <url>
     <loc>https://yidaofei.com/categories/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2018-11-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/tags/%E4%B8%AA%E4%BA%BA%E9%9A%90%E7%A7%81/</loc>
+    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

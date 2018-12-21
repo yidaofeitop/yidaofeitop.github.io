@@ -11,15 +11,15 @@
   
   
     
-    <meta charset="utf-8" name="keywords" content="windows 教程,快捷方式箭头," > 
+    <meta charset="utf-8" name="keywords" content="windows 教程,关闭磁贴," > 
   
    
-  <meta charset="utf-8" name="description" content="Windows 安装完成之后如没有在安装之时进行相关的优化（具体的细节可以查看「微PE」安装Windows-第三步：Windows 安装器输入选项安装-优化调整）创建的快捷方式
-都会有一个「箭头」，如下：
+  <meta charset="utf-8" name="description" content="「windows 10」开始菜单中的动态磁贴虽然为我们即时查看信息提供了方便，例如可以在不打开应用的情况下，
+查看到天气、日历、邮件、照片等信息，但是在公共场所使用电脑的情况下，就有可能泄露我们的隐私。
 
 
 
-那么如何去掉这些难看的箭头呢？
+那么如何去掉这些磁贴呢？
 
 " >
   
@@ -32,7 +32,7 @@
   
   
   
-  <title>Windows 技巧2-如何去除快捷方式箭头- 易道非 Blog</title>  
+  <title>Windows 技巧5-保护隐私—关闭并清理 Windows 10 磁贴- 易道非 Blog</title>  
   
   
     
@@ -117,7 +117,7 @@ if (!doNotTrack) {
 <section class="main-content-container">
 <article class="article-card">
 	<header class="article-header"> 
-	   <p class="article-title">Windows 技巧2-如何去除快捷方式箭头</p>
+	   <p class="article-title">Windows 技巧5-保护隐私—关闭并清理 Windows 10 磁贴</p>
    		<div class="article-meta">
 			
 			<div><i class="fa fa-calendar" >2018年12月20日</i> </div>
@@ -140,57 +140,48 @@ if (!doNotTrack) {
 		</div>  
 	</header>  
 	<content class="markdown">
-		<p>Windows 安装完成之后如没有在安装之时进行相关的优化（具体的细节可以查看<a href="https://yidaofei.com/post/20181217-how-to-install-windows-iso/#正式安装工作">「微PE」安装Windows-第三步：Windows 安装器输入选项安装-优化调整</a>）创建的快捷方式
-都会有一个「箭头」，如下：</p>
+		<p>「windows 10」开始菜单中的动态磁贴虽然为我们即时查看信息提供了方便，例如可以在不打开应用的情况下，
+查看到天气、日历、邮件、照片等信息，但是在公共场所使用电脑的情况下，就有可能泄露我们的隐私。</p>
 
-<p><img src="https://piwigo.yidaofei.com/galleries/201812/shortcut-arrow.png" alt="难看的快捷方式箭头" /></p>
+<p><img src="https://piwigo.yidaofei.com/galleries/201812/windows10-dynamic-tile.jpg" alt="windows 10 磁贴" /></p>
 
-<p>那么如何去掉这些难看的箭头呢？</p>
+<p>那么如何去掉这些磁贴呢？</p>
 
 <p></p>
 
-<h3 id="软件类">软件类</h3>
+<p>对于 <strong>「Windows10专业版」</strong> 以上的用户来说，可以通过修改「组策略」来实现这一操作；使用「Win10家庭版」
+的用户可以通过「添加注册表值」的方式来达到目的。</p>
 
-<p>第一种可以通过如<a href="https://mofang.ruanmei.com/">「魔方」</a>的美化，类似的软件有「金山毒霸」……</p>
-
-<p><img src="https://piwigo.yidaofei.com/galleries/201812/pcmaster-remove-shortcut-arrow.png" alt="「魔方-美化大师」移除快捷方式箭头与名称" /></p>
-
-<h3 id="批处理命令">批处理命令</h3>
+<h3 id="组策略-关闭所有通知">组策略「关闭所有通知」</h3>
 
 <ol>
-<li>新建一个文本档案，根据需求选择不同的代码复制粘贴保存！</li>
-<li>将文件扩展名改为后缀扩展名为 「bat」 的批处理文件，例如「Clear arrow.bat」</li>
-
-<li><p>右键以选择「以管理员身份运行」，这时会弹出命令提示符窗口，显示命令运行进程，运行结果如图：</p>
-
-<p><img src="https://piwigo.yidaofei.com/galleries/201812/clear-arrow-bat-report.png" alt="批处理命令执行结果" /></p></li>
+<li>「Win+R」输入<code>gpedit.msc</code>，回车，打开「组策略编辑器」</li>
+<li>找到「用户配置→管理模板→开始菜单和任务栏→通知」，如下图：</li>
 </ol>
 
-<p>相关代码：</p>
+<p><img src="https://piwigo.yidaofei.com/galleries/201812/windows10-gpedit-startup-close-message-step1.jpg" alt="" /></p>
 
-<p>删除代码</p>
+<ol>
+<li><p>双击打开「关闭所有通知」，在左上角选择「已启用」，点击「确定」，如下图：</p>
 
-<pre><code class="language-batch">reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; /v 29 /d &quot;%systemroot%\system32\imageres.dll,197&quot; /t reg_sz /f
-taskkill /f /im explorer.exe
-attrib -s -r -h &quot;%userprofile%\AppData\Local\iconcache.db&quot;
-del &quot;%userprofile%\AppData\Local\iconcache.db&quot; /f /q
-start explorer
-pause
-</code></pre>
+<p><img src="https://piwigo.yidaofei.com/galleries/201812/windows10-gpedit-startup-close-message-step2.jpg" alt="" /></p></li>
+</ol>
 
-<p>恢复代码</p>
+<h3 id="修改注册表">修改注册表</h3>
 
-<pre><code class="language-batch">reg delete &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; /v 29 /f
-taskkill /f /im explorer.exe
-attrib -s -r -h &quot;%userprofile%\AppData\Local\iconcache.db&quot;
-del &quot;%userprofile%\AppData\Local\iconcache.db&quot; /f /q
-start explorer
-pause
-</code></pre>
+<ol>
+<li>「Win+R」输入<code>regedit</code>，回车，打开「注册表编辑器」</li>
+<li>定位到 <code>HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\PushNotifications</code><br />
+注意注意，如果你的系统中没有「PushNotifications」项，需要右键单击「CurrentVersion」新建「项」，命名为「PushNotifications」</li>
 
-<h3 id="参考资料">参考资料</h3>
+<li><p>点击「PushNotifications」，在右侧「新建&mdash;&gt;DWORD（32位）值」，命名为「NoTileApplicationNotification」，双击后把数值数据改为「1」</p>
 
-<p>[1]<a href="https://www.windows10.pro/remove-win10-arrow-shortcut-icon-on-the-desktop/">去除Win10桌面快捷方式图标上的箭头</a></p>
+<p><img src="https://piwigo.yidaofei.com/galleries/201812/windows10-regedit-startup-close-message-step1.jpg" alt="" /></p></li>
+</ol>
+
+<h3 id="如何清除所有的磁帖消息">如何清除所有的磁帖消息</h3>
+
+<p>由于无相关注册表，所以无法验证，如大家有需求请直接访问<a href="https://www.ithome.com/html/win10/222370.htm">Win10使用进阶：如何同时清除开始菜单全部动态磁贴消息？</a></p>
 
 <h3 id="版本信息">版本信息</h3>
 
@@ -216,9 +207,8 @@ pause
 		
 			<div class="article-copyright">
 			  	<ul>
-			  		<li><strong>本文作者：</strong>易道非</li>
-			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20181221-windows-skill-how-to-remove-shortcut-arrow/</li>
-			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
+			  		
+			  		<li><strong>版权申明：</strong>本文内容大部分内容来自《Win10使用进阶：如何同时清除开始菜单全部动态磁贴消息？》 https://www.ithome.com/html/win10/222370.htm，本文仅作部分情况调整，如有侵权请联系本人处理</li>
 			  	</ul>
 			</div>
 		 
@@ -243,14 +233,14 @@ pause
 	<div class="article-footer-meta-between"> 
 		<div class="refArticle-prev" >
 			  
-		    <a href="https://yidaofei.com/post/20181221-windows-skill-how-to-do-delete-6-files-and-onedrive/">
-		    	<i class="fa fa-angle-double-left"></i>&nbsp;Windows 技巧4-清除 「windows 10」 图片等6个文件夹/oneDrive  
+		    <a href="https://yidaofei.com/post/20181221-windows-skill-how-to-remove-shortcut-arrow/">
+		    	<i class="fa fa-angle-double-left"></i>&nbsp;Windows 技巧2-如何去除快捷方式箭头  
 		    </a> 
 			
 		</div>
 		 <div class="refArticle-next" >
 		  
-		  	<a href="https://yidaofei.com/post/20181221-windows-skill-how-to-close-dynamic-tile/">Windows 技巧5-保护隐私—关闭并清理 Windows 10 磁贴&nbsp;
+		  	<a href="https://yidaofei.com/post/20181219-knowledge-management-system-storage-v1/">知识管理系统——知识存储及发布端 V1.0版&nbsp;
 		  		<i class="fa fa-angle-double-right"></i>
 		  	</a> 
 		 
@@ -305,9 +295,9 @@ pause
 <ul>
 <li>
 <ul>
-<li><a href="#软件类">软件类</a></li>
-<li><a href="#批处理命令">批处理命令</a></li>
-<li><a href="#参考资料">参考资料</a></li>
+<li><a href="#组策略-关闭所有通知">组策略「关闭所有通知」</a></li>
+<li><a href="#修改注册表">修改注册表</a></li>
+<li><a href="#如何清除所有的磁帖消息">如何清除所有的磁帖消息</a></li>
 <li><a href="#版本信息">版本信息</a></li>
 </ul></li>
 </ul></li>
