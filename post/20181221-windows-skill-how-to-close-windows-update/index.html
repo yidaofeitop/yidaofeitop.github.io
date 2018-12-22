@@ -11,18 +11,16 @@
   
   
     
-    <meta charset="utf-8" name="keywords" content="windows 教程,windows 10常用/最近项目," > 
+    <meta charset="utf-8" name="keywords" content="windows 教程,关闭更新,windows10," > 
   
    
-  <meta charset="utf-8" name="description" content="[Windows 10]不知道从哪个版本开始引入了「快速访问」的设计，当你点击任务栏中的「文件资源管理器」
-图标时就会默认打开「快速访问」页面，页面中会显示「常用文件夹」和「最近使用的文件」两个项目。这虽然
-方便了我们的日常使用，提高了工作效率，但是也会泄露我们的隐私，如下图！
+  <meta charset="utf-8" name="description" content="就像 「Windows 7」一样，非常讨厌在使用电脑时总是跳出更新系统的提示！
 
+有时自动更新的时间，恰好是需要急用电脑的时候，而且系统更新比较慢，等待的时间长 😹
 
+甚至有时候更新失败，严重影响到正常使用。
 
-那么如何清除掉「Windows10」开始菜单和主页中的「常用/最近项目」，保护我们的个人隐私呢？
-
-" >
+所以将「Windows 10」成为我安装完电脑初步打完补丁后的第一件事！" >
   
   
   
@@ -33,7 +31,7 @@
   
   
   
-  <title>Windows 技巧3-保护隐私—清除 「windows 10」 快速访问- 易道非 Blog</title>  
+  <title>Windows 技巧6-如何关闭 Windows 10 更新- 易道非 Blog</title>  
   
   
     
@@ -118,10 +116,10 @@ if (!doNotTrack) {
 <section class="main-content-container">
 <article class="article-card">
 	<header class="article-header"> 
-	   <p class="article-title">Windows 技巧3-保护隐私—清除 「windows 10」 快速访问</p>
+	   <p class="article-title">Windows 技巧6-如何关闭 Windows 10 更新</p>
    		<div class="article-meta">
 			
-			<div><i class="fa fa-calendar" >2018年12月20日</i> </div>
+			<div><i class="fa fa-calendar" >2018年12月21日</i> </div>
 			  
 
 			 
@@ -141,75 +139,35 @@ if (!doNotTrack) {
 		</div>  
 	</header>  
 	<content class="markdown">
-		<p>[Windows 10]不知道从哪个版本开始引入了「快速访问」的设计，当你点击任务栏中的「文件资源管理器」
-图标时就会默认打开「快速访问」页面，页面中会显示「常用文件夹」和「最近使用的文件」两个项目。这虽然
-方便了我们的日常使用，提高了工作效率，但是也会泄露我们的隐私，如下图！</p>
+		<p>就像 「Windows 7」一样，非常讨厌在使用电脑时总是跳出更新系统的提示！</p>
 
-<p><img src="https://piwigo.yidaofei.com/galleries/201812/windows10-file-manage-main.png" alt="windows 10 文件管理器主页" /></p>
+<p>有时自动更新的时间，恰好是需要急用电脑的时候，而且系统更新比较慢，等待的时间长 😹</p>
 
-<p>那么如何清除掉「Windows10」开始菜单和主页中的「常用/最近项目」，保护我们的个人隐私呢？</p>
+<p>甚至有时候更新失败，严重影响到正常使用。</p>
 
-<p></p>
+<p>所以将「Windows 10」成为我安装完电脑初步打完补丁后的第一件事！</p>
 
-<h3 id="修改-文件管理器-打开-此电脑-而不是-快速访问">修改「文件管理器」打开「此电脑」而不是「快速访问」</h3>
+<p>
+「Windows 10」关闭更新基本有以下两种方式：</p>
 
-<p>打开任意一个文件资源管理器窗口，在菜单栏中切换到「查看」选项卡，点击右下角的「选项」图标打开「文件夹选项」窗口，如图：</p>
+<h3 id="关闭-windows-10-更新服务">关闭「windows 10 更新服务」</h3>
 
-<p><img src="https://piwigo.yidaofei.com/galleries/201812/windows10-file-manage-change-fast-visit.png" alt="修改快速访问" /></p>
+<ol>
+<li>「Win+R」输入<code>services.msc</code>，回车，打开「服务管理」</li>
+<li>找到「windows update」右键选择「属性」，把启动类型改为「禁用」</li>
+</ol>
 
-<p>PS：为了进一步保护隐私，你还可以点击「清除按钮」清除文件资源管理器历史记录</p>
+<p><img src="https://piwigo.yidaofei.com/galleries/201812/close-windows10-update-service.jpg" alt="关闭「windows 10 更新服务」" /></p>
 
-<h3 id="彻底删除-快速访问">彻底删除「快速访问」</h3>
+<h3 id="组策略关闭-windows-10更新">组策略关闭「windows 10更新」</h3>
 
-<h4 id="修改注册表信息">修改注册表信息</h4>
+<ol>
+<li>「Win+R」输入<code>gpedit.msc</code>，回车，打开「配置组策略」</li>
+<li>逐步定位「计算机配置」&mdash;&gt;「管理模板」&mdash;&gt;「windows组件」&mdash;&gt;「windows更新」&mdash;&gt;「右侧配置更新」</li>
+<li>右键选择「配置」，选择「已禁用」</li>
+</ol>
 
-<p>第一步：打开「注册表管理器」</p>
-
-<p>「Win+R」，输入 <code>regedit</code> 回车，打开「注册表管理器」</p>
-
-<p>第二步：定位位置
-使用「编辑-查找」定位到 <code>HKEY_CLASSES_ROOT\CLSID\{679f85cb-0220-4080-b29b-5540cc05aab6}\ShellFolder</code></p>
-
-<p>第三步：修改「ShellFolder」文件夹的权限<br />
-相关的步骤如下：</p>
-
-<p><img src="https://piwigo.yidaofei.com/galleries/201812/modify-registry-permissions1.png" alt="修改注册表所有者-第一步" /></p>
-
-<p><img src="https://piwigo.yidaofei.com/galleries/201812/modify-registry-permissions2.png" alt="修改注册表所有者-第二步" /></p>
-
-<p><img src="https://piwigo.yidaofei.com/galleries/201812/modify-registry-permissions3.png" alt="修改注册表所有者-第三步" /></p>
-
-<p>一般而言仅需要进行「第一步」、「第三步」，但是我在进行操作时，如不进行「第二步」修改权限为「完全控制」</p>
-
-<p>关于修改权限可以参考 <a href="https://www.windows10.pro/get-the-regedit-key-full-control-permission/">更改注册表项所有者权限，获取“完全控制”权限</a></p>
-
-<p>第四步： 修改「Attributes」值
-权限更改为「完全控制」之后，将右侧窗口中的「Attributes」值的数值数据由<code>a0100000</code>修改为<code>a0600000</code>，保存退出注册表管理器</p>
-
-<p><img src="https://piwigo.yidaofei.com/galleries/201812/modify-attributes-value.png" alt="修改「Attributes」值" /></p>
-
-<h4 id="重启资源管理器与效果呈现">重启资源管理器与效果呈现</h4>
-
-<p>重启资源管理器：任务栏右键「任务管理器」，定位到「windows 资源管理器」，右键选择「重新启动」</p>
-
-<p><img src="https://piwigo.yidaofei.com/galleries/201812/reset-the-file-manage.png" alt="重启资源管理器" /></p>
-
-<p>呈现效果</p>
-
-<p><img src="https://piwigo.yidaofei.com/galleries/201812/remove-common-and-recent-project.jpg" alt="清理快速访问最终效果" /></p>
-
-<h4 id="注意点">注意点</h4>
-
-<p>注意：你做如下的操作之前，需要确保你已经设置了点击「windows 10文件资源管理器」图标打开的是
-「此电脑」而不是「快速访问」 ，否则会出现点击文件资源管理器图标会出现「Explorer.EXE Windows找不到文件&raquo;。请确定文件名是否正确后，再试一次。」错误提示窗口。如图：</p>
-
-<p><img src="https://piwigo.yidaofei.com/galleries/201812/explorer-can-not-find-file.png" alt="Explorer.EXE 找不到文件" /></p>
-
-<h3 id="参考资料">参考资料</h3>
-
-<p>[1]<a href="https://www.windows10.pro/remove-the-quick-access/">彻底去除Win10“快速访问”</a><br />
-[2]<a href="https://www.windows10.pro/get-the-regedit-key-full-control-permission/">更改注册表项所有者权限，获取“完全控制”权限</a><br />
-[3]<a href="https://www.cnblogs.com/xxoome/p/6792599.html">彻底去除Win10“快速访问”</a></p>
+<p><img src="https://piwigo.yidaofei.com/galleries/201812/close-windows10-update-service-by-gpedit.jpg" alt="组策略关闭「windows 10更新」" /></p>
 
 <h3 id="版本信息">版本信息</h3>
 
@@ -236,7 +194,7 @@ if (!doNotTrack) {
 			<div class="article-copyright">
 			  	<ul>
 			  		<li><strong>本文作者：</strong>易道非</li>
-			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20181221-windows-skill-how-to-remove-quick-access/</li>
+			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20181221-windows-skill-how-to-close-windows-update/</li>
 			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
 			  	</ul>
 			</div>
@@ -251,8 +209,6 @@ if (!doNotTrack) {
 			
 				<a href="https://yidaofei.com/tags/windows-%e6%95%99%e7%a8%8b">windows 教程</a>
     		
-				<a href="https://yidaofei.com/tags/%e4%b8%aa%e4%ba%ba%e9%9a%90%e7%a7%81">个人隐私</a>
-    		
     		</i>   
 		</div> 
 		 
@@ -263,15 +219,11 @@ if (!doNotTrack) {
 	<hr/>
 	<div class="article-footer-meta-between"> 
 		<div class="refArticle-prev" >
-			  
-		    <a href="https://yidaofei.com/post/20181221-windows-skill-how-to-do-delete-6-files-and-onedrive/">
-		    	<i class="fa fa-angle-double-left"></i>&nbsp;Windows 技巧4-清除 「windows 10」 图片等6个文件夹/oneDrive  
-		    </a> 
 			
 		</div>
 		 <div class="refArticle-next" >
 		  
-		  	<a href="https://yidaofei.com/post/20181221-windows-skill-how-to-remove-shortcut-arrow/">Windows 技巧2-如何去除快捷方式箭头&nbsp;
+		  	<a href="https://yidaofei.com/post/20181221-windows-skill-how-to-close-dynamic-tile/">Windows 技巧5-保护隐私—关闭并清理 Windows 10 磁贴&nbsp;
 		  		<i class="fa fa-angle-double-right"></i>
 		  	</a> 
 		 
@@ -326,14 +278,8 @@ if (!doNotTrack) {
 <ul>
 <li>
 <ul>
-<li><a href="#修改-文件管理器-打开-此电脑-而不是-快速访问">修改「文件管理器」打开「此电脑」而不是「快速访问」</a></li>
-<li><a href="#彻底删除-快速访问">彻底删除「快速访问」</a>
-<ul>
-<li><a href="#修改注册表信息">修改注册表信息</a></li>
-<li><a href="#重启资源管理器与效果呈现">重启资源管理器与效果呈现</a></li>
-<li><a href="#注意点">注意点</a></li>
-</ul></li>
-<li><a href="#参考资料">参考资料</a></li>
+<li><a href="#关闭-windows-10-更新服务">关闭「windows 10 更新服务」</a></li>
+<li><a href="#组策略关闭-windows-10更新">组策略关闭「windows 10更新」</a></li>
 <li><a href="#版本信息">版本信息</a></li>
 </ul></li>
 </ul></li>
