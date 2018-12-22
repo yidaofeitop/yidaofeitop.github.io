@@ -18,25 +18,6 @@
     },
     {
         "draft": false,
-        "uri": "drafts/20181221-windows-skill-how-to-remove-shortcut-arrow - 副本",
-        "content": "Windows                                  PE   Windows     Windows                                                                                                                                           bat            Clear arrow bat                                                           reg add  HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer Shell Icons   v 29  d   systemroot  system32 imageres dll 197   t reg_sz  f taskkill  f  im explorer exe attrib  s  r  h   userprofile  AppData Local iconcache db  del   userprofile  AppData Local iconcache db   f  q start explorer pause      reg delete  HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer Shell Icons   v 29  f taskkill  f  im explorer exe attrib  s  r  h   userprofile  AppData Local iconcache db  del   userprofile  AppData Local iconcache db   f  q start explorer pause      1 https   www windows10 pro remove win10 arrow shortcut icon on the desktop         Version Action  Time                     1 0 init 2018 12 21",
-        "objectID": "drafts/20181221-windows-skill-how-to-remove-shortcut-arrow - 副本",
-        "title": "Windows 技巧2-如何去除快捷方式箭头",
-        "date": "2018-12-21T00:00:00.000Z",
-        "type": "post",
-        "Keywords": [
-            "windows 教程",
-            "快捷方式箭头"
-        ],
-        "categories": [
-            "windows 教程"
-        ],
-        "tags": [
-            "windows 教程"
-        ]
-    },
-    {
-        "draft": false,
         "uri": "post/20150620-financial-management-how-buy-insurance",
         "content": "smile                                                   xmind                                                                                                                                                                                                                                                                                         Of course                                                                                                                                                                                                                                                                               really                                                                                                 1             2                                                                                                                                                                                                                                                                                                                                                                                                                   3           C ross               4                                                5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       3 4                                                                                                                                                                                                                                                                                                                                                                                                         2016                                                                                                                       3                                                                                                                                                                                                                                                                                                                                                                                                          5   8                5 10                     20         80                                                                                                                        10                                                                         20   10   1 0 06  203 118                                                            Buy term invest difference                                                          30                                                                                                                              25                3                       3                  3                                         65   70                                                                                                                                     3                                                     A                      PK          e v s      A                            20181030                                        2018                                                e        e                                                                                                                                                                                   2 3                                                                                                                                                                                                                                                       C           e                                    2018 7 20                                          A B       e        e      2018 7 20                                            0 6                    e         e                      1 https   www zhihu com question 22316395  2 https   www zhihu com question 55738604  3 http   mp weixin qq com s _biz MzI4MjMyNjAwMA   mid 2247483729 idx 1 sn 1faea9ca50edab2f776db393011de7bb scene 21 wechatredirect  4 https   zhuanlan zhihu com p 23254798  5 https   zhuanlan zhihu com p 24195078  6 https   zhuanlan zhihu com p 21488112  7 https   www zhihu com",
         "objectID": "post/20150620-financial-management-how-buy-insurance",
@@ -810,25 +791,6 @@
     },
     {
         "draft": false,
-        "uri": "post/20181128-software-skills-markdown-github-emoji",
-        "content": "GFM GitHub Flavored Markdown                   http   www emoji cheat sheet com                                                                         sleepy      sleepy     okhand      okhand     personwithblondhair      personwithblondhair      yum      yum     punch      punch     manwithguapimao      manwithguapimao      mask      mask     facepunch      facepunch     manwithturban      manwithturban      sunglasses      sunglasses     fist      fist     constructionworker      constructionworker      dizzyface      dizzyface     v      v     cop      cop      imp      imp     wave      wave     angel      angel      smilingimp      smilingimp     hand      hand     princess      princess      neutralface      neutralface     raisedhand      raisedhand     smileycat      smileycat      nomouth      nomouth     openhands      openhands     smilecat      smilecat      innocent      innocent     pointup      pointup     hearteyescat      hearteyescat      alien      alien     pointdown      pointdown     kissingcat      kissingcat      yellowheart      yellowheart     pointleft      pointleft     smirkcat      smirkcat      blueheart      blueheart     pointright      pointright     screamcat      screamcat      purpleheart      purpleheart     raisedhands      raisedhands     cryingcatface      cryingcatface      heart      heart     pray      pray     joycat      joycat      greenheart      greenheart     pointup2      pointup2     poutingcat      poutingcat      brokenheart      brokenheart     clap      clap     japaneseogre      japaneseogre      heartbeat      heartbeat     muscle      muscle     japanesegoblin      japanesegoblin      heartpulse      heartpulse     metal      metal     seenoevil      seenoevil      twohearts      twohearts     fu      fu     hearnoevil      hearnoevil      revolvinghearts      revolvinghearts     runner      runner     speaknoevil      speaknoevil      cupid      cupid     running      running     guardsman      guardsman      sparklingheart      sparklingheart     couple      couple     skull      skull      sparkles      sparkles     family      family     feet      feet      star      star     twomenholdinghands      twomenholdinghands     lips      lips      star2      star2     twowomenholdinghands      twowomenholdinghands     kiss      kiss      dizzy      dizzy     dancer      dancer     droplet      droplet      boom      boom     dancers      dancers     ear      ear      collision      collision     okwoman      okwoman     eyes      eyes      anger      anger     nogood      nogood     nose      nose      exclamation      exclamation     informationdeskperson      informationdeskperson     tongue      tongue      question      question     raisinghand      raisinghand     loveletter      loveletter      greyexclamation      greyexclamation     bridewithveil      bridewithveil     bustinsilhouette      bustinsilhouette      greyquestion      greyquestion     personwithpoutingface      personwithpoutingface     bustsinsilhouette      bustsinsilhouette      zzz      zzz     personfrowning      personfrowning     speechballoon      speechballoon      dash      dash     bow      bow     thoughtballoon      thoughtballoon      sweatdrops      sweatdrops     couplekiss      couplekiss     feelsgood      feelsgood      notes      notes     couplewithheart      couplewithheart     finnadie      finnadie      musicalnote      musicalnote     massage      massage     goberserk      goberserk      fire      fire     haircut      haircut     godmode      godmode      hankey      hankey     nailcare      nailcare     hurtrealbad      hurtrealbad      poop      poop     boy      boy     rage1      rage1      shit      shit     girl      girl     rage2      rage2       1       1     woman      woman     rage3      rage3      thumbsup      thumbsup     man      man     rage4      rage4       1       1     baby      baby     suspect      suspect      thumbsdown      thumbsdown     olderwoman      olderwoman     trollface      trollface                                                       sunny      sunny     hatchingchick      hatchingchick     pawprints      pawprints      umbrella      umbrella     chicken      chicken     bouquet      bouquet      cloud      cloud     penguin      penguin     cherryblossom      cherryblossom      snowflake      snowflake     turtle      turtle     tulip      tulip      snowman      snowman     bug      bug     fourleafclover      fourleafclover      zap      zap     honeybee      honeybee     rose      rose      cyclone      cyclone     ant      ant     sunflower      sunflower      foggy      foggy     beetle      beetle     hibiscus      hibiscus      ocean      ocean     snail      snail     mapleleaf      mapleleaf      cat      cat     octopus      octopus     leaves      leaves      dog      dog     tropicalfish      tropicalfish     fallenleaf      fallenleaf      mouse      mouse     fish      fish     herb      herb      hamster      hamster     whale      whale     mushroom      mushroom      rabbit      rabbit     whale2      whale2     cac",
-        "objectID": "post/20181128-software-skills-markdown-github-emoji",
-        "title": "GFM 表情列表",
-        "date": "2018-11-28T00:00:00.000Z",
-        "Keywords": [
-            "GFM",
-            "markdown"
-        ],
-        "categories": [
-            "软件技巧"
-        ],
-        "tags": [
-            "辅助语言"
-        ],
-        "CopyrightStatement": "本文转载自 http://www.emoji-cheat-sheet.com"
-    },
-    {
-        "draft": false,
         "uri": "post/20181128-software-skills-piwigo-guild",
         "content": "Piwigo                                                                                           Piwigo    chevereto                     FTP                                                     LAMP        Piwigo                      VPS      CentOS 7       CentOS 7  LAMP              VPS       bandwagon   vultr                 LAMP             LAMP           Piwigo                LAMP      Linux Apache    MySQL  MariaDB   PHP  Perl Python        WEB         LAMP                            Piwigo                                     https   www bt cn bbs thread 19376 1 1 html       CentOS 7         yum install  y wget    wget  O install sh http   download bt cn install install_6 0 sh    bash install sh          http   VPS_IP 8888        LAMP     Piwigo         FPT    Piwigo           Piwigo wget http   piwigo org download dlcounter php code latest  O piwigo zip ls unzip piwigo zip   piwigo         www wwwroot              cp  rf piwigo  www wwwroot  chown  R 777  www wwwroot piwigo                 http   VPS_IP                                                          Piwigo       FTP           FTP        Piwigo galleries              a z A Z 0 9      _                                                                                 Piwigo            Bootstrap Default                 FTP                                  a z A Z 0 9      _                                              FTP                                 1 https   www howtoing com install piwigo photo gallery in centos        Version Action  Time                     1 0 init 2018 11 28",
         "objectID": "post/20181128-software-skills-piwigo-guild",
@@ -1164,11 +1126,92 @@
     },
     {
         "draft": false,
+        "uri": "post/20181221-windows-skill-how-to-close-dynamic-tile",
+        "content": "windows 10                                                                                                            Windows10                                   Win10                                           Win R   gpedit msc                                                                                          Win R   regedit                   HKEYCURRENTUSER SOFTWARE Policies Microsoft Windows CurrentVersion PushNotifications                PushNotifications          CurrentVersion           PushNotifications     PushNotifications            DWORD 32         NoTileApplicationNotification             1                                         Win10                               Version Action  Time                     1 0 init 2018 12 21",
+        "objectID": "post/20181221-windows-skill-how-to-close-dynamic-tile",
+        "title": "Windows 技巧5-保护隐私—关闭并清理 Windows 10 磁贴",
+        "date": "2018-12-21T12:05:36.000Z",
+        "type": "post",
+        "Keywords": [
+            "windows 教程",
+            "关闭磁贴"
+        ],
+        "categories": [
+            "windows 教程"
+        ],
+        "tags": [
+            "windows 教程"
+        ],
+        "CopyrightStatement": "本文内容大部分内容来自《Win10使用进阶：如何同时清除开始菜单全部动态磁贴消息？》 https://www.ithome.com/html/win10/222370.htm，本文仅作部分情况调整，如有侵权请联系本人处理"
+    },
+    {
+        "draft": false,
+        "uri": "post/20181221-windows-skill-how-to-close-windows-update",
+        "content": "Windows 7                                                                    joy_cat                           Windows 10                        Windows 10                   windows 10        Win R   services msc                windows update                            windows 10     Win R   gpedit msc                                        windows        windows                                       Version Action  Time                     1 0 init 2018 12 21",
+        "objectID": "post/20181221-windows-skill-how-to-close-windows-update",
+        "title": "Windows 技巧6-如何关闭 Windows 10 更新",
+        "date": "2018-12-21T13:05:36.000Z",
+        "type": "post",
+        "Keywords": [
+            "windows 教程",
+            "关闭更新",
+            "windows10"
+        ],
+        "categories": [
+            "windows 教程"
+        ],
+        "tags": [
+            "windows 教程"
+        ]
+    },
+    {
+        "draft": false,
+        "uri": "post/20181221-windows-skill-how-to-do-delete-6-files-and-onedrive",
+        "content": "Windows   3          windows 10                                                                                                                    Windows                                                            reg      Clear 6 File bat                          Win10         6                          Win10        6          Windows Registry Editor Version 5 00   HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer MyComputer NameSpace  f86fa3ab 70d2 4fc7 9c99 fcbf05467f3a     HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer MyComputer NameSpace  d3162b92 9365 467a 956b 92703aca08af     HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer MyComputer NameSpace  B4BFCC3A DB2C 424C B029 7FE99A87C641     HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer MyComputer NameSpace  3dfdf296 dbec 4fb4 81d1 6a3438bcf4de     HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer MyComputer NameSpace  088e3905 0323 4b02 9826 5d99428e115f     HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer MyComputer NameSpace  0DB7E03F FC29 4DC6 9020 FF41B59E513A     HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer MyComputer NameSpace  24ad3ad4 a569 4530 98e1 ab02f9417aa8        Windows Registry Editor Version 5 00  HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer MyComputer NameSpace  f86fa3ab 70d2 4fc7 9c99 fcbf05467f3a    HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer MyComputer NameSpace  d3162b92 9365 467a 956b 92703aca08af    HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer MyComputer NameSpace  B4BFCC3A DB2C 424C B029 7FE99A87C641    HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer MyComputer NameSpace  3dfdf296 dbec 4fb4 81d1 6a3438bcf4de    HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer MyComputer NameSpace  088e3905 0323 4b02 9826 5d99428e115f    HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer MyComputer NameSpace  24ad3ad4 a569 4530 98e1 ab02f9417aa8    HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer MyComputer NameSpace  0DB7E03F FC29 4DC6 9020 FF41B59E513A        Windows Registry Editor Version 5 00  HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer FolderDescriptions  0ddd015d b06c 45d5 8c4c f59713854639  PropertyBag   ThisPCPolicy   Hide   HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer FolderDescriptions  35286a68 3c57 41a1 bbb1 0eae73d76c95  PropertyBag   ThisPCPolicy   Hide   HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer FolderDescriptions  7d83ee9b 2244 4e70 b1f5 5393042af1e4  PropertyBag   ThisPCPolicy   Hide   HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer FolderDescriptions  a0c69a99 21c8 4671 8703 7934162fcf1d  PropertyBag   ThisPCPolicy   Hide   HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer FolderDescriptions  B4BFCC3A DB2C 424C B029 7FE99A87C641  PropertyBag   ThisPCPolicy   Hide   HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer FolderDescriptions  f42ee2d3 909f 4907 8871 4c22fc0bf756  PropertyBag   ThisPCPolicy   Hide       Windows Registry Editor Version 5 00  HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer FolderDescriptions  0ddd015d b06c 45d5 8c4c f59713854639  PropertyBag   ThisPCPolicy   Show   HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer FolderDescriptions  35286a68 3c57 41a1 bbb1 0eae73d76c95  PropertyBag   ThisPCPolicy   Show   HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer FolderDescriptions  7d83ee9b 2244 4e70 b1f5 5393042af1e4  PropertyBag   ThisPCPolicy   Show   HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer FolderDescriptions  a0c69a99 21c8 4671 8703 7934162fcf1d  PropertyBag   ThisPCPolicy   Show   HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer FolderDescriptions  B4BFCC3A DB2C 424C B029 7FE99A87C641  PropertyBag   ThisPCPolicy   Show   HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer FolderDescriptions  f42ee2d3 909f 4907 8871 4c22fc0bf756  PropertyBag   ThisPCPolicy   Show                                            B4BFCC3A DB2C 424C B029 7FE99A87C641            A8CDFF1C 4878 43be B5FD F8091C1C60D0            374DE290 123F 4565 9164 39C4925E467B            1CF1260C 4DD0 4ebb 811F 33C572699FDE            24ad3ad4 a569 4530 98e1 ab02f9417aa8            A0953C92 50DC 43bf BE83 3742FED03C9C            0DB7E03F FC29 4DC6 9020 FF41B59E513A   3D        oneDrive                       Windows 10  OneDrive                          OneDrive     taskkill  f  im OneDrive exe 32   Windows 10  x86              OneDrive      SystemRoot  System32 OneDriveSetup exe  uninstall 64   Windows 10  x64             OneDrive      SystemRoot  SysWOW64 OneDriveSetup exe  uninstall    OneDrive               OneDrive                                OneDrive                           rd   UserProfile  OneDrive   Q  S rd   LocalAppData  Microsoft",
+        "objectID": "post/20181221-windows-skill-how-to-do-delete-6-files-and-onedrive",
+        "title": "Windows 技巧4-清除 「windows 10」 图片等6个文件夹/oneDrive",
+        "date": "2018-12-21T11:05:36.000Z",
+        "type": "post",
+        "Keywords": [
+            "windows 教程",
+            "windows 10",
+            "图片文件夹",
+            "oneDrive快捷方式"
+        ],
+        "categories": [
+            "windows 教程"
+        ],
+        "tags": [
+            "windows 教程"
+        ]
+    },
+    {
+        "draft": false,
+        "uri": "post/20181221-windows-skill-how-to-remove-quick-access",
+        "content": "Windows 10                                                                                                                                         Windows10                                                                                                                      PS                                                                        Win R     regedit                                     HKEYCLASSESROOT CLSID  679f85cb 0220 4080 b29b 5540cc05aab6  ShellFolder        ShellFolder                                                                                                               Attributes                         Attributes        a0100000   a0600000                                                  windows                                                      windows 10                                                   Explorer EXE Windows                                         1 https   www windows10 pro remove the quick access   2 https   www windows10 pro get the regedit key full control permission   3 https   www cnblogs com xxoome p 6792599 html        Version Action  Time                     1 0 init 2018 12 21",
+        "objectID": "post/20181221-windows-skill-how-to-remove-quick-access",
+        "title": "Windows 技巧3-保护隐私—清除 「windows 10」 快速访问",
+        "date": "2018-12-20T12:05:36.000Z",
+        "type": "post",
+        "Keywords": [
+            "windows 教程",
+            "windows 10常用/最近项目"
+        ],
+        "categories": [
+            "windows 教程"
+        ],
+        "tags": [
+            "windows 教程",
+            "个人隐私"
+        ]
+    },
+    {
+        "draft": false,
         "uri": "post/20181221-windows-skill-how-to-remove-shortcut-arrow",
         "content": "Windows                                  PE   Windows     Windows                                                                                                                                           bat            Clear arrow bat                                                           reg add  HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer Shell Icons   v 29  d   systemroot  system32 imageres dll 197   t reg_sz  f taskkill  f  im explorer exe attrib  s  r  h   userprofile  AppData Local iconcache db  del   userprofile  AppData Local iconcache db   f  q start explorer pause      reg delete  HKEYLOCALMACHINE SOFTWARE Microsoft Windows CurrentVersion Explorer Shell Icons   v 29  f taskkill  f  im explorer exe attrib  s  r  h   userprofile  AppData Local iconcache db  del   userprofile  AppData Local iconcache db   f  q start explorer pause      1 https   www windows10 pro remove win10 arrow shortcut icon on the desktop         Version Action  Time                     1 0 init 2018 12 21",
         "objectID": "post/20181221-windows-skill-how-to-remove-shortcut-arrow",
         "title": "Windows 技巧2-如何去除快捷方式箭头",
-        "date": "2018-12-21T00:00:00.000Z",
+        "date": "2018-12-20T11:05:36.000Z",
         "type": "post",
         "Keywords": [
             "windows 教程",
@@ -1203,7 +1246,7 @@
             "read once"
         ],
         "categories": [
-            "Wiki"
+            "维基"
         ],
         "tags": [
             "readlater"
@@ -1213,6 +1256,25 @@
             "中文排版指南"
         ],
         "comment": false
+    },
+    {
+        "draft": false,
+        "uri": "wiki/20181128-wiki-markdown-github-emoji",
+        "content": "GFM GitHub Flavored Markdown                   http   www emoji cheat sheet com                                                                         sleepy      sleepy     okhand      okhand     personwithblondhair      personwithblondhair      yum      yum     punch      punch     manwithguapimao      manwithguapimao      mask      mask     facepunch      facepunch     manwithturban      manwithturban      sunglasses      sunglasses     fist      fist     constructionworker      constructionworker      dizzyface      dizzyface     v      v     cop      cop      imp      imp     wave      wave     angel      angel      smilingimp      smilingimp     hand      hand     princess      princess      neutralface      neutralface     raisedhand      raisedhand     smileycat      smileycat      nomouth      nomouth     openhands      openhands     smilecat      smilecat      innocent      innocent     pointup      pointup     hearteyescat      hearteyescat      alien      alien     pointdown      pointdown     kissingcat      kissingcat      yellowheart      yellowheart     pointleft      pointleft     smirkcat      smirkcat      blueheart      blueheart     pointright      pointright     screamcat      screamcat      purpleheart      purpleheart     raisedhands      raisedhands     cryingcatface      cryingcatface      heart      heart     pray      pray     joycat      joycat      greenheart      greenheart     pointup2      pointup2     poutingcat      poutingcat      brokenheart      brokenheart     clap      clap     japaneseogre      japaneseogre      heartbeat      heartbeat     muscle      muscle     japanesegoblin      japanesegoblin      heartpulse      heartpulse     metal      metal     seenoevil      seenoevil      twohearts      twohearts     fu      fu     hearnoevil      hearnoevil      revolvinghearts      revolvinghearts     runner      runner     speaknoevil      speaknoevil      cupid      cupid     running      running     guardsman      guardsman      sparklingheart      sparklingheart     couple      couple     skull      skull      sparkles      sparkles     family      family     feet      feet      star      star     twomenholdinghands      twomenholdinghands     lips      lips      star2      star2     twowomenholdinghands      twowomenholdinghands     kiss      kiss      dizzy      dizzy     dancer      dancer     droplet      droplet      boom      boom     dancers      dancers     ear      ear      collision      collision     okwoman      okwoman     eyes      eyes      anger      anger     nogood      nogood     nose      nose      exclamation      exclamation     informationdeskperson      informationdeskperson     tongue      tongue      question      question     raisinghand      raisinghand     loveletter      loveletter      greyexclamation      greyexclamation     bridewithveil      bridewithveil     bustinsilhouette      bustinsilhouette      greyquestion      greyquestion     personwithpoutingface      personwithpoutingface     bustsinsilhouette      bustsinsilhouette      zzz      zzz     personfrowning      personfrowning     speechballoon      speechballoon      dash      dash     bow      bow     thoughtballoon      thoughtballoon      sweatdrops      sweatdrops     couplekiss      couplekiss     feelsgood      feelsgood      notes      notes     couplewithheart      couplewithheart     finnadie      finnadie      musicalnote      musicalnote     massage      massage     goberserk      goberserk      fire      fire     haircut      haircut     godmode      godmode      hankey      hankey     nailcare      nailcare     hurtrealbad      hurtrealbad      poop      poop     boy      boy     rage1      rage1      shit      shit     girl      girl     rage2      rage2       1       1     woman      woman     rage3      rage3      thumbsup      thumbsup     man      man     rage4      rage4       1       1     baby      baby     suspect      suspect      thumbsdown      thumbsdown     olderwoman      olderwoman     trollface      trollface                                                       sunny      sunny     hatchingchick      hatchingchick     pawprints      pawprints      umbrella      umbrella     chicken      chicken     bouquet      bouquet      cloud      cloud     penguin      penguin     cherryblossom      cherryblossom      snowflake      snowflake     turtle      turtle     tulip      tulip      snowman      snowman     bug      bug     fourleafclover      fourleafclover      zap      zap     honeybee      honeybee     rose      rose      cyclone      cyclone     ant      ant     sunflower      sunflower      foggy      foggy     beetle      beetle     hibiscus      hibiscus      ocean      ocean     snail      snail     mapleleaf      mapleleaf      cat      cat     octopus      octopus     leaves      leaves      dog      dog     tropicalfish      tropicalfish     fallenleaf      fallenleaf      mouse      mouse     fish      fish     herb      herb      hamster      hamster     whale      whale     mushroom      mushroom      rabbit      rabbit     whale2      whale2     cac",
+        "objectID": "wiki/20181128-wiki-markdown-github-emoji",
+        "title": "GFM 表情列表",
+        "date": "2018-11-28T00:00:00.000Z",
+        "Keywords": [
+            "GFM",
+            "markdown"
+        ],
+        "categories": [
+            "维基"
+        ],
+        "tags": [
+            "辅助语言"
+        ],
+        "CopyrightStatement": "本文转载自 http://www.emoji-cheat-sheet.com"
     },
     {
         "draft": false,
@@ -1230,7 +1292,7 @@
             "工具"
         ],
         "categories": [
-            "wiki"
+            "维基"
         ]
     },
     {
@@ -1249,7 +1311,7 @@
             "工具"
         ],
         "categories": [
-            "wiki"
+            "维基"
         ]
     }
 ]
