@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Wiki on  易道非 Blog</title>
-    <link>https://yidaofei.com/wiki/</link>
-    <description>Recent content in Wiki on  易道非 Blog</description>
+    <title>维基 on  易道非 Blog</title>
+    <link>https://yidaofei.com/categories/%E7%BB%B4%E5%9F%BA/</link>
+    <description>Recent content in 维基 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Wed, 28 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://yidaofei.com/wiki/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yidaofei.com/categories/%E7%BB%B4%E5%9F%BA/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

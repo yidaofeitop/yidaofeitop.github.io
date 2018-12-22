@@ -8,7 +8,7 @@
   
   <url>
     <loc>https://yidaofei.com/wiki/</loc>
-    <lastmod>2018-11-06T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -107,7 +107,7 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/post/20181128-software-skills-markdown-github-emoji/</loc>
+    <loc>https://yidaofei.com/wiki/20181128-wiki-github-emoji/</loc>
     <lastmod>2018-11-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -355,13 +355,13 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/tags/javascript/</loc>
+    <loc>https://yidaofei.com/categories/javascript/</loc>
     <lastmod>2018-11-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yidaofei.com/categories/javascript/</loc>
+    <loc>https://yidaofei.com/tags/javascript/</loc>
     <lastmod>2018-11-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -415,13 +415,13 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/tags/windows-%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://yidaofei.com/categories/windows-%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2018-12-21T21:05:36+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yidaofei.com/categories/windows-%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://yidaofei.com/tags/windows-%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2018-12-21T21:05:36+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -433,13 +433,13 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/tags/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99/</loc>
+    <loc>https://yidaofei.com/categories/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2018-11-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yidaofei.com/categories/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99/</loc>
+    <loc>https://yidaofei.com/tags/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2018-11-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -505,13 +505,13 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/tags/%E6%8C%87%E7%BA%B9%E9%94%81/</loc>
+    <loc>https://yidaofei.com/categories/%E6%8C%87%E7%BA%B9%E9%94%81/</loc>
     <lastmod>2018-11-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yidaofei.com/categories/%E6%8C%87%E7%BA%B9%E9%94%81/</loc>
+    <loc>https://yidaofei.com/tags/%E6%8C%87%E7%BA%B9%E9%94%81/</loc>
     <lastmod>2018-11-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -571,6 +571,12 @@
   </url>
   
   <url>
+    <loc>https://yidaofei.com/categories/%E7%BB%B4%E5%9F%BA/</loc>
+    <lastmod>2018-11-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yidaofei.com/tags/%E7%BC%96%E8%BE%91%E5%99%A8/</loc>
     <lastmod>2018-09-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -601,13 +607,13 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/tags/%E8%AF%97%E6%AD%8C/</loc>
+    <loc>https://yidaofei.com/categories/%E8%AF%97%E6%AD%8C/</loc>
     <lastmod>2018-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yidaofei.com/categories/%E8%AF%97%E6%AD%8C/</loc>
+    <loc>https://yidaofei.com/tags/%E8%AF%97%E6%AD%8C/</loc>
     <lastmod>2018-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -626,7 +632,7 @@
   
   <url>
     <loc>https://yidaofei.com/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2018-11-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

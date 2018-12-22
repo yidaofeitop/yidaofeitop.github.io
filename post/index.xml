@@ -376,21 +376,6 @@
     </item>
     
     <item>
-      <title>GFM 表情列表</title>
-      <link>https://yidaofei.com/post/20181128-software-skills-markdown-github-emoji/</link>
-      <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://yidaofei.com/post/20181128-software-skills-markdown-github-emoji/</guid>
-      <description>&lt;p&gt;GFM(GitHub Flavored Markdown) 表情包，以便随时使用！&lt;/p&gt;
-
-&lt;p&gt;官方网页 &lt;a href=&#34;http://www.emoji-cheat-sheet.com&#34;&gt;http://www.emoji-cheat-sheet.com&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;以下代码中的请 &lt;strong&gt;删除:与字母之间的空格&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Hugo 主题 flybird 预览 </title>
       <link>https://yidaofei.com/post/20181129-hugo-flybird-preview/</link>
       <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
@@ -403,7 +388,7 @@
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181106-chinese-copywriting-guidelines/&#34;&gt;中文排版指南&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181110-software-skills-markdown-github-flavored-markdown/&#34;&gt;Markdown 语言教程——GFM&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181128-software-skills-markdown-github-emoji/&#34;&gt;GFM 表情列表&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181128-wiki-markdown-github-emoji/&#34;&gt;GFM 表情列表&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181108-hugo-quick-start/&#34;&gt;个人建站 - Hugo - 快速开始&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
