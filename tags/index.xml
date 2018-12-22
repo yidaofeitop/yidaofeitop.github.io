@@ -6,7 +6,7 @@
     <description>Recent content in Tags on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 13 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Aug 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://yidaofei.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title></title>
       <link>https://yidaofei.com/tags/</link>
-      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 04 Aug 2017 00:00:00 +0000</pubDate>
       
       <guid>https://yidaofei.com/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Andriod</title>
+      <link>https://yidaofei.com/tags/andriod/</link>
+      <pubDate>Tue, 06 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/tags/andriod/</guid>
       <description></description>
     </item>
     

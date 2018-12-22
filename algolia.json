@@ -307,9 +307,9 @@
     },
     {
         "draft": false,
-        "uri": "post/20181013-software-skills-mi5s-twrp-brush",
+        "uri": "post/20181013-mobile-skills-mi5s-twrp-brush",
         "content": "Mi5S           MIUI            ROM      Mi5S      Bootloader                           Fastboot       Recovery           http   www miui com unlock  TWRP       ROM            Step 1            ADB https   dl google com android repository platform tools latest windows zip TWRP https   twrp me xiaomi xiaomimi5s html                             Step 2      USB                          Fastboot            Android      Step 3    platform tools                     Step 4         fastboot devices      xxxxxxxx fastboot fastboot flash recovery          fastboot flash recovery C  twrp 3 0 2 0 aries img     Finished total time         fastboot reboot Step 5                       TWRP                     fastboot boot                    Note devices will replace custom recovery automatically during first boot  prevent this  use Google find proper key combo enter recovery  typing fastboot reboot  hold key combo boot TWRP  Once TWRP booted  TWRP will patch stock ROM prevent stock ROM replacing TWRP  don t follow step  will repeat install  Step 6              COPY                            5splus  TWRP recovery  MIUI    TWRP Xiaomi Mi 5s MIUI                                                  Google    Google Play        https   miui su      https   pan baidu com s 1Ir8rjUWIaCC1hQ1lefrFQw                                    Mi5S                        Google            http   en miui com                    https   miuipolska pl                           2018 10 13",
-        "objectID": "post/20181013-software-skills-mi5s-twrp-brush",
+        "objectID": "post/20181013-mobile-skills-mi5s-twrp-brush",
         "title": "小米5S TWRP 刷机教程",
         "date": "2018-10-13T00:00:00.000Z",
         "Keywords": [
@@ -317,13 +317,11 @@
             "twrp 刷机"
         ],
         "tags": [
-            ""
+            "Andriod"
         ],
-        "description": [],
         "categories": [
-            "软件技巧"
-        ],
-        "toc": true
+            "智能手机教程"
+        ]
     },
     {
         "draft": false,
@@ -825,6 +823,24 @@
     },
     {
         "draft": false,
+        "uri": "post/20181129-mobile-skills-own-app-list",
+        "content": "Andriod                   APP                                           APKure google                                                         todo            uBhind                                              ticktick                           Nice  smile                               ifttt                 AdGuard         Very Good   smile                                juiceSSH SSH          EDS Lite TrueCrypt             Photo Grid             AR                                       voicetube     APP         castbox                          FM                             APP          inoreader rss             Quora                 youtube Google                                      google Keep Google          Inbox    idea         wiz         APP         pocket      20181220       google Keep         Version Action  Time                     1 0 init 2018 11 29   2 0    Windows        Andriod APP   2018 12 22",
+        "objectID": "post/20181129-mobile-skills-own-app-list",
+        "type": "post",
+        "title": "Andriod-自用优秀 APP 清单",
+        "date": "2018-11-06T00:00:00.000Z",
+        "Keywords": [
+            "效率软件"
+        ],
+        "tags": [
+            "Andriod"
+        ],
+        "categories": [
+            "智能手机教程"
+        ]
+    },
+    {
+        "draft": false,
         "uri": "post/20181129-oppose-to-amend-rule4-of-usa",
         "content": "41                                  41                                                                                                                               41     Ariel Hochstadt                                           41                              41                                                                             Tor  VPN                  12 1                                                41             41                        41                                                                         41                                                                                                                5          50                                               41    vpnMentor noglobalwarrants org                41              noglobalwarrants org                                                       VPN   Tor                         26                         41                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     2016 12 1                                                         Version Action  Time                     1 0 init 2018 11 29",
         "objectID": "post/20181129-oppose-to-amend-rule4-of-usa",
@@ -1219,7 +1235,7 @@
     {
         "draft": false,
         "uri": "post/20181222-windows-guild-software-list",
-        "content": "2017                             Why                                      Windows           windows                                                                    PS                               Markdown                                                                                   Eclipse                                                               PDF      Word Excel                                                            Me                 Windows                           Me                             Me      360            Me                         Me       f lux                Me           win10           Me       google        Me                   google                 Me       bing                 Me      chrome Google                   Me      firefox Google           Chrome        Me      TIM      QQ              Me                    Me      foxmail               Me      Thunderbird   Firefox        Linux       Me      foobar 2000                                 Me                  Me      potplayer                               IrfanView         irfanview      Me      WPS                         office    Kukmoon        gaaiho pdf reader                                       StoryView                 Me      wiz           HMTL              60      Me      7 zip                   Me      pickpick                  Me      pcloud                       Me                            1G                       GoldenDict                     Me                       Me      Total Uninstall            Me      TrackOFF                                                                  Me      Sublime text2    windows            Me        Xmind               Me        workflowy                                  Me               workflowy              Moo do Dynalist   Me      Listary          Listary      Me      feeddemon windows    RSS        Me      Shadowsocks ss         Google                    captura                  Me      TeamViewer                      Me      VeraCrypt                                Me      Filezilla  FTP             Me      Xshell         SSH              Me      Cold Turkey Blocker                      Me      Sandboxie             windows 10                                                                     HiDPI                                                                                                                                                                              HiDPI             5 0                                             ESET                                                                                                                                                               avast     eset                                 ADSafe                    MSE     avast                  ADSafe                 Windows                                                             Microsoft Office   WPS Office        WPS                                    Wiz                           2018                                           wiz                 wiz            HTML                                 workflowy VS     Dynalist Moo do  Dynalist   WorkFlowy                   Moo do            Workflowy                               workflowy                                                                                     workflowy                                           TeamViewer VS     teamviewer               Teamviewer                                                                                                7zip VS WinRAR WinRAR vs 7zip           WinRAR 7zip                              Bandizip                                       RAR5        LZMA2                      1 https   love appinn com   2 https   www iplaysoft com   3 http   xbeta info   4 https   sspai com         Version Action  Time                     1 0            2018 12 22",
+        "content": "2017                               Why                                      Windows           windows                                                                    PS                               Markdown                                                                                   Eclipse                                                               PDF      Word Excel                                                            Me                 Windows                            Me                             Me      360                  Me                         Me       f lux                Me           win10           Me       google        Me                   google                 Me       bing                 Me      chrome Google                   Me      firefox Google           Chrome        Me      TIM      QQ              Me                        Me      foxmail               Me      Thunderbird   Firefox        Linux       Me      foobar 2000                                 Me                  Me      potplayer                              IrfanView         irfanview      Me      WPS                         office    Kukmoon        gaaiho pdf reader                                       StoryView                 Me      wiz           HMTL              60      Me      7 zip                   Me      pickpick                  Me      snipaste                    Me      pcloud        dropbox                   Me                            1G                       GoldenDict                     Me                                                                            Me      Sublime text2    windows            Me        Xmind               Me        workflowy                            Me               workflowy              Moo do Dynalist   Me      Listary          Listary      Me      feeddemon windows    RSS        Me      Shadowsocks ss         Google                    captura                  Me      TeamViewer                      Me      VeraCrypt                             Me      Filezilla  FTP             Me      Xshell         SSH              Me      Cold Turkey Blocker                      Me      Sandboxie             windows 10        Me      Total Uninstall            Me      TrackOFF                                                                          HiDPI                                                                                                                                                                              HiDPI             5 0                                             ESET                                                                                                                                                               avast     eset                                 ADSafe                    MSE     avast                  ADSafe                 Windows                                                             Microsoft Office   WPS Office        WPS                                    Wiz                           2018                                           wiz                 wiz            HTML                                 workflowy VS     Dynalist Moo do  Dynalist   WorkFlowy                   Moo do            Workflowy                               workflowy                                                                                     workflowy                                           TeamViewer VS     teamviewer               Teamviewer                                                                                                7zip VS WinRAR WinRAR vs 7zip           WinRAR 7zip                              Bandizip                                       RAR5        LZMA2                      1 https   love appinn com   2 https   www iplaysoft com   3 http   xbeta info   4 https   sspai com         Version Action  Time                     1 0            2018 12 22",
         "objectID": "post/20181222-windows-guild-software-list",
         "title": "Windows 教程3-好的软件改变你的生活",
         "date": "2018-12-22T04:12:35.000Z",
@@ -1289,29 +1305,9 @@
     },
     {
         "draft": false,
-        "uri": "wiki/20181129-wiki-software",
-        "content": "Andirod                                            APKure google                                                         todo            uBhind                                              ticktick                              ifttt                                      juiceSSH SSH          EDS Lite TrueCrypt             Photo Grid             AR              castbox FM               FM                             APP          voicetube     APP         inoreader rss             pocket                                                           Windows      Windows          Windows   3                   Version Action  Time                     1 0 init 2018 11 29",
-        "objectID": "wiki/20181129-wiki-software",
-        "type": "post",
-        "title": "自用软件记录",
-        "date": "2018-11-06T00:00:00.000Z",
-        "Keywords": [
-            "软件",
-            "windows"
-        ],
-        "tags": [
-            "工具"
-        ],
-        "categories": [
-            "维基"
-        ]
-    },
-    {
-        "draft": false,
         "uri": "wiki/20181130-wiki-website-tools",
-        "content": "PPT                           HippTer    OfficePlus   office  PPT                 unsplash          trianglify                                              W3Cfuns                             OurCoders            Java                         DataCastle                                      GitBook                                               PRM                         PDF      Processon on           showmore                         smallpdf PDF                                                                                                          _                      xxx 199IT                                                         A                        Version Action  Time                     1 0 init 2018 11 30",
+        "content": "PPT                           HippTer    OfficePlus   office  PPT                 unsplash          trianglify                                              W3Cfuns                             OurCoders            Java                         DataCastle                                      GitBook                                               PRM                         PDF      Processon on           showmore                         smallpdf PDF                                                                                                                        _                      xxx 199IT                                                         A                        Version Action  Time                     1 0 init 2018 11 30",
         "objectID": "wiki/20181130-wiki-website-tools",
-        "type": "post",
         "title": "网站&网站工具",
         "date": "2018-11-06T00:00:00.000Z",
         "Keywords": [

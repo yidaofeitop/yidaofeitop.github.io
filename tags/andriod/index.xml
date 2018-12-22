@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Andriod on  易道非 Blog</title>
+    <link>https://yidaofei.com/tags/andriod/</link>
+    <description>Recent content in Andriod on  易道非 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 06 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://yidaofei.com/tags/andriod/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Andriod-自用优秀 APP 清单</title>
+      <link>https://yidaofei.com/post/20181129-mobile-skills-own-app-list/</link>
+      <pubDate>Tue, 06 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181129-mobile-skills-own-app-list/</guid>
+      <description>&lt;p&gt;本文主要是记录 Andriod 系统 非高频率使用但是又非常有用的 APP!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>小米5S TWRP 刷机教程</title>
+      <link>https://yidaofei.com/post/20181013-mobile-skills-mi5s-twrp-brush/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181013-mobile-skills-mi5s-twrp-brush/</guid>
+      <description>&lt;p&gt;以下所有的操作全部是基于 Mi5S,此方法主要是用于如 MIUI 俄罗斯、魔趣等第三方 ROM&lt;/p&gt;
+
+&lt;p&gt;【注意】：Mi5S 等官方有 Bootloader 锁的机型请先向官方申请解锁，未解锁的手机是无法透过 Fastboot 对手机刷入 Recovery 的&lt;br /&gt;
+解锁请参考文章：&lt;a href=&#34;http://www.miui.com/unlock/&#34;&gt;http://www.miui.com/unlock/&lt;/a&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

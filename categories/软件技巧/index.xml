@@ -60,19 +60,6 @@ HTML区段标签和区块标签不同，在区段标签的范围內，Markdown�
     </item>
     
     <item>
-      <title>小米5S TWRP 刷机教程</title>
-      <link>https://yidaofei.com/post/20181013-software-skills-mi5s-twrp-brush/</link>
-      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://yidaofei.com/post/20181013-software-skills-mi5s-twrp-brush/</guid>
-      <description>&lt;p&gt;以下所有的操作全部是基于 Mi5S,此方法主要是用于如 MIUI 俄罗斯、魔趣等第三方 ROM&lt;/p&gt;
-
-&lt;p&gt;【注意】：Mi5S 等官方有 Bootloader 锁的机型请先向官方申请解锁，未解锁的手机是无法透过 Fastboot 对手机刷入 Recovery 的&lt;br /&gt;
-解锁请参考文章：&lt;a href=&#34;http://www.miui.com/unlock/&#34;&gt;http://www.miui.com/unlock/&lt;/a&gt;
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>搭建 shadowsocks 翻墙教程</title>
       <link>https://yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/</link>
       <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>

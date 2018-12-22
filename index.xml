@@ -26,7 +26,7 @@
       <pubDate>Sat, 22 Dec 2018 12:12:35 +0800</pubDate>
       
       <guid>https://yidaofei.com/post/20181222-windows-guild-software-list/</guid>
-      <description>&lt;p&gt;由于计算机专业出身，很多的时候我会下意识的去寻找更好的软件，尤其是在2017年接触到[小众软件][appinn.com]等后更是将自己的软件列表完全更新了一遍！&lt;/p&gt;
+      <description>&lt;p&gt;由于计算机专业出身，很多的时候我会下意识的去寻找更好的软件，尤其是在2017年接触到「小众软件」等后更是将自己的软件列表完全更新了一遍！&lt;/p&gt;
 
 &lt;p&gt;Why？因为我坚信 &lt;strong&gt;「一个好的软件能够改变你的习惯、思维、生活」&lt;/strong&gt;！&lt;/p&gt;
 
@@ -840,6 +840,17 @@ HTML区段标签和区块标签不同，在区段标签的范围內，Markdown�
     </item>
     
     <item>
+      <title>Andriod-自用优秀 APP 清单</title>
+      <link>https://yidaofei.com/post/20181129-mobile-skills-own-app-list/</link>
+      <pubDate>Tue, 06 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181129-mobile-skills-own-app-list/</guid>
+      <description>&lt;p&gt;本文主要是记录 Andriod 系统 非高频率使用但是又非常有用的 APP!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Maybe read once</title>
       <link>https://yidaofei.com/wiki/2018-wiki-maybe-read-once/</link>
       <pubDate>Tue, 06 Nov 2018 00:00:00 +0000</pubDate>
@@ -890,15 +901,6 @@ HTML区段标签和区块标签不同，在区段标签的范围內，Markdown�
       <description>&lt;p&gt;本文主要是记录一些比较有意思的网站或者是一些可能用到的网站工具&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>自用软件记录</title>
-      <link>https://yidaofei.com/wiki/20181129-wiki-software/</link>
-      <pubDate>Tue, 06 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://yidaofei.com/wiki/20181129-wiki-software/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1087,10 +1089,10 @@ H（车库距控制线）：车身长的1.5倍&lt;/p&gt;
     
     <item>
       <title>小米5S TWRP 刷机教程</title>
-      <link>https://yidaofei.com/post/20181013-software-skills-mi5s-twrp-brush/</link>
+      <link>https://yidaofei.com/post/20181013-mobile-skills-mi5s-twrp-brush/</link>
       <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181013-software-skills-mi5s-twrp-brush/</guid>
+      <guid>https://yidaofei.com/post/20181013-mobile-skills-mi5s-twrp-brush/</guid>
       <description>&lt;p&gt;以下所有的操作全部是基于 Mi5S,此方法主要是用于如 MIUI 俄罗斯、魔趣等第三方 ROM&lt;/p&gt;
 
 &lt;p&gt;【注意】：Mi5S 等官方有 Bootloader 锁的机型请先向官方申请解锁，未解锁的手机是无法透过 Fastboot 对手机刷入 Recovery 的&lt;br /&gt;
