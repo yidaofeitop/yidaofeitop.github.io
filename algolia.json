@@ -1227,6 +1227,26 @@
         ]
     },
     {
+        "draft": false,
+        "uri": "post/20181223-what-are-you-doing",
+        "content": "Topbook                         5                                                                                                                                                                                                             1  http   topbook cc archives 4086      2  http   topbook cc archives 4139 http   topbook cc archives 3806                                                                                                    EG                                                                                                            http   topbook cc catalog    2 3                                                                                                                                                    1                                                                                                                                                                                  https   zhuanlan zhihu com p 40563559                         https   www azimiao com 2971 html                                                                          Topbook                                                                                         Topbook                                                                   Topbook                                                                                                                                                                                                                                                                                                                                        Windows                                                                                                                                                          Lachel                                         Google                                            Topbook                                                                        EG         Golang HTML             Google                                                                                                                                                                                                                                                                              cryingcatface                    Windows    3                                                           Version Action  Time                     1 0 init 2018 12 23",
+        "objectID": "post/20181223-what-are-you-doing",
+        "title": "「Topbook」，你究竟在干嘛？",
+        "date": "2018-12-23T10:58:13.000Z",
+        "type": "post",
+        "Keywords": [
+            "Topbook",
+            "道/术"
+        ],
+        "tags": [
+            "道/术"
+        ],
+        "categories": [
+            "思考集"
+        ],
+        "toc": false
+    },
+    {
         "title": "Wiki",
         "uri": "wiki",
         "content": "GFM                             xianmin Git                           SASS",
