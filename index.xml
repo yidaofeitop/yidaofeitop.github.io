@@ -132,6 +132,29 @@
     </item>
     
     <item>
+      <title>知识管理系统——知识存储及发布端 V1.0版</title>
+      <link>https://yidaofei.com/drafts/publishedlater/20181219-knowledge-management-system-storage-and-publish-v1/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/drafts/publishedlater/20181219-knowledge-management-system-storage-and-publish-v1/</guid>
+      <description>&lt;p&gt;前文&lt;a href=&#34;https://yidaofei.com/post/20181218-knowledge-management-system-input-v1/&#34;&gt;《知识管理系统——高质量知识输入端 V1.0版》&lt;/a&gt;已初步的梳理清楚
+「知识输入端」。&lt;/p&gt;
+
+&lt;p&gt;按照「知识金字塔模型」后续的过程就是「知识内化」，关于「如何将知识内化」由于各个知识点之间的不同以及个人局限不详细展开说明，本文
+主要将本人知识存储及发布端的梳理清楚，内容分为以下部分：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;文件写作规范&lt;/li&gt;
+&lt;li&gt;资料存储规范&lt;/li&gt;
+&lt;li&gt;主题输出平台&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://piwigo.yidaofei.com/galleries/201812/knowledge-storage-and-publishing-mind.png&#34; alt=&#34;知识输入端架构&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Windows 教程2-如何安装 Windows 系统</title>
       <link>https://yidaofei.com/post/20181217-how-to-install-windows-iso/</link>
       <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
@@ -384,10 +407,10 @@
     
     <item>
       <title>个人建站-自建图床 Piwigo </title>
-      <link>https://yidaofei.com/post/20181128-software-skills-piwigo-guild/</link>
+      <link>https://yidaofei.com/post/20181128-build-website-piwigo-guild/</link>
       <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181128-software-skills-piwigo-guild/</guid>
+      <guid>https://yidaofei.com/post/20181128-build-website-piwigo-guild/</guid>
       <description>&lt;p&gt;Piwigo是一个开源项目，允许您在网络上创建自己的照片库并上传照片并创建新相册。 该平台包含一些内置的强大功能，如相册，
 标签，水印，地理位置，日历，系统通知，访问控制级别，主题和统计信息。&lt;/p&gt;
 
@@ -1069,10 +1092,10 @@ H（车库距控制线）：车身长的1.5倍&lt;/p&gt;
     
     <item>
       <title>Gitbook 教程</title>
-      <link>https://yidaofei.com/post/20180920-software-skills-gitbook-guide/</link>
+      <link>https://yidaofei.com/post/20180920-build-website-gitbook-guide/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20180920-software-skills-gitbook-guide/</guid>
+      <guid>https://yidaofei.com/post/20180920-build-website-gitbook-guide/</guid>
       <description>&lt;p&gt;GitBook 是一个提供 Markdown 书籍托管的网络平台， 支持通过 git 以及 GitHub 进行文档管理，使用它可以很简单地生
 成、发布电子图书。 同时，GitBook 也是一个 Node.js 命令行工具，可以使用它搭建自己的 GitBook 站点。&lt;/p&gt;
 

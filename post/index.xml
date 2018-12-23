@@ -360,10 +360,10 @@
     
     <item>
       <title>个人建站-自建图床 Piwigo </title>
-      <link>https://yidaofei.com/post/20181128-software-skills-piwigo-guild/</link>
+      <link>https://yidaofei.com/post/20181128-build-website-piwigo-guild/</link>
       <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181128-software-skills-piwigo-guild/</guid>
+      <guid>https://yidaofei.com/post/20181128-build-website-piwigo-guild/</guid>
       <description>&lt;p&gt;Piwigo是一个开源项目，允许您在网络上创建自己的照片库并上传照片并创建新相册。 该平台包含一些内置的强大功能，如相册，
 标签，水印，地理位置，日历，系统通知，访问控制级别，主题和统计信息。&lt;/p&gt;
 
@@ -1015,10 +1015,10 @@ H（车库距控制线）：车身长的1.5倍&lt;/p&gt;
     
     <item>
       <title>Gitbook 教程</title>
-      <link>https://yidaofei.com/post/20180920-software-skills-gitbook-guide/</link>
+      <link>https://yidaofei.com/post/20180920-build-website-gitbook-guide/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20180920-software-skills-gitbook-guide/</guid>
+      <guid>https://yidaofei.com/post/20180920-build-website-gitbook-guide/</guid>
       <description>&lt;p&gt;GitBook 是一个提供 Markdown 书籍托管的网络平台， 支持通过 git 以及 GitHub 进行文档管理，使用它可以很简单地生
 成、发布电子图书。 同时，GitBook 也是一个 Node.js 命令行工具，可以使用它搭建自己的 GitBook 站点。&lt;/p&gt;
 

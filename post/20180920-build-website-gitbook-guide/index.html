@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <meta charset="UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" >
+
+  
+  
+    
+    <meta charset="utf-8" name="keywords" content="gitbook,个人博客建站," > 
+  
+   
+  <meta charset="utf-8" name="description" content="GitBook 是一个提供 Markdown 书籍托管的网络平台， 支持通过 git 以及 GitHub 进行文档管理，使用它可以很简单地生
+成、发布电子图书。 同时，GitBook 也是一个 Node.js 命令行工具，可以使用它搭建自己的 GitBook 站点。
+
+除了命令行程序和 web 服务外，GitBook 官方还提供了 跨平台的编辑器，提供直接编辑、发布电子书的功能， 不过实际上
+仅相当于自启动的 GitBook 控制台程序，并不推荐安装，尤其对于 *nix 系统而言。
+
+GitBook 网站使用简单，这里就不再赘述了，GitBook 控制台提供强大的本地服务， 自启动的站点能够提供和网站完全一样
+的编辑服务， 对于不方便登录其网站的用户来说非常方便。 GitBook 甚至提供 GitHub hook，在每一次 push 时自动更新
+书籍内容。
+
+本文章内容为 Gitbook教程 简单版，如需要查看更多细节的请访问以上链接。
+
+" >
+  
+  
+  
+    
+        <link rel="icon" type="image/png" href="https://yidaofei.com//image/favicon-32x32.png" > 
+    
+  
+  
+  
+  
+  <title>Gitbook 教程- 易道非 Blog</title>  
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-126184892-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+
+  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css">
+
+<body> 
+ 
+
+ 
+<div id="top-element" data-title="到达顶点"></div>
+  
+<header class="site-header fixed-top">
+  <div class="container">
+    <nav id="navigation">  
+      <a href="https://yidaofei.com/" class="site-title">
+        
+        <img title="site-logo" class="site-logo" src="https://yidaofei.com//image/logo.png" >
+           
+         易道非 Blog 
+      </a> 
+      <a aria-label="mobile menu" class="nav-toggle" id="site-nav-toggle"> 
+        <span></span> <span></span> <span></span> 
+      </a>
+      <ul class="menu-left">
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/categories/">Categories</a></li>
+        
+          <li><a href="/tags">Tags</a></li>
+        
+          <li><a href="/wiki">Wiki</a></li>
+        
+          <li><a href="/about">About</a></li>
+        
+
+        
+          <li><a data-remodal-target="searchinput">search</a></li>
+           
+      </ul>
+    </nav>
+  </div>
+</header> 
+
+
+
+<div class="remodal" data-remodal-id="searchinput" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> 
+  <span id="algoliaData" style="display:none;" data-appid="NYC6MHRISW" 
+		data-searchkey="7f131a263a8820645ee9fc65ed97b22f" 
+		data-initindex="github-yidaofeicnBlog"></span>
+
+<div class="search-input-card" >
+    <input type="search" id="search-input" class="search-input" placeholder="Search for titles or URIs..." name="search" autocomplete="off" />
+     <span class="input-search-icon"><i class="fa fa-search"></i></span> 
+</div>
+
+ 
+
+  
+</div>
+
+  
+
+
+
+<section class="main-content-container">
+<article class="article-card">
+	<header class="article-header"> 
+	   <p class="article-title">Gitbook 教程</p>
+   		<div class="article-meta">
+			
+			<div><i class="fa fa-calendar" >2018年09月20日</i> </div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://yidaofei.com/categories/%e4%b8%aa%e4%ba%ba%e5%bb%ba%e7%ab%99">个人建站</a> 
+				   
+				</i>  
+			</div> 
+		</div>  
+	</header>  
+	<content class="markdown">
+		<p>GitBook 是一个提供 Markdown 书籍托管的网络平台， 支持通过 git 以及 GitHub 进行文档管理，使用它可以很简单地生
+成、发布电子图书。 同时，GitBook 也是一个 Node.js 命令行工具，可以使用它搭建自己的 GitBook 站点。</p>
+
+<p>除了命令行程序和 web 服务外，GitBook 官方还提供了 跨平台的编辑器，提供直接编辑、发布电子书的功能， 不过实际上
+仅相当于自启动的 GitBook 控制台程序，并不推荐安装，尤其对于 *nix 系统而言。</p>
+
+<p>GitBook 网站使用简单，这里就不再赘述了，GitBook 控制台提供强大的本地服务， 自启动的站点能够提供和网站完全一样
+的编辑服务， 对于不方便登录其网站的用户来说非常方便。 GitBook 甚至提供 GitHub hook，在每一次 push 时自动更新
+书籍内容。</p>
+
+<p>本文章内容为 <a href="https://yidaofeicn.github.io/softwareGit/gitbook">Gitbook教程</a> 简单版，如需要查看更多细节的请访问以上链接。</p>
+
+<p></p>
+
+<h2 id="安装并使用-gitbook">安装并使用 gitbook</h2>
+
+<p>首先确认实验环境是：windows 10 x64，基础开发环境配置有 JDK1.8.0、Maven3.5.4、GIT2.18</p>
+
+<h3 id="nodejs-安装">nodejs 安装</h3>
+
+<p>windows 平台安装包有两种方式：<strong>msi</strong> 与 <strong>exe</strong>，前者类似普通软件安装且网络教程多，不在赘述；后者网络教程较少，且相关的配置教程杂乱（不指明版本号、环境变量配置存在问题等），所以此处以 <strong>exe</strong> 版本说明</p>
+
+<h4 id="下载并安装-nodejs">下载并安装 Nodejs</h4>
+
+<p>第一步：本次配置使用的是 <strong>node-v6.12.3-win-x64.zip</strong>版本，点击此<a href="https://nodejs.org/download/release/v6.12.3/">node-v6.12.3-win-x64.zip下载链接</a>可以定位到相关的下载页面<br />
+第二步：解压 “node-v6.12.3-win-x64.zip” 至于 “D:\Program Files”文件夹下，将文件名重命名为 “node-v6.12.3”，关于解压地点与命令按照可按照大家各自喜好配置，稍后将解压存放目录统一称为 “<strong>%NODE_HOME%</strong>”<br />
+第三步：打开 CMD 窗口或 GitBash 窗口，</p>
+
+<pre><code class="language-batch">Microsoft Windows [版本 10.0.17134.254]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+C:\Users\aizhe&gt;node -v
+'node' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+</code></pre>
+
+<p><strong>需要配置相关的环境变量</strong></p>
+
+<h4 id="配置-node-npm-环境变量">配置 Node、NPM 环境变量</h4>
+
+<p>第一步：打开 Windows 环境变量设置界面<br />
+第二步：<strong>系统环境变量</strong>中进行一下以下操作，操作完成后保存即可（注意是 <strong>系统环境变量</strong>，<strong>系统环境变量</strong>，<strong>系统环境变量</strong> 😄）</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">操作内容</th>
+<th align="left">变量名</th>
+<th align="left">值</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">新建</td>
+<td align="left">NODE_HOME</td>
+<td align="left"><strong>nodejsPath</strong></td>
+</tr>
+
+<tr>
+<td align="left">追加</td>
+<td align="left">Path</td>
+<td align="left">%NODE_HOME%</td>
+</tr>
+</tbody>
+</table>
+
+<p>第三步：新开一个 CMD 窗口或 Gitbash 窗口（窗口重新读取配置文件，应用前一步骤配置）</p>
+
+<pre><code class="language-batch">Microsoft Windows [版本 10.0.17134.254]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+C:\Users\aizhe&gt;node -v
+v6.12.3
+
+C:\Users\aizhe&gt;npm -v
+6.4.1
+
+C:\Users\aizhe&gt;
+</code></pre>
+
+<h4 id="配置-npm">配置 NPM</h4>
+
+<p>NPM 作为一个 NodeJS 的模块管理，稍后我们安装软件基本都是通过此模块进行相关的管理，本部分不做具体展开，仅设置相关的源、全局模块、缓存存放路径</p>
+
+<h5 id="第一步-设置相关源">第一步 设置相关源</h5>
+
+<p>默认源在国外，速度很慢，可能会出现包无法安装的问题，一般推荐采用国内的淘宝源，命令如下：</p>
+
+<pre><code class="language-batch">npm config set registry https://registry.npm.taobao.org //配置
+npm config get registry  //验证是否成功
+</code></pre>
+
+<p>相关扩展可以参考 <a href="#ref1">参考资料1</a>、<a href="#ref2">参考资料2</a></p>
+
+<h5 id="第二步-设置全局模块存放路径">第二步 设置全局模块存放路径</h5>
+
+<p>全局模块默认存放在 “prefix=C:\Users\aizhe\AppData\Roaming\npm”，不利于系统运转以及后续包管理，所以我们修改相关的参数</p>
+
+<ol>
+<li><p>在 <strong>nodejsPath</strong> 下新建 “node_global”、“node_cache” 两个文件用于存储全局模块、缓存</p></li>
+
+<li><p>可以通过<code>npm config edit</code>直接在文本框中修改相关的数据，以下采用的是命令行修改相关参数</p></li>
+</ol>
+
+<pre><code class="language-batch">npm config set prefix  “nodejsPath\node_global”
+npm config set cache   “nodejsPath\node_cache”
+</code></pre>
+
+<h5 id="第三步-配置相关环境变量">第三步 配置相关环境变量</h5>
+
+<p>由于此处将全局模块存储文件修改，如不在系统变量中指明相关的存放地点，系统将 <strong>应用原有的路径</strong> 查找，会出现 <code>'gitbook' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。</code> 类似情况，所以需要在系统变量中设置相关的模块点：</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">操作内容</th>
+<th align="left">变量名</th>
+<th align="left">值</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">追加</td>
+<td align="left">Path</td>
+<td align="left">%NODE_HOME%\node_global</td>
+</tr>
+</tbody>
+</table>
+
+<p>PS：关于 <strong>“NODE_PATH” =“%NODE_HOME%\node_global\node_modules”</strong> 配置，经过反复的测试不需要配置</p>
+
+<h4 id="第四步-确认成功">第四步 确认成功</h4>
+
+<p>安装 gitbook 并确认输出正常即可确认成功</p>
+
+<h3 id="安装-gitbook">安装 gitbook</h3>
+
+<p>如安装有 Git，则使用 Git Bash，如无则使用 Windows 10 的 CMD 窗口</p>
+
+<pre><code class="language-batch">npm install -g gitbook-cli
+gitbook -V
+</code></pre>
+
+<p>如输出</p>
+
+<pre><code class="language-batch">CLI version: 2.3.2
+GitBook version: 3.2.3
+</code></pre>
+
+<p>则表明安装成功（注意 <code>gitbook -V</code> 中的V为大写）</p>
+
+<h3 id="使用-gitbook">使用 gitbook</h3>
+
+<h4 id="web托管">web托管</h4>
+
+<pre><code class="language-batch">cd d:
+mkdir gitbookTest
+cd gitbookTest
+gitbook init
+gitbook install ./
+gitbook serve
+</code></pre>
+
+<p>进入 D:\gitbookTest 可以看到 SUMMARY.md 与 README.md 文件，并浏览器访问<code>127.0.0.1：4000</code>可以看到基本的内容</p>
+
+<h4 id="构建静态网站">构建静态网站</h4>
+
+<pre><code class="language-batch">cd d:
+mkdir gitbookTest
+cd gitbookTest
+gitbook init
+gitbook install ./
+gitbook build
+</code></pre>
+
+<p>进入 D:\gitbookTest_book 可以看到 index.html 文件，点击即可查看书</p>
+
+<p>PS：gitbook 3.0.1版本以上生成的 <strong>静态网站侧边栏无法进行跳转</strong>，所以如果大家需要生成静态网站最好使用3.0.1及以下版本，具体情况请大家查看<a href="/installConfigQA.md">安装配置问题汇总</a></p>
+
+<h3 id="gitbook-目录结构">gitbook 目录结构</h3>
+
+<p>gitbook 标准目录结构为：</p>
+
+<pre><code class="language-batch">├── book.json
+├── README.md
+├── SUMMARY.md
+├── chapter-1/
+|   ├── README.md
+|   └── something.md
+└── chapter-2/
+    ├── README.md
+    └── something.md
+</code></pre>
+
+<h2 id="book-配置文件参数">book 配置文件参数</h2>
+
+<p><a href="https://gitbookio.gitbooks.io/documentation/content/format/configuration.html">book 配置文件参数官方文档</a></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">参数名称</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">title</td>
+<td align="left">标题</td>
+</tr>
+
+<tr>
+<td align="left">description</td>
+<td align="left">书本描述</td>
+</tr>
+
+<tr>
+<td align="left">author</td>
+<td align="left">作者信息</td>
+</tr>
+
+<tr>
+<td align="left">language</td>
+<td align="left">使用的语言</td>
+</tr>
+
+<tr>
+<td align="left">isbn</td>
+<td align="left">图书编号</td>
+</tr>
+
+<tr>
+<td align="left">gitbook</td>
+<td align="left">指定gitbook版本</td>
+</tr>
+
+<tr>
+<td align="left">root</td>
+<td align="left">指定存放 GitBook 文件的根目录</td>
+</tr>
+
+<tr>
+<td align="left">structure</td>
+<td align="left">设置 Readme, Summary, Glossary等对应的文件</td>
+</tr>
+
+<tr>
+<td align="left">plugins</td>
+<td align="left">插件</td>
+</tr>
+
+<tr>
+<td align="left">pluginsConfig</td>
+<td align="left">插件配置</td>
+</tr>
+
+<tr>
+<td align="left">links</td>
+<td align="left">在侧边栏添加链接</td>
+</tr>
+
+<tr>
+<td align="left">styles</td>
+<td align="left">自定义样式</td>
+</tr>
+
+<tr>
+<td align="left">variables</td>
+<td align="left">模板渲染参数</td>
+</tr>
+</tbody>
+</table>
+
+<p>以上所有常规的参数不一一介绍，主要是介绍其中配置比较多的参数点。</p>
+
+<h3 id="language">language</h3>
+
+<p>Gitbook 使用的语言，具体的参数请参考： <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">List of ISO 639-1 codes</a></p>
+
+<h3 id="gitbook">gitbook</h3>
+
+<p>指定使用的 gitbook 版本，建议配置，因为版本特性不一样</p>
+
+<pre><code class="language-json">&quot;gitbook&quot; : &quot;3.2.2&quot;,
+&quot;gitbook&quot; : &quot;&gt;=3.0.0&quot;
+</code></pre>
+
+<h3 id="links">links</h3>
+
+<p>在左侧导航栏添加链接信息，</p>
+
+<pre><code class="language-json">&quot;links&quot; : {
+    &quot;sidebar&quot; : {
+        &quot;Home&quot; : &quot;https://www.jianshu.com/u/2883cc74fbdd&quot;
+    }
+}
+</code></pre>
+
+<h3 id="styles">styles</h3>
+
+<p>自定义页面样式， 默认情况下各 generator 对应的 css 文件</p>
+
+<pre><code class="language-json">&quot;styles&quot;: {
+    &quot;website&quot;: &quot;styles/website.css&quot;,
+    &quot;ebook&quot;: &quot;styles/ebook.css&quot;,
+    &quot;pdf&quot;: &quot;styles/pdf.css&quot;,
+    &quot;mobi&quot;: &quot;styles/mobi.css&quot;,
+    &quot;epub&quot;: &quot;styles/epub.css&quot;
+}
+</code></pre>
+
+<p>例如使<code>&lt;h1&gt; &lt;h2&gt;</code>标签有下边框， 可以在 website.css 中设置</p>
+
+<pre><code class="language-html">h1 , h2{
+    border-bottom: 1px solid #EFEAEA;
+}
+</code></pre>
+
+<h3 id="structure">structure</h3>
+
+<p>指定 Readme、Summary、Glossary 和 Languages 对应的文件名，下面是这几个文件对应变量以及默认值：</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">变量</th>
+<th align="left">含义和默认值</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">structure.readme</td>
+<td align="left">Readme file name (defaults to README.md)</td>
+</tr>
+
+<tr>
+<td align="left">structure.summary</td>
+<td align="left">Summary file name (defaults to SUMMARY.md)</td>
+</tr>
+
+<tr>
+<td align="left">structure.glossary</td>
+<td align="left">Glossary file name (defaults to Glossary.md)</td>
+</tr>
+
+<tr>
+<td align="left">structure.languages</td>
+<td align="left">Languages file name (defaults to LANGS.md)</td>
+</tr>
+</tbody>
+</table>
+
+<p>举例如下：</p>
+
+<pre><code class="language-json">&quot;structure&quot;: {
+        &quot;readme&quot;: &quot;introduction.md&quot;
+ },
+</code></pre>
+
+<h3 id="plugins">plugins</h3>
+
+<p>配置使用的插件</p>
+
+<pre><code class="language-json">&quot;plugins&quot;: [
+    &quot;disqus&quot;
+]
+</code></pre>
+
+<p>添加新插件之后需要运行<code>gitbook install ./</code>本地安装新的插件<br />
+Gitbook 默认带有5个插件：</p>
+
+<ol>
+<li>highlight</li>
+<li>search</li>
+<li>sharing</li>
+<li>font-settings</li>
+<li>livereload</li>
+</ol>
+
+<p>如果要去除自带的插件， 可以在插件名称前面加-</p>
+
+<pre><code class="language-json">&quot;plugins&quot;: [
+    &quot;-search&quot;
+]json
+</code></pre>
+
+<h3 id="pluginsconfig">pluginsConfig</h3>
+
+<p>配置插件的属性</p>
+
+<pre><code class="language-json">&quot;pluginsConfig&quot;: {
+    &quot;fontsettings&quot;: {
+        &quot;theme&quot;: &quot;sepia&quot;,
+        &quot;family&quot;: &quot;serif&quot;,
+         &quot;size&quot;:  1
+    }
+}
+</code></pre>
+
+<h2 id="推荐插件">推荐插件</h2>
+
+<p><a href="https://plugins.gitbook.com">插件官网</a></p>
+
+<p>记录一些实用的插件，一般情况下建议指定插件版本，指定版本方式为<code>disqus@0.1.0</code>（测试过程中 Disqus1.0.1 要求 gitbook 版本为4.0以上）。下面的插件在 GitBook 的 3.2.3 版本中可以正常工作，因为一些插件可能不会随着 GitBook 版本的升级而升级，即下面的插件
+可能不适用高版本的 GitBook</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">变量</th>
+<th align="left">含义和默认值</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><a href="#theme-comscore">theme-comscore</a></td>
+<td align="left">主题theme-comscore</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#disqus">disqus</a></td>
+<td align="left">disqus 评论</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#search-plus">search-Plus</a></td>
+<td align="left">支持中文搜索</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#donate">donate</a></td>
+<td align="left">打赏插件</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#github">github</a></td>
+<td align="left">添加github图标</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#sharing-plus">sharing-plus</a></td>
+<td align="left">分享当前页面</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#rss">rss</a></td>
+<td align="left">添加 rss 订阅功能</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#edit-link">edit-link</a></td>
+<td align="left">链接到当前页源文件上</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#anchors">anchors</a></td>
+<td align="left">添加 Github 风格的锚点</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#multipart">multipart</a></td>
+<td align="left">目录分层次</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#favicon">favicon</a></td>
+<td align="left">更改网站的 favicon.ico</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#splitter">splitter</a></td>
+<td align="left">使侧边栏的宽度可以自由调节</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#page-footer-ex">page-footer-ex</a></td>
+<td align="left">为页面添加页脚</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#expandable-chapters-small">expandable-chapters-small</a></td>
+<td align="left">使左侧的章节目录可以折叠</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#anchor-navigation-ex-toc">anchor-navigation-ex-toc</a></td>
+<td align="left">添加Toc到侧边悬浮导航以及回到顶部按钮</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#ace-Plugin">ace-Plugin</a></td>
+<td align="left">支持用户动代码</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#codeblock-filename">codeblock-filename</a></td>
+<td align="left">代码块名称</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#prism">prism</a></td>
+<td align="left">使用 Prism.js 高亮代码</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#prism-themes">prism-themes</a></td>
+<td align="left">使用 Prism.js 高亮代码css样式</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#copy-code-button">copy-code-button</a></td>
+<td align="left">为代码块添加复制按钮</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#kaTex">kaTex</a></td>
+<td align="left">支持数学公式</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#kaTex">mathjax</a></td>
+<td align="left">支持数学公式</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#mermaid-gb3">mermaid-gb3</a></td>
+<td align="left">支持渲染 Mermaid 图表</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#graph">graph</a></td>
+<td align="left">使用 function-plot 绘制数学函数图</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#chart">Chart</a></td>
+<td align="left">绘制图形</td>
+</tr>
+
+<tr>
+<td align="left"><a href="#advanced-emoji">advanced-emoji</a></td>
+<td align="left">表情，与GFM表情一致</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="导出与发布">导出与发布</h2>
+
+<p>gitbook 一般展现的方式是PDF、静态网站，后者表现形式离线版( “_book目录”文件)、gitbook、githubPage<br />
+本文主要介绍 PDF 导出、githubPage</p>
+
+<h3 id="gitbook-发布">gitbook 发布</h3>
+
+<p>首先 <a href="https://legacy.gitbook.com/login">gitbook旧版网站</a> 已经不支持注册，而 <a href="https://www.gitbook.com/">gitbook新版网站</a> 新特性（参考<a href="#ref1">参考资料1</a>）、以及网站每次都是动态生成慢等直观感受 <strong>个人不推荐使用</strong></p>
+
+<p>如需要配置可以参考以下链接：<br />
+<a href="https://www.kancloud.cn/xiaoyulive/gitbook/506142">优质软件精选 - GitBook使用指南</a></p>
+
+<h3 id="pdf-导出">PDF 导出</h3>
+
+<p>由于 GitBook 生成 mobi 格式电子书依赖 Calibre 的 ebook-convert，所以先安装 calibre</p>
+
+<ol>
+<li>本次选用的 3.31.0 版本，点击<a href="https://download.calibre-ebook.com/3.31.0/">calibre-ebook Download</a>下载<br /></li>
+<li>系统环境变量中加入 <strong>calibre-convert路径地址</strong></li>
+<li>安装完calibre之后，将calibre加入到系统环境变量中，执行 <code>ebook-convert --version</code> 命令之后显示3.x的版本即表示安装成功。</li>
+<li>执行 <code>gitbook pdf</code>即可导出PDF文件到当前目录
+<br /></li>
+</ol>
+
+<h3 id="githubpage-静态网站发布">GithubPage 静态网站发布</h3>
+
+<p>由于 gitbook 书籍可以通过 gitbook 本地构建出 site 格式，所以可以直接将构建好的书籍直接放到 GitHub Pages 中托管，之后，可以通过如下地址访问书籍：
+<code>&lt;username&gt;.github.io/&lt;project&gt;</code></p>
+
+<p>例如本书例子可以通过：<a href="https://yidaofeicn.github.io/softwareGit/">https://yidaofeicn.github.io/softwareGit/</a> 访问</p>
+
+<p>当访问 <a href="https://yidaofeicn.github.io/softwareGit/">https://yidaofeicn.github.io/softwareGit/</a> 时，会访问 yidaofeicn/softwareGit 项目的 gh-pages 分支的内容，所以需要为项目创建一个 gh-pages 分支，并且将静态站点内容放入其中。也就是说，software 项目将有如下两个分支：</p>
+
+<ul>
+<li>master, 保存书籍的源码</li>
+<li>gh-pages, 保存书籍编译后的 HTML 文件</li>
+</ul>
+
+<p>所以问题转化为如何将静态网站导入gh-pages分支 😄</p>
+
+<h4 id="书籍编译构建">书籍编译构建</h4>
+
+<pre><code class="language-batch">$ gitbook init
+$ gitbook install 
+$ gitbook build
+</code></pre>
+
+<h4 id="git-master-分支操作">Git Master 分支操作</h4>
+
+<pre><code class="language-batch">$ git init
+$ git add .
+$ git commit -m &quot;第一次提交&quot;
+$ git push -u origin master
+</code></pre>
+
+<h4 id="新建gh-pages-分支并上传静态网站">新建gh-pages 分支并上传静态网站</h4>
+
+<p>创建gh-pages分支</p>
+
+<pre><code class="language-batch">$ git branch gh-pages
+$ git checout master
+</code></pre>
+
+<p>清理删除不需要的文件</p>
+
+<pre><code class="language-batch">$ git rm --cached -r .
+$ git clean -df
+$ rm -rf *~
+</code></pre>
+
+<p>配置.gitignore文件</p>
+
+<pre><code class="language-batch">$ echo &quot;*~&quot; &gt; .gitignore
+$ echo &quot;_book&quot; &gt;&gt; .gitignore
+$ echo &quot;node_modules&quot; &gt;&gt; .gitignore
+$ git add .gitignore
+$ git commit -m &quot;Ignore some files&quot;
+</code></pre>
+
+<p>移动_book文件到当前文件并发布</p>
+
+<pre><code class="language-batch">$ cp -r _book/* .
+$ git add .
+$ git commit -m &quot;Publish book&quot;
+$ git push -u origin gh-pages
+</code></pre>
+
+<p>现在，书籍的内容已经上传到 GitHub 上，所以通过访问 <a href="https://yidaofeicn.github.io/softwareGit/">https://yidaofeicn.github.io/softwareGit/</a> 就可以阅读这本书了！</p>
+
+<h2 id="book-json文件">book.json文件</h2>
+
+<pre><code class="language-json">{
+    &quot;title&quot;: &quot;编程专业软件简易使用教程&quot;,
+    &quot;description&quot;: &quot;主要是记录一些关于编程专业软件的使用方法以及相关的推荐&quot;,
+    &quot;author&quot;: &quot;yidaofeicn&quot;,
+    &quot;gitbook&quot;: &quot;3.0.2&quot;,
+     
+
+    &quot;plugins&quot;: [
+        
+        &quot;theme-comscore&quot;,
+
+        &quot;-livereload&quot;,
+        &quot;disqus@0.1.0&quot;,
+        &quot;-lunr&quot;,
+        &quot;-search&quot;,
+        &quot;search-plus@0.0.11&quot;,
+        &quot;donate@1.0.2&quot;,
+
+        &quot;github@2.0.0&quot;,
+        &quot;-sharing&quot;,
+        &quot;sharing-plus@0.0.2&quot;,
+        &quot;rss@2.1.5&quot;,
+
+        &quot;edit-link@2.0.2&quot;,
+        &quot;anchors@0.7.1&quot;,
+        &quot;multipart@0.3.0&quot;,
+        
+        &quot;favicon@0.0.2&quot;,
+        &quot;splitter@0.0.8&quot;, 
+        &quot;page-footer-ex@0.1.2&quot;,
+        &quot;expandable-chapters-small@0.1.7&quot;,
+        &quot;anchor-navigation-ex-toc@0.0.11&quot;,
+
+        &quot;ace@^0.3.2&quot;,
+        &quot;codeblock-filename@0.0.9&quot;, 
+        &quot;prism@2.4.0&quot;,
+        &quot;-highlight&quot;,
+        &quot;prism-themes@0.0.2&quot;,
+        &quot;copy-code-button@0.0.2&quot;,
+        &quot;advanced-emoji&quot;,
+ 
+        &quot;katex@1.1.4&quot;, 
+        &quot;mermaid-gb3@2.1.0&quot;,
+        &quot;graph@0.1.0&quot;,
+        &quot;chart@0.2.0&quot;
+
+        
+    ],
+
+    &quot;pluginsConfig&quot;: {
+     &quot;disqus&quot;: {
+            &quot;shortName&quot;: &quot;gitbookYDF&quot;
+        },
+    &quot;sharing&quot;: {
+           &quot;douban&quot;: true,
+           &quot;facebook&quot;: false,
+           &quot;google&quot;: false,
+           &quot;hatenaBookmark&quot;: false,
+           &quot;instapaper&quot;: false,
+           &quot;line&quot;: false,
+           &quot;linkedin&quot;: false,
+           &quot;messenger&quot;: false,
+           &quot;pocket&quot;: true,
+           &quot;qq&quot;: true,
+           &quot;qzone&quot;: true,
+           &quot;stumbleupon&quot;: false,
+           &quot;twitter&quot;: false,
+           &quot;viber&quot;: false,
+           &quot;vk&quot;: false,
+           &quot;weibo&quot;: true,
+           &quot;whatsapp&quot;: false,
+           &quot;all&quot;: [
+               &quot;douban&quot;, &quot;pocket&quot;, &quot;qzone&quot;,
+               &quot;weibo&quot;, &quot;qq&quot;
+           ]
+        },
+     &quot;rss&quot;: {
+          &quot;title&quot;: &quot;编程专业软件简易使用教程&quot;,
+          &quot;description&quot;: &quot;主要是记录一些关于编程专业软件的使用方法以及相关的推荐&quot;,
+          &quot;author&quot;: &quot;yidaofeicn&quot;,
+          &quot;site_url&quot;: &quot;xxxxxx.com&quot;,
+          &quot;feed_url&quot;: &quot;xxxxxx.com&quot;,
+          &quot;image_url&quot;: &quot;xxxxxx.png&quot;,
+          &quot;categories&quot;: [
+            &quot;git&quot;,
+            &quot;sublime&quot;,
+            &quot;gitbook&quot;
+          ]
+        },
+    &quot;github&quot;: {
+        &quot;url&quot;: &quot;https://github.com/yidaofeicn/softwareGit&quot;
+        },
+    &quot;donate&quot;: {
+        &quot;wechat&quot;: &quot;img/wxpay.png&quot;,
+        &quot;alipay&quot;: &quot;img/alipay.png&quot;,
+        &quot;title&quot;: &quot;&quot;,
+        &quot;button&quot;: &quot;赏&quot;,
+        &quot;alipayText&quot;: &quot;支付宝打赏&quot;,
+        &quot;wechatText&quot;: &quot;微信打赏&quot;
+    },
+    
+
+    &quot;edit-link&quot;: {
+        &quot;base&quot;: &quot;https://github.com/yidaofeicn/softwareGit/edit/BRANCH&quot;,
+        &quot;label&quot;: &quot;编辑此页&quot;
+        },
+
+    &quot;favicon&quot;:{
+        &quot;shortcut&quot;: &quot;assets/images/favicon.ico&quot;,
+        &quot;bookmark&quot;: &quot;assets/images/favicon.ico&quot;,
+        &quot;appleTouch&quot;: &quot;assets/images/apple-touch-icon.png&quot;,
+        &quot;appleTouchMore&quot;: {
+            &quot;120x120&quot;: &quot;assets/images/apple-touch-icon-120x120.png&quot;,
+            &quot;180x180&quot;: &quot;assets/images/apple-touch-icon-180x180.png&quot;
+            }
+        }, 
+    &quot;page-footer-ex&quot;: {
+            &quot;copyright&quot;: &quot;**由 yidaofeicn 通过[知识共享 署名-相同方式共享 4.0协议发布](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)**&quot;,
+            &quot;markdown&quot;:true,
+            &quot;update_label&quot;: &quot;**文件修订时间：**&quot;,
+            &quot;update_format&quot;: &quot;YYYY-MM-DD&quot;
+        }, 
+    &quot;page-toc-button&quot;: {
+            &quot;maxTocDepth&quot;: 2,
+            &quot;minTocSize&quot;: 2
+        },
+    &quot;anchor-navigation-ex-toc&quot;: {
+           &quot;showLevel&quot;: true,
+           &quot;associatedWithSummary&quot;: true,
+           &quot;printLog&quot;: false,
+           &quot;multipleH1&quot;: false,
+           &quot;mode&quot;: &quot;float&quot;,
+           &quot;showGoTop&quot;:true,
+           &quot;float&quot;: {
+                &quot;showLevelIcon&quot;: false,
+                &quot;level1Icon&quot;: &quot;fa fa-hand-o-right&quot;,
+                &quot;level2Icon&quot;: &quot;fa fa-hand-o-right&quot;,
+                &quot;level3Icon&quot;: &quot;fa fa-hand-o-right&quot;
+                }
+        },
+
+    &quot;prism&quot;: {
+            &quot;css&quot;: [
+               &quot;prism-themes/themes/prism-a11y-dark.css&quot;
+            ]
+        },
+    &quot;chart&quot;: {
+            &quot;type&quot;: &quot;c3&quot;
+        }
+    }
+}
+
+
+</code></pre>
+
+<h2 id="gitbook-构建问题汇总">Gitbook 构建问题汇总</h2>
+
+<h3 id="gitbook-build-serve-失败-error-enoent-no-such-file-or-directory-stat">gitbook build/serve 失败，Error: ENOENT: no such file or directory, stat …</h3>
+
+<p>参考 <a href="https://www.cnblogs.com/wenhui92/p/9482629.html">https://www.cnblogs.com/wenhui92/p/9482629.html</a> 修改相关行代码，如下图将 <code>confirm：true</code> 修改为<code>confirm：false</code></p>
+
+<p><img src="https://images2018.cnblogs.com/blog/623717/201808/623717-20180815170921683-2030924288.png" alt="" /></p>
+
+<h3 id="gitbook-静态页面导航栏无法跳转问题">Gitbook 静态页面导航栏无法跳转问题</h3>
+
+<p>根据网络资料查询主要问题出在 gitbook 版本在 <strong>Version 3版本</strong> 之后就不在支持静态网站，所以我们需要将 gitbook 版本降低，版本降低到哪个版本主要考虑 <strong>gitbook 插件对主程序版本要求</strong></p>
+
+<p>由于本次配置有部分插件版本有 gitbook&gt;3.0 要求，所以本次主要测试的是3.0以上的版本，经过测试 <strong>gitbook-3.0.2完全满足要求</strong> 😄  。</p>
+
+<p><strong>解决方法</strong><br />
+降低 gitbook 版本至于3.0.2及以下</p>
+
+<h3 id="gitbook-找不到-internal-util-types-模塊">GitBook 找不到 internal/util/types 模塊</h3>
+
+<p>此问题主要是在出现“gitbook 静态页面导航栏无法跳转问题” 查找资料后说要降低版本，直接使用 <code>gitbook build --gitbook=2.6.7</code>出现，相关具体情况如下：</p>
+
+<p>首先必须简单的介绍以下安装的部分细节：</p>
+
+<ol>
+<li>NodeJS 安装文件：node-v8.12.0-win-x64.zip</li>
+<li>NodeJS 版本：v8.12.0</li>
+<li>NPM 版本：6.4.1</li>
+<li>CLI 版本: 2.3.2</li>
+<li>GitBook版本：3.2.3</li>
+<li>用户变量PATH：D:\Program Files\nodejs</li>
+<li>NPM全部为默认设置（prefix：C:\Users\aizhe\AppData\Roaming\npm）</li>
+</ol>
+
+<p>问题具体代码如下：</p>
+
+<pre><code class="language-batch">$ gitbook build --gitbook=2.6.7
+Installing GitBook 2.6.7
+gitbook@2.6.7 C:\Users\aizhe\AppData\Local\Temp\tmp-19729aRHNk3ZE9s8\node_modules\gitbook
+├── bash-color@0.0.3
+├── escape-string-regexp@1.0.3
+├── nunjucks-filter@1.0.0
+······
+├── lodash@3.10.1
+├── juice@1.5.0 (commander@2.3.0, slick@1.12.1, batch@0.5.2, cssom@0.3.0, web-resource-inliner@1.1.4)
+└── npm@2.4.1
+Error loading version latest: Error: Cannot find module 'internal/util/types'
+    at Function.Module._resolveFilename (module.js:548:15)
+    at Function.Module._load (module.js:475:25)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at evalmachine.&lt;anonymous&gt;:31:26
+    at Object.&lt;anonymous&gt; (C:\Users\aizhe\.gitbook\versions\2.6.7\node_modules\graceful-fs\fs.js:11:1)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+
+TypeError: Cannot read property 'commands' of null
+
+</code></pre>
+
+<h4 id="是nodejs版本问题">是NodeJS版本问题？</h4>
+
+<p>出现问题后借助<a href="#ref1">参考资料1</a>才得以定位问题可能出现 Nodejs 与 NPM 问题，直接卸载原来的 NodeJs 将版本降低到  <strong>V6.12.3</strong> 解决问题，问题解决
+关于是否是由于 NPM 版本问题导致（<a href="#ref2">参考资料2</a>提出），测试（以上默认配置，未调整之前）后答案是不是的，可能是情况不一样导致，所以大家可以尝试</p>
+
+<p>注意“是NodeJS版本问题”是用 <strong>命令<code>gitbook build --gitbook=2.6.7</code>测试</strong>，用 <strong>命令<code>gitbook build --gitbook=2.6.7</code>测试</strong>，用 <strong>命令<code>gitbook build --gitbook=2.6.7</code>测试</strong>，重要的事情说3遍  😝</p>
+
+<h4 id="是gitbook版本问题">是gitbook版本问题？</h4>
+
+<p>静态网站能够正常运转后，逐渐的将 gitbook 版本一一测试看生成的静态网站你能否正常运转，最后定位 <code>gitbook build --gitbook=3.0.2</code>无问题，在 《book.json》 文件指明 gitbook 版本为 3.0.2</p>
+
+<p>反过头去测试是否 NodeJS 版本问题，从 <a href="https://nodejs.org/en/download/releases/">Previous Releases</a> 下载近期更新文件，逐一测试，发现升级至于 <strong>v8.12.0</strong> 却无此问题出现 😂，所以问题应该是出现在 <strong>NodeJS 与 gitbook 版本配合问题</strong></p>
+
+<p>注意“是gitbook版本问题？”是 <strong>指定了gitbook版本为3.0.2</strong>，<strong>指定了gitbook版本为3.0.2</strong>，<strong>指定了gitbook版本为3.0.2</strong>，重要的事情说3遍  😝
+命令<code>gitbook build --gitbook=2.6.7</code>测试</p>
+
+<p>Gitbash 输出界面</p>
+
+<pre><code class="language-batch">azl@LAPTOP-5USOBORT MINGW64 /d/cloud/gitbook/softwareGit (master)
+$ node -v
+v8.12.0
+
+azl@LAPTOP-5USOBORT MINGW64 /d/cloud/gitbook/softwareGit (master)
+$ npm -v
+6.4.1
+
+azl@LAPTOP-5USOBORT MINGW64 /d/cloud/gitbook/softwareGit (master)
+$ gitbook -V
+CLI version: 2.3.2
+GitBook version: 3.0.2
+
+azl@LAPTOP-5USOBORT MINGW64 /d/cloud/gitbook/softwareGit (master)
+$ gitbook s
+
+Error: Command s doesn't exist, run &quot;gitbook help&quot; to list commands.
+
+azl@LAPTOP-5USOBORT MINGW64 /d/cloud/gitbook/softwareGit (master)
+$ clear
+
+azl@LAPTOP-5USOBORT MINGW64 /d/cloud/gitbook/softwareGit (master)
+$ node -v
+v8.12.0
+
+azl@LAPTOP-5USOBORT MINGW64 /d/cloud/gitbook/softwareGit (master)
+$ npm -v
+6.4.1
+
+azl@LAPTOP-5USOBORT MINGW64 /d/cloud/gitbook/softwareGit (master)
+$ gitbook -V
+CLI version: 2.3.2
+GitBook version: 3.0.2
+
+azl@LAPTOP-5USOBORT MINGW64 /d/cloud/gitbook/softwareGit (master)
+$ gitbook ls
+GitBook Versions Installed:
+
+    * 3.0.2
+      2.6.7
+
+Run &quot;gitbook update&quot; to update to the latest version.
+
+azl@LAPTOP-5USOBORT MINGW64 /d/cloud/gitbook/softwareGit (master)
+$ gitbook build
+info: 27 plugins are installed
+info: loading plugin &quot;theme-comscore&quot;... OK
+······
+info: loading plugin &quot;fontsettings&quot;... OK
+info: loading plugin &quot;theme-default&quot;... OK
+info: found 15 pages
+info: found 26 asset files
+init!
+warn: &quot;options&quot; property is deprecated, use config.get(key) instead
+warn: &quot;options.generator&quot; property is deprecated, use &quot;output.name&quot; instead
+finish!
+info: &gt;&gt; generation finished with success in 3.5s !
+
+azl@LAPTOP-5USOBORT MINGW64 /d/cloud/gitbook/softwareGit (master)
+$ gitbook build --gitbook=2.6.7
+Error loading version latest: Error: Cannot find module 'internal/util/types'
+    at Function.Module._resolveFilename (module.js:548:15)
+
+</code></pre>
+
+<h4 id="解决方法">解决方法</h4>
+
+<ol>
+<li>gitbook降低至于3.0.2 (Nodejs版本为v8.12.0)</li>
+<li>gitbook降低至于2.6.7 (Nodejs版本为v6.12.3)</li>
+<li>关于适配问题可能有更多的情况，请大家按照自己的方式测试</li>
+</ol>
+
+<h4 id="参考资料">参考资料</h4>
+
+<p>[1]<span id="ref1"><a href="https://mrdknowledge.wordpress.com/2018/01/10/gitbook-%E6%9C%AA%E6%89%BE%E5%88%B0-internal-util-types-%E6%A8%A1%E5%A1%8A/">GitBook 找不到 internal/util/types 模塊</a></span><br />
+[2]<span id="ref2"><a href="https://github.com/remy/nodemon/issues/1124">Error: Cannot find module &lsquo;internal/util/types&rsquo; </a></span></p>
+
+<h3 id="typeerror-cannot-read-property-value-of-null">TypeError: Cannot read property &lsquo;value&rsquo; of null</h3>
+
+<p>首先必须简单的介绍相关环境：</p>
+
+<ol>
+<li>NodeJS 安装文件：node-v8.12.0-win-x64.zip</li>
+<li>NodeJS 版本：v8.12.0</li>
+<li>NPM 版本：6.4.1</li>
+<li>CLI 版本: 2.3.2</li>
+<li>GitBook版本：3.2.3</li>
+<li>用户变量PATH：<code>D:\Program Files\nodejs</code></li>
+<li>NPM配置：<code>cache = &quot;D:\\Program Files\\node-v6.12.3\\node_cache&quot;</code></li>
+<li>NPM配置：<code>prefix = &quot;D:\\Program Files\\node-v6.12.3\\node_global&quot;</code></li>
+</ol>
+
+<p>错误代码提示如下：</p>
+
+<pre><code class="language-batch">azl@LAPTOP-5USOBORT MINGW64 /d/cloud/gitbook/softwareGit
+$ gitbook build
+info: 27 plugins are installed
+info: loading plugin &quot;theme-comscore&quot;... OK
+······
+info: loading plugin &quot;theme-default&quot;... OK
+info: found 15 pages
+info: found 26 asset files
+init!
+warn: &quot;options&quot; property is deprecated, use config.get(key) instead
+warn: &quot;options.generator&quot; property is deprecated, use &quot;output.name&quot; instead
+error: error while generating page &quot;gitbook/gitbookPlugin.md&quot;:
+
+Template render error: (D:\cloud\gitbook\softwareGit\gitbook\gitbookPlugin.md)
+  TypeError: Cannot read property 'value' of null
+
+</code></pre>
+
+<p>逐步的将文件代码分割后判定故障在是
+&gt;“需要注意的是 <code>{\% graph \%}</code>(正常的为删除) 块中的内容必须是合法的 JSON 格式。”</p>
+
+<h4 id="代码块问题">代码块问题？</h4>
+
+<p>诡异的情况是：markdown 单独看无任何问题，在 <code>gitbook build</code> 出现以上情况，针对此进行了如下探索：</p>
+
+<ol>
+<li>“%” 前加“\”，再次 <code>gitbook build</code> 无问题</li>
+<li>“%”与花括号之间加空格，再次 <code>gitbook build</code> 一样的问题</li>
+<li>同样的《代码测试页面：Graph 插件》时无问题，复制代码组合成 <code>{% graph %} {% endgraph %}</code>无问题</li>
+</ol>
+
+<p>判断应该是 gitbook 中 Graph 插件遇到 <code>{\% graph \%}</code>(正常的为删除) 会解析，发现无结束符号等，直接报错</p>
+
+<p>注意“代码块问题？”是用 <strong>NodeJS 版本：v8.12.0编译</strong>， <strong>NodeJS 版本：v8.12.0编译</strong>，用 <strong>NodeJS 版本：v8.12.0编译</strong>，重要的事情说3遍  😝</p>
+
+<h4 id="解决方法-1">解决方法</h4>
+
+<ol>
+<li>按照Graph代码规范正确编写代码（gitbook-3.0.2、nodejs-v8.12.0)</li>
+</ol>
+
+<h3 id="pdf导出-error-enoent-no-such-file-or-directory">PDF导出 Error: ENOENT: no such file or directory</h3>
+
+<pre><code class="language-batch">$ gitbook pdf
+info: 26 plugins are installed
+······
+warn: &quot;book&quot; property is deprecated, use &quot;this&quot; directly instead
+internal/streams/legacy.js:59
+      throw er; // Unhandled stream error in pipe.
+      ^
+
+Error: ENOENT: no such file or directory, open 'C:\Users\aizhe\AppData\Local\Temp\tmp-4112ZkuDkGEkpuRU\df94bace.png?raw=true'
+</code></pre>
+
+<p>最后定位问题主要是出在<a href="/codeTest.md">《代码测试页面》</a>中的图片链接格式存在问题</p>
+
+<p><a href="https://github.com/yidaofeicn/softwareGit/blob/master/img/gitbook/ACEPlugin.gif?raw=true">https://github.com/yidaofeicn/softwareGit/blob/master/img/gitbook/ACEPlugin.gif?raw=true</a></p>
+
+<p>将最后的 <code>raw=true</code> 删除命令可正常执行</p>
+
+<h4 id="解决办法">解决办法</h4>
+
+<p>Github 图片外链获取方式存在问题，正确的方法是定位到图片后点击“在新标签页中打开图片”，地址栏地址即为外链地址
+以上地址图外链地址为：<a href="https://raw.githubusercontent.com/yidaofeicn/softwareGit/master/img/gitbook/ACEPlugin.gif">https://raw.githubusercontent.com/yidaofeicn/softwareGit/master/img/gitbook/ACEPlugin.gif</a></p>
+
+<h2 id="版本信息">版本信息</h2>
+
+<table>
+<thead>
+<tr>
+<th align="left">日期</th>
+<th align="left">调整内容</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">2018年09月20日</td>
+<td align="left">初创</td>
+</tr>
+
+<tr>
+<td align="left">2018年11月10日</td>
+<td align="left">增加使用问题部分</td>
+</tr>
+</tbody>
+</table>
+			  
+		
+		
+			<div class="article-copyright">
+			  	<ul>
+			  		<li><strong>本文作者：</strong>易道非</li>
+			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20180920-build-website-gitbook-guide/</li>
+			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
+			  	</ul>
+			</div>
+		 
+	</content>  
+ 	<hr/>
+ 	
+	<div class="article-footer-meta-between"> 
+		 
+		<div>
+			<i class="fa fa-tags">&nbsp;Tags:
+			
+				<a href="https://yidaofei.com/tags/%e4%b8%aa%e4%ba%ba%e5%bb%ba%e7%ab%99">个人建站</a>
+    		
+    		</i>   
+		</div> 
+		 
+		<div id="i-share" class="btn btn-default  share-widget">
+		    <i class="fa fa-share-alt"></i>
+		</div> 
+	</div>
+	<hr/>
+	<div class="article-footer-meta-between"> 
+		<div class="refArticle-prev" >
+			  
+		    <a href="https://yidaofei.com/post/20181107-js-rebuild-hugo-sider-toc/">
+		    	<i class="fa fa-angle-double-left"></i>&nbsp;JavaScript-重建 hugo 侧边导航栏 TOC  
+		    </a> 
+			
+		</div>
+		 <div class="refArticle-next" >
+		  
+		  	<a href="https://yidaofei.com/post/20180920-software-skills-sublime-base-config/">Sublime教程： 第一章 基础配置&nbsp;
+		  		<i class="fa fa-angle-double-right"></i>
+		  	</a> 
+		 
+	    </div>
+	</div>  
+</article> 
+</section>
+ 
+
+  
+ 
+<div class="main-content-container " >
+<div class="comment-card"> 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeicn/comment-utterances-blog-yidaofeicn"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+</div>
+</div>
+
+ 
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+	
+	
+	<span id="tocLevel" data-startLevel="" data-endLevel=""></span>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#安装并使用-gitbook">安装并使用 gitbook</a>
+<ul>
+<li><a href="#nodejs-安装">nodejs 安装</a>
+<ul>
+<li><a href="#下载并安装-nodejs">下载并安装 Nodejs</a></li>
+<li><a href="#配置-node-npm-环境变量">配置 Node、NPM 环境变量</a></li>
+<li><a href="#配置-npm">配置 NPM</a>
+<ul>
+<li><a href="#第一步-设置相关源">第一步 设置相关源</a></li>
+<li><a href="#第二步-设置全局模块存放路径">第二步 设置全局模块存放路径</a></li>
+<li><a href="#第三步-配置相关环境变量">第三步 配置相关环境变量</a></li>
+</ul></li>
+<li><a href="#第四步-确认成功">第四步 确认成功</a></li>
+</ul></li>
+<li><a href="#安装-gitbook">安装 gitbook</a></li>
+<li><a href="#使用-gitbook">使用 gitbook</a>
+<ul>
+<li><a href="#web托管">web托管</a></li>
+<li><a href="#构建静态网站">构建静态网站</a></li>
+</ul></li>
+<li><a href="#gitbook-目录结构">gitbook 目录结构</a></li>
+</ul></li>
+<li><a href="#book-配置文件参数">book 配置文件参数</a>
+<ul>
+<li><a href="#language">language</a></li>
+<li><a href="#gitbook">gitbook</a></li>
+<li><a href="#links">links</a></li>
+<li><a href="#styles">styles</a></li>
+<li><a href="#structure">structure</a></li>
+<li><a href="#plugins">plugins</a></li>
+<li><a href="#pluginsconfig">pluginsConfig</a></li>
+</ul></li>
+<li><a href="#推荐插件">推荐插件</a></li>
+<li><a href="#导出与发布">导出与发布</a>
+<ul>
+<li><a href="#gitbook-发布">gitbook 发布</a></li>
+<li><a href="#pdf-导出">PDF 导出</a></li>
+<li><a href="#githubpage-静态网站发布">GithubPage 静态网站发布</a>
+<ul>
+<li><a href="#书籍编译构建">书籍编译构建</a></li>
+<li><a href="#git-master-分支操作">Git Master 分支操作</a></li>
+<li><a href="#新建gh-pages-分支并上传静态网站">新建gh-pages 分支并上传静态网站</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#book-json文件">book.json文件</a></li>
+<li><a href="#gitbook-构建问题汇总">Gitbook 构建问题汇总</a>
+<ul>
+<li><a href="#gitbook-build-serve-失败-error-enoent-no-such-file-or-directory-stat">gitbook build/serve 失败，Error: ENOENT: no such file or directory, stat …</a></li>
+<li><a href="#gitbook-静态页面导航栏无法跳转问题">Gitbook 静态页面导航栏无法跳转问题</a></li>
+<li><a href="#gitbook-找不到-internal-util-types-模塊">GitBook 找不到 internal/util/types 模塊</a>
+<ul>
+<li><a href="#是nodejs版本问题">是NodeJS版本问题？</a></li>
+<li><a href="#是gitbook版本问题">是gitbook版本问题？</a></li>
+<li><a href="#解决方法">解决方法</a></li>
+<li><a href="#参考资料">参考资料</a></li>
+</ul></li>
+<li><a href="#typeerror-cannot-read-property-value-of-null">TypeError: Cannot read property &lsquo;value&rsquo; of null</a>
+<ul>
+<li><a href="#代码块问题">代码块问题？</a></li>
+<li><a href="#解决方法-1">解决方法</a></li>
+</ul></li>
+<li><a href="#pdf导出-error-enoent-no-such-file-or-directory">PDF导出 Error: ENOENT: no such file or directory</a>
+<ul>
+<li><a href="#解决办法">解决办法</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
+<footer class="site-footer text-center">
+  <div class="social" > 
+     
+          <a href=" mailto:yidaofeicn@gmail.com "><i class="fa fa-envelope-open-o"></i></span></a>
+      
+       
+          <a href=" https://github.com/yidaofeicn "  ><i class="fa fa-github"></i></span></a>
+      
+    
+      
+                <a href="https://yidaofei.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml" target="_blank"> <i class="fa fa-rss"></i>
+                </a>
+          </div>
+   
+  <div class="copyright"  >
+    Powered by &nbsp;<a href="https://gohugo.io/">Hugo</a>&nbsp;|&nbsp;
+    Theme-<a href="https://github.com/yidaofeicn/hugo-theme-flybird">Flybird</a>  
+  </div>
+  <div class="copyright"> Copyright© 2018 Transparent Thoughts. All rights reserved.</div> 
+  <div class="copyright"> 
+
+      
+    
+      <span id="busuanzi_container">
+        访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+</footer>
+
+ 
+
+<div id="bottom-element" data-title="定位底部"></div>
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.css">
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.js"></script>
+ 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.30.0/algoliasearch.jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.32.0/autocomplete.jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/algoliasearch/algolia-autocomplete.css">
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.css"> 
+<script type="text/javascript" src="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.css">
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/prismjs/prism.css">
+
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/prismjs/prism.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js"></script>
+
+<script type="text/javascript" color="#1D1D1D" opacity='1' zIndex="-2" count="400" src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.3/canvas-nest.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+<span id="isPage" data-isPage="true" style="display: none;"></span>
+
+
+ 
+
+<script type="text/javascript" src="https://yidaofei.com//js/flybird.js"></script> 
+<script type="text/javascript" src="https://yidaofei.com//js/main.js"></script> 
+  
+ 
+</style>
+</body>
+</html>
+
+
+ 

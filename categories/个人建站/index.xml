@@ -33,10 +33,10 @@
     
     <item>
       <title>个人建站-自建图床 Piwigo </title>
-      <link>https://yidaofei.com/post/20181128-software-skills-piwigo-guild/</link>
+      <link>https://yidaofei.com/post/20181128-build-website-piwigo-guild/</link>
       <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181128-software-skills-piwigo-guild/</guid>
+      <guid>https://yidaofei.com/post/20181128-build-website-piwigo-guild/</guid>
       <description>&lt;p&gt;Piwigo是一个开源项目，允许您在网络上创建自己的照片库并上传照片并创建新相册。 该平台包含一些内置的强大功能，如相册，
 标签，水印，地理位置，日历，系统通知，访问控制级别，主题和统计信息。&lt;/p&gt;
 
@@ -127,6 +127,27 @@
 &lt;p&gt;如果是用于个人写作且愿意部分定制化的推荐 Hugo，Why?-安装难度小、文档齐全、&lt;a href=&#34;https://mrcpp.com/hexo-and-hugo-generate-10000-article-speed-comparisons/&#34;&gt;生成速度最快&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;如果是用于商业等网站构建，可以使用 WordPress，教程多、插件齐全、功能多&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gitbook 教程</title>
+      <link>https://yidaofei.com/post/20180920-build-website-gitbook-guide/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20180920-build-website-gitbook-guide/</guid>
+      <description>&lt;p&gt;GitBook 是一个提供 Markdown 书籍托管的网络平台， 支持通过 git 以及 GitHub 进行文档管理，使用它可以很简单地生
+成、发布电子图书。 同时，GitBook 也是一个 Node.js 命令行工具，可以使用它搭建自己的 GitBook 站点。&lt;/p&gt;
+
+&lt;p&gt;除了命令行程序和 web 服务外，GitBook 官方还提供了 跨平台的编辑器，提供直接编辑、发布电子书的功能， 不过实际上
+仅相当于自启动的 GitBook 控制台程序，并不推荐安装，尤其对于 *nix 系统而言。&lt;/p&gt;
+
+&lt;p&gt;GitBook 网站使用简单，这里就不再赘述了，GitBook 控制台提供强大的本地服务， 自启动的站点能够提供和网站完全一样
+的编辑服务， 对于不方便登录其网站的用户来说非常方便。 GitBook 甚至提供 GitHub hook，在每一次 push 时自动更新
+书籍内容。&lt;/p&gt;
+
+&lt;p&gt;本文章内容为 &lt;a href=&#34;https://yidaofeicn.github.io/softwareGit/gitbook&#34;&gt;Gitbook教程&lt;/a&gt; 简单版，如需要查看更多细节的请访问以上链接。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
