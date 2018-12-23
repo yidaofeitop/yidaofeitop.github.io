@@ -155,6 +155,46 @@
     </item>
     
     <item>
+      <title>知识管理系统——高质量知识输入端 V1.0版</title>
+      <link>https://yidaofei.com/drafts/publishedlater/20181218-knowledge-management-system-input-v1/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/drafts/publishedlater/20181218-knowledge-management-system-input-v1/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;不把信息当作知识,不把收藏当作学习,不把阅读当作思考,不把储存当作掌握。&lt;br /&gt;
+不提炼总结、不应用学习、不深入思考、不实践反馈，就不会变成自己的能力。&lt;/p&gt;
+
+&lt;p&gt;-&lt;a href=&#34;https://www.zhihu.com/question/20114502/answer/14150934&#34;&gt;warfalcon&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;不知道大家有没有以下的体会：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;有很多的文章或书籍，初看的时候有很多体会，甚至为此思绪万千，但是……最后在某个日子翻开「Wiz 笔记」时发现完全不知道为什么「采集」这篇文章&lt;/li&gt;
+&lt;li&gt;有很多知识明明已经看过，但是在用的时候发现怎么都想不起来或者无法找到&lt;/li&gt;
+&lt;li&gt;有些工作资料到需要用的时候，怎么找也找不出来&lt;/li&gt;
+&lt;li&gt;脑袋中感觉又很多的知识点，但是如果深究又发现基本上停留在表面&lt;/li&gt;
+&lt;li&gt;……&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;在看过&lt;a href=&#34;http://blog.upwith.me/?p=4560&#34; title=&#34;漫谈 个人知识管理体系构建 ：（一）为什么你还是那个你&#34;&gt;《漫谈 个人知识管理体系构建 ：（一）为什么你还是那个你》&lt;/a&gt;以及
+&lt;a href=&#34;https://www.zhihu.com/question/23427617/answer/28206585&#34;&gt;《如何构建自己的笔记系统？ - Lachel的回答》&lt;/a&gt;后发现必须
+完成以下事项：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;搭建一个高质量的知识输入端&lt;/li&gt;
+&lt;li&gt;搭建一个高效率跨平台知识存储系统&lt;/li&gt;
+&lt;li&gt;构建/选用一个输出平台&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;以上三部分构成「知识管理系统」，本文主要针对第一个事项进行相关的拆解，思维导图如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://piwigo.yidaofei.com/galleries/201812/knowledge-input-mind.png&#34; alt=&#34;知识输入端架构&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Windows 教程2-如何安装 Windows 系统</title>
       <link>https://yidaofei.com/post/20181217-how-to-install-windows-iso/</link>
       <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
