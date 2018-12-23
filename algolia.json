@@ -1,11 +1,11 @@
 [
     {
-        "title": "Wiki",
+        "title": "about",
         "uri": "about",
         "content": "",
         "objectID": "about",
         "date": "",
-        "layout": "wiki",
+        "layout": "about",
         "weight": 40
     },
     {
