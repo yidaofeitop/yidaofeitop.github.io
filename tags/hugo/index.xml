@@ -13,10 +13,10 @@
     
     <item>
       <title>个人建站-Hugo 集成 Algolia 搜索</title>
-      <link>https://yidaofei.com/post/20181119-hugo-algolia-search/</link>
+      <link>https://yidaofei.com/post/20181119-build-website-hugo-algolia-search/</link>
       <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181119-hugo-algolia-search/</guid>
+      <guid>https://yidaofei.com/post/20181119-build-website-hugo-algolia-search/</guid>
       <description>&lt;p&gt;Algolia 是为你的 APP 或者网站添加搜索的最佳方式。 开发人员可以使用 API 上传并同步希望搜索的数据，
 然后可以进行相关的配置，比如产品转化率等等。可以使用 InstantSearch 等前端框架进行自定义搜索，为
 用户创造最佳的搜索体验&lt;/p&gt;
@@ -65,10 +65,10 @@
     
     <item>
       <title>个人建站-Hugo 快速开始</title>
-      <link>https://yidaofei.com/post/20181108-hugo-quick-start/</link>
+      <link>https://yidaofei.com/post/20181108-build-website-hugo-quick-start/</link>
       <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181108-hugo-quick-start/</guid>
+      <guid>https://yidaofei.com/post/20181108-build-website-hugo-quick-start/</guid>
       <description>&lt;p&gt;个人博客建站大致可以分为两类：&lt;/p&gt;
 
 &lt;ol&gt;
