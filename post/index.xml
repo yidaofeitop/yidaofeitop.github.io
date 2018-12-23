@@ -1014,7 +1014,18 @@ H（车库距控制线）：车身长的1.5倍&lt;/p&gt;
     </item>
     
     <item>
-      <title>Gitbook 教程</title>
+      <title>Sublime教程： 第一章 基础配置</title>
+      <link>https://yidaofei.com/post/20180920-software-skills-sublime-base-config/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20180920-software-skills-sublime-base-config/</guid>
+      <description>&lt;p&gt;本文主要是介绍 Sublime text 2 的安装以及基本的包、相关快捷键推荐&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>个人建站——Gitbook 教程</title>
       <link>https://yidaofei.com/post/20180920-build-website-gitbook-guide/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       
@@ -1030,17 +1041,6 @@ H（车库距控制线）：车身长的1.5倍&lt;/p&gt;
 书籍内容。&lt;/p&gt;
 
 &lt;p&gt;本文章内容为 &lt;a href=&#34;https://yidaofeicn.github.io/softwareGit/gitbook&#34;&gt;Gitbook教程&lt;/a&gt; 简单版，如需要查看更多细节的请访问以上链接。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Sublime教程： 第一章 基础配置</title>
-      <link>https://yidaofei.com/post/20180920-software-skills-sublime-base-config/</link>
-      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://yidaofei.com/post/20180920-software-skills-sublime-base-config/</guid>
-      <description>&lt;p&gt;本文主要是介绍 Sublime text 2 的安装以及基本的包、相关快捷键推荐&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
