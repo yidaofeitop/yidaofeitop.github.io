@@ -374,7 +374,7 @@
     </item>
     
     <item>
-      <title>个人建站-自建图床 Piwigo </title>
+      <title>个人建站-组件-自建图床 Piwigo </title>
       <link>https://yidaofei.com/post/20181128-build-website-piwigo-guild/</link>
       <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
       
@@ -397,6 +397,28 @@
     </item>
     
     <item>
+      <title>个人建站2-为 Github 上的 Hugo 博客绑定个性域名</title>
+      <link>https://yidaofei.com/post/20181127-build-website-how-to-bind-blog-domain/</link>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181127-build-website-how-to-bind-blog-domain/</guid>
+      <description>&lt;p&gt;本文主要是记录使用 Hugo 建站过程中关于域名的一些信息，如 Https 协议 VS http 协议、域名购买渠道、域名配置等信息！&lt;/p&gt;
+
+&lt;p&gt;关键点如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;GitHub 将全面启用 Https 协议&amp;mdash;&amp;gt;出现样式、图片等无法加载等情况&lt;/li&gt;
+&lt;li&gt;域名购买渠道比对&lt;/li&gt;
+&lt;li&gt;自有域名如何与 GitHub 通信&lt;/li&gt;
+&lt;li&gt;自由域名二级域名如何使用&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;第三点与第四点基本上就是域名的 DNS 配置方式&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>个人喜好：纯音乐</title>
       <link>https://yidaofei.com/post/20181123-music-pure-music/</link>
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
@@ -406,7 +428,7 @@
     </item>
     
     <item>
-      <title>个人建站-Hugo 集成 Algolia 搜索</title>
+      <title>个人建站3-Hugo 集成 Algolia 搜索</title>
       <link>https://yidaofei.com/post/20181119-build-website-hugo-algolia-search/</link>
       <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
       
@@ -739,7 +761,7 @@ HTML区段标签和区块标签不同，在区段标签的范围內，Markdown�
     </item>
     
     <item>
-      <title>个人建站-Hugo 快速开始</title>
+      <title>个人建站1-Hugo 快速开始</title>
       <link>https://yidaofei.com/post/20181108-build-website-hugo-quick-start/</link>
       <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
       
@@ -1049,7 +1071,7 @@ H（车库距控制线）：车身长的1.5倍&lt;/p&gt;
     </item>
     
     <item>
-      <title>个人建站——Gitbook 教程</title>
+      <title>个人建站—Gitbook 教程</title>
       <link>https://yidaofei.com/post/20180920-build-website-gitbook-guide/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       

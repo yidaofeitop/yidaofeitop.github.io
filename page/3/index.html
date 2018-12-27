@@ -42,10 +42,21 @@ if (!doNotTrack) {
   
 
 
-  
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css">
-  
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+
+<script type="text/javascript">
+	
+	markdownImageBeautify(".markdown","img","p","article-img",true); 
+	
+	$(".markdown").find("iframe").removeAttr("height").removeAttr("width").addClass('videoIframe');
+
+	
+</script>  
 <body> 
 
 <div id="top-element" data-title="到达顶点"></div>
@@ -114,8 +125,8 @@ if (!doNotTrack) {
 
    <article class="article-card">
 	<header class="article-header">  
-		<a href="https://yidaofei.com/post/20181128-build-website-piwigo-guild/" title="个人建站-自建图床 Piwigo " class="article-title" >
-			<h4 >个人建站-自建图床 Piwigo </h4>
+		<a href="https://yidaofei.com/post/20181128-build-website-piwigo-guild/" title="个人建站-组件-自建图床 Piwigo " class="article-title" >
+			<h4 >个人建站-组件-自建图床 Piwigo </h4>
 		</a>
 		<div class="article-meta"> 
 			<time datetime="2018-11-28">
@@ -164,7 +175,7 @@ if (!doNotTrack) {
 		
 		</div> 
 		<div >
-			<a href="https://yidaofei.com/post/20181128-build-website-piwigo-guild/" title="个人建站-自建图床 Piwigo " >阅读全文</a> 
+			<a href="https://yidaofei.com/post/20181128-build-website-piwigo-guild/" title="个人建站-组件-自建图床 Piwigo " >阅读全文</a> 
 		</div>
 	</footer>
 </article>  
@@ -266,6 +277,64 @@ if (!doNotTrack) {
 		</div> 
 		<div >
 			<a href="https://yidaofei.com/wiki/20181128-wiki-markdown-github-emoji/" title="GFM 表情列表" >阅读全文</a> 
+		</div>
+	</footer>
+</article>  
+
+   <article class="article-card">
+	<header class="article-header">  
+		<a href="https://yidaofei.com/post/20181127-build-website-how-to-bind-blog-domain/" title="个人建站2-为 Github 上的 Hugo 博客绑定个性域名" class="article-title" >
+			<h4 >个人建站2-为 Github 上的 Hugo 博客绑定个性域名</h4>
+		</a>
+		<div class="article-meta"> 
+			<time datetime="2018-11-25">
+				<i class="fa fa-calendar">&nbsp;2018年11月25日</i>
+			</time> 
+			<span><i class="fa fa-pencil">&nbsp;3759 word</i></span>
+			<span><i class="fa fa-hourglass-start">&nbsp;8 min read</i></span>
+		</div> 
+	</header> 
+		
+	<div>   
+		 
+		<div class="markdown">
+		 	<p>本文主要是记录使用 Hugo 建站过程中关于域名的一些信息，如 Https 协议 VS http 协议、域名购买渠道、域名配置等信息！</p>
+
+<p>关键点如下：</p>
+
+<ol>
+<li>GitHub 将全面启用 Https 协议&mdash;&gt;出现样式、图片等无法加载等情况</li>
+<li>域名购买渠道比对</li>
+<li>自有域名如何与 GitHub 通信</li>
+<li>自由域名二级域名如何使用</li>
+</ol>
+
+<p>第三点与第四点基本上就是域名的 DNS 配置方式</p>
+
+<p></p> 
+		</div>
+	</div>
+	<hr/>
+	<footer  class="article-footer-meta-between">
+		<div>
+		 
+		 
+		  
+			<span >
+				<i class="fa fa-tags"></i> 
+				
+						<a href="https://yidaofei.com/tags/hugo">hugo</a> &nbsp;&nbsp;
+	    		
+						<a href="https://yidaofei.com/tags/%e4%b8%aa%e4%ba%ba%e5%bb%ba%e7%ab%99">个人建站</a> &nbsp;&nbsp;
+	    		
+						<a href="https://yidaofei.com/tags/%e5%9f%9f%e5%90%8d">域名</a> &nbsp;&nbsp;
+	    		   
+    		</span> 
+    	
+		
+		</div> 
+		<div >
+			<a href="https://yidaofei.com/post/20181127-build-website-how-to-bind-blog-domain/" title="个人建站2-为 Github 上的 Hugo 博客绑定个性域名" >阅读全文</a> 
 		</div>
 	</footer>
 </article>  
@@ -429,8 +498,8 @@ if (!doNotTrack) {
 
    <article class="article-card">
 	<header class="article-header">  
-		<a href="https://yidaofei.com/post/20181119-build-website-hugo-algolia-search/" title="个人建站-Hugo 集成 Algolia 搜索" class="article-title" >
-			<h4 >个人建站-Hugo 集成 Algolia 搜索</h4>
+		<a href="https://yidaofei.com/post/20181119-build-website-hugo-algolia-search/" title="个人建站3-Hugo 集成 Algolia 搜索" class="article-title" >
+			<h4 >个人建站3-Hugo 集成 Algolia 搜索</h4>
 		</a>
 		<div class="article-meta"> 
 			<time datetime="2018-11-19">
@@ -478,7 +547,7 @@ if (!doNotTrack) {
 		
 		</div> 
 		<div >
-			<a href="https://yidaofei.com/post/20181119-build-website-hugo-algolia-search/" title="个人建站-Hugo 集成 Algolia 搜索" >阅读全文</a> 
+			<a href="https://yidaofei.com/post/20181119-build-website-hugo-algolia-search/" title="个人建站3-Hugo 集成 Algolia 搜索" >阅读全文</a> 
 		</div>
 	</footer>
 </article>  
@@ -584,59 +653,6 @@ if (!doNotTrack) {
 	</footer>
 </article>  
 
-   <article class="article-card">
-	<header class="article-header">  
-		<a href="https://yidaofei.com/post/20181115-smartlock-install-lock-day-summary/" title="指纹锁安装日总结——流程/细节/选择重要" class="article-title" >
-			<h4 >指纹锁安装日总结——流程/细节/选择重要</h4>
-		</a>
-		<div class="article-meta"> 
-			<time datetime="2018-11-15">
-				<i class="fa fa-calendar">&nbsp;2018年11月15日</i>
-			</time> 
-			<span><i class="fa fa-pencil">&nbsp;2301 word</i></span>
-			<span><i class="fa fa-hourglass-start">&nbsp;5 min read</i></span>
-		</div> 
-	</header> 
-		
-	<div>   
-		 
-		<div class="markdown">
-		 	<p>2018年11月13日 接了一个朋友的安装单，此次安装过程中出现了以下3个最大的问题：</p>
-
-<ol>
-<li>锁体与门原有锁体不配&mdash;》第一天 GAME OVER</li>
-<li>配件包缺弹簧配件&mdash;》第二天完成基本安装，第三天追加弹簧配件</li>
-<li>天地钩很难稳定的挂上去</li>
-</ol>
-
-<p>以上安装问题在2018年11月15日 9:05基本解决，仅剩由于天地钩难挂开的一个孔等待快递到达！</p>
-
-<p></p> 
-		</div>
-	</div>
-	<hr/>
-	<footer  class="article-footer-meta-between">
-		<div>
-		 
-		 
-		  
-			<span >
-				<i class="fa fa-tags"></i> 
-				
-						<a href="https://yidaofei.com/tags/%e6%8c%87%e7%ba%b9%e9%94%81">指纹锁</a> &nbsp;&nbsp;
-	    		
-						<a href="https://yidaofei.com/tags/%e5%ae%89%e8%a3%85%e8%bf%90%e7%bb%b4">安装运维</a> &nbsp;&nbsp;
-	    		   
-    		</span> 
-    	
-		
-		</div> 
-		<div >
-			<a href="https://yidaofei.com/post/20181115-smartlock-install-lock-day-summary/" title="指纹锁安装日总结——流程/细节/选择重要" >阅读全文</a> 
-		</div>
-	</footer>
-</article>  
-
 
 </section>
 
@@ -733,10 +749,6 @@ if (!doNotTrack) {
 
 <div id="bottom-element" data-title="定位底部"></div>
 
-
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
 
 
 <link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.css">

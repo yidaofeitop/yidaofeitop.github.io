@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>为 Github 上的 Hugo 博客绑定个性域名</title>
-      <link>https://yidaofei.com/post/20181127-hugo-how-to-bind-blog-domain/</link>
+      <title>个人建站2-为 Github 上的 Hugo 博客绑定个性域名</title>
+      <link>https://yidaofei.com/post/20181127-build-website-how-to-bind-blog-domain/</link>
       <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181127-hugo-how-to-bind-blog-domain/</guid>
-      <description>&lt;p&gt;本文主要是记录在 Hugo 建站过程中关于域名的一些信息，如 Https 协议 VS http 协议、域名购买渠道、域名配置等信息！&lt;/p&gt;
+      <guid>https://yidaofei.com/post/20181127-build-website-how-to-bind-blog-domain/</guid>
+      <description>&lt;p&gt;本文主要是记录使用 Hugo 建站过程中关于域名的一些信息，如 Https 协议 VS http 协议、域名购买渠道、域名配置等信息！&lt;/p&gt;
 
 &lt;p&gt;关键点如下：&lt;/p&gt;
 

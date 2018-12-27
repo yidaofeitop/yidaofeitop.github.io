@@ -40,10 +40,21 @@ if (!doNotTrack) {
   
 
 
-  
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css">
 
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+
+<script type="text/javascript">
+	
+	markdownImageBeautify(".markdown","img","p","article-img",true); 
+	
+	$(".markdown").find("iframe").removeAttr("height").removeAttr("width").addClass('videoIframe');
+
+	
+</script>
 <body> 
  
 
@@ -109,14 +120,21 @@ if (!doNotTrack) {
   <div class="categories-card">
     <header class="text-center">
       <h4>域名</h4>
-    </header> 
+    </header>  
+     
+ 
 
-           
+     
+    
+    
+    
+    
+
       <ul class="article-list">
         
           <li>
             <time datetime="2018-11-25 00:00:00 &#43;0000 UTC">2018年11月25日</time>
-            <a href="https://yidaofei.com/post/20181127-hugo-how-to-bind-blog-domain/"> 为 Github 上的 Hugo 博客绑定个性域名</a> 
+            <a href="https://yidaofei.com/post/20181127-build-website-how-to-bind-blog-domain/"> 个人建站2-为 Github 上的 Hugo 博客绑定个性域名</a> 
           </li>  
        
       </ul>   
@@ -162,7 +180,7 @@ if (!doNotTrack) {
    
   <div class="copyright"  >
     Powered by &nbsp;<a href="https://gohugo.io/">Hugo</a>&nbsp;|&nbsp;
-    Theme-<a href="">Flybird</a>  
+    Theme-<a href="https://github.com/yidaofeicn/hugo-theme-flybird">Flybird</a>  
   </div>
   <div class="copyright"> Copyright© 2018 Transparent Thoughts. All rights reserved.</div> 
   <div class="copyright"> 
@@ -182,10 +200,6 @@ if (!doNotTrack) {
 
 
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
-
-
 <link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.css">
 <script type="text/javascript" src="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.js"></script>
  
@@ -196,6 +210,9 @@ if (!doNotTrack) {
 
 <link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.css"> 
 <script type="text/javascript" src="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">

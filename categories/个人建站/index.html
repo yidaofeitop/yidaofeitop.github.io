@@ -40,10 +40,21 @@ if (!doNotTrack) {
   
 
 
-  
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css">
 
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+
+<script type="text/javascript">
+	
+	markdownImageBeautify(".markdown","img","p","article-img",true); 
+	
+	$(".markdown").find("iframe").removeAttr("height").removeAttr("width").addClass('videoIframe');
+
+	
+</script>
 <body> 
  
 
@@ -123,7 +134,7 @@ if (!doNotTrack) {
         
           <li>
             <time datetime="2018-11-28 00:00:00 &#43;0000 UTC">2018年11月28日</time>
-            <a href="https://yidaofei.com/post/20181128-build-website-piwigo-guild/"> 个人建站-自建图床 Piwigo </a> 
+            <a href="https://yidaofei.com/post/20181128-build-website-piwigo-guild/"> 个人建站-组件-自建图床 Piwigo </a> 
           </li>  
         
           <li>
@@ -132,8 +143,13 @@ if (!doNotTrack) {
           </li>  
         
           <li>
+            <time datetime="2018-11-25 00:00:00 &#43;0000 UTC">2018年11月25日</time>
+            <a href="https://yidaofei.com/post/20181127-build-website-how-to-bind-blog-domain/"> 个人建站2-为 Github 上的 Hugo 博客绑定个性域名</a> 
+          </li>  
+        
+          <li>
             <time datetime="2018-11-19 00:00:00 &#43;0000 UTC">2018年11月19日</time>
-            <a href="https://yidaofei.com/post/20181119-build-website-hugo-algolia-search/"> 个人建站-Hugo 集成 Algolia 搜索</a> 
+            <a href="https://yidaofei.com/post/20181119-build-website-hugo-algolia-search/"> 个人建站3-Hugo 集成 Algolia 搜索</a> 
           </li>  
         
           <li>
@@ -143,12 +159,12 @@ if (!doNotTrack) {
         
           <li>
             <time datetime="2018-11-08 00:00:00 &#43;0000 UTC">2018年11月08日</time>
-            <a href="https://yidaofei.com/post/20181108-build-website-hugo-quick-start/"> 个人建站-Hugo 快速开始</a> 
+            <a href="https://yidaofei.com/post/20181108-build-website-hugo-quick-start/"> 个人建站1-Hugo 快速开始</a> 
           </li>  
         
           <li>
             <time datetime="2018-09-20 00:00:00 &#43;0000 UTC">2018年09月20日</time>
-            <a href="https://yidaofei.com/post/20180920-build-website-gitbook-guide/"> 个人建站——Gitbook 教程</a> 
+            <a href="https://yidaofei.com/post/20180920-build-website-gitbook-guide/"> 个人建站—Gitbook 教程</a> 
           </li>  
        
       </ul>   
@@ -212,10 +228,6 @@ if (!doNotTrack) {
 
 <div id="bottom-element" data-title="定位底部"></div>
 
-
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
 
 
 <link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.css">
