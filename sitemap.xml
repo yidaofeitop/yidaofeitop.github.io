@@ -4,11 +4,21 @@
   
   <url>
     <loc>https://yidaofei.com/wiki/</loc>
-    <lastmod>2018-11-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-27T18:10:48+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://yidaofei.com/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/drafts/20181227-xmind-hot-key/</loc>
+    <lastmod>2018-12-27T18:10:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/wiki/20181227-wiki-xmind-hot-key/</loc>
+    <lastmod>2018-12-27T18:10:48+08:00</lastmod>
   </url>
   
   <url>
@@ -334,7 +344,7 @@
   
   <url>
     <loc>https://yidaofei.com/</loc>
-    <lastmod>2018-12-23T18:58:13+08:00</lastmod>
+    <lastmod>2018-12-27T18:10:48+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -352,6 +362,12 @@
   
   <url>
     <loc>https://yidaofei.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/drafts/</loc>
+    <lastmod>2018-12-27T18:10:48+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -489,7 +505,7 @@
   
   <url>
     <loc>https://yidaofei.com/tags/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2018-11-06T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-27T18:10:48+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -579,7 +595,7 @@
   
   <url>
     <loc>https://yidaofei.com/categories/%E7%BB%B4%E5%9F%BA/</loc>
-    <lastmod>2018-11-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-27T18:10:48+08:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -10,6 +10,26 @@
     },
     {
         "draft": false,
+        "uri": "drafts/20181227-xmind-hot-key",
+        "content": "XMIND               XMind 8                                                                   Version Action  Time                     1 0 init 2018 12 27",
+        "objectID": "drafts/20181227-xmind-hot-key",
+        "type": "post",
+        "title": "Xmind 快捷键",
+        "date": "2018-12-27T10:10:48.000Z",
+        "Keywords": [
+            "xmind",
+            "快捷键"
+        ],
+        "tags": [
+            "工具"
+        ],
+        "categories": [
+            "维基"
+        ],
+        "toc": false
+    },
+    {
+        "draft": false,
         "uri": "post/20150620-financial-management-how-buy-insurance",
         "content": "smile                                                   xmind                                                                                                                                                                                                                                                                                         Of course                                                                                                                                                                                                                                                                               really                                                                                                 1             2                                                                                                                                                                                                                                                                                                                                                                                                                   3           C ross               4                                                5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       3 4                                                                                                                                                                                                                                                                                                                                                                                                         2016                                                                                                                       3                                                                                                                                                                                                                                                                                                                                                                                                          5   8                5 10                     20         80                                                                                                                        10                                                                         20   10   1 0 06  203 118                                                            Buy term invest difference                                                          30                                                                                                                              25                3                       3                  3                                         65   70                                                                                                                                     3                                                     A                      PK          e v s      A                            20181030                                        2018                                                e        e                                                                                                                                                                                   2 3                                                                                                                                                                                                                                                       C           e                                    2018 7 20                                          A B       e        e      2018 7 20                                            0 6                    e         e                      1 https   www zhihu com question 22316395  2 https   www zhihu com question 55738604  3 http   mp weixin qq com s _biz MzI4MjMyNjAwMA   mid 2247483729 idx 1 sn 1faea9ca50edab2f776db393011de7bb scene 21 wechatredirect  4 https   zhuanlan zhihu com p 23254798  5 https   zhuanlan zhihu com p 24195078  6 https   zhuanlan zhihu com p 21488112  7 https   www zhihu com",
         "objectID": "post/20150620-financial-management-how-buy-insurance",
@@ -1244,7 +1264,7 @@
     {
         "title": "Wiki",
         "uri": "wiki",
-        "content": "WIKI GFM                      xianmin             Git                           SASS",
+        "content": "WIKI GFM                      xianmin          Xmind 8         Git                           SASS",
         "objectID": "wiki",
         "date": "",
         "layout": "wiki",
@@ -1310,5 +1330,24 @@
         "categories": [
             "维基"
         ]
+    },
+    {
+        "draft": false,
+        "uri": "wiki/20181227-wiki-xmind-hot-key",
+        "content": "XMIND               XMind 8        Windows     Mac                                  Ctrl N  command N            Shift command N  Shift command N              Ctrl T  Command T          Ctrl Alt T  option command T               Ctrl Alt N  option command N             Ctrl W  command W             Ctrl Shift W  command Shift W              Ctrl P  command P        Ctrl S  command S        Ctrl Shift S  command Shift S          Ctrl O  command O            Shift Ctrl C  Shift command C     XMIND        Alt Ctrl S  option Ctrl S                 Ctrl I  Command I          Ctrl B  Command B          Ctrl L  Command L          Ctrl    Command            Alt Enter  option Enter          Ctrl Shift H  Command Shift H           Ctrl 1 2 3 4 5 6  Command 1 2 3 4 5 6                Ctrl Enter  Command Enter               Tab  Tab           Enter  Enter          Shift Enter  Shift Enter                        Ctrl C  command C        Ctrl X  command X        Ctrl V  command V        Delete  Delete        Ctrl Z  command Z        Ctrl Shift z  command Shift z        Ctrl A  Command A            Ctrl F  Command F           Ctrl     Command           Ctrl Shift A  Command Shift A             Ctrl Alt A  Command Alt A           Ctrl Home  Command Home                    F2  Fn F2          F3  Fn F3             F4  Fn F4                Shift                                   Shift                                alt    option              alt    option                      Ctrl    Command          Ctrl    Command          Ctrl 0  Command 0            Shift F6  Shift F6        F6  F6        Ctrl F6  command F6                Ctrl Shift F6  command Shift F6                Ctrl F10  command F10          Shift command F10  Shift command F10                Shift command F10          F8  Fn F8            F5  Fn F5                  F7  F7        Ctrl Shift L  Command Shift L                Version Action  Time                     1 0 init 2018 12 27",
+        "objectID": "wiki/20181227-wiki-xmind-hot-key",
+        "title": "「Xmind 8」快捷键",
+        "date": "2018-12-27T10:10:48.000Z",
+        "Keywords": [
+            "xmind",
+            "快捷键"
+        ],
+        "tags": [
+            "工具"
+        ],
+        "categories": [
+            "维基"
+        ],
+        "toc": false
     }
 ]
