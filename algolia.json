@@ -1303,6 +1303,25 @@
         ]
     },
     {
+        "draft": false,
+        "uri": "post/20190108-smarthome-feature-and-present-situation",
+        "content": "485                                                                                                                     485                             WIFI 433 Zigbee NB IOT Lora                                                                                                                                                                                                                                                                          8 00                                                                                                                                                                        2018                                                                                                                                                                                                                                                                                                                                                                                                                                        2017                             2017   2018 3                                              2018 3                                                                                                                                                                                                                                                                           smile                                                                                                        Version Action  Time                     1 0 init 2019 01 08",
+        "objectID": "post/20190108-smarthome-feature-and-present-situation",
+        "title": "20190108 智能家居初级篇-特性与现状",
+        "date": "2019-01-08T03:16:12.000Z",
+        "type": "post",
+        "Keywords": [
+            "智能家居",
+            "485"
+        ],
+        "categories": [
+            "智能家居"
+        ],
+        "tags": [
+            "智能家居"
+        ]
+    },
+    {
         "title": "Wiki",
         "uri": "wiki",
         "content": "WIKI GFM                      xianmin          Xmind 8         Git                           SASS",

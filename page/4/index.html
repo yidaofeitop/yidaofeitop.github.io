@@ -116,6 +116,62 @@ if (!doNotTrack) {
 
    <article class="article-card">
 	<header class="article-header">  
+		<a href="https://yidaofei.com/post/20181119-build-website-hugo-algolia-search/" title="个人建站3-Hugo 集成 Algolia 搜索" class="article-title" >
+			<h4 >个人建站3-Hugo 集成 Algolia 搜索</h4>
+		</a>
+		<div class="article-meta"> 
+			<time datetime="2018-11-19">
+				<i class="fa fa-calendar">&nbsp;2018年11月19日</i>
+			</time> 
+			<span><i class="fa fa-pencil">&nbsp;1433 word</i></span>
+			<span><i class="fa fa-hourglass-start">&nbsp;3 min read</i></span>
+		</div> 
+	</header> 
+		
+	<div>   
+		 
+		<div class="markdown">
+		 	<p>Algolia 是为你的 APP 或者网站添加搜索的最佳方式。 开发人员可以使用 API 上传并同步希望搜索的数据，
+然后可以进行相关的配置，比如产品转化率等等。可以使用 InstantSearch 等前端框架进行自定义搜索，为
+用户创造最佳的搜索体验</p>
+
+<p>本文主要参考<a href="https://www.qikqiak.com/post/hugo-integrated-algolia-search/" title="Hugo 集成 Algolia 搜索">Hugo 集成 Algolia 搜索</a></p>
+
+<p>前半部分关于 Algolia 官网操作细节请大家直接访问上面的参考文章，本文主要是针对性补充相关的元素：</p>
+
+<ol>
+<li>增加关于配合 JS：<a href="https://github.com/algolia/autocomplete.js/">autocomplete.js</a> 相关说明</li>
+<li>“ ADMIN API Key”等可动态配置</li>
+</ol>
+
+<p></p> 
+		</div>
+	</div>
+	<hr/>
+	<footer  class="article-footer-meta-between">
+		<div>
+		 
+		 
+		  
+			<span >
+				<i class="fa fa-tags"></i> 
+				
+						<a href="https://yidaofei.com/tags/%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e5%bb%ba%e7%ab%99">个人博客建站</a> &nbsp;&nbsp;
+	    		
+						<a href="https://yidaofei.com/tags/hugo">Hugo</a> &nbsp;&nbsp;
+	    		   
+    		</span> 
+    	
+		
+		</div> 
+		<div >
+			<a href="https://yidaofei.com/post/20181119-build-website-hugo-algolia-search/" title="个人建站3-Hugo 集成 Algolia 搜索" >阅读全文</a> 
+		</div>
+	</footer>
+</article>  
+
+   <article class="article-card">
+	<header class="article-header">  
 		<a href="https://yidaofei.com/post/20181118-smartlock-how-to-select-a-good-smartlock/" title="如何挑选一款适合自己的指纹锁" class="article-title" >
 			<h4 >如何挑选一款适合自己的指纹锁</h4>
 		</a>
@@ -639,70 +695,6 @@ HTML区段标签和区块标签不同，在区段标签的范围內，Markdown�
 		</div> 
 		<div >
 			<a href="https://yidaofei.com/post/20181110-software-skills-markdown-github-flavored-markdown/" title="Markdown 语言教程——GFM" >阅读全文</a> 
-		</div>
-	</footer>
-</article>  
-
-   <article class="article-card">
-	<header class="article-header">  
-		<a href="https://yidaofei.com/post/201811-todo-hugo/" title="201811 Hugo Todo" class="article-title" >
-			<h4 >201811 Hugo Todo</h4>
-		</a>
-		<div class="article-meta"> 
-			<time datetime="2018-11-09">
-				<i class="fa fa-calendar">&nbsp;2018年11月09日</i>
-			</time> 
-			<span><i class="fa fa-pencil">&nbsp;1771 word</i></span>
-			<span><i class="fa fa-hourglass-start">&nbsp;4 min read</i></span>
-		</div> 
-	</header> 
-		
-	<div>   
-		 
-		<div class="markdown">
-		 	<p>本文主要是记录自了解 Hugo 个人建站后真正开始动手使用 Hugo 的相关体验、todo、优化记录！</p>
-
-<p>在自定义 Hugo 过程中主要参考以下文档，非常感谢这些作者的付出（相关的评论无任何的偏见，仅是阅读的一些体验）</p>
-
-<h3 id="关于参考文档推荐">关于参考文档推荐</h3>
-
-<ol>
-<li><p>Hugo 从入门到会用 <a href="https://blog.olowolo.com/post/hugo-quick-start/">https://blog.olowolo.com/post/hugo-quick-start/</a><br />
-基础使用，了解基本运转原理，不涉及任何的开发</p></li>
-
-<li><p>@github-heartnn Hugo 基础知识：<a href="https://github.com/heartnn/hugo-theme-test">https://github.com/heartnn/hugo-theme-test</a><br />
-同上，主要关注点在于通用函数（通用函数建议在看以下第二点推荐之后）</p></li>
-
-<li><p>pytool：<a href="http://blog.pytool.com/tags/hugo/">http://blog.pytool.com/tags/hugo/</a><br />
-相对来说很容易对于 Hugo 相关开发建立基本的认知，推荐看《Hugo 模板template》、《hugo 模板变量》、《个人博客hugo Taxonomy》，看完以上文章对于模板有基础的
-了解就基本可以看懂主题内的 HTML 文档</p></li>
-
-<li><p>官方文档：<a href="https://gohugo.io/">https://gohugo.io/</a><br />
-最全，最详细的，可协同 <a href="http://www.g-var.com/tags/hugo/">http://www.g-var.com/tags/hugo/</a> 阅读</p></li>
-</ol>
-
-<p></p> 
-		</div>
-	</div>
-	<hr/>
-	<footer  class="article-footer-meta-between">
-		<div>
-		 
-		 
-		  
-			<span >
-				<i class="fa fa-tags"></i> 
-				
-						<a href="https://yidaofei.com/tags/%e4%b8%aa%e4%ba%ba%e5%bb%ba%e7%ab%99">个人建站</a> &nbsp;&nbsp;
-	    		
-						<a href="https://yidaofei.com/tags/hugo">hugo</a> &nbsp;&nbsp;
-	    		   
-    		</span> 
-    	
-		
-		</div> 
-		<div >
-			<a href="https://yidaofei.com/post/201811-todo-hugo/" title="201811 Hugo Todo" >阅读全文</a> 
 		</div>
 	</footer>
 </article>  
