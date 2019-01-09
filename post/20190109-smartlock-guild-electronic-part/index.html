@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <meta charset="UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" >
+
+  
+  
+    
+    <meta charset="utf-8" name="keywords" content="指纹锁,智能锁,电路板,指纹头,电池仓," > 
+  
+   
+  <meta charset="utf-8" name="description" content="本章节主要分解智能锁电子部分，相关内容如下：
+
+
+线路板：走线、工艺
+指纹头：种类
+联网模块
+电池仓
+
+
+首先必须说明的是本人非嵌入式工程师出身，加上此类资料积累非常少，所以本文谈及的内容基本上以表面知识为主，如有错误遗漏欢迎大家指正修改！
+
+" >
+  
+  
+  
+    
+        <link rel="icon" type="image/png" href="https://yidaofei.com//image/favicon-32x32.png" > 
+    
+  
+  
+  
+  
+  <title>认识智能锁 chapter 1-电子部分- 易道非 Blog</title>  
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-126184892-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+
+  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+<body> 
+ 
+
+ 
+<div id="top-element" data-title="到达顶点"></div>
+  
+<header class="site-header fixed-top">
+  <div class="container">
+    <nav id="navigation">  
+      <a href="https://yidaofei.com/" class="site-title">
+        
+        <img title="site-logo" class="site-logo" src="https://yidaofei.com//image/logo.png" >
+           
+         易道非 Blog 
+      </a> 
+      <a aria-label="mobile menu" class="nav-toggle" id="site-nav-toggle"> 
+        <span></span> <span></span> <span></span> 
+      </a>
+      <ul class="menu-left">
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/categories/">Categories</a></li>
+        
+          <li><a href="/tags">Tags</a></li>
+        
+          <li><a href="/wiki">Wiki</a></li>
+        
+          <li><a href="/about">About</a></li>
+        
+
+        
+          <li><a data-remodal-target="searchinput">search</a></li>
+           
+      </ul>
+    </nav>
+  </div>
+</header> 
+
+
+
+<div class="remodal" data-remodal-id="searchinput" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> 
+  <span id="algoliaData" style="display:none;" data-appid="NYC6MHRISW" 
+		data-searchkey="7f131a263a8820645ee9fc65ed97b22f" 
+		data-initindex="github-yidaofeicnBlog"></span>
+
+<div class="search-input-card" >
+    <input type="search" id="search-input" class="search-input" placeholder="Search for titles or URIs..." name="search" autocomplete="off" />
+     <span class="input-search-icon"><i class="fa fa-search"></i></span> 
+</div>
+
+ 
+
+  
+</div>
+
+  
+
+
+
+<section class="main-content-container">
+<article class="article-card">
+	<header class="article-header"> 
+	   <p class="article-title">认识智能锁 chapter 1-电子部分</p>
+   		<div class="article-meta">
+			
+			<div><i class="fa fa-calendar" >2019年01月09日</i> </div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://yidaofei.com/categories/%e6%8c%87%e7%ba%b9%e9%94%81">指纹锁</a> 
+				   
+				</i>  
+			</div> 
+		</div>  
+	</header>  
+	<content class="markdown">
+		<p>本章节主要分解智能锁电子部分，相关内容如下：</p>
+
+<ol>
+<li>线路板：走线、工艺</li>
+<li>指纹头：种类</li>
+<li>联网模块</li>
+<li>电池仓</li>
+</ol>
+
+<p>首先必须说明的是本人<strong>非嵌入式工程师出身</strong>，加上此类资料积累非常少，所以本文谈及的内容基本上以表面知识为主，如有错误遗漏欢迎大家指正修改！</p>
+
+<p></p>
+
+<h3 id="线路板">线路板</h3>
+
+<p>智能锁最为核心的3大部件之一，他就是智能锁「本地端信息中心」，主要的功能如下：</p>
+
+<ol>
+<li>为相关的用户建立相关的特征信息（指纹、密码、刷卡）</li>
+<li>确认相关的输入信号（指纹、密码、刷卡、远程开锁信息等），确认正确后通知「离合结构」执行相关动作</li>
+<li>……</li>
+</ol>
+
+<p>本部分主要讲解2个表层次的内容：布线与工艺</p>
+
+<h4 id="线路板布线技巧">线路板布线技巧</h4>
+
+<p>线路板布线是智能锁生产流程中比较重要的一个点，他需要考虑的因素有：走线是否美观、走线是否有可能会
+被其他的部件磨损……</p>
+
+<p>具体到设计基本就3个问题：</p>
+
+<ol>
+<li>线路板接口端子位置与朝向</li>
+<li>线长是否恰当（需要与结构设计师确认）</li>
+<li>结构设计是否留有走线槽/空间</li>
+</ol>
+
+<p>后两者相对来说非常容易理解所以本段主要以<strong>第1个问题</strong>展开说明！</p>
+
+<p>首先来看一份线路板图：</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201901/smartlock-circuit-board.png" alt="线路板布线图" /></p>
+
+<p>不知道大家看到以上三幅图是怎样的感觉？</p>
+
+<ul>
+<li>第一幅图 所有的接口端子在朝上
+
+<ul>
+<li>好处：生产人员能够快速操作</li>
+<li>坏处：必须考虑线路板装配完成后整体高度不能超过智能锁外壳内部的高度，否则会出现封板压相关线材，可能会
+导致出现相关的问题；走线美观度差</li>
+</ul></li>
+<li>第二幅图 部分接口端子在朝内
+如果要评价3张图哪张的布线最差就是这副，端口朝内会出现以下问题：
+
+<ul>
+<li>生产人员操作麻烦</li>
+<li>后续一旦上线模块化外壳必须将端口重新调整测试批量生产</li>
+</ul></li>
+<li>第三幅图 所有端口集中且朝下
+
+<ul>
+<li>坏处就是太过集中，生产人员操作过程中极有可能将端口插错</li>
+</ul></li>
+</ul>
+
+<p>在我看来最贴合实际的是：第二幅图修正版（将端口插入方向调整向外），主要原因是：</p>
+
+<ol>
+<li>智能锁走向是越来越往轻薄方向走，这就意味所有部件的高度必须最大化的压低</li>
+<li>智能锁线路板厂商为了快速生产提出「模块化线路板」概念，如端口朝上则会出现以上问题：
+
+<ul>
+<li>所有的与其他模块连结的线材就从模块化塑胶件顶部出线，增加相关的线材从向上转到向左或右的固定步骤</li>
+<li>整体美观度差到极致</li>
+</ul></li>
+</ol>
+
+<h4 id="线路板生产工艺">线路板生产工艺</h4>
+
+<p>线路板生产流程一般如下所示：</p>
+
+<ol>
+<li>前期工作：Flash 芯片刷入智能锁嵌入式操作</li>
+<li>SMT 贴片：主要电子元器件贴片，如 MCU 芯片、Flash 芯片等</li>
+<li>功耗测试：备用电源接口 Micro-USB 供电，功耗测试表测量静态电流，看是否功耗过高，</li>
+<li>后焊工作：主要是焊接显示屏、前后连接线工作</li>
+<li>基础功能测试： 指纹、密码、卡等常用输入端测试（后续智能锁成品生产过程会再次整体测试）！</li>
+<li>刷3防漆：</li>
+<li>模块化组装：线路板支架、亚克力面板等</li>
+</ol>
+
+<p>此步骤如线路板方案经过小批量验证测试以及贴片采用靠谱的工厂可以将<strong>「步骤3」与「步骤5」合并</strong>！</p>
+
+<h3 id="指纹头">指纹头</h3>
+
+<p>行内使用的指纹头应该有3种：光学、半导体、指静脉，另外半导体在形态上又可以分解为电容式与擦刮式，其外观形式如下：</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201811/fingerprint-chip.png" alt="指纹头分类" /></p>
+
+<p>其相关的优缺点如下：</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">类型</th>
+<th align="left">优点</th>
+<th align="left">缺点</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">光学</td>
+<td align="left">成熟稳定、耐用、性价比高</td>
+<td align="left">识别不够灵敏，准确率较低、不防假指纹</td>
+</tr>
+
+<tr>
+<td align="left">半导体</td>
+<td align="left">识别准确，灵敏度高、超薄</td>
+<td align="left">耐磨度不够、怕静电、价格稍贵</td>
+</tr>
+
+<tr>
+<td align="left">指静脉</td>
+<td align="left">全能手+活体检测</td>
+<td align="left">非常贵</td>
+</tr>
+</tbody>
+</table>
+
+<p>扩展阅读：<a href="https://www.leiphone.com/news/201702/XvMk0m6XxxooLzoI.html">指纹传感器和假指纹攻防技术 | 硬创公开课</a></p>
+
+<h3 id="联网模块">联网模块</h3>
+
+<p>市面上越来越多的智能锁增加 APP 远程控制的功能，这个功能的核心部件是哪个呢？那就是「联网模块」！</p>
+
+<p>截止目前为止智能锁领域的联网模块大致可以分为以下类型：</p>
+
+<ol>
+<li>Zigbee 联网模块：</li>
+<li>433 联网模块：一般可能配有单个门铃或可视门铃类</li>
+<li>WIFI 联网模块</li>
+<li>蓝牙 联网模块</li>
+<li>NB-IOT 联网模块</li>
+</ol>
+
+<p>关于以上模块大家知晓即可，以上模块是针对产品定位的不同而采用的不同模块，有些常见厂家可能会综合使用，
+比如小米的「鹿客」</p>
+
+<ol>
+<li>蓝牙配合手机 APP 配置指纹等信息</li>
+<li>WIFI 上传使用信息，如几点几分哪位开门</li>
+<li>对码程序负责管理临时密码（算法计算，不依赖网络）</li>
+</ol>
+
+<p>扩展阅读：<a href="https://yidaofei.com/post/20181127-network-iot-communication-technology/">各大物联网通信技术对比</a></p>
+
+<h3 id="电池仓">电池仓</h3>
+
+<p>电池仓是智能锁电路部分非常小的部分，一般都是外采，但是我看过有很多的厂家在这一块犯下不少的错误，
+典型的如下：</p>
+
+<ol>
+<li>结构设计没有参考外壳设计相关的孔位，导致采购产品与实际有比较大的差异，出现松垮等情况</li>
+<li>采购未注意电池仓的走线是否合理？是否采用热缩管等进行处理</li>
+<li>采购未装样测试，导致在实际使用环境中出现用力关门等由于空隙较大电池弹出无法开门情况等</li>
+<li>……</li>
+</ol>
+
+<p>关于间隙比较明显的问题不在此多说，本段主要说明电池仓的细节问题，请看下图：</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201901/battery-case.png" alt="电池仓细节考虑-1" /></p>
+
+<ul>
+<li>上图中的「1号点」如没有密封，采用开口结构，极易出现取电池时会带动相关的正负极，导致产品体验感极差</li>
+<li>上图中的「2号点」如不采用热缩管处理，就会出现金属线材与外壳直接接触漏电，电池发热、1-2天之内直接全部用完<br />
+类似「2号点」的还有正负极固定部分过高与外壳直接接触等</li>
+</ul>
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Version</th>
+<th align="center">Action</th>
+<th align="center">Time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1.0</td>
+<td align="center">init</td>
+<td align="center">2019-01-09</td>
+</tr>
+</tbody>
+</table>
+			  
+		
+		
+			<div class="article-copyright">
+			  	<ul>
+			  		<li><strong>本文作者：</strong>易道非</li>
+			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20190109-smartlock-guild-electronic-part/</li>
+			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
+			  	</ul>
+			</div>
+		 
+	</content>  
+ 	<hr/>
+ 	
+	<div class="article-footer-meta-between"> 
+		 
+		<div>
+			<i class="fa fa-tags">&nbsp;Tags:
+			
+				<a href="https://yidaofei.com/tags/%e6%8c%87%e7%ba%b9%e9%94%81">指纹锁</a>
+    		
+    		</i>   
+		</div> 
+		 
+		<div id="i-share" class="btn btn-default  share-widget">
+		    <i class="fa fa-share-alt"></i>
+		</div> 
+	</div>
+	<hr/>
+	<div class="article-footer-meta-between"> 
+		<div class="refArticle-prev" >
+			  
+		    <a href="https://yidaofei.com/post/20190109-smartlock-guild-foreword/">
+		    	<i class="fa fa-angle-double-left"></i>&nbsp;认识智能锁 chapter 0-前言  
+		    </a> 
+			
+		</div>
+		 <div class="refArticle-next" >
+		  
+		  	<a href="https://yidaofei.com/post/20190109-smartlock-guild-clutch-structure/">认识智能锁 chapter 2-离合结构/核心工作原理&nbsp;
+		  		<i class="fa fa-angle-double-right"></i>
+		  	</a> 
+		 
+	    </div>
+	</div>  
+</article> 
+</section>
+ 
+
+  
+ 
+<div class="main-content-container " >
+<div class="comment-card"> 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeicn/comment-utterances-blog-yidaofeicn"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+</div>
+</div>
+
+ 
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+	
+	
+	<span id="tocLevel" data-startLevel="" data-endLevel=""></span>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#线路板">线路板</a>
+<ul>
+<li><a href="#线路板布线技巧">线路板布线技巧</a></li>
+<li><a href="#线路板生产工艺">线路板生产工艺</a></li>
+</ul></li>
+<li><a href="#指纹头">指纹头</a></li>
+<li><a href="#联网模块">联网模块</a></li>
+<li><a href="#电池仓">电池仓</a></li>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
+<footer class="site-footer text-center">
+  <div class="social" > 
+     
+          <a href=" mailto:yidaofeicn@gmail.com "><i class="fa fa-envelope-open-o"></i></span></a>
+      
+       
+          <a href=" https://github.com/yidaofeicn "  ><i class="fa fa-github"></i></span></a>
+      
+    
+      
+                <a href="https://yidaofei.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml" target="_blank"> <i class="fa fa-rss"></i>
+                </a>
+          </div>
+   
+  <div class="copyright"  >
+    Powered by &nbsp;<a href="https://gohugo.io/">Hugo</a>&nbsp;|&nbsp;
+    Theme-<a href="https://github.com/yidaofeicn/hugo-theme-flybird">Flybird</a>  
+  </div>
+  <div class="copyright"> Copyright© 2018 Transparent Thoughts. All rights reserved.</div> 
+  <div class="copyright"> 
+
+      
+    
+      <span id="busuanzi_container">
+        访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+</footer>
+
+ 
+
+<div id="bottom-element" data-title="定位底部"></div>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.css">
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.js"></script>
+ 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.30.0/algoliasearch.jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.32.0/autocomplete.jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/algoliasearch/algolia-autocomplete.css">
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.css"> 
+<script type="text/javascript" src="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.css">
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/prismjs/prism.css">
+
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/prismjs/prism.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js"></script>
+
+<script type="text/javascript" color="#1D1D1D" opacity='1' zIndex="-2" count="400" src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.3/canvas-nest.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+<span id="isPage" data-isPage="true" style="display: none;"></span>
+
+
+ 
+
+<script type="text/javascript" src="https://yidaofei.com//js/flybird.js"></script> 
+<script type="text/javascript" src="https://yidaofei.com//js/main.js"></script> 
+  
+ 
+</style>
+</body>
+</html>
+
+
+ 

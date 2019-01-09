@@ -11,18 +11,26 @@
   
   
     
-    <meta charset="utf-8" name="keywords" content="智能家居,485," > 
+    <meta charset="utf-8" name="keywords" content="指纹锁,智能锁,离合结构,工作原理," > 
   
    
-  <meta charset="utf-8" name="description" content="本文主要是回答如智能家居是一个空壳子吗？到底有没有前景？等类似
-对于智能家居没有任何了解的知友。
-
-以下内容主要来自本人在智能锁行业中接触的智能家居知识为脉络查阅部分资料整理而成，可能有部分的遗漏与错误，欢迎大家讨论修正！
+  <meta charset="utf-8" name="description" content="本章节主要分解智能锁离合结构，理解智能锁的核心的工作原理，相关内容如下：
 
 
-智能家居特性
-智能家居现状
+半自动指纹锁-离合结构
+全自动指纹锁-全自动锁芯结构
+全自动指纹锁-全自动锁体结构
 
+
+首先简单介绍一下各自的工作原理：
+
+
+半自动指纹锁-离合结构：电机向上或向下动作&mdash;&gt;离合的销子向上或向下动作&mdash;&gt;把手与离合结合/分离&mdash;&gt;锁体动作（电子锁体方式类似）
+全自动指纹锁-全自动锁芯结构：电机与顺时针/逆时针转动&mdash;&gt;全自动锁芯顺时针/逆时针转动&mdash;&gt;锁体动作
+全自动指纹锁-全自动锁体结构：当关门时，锁舌被压下，电子开关打开，电机转动，带动变速器，变速器带动推拉杆，主锁舌推出，反之开门
+
+
+下面将依次展开详细解答：
 
 " >
   
@@ -35,7 +43,7 @@
   
   
   
-  <title>20190108 智能家居初级篇-特性与现状- 易道非 Blog</title>  
+  <title>认识智能锁 chapter 2-离合结构/核心工作原理- 易道非 Blog</title>  
   
   
     
@@ -122,10 +130,10 @@ if (!doNotTrack) {
 <section class="main-content-container">
 <article class="article-card">
 	<header class="article-header"> 
-	   <p class="article-title">20190108 智能家居初级篇-特性与现状</p>
+	   <p class="article-title">认识智能锁 chapter 2-离合结构/核心工作原理</p>
    		<div class="article-meta">
 			
-			<div><i class="fa fa-calendar" >2019年01月08日</i> </div>
+			<div><i class="fa fa-calendar" >2019年01月09日</i> </div>
 			  
 
 			 
@@ -138,89 +146,100 @@ if (!doNotTrack) {
 			<div>
 				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
 				
-					<a href="https://yidaofei.com/categories/%e6%99%ba%e8%83%bd%e5%ae%b6%e5%b1%85">智能家居</a> 
+					<a href="https://yidaofei.com/categories/%e6%8c%87%e7%ba%b9%e9%94%81">指纹锁</a> 
 				   
 				</i>  
 			</div> 
 		</div>  
 	</header>  
 	<content class="markdown">
-		<p>本文主要是回答如<a href="https://www.zhihu.com/question/308289162">智能家居是一个空壳子吗？到底有没有前景？</a>等类似
-对于智能家居没有任何了解的知友。</p>
-
-<p>以下内容主要来自本人在智能锁行业中接触的智能家居知识为脉络查阅部分资料整理而成，可能有部分的遗漏与错误，欢迎大家讨论修正！</p>
+		<p>本章节主要分解智能锁离合结构，理解<strong>智能锁的核心的工作原理</strong>，相关内容如下：</p>
 
 <ol>
-<li>智能家居特性</li>
-<li>智能家居现状</li>
+<li>半自动指纹锁-离合结构</li>
+<li>全自动指纹锁-全自动锁芯结构</li>
+<li>全自动指纹锁-全自动锁体结构</li>
 </ol>
+
+<p>首先简单介绍一下各自的工作原理：</p>
+
+<ol>
+<li>半自动指纹锁-离合结构：电机向上或向下动作&mdash;&gt;离合的销子向上或向下动作&mdash;&gt;把手与离合结合/分离&mdash;&gt;锁体动作（电子锁体方式类似）</li>
+<li>全自动指纹锁-<strong>全自动锁芯结构</strong>：电机与顺时针/逆时针转动&mdash;&gt;全自动锁芯顺时针/逆时针转动&mdash;&gt;锁体动作</li>
+<li>全自动指纹锁-<strong>全自动锁体结构</strong>：当关门时，锁舌被压下，电子开关打开，电机转动，带动变速器，变速器带动推拉杆，主锁舌推出，反之开门</li>
+</ol>
+
+<p>下面将依次展开详细解答：</p>
 
 <p></p>
 
-<h3 id="智能家居特性">智能家居特性</h3>
+<h3 id="半自动指纹锁">半自动指纹锁</h3>
 
-<p>不知道大家是否有了解过「485布线」或「干节点布线」的控制系统，其实智能家居可以看作在此基础之上的一个比较大的扩展，下面就从传统的智能控制系统以及
-个人后期的展望来谈谈智能家居的主要特性：</p>
+<p>半自动指纹锁按照锁体的不同进而可以分为 <strong>半自动机械锁体指纹锁</strong>与 <strong>半自动电子锁体指纹锁</strong>，两者从根本上来说是一致的，无非就是
+<strong>将指纹锁面板的电机与离合部分整合放入机械锁体！</strong></p>
+
+<p>由于半自动机械锁体指纹锁的电机离合结构相对而言比较容易拆解观察，所以本部分主要以此展开讲解！</p>
+
+<h4 id="工作流程">工作流程</h4>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201810/smartlock-work-flowchart.jpg" alt="指纹锁工作流程" /></p>
+
+<p>以上涉及两个概念：</p>
 
 <ol>
-<li>通信方式的转变带来的安装、产品成本下降<br />
-原来的智能化控制系统一般是采用如「485布线」等的布线方式控制，后随着无线技术的发展衍生出「蓝牙、WIFI、433、Zigbee、NB-IOT、Lora」
-等不同通信协议的智能家居产品，这些无线技术的运用成功的将工程师从繁杂的布线解脱出来，大大的降低了智能设备安装难度，这个可以从
-现在的布线方式的控制系统的产品体系与智能家居的产品体系基本以开关控制类为主可以看出来，两者在产品上基本一脉相承的！</li>
-<li>软件层面的革新带来的极致体验<br />
-
-<ul>
-<li>懒人模式<br />
-相比原来的 <strong>触摸式/遥控式的简单组合控制方式</strong>，智能家居能够在软件层面将所有的设备自由组合与设置，这个功能可以做到高效调试设备，
-但是最大功能做到就像有些答主说的「懒人模式」，比较典型的「懒人模式」如下：
-
-<ul>
-<li>情景模式-下班回家：智能家居系统可以预设晚8：00到家，提前打开空调将房间温度调整到比较适宜的温度、空气净化器自动开始运行……</li>
-<li>情景模式-开门开主灯：智能家居系统可以预设你回家用指纹等电子方式开锁，廊灯即打开，没必要去找钥匙以及手动去打开廊灯</li>
-</ul></li>
-<li>随时掌控家中情况<br />
-此处体现在信息互通，典型的情况如：远程通过摄像头查看家庭情况，小孩是否在看电视；煤气是否泄露……</li>
-</ul></li>
-<li>后续高度集成的数据化中心<br />
-2018年深圳高交会不知道大家的感觉是怎样的，给我的感觉是后互联网时代就是 <strong>数据平台+功能平台</strong>，现在的智能家居基本上都搭建有数据中心，后续随着越来越多的
-与人身体等情况的交互的传感器的增加必定会在这方面形成精确 <strong>「人的身体情况画像」</strong></li>
+<li>空转状态：即锁门状态，在此情况下下压把手是空转的，无法将门锁打开</li>
+<li>同步状态：即开门状态，在这种状态下，下压把手时可同步转动锁体的开锁结构，将锁舌收回，进而将锁打开。</li>
 </ol>
 
-<h3 id="智能家居现状">智能家居现状</h3>
+<h4 id="电机与离合结合">电机与离合结合</h4>
 
-<p>非常赞同 <a href="https://www.zhihu.com/question/308289162/answer/568959352">@地球大战</a> 的回答！引用部分结论如下：</p>
+<p>结构图如下所示：</p>
 
-<blockquote>
-<p>就目前来讲，智能家居还没有摆脱“控制家居”的特征，离真正的智能家居还有一段距离要走，这些不管政策也好，解读也好，
-这是当前这个产业发展的事实，就是处于 <strong>发展的前期，甚至是储备的前期，远远没到爆发期</strong>。这是初步判断！</p>
+<p><img src="https://piwigo.yidaofei.com/galleries/201810/smartlock-801-clutch-part2.jpg" alt="801离合内部结构图2" /></p>
 
-<p>如果题主是生产企业，那么建议从单品切入，千万不要贸然进入系统行业，那不是谁都能玩得转的，强如阿里，腾讯，京东，
-华为之流也不过如此。如果是经销商，更不要贸然进入系统市场，因为市场培育期是最辛苦的，非常容易就死在黎明前，经销商
-可以切入智能单品销售，慢慢积累客户和产品经验，等待成熟！</p>
-</blockquote>
+<p>以上图803离合结构设计来讲解指纹锁电机与离合是如何配合工作实现开锁上锁的功能——实质上主要是如何在两种状态切换</p>
 
-<p>我的看法的是智能家居在一定程度上可以类比智能锁的发展：</p>
+<p>1.空转状态与同步状态的切换主要依靠的是 <strong>离合销</strong>，此部件的插入与退出就是控制状态转换的关键</p>
 
 <ul>
-<li>2017年前：智能锁潜伏期，主要耕耘在高端的酒店、别墅等工装领域</li>
-<li>2017年初-2018年3月：智能锁高速发展期，资本大量流入，供应链厂家爆发式增长、半导体识别技术、人脸识别技术……</li>
-<li>2018年3月-：智能锁稳定期，经过前面的智能锁高速发展期，大部分城市的主要渠道商全面扩展完成，指纹锁供应链及相关技术基本完成构建，
-大家逐步的将精力放入如何优化产品以及深挖渠道</li>
+<li>此销子上行则让 <strong>把手固部分与方刚套结合成一个整体</strong>，把手转动则带动方钢套转动，从而带动方钢锁体动作</li>
+<li>此销子下行则 <strong>把手固定部分与方钢套分离</strong>，方钢套只能依靠本身卡位在一个方向动作上锁</li>
 </ul>
 
-<p>智能家居现阶段对应的是潜伏期</p>
+<p>相关视频视频：</p>
+
+<iframe height=498 width=510 src='http://player.youku.com/embed/XMzMwODI4ODY4OA==' frameborder=0 'allowfullscreen'></iframe>
+ 
+
+<p>2.控制离合销的插入与退出的是由电机控制的螺旋杆上的摆丝。摆丝夹在螺旋杆上，螺旋杆由电机带动着产生正反两个方向的转动，这样就会带动摆丝向两个不同的方向产生移动，而摆丝的另一端连接着用来推动小棒的半弧形推臂。</p>
 
 <ul>
-<li>基础技术已经完成，但是体验感未能达到随心所欲的语音控制，需要有突破性的软件控制方案</li>
-<li>智能家居的概念未深入人心，主要原因未能真正的切入终端客户的痛点，现在智能家居系统主要的终端客户以工装与别墅为主</li>
+<li>当电机正转时，摆丝的移动将推臂向前推进，将离合销插入两个部件就会同步转动了。</li>
+<li>当需要拨出时，只要电机反转，就会使弧形的推臂缩回，而离合销上有回位弹簧，离合销就会被回位弹簧拉回原来的位置。使两个轴不再同步转动。</li>
 </ul>
 
-<p>所以正如<a href="https://www.zhihu.com/question/308289162/answer/568959352">@地球大战</a> 所说建议大家从智能化单品开始，比如说最为典型的
-智能锁以及安防摄像头……，最简单的方法是看 <strong>「小米」出什么智能化单品</strong> 😄</p>
+<p>扩展阅读：</p>
 
-<p>不要去听厂家说的多好听，贸然的进入智能家居系统，多去拜访周边的智能家居系统经销商以及研究淘宝销售数据，你就会知道当地到底能不能开展……</p>
+<ol>
+<li><a href="https://yidaofei.com/post/20181117-smartlock-separation-clutch-design-of-lock/">分离式离合设计——关于两道门安装问题的延伸</a></li>
+</ol>
 
-<p>潮已经来了，但是你能否跟上并到达顶点需要自行细细判断！</p>
+<h3 id="全自动指纹锁">全自动指纹锁</h3>
+
+<p>全自动指纹锁按照实现方式的不一样可以分解为：全自动锁体类型与全自动离合（电机与锁芯配合），两者相关的部件与具体的实现原理如下：</p>
+
+<h4 id="全自动离合">全自动离合</h4>
+
+<p>全自动锁芯插入锁体葫芦头两者配合，<strong>电机模拟手动使用钥匙过程正反转</strong>即可实现开关门</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201811/fully-automatic-clutch.png" alt="" /></p>
+
+<h4 id="全自动锁体">全自动锁体：</h4>
+
+<p>自动智能门锁的锁体内，有控制电路以及电机和变速器和推进装置。锁舌要比手动锁体多出一个，主要用途是判断门的开启与关闭状态。<br />
+判断锁舌连接着一个电子开关，当关门时，锁舌被压下，<strong>电子开关打开，电机转动，带动变速器，变速器带动推拉杆，主锁舌推出</strong></p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201811/fully-automatic-lock.png" alt="" /></p>
 
 <h3 id="版本信息">版本信息</h3>
 
@@ -237,7 +256,7 @@ if (!doNotTrack) {
 <tr>
 <td align="center">1.0</td>
 <td align="center">init</td>
-<td align="center">2019-01-08</td>
+<td align="center">2019-01-09</td>
 </tr>
 </tbody>
 </table>
@@ -247,7 +266,7 @@ if (!doNotTrack) {
 			<div class="article-copyright">
 			  	<ul>
 			  		<li><strong>本文作者：</strong>易道非</li>
-			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20190108-smarthome-feature-and-present-situation/</li>
+			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20190109-smartlock-guild-clutch-structure/</li>
 			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
 			  	</ul>
 			</div>
@@ -260,7 +279,7 @@ if (!doNotTrack) {
 		<div>
 			<i class="fa fa-tags">&nbsp;Tags:
 			
-				<a href="https://yidaofei.com/tags/%e6%99%ba%e8%83%bd%e5%ae%b6%e5%b1%85">智能家居</a>
+				<a href="https://yidaofei.com/tags/%e6%8c%87%e7%ba%b9%e9%94%81">指纹锁</a>
     		
     		</i>   
 		</div> 
@@ -273,14 +292,14 @@ if (!doNotTrack) {
 	<div class="article-footer-meta-between"> 
 		<div class="refArticle-prev" >
 			  
-		    <a href="https://yidaofei.com/post/20190109-smartlock-guild-clutch-structure/">
-		    	<i class="fa fa-angle-double-left"></i>&nbsp;认识智能锁 chapter 2-离合结构/核心工作原理  
+		    <a href="https://yidaofei.com/post/20190109-smartlock-guild-electronic-part/">
+		    	<i class="fa fa-angle-double-left"></i>&nbsp;认识智能锁 chapter 1-电子部分  
 		    </a> 
 			
 		</div>
 		 <div class="refArticle-next" >
 		  
-		  	<a href="https://yidaofei.com/post/20181223-think-what-are-you-doing/">「Topbook」，你究竟在干嘛？&nbsp;
+		  	<a href="https://yidaofei.com/post/20190108-smarthome-feature-and-present-situation/">20190108 智能家居初级篇-特性与现状&nbsp;
 		  		<i class="fa fa-angle-double-right"></i>
 		  	</a> 
 		 
@@ -335,8 +354,16 @@ if (!doNotTrack) {
 <ul>
 <li>
 <ul>
-<li><a href="#智能家居特性">智能家居特性</a></li>
-<li><a href="#智能家居现状">智能家居现状</a></li>
+<li><a href="#半自动指纹锁">半自动指纹锁</a>
+<ul>
+<li><a href="#工作流程">工作流程</a></li>
+<li><a href="#电机与离合结合">电机与离合结合</a></li>
+</ul></li>
+<li><a href="#全自动指纹锁">全自动指纹锁</a>
+<ul>
+<li><a href="#全自动离合">全自动离合</a></li>
+<li><a href="#全自动锁体">全自动锁体：</a></li>
+</ul></li>
 <li><a href="#版本信息">版本信息</a></li>
 </ul></li>
 </ul></li>

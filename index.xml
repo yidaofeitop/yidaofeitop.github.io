@@ -6,10 +6,80 @@
     <description>Recent content on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 08 Jan 2019 11:16:12 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 09 Jan 2019 09:39:49 +0800</lastBuildDate>
     
 	<atom:link href="https://yidaofei.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>认识智能锁 chapter 0-前言</title>
+      <link>https://yidaofei.com/post/20190109-smartlock-guild-foreword/</link>
+      <pubDate>Wed, 09 Jan 2019 09:39:49 +0800</pubDate>
+      
+      <guid>https://yidaofei.com/post/20190109-smartlock-guild-foreword/</guid>
+      <description>&lt;p&gt;好吧模拟&lt;a href=&#34;https://taiyilaile.com/1&#34;&gt;太医来了&lt;/a&gt;谈谈为什么要写这个系列的文章，也就是自己的初心！&lt;/p&gt;
+
+&lt;p&gt;类似此系列的文章实质上我写的并不少，比如初始的系列文章&lt;a href=&#34;https://www.jianshu.com/u/1112129d36ad&#34;&gt;天乔智能锁&lt;/a&gt;、后续个人博客的&lt;a href=&#34;https://yidaofei.com/post/20181118-smartlock-how-to-select-a-good-smartlock/&#34;&gt;如何挑选一款适合自己的指纹锁&lt;/a&gt;等，但是在后续的&lt;strong&gt;商务环节&lt;/strong&gt;出现比较大的问题：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;「初学者」会出现由于体系架构比较大，无法在短时间内有一个比较清晰的认识，最为无奈的是无样品在手上的&lt;/li&gt;
+&lt;li&gt;缺失部分的营销概念-如智能锁远程解决方案系统的比对、猫眼反锁概念等&lt;/li&gt;
+&lt;li&gt;「读者」无法快速定位相关的内容，高效利用智能锁知识体系&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;所以利用「MECE」将其分解如下内容：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://piwigo.yidaofei.com/galleries/201901/smartlock-xmind.png&#34; alt=&#34;认识智能锁-xmind&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>认识智能锁 chapter 1-电子部分</title>
+      <link>https://yidaofei.com/post/20190109-smartlock-guild-electronic-part/</link>
+      <pubDate>Wed, 09 Jan 2019 09:39:49 +0800</pubDate>
+      
+      <guid>https://yidaofei.com/post/20190109-smartlock-guild-electronic-part/</guid>
+      <description>&lt;p&gt;本章节主要分解智能锁电子部分，相关内容如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;线路板：走线、工艺&lt;/li&gt;
+&lt;li&gt;指纹头：种类&lt;/li&gt;
+&lt;li&gt;联网模块&lt;/li&gt;
+&lt;li&gt;电池仓&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;首先必须说明的是本人&lt;strong&gt;非嵌入式工程师出身&lt;/strong&gt;，加上此类资料积累非常少，所以本文谈及的内容基本上以表面知识为主，如有错误遗漏欢迎大家指正修改！&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>认识智能锁 chapter 2-离合结构/核心工作原理</title>
+      <link>https://yidaofei.com/post/20190109-smartlock-guild-clutch-structure/</link>
+      <pubDate>Wed, 09 Jan 2019 09:39:49 +0800</pubDate>
+      
+      <guid>https://yidaofei.com/post/20190109-smartlock-guild-clutch-structure/</guid>
+      <description>&lt;p&gt;本章节主要分解智能锁离合结构，理解&lt;strong&gt;智能锁的核心的工作原理&lt;/strong&gt;，相关内容如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;半自动指纹锁-离合结构&lt;/li&gt;
+&lt;li&gt;全自动指纹锁-全自动锁芯结构&lt;/li&gt;
+&lt;li&gt;全自动指纹锁-全自动锁体结构&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;首先简单介绍一下各自的工作原理：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;半自动指纹锁-离合结构：电机向上或向下动作&amp;mdash;&amp;gt;离合的销子向上或向下动作&amp;mdash;&amp;gt;把手与离合结合/分离&amp;mdash;&amp;gt;锁体动作（电子锁体方式类似）&lt;/li&gt;
+&lt;li&gt;全自动指纹锁-&lt;strong&gt;全自动锁芯结构&lt;/strong&gt;：电机与顺时针/逆时针转动&amp;mdash;&amp;gt;全自动锁芯顺时针/逆时针转动&amp;mdash;&amp;gt;锁体动作&lt;/li&gt;
+&lt;li&gt;全自动指纹锁-&lt;strong&gt;全自动锁体结构&lt;/strong&gt;：当关门时，锁舌被压下，电子开关打开，电机转动，带动变速器，变速器带动推拉杆，主锁舌推出，反之开门&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;下面将依次展开详细解答：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>20190108 智能家居初级篇-特性与现状</title>
@@ -690,14 +760,15 @@
       <description>&lt;p&gt;主要比较的通信技术如下：&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;GPRS&lt;/li&gt;
-&lt;li&gt;WIFI&lt;/li&gt;
-&lt;li&gt;蓝牙4.0&lt;/li&gt;
-&lt;li&gt;ZIGBEE&lt;/li&gt;
-&lt;li&gt;433/315射频&lt;/li&gt;
-&lt;li&gt;NB-IOT&lt;/li&gt;
-&lt;li&gt;LoRa&lt;/li&gt;
-&lt;li&gt;eMTC&lt;/li&gt;
+&lt;li&gt;GPRS&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;WIFI&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;蓝牙4.0&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;ZIGBEE&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;433/315射频&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;NB-IOT&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;LoRa&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;eMTC&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;仅有一张图：😄&lt;/p&gt;
