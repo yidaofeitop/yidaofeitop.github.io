@@ -27,7 +27,12 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/drafts/20190109-smartlock-guild-lock-body/</loc>
+    <loc>https://yidaofei.com/post/20190109-smartlock-guild-lock-body/</loc>
+    <lastmod>2019-01-09T09:39:49+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/post/20190109-smartlock-guild-lock-cylinder/</loc>
     <lastmod>2019-01-09T09:39:49+08:00</lastmod>
   </url>
   
@@ -397,12 +402,6 @@
   
   <url>
     <loc>https://yidaofei.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://yidaofei.com/drafts/</loc>
-    <lastmod>2019-01-09T09:39:49+08:00</lastmod>
     <priority>0</priority>
   </url>
   

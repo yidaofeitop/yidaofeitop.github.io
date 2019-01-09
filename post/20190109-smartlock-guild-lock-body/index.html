@@ -11,17 +11,15 @@
   
   
     
-    <meta charset="utf-8" name="keywords" content="智能家居,485," > 
+    <meta charset="utf-8" name="keywords" content="指纹锁,智能锁,锁体," > 
   
    
-  <meta charset="utf-8" name="description" content="本文主要是回答如智能家居是一个空壳子吗？到底有没有前景？等类似
-对于智能家居没有任何了解的知友。
-
-以下内容主要来自本人在智能锁行业中接触的智能家居知识为脉络查阅部分资料整理而成，可能有部分的遗漏与错误，欢迎大家讨论修正！
+  <meta charset="utf-8" name="description" content="本章节主要分解智能锁锁体相关知识，理解如何配相关的锁体，相关内容如下：
 
 
-智能家居特性
-智能家居现状
+锁体基本组成
+锁体主体规格参数
+指纹锁锁体种类
 
 
 " >
@@ -35,7 +33,7 @@
   
   
   
-  <title>20190108 智能家居初级篇-特性与现状- 易道非 Blog</title>  
+  <title>认识智能锁 chapter 3-智能锁锁体- 易道非 Blog</title>  
   
   
     
@@ -122,10 +120,10 @@ if (!doNotTrack) {
 <section class="main-content-container">
 <article class="article-card">
 	<header class="article-header"> 
-	   <p class="article-title">20190108 智能家居初级篇-特性与现状</p>
+	   <p class="article-title">认识智能锁 chapter 3-智能锁锁体</p>
    		<div class="article-meta">
 			
-			<div><i class="fa fa-calendar" >2019年01月08日</i> </div>
+			<div><i class="fa fa-calendar" >2019年01月09日</i> </div>
 			  
 
 			 
@@ -138,89 +136,182 @@ if (!doNotTrack) {
 			<div>
 				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
 				
-					<a href="https://yidaofei.com/categories/%e6%99%ba%e8%83%bd%e5%ae%b6%e5%b1%85">智能家居</a> 
+					<a href="https://yidaofei.com/categories/%e6%8c%87%e7%ba%b9%e9%94%81">指纹锁</a> 
 				   
 				</i>  
 			</div> 
 		</div>  
 	</header>  
 	<content class="markdown">
-		<p>本文主要是回答如<a href="https://www.zhihu.com/question/308289162">智能家居是一个空壳子吗？到底有没有前景？</a>等类似
-对于智能家居没有任何了解的知友。</p>
-
-<p>以下内容主要来自本人在智能锁行业中接触的智能家居知识为脉络查阅部分资料整理而成，可能有部分的遗漏与错误，欢迎大家讨论修正！</p>
+		<p>本章节主要分解智能锁锁体相关知识，理解如何配相关的锁体，相关内容如下：</p>
 
 <ol>
-<li>智能家居特性</li>
-<li>智能家居现状</li>
+<li>锁体基本组成</li>
+<li>锁体主体规格参数</li>
+<li>指纹锁锁体种类</li>
 </ol>
 
 <p></p>
 
-<h3 id="智能家居特性">智能家居特性</h3>
+<h3 id="锁体基本组成">锁体基本组成</h3>
 
-<p>不知道大家是否有了解过「485布线」或「干节点布线」的控制系统，其实智能家居可以看作在此基础之上的一个比较大的扩展，下面就从传统的智能控制系统以及
-个人后期的展望来谈谈智能家居的主要特性：</p>
+<p>由于拆解锁体太过麻烦，内部结构又比较简单（非专业设计师），所以直接引用<a href="https://www.zhihu.com/question/64480355/answer/414729353">知乎英泽电子FCARD</a>的图做底稿，
+增加相关的说明，呈现如下：</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201901/lock-body-internal-structure.png" alt="锁体内部结构图" /></p>
+
+<p>PS：在此给所有的人一个建议：除非你对锁体非常的懂，<strong>不要轻易的去拆解锁体</strong>，主要原因有2个：</p>
 
 <ol>
-<li>通信方式的转变带来的安装、产品成本下降<br />
-原来的智能化控制系统一般是采用如「485布线」等的布线方式控制，后随着无线技术的发展衍生出「蓝牙、WIFI、433、Zigbee、NB-IOT、Lora」
-等不同通信协议的智能家居产品，这些无线技术的运用成功的将工程师从繁杂的布线解脱出来，大大的降低了智能设备安装难度，这个可以从
-现在的布线方式的控制系统的产品体系与智能家居的产品体系基本以开关控制类为主可以看出来，两者在产品上基本一脉相承的！</li>
-<li>软件层面的革新带来的极致体验<br />
-
-<ul>
-<li>懒人模式<br />
-相比原来的 <strong>触摸式/遥控式的简单组合控制方式</strong>，智能家居能够在软件层面将所有的设备自由组合与设置，这个功能可以做到高效调试设备，
-但是最大功能做到就像有些答主说的「懒人模式」，比较典型的「懒人模式」如下：
-
-<ul>
-<li>情景模式-下班回家：智能家居系统可以预设晚8：00到家，提前打开空调将房间温度调整到比较适宜的温度、空气净化器自动开始运行……</li>
-<li>情景模式-开门开主灯：智能家居系统可以预设你回家用指纹等电子方式开锁，廊灯即打开，没必要去找钥匙以及手动去打开廊灯</li>
-</ul></li>
-<li>随时掌控家中情况<br />
-此处体现在信息互通，典型的情况如：远程通过摄像头查看家庭情况，小孩是否在看电视；煤气是否泄露……</li>
-</ul></li>
-<li>后续高度集成的数据化中心<br />
-2018年深圳高交会不知道大家的感觉是怎样的，给我的感觉是后互联网时代就是 <strong>数据平台+功能平台</strong>，现在的智能家居基本上都搭建有数据中心，后续随着越来越多的
-与人身体等情况的交互的传感器的增加必定会在这方面形成精确 <strong>「人的身体情况画像」</strong></li>
+<li>锁体结构看似简单，但是内部的细节非常多，一旦拆解还原的时间可能会非常长，如自弹锁体我印象中第一次拆解间断性的研究了3天左右才装回去</li>
+<li>锁体拆解后的性能你没法确认，一旦智能锁出现问题可能会将相关的原因归咎于你，尤其是锁匠师傅可能会损失惨重（赔智能锁甚至是门的钱）</li>
 </ol>
 
-<h3 id="智能家居现状">智能家居现状</h3>
+<h3 id="锁体规格参数">锁体规格参数</h3>
 
-<p>非常赞同 <a href="https://www.zhihu.com/question/308289162/answer/568959352">@地球大战</a> 的回答！引用部分结论如下：</p>
+<p>锁体的规格参数主要有以下几个：</p>
 
-<blockquote>
-<p>就目前来讲，智能家居还没有摆脱“控制家居”的特征，离真正的智能家居还有一段距离要走，这些不管政策也好，解读也好，
-这是当前这个产业发展的事实，就是处于 <strong>发展的前期，甚至是储备的前期，远远没到爆发期</strong>。这是初步判断！</p>
+<ol>
+<li>锁体种类</li>
+<li>侧边条尺寸</li>
+<li>锁芯距/锁边距</li>
+<li>天地钩伸展与收缩长度</li>
+</ol>
 
-<p>如果题主是生产企业，那么建议从单品切入，千万不要贸然进入系统行业，那不是谁都能玩得转的，强如阿里，腾讯，京东，
-华为之流也不过如此。如果是经销商，更不要贸然进入系统市场，因为市场培育期是最辛苦的，非常容易就死在黎明前，经销商
-可以切入智能单品销售，慢慢积累客户和产品经验，等待成熟！</p>
-</blockquote>
+<p><img src="https://piwigo.yidaofei.com/galleries/201901/lock-body-specifications.jpg" alt="智能锁锁体规格参数" /></p>
 
-<p>我的看法的是智能家居在一定程度上可以类比智能锁的发展：</p>
+<p>如上图的锁体规格参数为：</p>
 
-<ul>
-<li>2017年前：智能锁潜伏期，主要耕耘在高端的酒店、别墅等工装领域</li>
-<li>2017年初-2018年3月：智能锁高速发展期，资本大量流入，供应链厂家爆发式增长、半导体识别技术、人脸识别技术……</li>
-<li>2018年3月-：智能锁稳定期，经过前面的智能锁高速发展期，大部分城市的主要渠道商全面扩展完成，指纹锁供应链及相关技术基本完成构建，
-大家逐步的将精力放入如何优化产品以及深挖渠道</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">值（mm）</th>
+</tr>
+</thead>
 
-<p>智能家居现阶段对应的是潜伏期</p>
+<tbody>
+<tr>
+<td align="left">侧边条尺寸</td>
+<td align="left">240*24 双孔直角</td>
+</tr>
 
-<ul>
-<li>基础技术已经完成，但是体验感未能达到随心所欲的语音控制，需要有突破性的软件控制方案</li>
-<li>智能家居的概念未深入人心，主要原因未能真正的切入终端客户的痛点，现在智能家居系统主要的终端客户以工装与别墅为主</li>
-</ul>
+<tr>
+<td align="left">锁芯距</td>
+<td align="left">68</td>
+</tr>
 
-<p>所以正如<a href="https://www.zhihu.com/question/308289162/answer/568959352">@地球大战</a> 所说建议大家从智能化单品开始，比如说最为典型的
-智能锁以及安防摄像头……，最简单的方法是看 <strong>「小米」出什么智能化单品</strong> 😄</p>
+<tr>
+<td align="left">锁边距</td>
+<td align="left">60</td>
+</tr>
 
-<p>不要去听厂家说的多好听，贸然的进入智能家居系统，多去拜访周边的智能家居系统经销商以及研究淘宝销售数据，你就会知道当地到底能不能开展……</p>
+<tr>
+<td align="left">锁体长*宽*高</td>
+<td align="left">172*89*18</td>
+</tr>
+</tbody>
+</table>
 
-<p>潮已经来了，但是你能否跟上并到达顶点需要自行细细判断！</p>
+<p>所以以上的锁体为 6068 国标机械锁体！</p>
+
+<p>关于「天地钩伸展与收缩长度」只需要明确天地钩是什么即可清楚了解，关于上文说的锁体种类请继续往下看就有解答。</p>
+
+<h3 id="锁体种类">锁体种类</h3>
+
+<p>一般我们说的智能锁锁体分类是以品类来分，如国标、大霸王、小霸王等，由于现在智能锁的品类(具体见<a href="https://yidaofei.com/post/20190109-smartlock-guild-clutch-structure/">认识智能锁 chapter 2-离合结构/核心工作原理</a>)
+又在此基础之上可以分解为「机械锁体、电子锁体、全自动锁体」，下面将其分解为两部分来讲解：</p>
+
+<h4 id="智能锁锁体品类基础版">智能锁锁体品类基础版</h4>
+
+<p>主流的智能锁锁体大致有以下类型：</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201811/smartlock-kinds-1.jpg" alt="智能锁锁体种类1" /></p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201811/smartlock-kinds-2.jpg" alt="智能锁锁体种类2" /></p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201811/smartlock-kinds-3.jpg" alt="智能锁锁体种类3" /></p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201811/smartlock-kinds-4.jpg" alt="智能锁锁体种类4" /></p>
+
+<p>其相关的具体数据如下：
+<!--
+使用图片，以便保留版权 
+| |侧边条|锁边距锁芯距|天地钩常态|天地钩伸出态|
+|:--|:--|:--|:--|:--|
+|国标锁体          |6068|240*24 |16 |31|
+|小霸王锁体        |6068|240*30 |16 |31|
+|王力锁体          |6568|210*33 |16 |34|
+|宝德安13型锁体    |6068|280*24 |22 |36|
+|宝德安老九新九锁体 |6568|250*23 |9 |29|
+|盼盼小帅锁体      |7568|260*24 |34 |52|
+|美标5568-碧桂园   |5568|184*28 |    |   |
+|盼盼大帅锁体      |7568|300*35/32 | | |
+|雅迪乐            |6068|368*40 |96|111|
+|盼盼一品-换清林       |6068|40*395|74|90|  
+|盼盼上品-换金扣子     |6068|40*405|74|90|
+|大霸王锁体        |6068|388*40/30  |19 |36|
+|盼盼大霸王锁体    |7568|300*40||| --></p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201811/smartlock-data.png" alt="smartlock-data" /></p>
+
+<p>扩展阅读：</p>
+
+<ol>
+<li><a href="https://yidaofei.com/post/20181115-smartlock-install-lock-guild/#%E9%80%82%E9%85%8D%E9%94%81%E4%BD%93%E5%88%A4%E6%96%AD%E5%9F%BA%E6%9C%AC%E6%AD%A5%E9%AA%A4">指纹锁安装指导手册</a>：主看适配锁体判断基本步骤即可</li>
+</ol>
+
+<h4 id="智能锁锁体品类进阶版">智能锁锁体品类进阶版</h4>
+
+<p><a href="https://yidaofei.com/post/20190109-smartlock-guild-clutch-structure/">认识智能锁 chapter 2-离合结构/核心工作原理</a>大致抽离
+出以下的表格：</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">智能锁种类</th>
+<th align="left">锁体种类</th>
+<th align="left">相关说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">半自动指纹锁 - 离合结构</td>
+<td align="left">机械锁体/电子锁体</td>
+<td align="left">电子锁体相当于将离合结构内置锁体内部</td>
+</tr>
+
+<tr>
+<td align="left">全自动指纹锁 - 全自动锁芯结构</td>
+<td align="left">机械锁体</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">全自动指纹锁 - 全自动锁体结构</td>
+<td align="left">全自动锁体</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+
+<p>相关的锁体如下：</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201901/smartlock-kinds-5.jpg" alt="机械/电子/全自动锁体" /></p>
+
+<p>关于三者锁体之间的优劣我的理解如下：</p>
+
+<ol>
+<li>机械锁体工业设计技术已完全成熟大规模生产化，获取渠道最广</li>
+<li>电子锁体稳定性有一定降低，天地钩适配性与机械锁体一致，成本有所提高，面板与锁体存在接口对应问题，采购途径受限于锁体厂家；但如果<strong>就个人而言是稳定性与安全性最佳平衡点的产品</strong></li>
+<li>全自动锁体比电子锁体稳定性进一步降低，天地钩适配性最低（可能都要将其废弃），采购成本进一步抬高，与厂家对接接口更加复杂，完全受限于锁体厂家（所以很多是自主开发）</li>
+</ol>
+
+<h3 id="参考资料">参考资料</h3>
+
+<p>[1]<a href="https://item.taobao.com/item.htm?spm=a230r.1.14.22.46204b49FcmRcl&amp;id=572845256887&amp;ns=1&amp;abbucket=10#detail">佳顾森五金店</a><br />
+[2]<a href="https://jiayonggu.taobao.com/search.htm?spm=2013.1.0.0.4ce97ccdvL5llt&amp;search=y">固家五金</a></p>
 
 <h3 id="版本信息">版本信息</h3>
 
@@ -237,7 +328,7 @@ if (!doNotTrack) {
 <tr>
 <td align="center">1.0</td>
 <td align="center">init</td>
-<td align="center">2019-01-08</td>
+<td align="center">2019-01-09</td>
 </tr>
 </tbody>
 </table>
@@ -247,7 +338,7 @@ if (!doNotTrack) {
 			<div class="article-copyright">
 			  	<ul>
 			  		<li><strong>本文作者：</strong>易道非</li>
-			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20190108-smarthome-feature-and-present-situation/</li>
+			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20190109-smartlock-guild-lock-body/</li>
 			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
 			  	</ul>
 			</div>
@@ -260,7 +351,7 @@ if (!doNotTrack) {
 		<div>
 			<i class="fa fa-tags">&nbsp;Tags:
 			
-				<a href="https://yidaofei.com/tags/%e6%99%ba%e8%83%bd%e5%ae%b6%e5%b1%85">智能家居</a>
+				<a href="https://yidaofei.com/tags/%e6%8c%87%e7%ba%b9%e9%94%81">指纹锁</a>
     		
     		</i>   
 		</div> 
@@ -273,14 +364,14 @@ if (!doNotTrack) {
 	<div class="article-footer-meta-between"> 
 		<div class="refArticle-prev" >
 			  
-		    <a href="https://yidaofei.com/post/20190109-smartlock-guild-lock-cylinder/">
-		    	<i class="fa fa-angle-double-left"></i>&nbsp;认识智能锁 chapter 4-智能锁锁芯  
+		    <a href="https://yidaofei.com/post/20190109-smartlock-guild-clutch-structure/">
+		    	<i class="fa fa-angle-double-left"></i>&nbsp;认识智能锁 chapter 2-离合结构/核心工作原理  
 		    </a> 
 			
 		</div>
 		 <div class="refArticle-next" >
 		  
-		  	<a href="https://yidaofei.com/post/20181223-think-what-are-you-doing/">「Topbook」，你究竟在干嘛？&nbsp;
+		  	<a href="https://yidaofei.com/post/20190109-smartlock-guild-lock-cylinder/">认识智能锁 chapter 4-智能锁锁芯&nbsp;
 		  		<i class="fa fa-angle-double-right"></i>
 		  	</a> 
 		 
@@ -335,8 +426,14 @@ if (!doNotTrack) {
 <ul>
 <li>
 <ul>
-<li><a href="#智能家居特性">智能家居特性</a></li>
-<li><a href="#智能家居现状">智能家居现状</a></li>
+<li><a href="#锁体基本组成">锁体基本组成</a></li>
+<li><a href="#锁体规格参数">锁体规格参数</a></li>
+<li><a href="#锁体种类">锁体种类</a>
+<ul>
+<li><a href="#智能锁锁体品类基础版">智能锁锁体品类基础版</a></li>
+<li><a href="#智能锁锁体品类进阶版">智能锁锁体品类进阶版</a></li>
+</ul></li>
+<li><a href="#参考资料">参考资料</a></li>
 <li><a href="#版本信息">版本信息</a></li>
 </ul></li>
 </ul></li>

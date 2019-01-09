@@ -35,7 +35,7 @@
     </item>
     
     <item>
-      <title>认识智能锁 chapter 1-电子部分</title>
+      <title>认识智能锁 chapter 1 - 电子部分</title>
       <link>https://yidaofei.com/post/20190109-smartlock-guild-electronic-part/</link>
       <pubDate>Wed, 09 Jan 2019 09:39:49 +0800</pubDate>
       
@@ -84,16 +84,33 @@
     
     <item>
       <title>认识智能锁 chapter 3-智能锁锁体</title>
-      <link>https://yidaofei.com/drafts/20190109-smartlock-guild-lock-body/</link>
+      <link>https://yidaofei.com/post/20190109-smartlock-guild-lock-body/</link>
       <pubDate>Wed, 09 Jan 2019 09:39:49 +0800</pubDate>
       
-      <guid>https://yidaofei.com/drafts/20190109-smartlock-guild-lock-body/</guid>
+      <guid>https://yidaofei.com/post/20190109-smartlock-guild-lock-body/</guid>
       <description>&lt;p&gt;本章节主要分解智能锁锁体相关知识，理解如何配相关的锁体，相关内容如下：&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;锁体基本组成&lt;/li&gt;
 &lt;li&gt;锁体主体规格参数&lt;/li&gt;
 &lt;li&gt;指纹锁锁体种类&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>认识智能锁 chapter 4-智能锁锁芯</title>
+      <link>https://yidaofei.com/post/20190109-smartlock-guild-lock-cylinder/</link>
+      <pubDate>Wed, 09 Jan 2019 09:39:49 +0800</pubDate>
+      
+      <guid>https://yidaofei.com/post/20190109-smartlock-guild-lock-cylinder/</guid>
+      <description>&lt;p&gt;本章节主要分解智能锁锁芯相关知识，理解为什么要选用C级真插芯，相关内容如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;锁芯工作原理&lt;/li&gt;
+&lt;li&gt;锁芯分级&lt;/li&gt;
+&lt;li&gt;真插芯 VS 假插芯&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
