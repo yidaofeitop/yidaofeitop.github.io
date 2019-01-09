@@ -11,10 +11,23 @@
   
   
     
-    <meta charset="utf-8" name="keywords" content="指纹锁,智能锁,虚位密码," > 
+    <meta charset="utf-8" name="keywords" content="指纹锁,智能锁,远程解决方案,联网," > 
   
    
-  <meta charset="utf-8" name="description" content="" >
+  <meta charset="utf-8" name="description" content="本章节主要是在认识智能锁 chapter 1 - 电子部分-联网模块
+上进一步的分析，让大家了解智能锁远程解决方案如何运作的，相关内容如下：
+
+
+远程解决方案之对码算法
+远程解决方案之联网模块
+远程解决方案之混合模式
+集中化管理/智能家居联动——选择哪种通信协议
+
+
+在此说明本人非嵌入式工程师/通信工程师出身，所以关于嵌入式/通信部分全部引用网络资料与工作经验整理而成，
+如有错误或遗漏欢迎大家指出修正
+
+" >
   
   
   
@@ -25,7 +38,7 @@
   
   
   
-  <title>认识智能锁 chapter 6 - 虚位密码- 易道非 Blog</title>  
+  <title>认识智能锁 chapter 7-远程解决方案- 易道非 Blog</title>  
   
   
     
@@ -112,7 +125,7 @@ if (!doNotTrack) {
 <section class="main-content-container">
 <article class="article-card">
 	<header class="article-header"> 
-	   <p class="article-title">认识智能锁 chapter 6 - 虚位密码</p>
+	   <p class="article-title">认识智能锁 chapter 7-远程解决方案</p>
    		<div class="article-meta">
 			
 			<div><i class="fa fa-calendar" >2019年01月09日</i> </div>
@@ -135,33 +148,134 @@ if (!doNotTrack) {
 		</div>  
 	</header>  
 	<content class="markdown">
-		<p></p>
+		<p>本章节主要是在<a href="https://yidaofei.com/post/20190109-smartlock-guild-electronic-part/#联网模块">认识智能锁 chapter 1 - 电子部分-联网模块</a>
+上进一步的分析，让大家了解智能锁远程解决方案如何运作的，相关内容如下：</p>
 
-<h3 id="什么是虚位密码">什么是虚位密码</h3>
+<ol>
+<li>远程解决方案之对码算法</li>
+<li>远程解决方案之联网模块</li>
+<li>远程解决方案之混合模式</li>
+<li>集中化管理/智能家居联动——选择哪种通信协议</li>
+</ol>
 
-<p>什么是虚位密码？虚位密码安全吗？不少顾客在选购指纹锁时被销售人员告知自家指纹锁是「中国十大品牌之一」，有N大新技术 balabala 的，其中就包含这个虚位密码功能。</p>
+<p>在此说明<strong>本人非嵌入式工程师/通信工程师出身</strong>，所以关于嵌入式/通信部分全部引用网络资料与工作经验整理而成，
+如有错误或遗漏欢迎大家指出修正</p>
 
-<p>虚位密码，也有的称呼为虚拟密码，常见于采用密码作为验证途径的电子锁。在指纹锁出现之前，智能锁一般都采用电子密码锁，当开门时有陌生的人在旁边，不能排除存在密码泄露的危险。</p>
+<p></p>
 
-<p>为了防止这种情况下密码泄露，电子锁厂家开发出虚位密码功能，即在已登记的密码前面或后面，可以输入任意密码序列之外的数字作为虚位密码以混淆视听，能有效防止登记密码被不怀好意的人记住，同时又可正常开启门锁。</p>
+<h3 id="远程解决方案之对码算法">远程解决方案之对码算法</h3>
 
-<p><img src="https://piwigo.yidaofei.com/galleries/201901/virtual-password.png" alt="807-虚位密码功能" /></p>
+<p>说句实在话我不知道「微信临时密码-不依靠网络」的背后的算法具体是怎么称呼的，🙊</p>
 
-<p>举例来说就是假设你设置的密码是123456，然后在有虚位密码功能的智能锁上，你可以在输入正确密码之前或之后随意输入几位数字，完成一个虚位密码+正确密码的新密码，输入5871234560991同样可以开启门锁。</p>
+<p>之所以称之为「对码算法」是因为在2017年8月由于一个项目接触过「800酒店项目锁」，里面将此算法称之为「对码算法」！</p>
 
-<h3 id="虚伪密码安全性">虚伪密码安全性</h3>
+<p>此类算法实际上在我们生活中运用的非常多，比较典型的银行 U 盾、QQ 令牌等，其本质就是：公共密钥+时间戳</p>
 
-<p>下面从概率论的基础上讨论一下虚伪密码的有效性：以下限定正确密码为6位，虚伪密码位数为12位</p>
+<p>在智能锁上具体的体现就是：</p>
 
-<p><strong>未加虚伪密码功能</strong>误开率：10的6次方之一，即为百万分之一</p>
+<ol>
+<li>初始阶段智能锁后台设置管理密码，调整智能锁系统时间与手机时间一致</li>
+<li>手机端使用「微信小程序」或 APP 等工具，输入管理员密码生成一次性密码，短信或微信发送给临时访问</li>
+</ol>
 
-<p><strong>加虚伪密码功能</strong>误开率：</p>
+<p>具体视频如下：</p>
 
-<p><img src="http://upload-images.jianshu.io/upload_images/9935217-d3110855aa67ff46.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+<iframe height=498 width=510 src='http://player.youku.com/embed/XMzMxNTMwNDA1Mg==' frameborder=0 'allowfullscreen'></iframe>
 
-<p>即为千亿分之一</p>
+<p>扩展阅读：</p>
 
-<p>所以虚位密码确实是提高了锁的安全性，同时也能够让大家在旁边有亲朋好友面前大大方方的输入密码 😄</p>
+<ol>
+<li><a href="https://www.zhihu.com/question/20462696/answer/18731073">知乎- 徐小花-谷歌验证 (Google Authenticator) 的实现原理是什么？ </a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/34813040">走进硬件时代的身份认证(三)：网银U盾安全认证原理解析</a></li>
+</ol>
+
+<h3 id="远程解决方案之联网模块">远程解决方案之联网模块</h3>
+
+<p>正如<a href="https://yidaofei.com/post/20190109-smartlock-guild-electronic-part/#联网模块">认识智能锁 chapter 1 - 电子部分-联网模块</a>所说的各个智能锁远程解决方案商基于自身业务方向/未来规划扽选用不同的远程解决方案，从而导致智能锁远程解决方案百花齐放
+所以我只能够以自己接触到的某个产品具体说明，其他的联网方式请大家按照相同的逻辑思考即可！</p>
+
+<p>本章节主要以<a href="http://www.sztijio.com/">天乔科技</a>的「智能锁 ZIGBEE 远程解决方案为例说明」：</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201901/sztijio-smartlock-zigbee-solution.jpg" alt="天乔 ZIGBEE 联网方案" /></p>
+
+<p>整个流程为锁-&gt;网关-&gt;天乔云-&gt;终端控制设备，基本可以类比 QQ 远程控制：</p>
+
+<p>锁为被控制电脑，GateWay 为路由，TijioCloud 为腾讯服务器，APP/PC为控制电脑，两者主要的差别在于在锁与网络互联采用的方式比较多样化，
+有「ZIGBEE」、「WIFI」、「蓝牙」等，对应的就有不同的网关来处理锁发出的数据，如「ZIGBEE」网关、「蓝牙网关」……</p>
+
+<p>扩展阅读：</p>
+
+<ol>
+<li><a href="https://yidaofei.com/post/20181127-network-iot-communication-technology/">各大物联网通信技术对比</a></li>
+<li><a href="http://m.ifeng.com/news/shareNews?aid=99872116&amp;channelId=" title="插电设备WIFI、手机交互蓝牙、传感器zigbee">WiFi、ZigBee、BLE用哪个？小米内部是这样选的</a><br /></li>
+<li><a href="http://www.acwifi.net/318.html">简说各种wifi无线协议的传输速率</a><br /></li>
+<li><a href="http://blog.csdn.net/joeyon1985/article/details/53286832">433MHz资讯一点通</a></li>
+<li><a href="https://www.zhihu.com/question/20001576">Wi-Fi 网络中，2.4GHz 和 5GHz 各自有哪些优缺点？</a><br /></li>
+<li><a href="http://www.jiajusmart.com/html/5471.html">【技术分享】目前主流智能家居无线协议对比</a><br /></li>
+</ol>
+
+<h3 id="远程解决方案之混合模式">远程解决方案之混合模式</h3>
+
+<p>前面2部分主要讲的是单一远程解决方案，也是目前最为普遍的方案，但是在我的市场经验中发现有些厂商提出了一中更为
+超前的妥善的解决方案：</p>
+
+<ol>
+<li>蓝牙配合手机 APP 配置指纹等信息</li>
+<li>WIFI 上传使用信息，如几点几分哪位开门</li>
+<li>对码程序负责管理临时密码（算法计算，不依赖网络）</li>
+</ol>
+
+<p>此类解决方案除了功耗比较高之外具有以下的优点：</p>
+
+<ol>
+<li>无需加网关的费用——消费者获利</li>
+<li>WIFI、蓝牙配置简单易学，用户体验感好</li>
+<li>锁成本下降——蓝牙与 WIFI 模块的采购成本相对网关可以忽略不记</li>
+</ol>
+
+<p>另外应该有部分博友们应该会提出一个问题「蓝牙安全性比较低」？此问题需要辩证看待，「蓝牙协议」虽然比较容易被破解但是一般来说蓝牙的范围不超过6 m，也就是说你必须接近指纹锁才能破解，这基本上相当于是暴力开锁了，所以我认为安全性没什么问题！</p>
+
+<h3 id="集中化管理-智能家居联动">集中化管理/智能家居联动</h3>
+
+<p>由于智能锁越来越普遍，已经处于深耕阶段，我们一直在想的是如何破局，最后总结出2条路：</p>
+
+<ol>
+<li>智能锁集成化管理——针对公寓或办公区域</li>
+<li>智能锁+智能家居方向——针对家庭</li>
+</ol>
+
+<p>针对以上方向第一个必须考虑的问题就是选用哪种通信协议？</p>
+
+<p>关于前者由于项目性质的不同有不同的选择，举例如下：</p>
+
+<ol>
+<li>个体户房东拥有多处房产出租，房间非常分散，而且有部分房屋没有网线，那么对他而言最好的就是 「NB-IOT」</li>
+<li>房屋非常集中就在一栋楼内，大约有800间房屋需要管理，价格要求低，那么对他而言最好的可能就是「蓝牙」</li>
+<li>……</li>
+</ol>
+
+<p>关于后者</p>
+
+<ol>
+<li>如果主动权在自己手上，那么我建议远程解决方案采用「混合模式」，因为你可以使用「混合模式」中的「WIFI 协议」做相关对接；</li>
+<li>如果你没有主动权，那么就是选择当前智能家居最大市场份额的通信协议</li>
+</ol>
+
+<p>扩展阅读：</p>
+
+<ol>
+<li><a href="https://www.zhihu.com/question/51025329">短租公寓智能门锁，市场格局如何？</a></li>
+</ol>
+
+<h3 id="远程解决方案的安全问题">远程解决方案的安全问题</h3>
+
+<p>这个是2017年下半年一个会议上某个朋友提出来的问题，我认为也是物联网后续发展必须面对的一个问题：如何防御大规模的网络攻击？</p>
+
+<p>主要的内容如下：</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201901/iot-security-issues-and-solutions.jpg" alt="物联网安全问题与解决方案" /></p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201901/iot-security-issues-and-solutions-schematic-diagram.jpg" alt="物联网解决方案示意图" /></p>
 
 <h3 id="版本信息">版本信息</h3>
 
@@ -188,7 +302,7 @@ if (!doNotTrack) {
 			<div class="article-copyright">
 			  	<ul>
 			  		<li><strong>本文作者：</strong>易道非</li>
-			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20190109-smartlock-guild-virtual-password/</li>
+			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20190109-smartlock-guild-remote-unlocking/</li>
 			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
 			  	</ul>
 			</div>
@@ -213,15 +327,11 @@ if (!doNotTrack) {
 	<hr/>
 	<div class="article-footer-meta-between"> 
 		<div class="refArticle-prev" >
-			  
-		    <a href="https://yidaofei.com/post/20190109-smartlock-guild-remote-unlocking/">
-		    	<i class="fa fa-angle-double-left"></i>&nbsp;认识智能锁 chapter 7-远程解决方案  
-		    </a> 
 			
 		</div>
 		 <div class="refArticle-next" >
 		  
-		  	<a href="https://yidaofei.com/post/20190109-smartlock-guild-anti-cat-eye-unlock/">认识智能锁 chapter 5 - 防猫眼开锁&nbsp;
+		  	<a href="https://yidaofei.com/post/20190109-smartlock-guild-virtual-password/">认识智能锁 chapter 6 - 虚位密码&nbsp;
 		  		<i class="fa fa-angle-double-right"></i>
 		  	</a> 
 		 
@@ -276,8 +386,11 @@ if (!doNotTrack) {
 <ul>
 <li>
 <ul>
-<li><a href="#什么是虚位密码">什么是虚位密码</a></li>
-<li><a href="#虚伪密码安全性">虚伪密码安全性</a></li>
+<li><a href="#远程解决方案之对码算法">远程解决方案之对码算法</a></li>
+<li><a href="#远程解决方案之联网模块">远程解决方案之联网模块</a></li>
+<li><a href="#远程解决方案之混合模式">远程解决方案之混合模式</a></li>
+<li><a href="#集中化管理-智能家居联动">集中化管理/智能家居联动</a></li>
+<li><a href="#远程解决方案的安全问题">远程解决方案的安全问题</a></li>
 <li><a href="#版本信息">版本信息</a></li>
 </ul></li>
 </ul></li>
