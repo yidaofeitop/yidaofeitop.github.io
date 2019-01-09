@@ -100,7 +100,7 @@
     </item>
     
     <item>
-      <title>认识智能锁 chapter 4-智能锁锁芯</title>
+      <title>认识智能锁 chapter 4 - 智能锁锁芯</title>
       <link>https://yidaofei.com/post/20190109-smartlock-guild-lock-cylinder/</link>
       <pubDate>Wed, 09 Jan 2019 09:39:49 +0800</pubDate>
       
@@ -111,6 +111,22 @@
 &lt;li&gt;锁芯工作原理&lt;/li&gt;
 &lt;li&gt;锁芯分级&lt;/li&gt;
 &lt;li&gt;真插芯 VS 假插芯&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>认识智能锁 chapter 5 - 防猫眼开锁</title>
+      <link>https://yidaofei.com/post/20190109-smartlock-guild-anti-cat-eye-unlock/</link>
+      <pubDate>Wed, 09 Jan 2019 09:39:49 +0800</pubDate>
+      
+      <guid>https://yidaofei.com/post/20190109-smartlock-guild-anti-cat-eye-unlock/</guid>
+      <description>&lt;p&gt;本章节主要分解防猫眼开锁的结构，理解&lt;strong&gt;防猫眼开锁的基础原理&lt;/strong&gt;，相关内容如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;什么叫「猫眼开锁」&lt;/li&gt;
+&lt;li&gt;智能锁防猫眼开锁三大结构及优劣&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -188,15 +204,15 @@
       <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://yidaofei.com/post/20181117-smartlock-how-fingerprint-lock-works/</guid>
-      <description>&lt;p&gt;指纹锁分类按照动力可以分为半自动与全自动，两者在实现开锁原理也有很大的差别：&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;由于本文内容非常杂乱，所以分解为以下内容，欢迎大家跳转到相关文章访问&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;半自动指纹锁：电机向上或向下动作&amp;mdash;&amp;gt;离合的销子向上或向下动作&amp;mdash;&amp;gt;把手与离合结合/分离&amp;mdash;&amp;gt;锁体动作（电子锁体方式类似）&lt;/li&gt;
-&lt;li&gt;全自动指纹锁（ &lt;strong&gt;非全自动锁体&lt;/strong&gt;）：电机与顺时针/逆时针转动&amp;mdash;&amp;gt;全自动锁芯顺时针/逆时针转动&amp;mdash;&amp;gt;锁体动作&lt;/li&gt;
-&lt;li&gt;全自动指纹锁 （ &lt;strong&gt;全自动锁体&lt;/strong&gt;）：当关门时，锁舌被压下，电子开关打开，电机转动，带动变速器，变速器带动推拉杆，主锁舌推出，反之开门&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20190109-smartlock-guild-electronic-part/&#34;&gt;认识智能锁 chapter 1 - 电子部分&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20190109-smartlock-guild-clutch-structure/&#34;&gt;认识智能锁 chapter 2 - 离合结构 / 核心工作原理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20190109-smartlock-guild-lock-body/&#34;&gt;认识智能锁 chapter 3 - 智能锁锁体&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20190109-smartlock-guild-lock-cylinder/&#34;&gt;认识智能锁 chapter 4 - 智能锁锁芯&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20190109-smartlock-guild-anti-cat-eye-unlock/&#34;&gt;认识智能锁 chapter 5 - 防猫眼开锁&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
     </item>
     
     <item>
