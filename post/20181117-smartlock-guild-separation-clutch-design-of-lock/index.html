@@ -11,18 +11,15 @@
   
   
     
-    <meta charset="utf-8" name="keywords" content="指纹锁,安全,稳定,小黑盒,假指纹," > 
+    <meta charset="utf-8" name="keywords" content="指纹锁,设计,离合," > 
   
    
-  <meta charset="utf-8" name="description" content="本文由于主题比较混乱，已经将其拆解整理到其他文章，具体请访问：
+  <meta charset="utf-8" name="description" content="在指纹锁安装过程中可能会出现一种很特殊的情况，两道门要装1把指纹锁，我就碰到过类似的情况，解决方法在 把手有一点错位的情况下使用
+前后把手不联动方案就可以解决，关于此方案有两个以下的特点：
 
 
-认识智能锁 chapter 1 - 电子部分补充-小黑盒/假指纹
-《如何挑选一款适合自己的指纹锁》
-
-
-
-
+锁体方钢孔位前后分离，即锁孔不联动，典型代表电子锁体、分体拨桃机械锁体，配合配件为分离式方钢
+如非电子锁体则要求把手能做到下压后方钢能正常归位中心线，这就是本文需要具体讨论的点，其关键的部件就是离合的设计。
 " >
   
   
@@ -34,7 +31,7 @@
   
   
   
-  <title>智能锁——安全/稳定/便捷三大特性质疑- 易道非 Blog</title>  
+  <title>认识智能锁 chapter 2 - 离合结构补充——分离式离合设计- 易道非 Blog</title>  
   
   
     
@@ -121,10 +118,10 @@ if (!doNotTrack) {
 <section class="main-content-container">
 <article class="article-card">
 	<header class="article-header"> 
-	   <p class="article-title">智能锁——安全/稳定/便捷三大特性质疑</p>
+	   <p class="article-title">认识智能锁 chapter 2 - 离合结构补充——分离式离合设计</p>
    		<div class="article-meta">
 			
-			<div><i class="fa fa-calendar" >2018年11月19日</i> </div>
+			<div><i class="fa fa-calendar" >2018年09月20日</i> </div>
 			  
 
 			 
@@ -144,119 +141,88 @@ if (!doNotTrack) {
 		</div>  
 	</header>  
 	<content class="markdown">
-		<p>本文由于主题比较混乱，已经将其拆解整理到其他文章，具体请访问：</p>
+		<p>在指纹锁安装过程中可能会出现一种很特殊的情况，两道门要装1把指纹锁，我就碰到过类似的情况，解决方法在 <strong>把手有一点错位的情况下</strong>使用
+前后把手不联动方案就可以解决，关于此方案有两个以下的特点：</p>
 
 <ol>
-<li><a href="https://yidaofei.com/post/20190109-smartlock-guild-security-challenge/">认识智能锁 chapter 1 - 电子部分补充-小黑盒/假指纹</a></li>
-<li><a href="/post/20181118-how-to-select-a-good-smartlock/">《如何挑选一款适合自己的指纹锁》</a></li>
+<li>锁体方钢孔位前后分离，即锁孔不联动，典型代表电子锁体、分体拨桃机械锁体，配合配件为分离式方钢</li>
+<li>如非电子锁体则要求把手能做到下压后方钢能正常归位中心线，这就是本文需要具体讨论的点，其关键的部件就是离合的设计。</li>
 </ol>
 
-<hr />
+<p>
+上面谈到的第二点表象是方钢能够回归中心线，而本质则是销子卡位部件能够正常回位正中，保证电机能够正常的上行，
+让销子卡位部件与把手固定部分结合成一个整体带动方钢转动从而带动锁体转动。</p>
 
-<p></p>
+<p>关于此原理请参看《指纹锁工作原理及结构设计要点》，以下就从离合构件、如何判定离合好坏、为什么天乔智能锁801可以予以分析？</p>
 
-<p>本文的启由：</p>
+<h3 id="离合构件">离合构件</h3>
+
+<p>把手离合结构一般而言由以下零部件组成：</p>
 
 <ol>
-<li>2018年11月19日完成《如何挑选一款适合自己的指纹锁》，发布至知乎话题：<a href="https://www.zhihu.com/question/28621864">智能锁选择什么品牌的比较好?</a>后
-回答其他问题有部分花心思回答的问题被 <strong>无声删除</strong>，简直想 f**ck!</li>
-<li>相关的客户能够从本文中分析出一些终端的客户对于指纹锁的想法</li>
-<li>同步记录自己对于某些事情的看法</li>
+<li>把手固定部分——固定把手部件</li>
+<li>销子卡位部件——结合电机方钢，开门部件</li>
+<li>方钢套部分——上抬把手即可锁门部件</li>
 </ol>
 
-<p>本文相关联的知乎问题：</p>
+<p>后两者可以结合成一个整体部件，但是产品健壮性降低</p>
 
-<ul>
-<li><a href="https://www.zhihu.com/question/20741025">现在的指纹锁怎么样啊？安全吗？会不会卡死？</a></li>
-</ul>
+<h3 id="如何判断离合好坏">如何判断离合好坏</h3>
 
-<h3 id="安全与稳定类问题">安全与稳定类问题</h3>
-
-<h4 id="技术开锁-小黑盒事件">技术开锁——小黑盒事件</h4>
-
-<p>@滕腾 小黑盒子事件说句实在话是“一粒老鼠屎坏了一锅粥”的最佳体现，对于指纹锁的销售确实是一次比较大的困难期，但是从另外
-一个层面来讲也促进了指纹锁行业的良性发展——指纹锁曝光度增加、低质量厂家清场、行业标准进度加快等，这是我对于此次事件的一个看法！</p>
-
-<p>但是也请大家理性的看待相关的宣传报答，并不是说所有的指纹锁都有此现象，有很多的厂家都发表了相关的测试视频：</p>
-
-<p><strong>《线圈秒开指纹锁 真有这么神奇?》</strong></p>
-
-<iframe height=498 width=510 src='https://player.youku.com/embed/XMzczOTY3MzUyOA==' frameborder=0 'allowfullscreen'></iframe>
-
-<p><strong>《金指码指纹锁》</strong></p>
-
-<iframe height=498 width=510 src='https://player.youku.com/embed/XMzc0MjM0MzMyNA==' frameborder=0 'allowfullscreen'></iframe>
-
-<p><strong>《野马智能锁悬赏 100 万挑战 “特斯拉线圈” 黑盒子开锁工具》</strong></p>
-
-<iframe height=498 width=510 src='https://player.youku.com/embed/XMzcyMjAxNjE0OA==' frameborder=0 'allowfullscreen'></iframe>
-
-<p>另外附上 《李扬渊及迈瑞微公司对“特斯拉”线圈开锁的情况声明》</p>
-
-<p><img src="https://piwigo.yidaofei.com/galleries/201811/small-black-box.jpg" alt="迈瑞微公司 特斯拉线圈" /></p>
-
-<h4 id="技术开锁-假指纹">技术开锁——假指纹</h4>
-
-<p>好奇实验室 第二季：指纹锁真的能被轻易破解吗?
-可以很清晰的看到复制指纹并没有想象中的那么简单——有谁会傻逼到给别人按住3分钟复制指纹 :😄:</p>
-
-<iframe height=498 width=510 src='https://player.youku.com/embed/XMTUxNDYxNDYwOA==' frameborder=0 'allowfullscreen'></iframe> 
-
-<h4 id="其他破解方式">其他破解方式</h4>
-
-<table>
-<thead>
-<tr>
-<th align="left">破解方式</th>
-<th align="left">应对措施</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td align="left">技术开锁——破解钥匙</td>
-<td align="left">C 级别锁芯</td>
-</tr>
-
-<tr>
-<td align="left">暴力开锁——破坏前面板</td>
-<td align="left">电子锁体+逻辑处理模块后置（王力智能锁方案）</td>
-</tr>
-
-<tr>
-<td align="left">技术开锁——猫眼开锁</td>
-<td align="left">防猫眼开锁技术</td>
-</tr>
-
-<tr>
-<td align="left">技术开锁——卡住主方钢转动</td>
-<td align="left">方钢套铸造为原型或外加一个圆环、嵌入门面内</td>
-</tr>
-</tbody>
-</table>
-
-<p>另外纠正一个错误的观念：</p>
-
-<p><strong>破解 IC 卡</strong>，指纹锁中的 IC 实质上就是卡的ID输入指纹锁内部存储起来用于对比的一串文字，就相当于一个把钥匙，卡本身没有存储数据的功能无需像公交卡等破解，IC 卡只有遗落的风险&mdash;》指纹锁的便捷性（可删除相关的卡）</p>
-
-<h4 id="稳定性问题">稳定性问题</h4>
-
-<p>题主所问的“会不会卡死”，我想应该是说稳定性怎么样吧！这个需要看你购买时具体是如何选择的！</p>
-
-<p>我推荐是选用</p>
+<p>判定一个离合的好坏主要是以以下4个部分来判定：</p>
 
 <ol>
-<li>（四合一/五合一）+6068正装机械锁体+真插芯+前面板电机离合</li>
-<li>（四合一/五合一）+6068电子锁体+真插芯”设计的指纹锁</li>
+<li>销子卡位部件是否永远正对销子：偏差则电机-&gt;销子无法上行、方钢无法带动锁体动作开关门</li>
+<li>把手换向是否简单易换：比如有些需要用到卡簧钳、内六角工具</li>
+<li>使用材料与加工工艺：一般都是采用的精铸件</li>
+<li>组装工艺是否简单</li>
 </ol>
 
-<p>关于为什么请具体看<a href="/post/20181118-how-to-select-a-good-smartlock/">《如何挑选一款适合自己的指纹锁》</a>中“指纹锁关键部件”一段！</p>
+<h4 id="天乔智能锁801模块化离合分析">天乔智能锁801模块化离合分析</h4>
 
-<h4 id="参考资料">参考资料</h4>
+<p>以下以天乔智能锁801模块化离合为例来解析：<br />
+首先以一个简短的视频让大家知道天乔智能锁801模块化离合结构的整体情况：</p>
 
-<p>[1]<a href="http://www.yangtse.com/app/livelihood/2018-07-13/587440.html">紫牛新闻——一个小黑盒就能秒开你家智能锁？权威解释在这里</a><br />
-[2]<a href="http://www.gov.cn/fwxx/kp/2009-04/23/content_1293586.htm">科学生活：IC 卡被破解的可能性到底有多大？</a><br />
-[3]<a href="http://zhinengsuobaike.com/posts/2349.html">国家最新防盗锁标准告诉你，为什么 C 级锁芯最安全？</a></p>
+<iframe height=498 width=510 src='https://player.youku.com/embed/XMzMwNDgzODEyMA==' frameborder=0 'allowfullscreen'></iframe>
+ 
+
+<p>判断离合好坏的条件出发看天乔智能锁801的离合可以知道到 b、c、d 是无可争议是符合要求的——组装简单、精铸件、松把手螺丝调换把手方向即可换向，
+关于a点可能存在争议，以下分析是否能够保证销子卡位不见永远对准销子：</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201810/smartlock-801-clutch-part1.jpg" alt="801离合内部结构图" /></p>
+
+<p>从上图可以看出销子卡位部件永远是处于离合中心线上，不会存在偏移——假定把手向上抬后则把手固定部分则会因为弹簧的回弹力回归正中，在此过程中如果销子卡位部件偏移中心线也会因为弹簧回弹被压回至中心线。</p>
+
+<h4 id="天乔智能锁803-807-哪个更好呢">天乔智能锁803/807 哪个更好呢</h4>
+
+<p>请问以下 <strong>2种离合设计哪种更加好？</strong></p>
+
+<iframe height=498 width=510 src='https://player.youku.com/embed/XMzMwNTQ5NjI0NA==' frameborder=0 'allowfullscreen'></iframe>
+
+<iframe height=498 width=510 src='https://player.youku.com/embed/XMzMwNzQ4OTI3Ng==' frameborder=0 'allowfullscreen'></iframe>
+ 
+
+<h3 id="为什么801-电子锁体可以而803不行">为什么801、电子锁体可以而803不行</h3>
+
+<p>801之所以可以解决两道门把手碰撞挂导致无法顺利开门的问题，关键就在于</p>
+
+<ol>
+<li>采用分离式方钢孔位锁体（前后方钢2根方钢、两者不联动）；</li>
+<li>下压把手开门后把手正常回位时由于弹簧正常归位带动销子卡位部件正常归位。</li>
+</ol>
+
+<p>那如果给803使用分离式锁体能否解决两道门把手碰撞挂导致无法顺利开门的问题?</p>
+
+<p><strong>答案是不可能</strong></p>
+
+<p>803等类似的设计由于销子卡位部件没有任何的归位的力量所以在开一次门后出现方钢斜，销子卡位部件与方钢套（以下
+简称为803方钢套）则无法归位，从而导致下一次电机无法正常上行，803方钢套无法与把手固定部分结合成一个整体带动方钢转动无法开锁！</p>
+
+<iframe height=498 width=510 src='http://player.youku.com/embed/XMzMwNTUzNDQ4NA==' frameborder=0 'allowfullscreen'></iframe>
+ 
+
+<p>为什么电子锁体没有第二点要求？
+主要是因为电子锁体相当于是将离合与电机模块整合进<a href="http://v.youku.com/v_show/id_XMzMwNzcxMDUzMg==.html?spm=a2hzp.8244740.0.0">电子锁体内部</a>，其归位的力量是来自于前把手归位的力量（前把手-&gt;方钢-&gt;锁体方钢孔）</p>
 
 <h3 id="版本信息">版本信息</h3>
 
@@ -273,7 +239,7 @@ if (!doNotTrack) {
 <tr>
 <td align="center">1.0</td>
 <td align="center">init</td>
-<td align="center">2018-11-19</td>
+<td align="center">2018-09-20</td>
 </tr>
 </tbody>
 </table>
@@ -283,7 +249,7 @@ if (!doNotTrack) {
 			<div class="article-copyright">
 			  	<ul>
 			  		<li><strong>本文作者：</strong>易道非</li>
-			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20181119-smartlock-zhihu/</li>
+			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20181117-smartlock-guild-separation-clutch-design-of-lock/</li>
 			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
 			  	</ul>
 			</div>
@@ -298,7 +264,7 @@ if (!doNotTrack) {
 			
 				<a href="https://yidaofei.com/tags/%e6%8c%87%e7%ba%b9%e9%94%81">指纹锁</a>
     		
-				<a href="https://yidaofei.com/tags/%e7%9f%a5%e4%b9%8e">知乎</a>
+				<a href="https://yidaofei.com/tags/%e5%ae%89%e8%a3%85%e8%bf%90%e7%bb%b4">安装运维</a>
     		
     		</i>   
 		</div> 
@@ -310,11 +276,15 @@ if (!doNotTrack) {
 	<hr/>
 	<div class="article-footer-meta-between"> 
 		<div class="refArticle-prev" >
+			  
+		    <a href="https://yidaofei.com/post/20180920-smartlock-issues-wiki/">
+		    	<i class="fa fa-angle-double-left"></i>&nbsp;智能锁问题——速查表  
+		    </a> 
 			
 		</div>
 		 <div class="refArticle-next" >
 		  
-		  	<a href="https://yidaofei.com/post/20181117-smartlock-how-fingerprint-lock-works/">指纹锁工作原理及结构设计要点&nbsp;
+		  	<a href="https://yidaofei.com/post/20180819-readnote-minto-pyramid-principle/"> 《金字塔原理》读书笔记&nbsp;
 		  		<i class="fa fa-angle-double-right"></i>
 		  	</a> 
 		 
@@ -369,14 +339,13 @@ if (!doNotTrack) {
 <ul>
 <li>
 <ul>
-<li><a href="#安全与稳定类问题">安全与稳定类问题</a>
+<li><a href="#离合构件">离合构件</a></li>
+<li><a href="#如何判断离合好坏">如何判断离合好坏</a>
 <ul>
-<li><a href="#技术开锁-小黑盒事件">技术开锁——小黑盒事件</a></li>
-<li><a href="#技术开锁-假指纹">技术开锁——假指纹</a></li>
-<li><a href="#其他破解方式">其他破解方式</a></li>
-<li><a href="#稳定性问题">稳定性问题</a></li>
-<li><a href="#参考资料">参考资料</a></li>
+<li><a href="#天乔智能锁801模块化离合分析">天乔智能锁801模块化离合分析</a></li>
+<li><a href="#天乔智能锁803-807-哪个更好呢">天乔智能锁803/807 哪个更好呢</a></li>
 </ul></li>
+<li><a href="#为什么801-电子锁体可以而803不行">为什么801、电子锁体可以而803不行</a></li>
 <li><a href="#版本信息">版本信息</a></li>
 </ul></li>
 </ul></li>

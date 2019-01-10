@@ -6,13 +6,36 @@
     <description>Recent content in 指纹锁 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 09 Jan 2019 20:46:40 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 09 Jan 2019 23:19:37 +0800</lastBuildDate>
     
 	<atom:link href="https://yidaofei.com/tags/%E6%8C%87%E7%BA%B9%E9%94%81/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>认识智能锁 chapter 7-远程解决方案</title>
+      <title>认识智能锁 chapter 1 - 电子部分补充-小黑盒/假指纹</title>
+      <link>https://yidaofei.com/post/20190109-smartlock-guild-security-challenge/</link>
+      <pubDate>Wed, 09 Jan 2019 23:19:37 +0800</pubDate>
+      
+      <guid>https://yidaofei.com/post/20190109-smartlock-guild-security-challenge/</guid>
+      <description>&lt;p&gt;本文主要是针对网络或线下接触的终端客户或渠道客户中关于小黑盒与假指纹的质疑，主要内容为：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;技术开锁——小黑盒事件&lt;/li&gt;
+&lt;li&gt;技术开锁——假指纹&lt;/li&gt;
+&lt;li&gt;其他破解方式&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;可解答以下问题：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/question/20741025&#34;&gt;知乎-现在的指纹锁怎么样啊？安全吗？会不会卡死？&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>认识智能锁 chapter 7 - 远程解决方案</title>
       <link>https://yidaofei.com/post/20190109-smartlock-guild-remote-unlocking/</link>
       <pubDate>Wed, 09 Jan 2019 20:46:40 +0800</pubDate>
       
@@ -87,6 +110,7 @@
 &lt;li&gt;锁体基本组成&lt;/li&gt;
 &lt;li&gt;锁体主体规格参数&lt;/li&gt;
 &lt;li&gt;指纹锁锁体种类&lt;/li&gt;
+&lt;li&gt;如何评估锁体质量&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -169,49 +193,32 @@
     </item>
     
     <item>
-      <title>指纹锁故障列表</title>
-      <link>https://yidaofei.com/post/20181119-smartlock-malfunctions/</link>
+      <title>智能锁——安全/稳定/便捷三大特性质疑</title>
+      <link>https://yidaofei.com/post/20181119-smartlock-zhihu/</link>
       <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181119-smartlock-malfunctions/</guid>
-      <description>&lt;p&gt;本文主要是收集指纹锁故障，用于分析指纹锁的设计思路！&lt;/p&gt;
+      <guid>https://yidaofei.com/post/20181119-smartlock-zhihu/</guid>
+      <description>&lt;p&gt;本文由于主题比较混乱，已经将其拆解整理到其他文章，具体请访问：&lt;/p&gt;
 
-&lt;p&gt;版权问题：本文很多资料均来自网络博文等，本人会一律保留相关的著作人与原始链接，如著作人不同意相关的转载请与我联系！&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20190109-smartlock-guild-security-challenge/&#34;&gt;认识智能锁 chapter 1 - 电子部分补充-小黑盒/假指纹&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181118-how-to-select-a-good-smartlock/&#34;&gt;《如何挑选一款适合自己的指纹锁》&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>知乎-关于指纹锁相关回答</title>
-      <link>https://yidaofei.com/post/20181119-smartlock-zhihu/</link>
+      <title>智能锁问题——网络案例集锦</title>
+      <link>https://yidaofei.com/post/20181119-smartlock-issues-network-case/</link>
       <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181119-smartlock-zhihu/</guid>
-      <description>&lt;p&gt;本文的启由：&lt;/p&gt;
+      <guid>https://yidaofei.com/post/20181119-smartlock-issues-network-case/</guid>
+      <description>&lt;p&gt;本文主要是收集指纹锁故障，用于分析指纹锁的设计思路！&lt;/p&gt;
 
-&lt;ol&gt;
-&lt;li&gt;2018年11月19日完成《如何挑选一款适合自己的指纹锁》，发布至知乎话题：&lt;a href=&#34;https://www.zhihu.com/question/28621864&#34;&gt;智能锁选择什么品牌的比较好?&lt;/a&gt;后
-回答其他问题有部分花心思回答的问题被 &lt;strong&gt;无声删除&lt;/strong&gt;，简直想 f**ck!&lt;/li&gt;
-&lt;li&gt;相关的客户能够从本文中分析出一些终端的客户对于指纹锁的想法&lt;/li&gt;
-&lt;li&gt;同步记录自己对于某些事情的看法&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;以下已经回答的知乎关于指纹锁问题：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;安全稳定类问题&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/question/20741025&#34;&gt;现在的指纹锁怎么样啊？安全吗？会不会卡死？&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;购买类问题&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/question/28621864/answer/540498559&#34;&gt;智能锁选择什么品牌的比较好?&lt;/a&gt; &lt;strong&gt;答案：&lt;/strong&gt; &lt;a href=&#34;https://yidaofei.com/post/20181118-smartlock-how-to-select-a-good-smartlock/&#34;&gt;如何挑选一款适合自己的指纹锁&lt;/a&gt;
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;版权问题：本文很多资料均来自网络博文等，本人会一律保留相关的著作人与原始链接，如著作人不同意相关的转载请与我联系！&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -252,22 +259,41 @@
     </item>
     
     <item>
-      <title>指纹锁安装工具清单</title>
-      <link>https://yidaofei.com/post/20181115-smartlock-install-lock-toolslist/</link>
+      <title>指纹锁安装日总结——流程/细节/选择重要</title>
+      <link>https://yidaofei.com/post/20181115-smartlock-install-lock-day-summary/</link>
       <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181115-smartlock-install-lock-toolslist/</guid>
+      <guid>https://yidaofei.com/post/20181115-smartlock-install-lock-day-summary/</guid>
+      <description>&lt;p&gt;2018年11月13日 接了一个朋友的安装单，此次安装过程中出现了以下3个最大的问题：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;锁体与门原有锁体不配&amp;mdash;》第一天 GAME OVER&lt;/li&gt;
+&lt;li&gt;配件包缺弹簧配件&amp;mdash;》第二天完成基本安装，第三天追加弹簧配件&lt;/li&gt;
+&lt;li&gt;天地钩很难稳定的挂上去&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;以上安装问题在2018年11月15日 9:05基本解决，仅剩由于天地钩难挂开的一个孔等待快递到达！&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>认识智能锁 chapter 8 - 安装工具</title>
+      <link>https://yidaofei.com/post/20181115-smartlock-guild-install-lock-toolslist/</link>
+      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181115-smartlock-guild-install-lock-toolslist/</guid>
       <description>&lt;p&gt;指纹锁安装工具列表，请大家按照自己的需求自行在此基础上调整！&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>指纹锁安装指导手册</title>
-      <link>https://yidaofei.com/post/20181115-smartlock-install-lock-guild/</link>
+      <title>认识智能锁 chapter 9 - 安装指导手册</title>
+      <link>https://yidaofei.com/post/20181115-smartlock-guild-install-lock-guild/</link>
       <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181115-smartlock-install-lock-guild/</guid>
+      <guid>https://yidaofei.com/post/20181115-smartlock-guild-install-lock-guild/</guid>
       <description>&lt;p&gt;本文主要是从指纹锁安装过程中的一些问题出发整理的指纹锁安装流程！&lt;/p&gt;
 
 &lt;h3 id=&#34;安装测试数据&#34;&gt;安装测试数据&lt;/h3&gt;
@@ -318,58 +344,11 @@
     </item>
     
     <item>
-      <title>指纹锁安装日总结——流程/细节/选择重要</title>
-      <link>https://yidaofei.com/post/20181115-smartlock-install-lock-day-summary/</link>
-      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://yidaofei.com/post/20181115-smartlock-install-lock-day-summary/</guid>
-      <description>&lt;p&gt;2018年11月13日 接了一个朋友的安装单，此次安装过程中出现了以下3个最大的问题：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;锁体与门原有锁体不配&amp;mdash;》第一天 GAME OVER&lt;/li&gt;
-&lt;li&gt;配件包缺弹簧配件&amp;mdash;》第二天完成基本安装，第三天追加弹簧配件&lt;/li&gt;
-&lt;li&gt;天地钩很难稳定的挂上去&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;以上安装问题在2018年11月15日 9:05基本解决，仅剩由于天地钩难挂开的一个孔等待快递到达！&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>分离式离合设计——关于两道门安装问题的延伸</title>
-      <link>https://yidaofei.com/post/20181117-smartlock-separation-clutch-design-of-lock/</link>
+      <title>智能锁问题——两道门发生碰撞</title>
+      <link>https://yidaofei.com/post/20180920-smartlock-issues-two-doors/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181117-smartlock-separation-clutch-design-of-lock/</guid>
-      <description>&lt;p&gt;在指纹锁安装过程中可能会出现一种很特殊的情况，两道门要装1把指纹锁，我就碰到过类似的情况，解决方法在 &lt;strong&gt;把手有一点错位的情况下&lt;/strong&gt;使用
-前后把手不联动方案就可以解决，关于此方案有两个以下的特点：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;锁体方钢孔位前后分离，即锁孔不联动，典型代表电子锁体、分体拨桃机械锁体，配合配件为分离式方钢&lt;/li&gt;
-&lt;li&gt;如非电子锁体则要求把手能做到下压后方钢能正常归位中心线，这就是本文需要具体讨论的点，其关键的部件就是离合的设计。&lt;/li&gt;
-&lt;/ol&gt;</description>
-    </item>
-    
-    <item>
-      <title>指纹锁安装常见问题汇总</title>
-      <link>https://yidaofei.com/post/20180920-smartlock-install-issues-summary/</link>
-      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://yidaofei.com/post/20180920-smartlock-install-issues-summary/</guid>
-      <description>&lt;p&gt;本文主要是针对指纹锁安装过程的一些常见问题的汇总与汇总，应该已经包含了所有的！&lt;/p&gt;
-
-&lt;p&gt;后续如是简单的问题则继续加入进来，如涉及环节比较多的则直接开单篇文章！&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>指纹锁安装问题——两道门</title>
-      <link>https://yidaofei.com/post/20180920-smartlock-install-issue-two-doors/</link>
-      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://yidaofei.com/post/20180920-smartlock-install-issue-two-doors/</guid>
+      <guid>https://yidaofei.com/post/20180920-smartlock-issues-two-doors/</guid>
       <description>&lt;h4 id=&#34;问题现象&#34;&gt;问题现象&lt;/h4&gt;
 
 &lt;p&gt;具体案例：
@@ -378,6 +357,34 @@
 &lt;iframe height=498 width=510 src=&#39;https://player.youku.com/embed/XMzI4ODU5NzQ3Ng==&#39; frameborder=0 &#39;allowfullscreen&#39;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>智能锁问题——速查表</title>
+      <link>https://yidaofei.com/post/20180920-smartlock-issues-wiki/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20180920-smartlock-issues-wiki/</guid>
+      <description>&lt;p&gt;本文主要是针对指纹锁安装过程的一些常见问题的汇总与汇总，应该已经包含了所有的！&lt;/p&gt;
+
+&lt;p&gt;后续如是简单的问题则继续加入进来，如涉及环节比较多的则直接开单篇文章！&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>认识智能锁 chapter 2 - 离合结构补充——分离式离合设计</title>
+      <link>https://yidaofei.com/post/20181117-smartlock-guild-separation-clutch-design-of-lock/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yidaofei.com/post/20181117-smartlock-guild-separation-clutch-design-of-lock/</guid>
+      <description>&lt;p&gt;在指纹锁安装过程中可能会出现一种很特殊的情况，两道门要装1把指纹锁，我就碰到过类似的情况，解决方法在 &lt;strong&gt;把手有一点错位的情况下&lt;/strong&gt;使用
+前后把手不联动方案就可以解决，关于此方案有两个以下的特点：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;锁体方钢孔位前后分离，即锁孔不联动，典型代表电子锁体、分体拨桃机械锁体，配合配件为分离式方钢&lt;/li&gt;
+&lt;li&gt;如非电子锁体则要求把手能做到下压后方钢能正常归位中心线，这就是本文需要具体讨论的点，其关键的部件就是离合的设计。&lt;/li&gt;
+&lt;/ol&gt;</description>
     </item>
     
   </channel>

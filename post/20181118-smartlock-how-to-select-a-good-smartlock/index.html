@@ -328,8 +328,6 @@ if (!doNotTrack) {
 
 <p>通过指纹锁特性的分析大家应该基本可以看出指纹锁的关键的部件为：线路板、电机离合结构、锁体，下面我将每个部件逐一的拆分给大家看：</p>
 
-<p>以下部分与<a href="https://yidaofei.com/post/20181117-smartlock-how-fingerprint-lock-works/">《指纹锁工作原理及结构设计要点》</a>有部分内容重叠，大家可以跳跃性的看。</p>
-
 <h5 id="锁体">锁体</h5>
 
 <p>之所以将锁体放在第一位是因为锁体一旦确定面板的结构与布局基本上就可以确定了，另外很多厂商的锁体都是外购的，也涉及供应链后续配合的一系列问题！</p>
@@ -338,8 +336,8 @@ if (!doNotTrack) {
 
 <ol>
 <li>锁体规格：现市面上流行的指纹锁锁体主要的规格有6068、6054、6052，我 <strong>推荐选用6068</strong>，主要的原因是：该规格能够适配绝大部分的门
-且有葫芦头的位置用于安装真锁芯，与上面的 “指纹锁特性之一——稳定”相对应理解</li>
-<li>真锁芯还是假锁芯：关于真假锁芯请参考文章：<a href="https:/yidaofei.com/post/20181118-smartlock-how-to-select-a-good-smartlock/#补充部分-真假插芯">补充部分：真假插芯</a>,我 <strong>推荐选用真锁芯</strong>，锁最本质解决的需求是什么？安全
+且有葫芦头的位置用于安装真锁芯，与上面的「指纹锁特性之一——稳定」相对应理解</li>
+<li>真锁芯还是假锁芯：详细分析请参考文章：<a href="https:/yidaofei.com/post/20190109-smartlock-guild-lock-cylinder/#真插芯-vs-假插芯">认识智能锁 chapter 4 - 智能锁锁芯-真插芯 VS 假插芯</a>,我 <strong>推荐选用真锁芯</strong>，锁最本质解决的需求是什么？安全
 稳定，而假锁芯针对如电机离合出现故障（如离合销脱落）、安装失误未确认主方钢长度是否够导致的主方钢滑动脱落无能为力，只能猫眼开锁或破坏门锁开门:😢:</li>
 <li>机械锁体还是电子锁体还是电动锁体
 
@@ -366,22 +364,7 @@ if (!doNotTrack) {
 
 <p>PS：拆解过后的锁体如无完全把握请不要流入市场，后果很严重！后果很严重！后果很严重！<strong>轻者锁匠师傅上门150，重者只能破门而入！</strong></p>
 
-<h6 id="补充部分-真假插芯">补充部分：真假插芯</h6>
-
-<p>本部分为2018年11月19日追加章节</p>
-
-<p>由于无图可能大家都比较难以理解真假插芯的差别，所以本次附上两张图，并做简单的对比：</p>
-
-<p><img src="https://piwigo.yidaofei.com/galleries/201811/fake-lock-ferrule.png" alt="" /></p>
-
-<p><img src="https://piwigo.yidaofei.com/galleries/201811/true-lock-ferrule.png" alt="" /></p>
-
-<p>前者为假插芯，后者为真插芯！</p>
-
-<p>通过上图基本上就可以知道假插芯存在1个比较致命的问题：一旦电机离合出现问题或离合与方钢脱落基本上就面临技术开锁-猫眼开锁或者暴力开锁的问题</p>
-
-<p>另外有部分文章说的“对真插芯来说，即使指纹部分全部破坏或者说不工作，小偷依然要面对这个锁芯”，实质上并不是假锁芯与真锁芯的差异，这个描述应该加限定条件
-<strong>“真插芯+电子锁体”</strong>，否则机械锁体只要把面板翘了 <strong>同样能够通过主方钢孔位开门</strong></p>
+<p>更加详细内容请访问：<a href="https://yidaofei.com/post/20190109-smartlock-guild-lock-body/">认识智能锁 chapter 3-智能锁锁体</a></p>
 
 <h5 id="电机离合结构">电机离合结构</h5>
 
@@ -400,11 +383,13 @@ if (!doNotTrack) {
 <li>全自动锁体：行业内使用比较少，动力全部来自锁体内部电机驱动，然后再通过一系列的杠杆获取较大的力将锁舌弹出，安装要求门缝小、精准安装等，稳定性较差，安装精确度最高，难度中等</li>
 </ol>
 
-<p>关于第一种电机离合结构可以访问<a href="https://yidaofei.com/post/20181117-smartlock-separation-clutch-design-of-lock/">《分离式离合设计——关于两道门安装问题的延伸》</a></p>
+<p>关于第一种电机离合结构可以访问<a href="https://yidaofei.com/post/20181117-smartlock-guild-separation-clutch-design-of-lock/">《认识智能锁 chapter 2 - 离合结构补充——分离式离合设计》</a></p>
 
 <p>关于第二种离合结构主要注意点是电机的技术参数，如电压；</p>
 
 <p>关于第三种离合结构没有深入接触，不予追加说明！</p>
+
+<p>更加详细内容请访问：<a href="https://yidaofei.com/post/post/20190109-smartlock-guild-electronic-part/">认识智能锁 chapter 1 - 电子部分</a></p>
 
 <h5 id="线路板">线路板</h5>
 
@@ -418,45 +403,7 @@ if (!doNotTrack) {
 <li>线路板主板上的电子元器件是否足够的多？可以将一部分非常差的线路板排除</li>
 </ol>
 
-<h6 id="补充部分-指纹头">补充部分：指纹头</h6>
-
-<p>本部分为2018年11月19日追加章节</p>
-
-<p>行内使用的指纹头应该有3种：光学、半导体、指静脉，另外半导体在形态上又可以分解为电容式与擦刮式，其外观形式如下：</p>
-
-<p><img src="https://piwigo.yidaofei.com/galleries/201811/fingerprint-chip.png" alt="指纹头分类" /></p>
-
-<p>其相关的优缺点如下：</p>
-
-<table>
-<thead>
-<tr>
-<th align="left">类型</th>
-<th align="left">优点</th>
-<th align="left">缺点</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td align="left">光学</td>
-<td align="left">成熟稳定、耐用、性价比高</td>
-<td align="left">识别不够灵敏，准确率较低、不防假指纹</td>
-</tr>
-
-<tr>
-<td align="left">半导体</td>
-<td align="left">识别准确，灵敏度高、超薄</td>
-<td align="left">耐磨度不够、怕静电、价格稍贵</td>
-</tr>
-
-<tr>
-<td align="left">指静脉</td>
-<td align="left">全能手+活体检测</td>
-<td align="left">非常贵</td>
-</tr>
-</tbody>
-</table>
+<p>更加详细内容请访问：<a href="https://yidaofei.com/post/20190109-smartlock-guild-clutch-structure/">认识智能锁 chapter 2 - 离合结构 / 核心工作原理</a></p>
 
 <h3 id="参考资料">参考资料</h3>
 
@@ -494,6 +441,12 @@ if (!doNotTrack) {
 <td align="center">调整指纹锁特性之一安全</td>
 <td align="center">20190109</td>
 </tr>
+
+<tr>
+<td align="center">2.0</td>
+<td align="center">将「指纹锁关键部件」部分全面抽取关键内容，引用详细文章</td>
+<td align="center">20190109</td>
+</tr>
 </tbody>
 </table>
 			  
@@ -528,8 +481,8 @@ if (!doNotTrack) {
 	<div class="article-footer-meta-between"> 
 		<div class="refArticle-prev" >
 			  
-		    <a href="https://yidaofei.com/post/20181119-smartlock-zhihu/">
-		    	<i class="fa fa-angle-double-left"></i>&nbsp;知乎-关于指纹锁相关回答  
+		    <a href="https://yidaofei.com/post/20181119-smartlock-issues-network-case/">
+		    	<i class="fa fa-angle-double-left"></i>&nbsp;智能锁问题——网络案例集锦  
 		    </a> 
 			
 		</div>
@@ -601,15 +554,9 @@ if (!doNotTrack) {
 </ul></li>
 <li><a href="#指纹锁关键部件">指纹锁关键部件</a>
 <ul>
-<li><a href="#锁体">锁体</a>
-<ul>
-<li><a href="#补充部分-真假插芯">补充部分：真假插芯</a></li>
-</ul></li>
+<li><a href="#锁体">锁体</a></li>
 <li><a href="#电机离合结构">电机离合结构</a></li>
-<li><a href="#线路板">线路板</a>
-<ul>
-<li><a href="#补充部分-指纹头">补充部分：指纹头</a></li>
-</ul></li>
+<li><a href="#线路板">线路板</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#参考资料">参考资料</a></li>
