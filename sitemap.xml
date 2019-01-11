@@ -12,6 +12,21 @@
   </url>
   
   <url>
+    <loc>https://yidaofei.com/drafts/20190110-books-list-0-to-3/</loc>
+    <lastmod>2019-01-10T23:36:03+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/drafts/20190110-windows-guild-foreword/</loc>
+    <lastmod>2019-01-10T10:27:08+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/drafts/20190110-create-a-efficient-file-management-system/</loc>
+    <lastmod>2019-01-10T10:27:08+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yidaofei.com/post/20190109-smartlock-guild-security-challenge/</loc>
     <lastmod>2019-01-09T23:19:37+08:00</lastmod>
   </url>
@@ -404,7 +419,7 @@
   
   <url>
     <loc>https://yidaofei.com/</loc>
-    <lastmod>2019-01-09T23:19:37+08:00</lastmod>
+    <lastmod>2019-01-10T23:36:03+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -428,6 +443,12 @@
   
   <url>
     <loc>https://yidaofei.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/drafts/</loc>
+    <lastmod>2019-01-10T23:36:03+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -493,13 +514,13 @@
   
   <url>
     <loc>https://yidaofei.com/tags/windows-%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2018-12-22T12:12:35+08:00</lastmod>
+    <lastmod>2019-01-10T10:27:08+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://yidaofei.com/categories/windows-%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2018-12-22T12:12:35+08:00</lastmod>
+    <lastmod>2019-01-10T10:27:08+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -678,8 +699,14 @@
   </url>
   
   <url>
+    <loc>https://yidaofei.com/tags/%E7%BB%B4%E5%9F%BA/</loc>
+    <lastmod>2019-01-10T23:36:03+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yidaofei.com/categories/%E7%BB%B4%E5%9F%BA/</loc>
-    <lastmod>2018-12-27T18:10:48+08:00</lastmod>
+    <lastmod>2019-01-10T23:36:03+08:00</lastmod>
     <priority>0</priority>
   </url>
   

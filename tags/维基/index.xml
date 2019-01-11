@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Drafts on  易道非 Blog</title>
-    <link>https://yidaofei.com/drafts/</link>
-    <description>Recent content in Drafts on  易道非 Blog</description>
+    <title>维基 on  易道非 Blog</title>
+    <link>https://yidaofei.com/tags/%E7%BB%B4%E5%9F%BA/</link>
+    <description>Recent content in 维基 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 10 Jan 2019 23:36:03 +0800</lastBuildDate>
     
-	<atom:link href="https://yidaofei.com/drafts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yidaofei.com/tags/%E7%BB%B4%E5%9F%BA/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -31,26 +31,6 @@
 &lt;li&gt;本文全部为网络资料汇总，请大家遵循自己的情况吸收相关的资料！&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;本文绝大部分内容为网络摘抄内容，后续为了阅读体验感会保留相关的引用说明，如有侵权请联系本人处理&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Windows 教程-前言</title>
-      <link>https://yidaofei.com/drafts/20190110-windows-guild-foreword/</link>
-      <pubDate>Thu, 10 Jan 2019 10:27:08 +0800</pubDate>
-      
-      <guid>https://yidaofei.com/drafts/20190110-windows-guild-foreword/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Windows 教程4-打造一个高效的文件管理系统</title>
-      <link>https://yidaofei.com/drafts/20190110-create-a-efficient-file-management-system/</link>
-      <pubDate>Thu, 10 Jan 2019 10:27:08 +0800</pubDate>
-      
-      <guid>https://yidaofei.com/drafts/20190110-create-a-efficient-file-management-system/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt;  提示内容&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
