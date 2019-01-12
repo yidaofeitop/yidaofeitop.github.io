@@ -6,33 +6,10 @@
     <description>Recent content in 知乎 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 09 Jan 2019 23:19:37 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 19 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://yidaofei.com/tags/%E7%9F%A5%E4%B9%8E/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>认识智能锁 chapter 1 - 电子部分补充-小黑盒/假指纹</title>
-      <link>https://yidaofei.com/post/20190109-smartlock-guild-security-challenge/</link>
-      <pubDate>Wed, 09 Jan 2019 23:19:37 +0800</pubDate>
-      
-      <guid>https://yidaofei.com/post/20190109-smartlock-guild-security-challenge/</guid>
-      <description>&lt;p&gt;本文主要是针对网络或线下接触的终端客户或渠道客户中关于小黑盒与假指纹的质疑，主要内容为：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;技术开锁——小黑盒事件&lt;/li&gt;
-&lt;li&gt;技术开锁——假指纹&lt;/li&gt;
-&lt;li&gt;其他破解方式&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;可解答以下问题：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/question/20741025&#34;&gt;知乎-现在的指纹锁怎么样啊？安全吗？会不会卡死？&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title>智能锁——安全/稳定/便捷三大特性质疑</title>
