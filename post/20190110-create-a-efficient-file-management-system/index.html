@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <meta charset="UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" >
+
+  
+  
+    
+    <meta charset="utf-8" name="keywords" content="windows 教程,文件管理系统," > 
+  
+   
+  <meta charset="utf-8" name="description" content="经过Windows 教程1-如何下载官方 ISO及Windows 教程2-如何安装 Windows 系统我们已经将 「Windows 系统」安装到「C 盘」，后续的步骤无非就是「分盘、安装相关软件、系统调优」！
+
+分盘是后续步骤的第一步：「分盘」，后续所有的操作都建立于此，但是如果仅仅是「分盘」我就没要单独成篇，我在本文想要做的告诉大家如何搭建一个「高效的文件管理系统」！
+
+本文大部分内容来自易道非博客-知识管理系统——知识存储及发布端 V1.0 版，主要区别如下：
+
+
+本教程的受众主要是非计算机专业人士/爱好者，所以相对应的做了部分的简化
+补充相关的文件管理效率软件，如 「Everything」等
+
+
+" >
+  
+  
+  
+    
+        <link rel="icon" type="image/png" href="https://yidaofei.com//image/favicon-32x32.png" > 
+    
+  
+  
+  
+  
+  <title>Windows 教程3-基础阶段-打造一个高效的文件管理系统- 易道非 Blog</title>  
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-126184892-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+
+  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+<body> 
+ 
+
+ 
+<div id="top-element" data-title="到达顶点"></div>
+  
+<header class="site-header fixed-top">
+  <div class="container">
+    <nav id="navigation">  
+      <a href="https://yidaofei.com/" class="site-title">
+        
+        <img title="site-logo" class="site-logo" src="https://yidaofei.com//image/logo.png" >
+           
+         易道非 Blog 
+      </a> 
+      <a aria-label="mobile menu" class="nav-toggle" id="site-nav-toggle"> 
+        <span></span> <span></span> <span></span> 
+      </a>
+      <ul class="menu-left">
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/categories/">Categories</a></li>
+        
+          <li><a href="/tags">Tags</a></li>
+        
+          <li><a href="/wiki">Wiki</a></li>
+        
+          <li><a href="/about">About</a></li>
+        
+
+        
+          <li><a data-remodal-target="searchinput">search</a></li>
+           
+      </ul>
+    </nav>
+  </div>
+</header> 
+
+
+
+<div class="remodal" data-remodal-id="searchinput" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> 
+  <span id="algoliaData" style="display:none;" data-appid="NYC6MHRISW" 
+		data-searchkey="7f131a263a8820645ee9fc65ed97b22f" 
+		data-initindex="github-yidaofeicnBlog"></span>
+
+<div class="search-input-card" >
+    <input type="search" id="search-input" class="search-input" placeholder="Search for titles or URIs..." name="search" autocomplete="off" />
+     <span class="input-search-icon"><i class="fa fa-search"></i></span> 
+</div>
+
+ 
+
+  
+</div>
+
+  
+
+
+
+<section class="main-content-container">
+<article class="article-card">
+	<header class="article-header"> 
+	   <p class="article-title">Windows 教程3-基础阶段-打造一个高效的文件管理系统</p>
+   		<div class="article-meta">
+			
+			<div><i class="fa fa-calendar" >2019年01月10日</i> </div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://yidaofei.com/categories/windows-%e6%95%99%e7%a8%8b">windows 教程</a> 
+				   
+				</i>  
+			</div> 
+		</div>  
+	</header>  
+	<content class="markdown">
+		<p>经过<a href="https://yidaofei.com/post/20181216-windows-guide-how-download-iso/">Windows 教程1-如何下载官方 ISO</a>及<a href="https://yidaofei.com/post/20181217-windows-guild-how-to-install-windows-iso/">Windows 教程2-如何安装 Windows 系统</a>我们已经将 「Windows 系统」安装到「C 盘」，后续的步骤无非就是「分盘、安装相关软件、系统调优」！</p>
+
+<p>分盘是后续步骤的第一步：「分盘」，后续所有的操作都建立于此，但是如果仅仅是「分盘」我就没要单独成篇，我在本文想要做的告诉大家如何搭建一个「高效的文件管理系统」！</p>
+
+<p>本文大部分内容来自<a href="https://yidaofei.com/post/20181219-knowledge-management-system-storage-and-publish-v1/">易道非博客-知识管理系统——知识存储及发布端 V1.0 版</a>，主要区别如下：</p>
+
+<ol>
+<li>本教程的受众主要是非计算机专业人士/爱好者，所以相对应的做了部分的简化</li>
+<li>补充相关的文件管理效率软件，如 「Everything」等</li>
+</ol>
+
+<p></p>
+
+<h3 id="最完美的分盘方案">最完美的分盘方案</h3>
+
+<p>不知道大家的硬盘是怎样分盘的，是一台电脑就一个C盘，还是说分成C、D两个盘……</p>
+
+<p>我将我的分盘方案列出并说明为什么如何分盘？</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">盘名</th>
+<th align="left">大小</th>
+<th align="left">原因</th>
+<th align="left">追加</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">C 盘</td>
+<td align="left">50 G</td>
+<td align="left">1. 系统盘分离可防御如系统崩溃重装导致资料丢失风险 2. Windows系统安装完成一般为35 G</td>
+<td align="left">最大60G</td>
+</tr>
+
+<tr>
+<td align="left">D 盘</td>
+<td align="left">80 G</td>
+<td align="left">1. 公共资料盘，主要用于存放程序安装文件、公共资料 2. 系统重装部分软件无需重新配置，节省时间</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">E 盘</td>
+<td align="left">80 G</td>
+<td align="left">1. 私人资料盘，主要用于存放个人资料——利用 windows 自身的 「BitLocker」加密</td>
+<td align="left"><strong>私人密码</strong></td>
+</tr>
+
+<tr>
+<td align="left">空白</td>
+<td align="left">27.22 G</td>
+<td align="left">1. 用于后期备用</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+
+<p>以上分区可以说是我使用电脑以来做出的最完美的分区方案——<strong>系统崩溃风险、公共使用、个人隐私三者全部兼顾</strong>！</p>
+
+<p>在书写<a href="https://yidaofei.com/post/20181219-knowledge-management-system-storage-and-publish-v1/">易道非博客-知识管理系统——知识存储及发布端 V1.0 版</a>时，我曾经发布过2个任务：</p>
+
+<blockquote>
+<p>任务1：以上方案针对的情景是哪种情景？是否适用工作情景</p>
+
+<p>任务2：请思考如不新分盘如何进一步加强隐私？如无任何规定如何进一步加强隐私？</p>
+</blockquote>
+
+<p>下面开始公布答案：</p>
+
+<p><strong>任务1 答案</strong><br />
+以上的方案如果仅是针对私人领域，那完全没问题，但是如果要兼顾办公领域（即电脑私人与工作文件融合在一起）,那么我们的文件系统需要增加以下因素：</p>
+
+<ol>
+<li>当前工作文件——除同事及本人外其他人不可访问</li>
+<li>增加参与人员：同事等工作人员</li>
+</ol>
+
+<p>所以针对性的需要创建一个「工作盘」，并利用 Windows 自身的「BitLocker」创建一个<strong>工作密码</strong>，保证仅有自己与同事等工作人员可访问！</p>
+
+<p><strong>任务2 答案</strong><br />
+利用<a href="https://www.iplaysoft.com/veracrypt.html">VeraCrypt</a>软件创建某个加密空间，将相关资料放入其中即可</p>
+
+<p>此方式方法可用于某些重要文件整体加密打包上传至云端网盘！</p>
+
+<h3 id="恰到好处的文件夹分类">恰到好处的文件夹分类</h3>
+
+<p>同样的问题</p>
+
+<ol>
+<li>不知道大家的文件是怎样分，是电影一个文件夹、音乐一个文件夹还是……</li>
+<li>如果不借助搜索你能够在打开几层夹就能找到你要的文件</li>
+</ol>
+
+<p>参照<a href="http://www.360doc.com/content/16/0502/21/17286512_555717969.shtml">《强力底版的多领域实践 | 知行，在路上》</a>的「六位平衡术」以及<a href="https://www.zhihu.com/question/23427617/answer/28206585">《如何构建自己的笔记系统？ - Lachel的回答》</a>「知识内化需经过：收集——完善——整理——（应用）——归档」将文件夹系统调整如下：</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201812/document-classification-20181220.jpg" alt="文件夹分类" /></p>
+
+<p>内在原则如下（Copy 自<a href="https://www.zhihu.com/question/23427617/answer/28206585">《如何构建自己的笔记系统？ - Lachel的回答》</a>
+）：</p>
+
+<blockquote>
+<p>1.一切以「用」为主。记笔记是为了用，不用的笔记没有价值</p>
+
+<p>2.以「主题」为核心。「主题」即「项目」，也就是「笔记可能的用途」。记笔记的目的，在于支撑主题，一切流程都是为主题服务。</p>
+</blockquote>
+
+<p>类似的可以将 RSS/浏览器书签等进行相关的分类！</p>
+
+<h3 id="规范的文件命名">规范的文件命名</h3>
+
+<p>参考<a href="https://jingyan.baidu.com/article/636f38bb5e48ead6b84610ff.html">个人文档命名规范和文件夹分类</a>以及<a href="https://www.cnblogs.com/BreezeWoo/p/SaveYourDesktop.html">拯救你的电脑之文件命名规范与目录规划</a>
+以及工作经验整理如下「文件命名规范」：</p>
+
+<blockquote>
+<p>文件主题+版本号+相关部门+文件作者+相关日期</p>
+
+<p>eg:知识管理系统之知识存储及发布端 V1.0-研发部-易道非-20181219</p>
+</blockquote>
+
+<p>关于其中的版本号可以采用采用不同的粒度控制，如 <code>V1.0.0</code>、<code>V1.0.0.0</code>等！</p>
+
+<h3 id="以防万一的网络云备份系统">以防万一的网络云备份系统</h3>
+
+<p>不知道有多少人有关键文件备份的习惯，反正我是一定要做的！</p>
+
+<p>因为我清楚的记得2016年我自己一块西部数据的硬盘忽然挂掉时的感觉——「fu**ck，这种事情怎么会发生」！
+同时在网络上也可以随时找到类似的「数据丢失，损失惨重」的案例：</p>
+
+<ol>
+<li><a href="http://www.10tiao.com/html/188/201808/2650279111/1.html">静默错误：为什么看了那么多灾难，还是过不好备份这一关？</a>：静默错误导致「前沿数控」2年核心数据丢失，由于无备份公司直接从0开始</li>
+<li><a href="https://www.easyaq.com/news/1966946108.shtml">传华为被罚5亿，因数据丢失事件遭中国移动“全国系统排查”</a>：数据误删导致广西80万移动用户2G/3G/4G业务无法使用</li>
+<li><a href="http://www.cnblogs.com/lixigang/articles/5091621.html">下厨房6月26日数据丢失事故总结</a></li>
+<li>……</li>
+</ol>
+
+<p>构建网络存储体系大致分为以下2步：</p>
+
+<ol>
+<li>文件分类：按照来源、恢复难度、价值大小、隐私性分类</li>
+<li>针对文件分类选用合理的存储方案存储</li>
+</ol>
+
+<p>由于本文针对的是「非计算机专业人士/爱好者」所以将原来的方案<a href="https://yidaofei.com/post/20181219-knowledge-management-system-storage-and-publish-v1/#%E5%88%9D%E6%AD%A5%E5%AE%8C%E6%88%90%E7%9A%84%E7%BD%91%E7%BB%9C%E5%AD%98%E5%82%A8%E4%BD%93%E7%B3%BB">初步完成的网络存储体系</a>调整如下：</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">文件类型</th>
+<th align="left">云盘</th>
+<th align="left">:&ndash;</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">软件、电影、音乐等无隐私不重要的文件</td>
+<td align="left">百度云</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">重要但保密性低私人文件</td>
+<td align="left">百度云</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">重要但保密性高且<strong>变动少使用率低</strong>的私人文件</td>
+<td align="left">利用加密软件上传至百度云</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">重要但保密性高且<strong>变动多或使用率高</strong>的私人文件</td>
+<td align="left">利用加密软件上传至坚果云</td>
+<td align="left">速度、增量同步</td>
+</tr>
+
+<tr>
+<td align="left">重要但保密性低工作文件</td>
+<td align="left">坚果云</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">重要但保密性高工作文件</td>
+<td align="left">利用加密软件上传至坚果云</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+
+<p>PS：<br />
+以上加密软件分别为「VeraCrypt」与「Cryptomator」，两者之间的区别是：</p>
+
+<p>「VeraCrypt」采用的是将待加密文件<strong>整体打包加密后</strong>上传，所以比较适合比较文件关联性强文件比较小或文件使用频率极低的情况
+「Cryptomator」采用的是<strong>将单个文件本地加密后</strong>上传，所以比较适合文件关联性不大或文件比较大的情况</p>
+
+<h3 id="文件管理效率软件">文件管理效率软件</h3>
+
+<p>文件管理效率软件大致有</p>
+
+<ol>
+<li>文件管理器：代替 windows 文件管理器，「Total Commander」、「FreeCommander」，学习成本比较高，不推荐使用</li>
+<li>文件名查找工具：「Listary」、「Everything」</li>
+<li>全文搜索工具：「docfetcher」、「FileLocator」</li>
+</ol>
+
+<p>20190111 搜集到的相关教程如下：</p>
+
+<ol>
+<li><a href="https://xbeta.info/studytc/">善用佳软-最易读的Total Commander教程</a></li>
+<li><a href="https://yuedu.baidu.com/ebook/1ec4abf0f46527d3240ce0ab">一本关于 Total Commander 的书</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/24897629">Listary 官方文档中文版</a></li>
+<li><a href="http://xbeta.info/everything-search-tool.htm#h34">善用佳软-Everything:速度最快的文件名搜索工具</a></li>
+</ol>
+
+<p>个人建议整体方案是 「Listary」 +「Docfetcher」</p>
+
+<ul>
+<li>「Listary」：介于搜索工具、快速启动工具和文件资源管理器之间的软件，通过双击 「CTRL」 键弹出操作界面，可<strong>快速检索文件名、调用程序</strong>等</li>
+<li>「Docfetcher」：Java 跨平台全文检索工具，建立完成索引后能够快速定位文件内部内容</li>
+</ul>
+
+<p>Listary 神器操作视频：</p>
+
+<iframe src="//player.bilibili.com/player.html?aid=28815136&cid=49934084&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Version</th>
+<th align="center">Action</th>
+<th align="center">Time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1.0</td>
+<td align="center">init</td>
+<td align="center">2019-01-10</td>
+</tr>
+</tbody>
+</table>
+			  
+		
+		
+			<div class="article-copyright">
+			  	<ul>
+			  		<li><strong>本文作者：</strong>易道非</li>
+			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20190110-create-a-efficient-file-management-system/</li>
+			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
+			  	</ul>
+			</div>
+		 
+	</content>  
+ 	<hr/>
+ 	
+	<div class="article-footer-meta-between"> 
+		 
+		<div>
+			<i class="fa fa-tags">&nbsp;Tags:
+			
+				<a href="https://yidaofei.com/tags/windows-%e6%95%99%e7%a8%8b">windows 教程</a>
+    		
+    		</i>   
+		</div> 
+		 
+		<div id="i-share" class="btn btn-default  share-widget">
+		    <i class="fa fa-share-alt"></i>
+		</div> 
+	</div>
+	<hr/>
+	<div class="article-footer-meta-between"> 
+		<div class="refArticle-prev" >
+			  
+		    <a href="https://yidaofei.com/post/20190110-windows-guild-foreword/">
+		    	<i class="fa fa-angle-double-left"></i>&nbsp;Windows 教程-前言  
+		    </a> 
+			
+		</div>
+		 <div class="refArticle-next" >
+		  
+		  	<a href="https://yidaofei.com/post/20190109-smartlock-guild-security-challenge/">认识智能锁 chapter 1 - 电子部分补充-小黑盒/假指纹&nbsp;
+		  		<i class="fa fa-angle-double-right"></i>
+		  	</a> 
+		 
+	    </div>
+	</div>  
+</article> 
+</section>
+ 
+
+  
+ 
+<div class="main-content-container " >
+<div class="comment-card"> 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeicn/comment-utterances-blog-yidaofeicn"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+</div>
+</div>
+
+ 
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+	
+	
+	<span id="tocLevel" data-startLevel="" data-endLevel=""></span>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#最完美的分盘方案">最完美的分盘方案</a></li>
+<li><a href="#恰到好处的文件夹分类">恰到好处的文件夹分类</a></li>
+<li><a href="#规范的文件命名">规范的文件命名</a></li>
+<li><a href="#以防万一的网络云备份系统">以防万一的网络云备份系统</a></li>
+<li><a href="#文件管理效率软件">文件管理效率软件</a></li>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
+<footer class="site-footer text-center">
+  <div class="social" > 
+     
+          <a href=" mailto:yidaofeicn@gmail.com "><i class="fa fa-envelope-open-o"></i></span></a>
+      
+       
+          <a href=" https://github.com/yidaofeicn "  ><i class="fa fa-github"></i></span></a>
+      
+    
+      
+                <a href="https://yidaofei.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml" target="_blank"> <i class="fa fa-rss"></i>
+                </a>
+          </div>
+   
+  <div class="copyright"  >
+    Powered by &nbsp;<a href="https://gohugo.io/">Hugo</a>&nbsp;|&nbsp;
+    Theme-<a href="https://github.com/yidaofeicn/hugo-theme-flybird">Flybird</a>  
+  </div>
+  <div class="copyright"> Copyright© 2018 Transparent Thoughts. All rights reserved.</div> 
+  <div class="copyright"> 
+
+      
+    
+      <span id="busuanzi_container">
+        访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+</footer>
+
+ 
+
+<div id="bottom-element" data-title="定位底部"></div>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.css">
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.js"></script>
+ 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.30.0/algoliasearch.jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.32.0/autocomplete.jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/algoliasearch/algolia-autocomplete.css">
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.css"> 
+<script type="text/javascript" src="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.css">
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/prismjs/prism.css">
+
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/prismjs/prism.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js"></script>
+
+<script type="text/javascript" color="#1D1D1D" opacity='1' zIndex="-2" count="400" src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.3/canvas-nest.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+<span id="isPage" data-isPage="true" style="display: none;"></span>
+
+
+ 
+
+<script type="text/javascript" src="https://yidaofei.com//js/flybird.js"></script> 
+<script type="text/javascript" src="https://yidaofei.com//js/main.js"></script> 
+  
+ 
+</style>
+</body>
+</html>
+
+
+ 

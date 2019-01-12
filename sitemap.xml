@@ -12,17 +12,22 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/drafts/20190110-books-list-0-to-3/</loc>
+    <loc>https://yidaofei.com/post/20180911-create-a-safe-and-efficient-system/</loc>
+    <lastmod>2019-01-11T10:27:08+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/post/20190110-books-list-0-to-3/</loc>
     <lastmod>2019-01-10T23:36:03+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yidaofei.com/drafts/20190110-windows-guild-foreword/</loc>
+    <loc>https://yidaofei.com/post/20190110-windows-guild-foreword/</loc>
     <lastmod>2019-01-10T10:27:08+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yidaofei.com/drafts/20190110-create-a-efficient-file-management-system/</loc>
+    <loc>https://yidaofei.com/post/20190110-create-a-efficient-file-management-system/</loc>
     <lastmod>2019-01-10T10:27:08+08:00</lastmod>
   </url>
   
@@ -419,7 +424,7 @@
   
   <url>
     <loc>https://yidaofei.com/</loc>
-    <lastmod>2019-01-10T23:36:03+08:00</lastmod>
+    <lastmod>2019-01-11T10:27:08+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -443,12 +448,6 @@
   
   <url>
     <loc>https://yidaofei.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://yidaofei.com/drafts/</loc>
-    <lastmod>2019-01-10T23:36:03+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -490,7 +489,7 @@
   
   <url>
     <loc>https://yidaofei.com/post/</loc>
-    <lastmod>2019-01-09T23:19:37+08:00</lastmod>
+    <lastmod>2019-01-11T10:27:08+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -514,13 +513,13 @@
   
   <url>
     <loc>https://yidaofei.com/tags/windows-%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2019-01-10T10:27:08+08:00</lastmod>
+    <lastmod>2019-01-11T10:27:08+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://yidaofei.com/categories/windows-%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2019-01-10T10:27:08+08:00</lastmod>
+    <lastmod>2019-01-11T10:27:08+08:00</lastmod>
     <priority>0</priority>
   </url>
   

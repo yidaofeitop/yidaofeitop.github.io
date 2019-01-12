@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <meta charset="UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" >
+
+  
+  
+    
+    <meta charset="utf-8" name="keywords" content="windows 教程,安全,隐私,系统调优," > 
+  
+   
+  <meta charset="utf-8" name="description" content="经过前面4个教程，相信大家已经基本上将系统环境已经基本搭建完成，能够胜任相关的工作！
+
+那么我们就进入第一个「进阶阶段」-「-打造一个安全高效的系统」！
+
+本文主要内容如下：
+
+
+系统安全篇
+系统隐私篇
+系统调优篇
+
+
+" >
+  
+  
+  
+    
+        <link rel="icon" type="image/png" href="https://yidaofei.com//image/favicon-32x32.png" > 
+    
+  
+  
+  
+  
+  <title>Windows 教程5-进阶阶段-打造一个安全高效的系统- 易道非 Blog</title>  
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-126184892-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+
+  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+<body> 
+ 
+
+ 
+<div id="top-element" data-title="到达顶点"></div>
+  
+<header class="site-header fixed-top">
+  <div class="container">
+    <nav id="navigation">  
+      <a href="https://yidaofei.com/" class="site-title">
+        
+        <img title="site-logo" class="site-logo" src="https://yidaofei.com//image/logo.png" >
+           
+         易道非 Blog 
+      </a> 
+      <a aria-label="mobile menu" class="nav-toggle" id="site-nav-toggle"> 
+        <span></span> <span></span> <span></span> 
+      </a>
+      <ul class="menu-left">
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/categories/">Categories</a></li>
+        
+          <li><a href="/tags">Tags</a></li>
+        
+          <li><a href="/wiki">Wiki</a></li>
+        
+          <li><a href="/about">About</a></li>
+        
+
+        
+          <li><a data-remodal-target="searchinput">search</a></li>
+           
+      </ul>
+    </nav>
+  </div>
+</header> 
+
+
+
+<div class="remodal" data-remodal-id="searchinput" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> 
+  <span id="algoliaData" style="display:none;" data-appid="NYC6MHRISW" 
+		data-searchkey="7f131a263a8820645ee9fc65ed97b22f" 
+		data-initindex="github-yidaofeicnBlog"></span>
+
+<div class="search-input-card" >
+    <input type="search" id="search-input" class="search-input" placeholder="Search for titles or URIs..." name="search" autocomplete="off" />
+     <span class="input-search-icon"><i class="fa fa-search"></i></span> 
+</div>
+
+ 
+
+  
+</div>
+
+  
+
+
+
+<section class="main-content-container">
+<article class="article-card">
+	<header class="article-header"> 
+	   <p class="article-title">Windows 教程5-进阶阶段-打造一个安全高效的系统</p>
+   		<div class="article-meta">
+			
+			<div><i class="fa fa-calendar" >2019年01月11日</i> </div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://yidaofei.com/categories/windows-%e6%95%99%e7%a8%8b">windows 教程</a> 
+				   
+				</i>  
+			</div> 
+		</div>  
+	</header>  
+	<content class="markdown">
+		<p>经过前面4个教程，相信大家已经基本上将系统环境已经基本搭建完成，能够胜任相关的工作！</p>
+
+<p>那么我们就进入第一个「进阶阶段」-「-打造一个安全高效的系统」！</p>
+
+<p>本文主要内容如下：</p>
+
+<ol>
+<li>系统安全篇</li>
+<li>系统隐私篇</li>
+<li>系统调优篇</li>
+</ol>
+
+<p></p>
+
+<h3 id="系统安全篇">系统安全篇</h3>
+
+<p>不知道大家是否有关注过计算机病毒相关的信息，如果没有的话可以搜一下「病毒 入侵 渠道」、「病毒 电脑  事件」就会搜到以下内容：</p>
+
+<ul>
+<li><a href="http://www.xinhuanet.com/tw/2018-08/07/c_129927871.htm">台积电遭电脑病毒感染 第三季营收将损失2%</a></li>
+<li><a href="http://www.nbd.com.cn/articles/2018-08-06/1242321.html">台积电“想哭”：感染病毒或损失17亿！iPhone新品还好吗？</a></li>
+<li><a href="http://www.eeo.com.cn/2018/1204/342596.shtml">腾讯回应勒索病毒事件已紧急封禁涉毒账号，专家称已感染8万多台电脑</a></li>
+<li>……</li>
+</ul>
+
+<p>所以我们有必要学习一下系统安全防护内的知识，以免遭受损失！</p>
+
+<p>本章节将从以下方面分解「病毒防御」，让大家对于病毒防御有一个最大程度的了解！</p>
+
+<ol>
+<li>病毒定义、特性、分类</li>
+<li>病毒工作原理以及入侵渠道</li>
+<li>病毒防御手段</li>
+</ol>
+
+<p>首先提出几个问题，以便大家能够对计算机病毒有更深的了解：</p>
+
+<blockquote>
+<p>问题1：计算机病毒你接触过的有几类？了解他是如何感染传播的吗？
+问题2：大家防治计算机病毒的手段大致有几种？</p>
+</blockquote>
+
+<h4 id="病毒定义-特性-分类">病毒定义、特性、分类</h4>
+
+<p>首先还是先定义什么是病毒吧！</p>
+
+<p>按照1994年《中华人们共和国计算机安全保护条例》病毒的定义为：</p>
+
+<blockquote>
+<p>计算机病毒是指编制、或者在计算机程序中插入的，破坏计算机功能或数据、影响计算机使用，并能自我
+复制的一组计算机指令或者程序代码</p>
+</blockquote>
+
+<p>病毒的主要特性：感染性、潜伏性、可触发性、破坏性、衍生性，关于其中的定义具体请查阅<a href="http://staff.ustc.edu.cn/~sycheng/sst/lectures/ch06a_Virus.pdf" title="《计算机病毒原理及防治-北京邮电大学-卓新建博士》">《计算机病毒原理及防治……》</a>第7-13页</p>
+
+<p>计算机病毒从不同的角度可以分解为不同的类型（如下表），这里必须提一句的是我们说的病毒一般都是指 「Windows 病毒」，至于为什么主要是因为：</p>
+
+<ol>
+<li>整体框架上 Linux 的安全机制是远好于 Windows 的安全机制</li>
+<li>Linux 开源系统，Windows 闭源系统，从发现 Bug 的几率来讲前者就远远超出后者，还不考虑 Linux 主要用户都是 IT 相关人员</li>
+<li>……</li>
+</ol>
+
+<table>
+<thead>
+<tr>
+<th align="left">分类角度</th>
+<th align="left">分类</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">操作系统分类</td>
+<td align="left">DOS系统病毒、    Windows系统病毒、    UNIX系统病毒、   OS/2系统病毒</td>
+</tr>
+
+<tr>
+<td align="left">传播媒介分类</td>
+<td align="left">单机病毒、   网络病毒</td>
+</tr>
+
+<tr>
+<td align="left">寄生方式分类</td>
+<td align="left">源码型病毒、  入侵型病毒、  外壳型病毒、  操作系统型病毒</td>
+</tr>
+
+<tr>
+<td align="left">破坏情况分类</td>
+<td align="left">良性病毒、   恶性病毒</td>
+</tr>
+
+<tr>
+<td align="left">寄生方式分类</td>
+<td align="left">引导型病毒、  文件型病毒、  混合型病毒</td>
+</tr>
+
+<tr>
+<td align="left">感染途径</td>
+<td align="left">驻留内存型、    不驻留内存型</td>
+</tr>
+</tbody>
+</table>
+
+<p>扩展阅读：</p>
+
+<ul>
+<li><a href="http://staff.ustc.edu.cn/~sycheng/sst/lectures/ch06a_Virus.pdf" title="《计算机病毒原理及防治-北京邮电大学-卓新建博士》">《计算机病毒原理及防治-北京邮电大学-卓新建博士》</a>：教学课件非常详实</li>
+<li><a href="https://www.zhihu.com/question/19889491/answer/17424244">知乎-Copper Friddle-Linux 和 OS X 病毒很少真的只是因为使用人数较少的缘故吗？ </a></li>
+<li><a href="https://www.zhihu.com/question/24207144/answer/363850493">知乎-火绒安全实验室-有哪些有趣的电脑病毒？</a></li>
+</ul>
+
+<h4 id="病毒工作原理以及入侵渠道">病毒工作原理以及入侵渠道</h4>
+
+<p>病毒的主要来源详细大家都有一定的了解，就是网络、外部存储介质（移动硬盘、优盘、光盘……）！</p>
+
+<p>那么病毒到底是如何运作的呢？</p>
+
+<p>首先我先大体说一下<strong>病毒的工作原理</strong>：</p>
+
+<blockquote>
+<p>计算机系统的内存是一个非常重要的资源，我们可以认为所有的工作都需要在内存中运行（相当与人的大脑），所以控制了内存就相当于控制了人的大脑</p>
+
+<p>病毒一般都是通过各种方式把自己植入内存，获取系统最高控制权，然后感染在内存中运行的程序。（注意，所有的程序都在内存中运行，也就是说，在感染了病毒后，你所有运行过的程序都有可能被传染上，感染那些文件这由病毒的特性所决定）</p>
+</blockquote>
+
+<p>下面分别以常见的「程序型病毒」说明病毒的内部工作原理：</p>
+
+<p>他是目前最为广泛的一种病毒，主要感染的 「.exe」 和 「.dll」 等可执行文件和动态连接库文件</p>
+
+<p>运作主要分为2个阶段（以下部分引用自<a href="https://blog.csdn.net/langhaixin/article/details/12260">CSDN-langhaixin-计算机病毒运行机制</a>）：</p>
+
+<ol>
+<li><p>驻留（初始化）部分</p>
+
+<blockquote>
+<p>当运行了带有病毒的宿主文件 「.exe」 或是 「.com」 更可能是现在流行的「.vbs」的脚本文件，即激活了病毒的驻留程序。一般驻留程序会占据宿主文件的一部分，因此驻留程序首先会恢复这一部分的宿主程序；其次可能会判断系统内存是否已驻留了病毒，如果已驻留了则转去执行宿主程序，没有则将病毒程序驻留到内存中，驻留完成后再转去执行原宿主程序。</p>
+
+<p>大部分的病毒的驻留（初始化）部分都采用的这种模式，差别就在各种病毒的实现方法不同而已，DIR病毒首先修改该执行文件目录项中的首镞，首先调入内存的是位于磁盘尾镞的病毒程序，即激活了该病毒的驻留程序。</p>
+</blockquote></li>
+
+<li><p>传染传播部分</p>
+
+<blockquote>
+<p>这个部分是病毒运行的一个核心部分，计算机病毒就像人体病毒一样会传染，无法感染其他细胞的病毒，总会死在白血球抗体的手上，同样无法感染其他文件的计算机病毒也是无法生存的。在攻击传染这部分所使用的手段也是各有各的不同，但其主要还是实现象没有染毒的文件传染病毒这一目标。</p>
+
+<p>有些病毒通过拦截中断向量，对申请中断的文件一一检测，如没有感染病毒则对其进行感染再去执行原中断，如是带毒文件的话则直接执行原中断。采用这种手段的有Yankee病毒，Dir病毒还有臭名昭著的CIH。</p>
+
+<p>还有的病毒则是对磁盘上所有可感染的文件进行扫描，对其中没有感染的文件进行感染。最近十分流行的Nimda病毒在单机上就是采用这种感染方式的。</p>
+
+<p>随着网络的迅速发展越来越多的病毒开始通过网络传播，常见的蠕虫病毒是通过扫描Microsoft Outlook系列或是其他邮件软件的通讯簿选取其中的几位或是所有人的邮箱进行发送以染毒文件为附件的邮件。或是针对各种服务器的系统Bug进行感染传播。</p>
+</blockquote></li>
+</ol>
+
+<p>扩展阅读：</p>
+
+<ul>
+<li><a href="https://www.douban.com/note/313797819/">计算机病毒原理（转）</a>：了解引导型病毒工作机制以及杀毒软件基础机制</li>
+</ul>
+
+<h4 id="病毒防御手段">病毒防御手段</h4>
+
+<p>上面已经将计算机病毒的基础知识做了基本的介绍，相信大家对于计算机病毒有了一定的了解，那么现在我们来聊一聊如何防御病毒！</p>
+
+<p>不知道上面提的问题「问题2：大家防治计算机病毒的手段大致有几种？」大家有几种答案？</p>
+
+<p>我将我的答案列举出来，并续针对性的告诉大家为什么要如此做：</p>
+
+<ol>
+<li>系统权限分级-新建一个「普通用户账户」做常用的用户<br />
+管理员可操作系统所有的资源，而建立一个「普通用户」能够让程序进行某些高风险操作时必须经过管理员同意，这样就可以拦截一部分的病毒与高危操作（如修改注册表……）</li>
+<li>系统杀毒软件-火绒/360国际版<br />
+
+<ul>
+<li>前者相比如「金山毒霸」等国内其他杀毒软件调优软件更为简洁干净，在杀毒的基础上将最真实的需求如「家长控制-上网时间」等糅合在一起，是在安全与系统管理软件里目前最佳的，所以本人将其作为<strong>常用软件</strong>， 关于此进一步可以访问<a href="http://yidaofei.com/post/20181222-windows-guild-software-list/#%E5%AE%89%E5%85%A8%E7%B1%BB-%E7%81%AB%E7%BB%92">《Windows 教程 4 - 基础阶段 - 好的软件改变你的生活-安全类-火绒》</a></li>
+<li>后者的「病毒查杀能力」较前者强，但是由于本人对「360 软件」一贯不信赖仅<strong>偶尔使用</strong><br /></li>
+</ul></li>
+<li>可疑程序采用「虚拟机」或「沙盒程序」运行<br />
+Why？ 请访问：<a href="https://www.zhihu.com/question/68436109/answer/263558374">知乎-KaiwenSun-病毒代码需要debug吗，测试的时候难道不会损坏本地设备吗？</a></li>
+</ol>
+
+<h3 id="系统隐私篇">系统隐私篇</h3>
+
+<p>在这个互联网时代，说实在话如果不是对于互联网隐私有一定了解的人，可能都会不以为然，认为这些信息的泄露不会有造成大的麻烦！所以首先第一步我就将互联网隐私泄露导致的财产损失案例列举给大家：</p>
+
+<ul>
+<li><a href="https://www.redlinecn.com/home/contents/41.html">互联网时代，重大数据泄露事件报告</a></li>
+<li><a href="https://www.77169.com/html/9137.html">我用十天追回支付宝盗刷款25000元的奇葩经历</a>:旧手机+网络支付漏洞</li>
+<li><a href="https://www.zhihu.com/question/41235282/answer/90360419">知乎-卡瓦伊-破解小米云从而破解支付宝安全体系</a></li>
+<li><a href="https://www.zhihu.com/question/41235282/answer/94315643">知乎-wlp2s0-唯品会订单信息泄露套取相关支付信息损失1991元</a></li>
+<li><a href="https://www.zhihu.com/question/41235282/answer/93669876">知乎-王哲-支付宝被盗刷27000</a></li>
+<li><a href="https://www.wdzj.com/zhuanlan/guancha/17-7877-1.html">数据泄露后果有多严重？盘点国内外互联网十大安全事件</a></li>
+<li>……</li>
+</ul>
+
+<p>有些朋友可能不会点击以上链接去看具体的案例，所以我从<a href="https://www.wdzj.com/zhuanlan/guancha/17-7877-1.html">数据泄露后果有多严重？盘点国内外互联网十大安全事件</a>抽取了一张图片，让大家知道部分的「互联网黑产」的知识：</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201901/citizen-information-black-product-quotation.png" alt="公民信息黑产报价单" /></p>
+
+<p>所以大家一定要注意「个人隐私」的保护，由于本文的主题聚焦为「Windows 系统」所以本文就将内容限制在「PC 系统及软件」的层面，不涉及如「手机、个人密码等」，后续我将会开专篇<a href="http://yidaofei.com/post/20190912-think-how-to-protect-personal-privacy/">《互联网时代，我们该如何保护自己的个人隐私》</a></p>
+
+<ol>
+<li>操作系统隐私</li>
+<li>互联网隐私</li>
+</ol>
+
+<h4 id="操作系统隐私">操作系统隐私</h4>
+
+<p>本部分主要针对的是「Windows 10」系统，关于此主要进行以下相关的操作：</p>
+
+<ul>
+<li><a href="http://yidaofei.com/post/20181221-windows-skill-how-to-remove-quick-access/">Windows 技巧 3 - 保护隐私—清除 「windows 10」 快速访问</a></li>
+<li><a href="http://yidaofei.com/post/20181221-windows-skill-how-to-close-dynamic-tile/">Windows 技巧 5 - 保护隐私—关闭并清理 Windows 10 磁贴</a></li>
+</ul>
+
+<h4 id="互联网隐私">互联网隐私</h4>
+
+<p>互联网隐私大致可以分为2个部分：</p>
+
+<ol>
+<li>网站信息收集器</li>
+<li>个人信息自我防护</li>
+</ol>
+
+<h5 id="网站信息收集器">网站信息收集器</h5>
+
+<p>前者需要大家对于「跟踪器」、「浏览器指纹」等概念有一定的了解，关于此可以访问以下文章了解：</p>
+
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/34591096">你是如何被广告跟踪的？</a></li>
+<li><a href="https://wzyboy.im/post/1130.html">浏览器指纹</a></li>
+</ul>
+
+<p>关于此一般来还算好解决，装相关的插件即可，下面分别列出来：</p>
+
+<ol>
+<li>Chrome：「Ghostery-拦截追踪器」、「AdGuard-广告拦截器」、</li>
+<li>Firefox：「Ghostery-拦截追踪器」、「AdGuard-广告拦截器」、「Browser Plugs-指纹隐私防火墙」</li>
+</ol>
+
+<h5 id="个人信息自我防护">个人信息自我防护</h5>
+
+<p>个人信息自我防护大致分为以下步骤：</p>
+
+<p><strong>第一步：信息分级</strong>：</p>
+
+<p>看了很多网上关于个人信息防护的资料，发现基本上都是聚焦在如何利用某些工具防止泄密，很少有人谈到信息分级的问题！</p>
+
+<p>为什么要如此做呢？</p>
+
+<p>因为我们随着时间的推移，我们与外界的交互越来越多的时候就会产生非常大量的「连接」，但是这些「连结」相对你来说有重要的不重要的等情况，你如果将其一视同仁的话势必会造成管理成本上的上升，所以我们要将其分层安排不同的精力去管理！</p>
+
+<p>我建议大家将信息分为三层：</p>
+
+<ol>
+<li>非常重要，一旦泄露被恶意使用就会造成巨大损失</li>
+<li>重要，一旦泄露会造成不是很重大的损失或会造成一定的困扰</li>
+<li>普通/无所谓，泄露无任何损失</li>
+</ol>
+
+<p>给大家举一个例子：</p>
+
+<ul>
+<li>支付宝支付密码泄露可能将造成个人财产的重大损失——非常重要信息</li>
+<li>淘宝登录账号泄露可能造成个人联系方式、购买记录、家庭地址泄露——重要信息</li>
+<li>Adobe 账号泄露无任何损失——普通/无所谓信息</li>
+</ul>
+
+<p><strong>第二步：建立管理系统</strong>：</p>
+
+<p>如果说管理系统也不是很正确，称之为建立不同的策略更为恰当，下面我将自己使用的策略列举出来：</p>
+
+<ol>
+<li>手机号码分级-划分为非常重要、重要、普通/无所谓，推荐软件 「阿里小号」</li>
+<li>邮件分级-划分为非常重要、重要、普通/无所谓，推荐大家<a href="http://www.ruanyifeng.com/blog/2008/11/temporary_and_disposable_email_services.html">临时邮箱</a></li>
+<li>个人信息上传问自己以下问题：
+
+<ul>
+<li>网站数据能否注销</li>
+<li>这个数据是否一定要上传、此类服务是否有可替代服务</li>
+<li>数据是否做了相关的加密或水印（尤其是证件类）</li>
+</ul></li>
+</ol>
+
+<p>扩展阅读：</p>
+
+<ul>
+<li><a href="https://www.freebuf.com/articles/neopoints/111299.html">浅谈互联网隐私安全</a></li>
+<li><a href="https://www.freebuf.com/articles/database/79513.html">解析网购订单信息泄露的秘密</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/36712219">浏览器的隐私模式，真的能完全保护我们的隐私吗？</a></li>
+</ul>
+
+<h3 id="系统调优篇">系统调优篇</h3>
+
+<p>关于系统调优方向我推荐大家使用<a href="https://mofang.ruanmei.com/">魔方</a>：简单高效</p>
+
+<p>另外针对部分魔方暂时没有完成的部分细节功能，我整理输出了以下文章：</p>
+
+<ul>
+<li><a href="http://yidaofei.com/post/20181221-windows-skill-how-to-close-windows-update/">Windows 技巧 6 - 调优 - 如何关闭 Windows 10 更新</a></li>
+</ul>
+
+<!--隐藏链接-->
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Version</th>
+<th align="center">Action</th>
+<th align="center">Time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1.0</td>
+<td align="center">init</td>
+<td align="center">2019-01-11</td>
+</tr>
+</tbody>
+</table>
+			  
+		
+		
+			<div class="article-copyright">
+			  	<ul>
+			  		<li><strong>本文作者：</strong>易道非</li>
+			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20180911-create-a-safe-and-efficient-system/</li>
+			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
+			  	</ul>
+			</div>
+		 
+	</content>  
+ 	<hr/>
+ 	
+	<div class="article-footer-meta-between"> 
+		 
+		<div>
+			<i class="fa fa-tags">&nbsp;Tags:
+			
+				<a href="https://yidaofei.com/tags/windows-%e6%95%99%e7%a8%8b">windows 教程</a>
+    		
+    		</i>   
+		</div> 
+		 
+		<div id="i-share" class="btn btn-default  share-widget">
+		    <i class="fa fa-share-alt"></i>
+		</div> 
+	</div>
+	<hr/>
+	<div class="article-footer-meta-between"> 
+		<div class="refArticle-prev" >
+			
+		</div>
+		 <div class="refArticle-next" >
+		  
+		  	<a href="https://yidaofei.com/post/20190110-books-list-0-to-3/">书籍清单-0-3岁幼儿读物&nbsp;
+		  		<i class="fa fa-angle-double-right"></i>
+		  	</a> 
+		 
+	    </div>
+	</div>  
+</article> 
+</section>
+ 
+
+  
+ 
+<div class="main-content-container " >
+<div class="comment-card"> 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeicn/comment-utterances-blog-yidaofeicn"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+</div>
+</div>
+
+ 
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+	
+	
+	<span id="tocLevel" data-startLevel="" data-endLevel=""></span>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#系统安全篇">系统安全篇</a>
+<ul>
+<li><a href="#病毒定义-特性-分类">病毒定义、特性、分类</a></li>
+<li><a href="#病毒工作原理以及入侵渠道">病毒工作原理以及入侵渠道</a></li>
+<li><a href="#病毒防御手段">病毒防御手段</a></li>
+</ul></li>
+<li><a href="#系统隐私篇">系统隐私篇</a>
+<ul>
+<li><a href="#操作系统隐私">操作系统隐私</a></li>
+<li><a href="#互联网隐私">互联网隐私</a>
+<ul>
+<li><a href="#网站信息收集器">网站信息收集器</a></li>
+<li><a href="#个人信息自我防护">个人信息自我防护</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#系统调优篇">系统调优篇</a></li>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
+<footer class="site-footer text-center">
+  <div class="social" > 
+     
+          <a href=" mailto:yidaofeicn@gmail.com "><i class="fa fa-envelope-open-o"></i></span></a>
+      
+       
+          <a href=" https://github.com/yidaofeicn "  ><i class="fa fa-github"></i></span></a>
+      
+    
+      
+                <a href="https://yidaofei.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml" target="_blank"> <i class="fa fa-rss"></i>
+                </a>
+          </div>
+   
+  <div class="copyright"  >
+    Powered by &nbsp;<a href="https://gohugo.io/">Hugo</a>&nbsp;|&nbsp;
+    Theme-<a href="https://github.com/yidaofeicn/hugo-theme-flybird">Flybird</a>  
+  </div>
+  <div class="copyright"> Copyright© 2018 Transparent Thoughts. All rights reserved.</div> 
+  <div class="copyright"> 
+
+      
+    
+      <span id="busuanzi_container">
+        访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+</footer>
+
+ 
+
+<div id="bottom-element" data-title="定位底部"></div>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.css">
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.js"></script>
+ 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.30.0/algoliasearch.jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.32.0/autocomplete.jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/algoliasearch/algolia-autocomplete.css">
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.css"> 
+<script type="text/javascript" src="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.css">
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/prismjs/prism.css">
+
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/prismjs/prism.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js"></script>
+
+<script type="text/javascript" color="#1D1D1D" opacity='1' zIndex="-2" count="400" src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.3/canvas-nest.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+<span id="isPage" data-isPage="true" style="display: none;"></span>
+
+
+ 
+
+<script type="text/javascript" src="https://yidaofei.com//js/flybird.js"></script> 
+<script type="text/javascript" src="https://yidaofei.com//js/main.js"></script> 
+  
+ 
+</style>
+</body>
+</html>
+
+
+ 

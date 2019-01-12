@@ -6,10 +6,98 @@
     <description>Recent content in Posts on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 09 Jan 2019 23:19:37 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 11 Jan 2019 10:27:08 +0800</lastBuildDate>
     
 	<atom:link href="https://yidaofei.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Windows 教程5-进阶阶段-打造一个安全高效的系统</title>
+      <link>https://yidaofei.com/post/20180911-create-a-safe-and-efficient-system/</link>
+      <pubDate>Fri, 11 Jan 2019 10:27:08 +0800</pubDate>
+      
+      <guid>https://yidaofei.com/post/20180911-create-a-safe-and-efficient-system/</guid>
+      <description>&lt;p&gt;经过前面4个教程，相信大家已经基本上将系统环境已经基本搭建完成，能够胜任相关的工作！&lt;/p&gt;
+
+&lt;p&gt;那么我们就进入第一个「进阶阶段」-「-打造一个安全高效的系统」！&lt;/p&gt;
+
+&lt;p&gt;本文主要内容如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;系统安全篇&lt;/li&gt;
+&lt;li&gt;系统隐私篇&lt;/li&gt;
+&lt;li&gt;系统调优篇&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>书籍清单-0-3岁幼儿读物</title>
+      <link>https://yidaofei.com/post/20190110-books-list-0-to-3/</link>
+      <pubDate>Thu, 10 Jan 2019 23:36:03 +0800</pubDate>
+      
+      <guid>https://yidaofei.com/post/20190110-books-list-0-to-3/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;初心&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;某日婶婶来消息说：「推荐相关0-3 读物」！&lt;/p&gt;
+
+&lt;p&gt;初步的想法时这个一个非常艰难的任务，因为自己完全没有这方面的经验，毕竟我还是一只撸代码的单身 🐶&lt;/p&gt;
+
+&lt;p&gt;但是想想自己总有这样一天，所以还是硬着头皮上吧！&lt;/p&gt;
+
+&lt;p&gt;PS：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;本文全部为网络资料汇总，请大家遵循自己的情况吸收相关的资料！&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;本文绝大部分内容为网络摘抄内容，后续为了阅读体验感会保留相关的引用说明，如有侵权请联系本人处理&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows 教程-前言</title>
+      <link>https://yidaofei.com/post/20190110-windows-guild-foreword/</link>
+      <pubDate>Thu, 10 Jan 2019 10:27:08 +0800</pubDate>
+      
+      <guid>https://yidaofei.com/post/20190110-windows-guild-foreword/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;初心&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;说句实在话，写这个主题主要是基于以下目的：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;在以往的解决亲朋好友电脑问题的时候发现大家的问题都比较雷同，按古人说的「授人以鱼不如授人以渔」，那就需要将相关的知识打散梳理形成一个&lt;strong&gt;逐步完善&lt;/strong&gt;的教程&lt;/li&gt;
+&lt;li&gt;有时候查询电脑故障解决方案时常发现查询的1 资料比较陈旧；2 营销为主、干货少，导致查询的资料无用的居多，浪费时间&lt;/li&gt;
+&lt;li&gt;信息如果不经过整理分析、输出修正那么就无法内化成自己的知识&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;目前的主题内容架构如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://piwigo.yidaofei.com/galleries/201901/windows-guild-xmind.png&#34; alt=&#34;windows 教程-xmind&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;由于个人精力与知识面有限，有相关遗漏错误请大家指正，另外如有比较有意义的技巧大家可以互相讨论交流&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows 教程3-基础阶段-打造一个高效的文件管理系统</title>
+      <link>https://yidaofei.com/post/20190110-create-a-efficient-file-management-system/</link>
+      <pubDate>Thu, 10 Jan 2019 10:27:08 +0800</pubDate>
+      
+      <guid>https://yidaofei.com/post/20190110-create-a-efficient-file-management-system/</guid>
+      <description>&lt;p&gt;经过&lt;a href=&#34;https://yidaofei.com/post/20181216-windows-guide-how-download-iso/&#34;&gt;Windows 教程1-如何下载官方 ISO&lt;/a&gt;及&lt;a href=&#34;https://yidaofei.com/post/20181217-windows-guild-how-to-install-windows-iso/&#34;&gt;Windows 教程2-如何安装 Windows 系统&lt;/a&gt;我们已经将 「Windows 系统」安装到「C 盘」，后续的步骤无非就是「分盘、安装相关软件、系统调优」！&lt;/p&gt;
+
+&lt;p&gt;分盘是后续步骤的第一步：「分盘」，后续所有的操作都建立于此，但是如果仅仅是「分盘」我就没要单独成篇，我在本文想要做的告诉大家如何搭建一个「高效的文件管理系统」！&lt;/p&gt;
+
+&lt;p&gt;本文大部分内容来自&lt;a href=&#34;https://yidaofei.com/post/20181219-knowledge-management-system-storage-and-publish-v1/&#34;&gt;易道非博客-知识管理系统——知识存储及发布端 V1.0 版&lt;/a&gt;，主要区别如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;本教程的受众主要是非计算机专业人士/爱好者，所以相对应的做了部分的简化&lt;/li&gt;
+&lt;li&gt;补充相关的文件管理效率软件，如 「Everything」等&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>认识智能锁 chapter 1 - 电子部分补充-小黑盒/假指纹</title>
@@ -227,7 +315,7 @@
     </item>
     
     <item>
-      <title>Windows 教程3-好的软件改变你的生活</title>
+      <title>Windows 教程4-基础阶段-好的软件改变你的生活</title>
       <link>https://yidaofei.com/post/20181222-windows-guild-software-list/</link>
       <pubDate>Sat, 22 Dec 2018 12:12:35 +0800</pubDate>
       
@@ -298,7 +386,7 @@
 
 &lt;ol&gt;
 &lt;li&gt;利用注册表清理/恢复/隐藏「视频、图片、文档、下载、音乐、桌面」&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;删除 oneDrive&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -401,7 +489,7 @@
     </item>
     
     <item>
-      <title>Windows 教程2-如何安装 Windows 系统</title>
+      <title>Windows 教程2-基础阶段-如何安装 Windows 系统</title>
       <link>https://yidaofei.com/post/20181217-windows-guild-how-to-install-windows-iso/</link>
       <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
       
@@ -451,7 +539,7 @@
     </item>
     
     <item>
-      <title>Windows 教程1-如何下载官方 ISO</title>
+      <title>Windows 教程1-基础阶段-如何下载官方 ISO</title>
       <link>https://yidaofei.com/post/20181216-windows-guide-how-download-iso/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
