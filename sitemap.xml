@@ -12,6 +12,11 @@
   </url>
   
   <url>
+    <loc>https://yidaofei.com/post/20190113-software-skills-firefox-guild/</loc>
+    <lastmod>2019-01-13T15:08:17+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yidaofei.com/post/20190113-windows-skill-close-cortana/</loc>
     <lastmod>2019-01-13T10:14:00+08:00</lastmod>
   </url>
@@ -399,7 +404,7 @@
   
   <url>
     <loc>https://yidaofei.com/</loc>
-    <lastmod>2019-01-13T10:14:00+08:00</lastmod>
+    <lastmod>2019-01-13T15:08:17+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -464,7 +469,7 @@
   
   <url>
     <loc>https://yidaofei.com/post/</loc>
-    <lastmod>2019-01-13T10:14:00+08:00</lastmod>
+    <lastmod>2019-01-13T15:08:17+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -519,6 +524,12 @@
   <url>
     <loc>https://yidaofei.com/tags/%E4%B8%AA%E4%BA%BA%E9%9A%90%E7%A7%81/</loc>
     <lastmod>2018-12-20T20:05:36+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/tags/%E4%BA%92%E8%81%94%E7%BD%91/</loc>
+    <lastmod>2019-01-13T15:08:17+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -746,7 +757,7 @@
   
   <url>
     <loc>https://yidaofei.com/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2018-11-10T00:00:00+00:00</lastmod>
+    <lastmod>2019-01-13T15:08:17+08:00</lastmod>
     <priority>0</priority>
   </url>
   

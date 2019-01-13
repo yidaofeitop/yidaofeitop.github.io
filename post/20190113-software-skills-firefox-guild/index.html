@@ -11,19 +11,18 @@
   
   
     
-    <meta charset="utf-8" name="keywords" content="windows 教程,浏览器," > 
+    <meta charset="utf-8" name="keywords" content="firefox,浏览器,chrome," > 
   
    
-  <meta charset="utf-8" name="description" content="所以的网络行为基本上是以浏览器发生的，所以选择一个好的浏览器并将其优化是很重要的事情！
-
-本文就是教会大家如何做到这一步，首先大家了解一下本文的基础框架：
+  <meta charset="utf-8" name="description" content="2019年1月13日 在阅读完弃用 Chrome 改用 Firefox 的几点理由——关于 Chrome 69 隐私丑闻的随想决定将浏览器的主力转移至「Firefox」，其原因最为主要的如下：
 
 
-浏览器选择
-以「Chrome 浏览器」为例说明
+Chrome 浏览器与 Google 相关服务结合过于紧密，在后续迁移的过程中更是证明了这一点：查看、控制和删除您的 Google 帐号中的信息
+Tor 与 Firefox 强强联合，从而导致 Firefox 在隐私方向的防护力量更强
 
 
-未完成待续
+当然后续也将继续使用 Chrome，毕竟已经习惯他的开发调试工具！
+
 " >
   
   
@@ -35,7 +34,7 @@
   
   
   
-  <title>Windows 教程6-进阶阶段-打造一个高效的浏览器- 易道非 Blog</title>  
+  <title>Firefox 浏览器简易教程- 易道非 Blog</title>  
   
   
     
@@ -122,10 +121,10 @@ if (!doNotTrack) {
 <section class="main-content-container">
 <article class="article-card">
 	<header class="article-header"> 
-	   <p class="article-title">Windows 教程6-进阶阶段-打造一个高效的浏览器</p>
+	   <p class="article-title">Firefox 浏览器简易教程</p>
    		<div class="article-meta">
 			
-			<div><i class="fa fa-calendar" >2019年01月12日</i> </div>
+			<div><i class="fa fa-calendar" >2019年01月13日</i> </div>
 			  
 
 			 
@@ -138,93 +137,130 @@ if (!doNotTrack) {
 			<div>
 				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
 				
-					<a href="https://yidaofei.com/categories/windows-%e6%95%99%e7%a8%8b">windows 教程</a> 
+					<a href="https://yidaofei.com/categories/%e8%bd%af%e4%bb%b6%e6%8a%80%e5%b7%a7">软件技巧</a> 
 				   
 				</i>  
 			</div> 
 		</div>  
 	</header>  
 	<content class="markdown">
-		<p>所以的网络行为基本上是以浏览器发生的，所以选择一个好的浏览器并将其优化是很重要的事情！</p>
-
-<p>本文就是教会大家如何做到这一步，首先大家了解一下本文的基础框架：</p>
+		<p>2019年1月13日 在阅读完<a href="https://program-think.blogspot.com/2018/09/Why-You-Should-Switch-from-Chrome-to-Firefox.html">弃用 Chrome 改用 Firefox 的几点理由——关于 Chrome 69 隐私丑闻的随想</a>决定将浏览器的主力转移至「Firefox」，其原因最为主要的如下：</p>
 
 <ol>
-<li>浏览器选择</li>
-<li>以「Chrome 浏览器」为例说明</li>
+<li>Chrome 浏览器与 Google 相关服务结合过于紧密，在后续迁移的过程中更是证明了这一点：<a href="https://support.google.com/accounts/answer/7660719?hl=zh-Hans">查看、控制和删除您的 Google 帐号中的信息</a></li>
+<li>Tor 与 Firefox 强强联合，从而导致 Firefox 在隐私方向的防护力量更强</li>
 </ol>
 
-<p>未完成待续
-</p>
+<p>当然后续也将继续使用 Chrome，毕竟已经习惯他的开发调试工具！</p>
 
-<h3 id="浏览器选择">浏览器选择</h3>
+<p></p>
 
-<p>上网的第一步就是选择浏览器，浏览器从国度上可以分为国内与国外，我的选择是国外，至于为什么如下：</p>
+<h3 id="版本问题">版本问题</h3>
+
+<p>首先需要注意以下 Firefox 的版本问题：</p>
 
 <ol>
-<li>就算不谈政治，国内互联网公司无耻程度超乎大家的想象
+<li>按照国籍来分的话可以分为国内版以及国际版的区别，其主要区别在于
 
 <ul>
-<li><a href="http://tech.sina.com.cn/i/2012-11-23/08517825584.shtml">中科院报告：360产品存在三大隐私安全问题</a>：360将「用户访问的网址、网址对应的 cookie、用户在地址栏输入的内容」等信息上传到公司服务器</li>
-<li><a href="https://yidaofei.com/post/20160503-think-baidu-paid-listing/">百度竞价排名思考 - 血友病</a></li>
+<li>安装包的数字签名不一样</li>
+<li>书签等云端数据存储在哪里，两者账号不互通</li>
+<li>下载地址不一样
+
+<ul>
+<li>国际版：1. <a href="https://www.mozilla.org/en-US/firefox/new/">官网</a> 2. <a href="http://ftp.mozilla.org/pub/firefox/releases/">官方-FTP 服务器</a></li>
+<li>国内版：1. <a href="http://www.firefox.com.cn/">官网</a></li>
 </ul></li>
-<li>国内绝大部分浏览器基本上都是「壳」，无自己的内核</li>
+</ul></li>
+
+<li><p>按照版本更新频率可以分为：普通版和ESR，其主要差别如下：</p>
+
+<ul>
+<li>ESR版本是 Mozilla 专门为那些无法或不愿每隔六周就升级一次的企业打造。Firefox ESR 版的升级周期为 42 周</li>
+<li>普通 Firefox 的升级周期为 6 周
+<br /></li>
+</ul>
+
+<p>下载地址分别如下：</p>
+
+<ul>
+<li>中国版ESR：<a href="http://www.firefox.com.cn/download/#download-esr">http://www.firefox.com.cn/download/#download-esr</a></li>
+<li>国际版ESR：<a href="https://www.mozilla.org/en-US/firefox/organizations/all/">https://www.mozilla.org/en-US/firefox/organizations/all/</a> ,选择<strong>非简体中文</strong>即可</li>
+</ul></li>
 </ol>
 
-<p>在国外的浏览器我选择的是「Firefox」或「Chrome」，主要原因在于扩展多，使用人多，可定制化程度高</p>
+<p>大家按照各自的定位下载不同的浏览器即可！</p>
 
-<p>关于两者之间的比较，我参考<a href="https://program-think.blogspot.com/2018/09/Why-You-Should-Switch-from-Chrome-to-Firefox.html">弃用 Chrome 改用 Firefox 的几点理由——关于 Chrome 69 隐私丑闻的随想</a>整理如下：</p>
+<p>如下载国外普通版本，可能需要调整语言，大家按照<a href="https://support.mozilla.org/zh-CN/kb/%E4%BD%BF%E7%94%A8%E8%AF%AD%E8%A8%80%E5%8C%85%E6%94%B9%E5%8F%98Firefox%E7%95%8C%E9%9D%A2%E8%AF%AD%E8%A8%80#w_dalieiaoiuycggea">使用语言包改变Firefox界面语言</a>教程操作即可！</p>
+
+<h3 id="浏览器基础配置">浏览器基础配置</h3>
+
+<h4 id="选项功能">选项功能</h4>
+
+<p>定位「选项」页面，分别配置以下内容（请大家按照自己的需求判断是否要更改）：</p>
+
+<ul>
+<li>「常规-下载」：将下载目录调整到为「公共资料盘」下某个文件夹（关于公共盘请访问<a href="https://yidaofei.com/post/20190110-windows-guild-create-a-efficient-file-management-system/#最完美的分盘方案">Windows 教程 3……最完美的分盘方案</a>）</li>
+<li>「常规-Firefox 更新」：调整为「不检查更新……」</li>
+<li>「搜索-默认引擎」：调整为「duckduckgo」</li>
+<li>「隐私与安全-表单与密码」：全部取消</li>
+<li>「隐私与安全-Cookie 和网站数据」：调整为退出浏览器即刻删除「Cookie」并阻止「第三方Cookie」</li>
+<li>「隐私与安全-跟踪保护」：调整为始终开启，并将「请勿跟踪」调整为始终开启</li>
+<li>「隐私与安全-Firefox 数据收集与使用」：调整为仅发送崩溃报告</li>
+</ul>
+
+<h4 id="about-config-配置">about:config 配置</h4>
+
+<p>在火狐浏览器地址栏键入about:config回车，打开火狐高级设置，在搜索框中输入下列命令</p>
 
 <ol>
-<li>隐私性<br />
-Mozilla 是一家非营利机构而 Google 是一家商业公司
+<li><p>network.prefetch-next = false</p>
 
-<ul>
-<li>Google 的商业模式注定了它收集隐私的偏好：Google 利润 90% 以上是来自于广告收入</li>
-<li>Chrome 缺乏「网站中立性」：Chrome 69 版本严重的隐私漏洞——<a href="https://www.solidot.org/story?sid=58064">《Chrome 69 清空 Cookies 会保留 Google 的 Cookies @ Solidot》</a></li>
-<li>Chrome 可能会与 Google 的服务暗中勾搭，以收集隐私</li>
-<li>Firefox 是完全开源的，而 Chrome 是基于 Chromium 增加了一些闭源模块</li>
-</ul></li>
-<li>安全性
+<p>火狐预加载功能，当载入一个网页后，火狐会预加载你可能会打开的网页链接内容，如果你打开下一个链接，网页就会很快加载，可是很多时候都是多余的，CUP 和宽带浪费率太高。建议双击设置为 false。</p></li>
 
-<ul>
-<li>小众 VS 大众，可以类比 Windows 病毒远远超出 Linux、Mac</li>
-<li>Rust VS C++，前者相比后者安全性更高</li>
-<li>「自带 CA 证书」 VS 「使用系统 CA 证书」：自带的 CA 证书<strong>不会</strong>受到操作系统及其厂商的影响</li>
-</ul></li>
-<li>Tor 社区对 Firefox 的加持</li>
+<li><p>browser.sessionhistory.max_total_viewers = 10</p>
+
+<p>这是页面前进/后退中保存的页面数，默认是-1(无限)，把值修改为10或更小的数</p></li>
+
+<li><p>security.dialog_enable_delay = 0</p>
+
+<p>设置安装扩展时等待的时间(单位毫秒)。改值为0后只要一点击“安装到Firefox”按钮不用等待就可直接安装扩展了。默认值是等待4秒。</p></li>
+
+<li><p>config.trim_on_minimize = true （<strong>视个人情况使用习惯看是否配置</strong>）</p>
+
+<p>右击空白部分，在「新建」中选「布尔」，输入名称「config.trim_on_minimize」，其值设定为「true」，<strong>最小化火狐时释放内存</strong></p></li>
+
+<li><p>nglayout.initialpaint.delay = 0</p>
+
+<p>创建新的整值「nglayout.initialpa0int.delay」，设定为「0」，这个值是延迟显示整个网页的时间，设置为0则即可显示网页，<strong>适合网页还未加载完成就先进行阅读的用户习惯</strong></p></li>
+
+<li><p>browser.tabs.closeWindowWithLastTab = false</p>
+
+<p>改为 false——关闭最后一个标签页不关闭浏览器</p></li>
+
+<li><p>privacy.resistFingerprinting = true</p>
+
+<p>此偏好可让 Firefox 更能抵抗指纹辨识</p></li>
+
+<li><p>browser.safebrowsing.malware = false</p>
+
+<p>取消 Google 安全浏览的恶意软件检查，将相关的检查交给<strong>安全软件</strong></p></li>
 </ol>
-
-<p>加上在中国后者的无需翻墙就可以轻松使用，所以后面我也会逐步<strong>迁移到「Firefox」</strong>之上！</p>
-
-<p>2019年1月13日 迁移至 Firefox 完毕，如果你选用的是 Firefox 以下请直接访问<a href="http://localhost:1313/drafts/20190113-software-skills-firefox-guild/">Firefox 浏览器简易教程</a></p>
 
 <p>扩展阅读：</p>
 
 <ul>
-<li><a href="https://juejin.im/entry/5a05a25c51882535cd4a4c6b">浏览器「内核」都做了些什么？</a></li>
-<li><a href="http://daily.zhihu.com/story/9694005">「红芯」造假可耻，不过自主研发浏览器内核的有多难？</a>：以「Opera」为例说明</li>
-<li><a href="https://bbs.360.cn/thread-15529817-1-1.html">360官方-中国为什么没有自主研发的浏览器内核？</a></li>
-<li><a href="https://program-think.blogspot.com/2013/06/usa-vs-china.html">中美政府信息监控的差异——“棱镜门”丑闻随想</a></li>
+<li><a href="https://blog.csdn.net/websites/article/details/45912655">Firefox火狐浏览器优化加速about:config配置</a>：上文大部分配置来自于此</li>
+<li><a href="https://cybermagicsec.github.io/privacytools-zh/webrtc.html">WebRTC IP 漏洞测试</a>：你的 IP 地址是否被泄露?</li>
+<li><a href="https://cybermagicsec.github.io/privacytools-zh/#about_config">FireFox: &laquo;about:config&raquo;的隐私设置调整</a></li>
 </ul>
 
-<h3 id="chrome-浏览器">Chrome 浏览器</h3>
-
-<p>「Chrome 浏览器」 安装完成之后建议进行一下操作：</p>
-
-<ol>
-<li>调整「下载文件地址」为「公共资料盘」下某个文件夹（关于公共盘请访问<a href="https://yidaofei.com/post/20190110-windows-guild-create-a-efficient-file-management-system/#最完美的分盘方案">Windows 教程 3……最完美的分盘方案</a>）</li>
-<li>关闭 GPU 硬件加速：<a href="https://jingyan.baidu.com/article/f96699bb056a62894e3c1b3e.html">https://jingyan.baidu.com/article/f96699bb056a62894e3c1b3e.html</a></li>
-</ol>
-
-<p>关于隐私设置部分请参考：<a href="http://localhost:1313/drafts/20190912-think-how-to-protect-personal-privacy/#%E6%B5%8F%E8%A7%88%E5%99%A8%E6%96%B9%E9%9D%A2">互联网时代，我们该如何保护自己的个人隐私-浏览器方面</a></p>
-
-<p>后续基本就是挑选相关的插件提高效率，我将我正在使用的插件列举出来供大家参考：</p>
+<h3 id="扩展-插件-附加组件">扩展/插件/附加组件</h3>
 
 <table>
 <thead>
 <tr>
-<th align="left">插件名称</th>
+<th align="left">名称</th>
 <th align="left">作用</th>
 <th align="left">备注</th>
 </tr>
@@ -232,44 +268,50 @@ Mozilla 是一家非营利机构而 Google 是一家商业公司
 
 <tbody>
 <tr>
-<td align="left">ExtManager</td>
-<td align="left">效率插件，快速管理扩展，停用当前无需的插件</td>
+<td align="left">uBlock Origin</td>
+<td align="left">隐私防护插件-广告拦截</td>
 <td align="left"></td>
 </tr>
 
 <tr>
-<td align="left">AdGuard</td>
-<td align="left">广告拦截</td>
-<td align="left">类似的有「AdBlock」等</td>
+<td align="left">HTTPS Everywhere</td>
+<td align="left">隐私防护插件-强制使用 HTTPS 协议访问网站</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">Decentraleyes</td>
+<td align="left">隐私防护插件-保护您免受集中式的内容交付网络（CDN）的跟踪</td>
+<td align="left"></td>
 </tr>
 
 <tr>
 <td align="left">Ghostery</td>
-<td align="left">广告拦截、追踪器拦截</td>
+<td align="left">隐私防护插件-广告拦截、追踪器拦截</td>
 <td align="left"></td>
 </tr>
 
 <tr>
-<td align="left">Tampermonkey</td>
-<td align="left">脚本神器</td>
+<td align="left">Cookie AutoDelete</td>
+<td align="left">隐私防护插件-自动删除 Cookie</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">Tampermonkey（暴力猴）</td>
+<td align="left">Greasemonkey 的替代品</td>
 <td align="left">单独成章节</td>
 </tr>
 
 <tr>
-<td align="left">OneTab</td>
-<td align="left">效率插件，一键冻结所有 Tab，解放内存</td>
+<td align="left">Tab Center Redux</td>
+<td align="left">垂直侧边栏显示标签页</td>
 <td align="left"></td>
 </tr>
 
 <tr>
-<td align="left">WasteNoTime</td>
-<td align="left">效率插件，某时间段之内锁死浏览器上网</td>
-<td align="left"></td>
-</tr>
-
-<tr>
-<td align="left">Video Downloader</td>
-<td align="left">效率插件、页面视频下载</td>
+<td align="left">Simple Translate</td>
+<td align="left">翻译</td>
 <td align="left"></td>
 </tr>
 
@@ -280,70 +322,61 @@ Mozilla 是一家非营利机构而 Google 是一家商业公司
 </tr>
 
 <tr>
-<td align="left">Fatkun</td>
-<td align="left">效率插件，图片批量下载</td>
+<td align="left">ImageAssistant</td>
+<td align="left">图片助手，图片批量下载</td>
 <td align="left"></td>
 </tr>
 
 <tr>
-<td align="left">简悦-SimpRead</td>
-<td align="left">增强阅读体验</td>
-<td align="left"></td>
+<td align="left">Website Theme Manager (WebExtension)</td>
+<td align="left">网站主题管理<a href="https://userstyles.org/">样式网址</a></td>
+<td align="left"><strong>备用</strong></td>
 </tr>
 
 <tr>
-<td align="left">划词翻译</td>
-<td align="left">如题</td>
-<td align="left"></td>
+<td align="left">Dark Reader</td>
+<td align="left">黑色主题</td>
+<td align="left"><strong>备用</strong></td>
 </tr>
 
 <tr>
-<td align="left">HTTPS Everywhere</td>
-<td align="left">强制使用 HTTPS 协议访问网站</td>
-<td align="left"></td>
+<td align="left">Stylish</td>
+<td align="left">为任意网站自定义主题</td>
+<td align="left"><strong>备用</strong></td>
 </tr>
 
 <tr>
-<td align="left">Proxy SwitchyOmega</td>
-<td align="left">代理管理</td>
-<td align="left"></td>
+<td align="left">Privacy Badger</td>
+<td align="left">隐私防护插件-广告拦截、追踪器拦截</td>
+<td align="left"><strong>备用</strong></td>
 </tr>
 
 <tr>
-<td align="left">WEB前端助手(FeHelper)</td>
-<td align="left">IT 前端插件</td>
-<td align="left"></td>
+<td align="left">Browser Plugs</td>
+<td align="left">指纹隐私防火墙</td>
+<td align="left"><strong>备用</strong></td>
 </tr>
 
 <tr>
-<td align="left">Page Ruler</td>
-<td align="left">IT 前端插件，获取页面元素大小</td>
-<td align="left"></td>
-</tr>
-
-<tr>
-<td align="left">MaoXian web clipper</td>
-<td align="left">效率插件，页面局部裁剪</td>
-<td align="left">后期被「Save Page We」替代</td>
-</tr>
-
-<tr>
-<td align="left">Block Site</td>
-<td align="left">效率插件，拦截 Sex 等娱乐网站……加快工作效率</td>
-<td align="left">后期被「Cold Turkey」替代</td>
+<td align="left">SmartProxy</td>
+<td align="left">代理工具</td>
+<td align="left"><strong>备用</strong></td>
 </tr>
 </tbody>
 </table>
 
-<p>关于插件我的意见是够用就好，不要为了插件而插件，我想大部分用以上插件就完全够了，更不用说还有「油猴」呢！</p>
+<p>扩展阅读：</p>
 
-<blockquote>
-<p>2019年1月13日 将 Chrome 浏览器与 Google 账号解绑，主力转移至 Firefox ，注意将相关的数据删除，具体参考<a href="https://support.google.com/accounts/answer/7660719?hl=zh-Hans">查看、控制和删除您的 Google 帐号中的信息</a></p>
-</blockquote>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/21718572">如何区分扩展，插件，脚本和附加组件</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/23188485">广告过滤扩展：ABP VS. uBlock Origin</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/27844259">在试用了 100+ WebExtension 扩展后，我挑选了这 30 个[上]</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/27854433">在试用了 100+ WebExtension 扩展后，我挑选了这 30 个[下]</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/28974305">WebExtension 扩展推荐·叁</a></li>
+<li><a href="https://cybermagicsec.github.io/privacytools-zh/#addons">优质的火狐浏览器隐私保护附加组件</a>：隐私插件基本来源于此</li>
+</ul>
 
-<h3 id="油猴-tampermonkey">油猴 Tampermonkey</h3>
-
-<p>为什么会将此单独列出呢，实质上他就相当于一个平台，插件非常多，在一定程度上可以代替扩展，并且 Firefox 与 Chrome 都有这个插件，所以将其单独成章节！</p>
+<h3 id="脚本">脚本</h3>
 
 <p>油猴 Tampermonkey 的官方网址是：<a href="https://tampermonkey.net/">https://tampermonkey.net/</a></p>
 
@@ -439,14 +472,17 @@ Mozilla 是一家非营利机构而 Google 是一家商业公司
 <li><a href="https://www.runningcheese.com/userscripts">2018年度好用实用“用户脚本”推荐清单</a>：分类比较细</li>
 </ul>
 
+<h3 id="其他相关知识">其他相关知识</h3>
+
+<ul>
+<li><a href="https://support.mozilla.org/zh-CN/kb/%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE">Firefox-键盘快捷键</a></li>
+</ul>
+
 <h3 id="参考资料">参考资料</h3>
 
 <ul>
-<li><a href="https://www.zybuluo.com/yangfch3/note/671516">浏览器内核、JS 引擎、页面呈现原理及其优化</a></li>
-<li><a href="https://www.cnblogs.com/zichi/p/5116764.html">主流浏览器内核介绍（前端开发值得了解的浏览器内核历史）</a></li>
-<li><a href="https://www.zhihu.com/question/28531079/answer/250465415">知乎-少数派-Chrome 有哪些鲜为人知的用法？</a></li>
-<li><a href="https://www.zhihu.com/question/27479218/answer/37090832">知乎-包季真-为什么国内浏览器出不了巨头？</a></li>
-<li><a href="http://177kan.com/html/2017033130.html">Firefox火狐国际版和中文版的区别 </a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/23352701">我不喜欢的 Firefox 同步</a>：主要看其方案的发展史</li>
+<li><a href="https://zhuanlan.zhihu.com/p/52772435">我们是如何构建 Firefox 同步的</a>：其内部原理构建以及与其他的浏览器差别，也是弃用 Chrome 的一个原因之一</li>
 </ul>
 
 <h3 id="版本信息">版本信息</h3>
@@ -464,7 +500,7 @@ Mozilla 是一家非营利机构而 Google 是一家商业公司
 <tr>
 <td align="center">1.0</td>
 <td align="center">init</td>
-<td align="center">2019-01-12</td>
+<td align="center">2019-01-13</td>
 </tr>
 </tbody>
 </table>
@@ -474,7 +510,7 @@ Mozilla 是一家非营利机构而 Google 是一家商业公司
 			<div class="article-copyright">
 			  	<ul>
 			  		<li><strong>本文作者：</strong>易道非</li>
-			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20190113-windows-guild-create-an-efficient-browser/</li>
+			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20190113-software-skills-firefox-guild/</li>
 			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
 			  	</ul>
 			</div>
@@ -487,7 +523,7 @@ Mozilla 是一家非营利机构而 Google 是一家商业公司
 		<div>
 			<i class="fa fa-tags">&nbsp;Tags:
 			
-				<a href="https://yidaofei.com/tags/windows-%e6%95%99%e7%a8%8b">windows 教程</a>
+				<a href="https://yidaofei.com/tags/%e4%ba%92%e8%81%94%e7%bd%91">互联网</a>
     		
     		</i>   
 		</div> 
@@ -499,15 +535,11 @@ Mozilla 是一家非营利机构而 Google 是一家商业公司
 	<hr/>
 	<div class="article-footer-meta-between"> 
 		<div class="refArticle-prev" >
-			  
-		    <a href="https://yidaofei.com/post/20190113-windows-skill-close-cortana/">
-		    	<i class="fa fa-angle-double-left"></i>&nbsp;Windows 技巧7-保护隐私-关闭微软小娜 Cortana  
-		    </a> 
 			
 		</div>
 		 <div class="refArticle-next" >
 		  
-		  	<a href="https://yidaofei.com/post/20190112-think-how-to-protect-personal-privacy/">互联网时代，我们该如何保护自己的个人隐私&nbsp;
+		  	<a href="https://yidaofei.com/post/20190113-windows-skill-close-cortana/">Windows 技巧7-保护隐私-关闭微软小娜 Cortana&nbsp;
 		  		<i class="fa fa-angle-double-right"></i>
 		  	</a> 
 		 
@@ -562,9 +594,15 @@ Mozilla 是一家非营利机构而 Google 是一家商业公司
 <ul>
 <li>
 <ul>
-<li><a href="#浏览器选择">浏览器选择</a></li>
-<li><a href="#chrome-浏览器">Chrome 浏览器</a></li>
-<li><a href="#油猴-tampermonkey">油猴 Tampermonkey</a></li>
+<li><a href="#版本问题">版本问题</a></li>
+<li><a href="#浏览器基础配置">浏览器基础配置</a>
+<ul>
+<li><a href="#选项功能">选项功能</a></li>
+<li><a href="#about-config-配置">about:config 配置</a></li>
+</ul></li>
+<li><a href="#扩展-插件-附加组件">扩展/插件/附加组件</a></li>
+<li><a href="#脚本">脚本</a></li>
+<li><a href="#其他相关知识">其他相关知识</a></li>
 <li><a href="#参考资料">参考资料</a></li>
 <li><a href="#版本信息">版本信息</a></li>
 </ul></li>

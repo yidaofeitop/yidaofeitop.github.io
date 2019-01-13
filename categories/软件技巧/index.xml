@@ -6,10 +6,28 @@
     <description>Recent content in 软件技巧 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 10 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Jan 2019 15:08:17 +0800</lastBuildDate>
     
 	<atom:link href="https://yidaofei.com/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Firefox 浏览器简易教程</title>
+      <link>https://yidaofei.com/post/20190113-software-skills-firefox-guild/</link>
+      <pubDate>Sun, 13 Jan 2019 15:08:17 +0800</pubDate>
+      
+      <guid>https://yidaofei.com/post/20190113-software-skills-firefox-guild/</guid>
+      <description>&lt;p&gt;2019年1月13日 在阅读完&lt;a href=&#34;https://program-think.blogspot.com/2018/09/Why-You-Should-Switch-from-Chrome-to-Firefox.html&#34;&gt;弃用 Chrome 改用 Firefox 的几点理由——关于 Chrome 69 隐私丑闻的随想&lt;/a&gt;决定将浏览器的主力转移至「Firefox」，其原因最为主要的如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Chrome 浏览器与 Google 相关服务结合过于紧密，在后续迁移的过程中更是证明了这一点：&lt;a href=&#34;https://support.google.com/accounts/answer/7660719?hl=zh-Hans&#34;&gt;查看、控制和删除您的 Google 帐号中的信息&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tor 与 Firefox 强强联合，从而导致 Firefox 在隐私方向的防护力量更强&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;当然后续也将继续使用 Chrome，毕竟已经习惯他的开发调试工具！&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Markdown 语言教程——GFM</title>
