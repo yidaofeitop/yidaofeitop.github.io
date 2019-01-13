@@ -10,8 +10,23 @@
 
   
   
+    
+    <meta charset="utf-8" name="keywords" content="windows 教程,windows 10,Cortana,微软小娜," > 
+  
    
-  <meta charset="utf-8" name="description" content="Windows 教程" >
+  <meta charset="utf-8" name="description" content="一直都知道微软小娜是个人隐私泄露的最大地方，但是由于一直在写其他的文章，所以直到今天才动手完成此项！
+
+本文内容全部来自Win10 如何关闭微软小娜 Cortana，本文仅作内容的调整！
+
+以下将介绍三种方法关闭微软小娜 Cortana
+
+
+使用 Dism&#43;&#43;关闭 Cortana
+组策略禁用 Cortana——Windows 10 专业版
+注册表关闭 Cortana——Windows 10 家庭版
+
+
+" >
   
   
   
@@ -22,7 +37,7 @@
   
   
   
-  <title>Windows 教程- 易道非 Blog</title>  
+  <title>Windows 技巧7-保护隐私-关闭微软小娜 Cortana- 易道非 Blog</title>  
   
   
     
@@ -49,7 +64,7 @@ if (!doNotTrack) {
 <body> 
  
 
-
+ 
 <div id="top-element" data-title="到达顶点"></div>
   
 <header class="site-header fixed-top">
@@ -103,120 +118,198 @@ if (!doNotTrack) {
 </div>
 
   
+
+
+
+<section class="main-content-container">
+<article class="article-card">
+	<header class="article-header"> 
+	   <p class="article-title">Windows 技巧7-保护隐私-关闭微软小娜 Cortana</p>
+   		<div class="article-meta">
+			
+			<div><i class="fa fa-calendar" >2019年01月13日</i> </div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://yidaofei.com/categories/windows-%e6%95%99%e7%a8%8b">windows 教程</a> 
+				   
+				</i>  
+			</div> 
+		</div>  
+	</header>  
+	<content class="markdown">
+		<p>一直都知道微软小娜是个人隐私泄露的最大地方，但是由于一直在写其他的文章，所以直到今天才动手完成此项！</p>
+
+<p>本文内容全部来自<a href="https://zhuanlan.zhihu.com/p/43902577">Win10 如何关闭微软小娜 Cortana</a>，本文仅作内容的调整！</p>
+
+<p>以下将介绍三种方法关闭微软小娜 Cortana</p>
+
+<ol>
+<li>使用 Dism++关闭 Cortana</li>
+<li>组策略禁用 Cortana——Windows 10 专业版</li>
+<li>注册表关闭 Cortana——Windows 10 家庭版</li>
+</ol>
+
+<p></p>
+
+<h3 id="使用-dism-关闭-cortana">使用 Dism++关闭 Cortana</h3>
+
+<p>下载 <a href="http://link.zhihu.com/?target=https%3A//www.chuyu.me/zh-Hans/">Dism++</a> 并解压，运行 dism++.exe 启动程序。</p>
+
+<p>系统优化 -&gt; 开始菜单以及Windows体验 -&gt; 关闭多嘴的小娜。</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201901/close-Cortana-by-dism.png" alt="" /></p>
+
+<h3 id="组策略禁用-cortana-windows-10-专业版">组策略禁用 Cortana——Windows 10 专业版</h3>
+
+<p>「win + R」打开运行，输入 <code>gpedit.msc</code> 回车打开组策略。</p>
+
+<p>左边栏选择 计算机配置 -&gt; 管理模版 -&gt; Windows组件 -&gt; 搜索，双击 「允许使用 Cortana」 -&gt; 已禁用 -&gt; 确定。</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201901/close-Cortana-by-geditmsc.png" alt="" /></p>
+
+<h3 id="注册表关闭-cortana-windows-10-家庭版">注册表关闭 Cortana——Windows 10 家庭版</h3>
+
+<p>「win + R」打开运行，输入 <code>regedit</code> 回车打开注册表。</p>
+
+<p>地址栏定位到：<code>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search</code></p>
+
+<p>右键 「Windows Search」 新建 「DWORD (32位)」 值，并命名为 「AllowCortana」，然后双击 「AllowCortana」，将 「数值数据」 设置为 0，确定。</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201901/close-Cortana-by-regedit.png" alt="" /></p>
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Version</th>
+<th align="center">Action</th>
+<th align="center">Time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1.0</td>
+<td align="center">init</td>
+<td align="center">2019-01-13</td>
+</tr>
+</tbody>
+</table>
+			  
+		
+		
+			<div class="article-copyright">
+			  	<ul>
+			  		<li><strong>本文作者：</strong>易道非</li>
+			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20190113-windows-skill-close-cortana/</li>
+			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
+			  	</ul>
+			</div>
+		 
+	</content>  
+ 	<hr/>
+ 	
+	<div class="article-footer-meta-between"> 
+		 
+		<div>
+			<i class="fa fa-tags">&nbsp;Tags:
+			
+				<a href="https://yidaofei.com/tags/windows-%e6%95%99%e7%a8%8b">windows 教程</a>
+    		
+    		</i>   
+		</div> 
+		 
+		<div id="i-share" class="btn btn-default  share-widget">
+		    <i class="fa fa-share-alt"></i>
+		</div> 
+	</div>
+	<hr/>
+	<div class="article-footer-meta-between"> 
+		<div class="refArticle-prev" >
+			
+		</div>
+		 <div class="refArticle-next" >
+		  
+		  	<a href="https://yidaofei.com/post/20190113-windows-guild-create-an-efficient-browser/">Windows 教程6-进阶阶段-打造一个高效的浏览器&nbsp;
+		  		<i class="fa fa-angle-double-right"></i>
+		  	</a> 
+		 
+	    </div>
+	</div>  
+</article> 
+</section>
  
 
-
-
-<section class="main-content-container ">
-  <div class="categories-card">
-    <header class="text-center">
-      <h4>Windows 教程</h4>
-    </header>  
-     
+  
  
-
-     
-    
-    
-        
-    
-    
-    
-
-      <ul class="article-list">
-        
-          <li>
-            <time datetime="2019-01-13 10:14:00 &#43;0800 CST">2019年01月13日</time>
-            <a href="https://yidaofei.com/post/20190113-windows-skill-close-cortana/"> Windows 技巧7-保护隐私-关闭微软小娜 Cortana</a> 
-          </li>  
-        
-          <li>
-            <time datetime="2019-01-12 15:33:00 &#43;0800 CST">2019年01月12日</time>
-            <a href="https://yidaofei.com/post/20190113-windows-guild-create-an-efficient-browser/"> Windows 教程6-进阶阶段-打造一个高效的浏览器</a> 
-          </li>  
-        
-          <li>
-            <time datetime="2019-01-11 10:27:08 &#43;0800 CST">2019年01月11日</time>
-            <a href="https://yidaofei.com/post/20190111-create-a-safe-and-efficient-system/"> Windows 教程5-进阶阶段-打造一个安全高效的系统</a> 
-          </li>  
-        
-          <li>
-            <time datetime="2019-01-10 10:27:08 &#43;0800 CST">2019年01月10日</time>
-            <a href="https://yidaofei.com/post/20190110-windows-guild-create-a-efficient-file-management-system/"> Windows 教程3-基础阶段-打造一个高效的文件管理系统</a> 
-          </li>  
-        
-          <li>
-            <time datetime="2019-01-10 10:27:08 &#43;0800 CST">2019年01月10日</time>
-            <a href="https://yidaofei.com/post/20190110-windows-guild-foreword/"> Windows 教程-前言</a> 
-          </li>  
-        
-          <li>
-            <time datetime="2018-12-22 12:12:35 &#43;0800 CST">2018年12月22日</time>
-            <a href="https://yidaofei.com/post/20181222-windows-guild-software-list/"> Windows 教程4-基础阶段-好的软件改变你的生活</a> 
-          </li>  
-        
-          <li>
-            <time datetime="2018-12-21 21:05:36 &#43;0800 CST">2018年12月21日</time>
-            <a href="https://yidaofei.com/post/20181221-windows-skill-how-to-close-windows-update/"> Windows 技巧6-调优-如何关闭 Windows 10 更新</a> 
-          </li>  
-        
-          <li>
-            <time datetime="2018-12-21 20:05:36 &#43;0800 CST">2018年12月21日</time>
-            <a href="https://yidaofei.com/post/20181221-windows-skill-how-to-close-dynamic-tile/"> Windows 技巧5-保护隐私—关闭并清理 Windows 10 磁贴</a> 
-          </li>  
-        
-          <li>
-            <time datetime="2018-12-21 19:05:36 &#43;0800 CST">2018年12月21日</time>
-            <a href="https://yidaofei.com/post/20181221-windows-skill-how-to-do-delete-6-files-and-onedrive/"> Windows 技巧4-美化-清除 「windows 10」 图片等6个文件夹/oneDrive</a> 
-          </li>  
-        
-          <li>
-            <time datetime="2018-12-20 20:05:36 &#43;0800 CST">2018年12月20日</time>
-            <a href="https://yidaofei.com/post/20181221-windows-skill-how-to-remove-quick-access/"> Windows 技巧3-保护隐私—清除 「windows 10」 快速访问</a> 
-          </li>  
-       
-      </ul>   
-  </div>
-</section>  
-
-
-
-
-
+<div class="main-content-container " >
+<div class="comment-card"> 
   
   
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <div class="pagination-content-container">
-    <div class="pagination " > 
-        
-          
-            <a href="/tags/windows-%E6%95%99%E7%A8%8B/" class="page-link page-link-visited"> 1</a> 
-           
-        
-          
-            <a href="/tags/windows-%E6%95%99%E7%A8%8B/page/2/" class="page-link "> 2</a> 
-           
-         
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeicn/comment-utterances-blog-yidaofeicn"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
     </div>
-  </div>
   
-   
+
+  
+
+  
+
+  
+</div>
+</div>
 
  
 
- 
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+	
+	
+	<span id="tocLevel" data-startLevel="" data-endLevel=""></span>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#使用-dism-关闭-cortana">使用 Dism++关闭 Cortana</a></li>
+<li><a href="#组策略禁用-cortana-windows-10-专业版">组策略禁用 Cortana——Windows 10 专业版</a></li>
+<li><a href="#注册表关闭-cortana-windows-10-家庭版">注册表关闭 Cortana——Windows 10 家庭版</a></li>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
 <footer class="site-footer text-center">
   <div class="social" > 
      
@@ -292,12 +385,18 @@ if (!doNotTrack) {
 
 
 
+<span id="isPage" data-isPage="true" style="display: none;"></span>
+
+
  
 
 <script type="text/javascript" src="https://yidaofei.com//js/flybird.js"></script> 
 <script type="text/javascript" src="https://yidaofei.com//js/main.js"></script> 
+  
  
+</style>
 </body>
 </html>
- 
 
+
+ 

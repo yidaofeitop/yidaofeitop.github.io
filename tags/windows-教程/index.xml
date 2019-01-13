@@ -6,10 +6,31 @@
     <description>Recent content in Windows 教程 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 12 Jan 2019 15:33:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 13 Jan 2019 10:14:00 +0800</lastBuildDate>
     
 	<atom:link href="https://yidaofei.com/tags/windows-%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Windows 技巧7-保护隐私-关闭微软小娜 Cortana</title>
+      <link>https://yidaofei.com/post/20190113-windows-skill-close-cortana/</link>
+      <pubDate>Sun, 13 Jan 2019 10:14:00 +0800</pubDate>
+      
+      <guid>https://yidaofei.com/post/20190113-windows-skill-close-cortana/</guid>
+      <description>&lt;p&gt;一直都知道微软小娜是个人隐私泄露的最大地方，但是由于一直在写其他的文章，所以直到今天才动手完成此项！&lt;/p&gt;
+
+&lt;p&gt;本文内容全部来自&lt;a href=&#34;https://zhuanlan.zhihu.com/p/43902577&#34;&gt;Win10 如何关闭微软小娜 Cortana&lt;/a&gt;，本文仅作内容的调整！&lt;/p&gt;
+
+&lt;p&gt;以下将介绍三种方法关闭微软小娜 Cortana&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;使用 Dism++关闭 Cortana&lt;/li&gt;
+&lt;li&gt;组策略禁用 Cortana——Windows 10 专业版&lt;/li&gt;
+&lt;li&gt;注册表关闭 Cortana——Windows 10 家庭版&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Windows 教程6-进阶阶段-打造一个高效的浏览器</title>
