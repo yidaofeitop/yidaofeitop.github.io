@@ -6,17 +6,41 @@
     <description>Recent content in 安全隐私 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 12 Jan 2019 13:23:16 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 14 Jan 2019 17:04:17 +0800</lastBuildDate>
     
 	<atom:link href="https://yidaofei.com/tags/%E5%AE%89%E5%85%A8%E9%9A%90%E7%A7%81/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>互联网时代，我们该如何保护自己的个人隐私</title>
-      <link>https://yidaofei.com/post/20190112-think-how-to-protect-personal-privacy/</link>
+      <title>互联网时代，保护自己的个人隐私：进阶篇</title>
+      <link>https://yidaofei.com/post/20190114-think-how-to-protect-personal-privacy-base./</link>
+      <pubDate>Mon, 14 Jan 2019 17:04:17 +0800</pubDate>
+      
+      <guid>https://yidaofei.com/post/20190114-think-how-to-protect-personal-privacy-base./</guid>
+      <description>&lt;p&gt;前段时间完成的&lt;a href=&#34;https://yidaofei.com/post/20190112-think-how-to-protect-personal-privacy-base/&#34; title=&#34;互联网时代，保护自己的个人隐私：基础篇&#34;&gt;互联网时代，保护自己的个人隐私：基础篇&lt;/a&gt;不知道大家是否有吸收实际运用？&lt;/p&gt;
+
+&lt;p&gt;本篇在上篇的基础上更进一步，提出以下的隐私防护：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;虚构一个互联网形象&lt;/li&gt;
+&lt;li&gt;破解硬件风险&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;主要参考以下资料整理形成：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://program-think.blogspot.com/2010/04/howto-cover-your-tracks-0.html&#34;&gt;如何隐藏你的踪迹，避免跨省追捕[0]：为啥要写此文？&lt;/a&gt;：知名博客，系统论述相关的细节&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>互联网时代，保护自己的个人隐私：基础篇</title>
+      <link>https://yidaofei.com/post/20190112-think-how-to-protect-personal-privacy-base/</link>
       <pubDate>Sat, 12 Jan 2019 13:23:16 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20190112-think-how-to-protect-personal-privacy/</guid>
+      <guid>https://yidaofei.com/post/20190112-think-how-to-protect-personal-privacy-base/</guid>
       <description>&lt;p&gt;昨天再写&lt;a href=&#34;https://yidaofei.com/post/20190111-create-a-safe-and-efficient-system/&#34;&gt;Windows 教程5-进阶阶段-打造一个安全高效的系统&lt;/a&gt;「第二章节 系统隐私篇」时查询相关的关于「互联网隐私」泄密的资料时发现这是一个非常大的命题，而由于此教程的主题是「如何高效使用 windows」，不能做过多的展开，所以就将「如何保护个人隐私」抽离出来形成本文！&lt;/p&gt;
 
 &lt;p&gt;本文会一下方面系统的梳理一下关于「如何保护个人隐私」，让大家知道「个人隐私」的重要性以及如何最大程度的防范泄露！&lt;/p&gt;
