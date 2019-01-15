@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>自由 on  易道非 Blog</title>
+    <link>https://yidaofei.com/tags/%E8%87%AA%E7%94%B1/</link>
+    <description>Recent content in 自由 on  易道非 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 15 Jan 2019 11:57:19 +0800</lastBuildDate>
+    
+	<atom:link href="https://yidaofei.com/tags/%E8%87%AA%E7%94%B1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>翻墙 chapter 0 - 前言</title>
+      <link>https://yidaofei.com/post/20190115-circumvention-technology-guild-forward/</link>
+      <pubDate>Tue, 15 Jan 2019 11:57:19 +0800</pubDate>
+      
+      <guid>https://yidaofei.com/post/20190115-circumvention-technology-guild-forward/</guid>
+      <description>&lt;p&gt;有很多人对于「翻墙」感觉是一个非常高大上的词（2011年大二我的感觉同样如此），本系列文章就是将翻墙的发展历史以及现可行的技术一一梳理清楚，让「翻墙」这个词不再神秘！&lt;/p&gt;
+
+&lt;p&gt;此系列文章主要内容如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;翻墙目的以及相关法规：本文&lt;/li&gt;
+&lt;li&gt;翻墙技术发展历史：本文&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20190115-circumvention-technology-guild-vps/&#34;&gt;翻墙之 VPS 篇&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20190115-circumvention-technology-guild-shadowsocks/&#34;&gt;翻墙之 Shadowsocks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;翻墙之 v2ray&lt;/li&gt;
+&lt;li&gt;翻墙之 wireguard&lt;/li&gt;
+&lt;li&gt;翻墙之 路由器篇&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

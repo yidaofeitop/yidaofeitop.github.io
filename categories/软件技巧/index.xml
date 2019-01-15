@@ -83,7 +83,7 @@ HTML区段标签和区块标签不同，在区段标签的范围內，Markdown�
       <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/</guid>
-      <description>第一步 购买 VPS 如果纯粹作为翻墙使用建议购买 bandwagon 具体的入口可以可以参考搬瓦工 VPS ,选择最便宜的年 $ 19.99 方案（ KVM 架构）即可 第二步 搭建 shadowsocks 服务器端 进入 VPS 管理页面 MyService-&amp;gt;服务器实例-&amp;gt;kiwivm Control Panel 下载 Xshell Xshell-360 终端安装 shadowsocks 服务器 Step 1：配</description>
+      <description>本文已于2019年1月15日全面拆解成不同的文章，具体请访问翻墙 chapter 0 - 前言 第一步 购买 VPS 如果纯粹作为翻墙使用建议购买 bandwagon 具体的入口可以可以参考搬瓦工 VPS ,选择最便宜的年 $ 19.99 方案（ KVM 架构）即可 第二步 搭建 shadowsocks 服务器端 进入 VPS 管理页面 MyService-&amp;</description>
     </item>
     
     <item>

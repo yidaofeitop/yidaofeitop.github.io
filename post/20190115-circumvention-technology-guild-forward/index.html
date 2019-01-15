@@ -11,10 +11,22 @@
   
   
     
-    <meta charset="utf-8" name="keywords" content="shadowsocks 翻墙,科学上网," > 
+    <meta charset="utf-8" name="keywords" content="翻墙,GFW,自由," > 
   
    
-  <meta charset="utf-8" name="description" content="本文已于2019年1月15日全面拆解成不同的文章，具体请访问翻墙 chapter 0 - 前言 第一步 购买 VPS 如果纯粹作为翻墙使用建议购买 bandwagon 具体的入口可以可以参考搬瓦工 VPS ,选择最便宜的年 $ 19.99 方案（ KVM 架构）即可 第二步 搭建 shadowsocks 服务器端 进入 VPS 管理页面 MyService-&" >
+  <meta charset="utf-8" name="description" content="有很多人对于「翻墙」感觉是一个非常高大上的词（2011年大二我的感觉同样如此），本系列文章就是将翻墙的发展历史以及现可行的技术一一梳理清楚，让「翻墙」这个词不再神秘！
+
+此系列文章主要内容如下：
+
+
+翻墙目的以及相关法规：本文
+翻墙技术发展历史：本文
+翻墙之 VPS 篇
+翻墙之 Shadowsocks
+翻墙之 v2ray
+翻墙之 wireguard
+翻墙之 路由器篇
+" >
   
   
   
@@ -25,7 +37,7 @@
   
   
   
-  <title>翻墙教程之 shadowsocks- 易道非 Blog</title>  
+  <title>翻墙 chapter 0 - 前言- 易道非 Blog</title>  
   
   
     
@@ -112,10 +124,10 @@ if (!doNotTrack) {
 <section class="main-content-container">
 <article class="article-card">
 	<header class="article-header"> 
-	   <p class="article-title">翻墙教程之 shadowsocks</p>
+	   <p class="article-title">翻墙 chapter 0 - 前言</p>
    		<div class="article-meta">
 			
-			<div><i class="fa fa-calendar" >2018年10月13日</i> </div>
+			<div><i class="fa fa-calendar" >2019年01月15日</i> </div>
 			  
 
 			 
@@ -128,93 +140,138 @@ if (!doNotTrack) {
 			<div>
 				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
 				
-					<a href="https://yidaofei.com/categories/%e8%bd%af%e4%bb%b6%e6%8a%80%e5%b7%a7">软件技巧</a> 
+					<a href="https://yidaofei.com/categories/%e7%bf%bb%e5%a2%99">翻墙</a> 
 				   
 				</i>  
 			</div> 
 		</div>  
 	</header>  
 	<content class="markdown">
-		
+		<p>有很多人对于「翻墙」感觉是一个非常高大上的词（2011年大二我的感觉同样如此），本系列文章就是将翻墙的发展历史以及现可行的技术一一梳理清楚，让「翻墙」这个词不再神秘！</p>
 
-<p>本文已于2019年1月15日全面拆解成不同的文章，具体请访问<a href="https://yidaofei.com/post/20190115-circumvention-technology-guild-forward/">翻墙 chapter 0 - 前言</a></p>
+<p>此系列文章主要内容如下：</p>
 
-<h3 id="第一步-购买-vps">第一步 购买 VPS</h3>
+<ol>
+<li>翻墙目的以及相关法规：本文</li>
+<li>翻墙技术发展历史：本文</li>
+<li><a href="https://yidaofei.com/post/20190115-circumvention-technology-guild-vps/">翻墙之 VPS 篇</a></li>
+<li><a href="https://yidaofei.com/post/20190115-circumvention-technology-guild-shadowsocks/">翻墙之 Shadowsocks</a></li>
+<li>翻墙之 v2ray</li>
+<li>翻墙之 wireguard</li>
+<li>翻墙之 路由器篇</li>
+</ol>
 
-<p>如果纯粹作为翻墙使用建议购买 bandwagon<br />
-具体的入口可以可以参考<a href="http://banwagong.cn/">搬瓦工 VPS</a> ,选择最便宜的年 $ 19.99 方案（ KVM 架构）即可</p>
+<p>
+本文主要梳理前2个内容：「翻墙目的以及相关法规」/「翻墙技术发展历史」</p>
 
-<h3 id="第二步-搭建-shadowsocks-服务器端">第二步 搭建 shadowsocks 服务器端</h3>
+<h3 id="翻墙目的以及相关法规">翻墙目的以及相关法规</h3>
 
-<h4 id="进入-vps-管理页面">进入 VPS 管理页面</h4>
-
-<p>MyService-&gt;服务器实例-&gt;kiwivm Control Panel</p>
-
-<p><img src="https://piwigo.yidaofei.com/galleries/201809/bandwagon-kiwivm-control-panel.jpg" alt="" /></p>
-
-<h4 id="下载-xshell">下载 Xshell</h4>
-
-<p><a href="http://baoku.360.cn/soft/show/appid/101306">Xshell-360</a></p>
-
-<h4 id="终端安装-shadowsocks-服务器">终端安装 shadowsocks 服务器</h4>
-
-<p>Step 1：配置 xshell 登陆 IP 等<br />
-Step 2：登陆默认管理员 root，初始密码可以通过 KiwiVM 中的 Root password modification 获取<br />
-Step 3：安装 shadowsocks 服务器</p>
-
-<pre><code class="language-batch">#ubuntu
-apt-get install python-pip
-apt-get install python-m2crypto
-pip install shadowsocks
-
-#centos
-yum install epel-release
-yum install python-pip
-yum install python-setuptools m2crypto supervisor
-pip install shadowsocks
-</code></pre>
-
-<p>Step 4：建立配置文件 shadowsocks.json
-命令：<code>vi /etc/shadowsocks.json</code>
-输入以下内容</p>
-
-<pre><code class="language-json">{
-    &quot;server&quot;:&quot;45.32.15.178&quot;, //你VPS的IP地址
-    &quot;port_password&quot;:{
-        &quot;8388&quot;:&quot;mima1&quot;, //端口号：密码
-        &quot;8389&quot;:&quot;mima2&quot; //端口号：密码
-    },
-    &quot;timeout&quot;:600, //重连时间
-    &quot;method&quot;:&quot;aes-256-cfb&quot; //加密方式
-}
-</code></pre>
-
-<h4 id="启动与终止-shadowsocks-服务器">启动与终止 shadowsocks 服务器</h4>
-
-<p>命令行启动关闭重启</p>
-
-<pre><code class="language-batch">ssserver -c /etc/shadowsocks.json -d start 后台启动
-ssserver -c /etc/shadowsocks.json -d stop 后台停止
-ssserver -c /etc/shadowsocks.json -d restart 后台重新启动
-</code></pre>
-
-<h3 id="第三步-windows-等终端使用">第三步 Windows 等终端使用</h3>
-
-<p>下载对应的应用<br />
-<a href="https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.0.8/Shadowsocks-4.0.8.zip">shadowsocks client for windows</a><br />
-<a href="https://github.com/shadowsocks/ShadowsocksX-NG/releases/download/v1.7.1/ShadowsocksX-NG.1.7.1.zip">shadowsocks client for mac</a><br />
-<a href="https://play.google.com/store/apps/details?id=com.github.shadowsocks">shadowsocks client for android</a><br />
-<a href="https://itunes.apple.com/cn/app/firstwingy/id1316416848?mt=8">shadowsocks client for ios</a></p>
-
-<p>然后将 IP 地址与端口密码输入进去即可</p>
-
-<p>扩展阅读</p>
+<p>不知道大家是否有查询过翻墙被罚的新闻（特别注意第5条新闻：「<strong>首例</strong>！广东警方对“翻墙”上网者重罚！」）</p>
 
 <ul>
-<li><a href="https://blog.yandere.moe/moe/gfw-vs-proxy/97.html">与梯的较量——那些年我们一起用过的翻墙手段</a>：如题对抗的历史</li>
-<li><a href="http://labmain.com/2016/07/07/The_programmer_must_learn_Science_online/">程序员必备的翻墙姿势 </a></li>
-<li><a href="https://chinadigitaltimes.net/chinese/2016/02/gfw-%e5%b0%81%e9%94%81%e6%96%b9%e5%bc%8f%e4%bb%a5%e5%8f%8a%e7%bf%bb%e5%a2%99%e6%89%8b%e6%ae%b5%e6%b1%87%e6%80%bb/">GFW 封锁方式以及翻墙手段汇总 </a>：主要看参考文献即可，研究内部原理</li>
-<li><a href="https://github.com/JadaGates/ShadowsocksBio">记录一下SS的前世今生，以及一个简单的教程总结 </a>：shadowsocks 前世今生</li>
+<li><a href="https://pao-pao.net/article/292">翻墙=犯法？从许东翻墙第一案说起</a>：利用 Goagent 非法营利</li>
+<li><a href="http://www.miit.gov.cn/n1146290/n4388791/c5471946/content.html">工业和信息化部关于清理规范互联网网络接入服务市场的通知</a></li>
+<li><a href="http://www.bjnews.com.cn/news/2017/07/25/451669.html">工信部回应“整顿翻墙软件”：合法经营不受影响|政解</a></li>
+<li><a href="http://it.gmw.cn/2018-10/09/content_31606845.htm">程序员非法出售VPN 被判刑三年罚款10000元</a></li>
+<li><a href="https://nosec.org/home/detail/2153.html"><strong>首例</strong>！广东警方对“翻墙”上网者重罚！</a></li>
+<li><a href="http://www.gdgafz.alldayfilm.com/bookDetail.html?type=1&amp;id=1134323">韶雄公(网)行罚决字 [2019]1号</a>：「首例！广东警方对“翻墙”上网者重罚」官方文书</li>
+</ul>
+
+<p>以上涉及的主要的法律条款为：</p>
+
+<ol>
+<li><p><a href="http://www.miit.gov.cn/n1146285/n1146352/n3054355/n3057656/n3057661/c3559457/content.html">中华人民共和国计算机信息网络国际联网管理暂行规定</a></p>
+
+<blockquote>
+<p>第六条  计算机信息网络直接进行国际联网，必须使用邮电部国家公用电信网提供的国际出入口信道。</p>
+
+<p>任何单位和个人不得<strong>自行建立或者使用其他信道</strong>进行国际联网。</p>
+</blockquote></li>
+</ol>
+
+<p>　　&gt; 第十条  个人、法人和其他组织（以下统称用户）使用的计算机或者计算机信息网络，需要进行国际联网的，必须通过接入网络进行国际联网。</p>
+
+<p>　　&gt; 前款规定的计算机或者计算机信息网络，需要接入网络的，应当征得接入单位的同意，并办理登记手续。</p>
+
+<pre><code>&gt; 第十三条  从事国际联网业务的单位和个人，应当遵守国家有关法律、行政法规，严格执行安全保密制度，不得利用国际联网从事危害国家安全、泄露国家秘密等违法犯罪活动，不得制作、查阅、复制和传播妨碍社会治安的信息和淫秽色情等信息。
+</code></pre>
+
+<ol>
+<li><p><a href="http://www.miit.gov.cn/n1146295/n1652858/n1652930/n3757020/c5471946/content.html">工业和信息化部关于清理规范互联网网络接入服务市场的通知</a></p>
+
+<blockquote>
+<p>违规开展跨境业务问题。未经电信主管部门批准，不得自行建立或租用专线（含虚拟专用网络VPN）等其他信道开展跨境经营活动。基础电信企业向用户出租的国际专线，应集中建立用户档案，向用户明确使用用途仅供其内部办公专用，不得用于连接境内外的数据中心或业务平台开展电信业务经营活动。</p>
+</blockquote></li>
+</ol>
+
+<p>从以上的角度来看<strong>必须通过官方认定的机构提供的渠道获取相关的国外咨询，否则就是违法</strong></p>
+
+<p>但是从实际操作层面来看，一般来说企业或个人自行构建的 VPN 等翻墙渠道基本上都没有被封，其主要原因我觉得正如<a href="https://www.youtube.com/watch?v=nwR4_aoq24A">youtube-ImShuker-又有翻墙者被抓了！最安全的访问外网姿势！</a>所说的官方将「翻墙者」分解为以下几类并采取不同措施，我整理表格如下：</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">危险值</th>
+<th align="left">具体特征</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">无危险值</td>
+<td align="left">娱乐、技术学习、少政治</td>
+</tr>
+
+<tr>
+<td align="left">轻度危险值</td>
+<td align="left">关心政治、喜欢看墙外的新闻，但是不传播</td>
+</tr>
+
+<tr>
+<td align="left">中度危险值</td>
+<td align="left">经常发帖评论、转载墙外新闻</td>
+</tr>
+
+<tr>
+<td align="left">重度危险值</td>
+<td align="left">反政治人士</td>
+</tr>
+</tbody>
+</table>
+
+<p>后2者基本上被「喝茶」的几率最大</p>
+
+<h3 id="翻墙技术发展历史">翻墙技术发展历史</h3>
+
+<p>翻墙技术大致经历以下的发展历史：</p>
+
+<ol>
+<li><p>HTTP 代理/SOCKS 代理/DNS 修改时代</p>
+
+<ul>
+<li>屏蔽技术手段： IP 地址和 DNS 污染定点屏蔽</li>
+<li>反屏蔽技术手段：代理猎手（Proxy Hunter）、网页代理</li>
+</ul></li>
+
+<li><p>HTTPS 代理/hosts 文件修改时代</p></li>
+
+<li><p>第一代技术：VPN-PPTP/SSH/赛风年代/西厢计划/GoAgent 时代</p></li>
+
+<li><p>第二代技术：Lantern/OpenVPN 时代</p></li>
+
+<li><p>第三代技术：VPN-wireguard、Shadowsocks及衍生品、V2Ray 时代</p></li>
+</ol>
+
+<p>现如今仍旧使用的技术为 「hosts 文件修改」、「VPN-wireguard」、「Shadowsocks及衍生品」、「V2Ray」</p>
+
+<p>由于「hosts 文件修改」此类方法很容易被屏蔽，所以使用人群逐渐减少，不建议使用</p>
+
+<p>后续文章主要「VPN-wireguard」、「Shadowsocks及衍生品」、「V2Ray」为主</p>
+
+<p>扩展阅读：</p>
+
+<ul>
+<li><a href="https://www.cnblogs.com/weicyNo-1/p/8125763.html">GFW的实现原理和技术（墙与翻墙）</a></li>
 </ul>
 
 <h3 id="版本信息">版本信息</h3>
@@ -222,36 +279,27 @@ ssserver -c /etc/shadowsocks.json -d restart 后台重新启动
 <table>
 <thead>
 <tr>
-<th align="left">日期</th>
-<th align="left">调整内容</th>
+<th align="center">Version</th>
+<th align="center">Action</th>
+<th align="center">Time</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td align="left">2018年10月13日</td>
-<td align="left">初创</td>
-</tr>
-
-<tr>
-<td align="left">2019年1月14日</td>
-<td align="left">增加扩展阅读</td>
-</tr>
-
-<tr>
-<td align="left">2019年1月15日</td>
-<td align="left">增加扩展阅读-发展历史，后续进一步的文章</td>
+<td align="center">1.0</td>
+<td align="center">init</td>
+<td align="center">2019-01-15</td>
 </tr>
 </tbody>
 </table>
-
 			  
 		
 		
 			<div class="article-copyright">
 			  	<ul>
 			  		<li><strong>本文作者：</strong>易道非</li>
-			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/</li>
+			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20190115-circumvention-technology-guild-forward/</li>
 			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
 			  	</ul>
 			</div>
@@ -264,7 +312,9 @@ ssserver -c /etc/shadowsocks.json -d restart 后台重新启动
 		<div>
 			<i class="fa fa-tags">&nbsp;Tags:
 			
-				<a href="https://yidaofei.com/tags/%e7%a7%91%e5%ad%a6%e4%b8%8a%e7%bd%91">科学上网</a>
+				<a href="https://yidaofei.com/tags/%e7%bf%bb%e5%a2%99">翻墙</a>
+    		
+				<a href="https://yidaofei.com/tags/%e8%87%aa%e7%94%b1">自由</a>
     		
     		</i>   
 		</div> 
@@ -276,13 +326,13 @@ ssserver -c /etc/shadowsocks.json -d restart 后台重新启动
 	<hr/>
 	<div class="article-footer-meta-between"> 
 		<div class="refArticle-prev" >
-			  
-		    <a href="https://yidaofei.com/post/20181117-smartlock-how-fingerprint-lock-works/">
-		    	<i class="fa fa-angle-double-left"></i>&nbsp;指纹锁工作原理及结构设计要点  
-		    </a> 
 			
 		</div>
 		 <div class="refArticle-next" >
+		  
+		  	<a href="https://yidaofei.com/post/20190114-how-to-protect-personal-privacy-advanced/">互联网时代，保护自己的个人隐私：进阶篇&nbsp;
+		  		<i class="fa fa-angle-double-right"></i>
+		  	</a> 
 		 
 	    </div>
 	</div>  
@@ -335,15 +385,8 @@ ssserver -c /etc/shadowsocks.json -d restart 后台重新启动
 <ul>
 <li>
 <ul>
-<li><a href="#第一步-购买-vps">第一步 购买 VPS</a></li>
-<li><a href="#第二步-搭建-shadowsocks-服务器端">第二步 搭建 shadowsocks 服务器端</a>
-<ul>
-<li><a href="#进入-vps-管理页面">进入 VPS 管理页面</a></li>
-<li><a href="#下载-xshell">下载 Xshell</a></li>
-<li><a href="#终端安装-shadowsocks-服务器">终端安装 shadowsocks 服务器</a></li>
-<li><a href="#启动与终止-shadowsocks-服务器">启动与终止 shadowsocks 服务器</a></li>
-</ul></li>
-<li><a href="#第三步-windows-等终端使用">第三步 Windows 等终端使用</a></li>
+<li><a href="#翻墙目的以及相关法规">翻墙目的以及相关法规</a></li>
+<li><a href="#翻墙技术发展历史">翻墙技术发展历史</a></li>
 <li><a href="#版本信息">版本信息</a></li>
 </ul></li>
 </ul></li>

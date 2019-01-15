@@ -6,10 +6,31 @@
     <description>Recent content in Posts on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 14 Jan 2019 17:04:17 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 15 Jan 2019 11:57:19 +0800</lastBuildDate>
     
 	<atom:link href="https://yidaofei.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>翻墙 chapter 0 - 前言</title>
+      <link>https://yidaofei.com/post/20190115-circumvention-technology-guild-forward/</link>
+      <pubDate>Tue, 15 Jan 2019 11:57:19 +0800</pubDate>
+      
+      <guid>https://yidaofei.com/post/20190115-circumvention-technology-guild-forward/</guid>
+      <description>&lt;p&gt;有很多人对于「翻墙」感觉是一个非常高大上的词（2011年大二我的感觉同样如此），本系列文章就是将翻墙的发展历史以及现可行的技术一一梳理清楚，让「翻墙」这个词不再神秘！&lt;/p&gt;
+
+&lt;p&gt;此系列文章主要内容如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;翻墙目的以及相关法规：本文&lt;/li&gt;
+&lt;li&gt;翻墙技术发展历史：本文&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20190115-circumvention-technology-guild-vps/&#34;&gt;翻墙之 VPS 篇&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20190115-circumvention-technology-guild-shadowsocks/&#34;&gt;翻墙之 Shadowsocks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;翻墙之 v2ray&lt;/li&gt;
+&lt;li&gt;翻墙之 wireguard&lt;/li&gt;
+&lt;li&gt;翻墙之 路由器篇&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
     
     <item>
       <title>互联网时代，保护自己的个人隐私：进阶篇</title>
@@ -1279,15 +1300,6 @@ H（车库距控制线）：车身长的1.5倍&lt;/p&gt;
 &lt;p&gt;【注意】：Mi5S 等官方有 Bootloader 锁的机型请先向官方申请解锁，未解锁的手机是无法透过 Fastboot 对手机刷入 Recovery 的&lt;br /&gt;
 解锁请参考文章：&lt;a href=&#34;http://www.miui.com/unlock/&#34;&gt;http://www.miui.com/unlock/&lt;/a&gt;
 &lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>翻墙教程之 shadowsocks</title>
-      <link>https://yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/</link>
-      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/</guid>
-      <description>第一步 购买 VPS 如果纯粹作为翻墙使用建议购买 bandwagon 具体的入口可以可以参考搬瓦工 VPS ,选择最便宜的年 $ 19.99 方案（ KVM 架构）即可 第二步 搭建 shadowsocks 服务器端 进入 VPS 管理页面 MyService-&amp;gt;服务器实例-&amp;gt;kiwivm Control Panel 下载 Xshell Xshell-360 终端安装 shadowsocks 服务器 Step 1：配</description>
     </item>
     
     <item>
