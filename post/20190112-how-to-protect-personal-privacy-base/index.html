@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <meta charset="UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" >
+
+  
+  
+    
+    <meta charset="utf-8" name="keywords" content="隐私,安全,互联网隐私," > 
+  
+   
+  <meta charset="utf-8" name="description" content="昨天再写Windows 教程5-进阶阶段-打造一个安全高效的系统「第二章节 系统隐私篇」时查询相关的关于「互联网隐私」泄密的资料时发现这是一个非常大的命题，而由于此教程的主题是「如何高效使用 windows」，不能做过多的展开，所以就将「如何保护个人隐私」抽离出来形成本文！
+
+本文会一下方面系统的梳理一下关于「如何保护个人隐私」，让大家知道「个人隐私」的重要性以及如何最大程度的防范泄露！
+
+
+我们生活在一个怎样的时代
+关注安全动态
+防范系统层面隐私泄露
+防范软件层面隐私泄露
+防范互联网隐私泄露
+
+
+
+
+" >
+  
+  
+  
+    
+        <link rel="icon" type="image/png" href="https://yidaofei.com//image/favicon-32x32.png" > 
+    
+  
+  
+  
+  
+  <title>互联网时代，保护自己的个人隐私：基础篇- 易道非 Blog</title>  
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-126184892-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+
+  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+<body> 
+ 
+
+ 
+<div id="top-element" data-title="到达顶点"></div>
+  
+<header class="site-header fixed-top">
+  <div class="container">
+    <nav id="navigation">  
+      <a href="https://yidaofei.com/" class="site-title">
+        
+        <img title="site-logo" class="site-logo" src="https://yidaofei.com//image/logo.png" >
+           
+         易道非 Blog 
+      </a> 
+      <a aria-label="mobile menu" class="nav-toggle" id="site-nav-toggle"> 
+        <span></span> <span></span> <span></span> 
+      </a>
+      <ul class="menu-left">
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/categories/">Categories</a></li>
+        
+          <li><a href="/tags">Tags</a></li>
+        
+          <li><a href="/wiki">Wiki</a></li>
+        
+          <li><a href="/about">About</a></li>
+        
+
+        
+          <li><a data-remodal-target="searchinput">search</a></li>
+           
+      </ul>
+    </nav>
+  </div>
+</header> 
+
+
+
+<div class="remodal" data-remodal-id="searchinput" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> 
+  <span id="algoliaData" style="display:none;" data-appid="NYC6MHRISW" 
+		data-searchkey="7f131a263a8820645ee9fc65ed97b22f" 
+		data-initindex="github-yidaofeicnBlog"></span>
+
+<div class="search-input-card" >
+    <input type="search" id="search-input" class="search-input" placeholder="Search for titles or URIs..." name="search" autocomplete="off" />
+     <span class="input-search-icon"><i class="fa fa-search"></i></span> 
+</div>
+
+ 
+
+  
+</div>
+
+  
+
+
+
+<section class="main-content-container">
+<article class="article-card">
+	<header class="article-header"> 
+	   <p class="article-title">互联网时代，保护自己的个人隐私：基础篇</p>
+   		<div class="article-meta">
+			
+			<div><i class="fa fa-calendar" >2019年01月12日</i> </div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://yidaofei.com/categories/%e6%80%9d%e8%80%83%e9%9b%86">思考集</a> 
+				   
+				</i>  
+			</div> 
+		</div>  
+	</header>  
+	<content class="markdown">
+		<p>昨天再写<a href="https://yidaofei.com/post/20190111-create-a-safe-and-efficient-system/">Windows 教程5-进阶阶段-打造一个安全高效的系统</a>「第二章节 系统隐私篇」时查询相关的关于「互联网隐私」泄密的资料时发现这是一个非常大的命题，而由于此教程的主题是「如何高效使用 windows」，不能做过多的展开，所以就将「如何保护个人隐私」抽离出来形成本文！</p>
+
+<p>本文会一下方面系统的梳理一下关于「如何保护个人隐私」，让大家知道「个人隐私」的重要性以及如何最大程度的防范泄露！</p>
+
+<ol>
+<li>我们生活在一个怎样的时代</li>
+<li>关注安全动态</li>
+<li>防范系统层面隐私泄露</li>
+<li>防范软件层面隐私泄露</li>
+<li>防范互联网隐私泄露</li>
+</ol>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201901/protect-personal-privacy-xmind.png" alt="保护自己的个人隐私思维导图" /></p>
+
+<p></p>
+
+<h3 id="我们生活在一个怎样的时代">我们生活在一个怎样的时代</h3>
+
+<p>以下内容引用自<a href="https://www.freebuf.com/articles/neopoints/111299.html">浅谈互联网隐私安全</a></p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201901/know-you-a-dog.png" alt="公民信息黑产报价单" /></p>
+
+<blockquote>
+<p>上世纪90年代，《纽约客》曾有一句俚语闻名全球：On the Internet, nobody knows you’re a dog（<strong>在互联网上，没有人知道你是一条狗</strong>）。也正是从那时候起，互联网开始兴起，其不但促进信息流动效率，而且以虚拟和高度匿名的优势吸引大批用户，任何用户都可以在网络上打造一个<strong>全新的完美的无懈可击的自我</strong>，屌丝瞬间逆袭成高富帅。似乎那时对匿名性的痴迷胜过了当今的美颜，在各种社交软件上以各种各样的目的侃侃而谈着不知从哪编造的各种经历。那时候，互联网在人们心里的功能可能就是：玩（玩游戏）、聊（聊天交友）、约（此处过滤）、骂（吐槽）。</p>
+
+<p>进入21世纪以来，我国互联网快速发展，尤其是移动互联网进一步推动这种速度，很快我们发现，如今的互联网已经与当初的截然不同，电商购物、地图导航、移动支付、炒股理财、网络约车、政务办公、充值缴费等等，似乎一切都能在互联网上完成，<strong>出门不需要再带钱包，全靠一部手机即可</strong>。</p>
+
+<p>但是这一切的背后也带来了很多问题，尤其在移动互联网时代似乎没有绝对意义上的隐私。很多产品为了用户体验搜集用户使用信息，而这些信息有时并不能明确鉴定是否属于个人隐私。原因在于，互联网的出现使得很多隐私不断公开化，而使得隐私失去了私密属性。当我们的账号密码被挂在“社工库”中，当我们接到假冒卖家打来的电话时，当我们手机每天收到“借款放贷、投资理财”的骚扰电话时，<strong>隐私似乎已经离我们越来越远</strong>。</p>
+
+<p>“不要和陌生人说话”这句话想必大家都非常熟悉。为了保护自身安全，我们用简单粗暴的方法将社会群体划分为“熟人”和“陌生人”，而这两者则对应“安全”和“非安全”两种状态。在保护隐私方面，一般坚持<strong>最小化原则，即让尽可能少的人知道</strong>，最理想的状态是，不让与该隐私无关的人员知道任何信息。</p>
+
+<p>但是互联网的生态环境完全改变了这一状态，有时隐私保护的主动权似乎不在你手中。由于之前网络的高度匿名带来的很多不好的现象，目前推出的各种网络实名制需要用户或多过少的提供个人信息进行身份认证，比如与金融理财相关的应用实名认证要求最为严格；另外，一些产品为了提升用户体验需要搜集一些个人信息，比如浏览记录等。而当“大数据”被炒的很热的时候，各大公司也越来越重视“数据”的重要性，个人数据则起到重要作用。就这样，有意无意中，<strong>原本属于个人的“数据”源源不断的输向云端，而云端的一切对于用户来说都是陌生的</strong>，因此之后所发生的各种问题，用户也不得而知，也不可控制。</p>
+</blockquote>
+
+<p>在这样一个「IOT」和「大数据」的时代，我们每个个体无时无刻的产生着各种数据，而这些数据被以不同形式收集记录着，<strong>每个人似乎变得更加透明</strong>，如果有人拿到这些数据基本上就可以画出你的人物画像，从而针对你做各种的营销……</p>
+
+<p>这是一个不可逆转的潮流，并且会越来越快！我们能够做的就是2个：</p>
+
+<ol>
+<li>呼吁国家尽快完善相关的立法-<a href="https://www.aqniu.com/industry/26330.html">《个人信息与隐私保护法律法规现状》报告</a></li>
+<li>个人做好相关的个人隐私保护</li>
+</ol>
+
+<p>有很多的读者对于后者的感触可能不会很深，所以我查找了一些个人隐私泄露的资料如下：</p>
+
+<ul>
+<li><a href="https://www.77169.com/html/9137.html">我用十天追回支付宝盗刷款25000元的奇葩经历</a>:旧手机+网络支付漏洞</li>
+<li><a href="https://www.zhihu.com/question/41235282/answer/90360419">知乎-卡瓦伊-破解小米云从而破解支付宝安全体系</a></li>
+<li><a href="https://www.zhihu.com/question/41235282/answer/94315643">知乎-wlp2s0-唯品会订单信息泄露套取相关支付信息损失1991元</a></li>
+<li><a href="https://www.zhihu.com/question/41235282/answer/93669876">知乎-王哲-支付宝被盗刷27000</a></li>
+<li><a href="https://www.wdzj.com/zhuanlan/guancha/17-7877-1.html">数据泄露后果有多严重？盘点国内外互联网十大安全事件</a></li>
+</ul>
+
+<p>有些朋友可能不会点击以上链接去看具体的案例，所以我从<a href="https://www.wdzj.com/zhuanlan/guancha/17-7877-1.html">数据泄露后果有多严重？盘点国内外互联网十大安全事件</a>抽取了一张图片，让大家知道部分的「互联网黑产」的知识：</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201901/citizen-information-black-product-quotation.png" alt="公民信息黑产报价单" /></p>
+
+<p>正如前文所说的隐私被逐渐的侵犯是必定的解决，不要去相信那群「利益既得者」，我们能够做的就是「减少隐私泄密、保护重要隐私」！</p>
+
+<h3 id="关注安全动态">关注安全动态</h3>
+
+<p>之所以将其放在第一个提出就是因为很多人对于隐私泄密没有任何的感觉，觉得什么事情都与自己毫无关系！就像我有时候和朋友讲「GFW 与翻墙」很多人都没有任何的感觉总觉得「中国就是这样，没有能力就只能默默承受」，我真心不知道这些人的关于此的思维逻辑怎么走的，对此我真心的想要告诉他们一句话「你看到是还是那个中国，而我看到的则是一个立体的逐渐变化的中国……」</p>
+
+<p>所以朋友们要想切实的保护自己的隐私就必须定期的关注安全信息，做到能够在「暴风雨在哪里、何时来」！</p>
+
+<p>扩展阅读：</p>
+
+<ul>
+<li><a href="http://www.wooyun.org/">乌云</a>：中国最大的白帽子平台</li>
+<li><a href="https://daily.zhihu.com/story/3877456">知道创宇-Evi1m0-安全类网站推荐列表</a></li>
+<li><a href="http://www.vonwei.com/?mod=pad&amp;act=view&amp;id=54">国内知名安全研究团队与站点整理</a></li>
+</ul>
+
+<h3 id="防范系统层面隐私泄露">防范系统层面隐私泄露</h3>
+
+<h4 id="windows-系统">Windows 系统</h4>
+
+<ol>
+<li>系统权限分级-新建一个「普通用户账户」做常用的用户</li>
+<li>安全软件：推荐使用「火绒」、「360 国际版」</li>
+<li>可疑程序采用「虚拟机」或「沙盒程序」运行</li>
+<li>关闭 Windows 10 相关的隐私项:关闭磁贴、Cortana……</li>
+</ol>
+
+<p>此部分具体可以访问<a href="http://yidaofei.com/post/20190111-create-a-safe-and-efficient-system/">《Windows 教程5-进阶阶段-打造一个安全高效的系统》</a></p>
+
+<h4 id="android-系统">Android 系统</h4>
+
+<p>以下内容抽离自<a href="https://www.zhihu.com/question/23512456/answer/24813634">知乎-Yogi</a></p>
+
+<blockquote>
+<p>Android 的本质是 Linux，而基于 Linux 的「沙盒安全机制」，理论上讲，在没有获取到最高权限 ROOT 时，整个系统都是安全——在没有 ROOT 的情况下，沙盒机制能让程序间彼此独立，从而保护程序数据。</p>
+
+<p>打个比方，如果说病毒木马是一头饿狼，网银等其他程序是羔羊，那么 「ROOT机制」能将饿狼和羔羊分开隔离于各自的铁笼内，这时候，羔羊是安全的。一旦破了 ROOT，这个铁笼也就打开，饿狼就可以肆意攻击了。</p>
+</blockquote>
+
+<p>当然如果你有极致的要求，推荐你访问一下：<a href="https://cybermagicsec.github.io/privacytools-zh/#mobile_os">隐私工具……手机操作系统</a></p>
+
+<p>由于国内的 Andriod 系统已经基本集成相关的安全软件以及流量统计等功能，所以大家要做的就是利用<strong>相关的权限</strong>去控制相关软件
+的行为，如禁止某个应用上网等</p>
+
+<h3 id="防范软件层面隐私泄露">防范软件层面隐私泄露</h3>
+
+<h4 id="pc-端">PC 端</h4>
+
+<h5 id="浏览器">浏览器</h5>
+
+<p>推荐使用 Chrome/Firefox 浏览器并进行如下的设置：</p>
+
+<ul>
+<li>隐私安全：开启DNT（Do Not Track），禁止第三方Cookies</li>
+<li>隐私安全：关闭记住密码功能或者谨慎使用此功能
+
+<ul>
+<li><a href="https://support.google.com/chrome/answer/95606?co=GENIE.Platform%3DDesktop&amp;hl=zh-Hans">官方-如何关闭记住密码功能</a><br /></li>
+<li><a href="https://www.zhihu.com/question/19769798/answer/15716038">知乎-hell0w0rld-Chrome-密码采用明文存储机制</a>：多注意看评论</li>
+</ul></li>
+<li>安装插件「AdGuard」、「Ghostery」、「HTTPS Everywhere」、「Browser Plugs-指纹隐私防火墙」、「Self-Destructing Cookies-自动删除 Cookies」</li>
+<li>使用注重隐私的搜索引擎，如「duckduckgo」</li>
+</ul>
+
+<p>扩展阅读：</p>
+
+<ul>
+<li><a href="http://yidaofei.com/post/20190113-windows-guild-create-an-efficient-browser/">Windows 教程6-进阶阶段-打造一个高效的浏览器</a></li>
+<li><a href="https://panopticlick.eff.org/">Panopticlick 工具</a>：用于测试浏览器的独特程度</li>
+<li><a href="https://cybermagicsec.github.io/privacytools-zh/webrtc.html">WebRTC IP 漏洞测试</a>：你的 IP 地址是否被泄露?</li>
+<li><a href="https://cybermagicsec.github.io/privacytools-zh/#about_config">FireFox: &laquo;about:config&raquo;的隐私设置调整</a></li>
+</ul>
+
+<h5 id="其他软件">其他软件</h5>
+
+<p>按照<a href="https://program-think.blogspot.com/2013/06/privacy-protection-1.html">如何保护隐私[1]：如何选择软件和服务？</a>所说挑选软件需要遵循以下原则：</p>
+
+<ul>
+<li>能用纯 Web 搞定的，尽量不要装软件</li>
+<li>尽量用非营利机构的软件和服务（其中 「Netflix」公司通过大数据购买《纸牌屋》版权可以作为大数据商业应用案例之一）</li>
+<li>尽量使用国外的软件或服务，因为就算隐私泄露 1、他们也无司法管辖权；2、关注点不一样</li>
+<li>尽量使用「开源软件」以防止后门和偷窥隐私</li>
+<li>如果软件本身的用途跟网络无关，那就尽量选「单机软件」</li>
+<li>要避免使用高权限用户，技巧之一就是：尽量用绿色软件</li>
+</ul>
+
+<p>如果按照其教程<a href="https://program-think.blogspot.com/2014/08/privacy-protection-8.html">如何保护隐私[8]：流氓的桌面软件有哪些替代品？</a>给大家推荐详细绝大部分的人会不适应，比如使用「Skype」、「 Pidgin」，所以我的意见是尽量按照以上原则走即可</p>
+
+<p>关于软件推荐大家可以访问<a href="http://yidaofei.com/post/20181222-windows-guild-software-list/">Windows 教程 4 - 基础阶段 - 好的软件改变你的生活</a>从中挑选相关的软件！</p>
+
+<p>另外对于软件的风险不确定可以使用「沙箱」或「虚拟机」来控制相关的高危行为！</p>
+
+<p>扩展阅读：</p>
+
+<ul>
+<li><a href="https://program-think.blogspot.com/2013/06/usa-vs-china.html">中美政府信息监控的差异——“棱镜门”丑闻随想</a></li>
+<li><a href="https://prism-break.org/zh-CN">粉碎棱镜</a>：软件推荐</li>
+</ul>
+
+<h4 id="移动端">移动端</h4>
+
+<p>移动端相比PC端，由于资源等的限制可操作空间非常少，我针对相关的可能泄露的点整理如下：</p>
+
+<ol>
+<li>尽量关闭手机系统自身的关键云同步，尤其是短信云同步，具体案例见<a href="https://www.zhihu.com/question/41235282/answer/90360419">知乎-卡瓦伊-破解小米云从而破解支付宝安全体系</a></li>
+<li>使用「Google Play」、「酷市场」、「官方网站」等正规可信赖渠道下载相关应用</li>
+<li>高风险应用预先使用「逍遥安卓」类「Andirod 模拟器」运行判断</li>
+<li>应用安装完成后注意使用系统自身的权限管理系统设置相关的权限，如无必要可将<strong>其网络权限关闭</strong>，需要时再开启</li>
+<li>关键隐私应用请全部设置指纹解锁等</li>
+</ol>
+
+<p>扩展阅读：</p>
+
+<ul>
+<li><a href="https://green-android.org/">Android 绿色应用公约</a></li>
+</ul>
+
+<h3 id="防范互联网隐私泄露">防范互联网隐私泄露</h3>
+
+<h4 id="整体原则">整体原则</h4>
+
+<p>我防范隐私泄露的整体原则是<strong>信息分级、多主键、最小化原则</strong>，具体说明如下：</p>
+
+<p><strong>信息分级、多主键</strong></p>
+
+<p>我的方式方法是将信息分为三层：</p>
+
+<ol>
+<li>非常重要，一旦泄露被恶意使用就会造成巨大损失</li>
+<li>重要，一旦泄露会造成不是很重大的损失或会造成一定的困扰</li>
+<li>普通/无所谓，泄露无任何损失</li>
+</ol>
+
+<p>给大家举一个例子：</p>
+
+<ul>
+<li>支付宝支付密码泄露可能将造成个人财产的重大损失——非常重要信息</li>
+<li>淘宝登录账号泄露可能造成个人联系方式、购买记录、家庭地址泄露——重要信息</li>
+<li>Adobe 账号泄露无任何损失——普通/无所谓信息</li>
+</ul>
+
+<p>然后分别对应<strong>不同的手机号码、邮件地址、不同的密码层级算法</strong>，做到基本上有3套互联网面具！</p>
+
+<p>PS：</p>
+
+<ol>
+<li>手机号码可以用「阿里小号」做到一机多号</li>
+<li>电子邮件尽量使用「Google」、「Outlook」、「临时邮件」</li>
+<li>密码不建议使用 「LastPass」 等工具记录，一旦被破解就……，而且此类事件<a href="https://www.freebuf.com/news/70081.html">在线密码管理器LastPass遭入侵</a>已经发生</li>
+</ol>
+
+<p><strong>最小化原则</strong>
+按照最小化原则，尽量少暴露个人信息，在信息上传之前请在内心问自己以下问题：</p>
+
+<ul>
+<li>网站数据能否注销</li>
+<li>这个数据是否一定要上传、此类服务是否有可替代服务</li>
+<li>数据能否使用虚拟的信息，如淘宝收件地址可使用 「易生 阿里小号号码 菜鸟驿站地址或不具体到单元楼层」</li>
+<li>数据是否做了相关的加密或水印（尤其是<strong>证件类</strong>）</li>
+</ul>
+
+<p>追加一句，如果你涉及危险的网络行为请设计一套独立的网络账号（虚拟人，具体包含邮箱、IM、网站用户名）,并做相关的物理分割（不记名手机号码、物理电脑等）</p>
+
+<p>扩展阅读：</p>
+
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/21630323">怎样构建安全的网络密码</a>：互联网账号密码的解决方案整理描述，非常符合我想法，后续此不再开单篇</li>
+<li><a href="https://program-think.blogspot.com/2010/06/howto-prevent-hacker-attack-3.html">如何防止黑客入侵[3]：如何构造安全的口令/密码</a>：密码算法更加齐全</li>
+</ul>
+
+<h4 id="其他细节">其他细节</h4>
+
+<h5 id="重要信息类">重要信息类</h5>
+
+<ul>
+<li><strong>上传照片</strong>时注意是否已消除GPS、拍摄时间等EXIF信息，<strong>证件类加「水印」</strong></li>
+<li>网上绑定信用卡时用虚拟信用卡。信用卡不用时可以在手机银行中<strong>锁卡</strong></li>
+<li>网购时最好是使用一张低额度的信用卡绑定快捷支付，其他全部走网银</li>
+<li>保护好银行卡的重要信息-「卡号、有效期、CVV 码」</li>
+<li>涉及到 QQ、微信等的朋友、亲人向你借钱、充值之类事宜，电话过去确认，要记住互联网那头不一定是一个人或你以为的那个人</li>
+</ul>
+
+<h5 id="相关操作类">相关操作类</h5>
+
+<ul>
+<li><strong>心理建设</strong>：不用相信「天下掉馅饼」的传说，高明的骗子一定会让你头脑发热，此时你的人性弱点正在被引导被利用，去洗个脸，冷静下，找个可信任的人说几句话，你就不会掉进去了</li>
+<li>将网上发布过的个人信息删除，如果不能删除的联系网站管理员删除</li>
+<li>重要账号开启两步验证，特别重要的账号可以用物理密钥</li>
+<li>云端同步的资料请注意判定其泄密的可能性以及后果，注意加密，具体可以访问<a href="http://yidaofei.com/post/20190110-windows-guild-create-a-efficient-file-management-system/#%E4%BB%A5%E9%98%B2%E4%B8%87%E4%B8%80%E7%9A%84%E7%BD%91%E7%BB%9C%E4%BA%91%E5%A4%87%E4%BB%BD%E7%B3%BB%E7%BB%9F">Windows 教程 3……以防万一的网络云备份系统</a></li>
+<li>如果你是重要人物，记得给你的电脑 BIOS 加个密、硬盘加个密、关键文件放到 TrueCrypt 里，发邮件用 GPG 加密</li>
+<li>即使是官方短信也不一定可信，因为基站可伪造，百度「伪基站」看看就知道了，这条切记切记</li>
+<li>离开熟悉环境关闭手机 WiFi，防止自动连上不安全 WiFi。不得不用陌生 WiFi 时使用靠谱的 VPN，或者不登陆账户仅仅浏览，或者只使用全程 HTTPS 加密的服务</li>
+<li>用公用电脑或者别人电脑上网时，如果登陆账户，不保存密码，用完后退出账户，删除历史、cookies等，或者直接用隐私模式。</li>
+<li>去不知名的酒店入住时注意是否有摄像头偷拍，具体检查方法可参考<a href="https://www.zhihu.com/question/19670034">知乎链接</a></li>
+<li>关键文件不要用迅雷下载，从原始地址下载，并且对比Hash值</li>
+<li>不要随意添加没有开源的浏览器插件，安装插件时检查权限</li>
+<li>笔记本电脑的摄像头用胶布粘住</li>
+</ul>
+
+<h3 id="参考资料">参考资料</h3>
+
+<ul>
+<li><a href="https://cybermagicsec.github.io/privacytools-zh/">隐私工具 - 加密安全对抗全球大规模监控</a></li>
+<li><a href="https://program-think.blogspot.com/2013/06/privacy-protection-0.html">如何保护隐私[0]：为啥写这个话题？</a></li>
+<li><a href="https://program-think.blogspot.com/2014/08/privacy-protection-7.html">如何保护隐私[7]：其它桌面软件的隐私问题</a>：详细解答软件是如何泄露隐私的</li>
+<li><a href="https://program-think.blogspot.com/2015/01/privacy-protection-10.html#head-7">如何保护隐私[10]：移动设备的隐私问题</a>：详细举例说明移动设备如何监控的</li>
+<li><a href="https://www.zhihu.com/question/20265020/answer/48873051">知乎-互联网上保护个人隐私的方法和举措有哪些？</a>：信息分级，无关联 「Key Id」</li>
+<li><a href="https://daily.zhihu.com/story/3033743">用户隐私早沦陷了</a></li>
+</ul>
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Version</th>
+<th align="center">Action</th>
+<th align="center">Time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1.0</td>
+<td align="center">init</td>
+<td align="center">2019-01-12</td>
+</tr>
+</tbody>
+</table>
+			  
+		
+		
+			<div class="article-copyright">
+			  	<ul>
+			  		<li><strong>本文作者：</strong>易道非</li>
+			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20190112-how-to-protect-personal-privacy-base/</li>
+			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
+			  	</ul>
+			</div>
+		 
+	</content>  
+ 	<hr/>
+ 	
+	<div class="article-footer-meta-between"> 
+		 
+		<div>
+			<i class="fa fa-tags">&nbsp;Tags:
+			
+				<a href="https://yidaofei.com/tags/%e5%ae%89%e5%85%a8%e9%9a%90%e7%a7%81">安全隐私</a>
+    		
+    		</i>   
+		</div> 
+		 
+		<div id="i-share" class="btn btn-default  share-widget">
+		    <i class="fa fa-share-alt"></i>
+		</div> 
+	</div>
+	<hr/>
+	<div class="article-footer-meta-between"> 
+		<div class="refArticle-prev" >
+			  
+		    <a href="https://yidaofei.com/post/20190113-windows-guild-create-an-efficient-browser/">
+		    	<i class="fa fa-angle-double-left"></i>&nbsp;Windows 教程6-进阶阶段-打造一个高效的浏览器  
+		    </a> 
+			
+		</div>
+		 <div class="refArticle-next" >
+		  
+		  	<a href="https://yidaofei.com/post/20190111-create-a-safe-and-efficient-system/">Windows 教程5-进阶阶段-打造一个安全高效的系统&nbsp;
+		  		<i class="fa fa-angle-double-right"></i>
+		  	</a> 
+		 
+	    </div>
+	</div>  
+</article> 
+</section>
+ 
+
+  
+ 
+<div class="main-content-container " >
+<div class="comment-card"> 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeicn/comment-utterances-blog-yidaofeicn"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+</div>
+</div>
+
+ 
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+	
+	
+	<span id="tocLevel" data-startLevel="" data-endLevel=""></span>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#我们生活在一个怎样的时代">我们生活在一个怎样的时代</a></li>
+<li><a href="#关注安全动态">关注安全动态</a></li>
+<li><a href="#防范系统层面隐私泄露">防范系统层面隐私泄露</a>
+<ul>
+<li><a href="#windows-系统">Windows 系统</a></li>
+<li><a href="#android-系统">Android 系统</a></li>
+</ul></li>
+<li><a href="#防范软件层面隐私泄露">防范软件层面隐私泄露</a>
+<ul>
+<li><a href="#pc-端">PC 端</a>
+<ul>
+<li><a href="#浏览器">浏览器</a></li>
+<li><a href="#其他软件">其他软件</a></li>
+</ul></li>
+<li><a href="#移动端">移动端</a></li>
+</ul></li>
+<li><a href="#防范互联网隐私泄露">防范互联网隐私泄露</a>
+<ul>
+<li><a href="#整体原则">整体原则</a></li>
+<li><a href="#其他细节">其他细节</a>
+<ul>
+<li><a href="#重要信息类">重要信息类</a></li>
+<li><a href="#相关操作类">相关操作类</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#参考资料">参考资料</a></li>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
+<footer class="site-footer text-center">
+  <div class="social" > 
+     
+          <a href=" mailto:yidaofeicn@gmail.com "><i class="fa fa-envelope-open-o"></i></span></a>
+      
+       
+          <a href=" https://github.com/yidaofeicn "  ><i class="fa fa-github"></i></span></a>
+      
+    
+      
+                <a href="https://yidaofei.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml" target="_blank"> <i class="fa fa-rss"></i>
+                </a>
+          </div>
+   
+  <div class="copyright"  >
+    Powered by &nbsp;<a href="https://gohugo.io/">Hugo</a>&nbsp;|&nbsp;
+    Theme-<a href="https://github.com/yidaofeicn/hugo-theme-flybird">Flybird</a>  
+  </div>
+  <div class="copyright"> Copyright© 2018 Transparent Thoughts. All rights reserved.</div> 
+  <div class="copyright"> 
+
+      
+    
+      <span id="busuanzi_container">
+        访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+</footer>
+
+ 
+
+<div id="bottom-element" data-title="定位底部"></div>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.css">
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.js"></script>
+ 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.30.0/algoliasearch.jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.32.0/autocomplete.jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/algoliasearch/algolia-autocomplete.css">
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.css"> 
+<script type="text/javascript" src="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.css">
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/prismjs/prism.css">
+
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/prismjs/prism.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js"></script>
+
+<script type="text/javascript" color="#1D1D1D" opacity='1' zIndex="-2" count="400" src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.3/canvas-nest.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+<span id="isPage" data-isPage="true" style="display: none;"></span>
+
+
+ 
+
+<script type="text/javascript" src="https://yidaofei.com//js/flybird.js"></script> 
+<script type="text/javascript" src="https://yidaofei.com//js/main.js"></script> 
+  
+ 
+</style>
+</body>
+</html>
+
+
+ 
