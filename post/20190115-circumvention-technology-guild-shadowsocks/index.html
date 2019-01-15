@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <meta charset="UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" >
+
+  
+  
+    
+    <meta charset="utf-8" name="keywords" content="翻墙,GFW,shadowsocks," > 
+  
+   
+  <meta charset="utf-8" name="description" content="本篇将介绍三大主流翻墙手段之一 「shadowsocks」，首先请确认「VPS」是否已经准备妥当，如未准备的人请跳转到翻墙 chapter 1 - 服务器篇，其主要内容如下：
+
+
+shadowsocks 的发展历史及脉络
+shadowsocks 服务器搭建及本地使用
+
+
+PS：本文是在原有文章翻墙教程之 shadowsocks基基础之上结合记录一下SS的前世今生，以及一个简单的教程总结做相关调整
+
+" >
+  
+  
+  
+    
+        <link rel="icon" type="image/png" href="https://yidaofei.com//image/favicon-32x32.png" > 
+    
+  
+  
+  
+  
+  <title>翻墙 chapter 3 - shadowsocks- 易道非 Blog</title>  
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-126184892-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+
+  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+<body> 
+ 
+
+ 
+<div id="top-element" data-title="到达顶点"></div>
+  
+<header class="site-header fixed-top">
+  <div class="container">
+    <nav id="navigation">  
+      <a href="https://yidaofei.com/" class="site-title">
+        
+        <img title="site-logo" class="site-logo" src="https://yidaofei.com//image/logo.png" >
+           
+         易道非 Blog 
+      </a> 
+      <a aria-label="mobile menu" class="nav-toggle" id="site-nav-toggle"> 
+        <span></span> <span></span> <span></span> 
+      </a>
+      <ul class="menu-left">
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/categories/">Categories</a></li>
+        
+          <li><a href="/tags">Tags</a></li>
+        
+          <li><a href="/wiki">Wiki</a></li>
+        
+          <li><a href="/about">About</a></li>
+        
+
+        
+          <li><a data-remodal-target="searchinput">search</a></li>
+           
+      </ul>
+    </nav>
+  </div>
+</header> 
+
+
+
+<div class="remodal" data-remodal-id="searchinput" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> 
+  <span id="algoliaData" style="display:none;" data-appid="NYC6MHRISW" 
+		data-searchkey="7f131a263a8820645ee9fc65ed97b22f" 
+		data-initindex="github-yidaofeicnBlog"></span>
+
+<div class="search-input-card" >
+    <input type="search" id="search-input" class="search-input" placeholder="Search for titles or URIs..." name="search" autocomplete="off" />
+     <span class="input-search-icon"><i class="fa fa-search"></i></span> 
+</div>
+
+ 
+
+  
+</div>
+
+  
+
+
+
+<section class="main-content-container">
+<article class="article-card">
+	<header class="article-header"> 
+	   <p class="article-title">翻墙 chapter 3 - shadowsocks</p>
+   		<div class="article-meta">
+			
+			<div><i class="fa fa-calendar" >2019年01月15日</i> </div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://yidaofei.com/categories/%e7%bf%bb%e5%a2%99">翻墙</a> 
+				   
+				</i>  
+			</div> 
+		</div>  
+	</header>  
+	<content class="markdown">
+		<p>本篇将介绍三大主流翻墙手段之一 「shadowsocks」，首先请确认「VPS」是否已经准备妥当，如未准备的人请跳转到<a href="https://yidaofei.com/post/20190115-circumvention-technology-guild-vps/">翻墙 chapter 1 - 服务器篇</a>，其主要内容如下：</p>
+
+<ol>
+<li>shadowsocks 的发展历史及脉络</li>
+<li>shadowsocks 服务器搭建及本地使用</li>
+</ol>
+
+<p>PS：本文是在原有文章<a href="https://yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/">翻墙教程之 shadowsocks</a>基基础之上结合<a href="https://github.com/JadaGates/ShadowsocksBio" title="记录一下SS的前世今生，以及一个简单的教程总结 ">记录一下SS的前世今生，以及一个简单的教程总结</a>做相关调整</p>
+
+<p></p>
+
+<h3 id="shadowsocks-前世今生">shadowsocks 前世今生</h3>
+
+<p>以下内容部分主要来自<a href="https://github.com/JadaGates/ShadowsocksBio" title="记录一下SS的前世今生，以及一个简单的教程总结 ">记录一下SS的前世今生，以及一个简单的教程总结</a></p>
+
+<p><strong>第一阶段：shaodwsocks 起源</strong></p>
+
+<p>2012年4月22日，V2EX用户clowwindy 分享了一个自己自用一年多的翻墙工具：Shadowsocks</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201901/cwpostss.png" alt="" /></p>
+
+<p>相对于以前的 VPN 技术，SS 的一个大特点就是<strong>网络分流技术</strong>，配置文件中的网站走代理通道，之外的全部走直连通道，相较于以前所有的流量只能走代理通道，不需要代理的网站上网速度也会受到影响，着实提升了上网体验。</p>
+
+<p>之后的 SS 的发展比较顺利，各个平台的客户端也如雨后春笋逐渐建立起来，最初的 SS 客户端都内置了节点信息，虽然速度略慢，但丰俭由人，普通用户安装后无需配置即可食用，有需求有技术的群体也可以使用自己的服务器。唯一遗憾的是当年的 iOS 上并没有网络通道的权限，要么使用ss浏览器有限翻墙，要么越狱安装客户端实现全局代理。</p>
+
+<p>后续由于影响力逐渐的扩大，2015年8月20日 clowwindy 被有关部门请去「喝茶」并随后删除相关的项目及成员等</p>
+
+<p><strong>第二阶段：shaodwsocks 衍生品</strong></p>
+
+<p>由于 clowwindy 最初开源 SS 的决定，大量的 fork 使得 SS 依然在更新之中，从GitHub现有结果来看，各个平台（甚至是路由器）的SS仍然不断的在更新，在提交 Issue，也有大功能更新，每一滴微小的力量都推动着项目的前进，只是前途在何处仍然是未知数。</p>
+
+<p>其主流的衍生产品如下：</p>
+
+<ol>
+<li>Shadowsocks-go: 二进制编译, 轻量, 快速</li>
+<li>Shadowsocks-python: 无功无过，也是最原始的版本，近年来更新速度略慢</li>
+<li>Shadowsocks-libev: 一直处于更新之中，最大的特点是支持obfs混淆</li>
+<li>ShadowsocksR: 从作者到产品都极负争议性, obfs混淆模式开创者, 并于<strong>2017年7月27日</strong>由于「不明身份人士人身攻击」关闭项目</li>
+</ol>
+
+<p>本文主要介绍就是「 Shadowsocks-libev + obfs 混淆」方案</p>
+
+<h3 id="shadowsocks-libev-obfs-混淆方案">Shadowsocks-libev + obfs 混淆方案</h3>
+
+<h4 id="obfs-混淆">obfs 混淆</h4>
+
+<p>前面已经介绍「Shaodwsokcs」前世今生，但是「obfs 混淆」大家可能不知道是什么东西，所以在此介绍一下：</p>
+
+<p>「obfs 混淆」最大的作用是对<strong>SS 流量进行伪装</strong></p>
+
+<p>在不添加obfs的情况下, 运营商服务器通过的流量为未知的加密流量（具体见「下标：联通客户端各个协议识别情况表格」）, 据说 「GFW」 已经有一定的包检测的能力, 仅仅加密流量具有一定的风险</p>
+
+<p>添加 「obfs http 模式」之后, 通过运营商的流量会被识别为设定好的网址的流量, 假设你设定的是 bing, 那么你的「 SS 流量」会被判别为你当前正在访问 bing, 减少了被封杀的可能性，「tls模式」安全性高于「http模式」。</p>
+
+<table>
+<thead>
+<tr>
+<th>软件和协议</th>
+<th>联通检测类型</th>
+<th>访问网址</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Shadowsocks</td>
+<td>TCP 业务</td>
+<td>显示服务器IP</td>
+</tr>
+
+<tr>
+<td>SS + http_simple（80端口）</td>
+<td>上网 (Web方式get)</td>
+<td>显示混淆域名</td>
+</tr>
+
+<tr>
+<td>SSR</td>
+<td>TCP 业务</td>
+<td>显示服务器IP</td>
+</tr>
+
+<tr>
+<td>SSR + http_simple</td>
+<td>上网 (Web方式get)</td>
+<td>显示混淆域名</td>
+</tr>
+
+<tr>
+<td>SSR + TLS(443)</td>
+<td>安全类网页浏览 (HTTPS VPN) 流量HTTPS 链接</td>
+<td>显示混淆域名</td>
+</tr>
+
+<tr>
+<td>SSR + TLS(995)</td>
+<td>安全协议的收邮件流量</td>
+<td>显示IP</td>
+</tr>
+
+<tr>
+<td>SSR + TLS(非443)</td>
+<td>网络连接（网页）HTTPS 链接</td>
+<td>显示混淆域名</td>
+</tr>
+
+<tr>
+<td>OpenConnect</td>
+<td>UDP 业务</td>
+<td>显示服务器IP</td>
+</tr>
+
+<tr>
+<td>IPSec VPN</td>
+<td>UDP 业务</td>
+<td>显示服务器IP</td>
+</tr>
+
+<tr>
+<td>V2Ray</td>
+<td>TCP 业务</td>
+<td>显示服务器IP</td>
+</tr>
+
+<tr>
+<td>V2Ray + TLS</td>
+<td>HTTPS 网络连接</td>
+<td>显示证书域名</td>
+</tr>
+
+<tr>
+<td>nghttpx + TLS</td>
+<td>HTTPS 网络连接</td>
+<td>显示证书域名</td>
+</tr>
+
+<tr>
+<td>kcptun</td>
+<td>UDP 业务</td>
+<td>显示服务器IP</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="服务器端操作">服务器端操作</h4>
+
+<p>请注意以下操作全部在 「Centos系统」操作</p>
+
+<h5 id="一键安装脚本">一键安装脚本</h5>
+
+<p>以下内容部分主要来自<a href="https://github.com/JadaGates/ShadowsocksBio" title="记录一下SS的前世今生，以及一个简单的教程总结 ">记录一下SS的前世今生，以及一个简单的教程总结</a></p>
+
+<p>推荐<a href="https://teddysun.com/357.html">秋水逸冰一键安装脚本</a></p>
+
+<ol>
+<li><p>使用 root 权限执行以下代码</p>
+
+<pre><code class="language-batch">wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
+chmod +x shadowsocks-all.sh
+./shadowsocks-all.sh 2&gt;&amp;1 | tee shadowsocks-all.log
+</code></pre></li>
+
+<li><p>跟随提示选择相对应的模式即可</p>
+
+<ul>
+<li>加密方式推荐 chacha20-itef-poly1305,</li>
+<li>端口可以尽量设置高一点,避免443, 1080等常用端口,</li>
+<li>安装 simple-obfs , 选择 http 模式</li>
+</ul></li>
+
+<li><p>使用命令</p>
+
+<ul>
+<li>启动：/etc/init.d/shadowsocks-libev start</li>
+<li>停止：/etc/init.d/shadowsocks-libev stop</li>
+<li>重启：/etc/init.d/shadowsocks-libev restart</li>
+<li>查看状态：/etc/init.d/shadowsocks-libev status</li>
+</ul></li>
+</ol>
+
+<h5 id="独立安装">独立安装</h5>
+
+<p>本章节主要参考以下文章梳理完成</p>
+
+<ul>
+<li><a href="https://dreamcreator108.com/page/15/">CentOS 7 下编译并安装 shadowsocks-libev 并启用 obfs 混淆</a></li>
+<li><a href="https://github.com/shadowsocks/shadowsocks-libev#build-from-source-with-centos">github-build-from-source-with-centos</a></li>
+</ul>
+
+<h4 id="客户端使用">客户端使用</h4>
+
+<h5 id="windows">Windows</h5>
+
+<p>软件下载地址：</p>
+
+<ul>
+<li><a href="https://github.com/shadowsocks/shadowsocks-windows/releases">shadowsocks windows客户端 </a><br /></li>
+<li><a href="https://github.com/shadowsocks/simple-obfs/releases">simple-obfs 插件下载</a></li>
+</ul>
+
+<p>本地配置：</p>
+
+<p>服务器端<strong>已安装了 obfs</strong>, 本地端直接下载obfs-local插件, 解压后将插件 「obfs-local」 与「Shdowsocks.exe」 <strong>同一路径下</strong>即可</p>
+
+<p>obfs 可以直接在「SS 客户端」的服务器编辑页面修改参数：</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201901/shadowsoket-libev-obfs.png" alt="" /></p>
+
+<p>插件选项为 <code>obfs=http;obfs-host=www.bing.com</code>, 可以将 www.bing.com 更换为任意的一个网址, 只要不是被 GFW 封杀的就可以, 推荐像腾讯视频, 优酷, bing 这种流量较大的网站!</p>
+
+<h5 id="mac">Mac</h5>
+
+<p>软件下载地址：</p>
+
+<ul>
+<li><a href="https://github.com/shadowsocks/ShadowsocksX-NG/releases">shadowsocks Mac客户端</a><br /></li>
+<li><a href="https://github.com/yichengchen/clashX/releases">ClashX Mac客户端</a>：新软件</li>
+</ul>
+
+<p>Mac 不支持「obfs混淆」 2019-01-15T11:56:07+08:00</p>
+
+<h5 id="移动端">移动端</h5>
+
+<ul>
+<li>「shadowsocket IOS 客户端」：性价比高，支持 http 与 tls 两种模式</li>
+<li>「Surge IOS客户端」：价格高但 UI 漂亮、稳定，另仅支持 http 模式</li>
+<li><a href="https://play.google.com/store/apps/details?id=com.github.shadowsocks">shadowsocks android 客户端</a><br /></li>
+</ul>
+
+<h3 id="参考资料">参考资料</h3>
+
+<ul>
+<li><a href="http://labmain.com/2016/07/07/The_programmer_must_learn_Science_online/">程序员必备的翻墙姿势 </a></li>
+<li><a href="https://github.com/JadaGates/ShadowsocksBio" title="记录一下SS的前世今生，以及一个简单的教程总结 ">记录一下SS的前世今生，以及一个简单的教程总结</a></li>
+</ul>
+
+<!--隐藏链接-->
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Version</th>
+<th align="center">Action</th>
+<th align="center">Time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1.0</td>
+<td align="center">init</td>
+<td align="center">2019-01-15</td>
+</tr>
+</tbody>
+</table>
+			  
+		
+		
+			<div class="article-copyright">
+			  	<ul>
+			  		<li><strong>本文作者：</strong>易道非</li>
+			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20190115-circumvention-technology-guild-shadowsocks/</li>
+			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
+			  	</ul>
+			</div>
+		 
+	</content>  
+ 	<hr/>
+ 	
+	<div class="article-footer-meta-between"> 
+		 
+		<div>
+			<i class="fa fa-tags">&nbsp;Tags:
+			
+				<a href="https://yidaofei.com/tags/%e7%bf%bb%e5%a2%99">翻墙</a>
+    		
+				<a href="https://yidaofei.com/tags/%e8%87%aa%e7%94%b1">自由</a>
+    		
+    		</i>   
+		</div> 
+		 
+		<div id="i-share" class="btn btn-default  share-widget">
+		    <i class="fa fa-share-alt"></i>
+		</div> 
+	</div>
+	<hr/>
+	<div class="article-footer-meta-between"> 
+		<div class="refArticle-prev" >
+			  
+		    <a href="https://yidaofei.com/post/20190115-circumvention-technology-guild-forward/">
+		    	<i class="fa fa-angle-double-left"></i>&nbsp;翻墙 chapter 0 - 前言  
+		    </a> 
+			
+		</div>
+		 <div class="refArticle-next" >
+		  
+		  	<a href="https://yidaofei.com/post/20190115-circumvention-technology-guild-vps/">翻墙 chapter 1 — VPS 篇&nbsp;
+		  		<i class="fa fa-angle-double-right"></i>
+		  	</a> 
+		 
+	    </div>
+	</div>  
+</article> 
+</section>
+ 
+
+  
+ 
+<div class="main-content-container " >
+<div class="comment-card"> 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeicn/comment-utterances-blog-yidaofeicn"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+</div>
+</div>
+
+ 
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+	
+	
+	<span id="tocLevel" data-startLevel="" data-endLevel=""></span>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#shadowsocks-前世今生">shadowsocks 前世今生</a></li>
+<li><a href="#shadowsocks-libev-obfs-混淆方案">Shadowsocks-libev + obfs 混淆方案</a>
+<ul>
+<li><a href="#obfs-混淆">obfs 混淆</a></li>
+<li><a href="#服务器端操作">服务器端操作</a>
+<ul>
+<li><a href="#一键安装脚本">一键安装脚本</a></li>
+<li><a href="#独立安装">独立安装</a></li>
+</ul></li>
+<li><a href="#客户端使用">客户端使用</a>
+<ul>
+<li><a href="#windows">Windows</a></li>
+<li><a href="#mac">Mac</a></li>
+<li><a href="#移动端">移动端</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#参考资料">参考资料</a></li>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
+<footer class="site-footer text-center">
+  <div class="social" > 
+     
+          <a href=" mailto:yidaofeicn@gmail.com "><i class="fa fa-envelope-open-o"></i></span></a>
+      
+       
+          <a href=" https://github.com/yidaofeicn "  ><i class="fa fa-github"></i></span></a>
+      
+    
+      
+                <a href="https://yidaofei.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml" target="_blank"> <i class="fa fa-rss"></i>
+                </a>
+          </div>
+   
+  <div class="copyright"  >
+    Powered by &nbsp;<a href="https://gohugo.io/">Hugo</a>&nbsp;|&nbsp;
+    Theme-<a href="https://github.com/yidaofeicn/hugo-theme-flybird">Flybird</a>  
+  </div>
+  <div class="copyright"> Copyright© 2018 Transparent Thoughts. All rights reserved.</div> 
+  <div class="copyright"> 
+
+      
+    
+      <span id="busuanzi_container">
+        访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+</footer>
+
+ 
+
+<div id="bottom-element" data-title="定位底部"></div>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.css">
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.js"></script>
+ 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.30.0/algoliasearch.jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.32.0/autocomplete.jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/algoliasearch/algolia-autocomplete.css">
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.css"> 
+<script type="text/javascript" src="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.css">
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/prismjs/prism.css">
+
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/prismjs/prism.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js"></script>
+
+<script type="text/javascript" color="#1D1D1D" opacity='1' zIndex="-2" count="400" src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.3/canvas-nest.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+<span id="isPage" data-isPage="true" style="display: none;"></span>
+
+
+ 
+
+<script type="text/javascript" src="https://yidaofei.com//js/flybird.js"></script> 
+<script type="text/javascript" src="https://yidaofei.com//js/main.js"></script> 
+  
+ 
+</style>
+</body>
+</html>
+
+
+ 

@@ -33,6 +33,42 @@
     </item>
     
     <item>
+      <title>翻墙 chapter 3 - shadowsocks</title>
+      <link>https://yidaofei.com/post/20190115-circumvention-technology-guild-shadowsocks/</link>
+      <pubDate>Tue, 15 Jan 2019 11:56:07 +0800</pubDate>
+      
+      <guid>https://yidaofei.com/post/20190115-circumvention-technology-guild-shadowsocks/</guid>
+      <description>&lt;p&gt;本篇将介绍三大主流翻墙手段之一 「shadowsocks」，首先请确认「VPS」是否已经准备妥当，如未准备的人请跳转到&lt;a href=&#34;https://yidaofei.com/post/20190115-circumvention-technology-guild-vps/&#34;&gt;翻墙 chapter 1 - 服务器篇&lt;/a&gt;，其主要内容如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;shadowsocks 的发展历史及脉络&lt;/li&gt;
+&lt;li&gt;shadowsocks 服务器搭建及本地使用&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;PS：本文是在原有文章&lt;a href=&#34;https://yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/&#34;&gt;翻墙教程之 shadowsocks&lt;/a&gt;基基础之上结合&lt;a href=&#34;https://github.com/JadaGates/ShadowsocksBio&#34; title=&#34;记录一下SS的前世今生，以及一个简单的教程总结 &#34;&gt;记录一下SS的前世今生，以及一个简单的教程总结&lt;/a&gt;做相关调整&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>翻墙 chapter 1 — VPS 篇</title>
+      <link>https://yidaofei.com/post/20190115-circumvention-technology-guild-vps/</link>
+      <pubDate>Tue, 15 Jan 2019 11:55:55 +0800</pubDate>
+      
+      <guid>https://yidaofei.com/post/20190115-circumvention-technology-guild-vps/</guid>
+      <description>&lt;p&gt;翻墙如果选用自建翻墙渠道那么第一步就是选用合适的 「&lt;strong&gt;国外&lt;/strong&gt; VPS」，本文就是教大家如何完成这一步！&lt;/p&gt;
+
+&lt;p&gt;本文主要内容如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;主流 VPS 服务商&lt;/li&gt;
+&lt;li&gt;VPS 基础配置以及相关工具&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>互联网时代，保护自己的个人隐私：进阶篇</title>
       <link>https://yidaofei.com/post/20190114-how-to-protect-personal-privacy-advanced/</link>
       <pubDate>Mon, 14 Jan 2019 17:04:17 +0800</pubDate>

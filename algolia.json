@@ -1540,6 +1540,49 @@
         ]
     },
     {
+        "draft": false,
+        "uri": "post/20190115-circumvention-technology-guild-shadowsocks",
+        "content": "shadowsocks        VPS                       chapter 1                 shadowsocks          shadowsocks            PS               shadowsocks           SS                       shadowsocks                    SS                       shaodwsocks    2012 4 22  V2EX  clowwindy                   Shadowsocks        VPN    SS                                                                                             SS                                  SS                                                                         iOS                 ss                                      2015 8 20  clowwindy                                shaodwsocks        clowwindy      SS         fork    SS          GitHub                    SS             Issue                                                      Shadowsocks go                Shadowsocks python                          Shadowsocks libev                   obfs   ShadowsocksR                obfs           2017 7 27                              Shadowsocks libev   obfs       Shadowsocks libev   obfs      obfs           Shaodwsokcs         obfs                            obfs           SS            obfs                                                        GFW                                  obfs http                                        bing        SS                 bing              tls         http                                                                                                                                     Shadowsocks   TCP           IP     SS   http_simple 80          Web  get               SSR   TCP           IP     SSR   http_simple       Web  get               SSR   TLS 443             HTTPS VPN    HTTPS                 SSR   TLS 995                   IP     SSR   TLS  443            HTTPS                 OpenConnect   UDP           IP     IPSec VPN   UDP           IP     V2Ray   TCP           IP     V2Ray   TLS   HTTPS                   nghttpx   TLS   HTTPS                   kcptun   UDP           IP                      Centos                           SS                                  root           batch wget   no check certificate  O shadowsocks all sh https   raw githubusercontent com teddysun shadowsocks_install master shadowsocks all sh chmod  x shadowsocks all sh   shadowsocks all sh 2  1   tee shadowsocks all log                         chacha20 itef poly1305                443  1080          simple obfs      http             etc init d shadowsocks libev start     etc init d shadowsocks libev stop     etc init d shadowsocks libev restart       etc init d shadowsocks libev status                      CentOS 7        shadowsocks libev     obfs    github build from source with centos       Windows         shadowsocks windows    simple obfs                     obfs         obfs local            obfs local    Shdowsocks exe          obfs       SS                         obfs http obfs host www bing com      www bing com                   GFW                      bing            Mac         shadowsocks Mac    ClashX Mac        Mac     obfs    2019 01 15T11 56 07 08 00      shadowsocket IOS              http   tls       Surge IOS          UI            http    shadowsocks android                         SS                   ref github jadaGates ShadowsocksBio  https   github com JadaGates ShadowsocksBio      SS                          Version Action  Time                     1 0 init 2019 01 15",
+        "objectID": "post/20190115-circumvention-technology-guild-shadowsocks",
+        "title": "翻墙 chapter 3 - shadowsocks",
+        "date": "2019-01-15T03:56:07.000Z",
+        "type": "post",
+        "Keywords": [
+            "翻墙",
+            "GFW",
+            "shadowsocks"
+        ],
+        "categories": [
+            "翻墙"
+        ],
+        "tags": [
+            "翻墙",
+            "自由"
+        ]
+    },
+    {
+        "draft": false,
+        "uri": "post/20190115-circumvention-technology-guild-vps",
+        "content": "VPS                               VPS     VPS               VPS         VPS                          Iaas     bandwagong vultr Linode DigitalOcean    Saas   Paas         AWS    Azure    GCP                             VPS                                bandwagong vultr Linode DigitalOcean                     VPS                              PS                                                             VPS                  bandwagong http   banwagong cn     vultr https   www vultrcn com    Linode http   www xenvpser com     DigitalOcean https   digitalocean youhuima cc    VPS                     VPS                 Xshell 360    SSH    VPS      IP        https   tools ipip net ping php               http   tool chinaz com port                https   www yougetsignal com tools open ports  VPS          bandwagong              VPS                bandwagon                VPS            19 99     KVM              kiwivm        VPS       MyService           kiwivm Control Panel              Install new OS                 Centos           Main controls        IP     SSH                     root        Root password modification    Generate set new root password             VPS        VPS    IP     SSH      root         XShell          XShell                        VPS    IP      SSH                                           root               batch  root passwd  root                    root          root                                   VPS                                     IP       VPS              VPS IP        Vultr   Ping    SSH              VPS                 Version Action  Time                     1 0 init 2019 01 15",
+        "objectID": "post/20190115-circumvention-technology-guild-vps",
+        "title": "翻墙 chapter 1 — VPS 篇",
+        "date": "2019-01-15T03:55:55.000Z",
+        "type": "post",
+        "Keywords": [
+            "翻墙",
+            "GFW",
+            "VPS"
+        ],
+        "categories": [
+            "翻墙"
+        ],
+        "tags": [
+            "翻墙",
+            "VPS",
+            "自由"
+        ]
+    },
+    {
         "title": "Wiki",
         "uri": "wiki",
         "content": "WIKI GFM                      xianmin          Xmind 8         Git                           SASS             bilibili",

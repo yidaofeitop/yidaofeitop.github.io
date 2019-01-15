@@ -17,6 +17,16 @@
   </url>
   
   <url>
+    <loc>https://yidaofei.com/post/20190115-circumvention-technology-guild-shadowsocks/</loc>
+    <lastmod>2019-01-15T11:56:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/post/20190115-circumvention-technology-guild-vps/</loc>
+    <lastmod>2019-01-15T11:55:55+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yidaofei.com/post/20190114-how-to-protect-personal-privacy-advanced/</loc>
     <lastmod>2019-01-14T17:04:17+08:00</lastmod>
   </url>
@@ -498,6 +508,12 @@
   <url>
     <loc>https://yidaofei.com/tags/toc/</loc>
     <lastmod>2018-11-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/tags/vps/</loc>
+    <lastmod>2019-01-15T11:55:55+08:00</lastmod>
     <priority>0</priority>
   </url>
   
