@@ -34,7 +34,7 @@ PS：本文是在原有文章翻墙教程之 shadowsocks基基础之上结合记
   
   
   
-  <title>翻墙 chapter 3 - shadowsocks- 易道非 Blog</title>  
+  <title>翻墙 chapter 2 - shadowsocks- 易道非 Blog</title>  
   
   
     
@@ -121,7 +121,7 @@ if (!doNotTrack) {
 <section class="main-content-container">
 <article class="article-card">
 	<header class="article-header"> 
-	   <p class="article-title">翻墙 chapter 3 - shadowsocks</p>
+	   <p class="article-title">翻墙 chapter 2 - shadowsocks</p>
    		<div class="article-meta">
 			
 			<div><i class="fa fa-calendar" >2019年01月15日</i> </div>
@@ -186,11 +186,216 @@ if (!doNotTrack) {
 
 <p>本文主要介绍就是「 Shadowsocks-libev + obfs 混淆」方案</p>
 
-<h3 id="shadowsocks-libev-obfs-混淆方案">Shadowsocks-libev + obfs 混淆方案</h3>
+<h3 id="混淆方案服务器端">混淆方案服务器端</h3>
+
+<p>Shadowsocks-libev 大致有3种安装方式，大家按照自己的喜好进行相关选择！</p>
+
+<h4 id="软件仓库安装-shadowsocks-libev">软件仓库安装 Shadowsocks-libev</h4>
+
+<p>主要参考</p>
+
+<ul>
+<li><a href="https://github.com/shadowsocks/shadowsocks-libev#install-from-repository-1">Fedora &amp; RHEL-Install from repository</a></li>
+<li><a href="https://zzz.buzz/zh/gfw/2017/08/14/install-shadowsocks-server-on-centos-7/">CentOS/RHEL 7 下安装 Shadowsocks 服务端</a></li>
+</ul>
+
+<p><strong>安装 shadowsocks-libev</strong></p>
+
+<pre><code class="language-batch">cd /etc/yum.repos.d/
+curl -O https://copr.fedorainfracloud.org/coprs/librehat/shadowsocks/repo/epel-7/librehat-shadowsocks-epel-7.repo
+yum install -y shadowsocks-libev
+</code></pre>
+
+<p><strong>修改配置文件</strong>
+COPR 里的 shadowsocks-libev <strong>默认读取</strong>位于 「/etc/shadowsocks-libev/config.json」 的配置文件（已存在）</p>
+
+<p>如果想要变更默认的配置文件，或者提供其他命令行参数，我们可以修改 「/etc/sysconfig/shadowsocks-libev」：</p>
+
+<pre><code class="language-json"># Configuration file  
+CONFFILE=&quot;/etc/shadowsocks-libev/config.json&quot;  
+
+# Extra command line arguments  
+DAEMON_ARGS=&quot;-u&quot;  
+</code></pre>
+
+<p>关于配置文件详细内容请参考<a href="#shadowsocks-libev-配置文件">shadowsocks-libev-配置文件</a></p>
+
+<p><strong>开放防火墙端口</strong></p>
+
+<pre><code class="language-batch">#启动服务
+systemctl enable firewalld
+systemctl start firewalld
+#开启端口
+firewall-cmd --permanent --zone=public --add-port=你的端口号/tcp
+firewall-cmd --permanent --zone=public --add-port=你的端口号/udp
+#端口生效
+firewall-cmd --reload
+</code></pre>
+
+<p><strong>启动 shadowsocks-libev 服务</strong>
+由于配置文件默认，只需要从以下命令行表格挑选相关命令执行即可！</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">命令行</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>systemctl enable shadowsocks-libev</code></td>
+<td align="left">配置 Shadowsocks 开机启动</td>
+</tr>
+
+<tr>
+<td align="left"><code>systemctl start shadowsocks-libev</code></td>
+<td align="left">启动 Shadowsocks 服务</td>
+</tr>
+
+<tr>
+<td align="left"><code>systemctl restart shadowsocks-libev</code></td>
+<td align="left">重新启动 Shadowsocks 服务</td>
+</tr>
+
+<tr>
+<td align="left"><code>systemctl stop shadowsocks-libev</code></td>
+<td align="left">停止 Shadowsocks 服务</td>
+</tr>
+
+<tr>
+<td align="left"><code>systemctl status shadowsocks-libev</code></td>
+<td align="left">检查 Shadowsocks 服务运行状态及最新日志</td>
+</tr>
+
+<tr>
+<td align="left"><code>journalctl -u shadowsocks-libev</code></td>
+<td align="left">查看 Shadowsocks 服务的全部日志</td>
+</tr>
+
+<tr>
+<td align="left">`ps ax</td>
+<td align="left">grep ss-server`</td>
+</tr>
+
+<tr>
+<td align="left"><code>netstat -lnp</code></td>
+<td align="left">查看 ss-server 监听的端口</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="源代码安装-shadowsocks-libev">源代码安装 Shadowsocks-libev</h4>
+
+<p>主要参考<a href="https://moshuanghua.com/2017/10/07/21-ss-libev/#%E9%85%8D%E7%BD%AE-ss-libev-%E6%96%87%E4%BB%B6" title="小飞机">小飞机-libev</a>实践完成！</p>
+
+<p><strong>搭建编译基础环境</strong></p>
+
+<pre><code class="language-batch">#常用工具  
+yum install git wget vim -y  
+#编译所需相关工具  
+yum install gcc gettext autoconf libtool automake make pcre-devel asciidoc xmlto c-ares-devel libev-devel libsodium-devel mbedtls-devel -y
+</code></pre>
+
+<p>注意「编译所需相关工具」并未采用<a href="https://moshuanghua.com/2017/10/07/21-ss-libev/#%E9%85%8D%E7%BD%AE-ss-libev-%E6%96%87%E4%BB%B6" title="小飞机">小飞机-libev</a>的分步骤安装！</p>
+
+<p><strong>下载最新源码</strong></p>
+
+<pre><code class="language-batch">git clone https://github.com/shadowsocks/shadowsocks-libev.git
+cd shadowsocks-libev
+git submodule update --init --recursive
+</code></pre>
+
+<p><strong>编译源码并安装</strong></p>
+
+<pre><code class="language-batch">./autogen.sh &amp;&amp; ./configure --prefix=/usr &amp;&amp; make
+make install
+</code></pre>
+
+<p><strong>创建配置文件</strong></p>
+
+<pre><code class="language-batch">mkdir -p /etc/shadowsocks-libev
+vim /etc/shadowsocks-libev/config.json
+</code></pre>
+
+<p>关于配置文件详细内容请参考<a href="#shadowsocks-libev-配置文件">shadowsocks-libev-配置文件</a></p>
+
+<p><strong>开放防火墙端口</strong></p>
+
+<p>见上一章节「软件仓库安装 Shadowsocks-libev」一致</p>
+
+<p><strong>创建 Service 服务文件</strong></p>
+
+<pre><code class="language-batch">vi /etc/systemd/system/shadowsocks.service
+</code></pre>
+
+<p>输入以下内容：</p>
+
+<pre><code class="language-batch">[Unit]   
+Description=Shadowsocks Server  
+After=network.target  
+[Service]
+ExecStart=/usr/bin/ss-server -c /etc/shadowsocks-libev/config.json  
+Restart=on-abort  
+[Install] 
+WantedBy=multi-user.target  
+</code></pre>
+
+<p><strong>启动 shadowsocks-libev 服务</strong></p>
+
+<pre><code class="language-batch">systemctl daemon-reload
+systemctl enable shadowsocks
+systemctl start shadowsocks
+systemctl status shadowsocks
+</code></pre>
+
+<p>成功截图：</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201901/centos7-install-shadowsocks-libev-by-source.png" alt="centos 源代码安装 shadowsocks-libev 成功截图" /></p>
+
+<p>PS：</p>
+
+<ol>
+<li>每次修改 service 文件,都必须执行 <code>systemctl daemon-reload</code></li>
+<li>其命令行与上一章节「软件仓库安装 Shadowsocks-libev」一致，修改后具体的服务名称即可</li>
+</ol>
+
+<h4 id="脚本一键安装">脚本一键安装</h4>
+
+<p>以下内容主要来自<a href="https://teddysun.com/357.html">CentOS下shadowsocks-libev一键安装脚本</a></p>
+
+<ol>
+<li><p>使用 root 权限执行以下代码</p>
+
+<pre><code class="language-batch">wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
+chmod +x shadowsocks-all.sh
+./shadowsocks-all.sh 2&gt;&amp;1 | tee shadowsocks-all.log
+</code></pre></li>
+
+<li><p>跟随提示选择相对应的模式即可</p>
+
+<ul>
+<li>加密方式推荐 chacha20-itef-poly1305,</li>
+<li>端口可以尽量设置高一点,避免443, 1080等常用端口,</li>
+<li>安装 simple-obfs , 选择 http 模式</li>
+</ul></li>
+
+<li><p>使用命令</p>
+
+<ul>
+<li>启动：/etc/init.d/shadowsocks-libev start</li>
+<li>停止：/etc/init.d/shadowsocks-libev stop</li>
+<li>重启：/etc/init.d/shadowsocks-libev restart</li>
+<li>查看状态：/etc/init.d/shadowsocks-libev status</li>
+</ul></li>
+</ol>
 
 <h4 id="obfs-混淆">obfs 混淆</h4>
 
-<p>前面已经介绍「Shaodwsokcs」前世今生，但是「obfs 混淆」大家可能不知道是什么东西，所以在此介绍一下：</p>
+<h5 id="什么是-obfs-混淆">什么是 obfs 混淆</h5>
+
+<p>前面已经将「shadowsocks-libev」按照好了，但是「obfs 混淆」却还没有上，所以在此先介绍以下「什么是 obfs 混淆 」：</p>
 
 <p>「obfs 混淆」最大的作用是对<strong>SS 流量进行伪装</strong></p>
 
@@ -288,54 +493,362 @@ if (!doNotTrack) {
 </tbody>
 </table>
 
-<h4 id="服务器端操作">服务器端操作</h4>
+<h5 id="安装-obfs">安装 obfs</h5>
 
-<p>请注意以下操作全部在 「Centos系统」操作</p>
+<p>主要参考<a href="https://github.com/shadowsocks/simple-obfs">github-obfs</a></p>
 
-<h5 id="一键安装脚本">一键安装脚本</h5>
+<p><strong>安装编译必备软件</strong></p>
 
-<p>以下内容部分主要来自<a href="https://github.com/JadaGates/ShadowsocksBio" title="记录一下SS的前世今生，以及一个简单的教程总结 ">记录一下SS的前世今生，以及一个简单的教程总结</a></p>
+<pre><code class="language-batch">sudo yum install gcc autoconf libtool automake make zlib-devel openssl-devel asciidoc xmlto libev-devel
+</code></pre>
 
-<p>推荐<a href="https://teddysun.com/357.html">秋水逸冰一键安装脚本</a></p>
+<p><strong>安装 obfs</strong></p>
+
+<pre><code class="language-batch">git clone https://github.com/shadowsocks/simple-obfs.git
+cd simple-obfs
+git submodule update --init --recursive
+./autogen.sh
+./configure &amp;&amp; make
+make install
+</code></pre>
+
+<p><strong>检查是否安装正确</strong></p>
 
 <ol>
-<li><p>使用 root 权限执行以下代码</p>
+<li>将配置文件改用</li>
+<li>重新启动 Shadowsocks-libev：<code>systemctl restart shadowsocks-libev</code></li>
+<li>确认 ss-server 和 obfs-server 进程已经正常启动：ps -ef | grep -v grep | grep &laquo;server&raquo;</li>
+</ol>
 
-<pre><code class="language-batch">wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
-chmod +x shadowsocks-all.sh
-./shadowsocks-all.sh 2&gt;&amp;1 | tee shadowsocks-all.log
-</code></pre></li>
+<p>输出结果参考：</p>
 
-<li><p>跟随提示选择相对应的模式即可</p>
+<pre><code class="language-batch">[root@vultr bin]# ps -ef | grep -v grep | grep &quot;server&quot;
+nobody    8699     1  0 02:30 ?        00:00:00 /usr/bin/ss-server -c /etc/shadowsocks-libev/config.json -u
+nobody    8701  8699  0 02:30 ?        00:00:00 obfs-server
+</code></pre>
+
+<h5 id="相关故障">相关故障</h5>
+
+<ol>
+<li><p>故障情况：Shadowsocks-libev 采用软件仓库安装，但是 obfs 采用的是源代码安装，启动前者后者无法启动</p>
+
+<p>解决方案：执行命令 <code>ln -s /usr/local/bin/obfs-server /usr/bin</code>
+参考资料：</p>
 
 <ul>
-<li>加密方式推荐 chacha20-itef-poly1305,</li>
-<li>端口可以尽量设置高一点,避免443, 1080等常用端口,</li>
-<li>安装 simple-obfs , 选择 http 模式</li>
-</ul></li>
-
-<li><p>使用命令</p>
-
-<ul>
-<li>启动：/etc/init.d/shadowsocks-libev start</li>
-<li>停止：/etc/init.d/shadowsocks-libev stop</li>
-<li>重启：/etc/init.d/shadowsocks-libev restart</li>
-<li>查看状态：/etc/init.d/shadowsocks-libev status</li>
+<li><a href="https://github.com/shadowsocks/simple-obfs/issues/103">https://github.com/shadowsocks/simple-obfs/issues/103</a></li>
+<li><a href="https://github.com/shadowsocks/shadowsocks-libev/issues/1082">https://github.com/shadowsocks/shadowsocks-libev/issues/1082</a></li>
 </ul></li>
 </ol>
 
-<h5 id="独立安装">独立安装</h5>
+<h4 id="开启多端口">开启多端口</h4>
 
-<p>本章节主要参考以下文章梳理完成</p>
+<p>Shadowsocks-libev 版是唯一不能单纯靠修改配置文件来开启多端口的</p>
+
+<blockquote>
+<p>来自<a href="https://github.com/shadowsocks/shadowsocks-libev/issues/5#issuecomment-18446358">https://github.com/shadowsocks/shadowsocks-libev/issues/5#issuecomment-18446358</a></p>
+
+<p>Sorry, we have no plan to support multi port configuration. Actually you can use multiple instances instead. For example:</p>
+
+<p>ss-server -c config1.json -f pid1……</p>
+
+<p>As the best practice we recommend for shadowsocks-libev, it helps to isolate each user in different processes and reconfigure each user&rsquo;s port/password/encyption/timeout without reload/restart the whole service. Furthermore, this approach enables us to manage users with legacy control panels, for example old SSH / VHOST panels with each user&rsquo;s ss-server running in its own space</p>
+
+<p>……</p>
+</blockquote>
+
+<p>后续针对性的设计一个命令 <code>ss-manager</code>解决此类问题，其原理大致如下：</p>
+
+<blockquote>
+<p>引用自 <a href="https://teddysun.com/532.html">https://teddysun.com/532.html</a></p>
+
+<p>调用 ss-server 并根据配置文件里的多个端口号，在当前用户目录下生成隐藏文件夹 .shadowsocks 以及拆分配置文件为 .shadowsocks_端口号.conf，并以此创建新的进程，再生成 .shadowsocks_端口号.pid 来保存进程的 pid 信息。</p>
+
+<p>最终，创建出来的 ss-server 进程数和配置文件里的端口数相同。也就是说，每个端口需要开启一个 ss-server 进程</p>
+</blockquote>
+
+<h5 id="脚本一键安装-1">脚本一键安装</h5>
+
+<p>整理自：<a href="https://teddysun.com/532.html" title="秋水逸冰-如何启用 Shadowsocks 的多端口">秋水逸冰-如何启用 Shadowsocks 的多端口</a></p>
+
+<p><strong>下载该启动脚本并赋予执行权限</strong></p>
+
+<pre><code class="language-batch">wget -O /etc/init.d/shadowsocks-manager https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-manager
+chmod 755 /etc/init.d/shadowsocks-manager
+</code></pre>
+
+<p><strong>新建存放配置文件的目录并创建多用户配置文件</strong></p>
+
+<pre><code class="language-batch">mkdir /etc/shadowsocks-manager
+vi /etc/shadowsocks-manager/config.json
+</code></pre>
+
+<p><strong>相关执行命令</strong></p>
 
 <ul>
-<li><a href="https://dreamcreator108.com/page/15/">CentOS 7 下编译并安装 shadowsocks-libev 并启用 obfs 混淆</a></li>
-<li><a href="https://github.com/shadowsocks/shadowsocks-libev#build-from-source-with-centos">github-build-from-source-with-centos</a></li>
+<li>启动：/etc/init.d/shadowsocks-manager start</li>
+<li>停止：/etc/init.d/shadowsocks-manager stop</li>
+<li>重启：/etc/init.d/shadowsocks-manager restart</li>
+<li>查看状态：/etc/init.d/shadowsocks-manager status</li>
 </ul>
 
-<h4 id="客户端使用">客户端使用</h4>
+<h5 id="利用-ss-manager">利用 <code>ss-manager</code></h5>
 
-<h5 id="windows">Windows</h5>
+<p>参考以下资料（网络很多资料都存在错误，建议<strong>直接看 「Github」的 「issue」</strong>）</p>
+
+<ol>
+<li><a href="https://github.com/shadowsocks/shadowsocks-libev/issues/649#issue-157150743">github-请教ss-manager的用法</a>：关键看疑惑</li>
+<li><a href="https://github.com/shadowsocks/shadowsocks-libev/issues/385#issuecomment-136160526">github-multi-user</a></li>
+<li><a href="https://github.com/shadowsocks/shadowsocks-libev/blob/master/doc/ss-manager.asciidoc">官方说明文档-ss-manager.asciidoc</a></li>
+</ol>
+
+<p>具体步骤如下：</p>
+
+<ol>
+<li>创建多用户配置文件：<code>vi /etc/shadowsocks-libev/ssmanager-config.json</code></li>
+<li>执行相关命令：<code>ss-manager  --executable /usr/bin/ss-server -v -c /etc/shadowsocks-libev/ssmanager-config.json</code></li>
+</ol>
+
+<p>输入以下内容：</p>
+
+<pre><code class="language-batch">[root@vultr ~]# ss-manager  --executable /usr/bin/ss-server -v -c /etc/shadowsocks-libev/ssmanager-config.json stop
+ 2019-01-16 05:25:10 INFO: using the default manager address: 127.0.0.1:8839
+ 2019-01-16 05:25:10 INFO: running from root user
+ 2019-01-16 05:25:10 INFO: kill .shadowsocks_8003.pid
+ 2019-01-16 05:25:10 INFO: kill .shadowsocks_8001.pid
+ 2019-01-16 05:25:10 INFO: kill .shadowsocks_8002.pid
+ 2019-01-16 05:25:10 INFO: try to bind interface: 0.0.0.0, port: 8001
+ 2019-01-16 05:25:10 INFO: cmd: /usr/bin/ss-server --manager-address 127.0.0.1:8839 -f /root/.shadowsocks/.shadowsocks_8001.pid -c /root/.shadowsocks/.shadowsocks_8001.conf -t 600 -v --plugin &quot;obfs-server&quot; --plugin-opts &quot;obfs=http&quot; -s 0.0.0.0
+ 2019-01-16 05:25:10 INFO: try to bind interface: 0.0.0.0, port: 8002
+ 2019-01-16 05:25:10 INFO: cmd: /usr/bin/ss-server --manager-address 127.0.0.1:8839 -f /root/.shadowsocks/.shadowsocks_8002.pid -c /root/.shadowsocks/.shadowsocks_8002.conf -t 600 -v --plugin &quot;obfs-server&quot; --plugin-opts &quot;obfs=http&quot; -s 0.0.0.0
+ 2019-01-16 05:25:10 INFO: try to bind interface: 0.0.0.0, port: 8003
+ 2019-01-16 05:25:10 INFO: cmd: /usr/bin/ss-server --manager-address 127.0.0.1:8839 -f /root/.shadowsocks/.shadowsocks_8003.pid -c /root/.shadowsocks/.shadowsocks_8003.conf -t 600 -v --plugin &quot;obfs-server&quot; --plugin-opts &quot;obfs=http&quot; -s 0.0.0.0
+ 2019-01-16 05:25:15 INFO: update traffic 0 for port 8001
+</code></pre>
+
+<p>基本验证前面所说的</p>
+
+<blockquote>
+<p>调用 ss-server 并根据配置文件里的多个端口号，在当前用户目录下生成隐藏文件夹 .shadowsocks 以及拆分配置文件为 .shadowsocks_端口号.conf，并以此创建新的进程，再生成 .shadowsocks_端口号.pid 来保存进程的 pid 信息。</p>
+</blockquote>
+
+<p>PS： 可以仿照「代码安装 Shadowsocks-libev-创建 Service 服务文件」创建相关的服务</p>
+
+<h5 id="shadowsocks-manager-软件">shadowsocks-manager 软件</h5>
+
+<p><a href="https://github.com/shadowsocks/shadowsocks-manager">Shadowsocks-Manager</a> 是一个基于Node.js开发的 shadowsocks 多用户管理平台，支持 <strong>libev 和 python 版</strong></p>
+
+<p>关于此作者已经建立相关的 Gitbook 文档，访问 <a href="https://shadowsocks.github.io/shadowsocks-manager/#/home">https://shadowsocks.github.io/shadowsocks-manager/#/home</a> 即可</p>
+
+<h4 id="shadowsocks-libev-配置文件">Shadowsocks-libev 配置文件</h4>
+
+<h5 id="配置项">配置项</h5>
+
+<p>来源于：<a href="https://github.com/shadowsocks/shadowsocks-libev/edit/master/doc/shadowsocks-libev.asciidoc">https://github.com/shadowsocks/shadowsocks-libev/edit/master/doc/shadowsocks-libev.asciidoc</a></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Command line</th>
+<th align="left">JSON`</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>-s some.server.net</code></td>
+<td align="left"><code>&quot;server&quot;: &quot;some.server.net&quot;</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>-s some.server.net -p 1234 (client)</code></td>
+<td align="left"><code>&quot;server&quot;: &quot;some.server.net:1234&quot;</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>-p 1234</code></td>
+<td align="left"><code>&quot;server_port&quot;: &quot;1234&quot;</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>-b 0.0.0.0</code></td>
+<td align="left"><code>&quot;local_address&quot;: &quot;0.0.0.0&quot;</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>-l 4321</code></td>
+<td align="left"><code>&quot;local_port&quot;: &quot;4321&quot;</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>-k &quot;PasSworD&quot;</code></td>
+<td align="left"><code>&quot;password&quot;: &quot;PasSworD&quot;</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>-m &quot;aes-256-cfb&quot;</code></td>
+<td align="left"><code>&quot;method&quot;: &quot;aes-256-cfb&quot;</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>-t 60</code></td>
+<td align="left"><code>&quot;timeout&quot;: 60</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>-a nobody</code></td>
+<td align="left"><code>&quot;user&quot;: &quot;nobody&quot;</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>--fast-open</code></td>
+<td align="left"><code>&quot;fast_open&quot;: true</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>--reuse-port</code></td>
+<td align="left"><code>&quot;reuse_port&quot;: true</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>--no-delay</code></td>
+<td align="left"><code>&quot;no_delay&quot;: true</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>--plugin &quot;obfs-server&quot;</code></td>
+<td align="left"><code>&quot;plugin&quot;: &quot;obfs-server&quot;</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>--plugin-opts &quot;obfs=http&quot;</code></td>
+<td align="left"><code>&quot;plugin_opts&quot;: &quot;obfs=http&quot;</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>-6</code></td>
+<td align="left"><code>&quot;ipv6_first&quot;: true</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>-n &quot;/etc/nofile&quot;</code></td>
+<td align="left"><code>&quot;nofile&quot;: &quot;/etc/nofile&quot;</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>-d &quot;8.8.8.8&quot;</code></td>
+<td align="left"><code>&quot;nameserver&quot;: &quot;8.8.8.8&quot;</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>-L &quot;somedns.net:53&quot;</code></td>
+<td align="left"><code>&quot;tunnel_address&quot;: &quot;somedns.net:53&quot;</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>-u</code></td>
+<td align="left"><code>&quot;mode&quot;: &quot;tcp_and_udp&quot;</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>-U</code></td>
+<td align="left"><code>&quot;mode&quot;: &quot;udp_only&quot;</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>no &quot;-u&quot; nor &quot;-U&quot; options (default)</code></td>
+<td align="left"><code>&quot;mode&quot;: &quot;tcp_only&quot;</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>(only in ss-manager's config)</code></td>
+<td align="left"><code>&quot;port_password&quot;: {&quot;1234&quot;:&quot;PasSworD&quot;}</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>关于以上配置项进一步说明如下：</p>
+
+<ul>
+<li><p>「server」： 选填，默认 「0.0.0.0」。配置<strong>客户端</strong>时填入服务器的实际 IP。<br />
+「0.0.0.0」 表明服务端接受来自任何网络接口的连接。配置服务端时填入 「0.0.0.0」 总是能生效，而不必填入服务器自身的 IP。</p></li>
+
+<li><p>「server_port」：必填。此处填入服务端要监听的端口，配置客户端时填入相同的值</p>
+
+<ul>
+<li>请选择 1024 或以上的端口号，否则启动 <code>ss-server</code> 时将会需要 root 权限，而默认的服务文件则是以 nobody 用户启动 Shadowsocks</li>
+
+<li><p>如需选用低于 1024 的端口，也可执行命令 <code>sudo setcap 'cap_net_bind_service=+ep' /usr/bin/ss-server</code> 赋予相应权限，后续就可以使用 nobody 用户或普通用户启动 Shadowsocks。
+或执行 <code>systemctl edit shadowsocks-libev</code> 命令，并输入以下内容：</p>
+
+<blockquote>
+<p>[Service]<br />
+AmbientCapabilities=CAP_NET_BIND_SERVICE</p>
+</blockquote></li>
+</ul></li>
+
+<li><p>「method」： 选填，服务端所用的加密方法，默认「rc4-md5」，配置<strong>客户端</strong>时填入相同的值。<br />
+推荐以下加密算法：</p>
+
+<ol>
+<li>「chacha20-ietf-poly1305」 具有优秀的安全性，更佳的性能，属于 AEAD 加密算法，少部分客户端（如 iOS Wingy）不支持此算法；</li>
+<li>「aes-256-cfb」 具有足够安全性，且被各服务端及客户端广泛支持；</li>
+<li>「rc4-md5」 算法快速，且具有一定的安全性，适合运算能力受限的设备如<strong>路由器</strong>等。</li>
+</ol></li>
+</ul>
+
+<p>扩展阅读：</p>
+
+<ul>
+<li><a href="https://github.com/shadowsocks/shadowsocks-windows/issues/1243#issuecomment-316714974">听别的地方讨论，SSR比SS安全不容易被GFW发现？</a>：加密方法安全与否</li>
+<li><a href="https://zzz.buzz/zh/gfw/2018/03/18/shadowsocks-xchacha20-ietf-poly1305-compatibility-notes/">Shadowsocks AEAD 加密算法 xchacha20-ietf-poly1305 兼容性</a></li>
+</ul>
+
+<h5 id="配置文件案例">配置文件案例</h5>
+
+<p><strong>单用户无插件配置</strong></p>
+
+<pre><code class="language-json">{
+    &quot;server&quot;:&quot;0.0.0.0&quot;,  
+    &quot;server_port&quot;:9000,
+    &quot;password&quot;:&quot;password&quot;,
+    &quot;timeout&quot;:600,
+    &quot;method&quot;:&quot;chacha20-ietf-poly1305&quot; 
+}
+</code></pre>
+
+<p><strong>带 obfs 混淆单用户无插件配置</strong></p>
+
+<pre><code class="language-json">{
+    &quot;server&quot;:&quot;0.0.0.0&quot;,  
+    &quot;server_port&quot;:9000,
+    &quot;password&quot;:&quot;password&quot;,
+    &quot;timeout&quot;:600,
+    &quot;method&quot;:&quot;chacha20-ietf-poly1305&quot;,
+    &quot;plugin&quot;:&quot;obfs-server&quot;,
+    &quot;plugin_opts&quot;:&quot;obfs=http&quot;
+}
+</code></pre>
+
+<p><strong>带 obfs 混淆多用户无插件配置</strong>，需要配合<code>ss-manager</code>使用</p>
+
+<pre><code class="language-json">{
+    &quot;server&quot;:&quot;0.0.0.0&quot;,  
+    &quot;port_password&quot;: {
+        &quot;8001&quot;: &quot;password1&quot;,
+        &quot;8002&quot;: &quot;password2&quot;,
+        &quot;8003&quot;: &quot;password3&quot;
+    },
+    &quot;timeout&quot;:600,
+    &quot;method&quot;:&quot;chacha20-ietf-poly1305&quot;,
+    &quot;plugin&quot;:&quot;obfs-server&quot;,
+    &quot;plugin_opts&quot;:&quot;obfs=http&quot;
+}
+</code></pre>
+
+<h3 id="混淆方案客户端">混淆方案客户端</h3>
+
+<h4 id="windows">Windows</h4>
 
 <p>软件下载地址：</p>
 
@@ -350,11 +863,64 @@ chmod +x shadowsocks-all.sh
 
 <p>obfs 可以直接在「SS 客户端」的服务器编辑页面修改参数：</p>
 
-<p><img src="https://piwigo.yidaofei.com/galleries/201901/shadowsoket-libev-obfs.png" alt="" /></p>
+<p><img src="https://piwigo.yidaofei.com/galleries/201901/shadowsoket-libev-windows-client-config.png" alt="" /></p>
 
-<p>插件选项为 <code>obfs=http;obfs-host=www.bing.com</code>, 可以将 www.bing.com 更换为任意的一个网址, 只要不是被 GFW 封杀的就可以, 推荐像腾讯视频, 优酷, bing 这种流量较大的网站!</p>
+<p>具体配置参数如下：</p>
 
-<h5 id="mac">Mac</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">值</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">服务器地址</td>
+<td align="left">VPS 地址</td>
+</tr>
+
+<tr>
+<td align="left">服务器端口</td>
+<td align="left">配置文件<code>server_port</code>或<code>port_password</code></td>
+</tr>
+
+<tr>
+<td align="left">密码</td>
+<td align="left">配置文件<code>password</code>或<code>port_password</code></td>
+</tr>
+
+<tr>
+<td align="left">加密</td>
+<td align="left">配置文件<code>method</code></td>
+</tr>
+
+<tr>
+<td align="left">插件程序</td>
+<td align="left"><code>obfs-local</code></td>
+</tr>
+
+<tr>
+<td align="left">插件选项</td>
+<td align="left"><code>obfs=http</code></td>
+</tr>
+
+<tr>
+<td align="left">插件参数</td>
+<td align="left"><code>obfs-host=www.bing.com</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>PS:</p>
+
+<ol>
+<li>obfs 服务端开启本地端可不开启</li>
+<li>「插件参数」值可以将 www.bing.com 更换为任意的一个网址, 只要不是被 GFW 封杀的就可以, 推荐像腾讯视频, 优酷, bing 这种流量较大的网站!</li>
+</ol>
+
+<h4 id="mac">Mac</h4>
 
 <p>软件下载地址：</p>
 
@@ -365,7 +931,7 @@ chmod +x shadowsocks-all.sh
 
 <p>Mac 不支持「obfs混淆」 2019-01-15T11:56:07+08:00</p>
 
-<h5 id="移动端">移动端</h5>
+<h4 id="移动端">移动端</h4>
 
 <ul>
 <li>「shadowsocket IOS 客户端」：性价比高，支持 http 与 tls 两种模式</li>
@@ -373,11 +939,14 @@ chmod +x shadowsocks-all.sh
 <li><a href="https://play.google.com/store/apps/details?id=com.github.shadowsocks">shadowsocks android 客户端</a><br /></li>
 </ul>
 
-<h3 id="参考资料">参考资料</h3>
+<h3 id="整体优化及扩展阅读">整体优化及扩展阅读</h3>
+
+<p>由于本人暂时无需求，仅记录相关的参考文件！</p>
 
 <ul>
-<li><a href="http://labmain.com/2016/07/07/The_programmer_must_learn_Science_online/">程序员必备的翻墙姿势 </a></li>
-<li><a href="https://github.com/JadaGates/ShadowsocksBio" title="记录一下SS的前世今生，以及一个简单的教程总结 ">记录一下SS的前世今生，以及一个简单的教程总结</a></li>
+<li><a href="https://xiaozhou.net/enable-bbr-for-vps-2017-06-10.html">为VPS开启BBR拥塞控制算法</a></li>
+<li><a href="https://github.com/iMeiji/shadowsocks_install/wiki/shadowsocks-optimize">基于kvm架构vps的优化</a></li>
+<li><a href="https://zzz.buzz/zh/gfw/2016/02/16/deploy-shadowsocks-on-routers/">在路由器上部署 shadowsocks</a></li>
 </ul>
 
 <!--隐藏链接-->
@@ -498,22 +1067,36 @@ chmod +x shadowsocks-all.sh
 <li>
 <ul>
 <li><a href="#shadowsocks-前世今生">shadowsocks 前世今生</a></li>
-<li><a href="#shadowsocks-libev-obfs-混淆方案">Shadowsocks-libev + obfs 混淆方案</a>
+<li><a href="#混淆方案服务器端">混淆方案服务器端</a>
 <ul>
-<li><a href="#obfs-混淆">obfs 混淆</a></li>
-<li><a href="#服务器端操作">服务器端操作</a>
+<li><a href="#软件仓库安装-shadowsocks-libev">软件仓库安装 Shadowsocks-libev</a></li>
+<li><a href="#源代码安装-shadowsocks-libev">源代码安装 Shadowsocks-libev</a></li>
+<li><a href="#脚本一键安装">脚本一键安装</a></li>
+<li><a href="#obfs-混淆">obfs 混淆</a>
 <ul>
-<li><a href="#一键安装脚本">一键安装脚本</a></li>
-<li><a href="#独立安装">独立安装</a></li>
+<li><a href="#什么是-obfs-混淆">什么是 obfs 混淆</a></li>
+<li><a href="#安装-obfs">安装 obfs</a></li>
+<li><a href="#相关故障">相关故障</a></li>
 </ul></li>
-<li><a href="#客户端使用">客户端使用</a>
+<li><a href="#开启多端口">开启多端口</a>
+<ul>
+<li><a href="#脚本一键安装-1">脚本一键安装</a></li>
+<li><a href="#利用-ss-manager">利用 <code>ss-manager</code></a></li>
+<li><a href="#shadowsocks-manager-软件">shadowsocks-manager 软件</a></li>
+</ul></li>
+<li><a href="#shadowsocks-libev-配置文件">Shadowsocks-libev 配置文件</a>
+<ul>
+<li><a href="#配置项">配置项</a></li>
+<li><a href="#配置文件案例">配置文件案例</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#混淆方案客户端">混淆方案客户端</a>
 <ul>
 <li><a href="#windows">Windows</a></li>
 <li><a href="#mac">Mac</a></li>
 <li><a href="#移动端">移动端</a></li>
 </ul></li>
-</ul></li>
-<li><a href="#参考资料">参考资料</a></li>
+<li><a href="#整体优化及扩展阅读">整体优化及扩展阅读</a></li>
 <li><a href="#版本信息">版本信息</a></li>
 </ul></li>
 </ul></li>
@@ -590,7 +1173,6 @@ chmod +x shadowsocks-all.sh
 
 <script type="text/javascript" src="https://yidaofei.com//thirdParty/prismjs/prism.js"></script>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js"></script>
 
 <script type="text/javascript" color="#1D1D1D" opacity='1' zIndex="-2" count="400" src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.3/canvas-nest.js"></script>
 

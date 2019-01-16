@@ -6,7 +6,7 @@ $(document).ready(function() {
 	//处理分类页面的导航栏
 	adjustSiteToc(true,0,0);  
  	//盘古之白
- 	pangu.spacingPage(); 
+ 	//pangu.spacingPage(); 
 
  	//判断当前页面是否是单个页面
  	if($("#isPage").attr("data-isPage")=="true"){ 
