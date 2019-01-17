@@ -19,6 +19,7 @@
 
 shadowsocks 的发展历史及脉络
 shadowsocks 服务器搭建及本地使用
+SS/SSR 节点分享网站-无需自建 Shandowsocks
 
 
 PS：本文是在原有文章翻墙教程之 shadowsocks基基础之上结合记录一下SS的前世今生，以及一个简单的教程总结做相关调整
@@ -149,6 +150,7 @@ if (!doNotTrack) {
 <ol>
 <li>shadowsocks 的发展历史及脉络</li>
 <li>shadowsocks 服务器搭建及本地使用</li>
+<li>SS/SSR 节点分享网站-无需自建 Shandowsocks</li>
 </ol>
 
 <p>PS：本文是在原有文章<a href="https://yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/">翻墙教程之 shadowsocks</a>基基础之上结合<a href="https://github.com/JadaGates/ShadowsocksBio" title="记录一下SS的前世今生，以及一个简单的教程总结 ">记录一下SS的前世今生，以及一个简单的教程总结</a>做相关调整</p>
@@ -515,9 +517,9 @@ make install
 <p><strong>检查是否安装正确</strong></p>
 
 <ol>
-<li>将配置文件改用</li>
+<li>将配置文件改用 「带 obfs 混淆单用户插件配置」</li>
 <li>重新启动 Shadowsocks-libev：<code>systemctl restart shadowsocks-libev</code></li>
-<li>确认 ss-server 和 obfs-server 进程已经正常启动：ps -ef | grep -v grep | grep &laquo;server&raquo;</li>
+<li>确认 ss-server 和 obfs-server 进程已经正常启动：<code>ps -ef | grep -v grep | grep &quot;server&quot;</code></li>
 </ol>
 
 <p>输出结果参考：</p>
@@ -632,7 +634,12 @@ vi /etc/shadowsocks-manager/config.json
 <p>调用 ss-server 并根据配置文件里的多个端口号，在当前用户目录下生成隐藏文件夹 .shadowsocks 以及拆分配置文件为 .shadowsocks_端口号.conf，并以此创建新的进程，再生成 .shadowsocks_端口号.pid 来保存进程的 pid 信息。</p>
 </blockquote>
 
-<p>PS： 可以仿照「代码安装 Shadowsocks-libev-创建 Service 服务文件」创建相关的服务</p>
+<p>后续发现如果将<strong>「Xshell」终端关闭就无法翻墙</strong>，参考<a href="https://teddysun.com/532.html" title="秋水逸冰-如何启用 Shadowsocks 的多端口">秋水逸冰-如何启用 Shadowsocks 的多端口</a>里的脚本后修改命令如下：</p>
+
+<pre><code class="language-batch">/usr/bin/ss-manager --manager-address /var/run/shadowsocks-manager.sock --executable /usr/bin/ss-server -c  /etc/shadowsocks-libev/ssmanager-config.json -f /var/run/shadowsocks-manager.pid
+</code></pre>
+
+<p>所以建议大家是使用「脚本一键安装」的方式实现！</p>
 
 <h5 id="shadowsocks-manager-软件">shadowsocks-manager 软件</h5>
 
@@ -817,7 +824,7 @@ AmbientCapabilities=CAP_NET_BIND_SERVICE</p>
 }
 </code></pre>
 
-<p><strong>带 obfs 混淆单用户无插件配置</strong></p>
+<p><strong>带 obfs 混淆单用户插件配置</strong></p>
 
 <pre><code class="language-json">{
     &quot;server&quot;:&quot;0.0.0.0&quot;,  
@@ -939,6 +946,16 @@ AmbientCapabilities=CAP_NET_BIND_SERVICE</p>
 <li><a href="https://play.google.com/store/apps/details?id=com.github.shadowsocks">shadowsocks android 客户端</a><br /></li>
 </ul>
 
+<h3 id="ss-ssr-节点分享网站">SS/SSR 节点分享网站</h3>
+
+<p>列表如下：</p>
+
+<ul>
+<li><a href="https://free-ss.site/">https://free-ss.site/</a></li>
+<li><a href="https://stool.gq/tool/free_ssr">https://stool.gq/tool/free_ssr</a></li>
+<li></li>
+</ul>
+
 <h3 id="整体优化及扩展阅读">整体优化及扩展阅读</h3>
 
 <p>由于本人暂时无需求，仅记录相关的参考文件！</p>
@@ -946,7 +963,6 @@ AmbientCapabilities=CAP_NET_BIND_SERVICE</p>
 <ul>
 <li><a href="https://xiaozhou.net/enable-bbr-for-vps-2017-06-10.html">为VPS开启BBR拥塞控制算法</a></li>
 <li><a href="https://github.com/iMeiji/shadowsocks_install/wiki/shadowsocks-optimize">基于kvm架构vps的优化</a></li>
-<li><a href="https://zzz.buzz/zh/gfw/2016/02/16/deploy-shadowsocks-on-routers/">在路由器上部署 shadowsocks</a></li>
 </ul>
 
 <!--隐藏链接-->
@@ -1004,7 +1020,7 @@ AmbientCapabilities=CAP_NET_BIND_SERVICE</p>
 	<div class="article-footer-meta-between"> 
 		<div class="refArticle-prev" >
 			  
-		    <a href="https://yidaofei.com/post/20190115-circumvention-technology-guild-forward/">
+		    <a href="https://yidaofei.com/post/20190115-circumvention-technology-guild-foreword/">
 		    	<i class="fa fa-angle-double-left"></i>&nbsp;翻墙 chapter 0 - 前言  
 		    </a> 
 			
@@ -1096,6 +1112,7 @@ AmbientCapabilities=CAP_NET_BIND_SERVICE</p>
 <li><a href="#mac">Mac</a></li>
 <li><a href="#移动端">移动端</a></li>
 </ul></li>
+<li><a href="#ss-ssr-节点分享网站">SS/SSR 节点分享网站</a></li>
 <li><a href="#整体优化及扩展阅读">整体优化及扩展阅读</a></li>
 <li><a href="#版本信息">版本信息</a></li>
 </ul></li>

@@ -12,7 +12,7 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/post/20190115-circumvention-technology-guild-forward/</loc>
+    <loc>https://yidaofei.com/post/20190115-circumvention-technology-guild-foreword/</loc>
     <lastmod>2019-01-15T11:57:19+08:00</lastmod>
   </url>
   
@@ -69,6 +69,11 @@
   <url>
     <loc>https://yidaofei.com/post/20190110-windows-guild-create-a-efficient-file-management-system/</loc>
     <lastmod>2019-01-10T10:27:08+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/publishlater/20190109-smartlock-guild-electronic-part/</loc>
+    <lastmod>2019-01-09T10:39:49+08:00</lastmod>
   </url>
   
   <url>
@@ -458,13 +463,13 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/categories/javascript/</loc>
+    <loc>https://yidaofei.com/tags/javascript/</loc>
     <lastmod>2018-11-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yidaofei.com/tags/javascript/</loc>
+    <loc>https://yidaofei.com/categories/javascript/</loc>
     <lastmod>2018-11-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -494,6 +499,12 @@
   </url>
   
   <url>
+    <loc>https://yidaofei.com/publishlater/</loc>
+    <lastmod>2019-01-09T10:39:49+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yidaofei.com/tags/readlater/</loc>
     <lastmod>2018-11-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -518,13 +529,13 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/categories/windows-%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://yidaofei.com/tags/windows-%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2019-01-13T10:14:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yidaofei.com/tags/windows-%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://yidaofei.com/categories/windows-%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2019-01-13T10:14:00+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -536,13 +547,13 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/categories/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99/</loc>
+    <loc>https://yidaofei.com/tags/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2018-11-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yidaofei.com/tags/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99/</loc>
+    <loc>https://yidaofei.com/categories/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2018-11-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -638,14 +649,14 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/categories/%E6%8C%87%E7%BA%B9%E9%94%81/</loc>
-    <lastmod>2019-01-09T09:39:49+08:00</lastmod>
+    <loc>https://yidaofei.com/tags/%E6%8C%87%E7%BA%B9%E9%94%81/</loc>
+    <lastmod>2019-01-09T10:39:49+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yidaofei.com/tags/%E6%8C%87%E7%BA%B9%E9%94%81/</loc>
-    <lastmod>2019-01-09T09:39:49+08:00</lastmod>
+    <loc>https://yidaofei.com/categories/%E6%8C%87%E7%BA%B9%E9%94%81/</loc>
+    <lastmod>2019-01-09T10:39:49+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -656,13 +667,13 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/categories/%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85/</loc>
+    <loc>https://yidaofei.com/tags/%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85/</loc>
     <lastmod>2019-01-08T11:16:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yidaofei.com/tags/%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85/</loc>
+    <loc>https://yidaofei.com/categories/%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85/</loc>
     <lastmod>2019-01-08T11:16:12+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -716,13 +727,13 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/categories/%E7%BB%B4%E5%9F%BA/</loc>
+    <loc>https://yidaofei.com/tags/%E7%BB%B4%E5%9F%BA/</loc>
     <lastmod>2019-01-10T23:36:03+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yidaofei.com/tags/%E7%BB%B4%E5%9F%BA/</loc>
+    <loc>https://yidaofei.com/categories/%E7%BB%B4%E5%9F%BA/</loc>
     <lastmod>2019-01-10T23:36:03+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -740,13 +751,13 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/categories/%E7%BF%BB%E5%A2%99/</loc>
+    <loc>https://yidaofei.com/tags/%E7%BF%BB%E5%A2%99/</loc>
     <lastmod>2019-01-15T11:57:19+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yidaofei.com/tags/%E7%BF%BB%E5%A2%99/</loc>
+    <loc>https://yidaofei.com/categories/%E7%BF%BB%E5%A2%99/</loc>
     <lastmod>2019-01-15T11:57:19+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -776,13 +787,13 @@
   </url>
   
   <url>
-    <loc>https://yidaofei.com/categories/%E8%AF%97%E6%AD%8C/</loc>
+    <loc>https://yidaofei.com/tags/%E8%AF%97%E6%AD%8C/</loc>
     <lastmod>2018-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yidaofei.com/tags/%E8%AF%97%E6%AD%8C/</loc>
+    <loc>https://yidaofei.com/categories/%E8%AF%97%E6%AD%8C/</loc>
     <lastmod>2018-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

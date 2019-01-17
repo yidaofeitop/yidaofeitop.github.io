@@ -6,10 +6,30 @@
     <description>Recent content in 指纹锁 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 09 Jan 2019 09:39:49 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 09 Jan 2019 10:39:49 +0800</lastBuildDate>
     
 	<atom:link href="https://yidaofei.com/tags/%E6%8C%87%E7%BA%B9%E9%94%81/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>认识智能锁 chapter 1 - 电子部分</title>
+      <link>https://yidaofei.com/publishlater/20190109-smartlock-guild-electronic-part/</link>
+      <pubDate>Wed, 09 Jan 2019 10:39:49 +0800</pubDate>
+      
+      <guid>https://yidaofei.com/publishlater/20190109-smartlock-guild-electronic-part/</guid>
+      <description>&lt;p&gt;本章节主要分解智能锁电子部分，相关内容如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;线路板：走线、工艺&lt;/li&gt;
+&lt;li&gt;指纹头：种类&lt;/li&gt;
+&lt;li&gt;联网模块&lt;/li&gt;
+&lt;li&gt;电池仓&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;首先必须说明的是本人&lt;strong&gt;非嵌入式工程师出身&lt;/strong&gt;，加上此类资料积累非常少，所以本文谈及的内容基本上以表面知识为主，如有错误遗漏欢迎大家指正修改！&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>认识智能锁 chapter 0-前言</title>

@@ -13,22 +13,27 @@
     
     <item>
       <title>翻墙 chapter 0 - 前言</title>
-      <link>https://yidaofei.com/post/20190115-circumvention-technology-guild-forward/</link>
+      <link>https://yidaofei.com/post/20190115-circumvention-technology-guild-foreword/</link>
       <pubDate>Tue, 15 Jan 2019 11:57:19 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20190115-circumvention-technology-guild-forward/</guid>
+      <guid>https://yidaofei.com/post/20190115-circumvention-technology-guild-foreword/</guid>
       <description>&lt;p&gt;有很多人对于「翻墙」感觉是一个非常高大上的词（2011年大二我的感觉同样如此），本系列文章就是将翻墙的发展历史以及现可行的技术一一梳理清楚，让「翻墙」这个词不再神秘！&lt;/p&gt;
 
 &lt;p&gt;此系列文章主要内容如下：&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;翻墙目的以及相关法规：本文&lt;/li&gt;
-&lt;li&gt;翻墙技术发展历史：本文&lt;/li&gt;
+&lt;li&gt;翻墙目的以及相关法规：&lt;a href=&#34;#翻墙目的以及相关法规&#34;&gt;链接&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;翻墙技术发展历史：&lt;a href=&#34;#翻墙技术发展历史&#34;&gt;链接&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20190115-circumvention-technology-guild-vps/&#34;&gt;翻墙之 VPS 篇&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20190115-circumvention-technology-guild-shadowsocks/&#34;&gt;翻墙之 Shadowsocks&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;翻墙之 v2ray&lt;/li&gt;
-&lt;li&gt;翻墙之 wireguard&lt;/li&gt;
-&lt;li&gt;翻墙之 路由器篇&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20190115-circumvention-technology-guild-v2ray/&#34;&gt;翻墙之 v2ray&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;翻墙之 wireguard：由于相对前面2个比较简单，无研究的欲望所以请大家访问以下参考文章即可
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cloudy.pub/2018/07/06/centos-7-da-jian-wireguard/&#34;&gt;Centos 7搭建Wireguard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.covertness.me/2018/03/25/%E8%BD%BB%E6%9D%BE%E5%87%A0%E6%AD%A5%E6%90%AD%E5%BB%BA%20WireGuard%20%EF%BC%88%E5%BF%AB%E9%80%9F%E5%AE%89%E5%85%A8%E7%9A%84%E4%B8%8B%E4%B8%80%E4%BB%A3%20VPN%EF%BC%89/&#34;&gt;轻松几步搭建 WireGuard （快速安全的下一代 VPN） &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;翻墙之 路由器篇：暂时无此需求，大家直接访问&lt;a href=&#34;https://zzz.buzz/zh/gfw/2016/02/16/deploy-shadowsocks-on-routers/&#34;&gt;在路由器上部署 shadowsocks&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;</description>
     </item>
     
@@ -43,6 +48,7 @@
 &lt;ol&gt;
 &lt;li&gt;shadowsocks 的发展历史及脉络&lt;/li&gt;
 &lt;li&gt;shadowsocks 服务器搭建及本地使用&lt;/li&gt;
+&lt;li&gt;SS/SSR 节点分享网站-无需自建 Shandowsocks&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;PS：本文是在原有文章&lt;a href=&#34;https://yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/&#34;&gt;翻墙教程之 shadowsocks&lt;/a&gt;基基础之上结合&lt;a href=&#34;https://github.com/JadaGates/ShadowsocksBio&#34; title=&#34;记录一下SS的前世今生，以及一个简单的教程总结 &#34;&gt;记录一下SS的前世今生，以及一个简单的教程总结&lt;/a&gt;做相关调整&lt;/p&gt;
@@ -257,6 +263,26 @@
 &lt;li&gt;本教程的受众主要是非计算机专业人士/爱好者，所以相对应的做了部分的简化&lt;/li&gt;
 &lt;li&gt;补充相关的文件管理效率软件，如 「Everything」等&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>认识智能锁 chapter 1 - 电子部分</title>
+      <link>https://yidaofei.com/publishlater/20190109-smartlock-guild-electronic-part/</link>
+      <pubDate>Wed, 09 Jan 2019 10:39:49 +0800</pubDate>
+      
+      <guid>https://yidaofei.com/publishlater/20190109-smartlock-guild-electronic-part/</guid>
+      <description>&lt;p&gt;本章节主要分解智能锁电子部分，相关内容如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;线路板：走线、工艺&lt;/li&gt;
+&lt;li&gt;指纹头：种类&lt;/li&gt;
+&lt;li&gt;联网模块&lt;/li&gt;
+&lt;li&gt;电池仓&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;首先必须说明的是本人&lt;strong&gt;非嵌入式工程师出身&lt;/strong&gt;，加上此类资料积累非常少，所以本文谈及的内容基本上以表面知识为主，如有错误遗漏欢迎大家指正修改！&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

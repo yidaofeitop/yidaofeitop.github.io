@@ -648,7 +648,7 @@
     {
         "draft": false,
         "uri": "post/20181117-smartlock-guild-separation-clutch-design-of-lock",
-        "content": "1                                                                                                                                                                                                                                                                                                                        801                                                                                                                                       4                                                                                                                   801                801                                801                               801         b c d                                          a                                                                                                                                       803 807            2               801        803   801                                                 2                                                    803                                       803                                                       803                          803                                                                                                                       Version Action  Time                     1 0 init 2018 09 20",
+        "content": "1                                                                                                                                                                                                                                                                                    chapter 2                                        801                                                                                                                                       4                                                                                                                   801                801                                801                               801         b c d                                          a                                                                                                                                       803 807            2               801        803   801                                                 2                                                    803                                       803                                                       803                          803                                                                                                                       Version Action  Time                     1 0 init 2018 09 20",
         "objectID": "post/20181117-smartlock-guild-separation-clutch-design-of-lock",
         "title": "认识智能锁 chapter 2 - 离合结构补充——分离式离合设计",
         "author": "yidaofeicn",
@@ -1520,9 +1520,9 @@
     },
     {
         "draft": false,
-        "uri": "post/20190115-circumvention-technology-guild-forward",
+        "uri": "post/20190115-circumvention-technology-guild-foreword",
         "content": "2011                                                                                                    VPS       Shadowsocks     v2ray     wireguard       2                            Centos 7  Wireguard        WireGuard           VPN                                shadowsocks        2                                                               5                                              Goagent                                                                   VPN        10000                                 2019 1                                                                                                                                                                                                                                                                                                                                                                                                                                                      VPN                                                                                                                                                                VPN                         youtube ImShuker                                                                                                                                                                 2                                         HTTP    SOCKS    DNS              IP     DNS                     Proxy Hunter       HTTPS    hosts              VPN PPTP SSH           GoAgent          Lantern OpenVPN          VPN wireguard Shadowsocks     V2Ray                 hosts        VPN wireguard   Shadowsocks       V2Ray     hosts                                         VPN wireguard   Shadowsocks       V2Ray         GFW                                                        youtube                           Version Action  Time                     1 0 init 2019 01 15",
-        "objectID": "post/20190115-circumvention-technology-guild-forward",
+        "objectID": "post/20190115-circumvention-technology-guild-foreword",
         "title": "翻墙 chapter 0 - 前言",
         "date": "2019-01-15T03:57:19.000Z",
         "type": "post",
@@ -1580,6 +1580,27 @@
             "翻墙",
             "VPS",
             "自由"
+        ]
+    },
+    {
+        "draft": false,
+        "uri": "publishlater/20190109-smartlock-guild-electronic-part",
+        "content": "3                                                                                                                   2                                                                                          3                                                                         1                                                                                                                                                               3                                                                                                                                                                                                                                                                                                                      Flash              SMT                MCU    Flash                 Micro USB                                                                                             3                                                          3     5                                                                                                                                                                                                                                  PCB                      3                                                                                                                                                                                                                                   APP                                                              Zigbee       433                       WIFI              NB IOT                                                                          APP         WIFI                                                                                                                                                                                                                                                                                         1                                                 2                                    1 2             2                              Version Action  Time                     1 0 init 2019 01 09",
+        "objectID": "publishlater/20190109-smartlock-guild-electronic-part",
+        "title": "认识智能锁 chapter 1 - 电子部分",
+        "date": "2019-01-09T02:39:49.000Z",
+        "Keywords": [
+            "指纹锁",
+            "智能锁",
+            "电路板",
+            "指纹头",
+            "电池仓"
+        ],
+        "categories": [
+            "指纹锁"
+        ],
+        "tags": [
+            "指纹锁"
         ]
     },
     {

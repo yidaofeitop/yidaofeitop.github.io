@@ -11,18 +11,26 @@
   
   
     
-    <meta charset="utf-8" name="keywords" content="翻墙,GFW,VPS," > 
+    <meta charset="utf-8" name="keywords" content="翻墙,GFW,自由," > 
   
    
-  <meta charset="utf-8" name="description" content="翻墙如果选用自建翻墙渠道那么第一步就是选用合适的 「国外 VPS」，本文就是教大家如何完成这一步！
+  <meta charset="utf-8" name="description" content="有很多人对于「翻墙」感觉是一个非常高大上的词（2011年大二我的感觉同样如此），本系列文章就是将翻墙的发展历史以及现可行的技术一一梳理清楚，让「翻墙」这个词不再神秘！
 
-本文主要内容如下：
-
-
-主流 VPS 服务商
-VPS 基础配置以及相关工具
+此系列文章主要内容如下：
 
 
+翻墙目的以及相关法规：链接
+翻墙技术发展历史：链接
+翻墙之 VPS 篇
+翻墙之 Shadowsocks
+翻墙之 v2ray
+翻墙之 wireguard：由于相对前面2个比较简单，无研究的欲望所以请大家访问以下参考文章即可
+
+
+Centos 7搭建Wireguard
+轻松几步搭建 WireGuard （快速安全的下一代 VPN） 
+
+翻墙之 路由器篇：暂时无此需求，大家直接访问在路由器上部署 shadowsocks
 " >
   
   
@@ -34,7 +42,7 @@ VPS 基础配置以及相关工具
   
   
   
-  <title>翻墙 chapter 1 — VPS 篇- 易道非 Blog</title>  
+  <title>翻墙 chapter 0 - 前言- 易道非 Blog</title>  
   
   
     
@@ -121,7 +129,7 @@ if (!doNotTrack) {
 <section class="main-content-container">
 <article class="article-card">
 	<header class="article-header"> 
-	   <p class="article-title">翻墙 chapter 1 — VPS 篇</p>
+	   <p class="article-title">翻墙 chapter 0 - 前言</p>
    		<div class="article-meta">
 			
 			<div><i class="fa fa-calendar" >2019年01月15日</i> </div>
@@ -144,156 +152,135 @@ if (!doNotTrack) {
 		</div>  
 	</header>  
 	<content class="markdown">
-		<p>翻墙如果选用自建翻墙渠道那么第一步就是选用合适的 「<strong>国外</strong> VPS」，本文就是教大家如何完成这一步！</p>
+		<p>有很多人对于「翻墙」感觉是一个非常高大上的词（2011年大二我的感觉同样如此），本系列文章就是将翻墙的发展历史以及现可行的技术一一梳理清楚，让「翻墙」这个词不再神秘！</p>
 
-<p>本文主要内容如下：</p>
+<p>此系列文章主要内容如下：</p>
 
 <ol>
-<li>主流 VPS 服务商</li>
-<li>VPS 基础配置以及相关工具</li>
+<li>翻墙目的以及相关法规：<a href="#翻墙目的以及相关法规">链接</a></li>
+<li>翻墙技术发展历史：<a href="#翻墙技术发展历史">链接</a></li>
+<li><a href="https://yidaofei.com/post/20190115-circumvention-technology-guild-vps/">翻墙之 VPS 篇</a></li>
+<li><a href="https://yidaofei.com/post/20190115-circumvention-technology-guild-shadowsocks/">翻墙之 Shadowsocks</a></li>
+<li><a href="https://yidaofei.com/post/20190115-circumvention-technology-guild-v2ray/">翻墙之 v2ray</a></li>
+<li>翻墙之 wireguard：由于相对前面2个比较简单，无研究的欲望所以请大家访问以下参考文章即可
+
+<ul>
+<li><a href="https://www.cloudy.pub/2018/07/06/centos-7-da-jian-wireguard/">Centos 7搭建Wireguard</a></li>
+<li><a href="https://www.covertness.me/2018/03/25/%E8%BD%BB%E6%9D%BE%E5%87%A0%E6%AD%A5%E6%90%AD%E5%BB%BA%20WireGuard%20%EF%BC%88%E5%BF%AB%E9%80%9F%E5%AE%89%E5%85%A8%E7%9A%84%E4%B8%8B%E4%B8%80%E4%BB%A3%20VPN%EF%BC%89/">轻松几步搭建 WireGuard （快速安全的下一代 VPN） </a></li>
+</ul></li>
+<li>翻墙之 路由器篇：暂时无此需求，大家直接访问<a href="https://zzz.buzz/zh/gfw/2016/02/16/deploy-shadowsocks-on-routers/">在路由器上部署 shadowsocks</a></li>
 </ol>
 
-<p></p>
+<p>
+本文主要梳理前2个内容：「翻墙目的以及相关法规」/「翻墙技术发展历史」</p>
 
-<h3 id="主流-vps-服务商">主流 VPS 服务商</h3>
+<h3 id="翻墙目的以及相关法规">翻墙目的以及相关法规</h3>
 
-<p>主流的 VPS 服务商按照国内外大致有以下几家：</p>
-
-<ul>
-<li>国外
+<p>不知道大家是否有查询过翻墙被罚的新闻（特别注意第5条新闻：「<strong>首例</strong>！广东警方对“翻墙”上网者重罚！」）</p>
 
 <ul>
-<li>侧重小型 Iaas 提供商：bandwagong、vultr、Linode、DigitalOcean</li>
-<li>侧重 Saas 和 Paas 提供商：亚马逊 AWS、微软 Azure和谷歌 GCP</li>
-</ul></li>
-<li>国内
-
-<ul>
-<li>阿里云、腾讯云、百度云、华为云</li>
-</ul></li>
+<li><a href="https://pao-pao.net/article/292">翻墙=犯法？从许东翻墙第一案说起</a>：利用 Goagent 非法营利</li>
+<li><a href="http://www.miit.gov.cn/n1146290/n4388791/c5471946/content.html">工业和信息化部关于清理规范互联网网络接入服务市场的通知</a></li>
+<li><a href="http://www.bjnews.com.cn/news/2017/07/25/451669.html">工信部回应“整顿翻墙软件”：合法经营不受影响|政解</a></li>
+<li><a href="http://it.gmw.cn/2018-10/09/content_31606845.htm">程序员非法出售VPN 被判刑三年罚款10000元</a></li>
+<li><a href="https://nosec.org/home/detail/2153.html"><strong>首例</strong>！广东警方对“翻墙”上网者重罚！</a></li>
+<li><a href="http://www.gdgafz.alldayfilm.com/bookDetail.html?type=1&amp;id=1134323">韶雄公(网)行罚决字 [2019]1号</a>：「首例！广东警方对“翻墙”上网者重罚」官方文书</li>
 </ul>
 
-<p>因为是翻墙所以其 VPS 的主机必须选用位于国外的，以性价比及隐私考虑出发建议大家选用「bandwagong、vultr、Linode、DigitalOcean」四家之中的任意一家即可！</p>
+<p>以上涉及的主要的法律条款为：</p>
 
-<p>关于以上四家 VPS 测评的文章网络很多，加上大家的需求不一样，就不一一详说！</p>
+<ol>
+<li><p><a href="http://www.miit.gov.cn/n1146285/n1146352/n3054355/n3057656/n3057661/c3559457/content.html">中华人民共和国计算机信息网络国际联网管理暂行规定</a></p>
 
-<p>PS：由于国内屏蔽，为节省大家时间特意列明国内相关的推广网站，大家可以从以上入口进入对应的官网（特此申明无任何利益关联）：</p>
+<blockquote>
+<p>第六条  计算机信息网络直接进行国际联网，必须使用邮电部国家公用电信网提供的国际出入口信道。<br />
+任何单位和个人不得<strong>自行建立或者使用其他信道</strong>进行国际联网。</p>
+
+<p>第十条  个人、法人和其他组织（以下统称用户）使用的计算机或者计算机信息网络，需要进行国际联网的，必须通过接入网络进行国际联网。</p>
+
+<p>前款规定的计算机或者计算机信息网络，需要接入网络的，应当征得接入单位的同意，并办理登记手续。</p>
+
+<p>第十三条  从事国际联网业务的单位和个人，应当遵守国家有关法律、行政法规，严格执行安全保密制度，不得利用国际联网从事危害国家安全、泄露国家秘密等违法犯罪活动，不得制作、查阅、复制和传播妨碍社会治安的信息和淫秽色情等信息。</p>
+</blockquote></li>
+
+<li><p><a href="http://www.miit.gov.cn/n1146295/n1652858/n1652930/n3757020/c5471946/content.html">工业和信息化部关于清理规范互联网网络接入服务市场的通知</a></p>
+
+<blockquote>
+<p>违规开展跨境业务问题。未经电信主管部门批准，不得自行建立或租用专线（含虚拟专用网络VPN）等其他信道开展跨境经营活动。基础电信企业向用户出租的国际专线，应集中建立用户档案，向用户明确使用用途仅供其内部办公专用，不得用于连接境内外的数据中心或业务平台开展电信业务经营活动。</p>
+</blockquote></li>
+</ol>
+
+<p>从以上的角度来看<strong>必须通过官方认定的机构提供的渠道获取相关的国外咨询，否则就是违法</strong></p>
+
+<p>但是从实际操作层面来看，一般来说企业或个人自行构建的 VPN 等翻墙渠道基本上都没有被封，其主要原因我觉得正如<a href="https://www.youtube.com/watch?v=nwR4_aoq24A">youtube-ImShuker-又有翻墙者被抓了！最安全的访问外网姿势！</a>所说的官方将「翻墙者」分解为以下几类并采取不同措施，我整理表格如下：</p>
 
 <table>
 <thead>
 <tr>
-<th align="left">VPS</th>
-<th align="left">推广网站</th>
+<th align="left">危险值</th>
+<th align="left">具体特征</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td align="left">bandwagong</td>
-<td align="left"><a href="http://banwagong.cn/">http://banwagong.cn/</a></td>
+<td align="left">无危险值</td>
+<td align="left">娱乐、技术学习、少政治</td>
 </tr>
 
 <tr>
-<td align="left">vultr</td>
-<td align="left"><a href="https://www.vultrcn.com/">https://www.vultrcn.com/</a></td>
+<td align="left">轻度危险值</td>
+<td align="left">关心政治、喜欢看墙外的新闻，但是不传播</td>
 </tr>
 
 <tr>
-<td align="left">Linode</td>
-<td align="left"><a href="http://www.xenvpser.com/">http://www.xenvpser.com/</a></td>
+<td align="left">中度危险值</td>
+<td align="left">经常发帖评论、转载墙外新闻</td>
 </tr>
 
 <tr>
-<td align="left">DigitalOcean</td>
-<td align="left"><a href="https://digitalocean.youhuima.cc/">https://digitalocean.youhuima.cc/</a></td>
+<td align="left">重度危险值</td>
+<td align="left">反政治人士</td>
 </tr>
 </tbody>
 </table>
 
-<h3 id="vps-基础配置以及相关工具">VPS 基础配置以及相关工具</h3>
+<p>后2者基本上被「喝茶」的几率最大</p>
 
-<h4 id="基础工具">基础工具</h4>
+<h3 id="翻墙技术发展历史">翻墙技术发展历史</h3>
 
-<p>在使用 VPS 的过程中大致需要使用以下工具：</p>
-
-<ol>
-<li><a href="http://baoku.360.cn/soft/show/appid/101306">Xshell-360</a>：用于 SSH 连接 VPS 远程控制</li>
-<li>IP 是否被封测试：<a href="https://tools.ipip.net/ping.php">https://tools.ipip.net/ping.php</a></li>
-<li>国内测试-端口是否被封测试：<a href="http://tool.chinaz.com/port/">http://tool.chinaz.com/port/</a></li>
-<li>国外测试-端口是否被封测试：<a href="https://www.yougetsignal.com/tools/open-ports/">https://www.yougetsignal.com/tools/open-ports/</a></li>
-</ol>
-
-<p>「2-4」项主要用于检测「VPS」是否被 GFW 封锁，具体使用方法是：</p>
+<p>翻墙技术大致经历以下的发展历史：</p>
 
 <ol>
-<li>第二项，亦可使用：控制台（CMD 终端或 Linux 终端）输入 <code>ping xxxx.xxxx.xxxx.xxxx</code> 测试，看丢包率即可</li>
-<li>第三项，如果出现 「Close 或关闭」 则需要进行下一项操作</li>
-<li>第四项
+<li><p>HTTP 代理/SOCKS 代理/DNS 修改时代</p>
 
 <ul>
-<li>如果第二步骤为 「Close」，而本步为 「Open」，则基本确定被封</li>
-<li>如果第二步骤为 「Close」，而本步为 「Close」，则需要排查防火墙配置</li>
+<li>屏蔽技术手段： IP 地址和 DNS 污染定点屏蔽</li>
+<li>反屏蔽技术手段：代理猎手（Proxy Hunter）、网页代理</li>
 </ul></li>
+
+<li><p>HTTPS 代理/hosts 文件修改时代</p></li>
+
+<li><p>第一代技术：VPN-PPTP/SSH/赛风年代/西厢计划/GoAgent 时代</p></li>
+
+<li><p>第二代技术：Lantern/OpenVPN 时代</p></li>
+
+<li><p>第三代技术：VPN-wireguard、Shadowsocks及衍生品、V2Ray 时代</p></li>
 </ol>
 
-<h4 id="vps-基础配置">VPS 基础配置</h4>
+<p>现如今仍旧使用的技术为 「hosts 文件修改」、「VPN-wireguard」、「Shadowsocks及衍生品」、「V2Ray」</p>
 
-<p>下文以 bandwagong 为主讲解：</p>
+<p>由于「hosts 文件修改」此类方法很容易被屏蔽，所以使用人群逐渐减少，不建议使用</p>
 
-<p><strong>第一步 购买 VPS</strong></p>
+<p>后续文章主要「VPN-wireguard」、「Shadowsocks及衍生品」、「V2Ray」为主</p>
 
-<p>如果纯粹作为翻墙使用建议购买 bandwagon<br />
-具体的入口可以可以参考<a href="http://banwagong.cn/">搬瓦工 VPS</a> ,选择最便宜的年 $ 19.99 方案（ KVM 架构）即可</p>
-
-<p><strong>第二步 进入 kiwivm 控制台</strong></p>
-
-<p>进入 VPS 管理页面<br />
-「MyService」-&gt;服务器实例-&gt;「kiwivm Control Panel」</p>
-
-<p><img src="https://piwigo.yidaofei.com/galleries/201809/bandwagon-kiwivm-control-panel.jpg" alt="" /></p>
-
-<p><strong>第三步 选用操作系统</strong></p>
-
-<p>「Install new OS」-&gt;选择相关的系统（建议选用 「Centos」），安装完成后点击「Main controls」，复制此处的 IP 地址与 SSH 端口</p>
-
-<p><img src="https://piwigo.yidaofei.com/galleries/201901/bandwagon-main-panel.png" alt="bandwagong 控制台主页面" /></p>
-
-<p>另外如在操作系统安装完成后未记录「root 密码」请点击「Root password modification」-&gt;「Generate and set new root password」获得密码</p>
-
-<p>本操作完成后 VPS 基本能够获得 VPS 的 「IP地址」、「SSH 端口」、「root 密码」</p>
-
-<p><strong>第四步 XShell 远程操作</strong>
-打开 「XShell」软件-&gt;点击「新建连接」，输入上一步骤获取的 VPS 的 「IP 地址」、「SSH 端口」</p>
-
-<p><img src="https://piwigo.yidaofei.com/galleries/201901/xshell-ssh-account-config.png" alt="XShell-ssh账户配置" /></p>
-
-<p>后续会弹出「密码输入框」，输入上一步骤的密码即可！</p>
-
-<p>远程登录后第一步请修改「root 密码」，具体的命令如下：</p>
-
-<pre><code class="language-batch">$root&gt;passwd   
-$root&gt;输入新密码（不会以明文显示），回车  
-$root&gt;再次输入新密码  
-$root&gt;提示修改成功  
-</code></pre>
-
-<p>后续的安装等步骤请访问具体的翻墙技术文章！</p>
-
-<p>其他 VPS 的操作文章也可以通过相关的推广网站获得最新的操作指南！</p>
-
-<h3 id="vps-优化">VPS 优化</h3>
-
-<p>由于本人暂时无需求，仅记录相关的参考文件！</p>
+<h3 id="扩展阅读">扩展阅读</h3>
 
 <ul>
-<li><a href="https://github.com/iMeiji/shadowsocks_install/wiki/shadowsocks-optimize">基于kvm架构vps的优化</a></li>
-</ul>
-
-<h3 id="参考资料">参考资料</h3>
-
-<ul>
-<li><a href="https://www.vultrcn.com/4.html">判断 IP 是否被墙及 VPS 无法连接的解决办法</a>：测试 VPS IP 地址是否被禁</li>
-<li><a href="https://www.vultrcn.com/11.html">Vultr 能 Ping 但是 SSH 无法连接的解决办法</a>：测试 VPS 国内外端口是否被封</li>
+<li><a href="https://www.cnblogs.com/weicyNo-1/p/8125763.html">GFW的实现原理和技术（墙与翻墙）</a></li>
+<li><a href="https://steemit.com/cn/@v2ray/6knmmb">简单介绍一下网络连接的封锁与反封锁</a>：内行人</li>
+<li><a href="https://steemit.com/cn/@v2ray/fjd2k">代理工具的安全性（一）</a>：攻防底层技术</li>
+<li><a href="https://www.youtube.com/channel/UCLZzgUXs64RSxkaPexETmkw">youtube-翻墙俱乐部</a>：最全翻墙视频介绍（需翻墙）</li>
 </ul>
 
 <h3 id="版本信息">版本信息</h3>
@@ -321,7 +308,7 @@ $root&gt;提示修改成功
 			<div class="article-copyright">
 			  	<ul>
 			  		<li><strong>本文作者：</strong>易道非</li>
-			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20190115-circumvention-technology-guild-vps/</li>
+			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20190115-circumvention-technology-guild-foreword/</li>
 			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
 			  	</ul>
 			</div>
@@ -336,8 +323,6 @@ $root&gt;提示修改成功
 			
 				<a href="https://yidaofei.com/tags/%e7%bf%bb%e5%a2%99">翻墙</a>
     		
-				<a href="https://yidaofei.com/tags/vps">VPS</a>
-    		
 				<a href="https://yidaofei.com/tags/%e8%87%aa%e7%94%b1">自由</a>
     		
     		</i>   
@@ -350,15 +335,11 @@ $root&gt;提示修改成功
 	<hr/>
 	<div class="article-footer-meta-between"> 
 		<div class="refArticle-prev" >
-			  
-		    <a href="https://yidaofei.com/post/20190115-circumvention-technology-guild-shadowsocks/">
-		    	<i class="fa fa-angle-double-left"></i>&nbsp;翻墙 chapter 2 - shadowsocks  
-		    </a> 
 			
 		</div>
 		 <div class="refArticle-next" >
 		  
-		  	<a href="https://yidaofei.com/post/20190114-how-to-protect-personal-privacy-advanced/">互联网时代，保护自己的个人隐私：进阶篇&nbsp;
+		  	<a href="https://yidaofei.com/post/20190115-circumvention-technology-guild-shadowsocks/">翻墙 chapter 2 - shadowsocks&nbsp;
 		  		<i class="fa fa-angle-double-right"></i>
 		  	</a> 
 		 
@@ -413,14 +394,9 @@ $root&gt;提示修改成功
 <ul>
 <li>
 <ul>
-<li><a href="#主流-vps-服务商">主流 VPS 服务商</a></li>
-<li><a href="#vps-基础配置以及相关工具">VPS 基础配置以及相关工具</a>
-<ul>
-<li><a href="#基础工具">基础工具</a></li>
-<li><a href="#vps-基础配置">VPS 基础配置</a></li>
-</ul></li>
-<li><a href="#vps-优化">VPS 优化</a></li>
-<li><a href="#参考资料">参考资料</a></li>
+<li><a href="#翻墙目的以及相关法规">翻墙目的以及相关法规</a></li>
+<li><a href="#翻墙技术发展历史">翻墙技术发展历史</a></li>
+<li><a href="#扩展阅读">扩展阅读</a></li>
 <li><a href="#版本信息">版本信息</a></li>
 </ul></li>
 </ul></li>
