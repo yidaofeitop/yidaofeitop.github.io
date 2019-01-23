@@ -41,7 +41,7 @@ markdown 输出部分样式调整
 */
 function markdownBeautify(){
 	//处理 markdown 内部的图片
-	markdownImageBeautify(".markdown","img","p","article-img",true); 
+	//markdownImageBeautify(".markdown","img","p","article-img",true); 
 	//处理 markdown 内部的 Iframe 框架
 	$(".markdown").find("iframe").removeAttr("height").removeAttr("width").addClass('videoIframe');
 	//处理音乐部分
@@ -234,6 +234,7 @@ function markdownMusicBeautify(){
 }
 
 /**
+2019年1月23日 由于无法匹配小图片废弃
 针对某个范围的某个标签的父亲标签添加某个样式
 如下文针对P设定相关样式
 
@@ -263,7 +264,6 @@ function markdownImageBeautify(topSelector,aimTag,parentTag,addParentClass,addTi
 	}
 	//处理父辈元素
 	aimTagArr.parent(parentTag).addClass(addParentClass);  
-
 	//不处理标题
 	if(!addTitle){
 		return;

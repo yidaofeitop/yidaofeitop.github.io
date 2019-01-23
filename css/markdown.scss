@@ -182,8 +182,18 @@
 			max-height: 200px;
 			max-width: 300px; 
 		}
-	} 
-	//内部图片，需要配合相关插件使用
+	}  
+	img{
+			display: block; 
+			height: auto;
+			max-width: 80%; 
+			margin:2rem auto;
+			-webkit-box-shadow: 2px 20px 40px 10px rgba(0,0,0,.15);
+			box-shadow: 2px 20px 40px 10px rgba(0,0,0,.15);
+			border-radius: .25rem; 
+	}  
+ 	
+	/* //内部图片，需要配合相关插件使用
 	.article-img{  
 		max-width: 80%;
 		margin-left: auto;
@@ -197,8 +207,7 @@
 		align-items: center;
 		box-shadow: 2px 20px 40px 10px rgba(0,0,0,.15);
 		
-
-
+	
 		img{
 			width: 100%; 
 			margin-left: auto;
@@ -209,7 +218,7 @@
 			-ms-transition: -ms-transform 0.2s ease-out;
 			transition: transform 0.2s ease-out;
 			
-
+	
 			&:hover{
 				-moz-transform: scale(1.05);
 				-webkit-transform: scale(1.05);
@@ -217,7 +226,7 @@
 				transform: scale(1.05);
 			}
 		}
-	}  
+	}   */
 	kbd {
 	    display: inline-block;
 	    padding: .25em;
