@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <meta charset="UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" >
+
+  
+  
+    
+    <meta charset="utf-8" name="keywords" content="翻墙,GFW,v2ray," > 
+  
+   
+  <meta charset="utf-8" name="description" content="本篇将介绍三大主流翻墙手段之一 「v2ray」，首先请确认「VPS」是否已经准备妥当，如未准备的人请跳转到翻墙 chapter 1 - 服务器篇，其主要内容如下：
+
+
+「v2ray」简介
+一键脚本搭建「V2Ray」
+
+
+" >
+  
+  
+  
+    
+        <link rel="icon" type="image/png" href="https://yidaofei.com//image/favicon-32x32.png" > 
+    
+  
+  
+  
+  
+  <title>翻墙 chapter 3 - v2ray- 易道非 Blog</title>  
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-126184892-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+
+  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+<body> 
+ 
+
+ 
+<div id="top-element" data-title="到达顶点"></div>
+  
+<header class="site-header fixed-top">
+  <div class="container">
+    <nav id="navigation">  
+      <a href="https://yidaofei.com/" class="site-title">
+        
+        <img title="site-logo" class="site-logo" src="https://yidaofei.com//image/logo.png" >
+           
+         易道非 Blog 
+      </a> 
+      <a aria-label="mobile menu" class="nav-toggle" id="site-nav-toggle"> 
+        <span></span> <span></span> <span></span> 
+      </a>
+      <ul class="menu-left">
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/categories/">Categories</a></li>
+        
+          <li><a href="/tags">Tags</a></li>
+        
+          <li><a href="/wiki">Wiki</a></li>
+        
+          <li><a href="/about">About</a></li>
+        
+
+        
+          <li><a data-remodal-target="searchinput">search</a></li>
+           
+      </ul>
+    </nav>
+  </div>
+</header> 
+
+
+
+<div class="remodal" data-remodal-id="searchinput" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> 
+  <span id="algoliaData" style="display:none;" data-appid="NYC6MHRISW" 
+		data-searchkey="7f131a263a8820645ee9fc65ed97b22f" 
+		data-initindex="github-yidaofeicnBlog"></span>
+
+<div class="search-input-card" >
+    <input type="search" id="search-input" class="search-input" placeholder="Search for titles or URIs..." name="search" autocomplete="off" />
+     <span class="input-search-icon"><i class="fa fa-search"></i></span> 
+</div>
+
+ 
+
+  
+</div>
+
+  
+
+
+
+<section class="main-content-container">
+<article class="article-card">
+	<header class="article-header"> 
+	   <p class="article-title">翻墙 chapter 3 - v2ray</p>
+   		<div class="article-meta">
+			
+			<div><i class="fa fa-calendar" >2019年02月19日</i> </div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://yidaofei.com/categories/%e7%bf%bb%e5%a2%99">翻墙</a> 
+				   
+				</i>  
+			</div> 
+		</div>  
+	</header>  
+	<content class="markdown">
+		<p>本篇将介绍三大主流翻墙手段之一 「v2ray」，首先请确认「VPS」是否已经准备妥当，如未准备的人请跳转到<a href="https://yidaofei.com/post/20190115-circumvention-technology-guild-vps/">翻墙 chapter 1 - 服务器篇</a>，其主要内容如下：</p>
+
+<ol>
+<li>「v2ray」简介</li>
+<li>一键脚本搭建「V2Ray」</li>
+</ol>
+
+<p></p>
+
+<h3 id="v2ray-是什么">V2Ray 是什么？</h3>
+
+<p>Project V 提供了单一的内核和多种界面操作方式。内核（「V2Ray」）用于实际的网络交互、路由等针对网络数据的处理，而外围的用户界面程序提供了方便直接的操作流程，简单来说，「V2Ray」 就是一个<strong>代理软件</strong>，可以用来科学上网学习国外先进科学技术。</p>
+
+<h3 id="v2ray-与-shadowsocks-区别">V2Ray 与 Shadowsocks 区别</h3>
+
+<p>「V2Ray」 是在 「Shadowsocks」 的作者被请喝茶之后出现的一个开源项目，目的就是为了更好的科学上网。相比于ss，「V2Ray」 的定位是<strong>一个平台</strong>，任何开发者都可以在这个平台上利用 「V2Ray」 开发出一个新的代理软件</p>
+
+<p>简单来说，ss的定位比较简单，功能也比较单一，而 「V2Ray」 的功能非常强大，相对的，「V2Ray」 的配置就会复杂很多，喜欢鼓捣的同学可以试试。</p>
+
+<h3 id="v2ray-工作原理">V2Ray 工作原理</h3>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201901/v2ray-working-principle.png" alt="V2Ray 工作原理" /></p>
+
+<p>V2Ray 没有使用常规代理软件的 C/S（即客户端/服务器）结构，它既可以当做服务器也可以作为客户端！</p>
+
+<p>每一个 V2Ray 都是一个节点，入站协议（Inbound） 是关于如何与上一个节点连接的配置，出站协议（Outbound） 是关于如何与下一个节点连接的配置，对于第一个节点，inbound 与浏览器连接；对于最后一个节点，outbound与目标网站连接，两者具体的功能如下：</p>
+
+<ul>
+<li>入站协议负责与客户端（如浏览器）通信：
+
+<ul>
+<li>入站协议通常可以配置用户认证，如 ID 和密码等；</li>
+<li>入站协议收到数据之后，会交给分发器（Dispatcher）进行分发；</li>
+</ul></li>
+<li>出站协议负责将数据发给服务器，如另一台主机上的 V2Ray</li>
+<li>当有多个出站协议时，可以配置路由（Routing）来指定某一类流量由某一个出站协议发出</li>
+</ul>
+
+<h3 id="v2ray-优势">V2Ray 优势</h3>
+
+<ul>
+<li>更完善的协议: V2Ray 使用了新的自行研发的 VMess 协议，改正了 Shadowsocks 一些已有的缺点，更难被墙检测到（不保证可靠性）</li>
+<li>更强大的性能: 网络性能更好，具体数据可以看 V2Ray 官方博客</li>
+<li>更丰富的功能: 以下是部分 V2Ray 的功能
+
+<ul>
+<li>mKCP: KCP 协议在 V2Ray 上的实现，不必另行安装 kcptun</li>
+<li>动态端口：动态改变通信的端口，对抗对长时间大流量端口的限速封锁</li>
+<li>路由功能：可以随意设定指定数据包的流向，去广告、反跟踪都可以</li>
+<li>传出代理：看名字可能不太好理解，其实差不多可以称之为多重代理。类似于 Tor 的代理</li>
+<li>数据包伪装：类似于 Shadowsocks-rss 的混淆，另外对于 mKCP 的数据包也可伪装，伪装常见流量，令识别更困难</li>
+<li>WebSocket 协议：可以 PaaS 平台搭建V2Ray，通过 WebSocket 代理。也可以通过它使用 CDN 中转，抗封锁效果更好</li>
+<li>Mux:多路复用，进一步提高科学上网的并发性能</li>
+</ul></li>
+</ul>
+
+<h3 id="服务器安装-v2ray">服务器安装 V2Ray</h3>
+
+<h4 id="一键脚本搭建-v2ray">一键脚本搭建 V2Ray</h4>
+
+<p>简单粗暴，「V2Ray」官方提供了一个在 Linux 上自动化安装的脚本。脚本会判断之前有没有安装过 「V2Ray」，如果有，则更新（不更新配置），如果没有，则安装。</p>
+
+<pre><code class="language-batch">bash &lt;(curl -L -s https://install.direct/go.sh)
+</code></pre>
+
+<p>此脚本会自动安装以下文件：</p>
+
+<ul>
+<li>/usr/bin/v2ray/v2ray：V2Ray 程序</li>
+<li>/usr/bin/v2ray/v2ctl：V2Ray 工具</li>
+<li>/etc/v2ray/config.json：配置文件</li>
+<li>/usr/bin/v2ray/geoip.dat：IP 数据文件</li>
+<li>/usr/bin/v2ray/geosite.dat：域名数据文件</li>
+</ul>
+
+<p>用这个一键脚本安装好 「V2Ray」 后，可以通过如下命令控制 「V2Ray」 的开启、关闭、重启、查看状态等：</p>
+
+<pre><code class="language-batch">service v2ray start|stop|status|reload|restart|force-reload
+</code></pre>
+
+<p>PS：请注意如有防火墙，请确认相关的端口已经开启，否则会出现无法链接的情况</p>
+
+<h4 id="配置-v2ray">配置 V2Ray</h4>
+
+<ol>
+<li>删除原有配置文件：<code>rm -rf /etc/v2ray/config.json</code></li>
+<li>按照[v2ray-配置文件]创建新的配置内容</li>
+<li>新建配置文件：<code>vi /etc/v2ray/config.json</code>，将第二步骤生成的内容复制进去即可</li>
+<li>启动 「V2Ray」：<code>service v2ray start</code></li>
+</ol>
+
+<h3 id="v2ray-客户端">V2Ray 客户端</h3>
+
+<p>V2Ray 客户端下载地址：</p>
+
+<ul>
+<li>Github Release: github.com/v2ray/v2ray-core</li>
+<li>Github 分流: v2ray.com/download</li>
+<li>Homebrew: github.com/v2ray/homebrew-v2ray</li>
+<li>Arch Linux: packages/community/x86_64/v2ray/</li>
+<li>Snapcraft: snapcraft.io/v2ray-core</li>
+</ul>
+
+<p>如采用官方的请参考「客户端配置」配置相关的配置文件，运行相关程序即可！</p>
+
+<p>建议大家使用第三方客户端配置，具体的第三方客户端列表如下：<a href="https://www.v2ray.com/ui_client/">https://www.v2ray.com/ui_client/</a></p>
+
+<p>我以 Windows 平台下的 「V2RayN」 有2张图说明：</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201901/v2ray-client-v2rayN-config.png" alt="v2rayN 配置 VMESS 协议" /></p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201901/v2ray-client-v2rayN-config-pac.png" alt="v2rayN 选用代理模式" /></p>
+
+<h3 id="v2ray-配置文件">V2Ray 配置文件</h3>
+
+<p>配置工具：<a href="https://www.flyzy2005.com/go/go.php?url=https://intmainreturn0.com/v2ray-config-gen/">V2Ray 配置在线生成器</a></p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201901/v2ray-config-gen-server.png" alt="V2Ray 配置在线生成器" /></p>
+
+<p>以下内容与「Shadowsocks」配置文件差异非常大，请结合「V2Ray 工作原理」与<a href="https://www.v2ray.com/chapter_02/protocols/vmess.html">VMess-协议</a> 理解！</p>
+
+<h4 id="服务器端配置">服务器端配置</h4>
+
+<p>以下配置为「单服务器模式」服务器端的配置，关于「单服务器模式」请访问<a href="https://www.v2ray.com/chapter_00/workflow.html">链接</a></p>
+
+<pre><code class="language-json">{
+    &quot;log&quot;: {
+        &quot;access&quot;: &quot;/var/log/v2ray/access.log&quot;,
+        &quot;error&quot;: &quot;/var/log/v2ray/error.log&quot;,
+        &quot;loglevel&quot;: &quot;warning&quot;
+    },
+    &quot;inbound&quot;: {
+        &quot;port&quot;: 9000,
+        &quot;protocol&quot;: &quot;vmess&quot;,
+        &quot;settings&quot;: {
+            &quot;clients&quot;: [
+                {
+                    &quot;id&quot;: &quot;4a7ec596-3da1-658a-1282-1722cdfe8db0&quot;,
+                    &quot;level&quot;: 1,
+                    &quot;alterId&quot;: 60,
+                    &quot;security&quot;:&quot;auto&quot;
+                }
+            ]
+        }
+    },
+    &quot;outbound&quot;: {
+        &quot;protocol&quot;: &quot;freedom&quot;,
+        &quot;settings&quot;: {}
+    },
+    &quot;inboundDetour&quot;: [
+        {
+            &quot;protocol&quot;: &quot;shadowsocks&quot;,
+            &quot;port&quot;: 8000,
+            &quot;settings&quot;: {
+                &quot;method&quot;: &quot;chacha20-ietf-poly1305&quot;,
+                &quot;password&quot;: &quot;password&quot;,
+                &quot;udp&quot;: true
+            }
+        }
+    ],
+    &quot;outboundDetour&quot;: [
+        {
+            &quot;protocol&quot;: &quot;blackhole&quot;,
+            &quot;settings&quot;: {},
+            &quot;tag&quot;: &quot;blocked&quot;
+        }
+    ],
+    &quot;routing&quot;: {
+        &quot;strategy&quot;: &quot;rules&quot;,
+        &quot;settings&quot;: {
+            &quot;rules&quot;: [
+                {
+                    &quot;type&quot;: &quot;field&quot;,
+                    &quot;ip&quot;: [
+                        &quot;0.0.0.0/8&quot;,
+                        &quot;10.0.0.0/8&quot;,
+                        &quot;100.64.0.0/10&quot;,
+                        &quot;127.0.0.0/8&quot;,
+                        &quot;169.254.0.0/16&quot;,
+                        &quot;172.16.0.0/12&quot;,
+                        &quot;192.0.0.0/24&quot;,
+                        &quot;192.0.2.0/24&quot;,
+                        &quot;192.168.0.0/16&quot;,
+                        &quot;198.18.0.0/15&quot;,
+                        &quot;198.51.100.0/24&quot;,
+                        &quot;203.0.113.0/24&quot;,
+                        &quot;::1/128&quot;,
+                        &quot;fc00::/7&quot;,
+                        &quot;fe80::/10&quot;
+                    ],
+                    &quot;outboundTag&quot;: &quot;blocked&quot;
+                }
+            ]
+        }
+    }
+}
+</code></pre>
+
+<h4 id="客户端配置">客户端配置</h4>
+
+<p>以下配置为「单服务器模式」客户端的配置，关于「单服务器模式」请访问<a href="https://www.v2ray.com/chapter_00/workflow.html">链接</a></p>
+
+<p>其中 <code>inbound</code> 配置侦听本机，而 <code>outbound</code> 则用来配置连接访问的服务器:</p>
+
+<pre><code class="language-json">{
+  &quot;log&quot;: {
+    &quot;loglevel&quot;: &quot;warning&quot;
+  },
+  &quot;inbound&quot;: {
+    &quot;port&quot;: 1080,
+    &quot;listen&quot;: &quot;127.0.0.1&quot;,
+    &quot;protocol&quot;: &quot;socks&quot;,
+    &quot;settings&quot;: {
+      &quot;auth&quot;: &quot;noauth&quot;,
+      &quot;udp&quot;: false,
+      &quot;ip&quot;: &quot;127.0.0.1&quot;
+    }
+  },
+  &quot;outbound&quot;: {
+    &quot;protocol&quot;: &quot;vmess&quot;,
+    &quot;settings&quot;: { 
+      &quot;vnext&quot;: [
+        {
+          &quot;address&quot;: &quot;45.77.221.62&quot;,
+          &quot;port&quot;: 9000,
+          &quot;users&quot;: [
+            {
+              &quot;id&quot;: &quot;4a7ec596-3da1-658a-1282-1722cdfe8db0&quot;,
+              &quot;alterId&quot;: 60,
+              &quot;level&quot;: 1,
+              &quot;security&quot;: &quot;auto&quot;,
+            }
+          ]
+        }
+      ]
+    }, 
+  },
+  &quot;outboundDetour&quot;: [
+    {
+      &quot;protocol&quot;: &quot;freedom&quot;,
+      &quot;tag&quot;: &quot;direct&quot;,
+      &quot;settings&quot;: {}
+    }
+  ],
+  &quot;routing&quot;: {
+    &quot;strategy&quot;: &quot;rules&quot;,
+    &quot;settings&quot;: {
+      &quot;domainStrategy&quot;: &quot;IPOnDemand&quot;,
+      &quot;rules&quot;: [
+        {
+          &quot;type&quot;: &quot;field&quot;,
+          &quot;ip&quot;: [
+            &quot;0.0.0.0/8&quot;,
+            &quot;10.0.0.0/8&quot;,
+            &quot;100.64.0.0/10&quot;,
+            &quot;127.0.0.0/8&quot;,
+            &quot;169.254.0.0/16&quot;,
+            &quot;172.16.0.0/12&quot;,
+            &quot;192.0.0.0/24&quot;,
+            &quot;192.0.2.0/24&quot;,
+            &quot;192.168.0.0/16&quot;,
+            &quot;198.18.0.0/15&quot;,
+            &quot;198.51.100.0/24&quot;,
+            &quot;203.0.113.0/24&quot;,
+            &quot;::1/128&quot;,
+            &quot;fc00::/7&quot;,
+            &quot;fe80::/10&quot;
+          ],
+          &quot;outboundTag&quot;: &quot;direct&quot;
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+
+<h4 id="整体注意点">整体注意点</h4>
+
+<ol>
+<li><p>「VMess」协议依赖于系统时间，请确保使用 「V2Ray」 的系统 UTC 时间误差在 90 秒之内，时区无关</p></li>
+
+<li><p>「VMess」协议的「InboundConfigurationObject」（入站端）的<code>security</code>值有以下4类：</p>
+
+<ul>
+<li>「aes-128-gcm」：推荐在 PC 上使用</li>
+<li>「chacha20-poly1305」：推荐在手机端使用</li>
+<li>「auto」：默认值，自动选择（运行框架为 AMD64、ARM64 或 s390x 时为「aes-128-gcm」加密方式，其他情况则为 「Chacha20-Poly1305 」加密方式）</li>
+<li>「none」：不加密</li>
+</ul></li>
+</ol>
+
+<h4 id="参考资料">参考资料</h4>
+
+<ul>
+<li><a href="https://seanhuai.tech/2017/07/v2ray-express/">v2Ray 常用配置指南</a>：非常具有逻辑性</li>
+<li><a href="https://github.com/KiriKira/vTemplate">vTemplate</a>：V2Ray 模板项目</li>
+</ul>
+
+<h3 id="扩展阅读">扩展阅读</h3>
+
+<ul>
+<li><a href="https://steemit.com/cn/@v2ray/unzev">翻墙协议的三要素</a>：关于协议的平衡选择</li>
+<li><a href="https://steemit.com/cn/@v2ray/47wumq">适合自己的才是最好的</a></li>
+<li><a href="https://www.feiqy.com/v2ray-best-config/">v2ray抗封锁最优配置</a></li>
+<li><a href="https://www.feiqy.com/v2ray-load-balance/">如何配置v2ray负载均衡</a></li>
+</ul>
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Version</th>
+<th align="center">Action</th>
+<th align="center">Time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1.0</td>
+<td align="center">init</td>
+<td align="center">2019-02-19</td>
+</tr>
+</tbody>
+</table>
+			  
+		
+		
+			<div class="article-copyright">
+			  	<ul>
+			  		<li><strong>本文作者：</strong>易道非</li>
+			  		<li><strong>本文链接：</strong>https://yidaofei.com/post/20190115-circumvention-technology-guild-v2ray/</li>
+			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
+			  	</ul>
+			</div>
+		 
+	</content>  
+ 	<hr/>
+ 	
+	<div class="article-footer-meta-between"> 
+		 
+		<div>
+			<i class="fa fa-tags">&nbsp;Tags:
+			
+				<a href="https://yidaofei.com/tags/%e7%bf%bb%e5%a2%99">翻墙</a>
+    		
+				<a href="https://yidaofei.com/tags/%e8%87%aa%e7%94%b1">自由</a>
+    		
+    		</i>   
+		</div> 
+		 
+		<div id="i-share" class="btn btn-default  share-widget">
+		    <i class="fa fa-share-alt"></i>
+		</div> 
+	</div>
+	<hr/>
+	<div class="article-footer-meta-between"> 
+		<div class="refArticle-prev" >
+			
+		</div>
+		 <div class="refArticle-next" >
+		  
+		  	<a href="https://yidaofei.com/post/20190115-circumvention-technology-guild-foreword/">翻墙 chapter 0 - 前言&nbsp;
+		  		<i class="fa fa-angle-double-right"></i>
+		  	</a> 
+		 
+	    </div>
+	</div>  
+</article> 
+</section>
+ 
+
+  
+ 
+<div class="main-content-container " >
+<div class="comment-card"> 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeicn/comment-utterances-blog-yidaofeicn"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+</div>
+</div>
+
+ 
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+	
+	
+	<span id="tocLevel" data-startLevel="" data-endLevel=""></span>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#v2ray-是什么">V2Ray 是什么？</a></li>
+<li><a href="#v2ray-与-shadowsocks-区别">V2Ray 与 Shadowsocks 区别</a></li>
+<li><a href="#v2ray-工作原理">V2Ray 工作原理</a></li>
+<li><a href="#v2ray-优势">V2Ray 优势</a></li>
+<li><a href="#服务器安装-v2ray">服务器安装 V2Ray</a>
+<ul>
+<li><a href="#一键脚本搭建-v2ray">一键脚本搭建 V2Ray</a></li>
+<li><a href="#配置-v2ray">配置 V2Ray</a></li>
+</ul></li>
+<li><a href="#v2ray-客户端">V2Ray 客户端</a></li>
+<li><a href="#v2ray-配置文件">V2Ray 配置文件</a>
+<ul>
+<li><a href="#服务器端配置">服务器端配置</a></li>
+<li><a href="#客户端配置">客户端配置</a></li>
+<li><a href="#整体注意点">整体注意点</a></li>
+<li><a href="#参考资料">参考资料</a></li>
+</ul></li>
+<li><a href="#扩展阅读">扩展阅读</a></li>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
+<footer class="site-footer text-center">
+  <div class="social" > 
+     
+          <a href=" mailto:yidaofeicn@gmail.com "><i class="fa fa-envelope-open-o"></i></span></a>
+      
+       
+          <a href=" https://github.com/yidaofeicn "  ><i class="fa fa-github"></i></span></a>
+      
+    
+      
+                <a href="https://yidaofei.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml" target="_blank"> <i class="fa fa-rss"></i>
+                </a>
+          </div>
+   
+  <div class="copyright"  >
+    Powered by &nbsp;<a href="https://gohugo.io/">Hugo</a>&nbsp;|&nbsp;
+    Theme-<a href="https://github.com/yidaofeicn/hugo-theme-flybird">Flybird</a>  
+  </div>
+  <div class="copyright"> Copyright© 2018 Transparent Thoughts. All rights reserved.</div> 
+  <div class="copyright"> 
+
+      
+    
+      <span id="busuanzi_container">
+        访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+</footer>
+
+ 
+
+<div id="bottom-element" data-title="定位底部"></div>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.css">
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.js"></script>
+ 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.30.0/algoliasearch.jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.32.0/autocomplete.jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/algoliasearch/algolia-autocomplete.css">
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.css"> 
+<script type="text/javascript" src="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.css">
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/prismjs/prism.css">
+
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/prismjs/prism.js"></script>
+
+
+<script type="text/javascript" color="#1D1D1D" opacity='1' zIndex="-2" count="400" src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.3/canvas-nest.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+<span id="isPage" data-isPage="true" style="display: none;"></span>
+
+
+ 
+
+<script type="text/javascript" src="https://yidaofei.com//js/flybird.js"></script> 
+<script type="text/javascript" src="https://yidaofei.com//js/main.js"></script> 
+  
+ 
+</style>
+</body>
+</html>
+
+
+ 
