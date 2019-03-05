@@ -142,8 +142,23 @@
   </url>
   
   <url>
+    <loc>https://yidaofei.com/post/20181226-2019-read-book-plan/</loc>
+    <lastmod>2018-12-26T19:35:36+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yidaofei.com/post/20181223-topbook-what-are-you-doing/</loc>
     <lastmod>2018-12-23T18:58:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/ck/20181203-ckinbox-professional-book/</loc>
+    <lastmod>2018-12-23T10:30:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/ck/20181203-ckinbox-no-professional-book/</loc>
+    <lastmod>2018-12-23T10:30:17+08:00</lastmod>
   </url>
   
   <url>
@@ -507,6 +522,12 @@
   </url>
   
   <url>
+    <loc>https://yidaofei.com/ck/</loc>
+    <lastmod>2018-12-23T10:30:17+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yidaofei.com/drafts/</loc>
     <lastmod>2019-02-18T20:35:57+08:00</lastmod>
     <priority>0</priority>
@@ -556,7 +577,7 @@
   
   <url>
     <loc>https://yidaofei.com/tags/readlater/</loc>
-    <lastmod>2018-11-06T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-23T10:30:17+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -687,6 +708,12 @@
   </url>
   
   <url>
+    <loc>https://yidaofei.com/categories/%E5%B9%B4%E5%BA%A6%E8%AE%A1%E5%88%92/</loc>
+    <lastmod>2018-12-26T19:35:36+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yidaofei.com/tags/%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2018-11-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -767,6 +794,12 @@
   <url>
     <loc>https://yidaofei.com/tags/%E7%9F%A5%E4%B9%8E/</loc>
     <lastmod>2018-11-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/categories/%E7%A2%8E%E7%89%87%E5%8C%96%E7%9F%A5%E8%AF%86-inbox/</loc>
+    <lastmod>2018-12-23T10:30:17+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -905,6 +938,12 @@
   <url>
     <loc>https://yidaofei.com/categories/%E9%87%91%E8%9E%8D%E8%B4%B7%E6%AC%BE/</loc>
     <lastmod>2019-02-18T20:35:57+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yidaofei.com/tags/%E9%98%85%E8%AF%BB/</loc>
+    <lastmod>2018-12-26T19:35:36+08:00</lastmod>
     <priority>0</priority>
   </url>
   
