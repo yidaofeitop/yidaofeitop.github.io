@@ -228,8 +228,8 @@ DAEMON_ARGS=&quot;-u&quot;
 systemctl enable firewalld
 systemctl start firewalld
 #开启端口
-firewall-cmd --permanent --zone=public --add-port=你的端口号/tcp
-firewall-cmd --permanent --zone=public --add-port=你的端口号/udp
+firewall-cmd --permanent --zone=public --add-port=8001-8003/tcp
+firewall-cmd --permanent --zone=public --add-port=8001-8003/udp
 #端口生效
 firewall-cmd --reload
 </code></pre>
