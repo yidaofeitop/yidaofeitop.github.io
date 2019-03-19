@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <meta charset="UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" >
+
+  
+  
+    
+    <meta charset="utf-8" name="keywords" content="组装电脑,CPU," > 
+  
+   
+  <meta charset="utf-8" name="description" content="本文的启由是一位好朋友说到家里需要组装一台计算机。
+
+在后续查询资料的过程中发现有些知识还是蛮有意思的，为了避免后续一旦有此类的需求还要重新查询整理资料所以就写了这篇文章！
+
+PS：我对计算机硬件的认知都是来自网络，所以请大家阅读时参照自身的需求做相应的调整！
+
+" >
+  
+  
+  
+    
+        <link rel="icon" type="image/png" href="https://yidaofei.com//image/favicon-32x32.png" > 
+    
+  
+  
+  
+  
+  <title>Windows教程0-如何组装一台电脑- 易道非 Blog</title>  
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-126184892-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+
+  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://yidaofei.com//css/style.css">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+<body> 
+ 
+
+ 
+<div id="top-element" data-title="到达顶点"></div>
+  
+<header class="site-header fixed-top">
+  <div class="container">
+    <nav id="navigation">  
+      <a href="https://yidaofei.com/" class="site-title">
+        
+        <img title="site-logo" class="site-logo" src="https://yidaofei.com//image/logo.png" >
+           
+         易道非 Blog 
+      </a> 
+      <a aria-label="mobile menu" class="nav-toggle" id="site-nav-toggle"> 
+        <span></span> <span></span> <span></span> 
+      </a>
+      <ul class="menu-left">
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/categories/">Categories</a></li>
+        
+          <li><a href="/tags">Tags</a></li>
+        
+          <li><a href="/wiki">Wiki</a></li>
+        
+          <li><a href="/about">About</a></li>
+        
+
+        
+          <li><a data-remodal-target="searchinput">search</a></li>
+           
+      </ul>
+    </nav>
+  </div>
+</header> 
+
+
+
+<div class="remodal" data-remodal-id="searchinput" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> 
+  <span id="algoliaData" style="display:none;" data-appid="NYC6MHRISW" 
+		data-searchkey="7f131a263a8820645ee9fc65ed97b22f" 
+		data-initindex="github-yidaofeicnBlog"></span>
+
+<div class="search-input-card" >
+    <input type="search" id="search-input" class="search-input" placeholder="Search for titles or URIs..." name="search" autocomplete="off" />
+     <span class="input-search-icon"><i class="fa fa-search"></i></span> 
+</div>
+
+ 
+
+  
+</div>
+
+  
+
+
+
+<section class="main-content-container">
+<article class="article-card">
+	<header class="article-header"> 
+	   <p class="article-title">Windows教程0-如何组装一台电脑</p>
+   		<div class="article-meta">
+			
+			<div><i class="fa fa-calendar" >2019年03月11日</i> </div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://yidaofei.com/categories/windows-%e6%95%99%e7%a8%8b">Windows 教程</a> 
+				   
+				</i>  
+			</div> 
+		</div>  
+	</header>  
+	<content class="markdown">
+		<p>本文的启由是一位好朋友说到家里需要组装一台计算机。</p>
+
+<p>在后续查询资料的过程中发现有些知识还是蛮有意思的，为了避免后续一旦有此类的需求还要重新查询整理资料所以就写了这篇文章！</p>
+
+<p>PS：我对计算机硬件的认知都是来自网络，所以请大家阅读时参照自身的需求做相应的调整！</p>
+
+<p></p>
+
+<h3 id="配置清单">配置清单</h3>
+
+<p>首先我先公布一下我给朋友做的配置清单，因为我知道很多人是「拿来主义者」，是不想或者不需要去研究这里面的由来的 😄！</p>
+
+<ul>
+<li>CPU 与主板：「锐龙2600+微星B450M MORTAR迫击炮套装」<a href="https://detail.tmall.com/item.htm?spm=a230r.1.14.6.21751fe7alNOIO&amp;id=534077210610&amp;cm_id=140105335569ed55e27b&amp;abbucket=8&amp;skuId=3901346740387">淘宝价 1899</a></li>
+<li>显卡：微星GTX1060 Gaming 6G <a href="https://detail.tmall.com/item.htm?spm=a230r.1.14.6.1db365f7kyqSz1&amp;id=581838246637&amp;cm_id=140105335569ed55e27b&amp;abbucket=8&amp;skuId=4059770438132">淘宝价1599</a></li>
+<li>内存：海盗船ddr4 8G 3200 <a href="https://detail.tmall.com/item.htm?spm=a230r.1.14.20.1b501f6fBISyXO&amp;id=532945162899&amp;ns=1&amp;abbucket=8&amp;skuId=3905268306821">淘宝价 369</a></li>
+<li>硬盘：三星 970EVO <a href="https://item.jd.com/7448051.html?dist=jd">京东价 499</a></li>
+<li>散热器：大镰刀赤兔马STB120 <a href="https://detail.tmall.com/item.htm?spm=a230r.1.14.1.4c0b20680aZW3I&amp;id=565624646603&amp;cm_id=140105335569ed55e27b&amp;abbucket=8&amp;skuId=4151915866825">淘宝价 169</a></li>
+<li>电源：先马金牌500W <a href="https://detail.tmall.com/item.htm?spm=a220m.1000858.1000725.1.a1d71f3ffR3FSC&amp;id=537516178153&amp;skuId=3870962249918&amp;areaId=440300&amp;standard=1&amp;user_id=1577744489&amp;cat_id=2&amp;is_b=1&amp;rn=b6cd3eac46a6ac342784d0188925a104">淘宝价</a></li>
+<li>机箱：Tt起航者S5  <a href="https://detail.tmall.com/item.htm?spm=a230r.1.14.53.3ab14330SzGW4P&amp;id=561161312542&amp;ns=1&amp;abbucket=8&amp;skuId=3801936870935">淘宝价 139</a></li>
+<li>显示屏：</li>
+</ul>
+
+<p>后续考虑到无游戏要求，将CPU与主板配置修改如下，其他基本不变：</p>
+
+<p>CPU 与主板： I5 8400 盒装 搭 微星 B360M <a href="https://detail.tmall.com/item.htm?spm=a230r.1.14.20.493ca134AwVJ8I&amp;id=560700727074&amp;ns=1&amp;abbucket=8&amp;skuId=3814400301035">淘宝价1999</a></p>
+
+<h3 id="intel-vs-amd">Intel VS AMD</h3>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201903/intel-vs-amd.jpg" alt="" /></p>
+
+<p>本部分主要梳理自<a href="https://www.zhihu.com/question/41118854/answer/160979552" title="梳理 CPU 产品系列整体框架">知乎-黎小白-如何从实用角度选购CPU？</a>以及<a href="https://zhuanlan.zhihu.com/p/44571636">【AMD的CPU真的那么不堪吗？非要intel?】</a>，如想要看视频的朋友可以访问<a href="https://www.bilibili.com/video/av7813684" title="梳理两者发展历史">哔哩哔哩-AMD兴衰异闻录第一期
+</a>。</p>
+
+<p>我们要比较事务必须抓住事务的主要矛盾与次要矛盾，否则「眉毛胡子一把抓会让你手忙脚乱，事倍功半 😢」，所以我们首先按照以下的方式梳理：</p>
+
+<ol>
+<li>CPU 主要负责哪些事务</li>
+<li>Intel、AMD发展历史</li>
+<li>当前主流的 CPU 对比</li>
+</ol>
+
+<h4 id="cpu-究竟是干什么用的">CPU 究竟是干什么用的</h4>
+
+<p>按照 <a href="https://software.intel.com/zh-cn/articles/book-processor-architecture_cpu_function_and_composition">Intel-CPU 的功能和组成</a>的定义 「CPU」 主要有以下功能：</p>
+
+<ul>
+<li>程序控制</li>
+<li>操作控制</li>
+<li>时间控制</li>
+<li>数据加工</li>
+</ul>
+
+<p>如果更加深入一层的话——<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8">中央处理器操作原理-维基百科</a>就会知道「CPU」实质上就是<strong>负责解析相关的指令与计算相关的数据</strong>，
+所以选择 「CPU」 主要考虑运算能力！</p>
+
+<h4 id="intel-与-amd-发展历史">Intel 与 AMD 发展历史</h4>
+
+<p>本段主要梳理两者的发展史，如果想了解历史代表性 CPU请访问<a href="http://tieba.baidu.com/p/4475911753?pn=1">【绝世经典】英特尔和AMD的20年（1995~2016）之经典</a></p>
+
+<ul>
+<li><p>1981-1985年  蜜月期</p>
+
+<p>为了赢得 IBM 订单 ，Intel 开放技术，全面授权 AMD 生产「x86系列处理器」，而 AMD 则放弃了自己的竞争产品，成为 Intel 后备供应商。</p></li>
+
+<li><p>1985-2001年 拉锯战</p>
+
+<p>在此阶段以奔腾为代表的Intel和以速龙为代表的AMD在这期间几乎是你超我一点，我超你一点，双方几乎拉不开很明显的差距！</p>
+
+<p>另外值得注意的一点时我们现在的CPU接口的分流就是在此开始——Intel 改用 Slot1 接口，而 AMD 则在原接口之上推出了 Socket7 接口，并提出了 Super7 架构！</p></li>
+
+<li><p>2004-2006年：AMD逆转，最辉煌的时期</p>
+
+<p>2003年8月，AMD发布了<strong>世界上第一款64位民用处理器 Athlon 64</strong>。<strong>X86拓展指令集</strong>正式成为CPU业界标准。
+AMD在长达30多年的技术竞争史上首次领先对手，打破了以往技术跟随与模仿者的形象，用64位处理器证明了自己的实力，一场全面的反击战打响了！</p>
+
+<p>在2005年5月26日，Intel抢先AMD发布了桌面上第一款双核CPU，Pentium D，虽然内部是由两颗Pentium 4共享FSB组成、后来还被证实为「高发热、低性能」，但也是历史上<strong>第一款双核</strong>。约1周后，AMD拿出了自家的双核Athlon 64 X2。（在这段时间AMD还挑起了著名的“真假双核”的言论）……</p></li>
+
+<li><p>2006-2008年：酷睿诞生，Intel全面反击</p>
+
+<p>从05年开始，Intel就制定了一套“钟摆计划”（Tick-Tock战略），每一个Tick-Tock代表着2年一次的工艺制程进步！</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201903/tick-tock.jpg" alt="" /></p>
+
+<p>2006年7月，Intel新一代处理器Core 2横空出世（酷睿2，俗称扣肉），使用65纳米制程工艺，英特尔声称它会有40%的效能增长，同时减少40%的功耗。这一重磅产品的发布，让AMD的Athlon 64 X2瞬间优势全无，性能宝座重新落入Intel手上（直到今天）。</p>
+
+<p>高端双核市场由Intel重新主导，新的产品定价，让Athlon 64 X2一夜暴降千元以上……
+AMD沿用了3年、最成功、最耀眼的FX品牌，开始淡出人们的视野。</p>
+
+<p>打败了AMD的Athlon 64 X2之后，Intel年底又发布了首款四核CPU，Core 2 Quad，加之 AMD 推出的羿龙存在问题，Intel 重新树立在技术层面的绝对领先位置</p></li>
+
+<li><p>2009-2017年：避重就轻，AMD改变路线</p>
+
+<p>自从酷睿2上市之后，Intel在高端市场一扫千军，无所匹敌，并严格依照Tick-Tock路线实现工艺架构更新，不给对手喘息的机会。如此一来，AMD只能调整战略，以多核心、性价比、整合平台等优势闯出一片天地。</p>
+
+<ul>
+<li>针对Intel的奔腾Dual-Core系列发布新一代的Phenom II和Athlon II，利用多核优势与之周旋</li>
+<li>针对Intel在GPU的弱势，2011年，AMD推出APU与「推土机」</li>
+<li>……</li>
+</ul></li>
+
+<li><p>2017年 AMD 翻身仗
+2017年，AMD在沿用了6年的推土机架构后，终于研制出了全新的架构，这也就是大名鼎鼎的Ryzne锐龙处理器！</p>
+
+<p>2017年2月，Ryzen正式发布，第一代Ryzen的单核心性能比Intel弱一些，其游戏性能不如Intel，加上内存控制器的劣势，很多内存点不亮，而且高频内存频率上不去，所以市场反响并不是很好</p>
+
+<p>2018年上半旬，Ryzen第二代发布，第二代解决了第一代挑内存的问题，到目前为止，只要不是偏门到型号都不好找的内存，基本上不可能说点不亮，不光内存兼容性问题解决了，第二代的Ryzen单核心性能也有了大幅度的提升，除此之外，内存控制器也允许内存到3200频率了，目前Ryzen同对位的CPU，已经完全可以和intel的Core正面五五开了。</p></li>
+</ul>
+
+<h4 id="intel-与-amd-相关系列">Intel 与 AMD 相关系列</h4>
+
+<p>Intel 与 AMD 发展至今大致有如下的系列：</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201903/intel-amd-cpu-kinds.png" alt="" /></p>
+
+<h4 id="选择方案">选择方案</h4>
+
+<ul>
+<li>文书工作，家庭影音，网上冲浪：AMD A8（核显）、Intel Pentium、Intel Celeron、AMD Athlon</li>
+<li>网络游戏，低端单机，各类初级编程、图形处理软件：Intel Core i3、AMD A10（核显）、Ryzen3（无核显）</li>
+<li>高端单机，各类高级编程、图形处理软件，跑分狂人DIY发烧友土豪：Intel Core i7、Intel Xeon E3、Intel Core i5、Ryzen 5（Ryzen 7）、Ryzen 7（无核显）</li>
+</ul>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201903/2017-recommend-cpu.jpg" alt="2017年第二季度CPU" /></p>
+
+<p>具体细节请阅读：<a href="https://www.zhihu.com/question/58950895/answer/160512682">知乎-黎小白-2017年第二季度有哪些值得推荐的CPU？</a></p>
+
+<h3 id="显卡">显卡</h3>
+
+<p>敲定 CPU 之后关键的一步就是敲定显卡与主板，本段主要是理顺显卡的相关要点！</p>
+
+<p>显卡相比CPU的主要功能在于构图、着色以及光栅化，说的直白一点就是如何渲染出相关的图形以及色彩！</p>
+
+<p>制造显卡的两大巨头是 AMD 和 NVIDIA 公司，两者相比较而言后者要比前者好一点。两家公司整体负责的GPU核心部件，其他显卡厂家负责将显卡
+生产出来所以我们才会看到很多品牌的显卡如迪兰……，关于这部分可以阅读<a href="https://zhuanlan.zhihu.com/p/42960555">为什么芯片型号相同的显卡，不同品牌会有那么大的差价</a>以及<a href="https://zhuanlan.zhihu.com/p/36579672">主流英伟达显卡品牌推荐与简略分析</a></p>
+
+<p>NVIDIA 有 GT 和 GTX 系列显卡，GT 是入门级别，GTX 定位更高。后缀有 M 和 TI，M 是移动版本，用于笔记本，性能有缩水；TI 比不带 TI 的性能略强。中间有三位数字，比如TX980，第一位是代数，越高越新，第二位是性能，同代显卡比较的话越高性能越强。第三位一般是0没有意义，也有5，比如 965M 的性能介于 970M 和 960M 之间。</p>
+
+<p>AMD的显卡有HD系列，R系列，RX系列。HD系列停产有一段时间了，不多说。R系列有R9、R7、R5，定位R9&gt;R7&gt;R5。后面有三位数字，意义类似于GTX系列。后缀有X，性能会有加强。最新的是RX系列，后面的三位数字还是跟上面一样。</p>
+
+<p>关于如何通过型号判定显卡优劣请进一步访问<a href="https://www.zhihu.com/question/34970298">如何通过显卡名字判断显卡的好坏？</a></p>
+
+<p>当然还有以实践的方式挑选符合自己需求显卡的方法<a href="https://www.zhihu.com/question/20764497/answer/619420418">知乎-Shieieiki-显卡性能哪个指标最重要？如何选购显卡？</a>(网吧+游戏测试视频)</p>
+
+<h3 id="主板">主板</h3>
+
+<p>本文摘录自<a href="https://zhuanlan.zhihu.com/p/42709927">【小白必看】如何选择合适的电脑主板</a>简化而成，相关的步骤为：</p>
+
+<h4 id="选择-cpu-对应的主板芯片组">选择 CPU 对应的主板芯片组</h4>
+
+<p><strong>英特尔平台芯片组</strong></p>
+
+<p>支持英特尔8代CPU的是300系芯片组的主板，档次从低到高分别为：H310、B360、H370、Z370。</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201903/intel-motherboard.jpg" alt="" /></p>
+
+<ul>
+<li>H310：入门级，价格最低，适合家用办公。建议搭配奔腾G5400\G5500这类CPU使用。</li>
+<li>B360：主流级，价格适中，适合后缀不带k的CPU。建议搭配酷睿i3-8100\i5-8400\i5-8500\i5-8600\i7-8700等。</li>
+<li>H370：中高端，价格稍贵，建议搭配酷睿i7-8700使用。</li>
+<li>Z370：高端级，价格贵，能超频，支持4000+高频内存，适合超频玩家。建议搭配i3-8350k/i5-8600k/i7-8700k等后缀带K的CPU。（注：英特尔后缀带k的CPU是可以超频的CPU）</li>
+</ul>
+
+<p><strong>AMD平台芯片组</strong></p>
+
+<p>AMD支持锐龙CPU的主板档次从低到高分别为：A320、B350、X370、X470、X399。</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201903/amd-motherboard.jpg" alt="" /></p>
+
+<ul>
+<li>A320：入门级，价格最低，适合家用办公，不能超频。适合锐龙R3系列CPU</li>
+<li>B350：主流级，价格适中，适合大部分用户，可以超频。适合锐龙R3、R5、R7系列CPU。</li>
+<li>X370\X470：高端级，价格较高，有更完善的超频设计和更多的高性能接口，可以组双显卡。两个放到一起说是因为X470是代替X370的新款，但两者区别不大，适合R7系列后缀带X的CPU。</li>
+<li>X399：高端级，价格昂贵，面向专业用户，仅支持AMD TR4接口的 锐龙 Threadripper（线程撕裂者）CPU。</li>
+</ul>
+
+<h4 id="选择主板版型">选择主板版型</h4>
+
+<p><strong>要根据机箱的大小选择合适的板型。最常见的是ATX大板和M-ATX小板</strong>，大小板性能几乎没有差距，仅扩展性有差别。</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201903/atx-motherboard.jpg" alt="" /></p>
+
+<ul>
+<li>E-ATX型主板是高性能主板，芯片组多为X299、X399，适用于AMD的线程撕裂者、英特尔的i9-7920X等CPU，价格昂贵，很少见。</li>
+<li>ATX型主板俗称「大板」，形状类似长方形，这类主板由于更大，所以有更多的插槽和接口，<strong>可扩展性较高</strong>。比如装双显卡、视频采集卡、PCI网卡等。</li>
+<li>M-ATX型主板俗称「小板」，形状接近正方形，这类主板该有的接口都有，不过PCI-E插槽数量较少，<strong>可扩展性较小</strong>。但价格比大板便宜，预算不多的用户可以选择。</li>
+<li>mini-ITX型主板体型更小，这类主板的接口仅属于刚刚够用，几乎没有扩展性，这种主板<strong>仅适用于桌面小机箱</strong>，较少见。</li>
+</ul>
+
+<h4 id="选择主板品牌">选择主板品牌</h4>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201903/motherborad-brand.jpg" alt="" /></p>
+
+<p>口诀：高端主板买华硕；中端主板买技嘉、华擎；<strong>AMD主板买微星</strong>；入门主板买映泰、七彩虹</p>
+
+<p>其详细的特点如下：</p>
+
+<ul>
+<li>华硕：三大板厂之首，主板bios界面做的简单易用。最出名的就是高端的ROG玩家国度系列主板，做工、用料都是顶级，超频玩家首选。华硕的中低端主板价格较贵，竞争力不强，所以买华硕建议买高端的主板。</li>
+<li>微星：三大板厂之一，微星AMD芯片主板做的很好，比较出名的是迫击炮系列主板和战斧导弹系列主板，是AMD玩家首选。</li>
+<li>技嘉：三大板厂之一，技嘉主板用料扎实，比较出名的是AORUS“雕牌”系列主板，用料奢华，设计感强。</li>
+<li>华擎：华擎被称为妖板，各种奇怪的主板比较多。华擎主板最大的特点是供电模块堆料比较夸张，比较出名的是z370 pro4系列和太极系列主板，性价比很高。</li>
+<li>映泰：映泰主板价格便宜，面向中低端，做工用料多不错，稳定性很好，适合家用。</li>
+<li>七彩虹：七彩虹主板价格便宜，没什么可圈可点的地方，稳定性很好，适合家用。</li>
+</ul>
+
+<h3 id="内存">内存</h3>
+
+<p>类比CPU我们按照以下方式来全方位的理解内存：</p>
+
+<ul>
+<li>什么是内存</li>
+<li>内存核心部件和参数</li>
+<li>如何选购内存</li>
+</ul>
+
+<h4 id="什么是内存">什么是内存</h4>
+
+<p>内存条是一种比固态硬盘更先进的存储技术，它的读写速度比硬盘快上十倍有余，以现在主流的DDR4代内存条为例，
+它的读写速度可以达到7000MB/s以上，而传统的机械硬盘最高也就不超过300MB/s，即使是目前
+最厉害的M.2 NVME固态硬盘也就3000MB/s的样子</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201903/ram.jpg" alt="" /></p>
+
+<p>其主要的作用是在「高速运转的CPU」与「低速运转的硬盘」之间搭建一个缓冲区，可以类比京东（机械硬盘）&mdash;&gt;本地仓库（内存）&mdash;&gt;卖家（CPU），
+所以一旦电脑运转速度慢我们一般都会建议换「固态硬盘/加内存」。</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201903/store-ram-cpu.jpg" alt="" /></p>
+
+<h4 id="内存核心部件和参数">内存核心部件和参数</h4>
+
+<p>整个内存的生产流程是：颗粒厂商&mdash;&gt;模具/贴牌厂商，相关的品牌厂商如下：</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">类型</th>
+<th align="left">品牌厂商</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">颗粒厂商</td>
+<td align="left">三星、海力士、镁光、南亚（台湾）、梦奇达（德国）、茂德（台湾）、华邦（台湾）</td>
+</tr>
+
+<tr>
+<td align="left">模具/贴牌厂商</td>
+<td align="left">金士顿，现代，黑金刚，三星，威刚，芝奇，富豪，金邦，海盗船，宇瞻，金泰克等等</td>
+</tr>
+</tbody>
+</table>
+
+<p>关于内存的核心参数主要是：</p>
+
+<ul>
+<li>内存容量：一般而言越大越好，windows10一般建议配置8G以上</li>
+<li>模具类型：DDR3与DDR4，此主要是与主板配合</li>
+<li>频率：我们经常看到的2133MHz、2400MHz、3200MHz就是内存条的频率，内存条上的频率可以理解为运输货车的载重量，频率越大，货车一次的载能运载的数据量也就越多</li>
+<li>时序：一般用CL表示，用官方的话说就是列寻址所需的时钟周期，时序就是我们这个仓库的物流人员找到货物，并把货物装上车的时间，所以如果是相同频率的内存条，时序CL值是越小越好</li>
+</ul>
+
+<p>关于双通道请访问<a href="https://www.zhihu.com/question/53411741/answer/184625090?utm_source=wechat_session&amp;utm_medium=social#showWechatShareTip">容量不同的两条内存可否组成双通道？</a></p>
+
+<h3 id="硬盘">硬盘</h3>
+
+<p>硬盘的选择请访问<a href="https://zhuanlan.zhihu.com/p/40555331" title="了解固态硬盘接口、颗粒分类、固件分类、品牌">小白SSD固态硬盘选购指南</a>以及
+<a href="https://zhuanlan.zhihu.com/p/54607364">固态硬盘怎么选（视频版）</a></p>
+
+<p>其主要内容如下：</p>
+
+<ul>
+<li>固态硬盘接口：SATA接口以及M2接口，</li>
+<li>读写速度：4K IPOS值越高越好</li>
+<li>质量-颗粒与主控
+
+<ul>
+<li>颗粒：颗粒是存储数据的东西，大致分为三种类型，SLC&gt;MLC&gt;TLC</li>
+<li>主控：主控相当于固态硬盘的大脑，影响SSD的各方面数据，目前较好的主控是马牌Marvell和三星，东芝、慧荣、群联主控次之</li>
+</ul></li>
+</ul>
+
+<p>文章推荐的主要的品牌与型号如下：</p>
+
+<p><img src="https://piwigo.yidaofei.com/galleries/201903/store-select-menu.jpg" alt="" /></p>
+
+<h3 id="散热器">散热器</h3>
+
+<p>关于此部分可以访问<a href="https://zhuanlan.zhihu.com/p/52868061">机箱尺寸和风道的知识</a>以及<a href="https://zhuanlan.zhihu.com/p/42130677">CPU散热器选购指南</a></p>
+
+<h3 id="电源">电源</h3>
+
+<p>以上配件确定后就可以仅剩下电源部分，确定电源部分的步骤如下：</p>
+
+<ol>
+<li>确定整体功率：电脑中耗电最大的就是显卡和CPU了，占电脑总耗电的90%左右，因此我们只需要把显卡和CPU的功率加起来，再加上100瓦左右的余量给风扇、主板、硬盘等就足够了。</li>
+<li>选购电源
+
+<ul>
+<li>80PLUS认证：80puls认证是一个电源转换率标准，转换率越高也就越省电，虽然不能直接作为判断电源好坏的标准，但有金牌或白金牌认证的都不会太差，<strong>可以作为参考</strong></li>
+<li>电源方案：主流方案为「LLC半桥 + DC-DC」</li>
+<li>看电源的电容：日系电容＞台系电容＞国产电容</li>
+<li>看质保时间</li>
+</ul></li>
+<li>看电源的规格和尺寸
+
+<ul>
+<li>非模组：最便宜，但线材都是固定的，装完电脑后会多出来很多用不到的线头，整理比较麻烦。</li>
+<li>半模组：稍贵，必须用到的线材是固定的，而一些扩展性的线头可以拆掉，整理起来很简单。</li>
+<li>全模组：最贵，所有的线材都可以拆掉，不仅方便理线，而且简洁美观。</li>
+</ul></li>
+</ol>
+
+<p>具体内容请访问<a href="https://zhuanlan.zhihu.com/p/41583402">如何选购一款优质的电脑电源</a></p>
+
+<h3 id="扩展阅读">扩展阅读</h3>
+
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/48132996">2千元-2万元 我准备这么搭配我的新电脑</a>：组装配置案例</li>
+<li><a href="https://zhuanlan.zhihu.com/p/39097471">电脑配件网购选购平台指南</a></li>
+</ul>
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Version</th>
+<th align="center">Action</th>
+<th align="center">Time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1.0</td>
+<td align="center">init</td>
+<td align="center">2019-03-11</td>
+</tr>
+</tbody>
+</table>
+			  
+		
+		
+			<div class="article-copyright">
+			  	<ul>
+			  		<li><strong>本文作者：</strong>易道非</li>
+			  		<li><strong>本文链接：</strong>https://yidaofei.com/drafts/20190311-software-skills-how-to-build-up-computer/</li>
+			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
+			  	</ul>
+			</div>
+		 
+	</content>  
+ 	<hr/>
+ 	
+	<div class="article-footer-meta-between"> 
+		 
+		<div>
+			<i class="fa fa-tags">&nbsp;Tags:
+			
+				<a href="https://yidaofei.com/tags/%e8%b4%ad%e7%89%a9%e7%8b%82">购物狂</a>
+    		
+    		</i>   
+		</div> 
+		 
+		<div id="i-share" class="btn btn-default  share-widget">
+		    <i class="fa fa-share-alt"></i>
+		</div> 
+	</div>
+	<hr/>
+	<div class="article-footer-meta-between"> 
+		<div class="refArticle-prev" >
+			
+		</div>
+		 <div class="refArticle-next" >
+		  
+		  	<a href="https://yidaofei.com/drafts/20190218-financial-loans-real-estate-mortgage-50-word/">金融贷款：房产抵押贷款基础名词解释&nbsp;
+		  		<i class="fa fa-angle-double-right"></i>
+		  	</a> 
+		 
+	    </div>
+	</div>  
+</article> 
+</section>
+ 
+
+  
+ 
+<div class="main-content-container " >
+<div class="comment-card"> 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeicn/comment-utterances-blog-yidaofeicn"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+</div>
+</div>
+
+ 
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+	
+	
+	<span id="tocLevel" data-startLevel="" data-endLevel=""></span>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#配置清单">配置清单</a></li>
+<li><a href="#intel-vs-amd">Intel VS AMD</a>
+<ul>
+<li><a href="#cpu-究竟是干什么用的">CPU 究竟是干什么用的</a></li>
+<li><a href="#intel-与-amd-发展历史">Intel 与 AMD 发展历史</a></li>
+<li><a href="#intel-与-amd-相关系列">Intel 与 AMD 相关系列</a></li>
+<li><a href="#选择方案">选择方案</a></li>
+</ul></li>
+<li><a href="#显卡">显卡</a></li>
+<li><a href="#主板">主板</a>
+<ul>
+<li><a href="#选择-cpu-对应的主板芯片组">选择 CPU 对应的主板芯片组</a></li>
+<li><a href="#选择主板版型">选择主板版型</a></li>
+<li><a href="#选择主板品牌">选择主板品牌</a></li>
+</ul></li>
+<li><a href="#内存">内存</a>
+<ul>
+<li><a href="#什么是内存">什么是内存</a></li>
+<li><a href="#内存核心部件和参数">内存核心部件和参数</a></li>
+</ul></li>
+<li><a href="#硬盘">硬盘</a></li>
+<li><a href="#散热器">散热器</a></li>
+<li><a href="#电源">电源</a></li>
+<li><a href="#扩展阅读">扩展阅读</a></li>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
+<footer class="site-footer text-center">
+  <div class="social" > 
+     
+          <a href=" mailto:yidaofeicn@gmail.com "><i class="fa fa-envelope-open-o"></i></span></a>
+      
+       
+          <a href=" https://github.com/yidaofeicn "  ><i class="fa fa-github"></i></span></a>
+      
+    
+      
+                <a href="https://yidaofei.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml" target="_blank"> <i class="fa fa-rss"></i>
+                </a>
+          </div>
+   
+  <div class="copyright"  >
+    Powered by &nbsp;<a href="https://gohugo.io/">Hugo</a>&nbsp;|&nbsp;
+    Theme-<a href="https://github.com/yidaofeicn/hugo-theme-flybird">Flybird</a>  
+  </div>
+  <div class="copyright"> Copyright© 2018 Transparent Thoughts. All rights reserved.</div> 
+  <div class="copyright"> 
+
+      
+    
+      <span id="busuanzi_container">
+        访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+</footer>
+
+ 
+
+<div id="bottom-element" data-title="定位底部"></div>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.css">
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.js"></script>
+ 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.30.0/algoliasearch.jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.32.0/autocomplete.jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/algoliasearch/algolia-autocomplete.css">
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.css"> 
+<script type="text/javascript" src="https://yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.css">
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://yidaofei.com//thirdParty/prismjs/prism.css">
+
+<script type="text/javascript" src="https://yidaofei.com//thirdParty/prismjs/prism.js"></script>
+
+
+<script type="text/javascript" color="#1D1D1D" opacity='1' zIndex="-2" count="400" src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.3/canvas-nest.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+<span id="isPage" data-isPage="true" style="display: none;"></span>
+
+
+ 
+
+<script type="text/javascript" src="https://yidaofei.com//js/flybird.js"></script> 
+<script type="text/javascript" src="https://yidaofei.com//js/main.js"></script> 
+  
+ 
+</style>
+</body>
+</html>
+
+
+ 
