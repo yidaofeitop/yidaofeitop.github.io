@@ -183,6 +183,36 @@ fastboot flash recovery *映像檔路徑*
 <a href="https://www.jianshu.com/p/c348d419023b">小米5splus刷入TWRP recovery以及MIUI去广告</a><br />
 <a href="https://twrp.me/xiaomi/xiaomimi5s.html">TWRP for Xiaomi Mi 5s</a></p>
 
+<h3 id="问题列表">问题列表</h3>
+
+<h4 id="关于-google-账号问题">关于 Google 账号问题</h4>
+
+<p>国际版刷入之后可能会出现以下2个问题：</p>
+
+<ul>
+<li>卡检查更新</li>
+<li>卡谷歌账户验证</li>
+</ul>
+
+<p>前者的解决方式是：</p>
+
+<ol>
+<li>到检查更新那一步时，按一下返回键，然后长按电源键，在电源菜单中，选择飞行模式，然后就可以跳过检查更新了。</li>
+</ol>
+
+<p>后者的解决方式是：</p>
+
+<ol>
+<li><strong>在国际版刷入其它系统前</strong>，一定要先退出谷歌账户，退出方法为设置—&gt;同步—&gt;谷歌账户—&gt;移除账户</li>
+<li>WIFI 接入可翻墙的网络，具体的方式如下：
+
+<ul>
+<li>获取电脑或路由的IP地址（电脑可用<code>ipconfig</code>获取）</li>
+<li>手机设置WIFI
+<img src="https://piwigo.yidaofei.com/galleries/201904/mobile-wifi-shadowsocks-config.jpg" alt="" /></li>
+</ul></li>
+</ol>
+
 <h3 id="miui-其他版本">MIUI 其他版本</h3>
 
 <p>俄罗斯版本：与国内版本同步，内嵌应用只有小米视频、小米音乐、浏览器等其他官方的一些应用，Google 只有 Google Play<br />
@@ -195,6 +225,10 @@ fastboot flash recovery *映像檔路徑*
 
 <p>英国版本：与俄罗斯类似<br />
 官方网站地址：<a href="https://miuipolska.pl">https://miuipolska.pl</a></p>
+
+<h3 id="参考链接">参考链接</h3>
+
+<p>[1]<a href="http://www.miui.com/thread-15634724-1-1.html">MIUI国际版卡检查更新和Google账户验证的解决办法</a></p>
 
 <h3 id="版本信息">版本信息</h3>
 
@@ -210,6 +244,11 @@ fastboot flash recovery *映像檔路徑*
 <tr>
 <td align="left">2018年10月13日</td>
 <td align="left">初创</td>
+</tr>
+
+<tr>
+<td align="left">2019年04月11日</td>
+<td align="left">补充：卡更新与卡Google账号的解决方案</td>
 </tr>
 </tbody>
 </table>
@@ -308,7 +347,12 @@ fastboot flash recovery *映像檔路徑*
 <li>
 <ul>
 <li><a href="#twrp-刷入第三方-rom">TWRP 刷入第三方 ROM</a></li>
+<li><a href="#问题列表">问题列表</a>
+<ul>
+<li><a href="#关于-google-账号问题">关于 Google 账号问题</a></li>
+</ul></li>
 <li><a href="#miui-其他版本">MIUI 其他版本</a></li>
+<li><a href="#参考链接">参考链接</a></li>
 <li><a href="#版本信息">版本信息</a></li>
 </ul></li>
 </ul></li>
