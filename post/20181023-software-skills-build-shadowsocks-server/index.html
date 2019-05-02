@@ -150,7 +150,7 @@ if (!doNotTrack) {
 
 <p>MyService-&gt;服务器实例-&gt;kiwivm Control Panel</p>
 
-<p><img src="https://piwigo.yidaofei.com/galleries/201809/bandwagon-kiwivm-control-panel.jpg" alt="" /></p>
+<p><img src="http://image.yidaofei.com/galleries/201809/bandwagon-kiwivm-control-panel.jpg" alt="" /></p>
 
 <h4 id="下载-xshell">下载 Xshell</h4>
 
@@ -172,6 +172,12 @@ yum install epel-release
 yum install python-pip
 yum install python-setuptools m2crypto supervisor
 pip install shadowsocks
+</code></pre>
+
+<p>备注：以上可能出现 <code>python-pip</code> 无法安装，可以尝试以下命令安装：</p>
+
+<pre><code class="language-batch">curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py
 </code></pre>
 
 <p>Step 4：建立配置文件 shadowsocks.json
@@ -241,6 +247,11 @@ ssserver -c /etc/shadowsocks.json -d restart 后台重新启动
 <tr>
 <td align="left">2019年1月15日</td>
 <td align="left">增加扩展阅读-发展历史，后续进一步的文章</td>
+</tr>
+
+<tr>
+<td align="left">2019年5月2日</td>
+<td align="left">增加「python-pip」安装方式</td>
 </tr>
 </tbody>
 </table>

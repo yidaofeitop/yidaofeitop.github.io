@@ -263,7 +263,7 @@ if (!doNotTrack) {
 
 <p>而多重代理的概念则是<strong>多重服务器</strong>进行中转，具体如下：</p>
 
-<p><img src="https://piwigo.yidaofei.com/galleries/201901/multiple-agent-diagram.png" alt="" /></p>
+<p><img src="http://image.yidaofei.com/galleries/201901/multiple-agent-diagram.png" alt="" /></p>
 
 <p>如果按照一般的推理是以两个翻墙工具组成形成二级代理，但实际上有一种非常好的方案「一重代理+Tor 浏览器」</p>
 
@@ -277,7 +277,7 @@ if (!doNotTrack) {
 <li><p>单虚拟机<br />
 我们把那些有危险的软件安装在虚拟系统（虚拟机A）内，然后把该虚拟唯一的虚拟网卡设置为 <strong>「Host-Only 模式」</strong>，由于唯一的虚拟网卡是 Host-Only 模式，所以 虚拟机（Guest OS）内的任何软件都 <strong>不可能直接访问外部网络</strong></p>
 
-<p><img src="https://piwigo.yidaofei.com/galleries/201901/single-virtual-machine.png" alt="" /></p></li>
+<p><img src="http://image.yidaofei.com/galleries/201901/single-virtual-machine.png" alt="" /></p></li>
 
 <li><p>多虚拟机<br />
 基于以下原因：</p>
@@ -290,7 +290,7 @@ if (!doNotTrack) {
 <p>　　所以我们可以在「单虚拟机」的基础上再扩展一下，把代理软件也放到虚拟机中（下图的虚拟机B）。
 虚拟机B 的网卡很有讲究滴——必须是双网卡。一个网卡设置为「 Host-Only 模式」，以便跟虚拟机 A对接；另一个网卡设置为 「NAT 模式」，以便访问外网。</p>
 
-<p><img src="https://piwigo.yidaofei.com/galleries/201901/multiple-virtual-machine.png" alt="" /></p></li>
+<p><img src="http://image.yidaofei.com/galleries/201901/multiple-virtual-machine.png" alt="" /></p></li>
 </ol>
 
 <p>扩展阅读：</p>
