@@ -90,7 +90,7 @@
 
 &lt;p&gt;目前的主题内容架构如下：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://image.yidaofei.com/galleries/201901/windows-guild-xmind.png&#34; alt=&#34;windows 教程-xmind&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://piwigo.yidaofei.com/galleries/201901/windows-guild-xmind.png&#34; alt=&#34;windows 教程-xmind&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;由于个人精力与知识面有限，有相关遗漏错误请大家指正，另外如有比较有意义的技巧大家可以互相讨论交流&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
@@ -165,7 +165,7 @@
       <description>&lt;p&gt;「windows 10」开始菜单中的动态磁贴虽然为我们即时查看信息提供了方便，例如可以在不打开应用的情况下，
 查看到天气、日历、邮件、照片等信息，但是在公共场所使用电脑的情况下，就有可能泄露我们的隐私。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://image.yidaofei.com/galleries/201812/windows10-dynamic-tile.jpg&#34; alt=&#34;windows 10 磁贴&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://piwigo.yidaofei.com/galleries/201812/windows10-dynamic-tile.jpg&#34; alt=&#34;windows 10 磁贴&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;那么如何去掉这些磁贴呢？&lt;/p&gt;
 
@@ -181,7 +181,7 @@
       <description>&lt;p&gt;完成&lt;a href=&#34;https://yidaofei.com/post/20181221-windows-skill-how-to-remove-quick-access/&#34;&gt;《Windows 技巧3-保护隐私—清除 「windows 10」 快速访问》&lt;/a&gt;相关操作后发现「图片、视频等文件夹」
 很是碍眼（如下图），决定清理！&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://image.yidaofei.com/galleries/201812/remove-common-and-recent-project.jpg&#34; alt=&#34;windows 10 文件管理器主页&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://piwigo.yidaofei.com/galleries/201812/remove-common-and-recent-project.jpg&#34; alt=&#34;windows 10 文件管理器主页&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;以下分为两部分：&lt;/p&gt;
 
@@ -203,7 +203,7 @@
 图标时就会默认打开「快速访问」页面，页面中会显示「常用文件夹」和「最近使用的文件」两个项目。这虽然
 方便了我们的日常使用，提高了工作效率，但是也会泄露我们的隐私，如下图！&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://image.yidaofei.com/galleries/201812/windows10-file-manage-main.png&#34; alt=&#34;windows 10 文件管理器主页&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://piwigo.yidaofei.com/galleries/201812/windows10-file-manage-main.png&#34; alt=&#34;windows 10 文件管理器主页&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;那么如何清除掉「Windows10」开始菜单和主页中的「常用/最近项目」，保护我们的个人隐私呢？&lt;/p&gt;
 
@@ -219,7 +219,7 @@
       <description>&lt;p&gt;Windows 安装完成之后如没有在安装之时进行相关的优化（具体的细节可以查看&lt;a href=&#34;https://yidaofei.com/post/20181217-how-to-install-windows-iso/#正式安装工作&#34;&gt;「微PE」安装Windows-第三步：Windows 安装器输入选项安装-优化调整&lt;/a&gt;）创建的快捷方式
 都会有一个「箭头」，如下：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://image.yidaofei.com/galleries/201812/shortcut-arrow.png&#34; alt=&#34;难看的快捷方式箭头&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://piwigo.yidaofei.com/galleries/201812/shortcut-arrow.png&#34; alt=&#34;难看的快捷方式箭头&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;那么如何去掉这些难看的箭头呢？&lt;/p&gt;
 
