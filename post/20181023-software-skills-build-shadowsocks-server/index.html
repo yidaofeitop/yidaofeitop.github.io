@@ -150,7 +150,7 @@ if (!doNotTrack) {
 
 <p>MyService-&gt;服务器实例-&gt;kiwivm Control Panel</p>
 
-<p><img src="http://piwigo.yidaofei.com/galleries/201809/bandwagon-kiwivm-control-panel.jpg" alt="" /></p>
+<p><img src="http://136.244.110.202/galleries/201809/bandwagon-kiwivm-control-panel.jpg" alt="" /></p>
 
 <h4 id="下载-xshell">下载 Xshell</h4>
 
@@ -202,6 +202,20 @@ python get-pip.py
 <pre><code class="language-batch">ssserver -c /etc/shadowsocks.json -d start 后台启动
 ssserver -c /etc/shadowsocks.json -d stop 后台停止
 ssserver -c /etc/shadowsocks.json -d restart 后台重新启动
+</code></pre>
+
+<h4 id="开放防火墙端口">开放防火墙端口</h4>
+
+<p>本部分主要是针对如 「vultr」 类似对防火墙有一定预设的 VPS</p>
+
+<pre><code class="language-batch">#启动服务
+systemctl enable firewalld
+systemctl start firewalld
+#开启端口
+firewall-cmd --permanent --zone=public --add-port=8388-8389/tcp
+firewall-cmd --permanent --zone=public --add-port=8388-8389/udp
+#端口生效
+firewall-cmd --reload
 </code></pre>
 
 <h3 id="第三步-windows-等终端使用">第三步 Windows 等终端使用</h3>
@@ -353,6 +367,7 @@ ssserver -c /etc/shadowsocks.json -d restart 后台重新启动
 <li><a href="#下载-xshell">下载 Xshell</a></li>
 <li><a href="#终端安装-shadowsocks-服务器">终端安装 shadowsocks 服务器</a></li>
 <li><a href="#启动与终止-shadowsocks-服务器">启动与终止 shadowsocks 服务器</a></li>
+<li><a href="#开放防火墙端口">开放防火墙端口</a></li>
 </ul></li>
 <li><a href="#第三步-windows-等终端使用">第三步 Windows 等终端使用</a></li>
 <li><a href="#版本信息">版本信息</a></li>
