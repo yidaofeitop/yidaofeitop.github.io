@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vps on  易道非 Blog</title>
-    <link>http://blog.yidaofei.com/tags/vps/</link>
+    <link>https://blog.yidaofei.com/tags/vps/</link>
     <description>Recent content in Vps on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Tue, 15 Jan 2019 11:55:55 +0800</lastBuildDate>
     
-	<atom:link href="http://blog.yidaofei.com/tags/vps/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.yidaofei.com/tags/vps/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>翻墙 chapter 1 — VPS 篇</title>
-      <link>http://blog.yidaofei.com/post/20190115-circumvention-technology-guild-vps/</link>
+      <link>https://blog.yidaofei.com/post/20190115-circumvention-technology-guild-vps/</link>
       <pubDate>Tue, 15 Jan 2019 11:55:55 +0800</pubDate>
       
-      <guid>http://blog.yidaofei.com/post/20190115-circumvention-technology-guild-vps/</guid>
+      <guid>https://blog.yidaofei.com/post/20190115-circumvention-technology-guild-vps/</guid>
       <description>&lt;p&gt;翻墙如果选用自建翻墙渠道那么第一步就是选用合适的 「&lt;strong&gt;国外&lt;/strong&gt; VPS」，本文就是教大家如何完成这一步！&lt;/p&gt;
 
 &lt;p&gt;本文主要内容如下：&lt;/p&gt;

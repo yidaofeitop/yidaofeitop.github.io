@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>about on  易道非 Blog</title>
-    <link>http://blog.yidaofei.com/about/</link>
+    <link>https://blog.yidaofei.com/about/</link>
     <description>Recent content in about on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     
-	<atom:link href="http://blog.yidaofei.com/about/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.yidaofei.com/about/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>个人建站 on  易道非 Blog</title>
-    <link>http://blog.yidaofei.com/tags/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99/</link>
+    <link>https://blog.yidaofei.com/tags/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99/</link>
     <description>Recent content in 个人建站 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Wed, 28 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://blog.yidaofei.com/tags/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.yidaofei.com/tags/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugo 主题 flybird 预览 </title>
-      <link>http://blog.yidaofei.com/post/20181129-build-website-hugo-flybird-preview/</link>
+      <link>https://blog.yidaofei.com/post/20181129-build-website-hugo-flybird-preview/</link>
       <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.yidaofei.com/post/20181129-build-website-hugo-flybird-preview/</guid>
+      <guid>https://blog.yidaofei.com/post/20181129-build-website-hugo-flybird-preview/</guid>
       <description>&lt;p&gt;这篇文章集中说明本人博客主题所支持的 Markdown 语法和 Hugo Shortcodes 插件，你也可以在这里预览到他们的样子。&lt;/p&gt;
 
 &lt;p&gt;另外针对初次接触 Hugo 以及 Markdown 的用户请访问以下链接：&lt;/p&gt;
@@ -33,10 +33,10 @@
     
     <item>
       <title>个人建站-组件-自建图床 Piwigo </title>
-      <link>http://blog.yidaofei.com/post/20181128-build-website-piwigo-guild/</link>
+      <link>https://blog.yidaofei.com/post/20181128-build-website-piwigo-guild/</link>
       <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.yidaofei.com/post/20181128-build-website-piwigo-guild/</guid>
+      <guid>https://blog.yidaofei.com/post/20181128-build-website-piwigo-guild/</guid>
       <description>&lt;p&gt;Piwigo是一个开源项目，允许您在网络上创建自己的照片库并上传照片并创建新相册。 该平台包含一些内置的强大功能，如相册，
 标签，水印，地理位置，日历，系统通知，访问控制级别，主题和统计信息。&lt;/p&gt;
 
@@ -56,10 +56,10 @@
     
     <item>
       <title>个人建站2-为 Github 上的 Hugo 博客绑定个性域名</title>
-      <link>http://blog.yidaofei.com/post/20181127-build-website-how-to-bind-blog-domain/</link>
+      <link>https://blog.yidaofei.com/post/20181127-build-website-how-to-bind-blog-domain/</link>
       <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.yidaofei.com/post/20181127-build-website-how-to-bind-blog-domain/</guid>
+      <guid>https://blog.yidaofei.com/post/20181127-build-website-how-to-bind-blog-domain/</guid>
       <description>&lt;p&gt;本文主要是记录使用 Hugo 建站过程中关于域名的一些信息，如 Https 协议 VS http 协议、域名购买渠道、域名配置等信息！&lt;/p&gt;
 
 &lt;p&gt;关键点如下：&lt;/p&gt;
@@ -78,10 +78,10 @@
     
     <item>
       <title>201811 Hugo Todo</title>
-      <link>http://blog.yidaofei.com/post/201811-todo-hugo/</link>
+      <link>https://blog.yidaofei.com/post/201811-todo-hugo/</link>
       <pubDate>Fri, 09 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.yidaofei.com/post/201811-todo-hugo/</guid>
+      <guid>https://blog.yidaofei.com/post/201811-todo-hugo/</guid>
       <description>&lt;p&gt;本文主要是记录自了解 Hugo 个人建站后真正开始动手使用 Hugo 的相关体验、todo、优化记录！&lt;/p&gt;
 
 &lt;p&gt;在自定义 Hugo 过程中主要参考以下文档，非常感谢这些作者的付出（相关的评论无任何的偏见，仅是阅读的一些体验）&lt;/p&gt;
@@ -108,10 +108,10 @@
     
     <item>
       <title>个人建站—Gitbook 教程</title>
-      <link>http://blog.yidaofei.com/post/20180920-build-website-gitbook-guide/</link>
+      <link>https://blog.yidaofei.com/post/20180920-build-website-gitbook-guide/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.yidaofei.com/post/20180920-build-website-gitbook-guide/</guid>
+      <guid>https://blog.yidaofei.com/post/20180920-build-website-gitbook-guide/</guid>
       <description>&lt;p&gt;GitBook 是一个提供 Markdown 书籍托管的网络平台， 支持通过 git 以及 GitHub 进行文档管理，使用它可以很简单地生
 成、发布电子图书。 同时，GitBook 也是一个 Node.js 命令行工具，可以使用它搭建自己的 GitBook 站点。&lt;/p&gt;
 

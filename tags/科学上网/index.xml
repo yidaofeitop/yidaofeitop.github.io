@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>科学上网 on  易道非 Blog</title>
-    <link>http://blog.yidaofei.com/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
+    <link>https://blog.yidaofei.com/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
     <description>Recent content in 科学上网 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sat, 13 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://blog.yidaofei.com/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.yidaofei.com/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>翻墙教程之 shadowsocks</title>
-      <link>http://blog.yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/</link>
+      <link>https://blog.yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/</link>
       <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/</guid>
+      <guid>https://blog.yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/</guid>
       <description>本文已于2019年1月15日全面拆解成不同的文章，具体请访问翻墙 chapter 0 - 前言 第一步 购买 VPS 如果纯粹作为翻墙使用建议购买 bandwagon 具体的入口可以可以参考搬瓦工 VPS ,选择最便宜的年 $ 19.99 方案（ KVM 架构）即可 第二步 搭建 shadowsocks 服务器端 进入 VPS 管理页面 MyService-&amp;</description>
     </item>
     

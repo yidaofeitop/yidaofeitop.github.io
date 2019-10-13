@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>自由 on  易道非 Blog</title>
-    <link>http://blog.yidaofei.com/tags/%E8%87%AA%E7%94%B1/</link>
+    <link>https://blog.yidaofei.com/tags/%E8%87%AA%E7%94%B1/</link>
     <description>Recent content in 自由 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 11 Apr 2019 13:09:38 +0800</lastBuildDate>
     
-	<atom:link href="http://blog.yidaofei.com/tags/%E8%87%AA%E7%94%B1/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.yidaofei.com/tags/%E8%87%AA%E7%94%B1/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>翻墙 chapter 4 - Lycamobile 美国电话卡</title>
-      <link>http://blog.yidaofei.com/post/20190411-circumvention-technology-guild-lycamobile/</link>
+      <link>https://blog.yidaofei.com/post/20190411-circumvention-technology-guild-lycamobile/</link>
       <pubDate>Thu, 11 Apr 2019 13:09:38 +0800</pubDate>
       
-      <guid>http://blog.yidaofei.com/post/20190411-circumvention-technology-guild-lycamobile/</guid>
+      <guid>https://blog.yidaofei.com/post/20190411-circumvention-technology-guild-lycamobile/</guid>
       <description>&lt;p&gt;本文主要是记录购买设置Lycamobile 美国电话卡的全过程！&lt;/p&gt;
 
 &lt;p&gt;Lycamobile（中文名：莱卡移动通讯公司） 是美国的一个 MVNO ，也就是虚拟运营商使用的是 T-Mobile 的网络！&lt;/p&gt;
@@ -38,10 +38,10 @@
     
     <item>
       <title>翻墙 chapter 3 - v2ray</title>
-      <link>http://blog.yidaofei.com/post/20190115-circumvention-technology-guild-v2ray/</link>
+      <link>https://blog.yidaofei.com/post/20190115-circumvention-technology-guild-v2ray/</link>
       <pubDate>Tue, 19 Feb 2019 11:55:55 +0800</pubDate>
       
-      <guid>http://blog.yidaofei.com/post/20190115-circumvention-technology-guild-v2ray/</guid>
+      <guid>https://blog.yidaofei.com/post/20190115-circumvention-technology-guild-v2ray/</guid>
       <description>&lt;p&gt;本篇将介绍三大主流翻墙手段之一 「v2ray」，首先请确认「VPS」是否已经准备妥当，如未准备的人请跳转到&lt;a href=&#34;https://yidaofei.com/post/20190115-circumvention-technology-guild-vps/&#34;&gt;翻墙 chapter 1 - 服务器篇&lt;/a&gt;，其主要内容如下：&lt;/p&gt;
 
 &lt;ol&gt;
@@ -54,10 +54,10 @@
     
     <item>
       <title>翻墙 chapter 0 - 前言</title>
-      <link>http://blog.yidaofei.com/post/20190115-circumvention-technology-guild-foreword/</link>
+      <link>https://blog.yidaofei.com/post/20190115-circumvention-technology-guild-foreword/</link>
       <pubDate>Tue, 15 Jan 2019 11:57:19 +0800</pubDate>
       
-      <guid>http://blog.yidaofei.com/post/20190115-circumvention-technology-guild-foreword/</guid>
+      <guid>https://blog.yidaofei.com/post/20190115-circumvention-technology-guild-foreword/</guid>
       <description>&lt;p&gt;有很多人对于「翻墙」感觉是一个非常高大上的词（2011年大二我的感觉同样如此），本系列文章就是将翻墙的发展历史以及现可行的技术一一梳理清楚，让「翻墙」这个词不再神秘！&lt;/p&gt;
 
 &lt;p&gt;此系列文章主要内容如下：&lt;/p&gt;
@@ -80,10 +80,10 @@
     
     <item>
       <title>翻墙 chapter 2 - shadowsocks</title>
-      <link>http://blog.yidaofei.com/post/20190115-circumvention-technology-guild-shadowsocks/</link>
+      <link>https://blog.yidaofei.com/post/20190115-circumvention-technology-guild-shadowsocks/</link>
       <pubDate>Tue, 15 Jan 2019 11:56:07 +0800</pubDate>
       
-      <guid>http://blog.yidaofei.com/post/20190115-circumvention-technology-guild-shadowsocks/</guid>
+      <guid>https://blog.yidaofei.com/post/20190115-circumvention-technology-guild-shadowsocks/</guid>
       <description>&lt;p&gt;本篇将介绍三大主流翻墙手段之一 「shadowsocks」，首先请确认「VPS」是否已经准备妥当，如未准备的人请跳转到&lt;a href=&#34;https://yidaofei.com/post/20190115-circumvention-technology-guild-vps/&#34;&gt;翻墙 chapter 1 - 服务器篇&lt;/a&gt;，其主要内容如下：&lt;/p&gt;
 
 &lt;ol&gt;
@@ -99,10 +99,10 @@
     
     <item>
       <title>翻墙 chapter 1 — VPS 篇</title>
-      <link>http://blog.yidaofei.com/post/20190115-circumvention-technology-guild-vps/</link>
+      <link>https://blog.yidaofei.com/post/20190115-circumvention-technology-guild-vps/</link>
       <pubDate>Tue, 15 Jan 2019 11:55:55 +0800</pubDate>
       
-      <guid>http://blog.yidaofei.com/post/20190115-circumvention-technology-guild-vps/</guid>
+      <guid>https://blog.yidaofei.com/post/20190115-circumvention-technology-guild-vps/</guid>
       <description>&lt;p&gt;翻墙如果选用自建翻墙渠道那么第一步就是选用合适的 「&lt;strong&gt;国外&lt;/strong&gt; VPS」，本文就是教大家如何完成这一步！&lt;/p&gt;
 
 &lt;p&gt;本文主要内容如下：&lt;/p&gt;

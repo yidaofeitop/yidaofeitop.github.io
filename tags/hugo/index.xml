@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on  易道非 Blog</title>
-    <link>http://blog.yidaofei.com/tags/hugo/</link>
+    <link>https://blog.yidaofei.com/tags/hugo/</link>
     <description>Recent content in Hugo on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sun, 25 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://blog.yidaofei.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.yidaofei.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>个人建站2-为 Github 上的 Hugo 博客绑定个性域名</title>
-      <link>http://blog.yidaofei.com/post/20181127-build-website-how-to-bind-blog-domain/</link>
+      <link>https://blog.yidaofei.com/post/20181127-build-website-how-to-bind-blog-domain/</link>
       <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.yidaofei.com/post/20181127-build-website-how-to-bind-blog-domain/</guid>
+      <guid>https://blog.yidaofei.com/post/20181127-build-website-how-to-bind-blog-domain/</guid>
       <description>&lt;p&gt;本文主要是记录使用 Hugo 建站过程中关于域名的一些信息，如 Https 协议 VS http 协议、域名购买渠道、域名配置等信息！&lt;/p&gt;
 
 &lt;p&gt;关键点如下：&lt;/p&gt;
@@ -35,10 +35,10 @@
     
     <item>
       <title>个人建站3-Hugo 集成 Algolia 搜索</title>
-      <link>http://blog.yidaofei.com/post/20181119-build-website-hugo-algolia-search/</link>
+      <link>https://blog.yidaofei.com/post/20181119-build-website-hugo-algolia-search/</link>
       <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.yidaofei.com/post/20181119-build-website-hugo-algolia-search/</guid>
+      <guid>https://blog.yidaofei.com/post/20181119-build-website-hugo-algolia-search/</guid>
       <description>&lt;p&gt;Algolia 是为你的 APP 或者网站添加搜索的最佳方式。 开发人员可以使用 API 上传并同步希望搜索的数据，
 然后可以进行相关的配置，比如产品转化率等等。可以使用 InstantSearch 等前端框架进行自定义搜索，为
 用户创造最佳的搜索体验&lt;/p&gt;
@@ -57,10 +57,10 @@
     
     <item>
       <title>201811 Hugo Todo</title>
-      <link>http://blog.yidaofei.com/post/201811-todo-hugo/</link>
+      <link>https://blog.yidaofei.com/post/201811-todo-hugo/</link>
       <pubDate>Fri, 09 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.yidaofei.com/post/201811-todo-hugo/</guid>
+      <guid>https://blog.yidaofei.com/post/201811-todo-hugo/</guid>
       <description>&lt;p&gt;本文主要是记录自了解 Hugo 个人建站后真正开始动手使用 Hugo 的相关体验、todo、优化记录！&lt;/p&gt;
 
 &lt;p&gt;在自定义 Hugo 过程中主要参考以下文档，非常感谢这些作者的付出（相关的评论无任何的偏见，仅是阅读的一些体验）&lt;/p&gt;
@@ -87,10 +87,10 @@
     
     <item>
       <title>个人建站1-Hugo 快速开始</title>
-      <link>http://blog.yidaofei.com/post/20181108-build-website-hugo-quick-start/</link>
+      <link>https://blog.yidaofei.com/post/20181108-build-website-hugo-quick-start/</link>
       <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.yidaofei.com/post/20181108-build-website-hugo-quick-start/</guid>
+      <guid>https://blog.yidaofei.com/post/20181108-build-website-hugo-quick-start/</guid>
       <description>&lt;p&gt;个人博客建站大致可以分为两类：&lt;/p&gt;
 
 &lt;ol&gt;
@@ -112,10 +112,10 @@
     
     <item>
       <title>JavaScript-重建 hugo 侧边导航栏 TOC</title>
-      <link>http://blog.yidaofei.com/post/20181107-js-rebuild-hugo-sider-toc/</link>
+      <link>https://blog.yidaofei.com/post/20181107-js-rebuild-hugo-sider-toc/</link>
       <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.yidaofei.com/post/20181107-js-rebuild-hugo-sider-toc/</guid>
+      <guid>https://blog.yidaofei.com/post/20181107-js-rebuild-hugo-sider-toc/</guid>
       <description>&lt;p&gt;本文主要解决以下问题：&lt;/p&gt;
 
 &lt;ol&gt;
