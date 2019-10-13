@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Archives on  易道非 Blog</title>
-    <link>https://yidaofei.com/archive/</link>
+    <link>http://blog.yidaofei.com/archive/</link>
     <description>Recent content in Archives on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 19 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://yidaofei.com/archive/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.yidaofei.com/archive/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>智能锁——安全/稳定/便捷三大特性质疑</title>
-      <link>https://yidaofei.com/post/20181119-smartlock-zhihu/</link>
+      <link>http://blog.yidaofei.com/post/20181119-smartlock-zhihu/</link>
       <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181119-smartlock-zhihu/</guid>
+      <guid>http://blog.yidaofei.com/post/20181119-smartlock-zhihu/</guid>
       <description>&lt;p&gt;本文由于主题比较混乱，已经将其拆解整理到其他文章，具体请访问：&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20190109-smartlock-guild-security-challenge/&#34;&gt;认识智能锁 chapter 1 - 电子部分补充-小黑盒/假指纹&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181118-how-to-select-a-good-smartlock/&#34;&gt;《如何挑选一款适合自己的指纹锁》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.yidaofei.com/post/20181118-how-to-select-a-good-smartlock/&#34;&gt;《如何挑选一款适合自己的指纹锁》&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;hr /&gt;
@@ -31,10 +31,10 @@
     
     <item>
       <title>指纹锁工作原理及结构设计要点</title>
-      <link>https://yidaofei.com/post/20181117-smartlock-how-fingerprint-lock-works/</link>
+      <link>http://blog.yidaofei.com/post/20181117-smartlock-how-fingerprint-lock-works/</link>
       <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181117-smartlock-how-fingerprint-lock-works/</guid>
+      <guid>http://blog.yidaofei.com/post/20181117-smartlock-how-fingerprint-lock-works/</guid>
       <description>&lt;p&gt;&lt;strong&gt;由于本文内容非常杂乱，所以分解为以下内容，欢迎大家跳转到相关文章访问&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
@@ -54,10 +54,10 @@
     
     <item>
       <title>翻墙教程之 shadowsocks</title>
-      <link>https://yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/</link>
+      <link>http://blog.yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/</link>
       <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/</guid>
+      <guid>http://blog.yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/</guid>
       <description>本文已于2019年1月15日全面拆解成不同的文章，具体请访问翻墙 chapter 0 - 前言 第一步 购买 VPS 如果纯粹作为翻墙使用建议购买 bandwagon 具体的入口可以可以参考搬瓦工 VPS ,选择最便宜的年 $ 19.99 方案（ KVM 架构）即可 第二步 搭建 shadowsocks 服务器端 进入 VPS 管理页面 MyService-&amp;</description>
     </item>
     

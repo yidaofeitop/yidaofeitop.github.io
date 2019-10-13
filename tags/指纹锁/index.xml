@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>指纹锁 on  易道非 Blog</title>
-    <link>https://yidaofei.com/tags/%E6%8C%87%E7%BA%B9%E9%94%81/</link>
+    <link>http://blog.yidaofei.com/tags/%E6%8C%87%E7%BA%B9%E9%94%81/</link>
     <description>Recent content in 指纹锁 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Wed, 09 Jan 2019 20:46:40 +0800</lastBuildDate>
     
-	<atom:link href="https://yidaofei.com/tags/%E6%8C%87%E7%BA%B9%E9%94%81/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.yidaofei.com/tags/%E6%8C%87%E7%BA%B9%E9%94%81/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>认识智能锁 chapter 7 - 远程解决方案</title>
-      <link>https://yidaofei.com/post/20190109-smartlock-guild-remote-unlocking/</link>
+      <link>http://blog.yidaofei.com/post/20190109-smartlock-guild-remote-unlocking/</link>
       <pubDate>Wed, 09 Jan 2019 20:46:40 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20190109-smartlock-guild-remote-unlocking/</guid>
+      <guid>http://blog.yidaofei.com/post/20190109-smartlock-guild-remote-unlocking/</guid>
       <description>&lt;p&gt;本章节主要是在&lt;a href=&#34;https://yidaofei.com/post/20190109-smartlock-guild-electronic-part/#联网模块&#34;&gt;认识智能锁 chapter 1 - 电子部分-联网模块&lt;/a&gt;
 上进一步的分析，让大家了解智能锁远程解决方案如何运作的，相关内容如下：&lt;/p&gt;
 
@@ -35,19 +35,19 @@
     
     <item>
       <title>认识智能锁 chapter 6 - 虚位密码</title>
-      <link>https://yidaofei.com/post/20190109-smartlock-guild-virtual-password/</link>
+      <link>http://blog.yidaofei.com/post/20190109-smartlock-guild-virtual-password/</link>
       <pubDate>Wed, 09 Jan 2019 20:16:45 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20190109-smartlock-guild-virtual-password/</guid>
+      <guid>http://blog.yidaofei.com/post/20190109-smartlock-guild-virtual-password/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>认识智能锁 chapter 5 - 防猫眼开锁</title>
-      <link>https://yidaofei.com/post/20190109-smartlock-guild-anti-cat-eye-unlock/</link>
+      <link>http://blog.yidaofei.com/post/20190109-smartlock-guild-anti-cat-eye-unlock/</link>
       <pubDate>Wed, 09 Jan 2019 19:39:49 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20190109-smartlock-guild-anti-cat-eye-unlock/</guid>
+      <guid>http://blog.yidaofei.com/post/20190109-smartlock-guild-anti-cat-eye-unlock/</guid>
       <description>&lt;p&gt;本章节主要分解防猫眼开锁的结构，理解&lt;strong&gt;防猫眼开锁的基础原理&lt;/strong&gt;，相关内容如下：&lt;/p&gt;
 
 &lt;ol&gt;
@@ -60,10 +60,10 @@
     
     <item>
       <title>认识智能锁 chapter 4 - 智能锁锁芯</title>
-      <link>https://yidaofei.com/post/20190109-smartlock-guild-lock-cylinder/</link>
+      <link>http://blog.yidaofei.com/post/20190109-smartlock-guild-lock-cylinder/</link>
       <pubDate>Wed, 09 Jan 2019 16:39:49 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20190109-smartlock-guild-lock-cylinder/</guid>
+      <guid>http://blog.yidaofei.com/post/20190109-smartlock-guild-lock-cylinder/</guid>
       <description>&lt;p&gt;本章节主要分解智能锁锁芯相关知识，理解为什么要选用C级真插芯，相关内容如下：&lt;/p&gt;
 
 &lt;ol&gt;
@@ -77,10 +77,10 @@
     
     <item>
       <title>认识智能锁 chapter 3 - 智能锁锁体</title>
-      <link>https://yidaofei.com/post/20190109-smartlock-guild-lock-body/</link>
+      <link>http://blog.yidaofei.com/post/20190109-smartlock-guild-lock-body/</link>
       <pubDate>Wed, 09 Jan 2019 13:39:49 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20190109-smartlock-guild-lock-body/</guid>
+      <guid>http://blog.yidaofei.com/post/20190109-smartlock-guild-lock-body/</guid>
       <description>&lt;p&gt;本章节主要分解智能锁锁体相关知识，理解如何配相关的锁体，相关内容如下：&lt;/p&gt;
 
 &lt;ol&gt;
@@ -95,10 +95,10 @@
     
     <item>
       <title>认识智能锁 chapter 2 - 离合结构/核心工作原理</title>
-      <link>https://yidaofei.com/post/20190109-smartlock-guild-clutch-structure/</link>
+      <link>http://blog.yidaofei.com/post/20190109-smartlock-guild-clutch-structure/</link>
       <pubDate>Wed, 09 Jan 2019 11:39:49 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20190109-smartlock-guild-clutch-structure/</guid>
+      <guid>http://blog.yidaofei.com/post/20190109-smartlock-guild-clutch-structure/</guid>
       <description>&lt;p&gt;本章节主要分解智能锁离合结构，理解&lt;strong&gt;智能锁的核心的工作原理&lt;/strong&gt;，相关内容如下：&lt;/p&gt;
 
 &lt;ol&gt;
@@ -123,10 +123,10 @@
     
     <item>
       <title>认识智能锁 chapter 1 - 电子部分</title>
-      <link>https://yidaofei.com/post/20190109-smartlock-guild-electronic-part/</link>
+      <link>http://blog.yidaofei.com/post/20190109-smartlock-guild-electronic-part/</link>
       <pubDate>Wed, 09 Jan 2019 10:39:49 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20190109-smartlock-guild-electronic-part/</guid>
+      <guid>http://blog.yidaofei.com/post/20190109-smartlock-guild-electronic-part/</guid>
       <description>&lt;p&gt;本章节主要分解智能锁电子部分，相关内容如下：&lt;/p&gt;
 
 &lt;ol&gt;
@@ -143,10 +143,10 @@
     
     <item>
       <title>认识智能锁 chapter 0 - 前言</title>
-      <link>https://yidaofei.com/post/20190109-smartlock-guild-foreword/</link>
+      <link>http://blog.yidaofei.com/post/20190109-smartlock-guild-foreword/</link>
       <pubDate>Wed, 09 Jan 2019 09:39:49 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20190109-smartlock-guild-foreword/</guid>
+      <guid>http://blog.yidaofei.com/post/20190109-smartlock-guild-foreword/</guid>
       <description>&lt;p&gt;好吧模拟&lt;a href=&#34;https://taiyilaile.com/1&#34;&gt;太医来了&lt;/a&gt;谈谈为什么要写这个系列的文章，也就是自己的初心！&lt;/p&gt;
 
 &lt;p&gt;类似此系列的文章实质上我写的并不少，比如初始的系列文章&lt;a href=&#34;https://www.jianshu.com/u/1112129d36ad&#34;&gt;天乔智能锁&lt;/a&gt;、
@@ -171,15 +171,15 @@
     
     <item>
       <title>智能锁——安全/稳定/便捷三大特性质疑</title>
-      <link>https://yidaofei.com/post/20181119-smartlock-zhihu/</link>
+      <link>http://blog.yidaofei.com/post/20181119-smartlock-zhihu/</link>
       <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181119-smartlock-zhihu/</guid>
+      <guid>http://blog.yidaofei.com/post/20181119-smartlock-zhihu/</guid>
       <description>&lt;p&gt;本文由于主题比较混乱，已经将其拆解整理到其他文章，具体请访问：&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20190109-smartlock-guild-security-challenge/&#34;&gt;认识智能锁 chapter 1 - 电子部分补充-小黑盒/假指纹&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181118-how-to-select-a-good-smartlock/&#34;&gt;《如何挑选一款适合自己的指纹锁》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.yidaofei.com/post/20181118-how-to-select-a-good-smartlock/&#34;&gt;《如何挑选一款适合自己的指纹锁》&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;hr /&gt;
@@ -189,10 +189,10 @@
     
     <item>
       <title>智能锁问题——网络案例集锦</title>
-      <link>https://yidaofei.com/post/20181119-smartlock-issues-network-case/</link>
+      <link>http://blog.yidaofei.com/post/20181119-smartlock-issues-network-case/</link>
       <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181119-smartlock-issues-network-case/</guid>
+      <guid>http://blog.yidaofei.com/post/20181119-smartlock-issues-network-case/</guid>
       <description>&lt;p&gt;本文主要是收集指纹锁故障，用于分析指纹锁的设计思路！&lt;/p&gt;
 
 &lt;p&gt;版权问题：本文很多资料均来自网络博文等，本人会一律保留相关的著作人与原始链接，如著作人不同意相关的转载请与我联系！&lt;/p&gt;
@@ -202,10 +202,10 @@
     
     <item>
       <title>如何挑选一款适合自己的指纹锁</title>
-      <link>https://yidaofei.com/post/20181118-smartlock-how-to-select-a-good-smartlock/</link>
+      <link>http://blog.yidaofei.com/post/20181118-smartlock-how-to-select-a-good-smartlock/</link>
       <pubDate>Sun, 18 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181118-smartlock-how-to-select-a-good-smartlock/</guid>
+      <guid>http://blog.yidaofei.com/post/20181118-smartlock-how-to-select-a-good-smartlock/</guid>
       <description>&lt;p&gt;本文主要是针对知乎关于指纹锁相关的话题的一个回答，主要是解答如何从众多的指纹锁品牌中挑选出一款适合自己的指纹锁！&lt;/p&gt;
 
 &lt;p&gt;知乎相关话题：&lt;/p&gt;
@@ -220,10 +220,10 @@
     
     <item>
       <title>指纹锁工作原理及结构设计要点</title>
-      <link>https://yidaofei.com/post/20181117-smartlock-how-fingerprint-lock-works/</link>
+      <link>http://blog.yidaofei.com/post/20181117-smartlock-how-fingerprint-lock-works/</link>
       <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181117-smartlock-how-fingerprint-lock-works/</guid>
+      <guid>http://blog.yidaofei.com/post/20181117-smartlock-how-fingerprint-lock-works/</guid>
       <description>&lt;p&gt;&lt;strong&gt;由于本文内容非常杂乱，所以分解为以下内容，欢迎大家跳转到相关文章访问&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
@@ -243,10 +243,10 @@
     
     <item>
       <title>智能锁安装日志——流程/细节/选择重要</title>
-      <link>https://yidaofei.com/post/20181115-smartlock-install-lock-day-summary/</link>
+      <link>http://blog.yidaofei.com/post/20181115-smartlock-install-lock-day-summary/</link>
       <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181115-smartlock-install-lock-day-summary/</guid>
+      <guid>http://blog.yidaofei.com/post/20181115-smartlock-install-lock-day-summary/</guid>
       <description>&lt;p&gt;2018年11月13日 接了一个朋友的安装单，此次安装过程中出现了以下3个最大的问题：&lt;/p&gt;
 
 &lt;ol&gt;
@@ -262,10 +262,10 @@
     
     <item>
       <title>认识智能锁 chapter 8 - 安装工具</title>
-      <link>https://yidaofei.com/post/20181115-smartlock-guild-install-lock-toolslist/</link>
+      <link>http://blog.yidaofei.com/post/20181115-smartlock-guild-install-lock-toolslist/</link>
       <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181115-smartlock-guild-install-lock-toolslist/</guid>
+      <guid>http://blog.yidaofei.com/post/20181115-smartlock-guild-install-lock-toolslist/</guid>
       <description>&lt;p&gt;指纹锁安装工具列表，请大家按照自己的需求自行在此基础上调整！&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -273,10 +273,10 @@
     
     <item>
       <title>认识智能锁 chapter 9 - 安装指导手册</title>
-      <link>https://yidaofei.com/post/20181115-smartlock-guild-install-lock-guild/</link>
+      <link>http://blog.yidaofei.com/post/20181115-smartlock-guild-install-lock-guild/</link>
       <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181115-smartlock-guild-install-lock-guild/</guid>
+      <guid>http://blog.yidaofei.com/post/20181115-smartlock-guild-install-lock-guild/</guid>
       <description>&lt;p&gt;本文主要是从指纹锁安装过程中的一些问题出发整理的指纹锁安装流程！&lt;/p&gt;
 
 &lt;h3 id=&#34;安装测试数据&#34;&gt;安装测试数据&lt;/h3&gt;
@@ -328,10 +328,10 @@
     
     <item>
       <title>智能锁问题——两道门发生碰撞</title>
-      <link>https://yidaofei.com/post/20180920-smartlock-issues-two-doors/</link>
+      <link>http://blog.yidaofei.com/post/20180920-smartlock-issues-two-doors/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20180920-smartlock-issues-two-doors/</guid>
+      <guid>http://blog.yidaofei.com/post/20180920-smartlock-issues-two-doors/</guid>
       <description>&lt;h4 id=&#34;问题现象&#34;&gt;问题现象&lt;/h4&gt;
 
 &lt;p&gt;具体案例：
@@ -344,10 +344,10 @@
     
     <item>
       <title>智能锁问题——速查表</title>
-      <link>https://yidaofei.com/post/20180920-smartlock-issues-wiki/</link>
+      <link>http://blog.yidaofei.com/post/20180920-smartlock-issues-wiki/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20180920-smartlock-issues-wiki/</guid>
+      <guid>http://blog.yidaofei.com/post/20180920-smartlock-issues-wiki/</guid>
       <description>&lt;p&gt;本文主要是针对指纹锁安装过程的一些常见问题的汇总与汇总，应该已经包含了所有的！&lt;/p&gt;
 
 &lt;p&gt;后续如是简单的问题则继续加入进来，如涉及环节比较多的则直接开单篇文章！&lt;/p&gt;
@@ -357,10 +357,10 @@
     
     <item>
       <title>认识智能锁 chapter 2 - 离合结构补充——分离式离合设计</title>
-      <link>https://yidaofei.com/post/20181117-smartlock-guild-separation-clutch-design-of-lock/</link>
+      <link>http://blog.yidaofei.com/post/20181117-smartlock-guild-separation-clutch-design-of-lock/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181117-smartlock-guild-separation-clutch-design-of-lock/</guid>
+      <guid>http://blog.yidaofei.com/post/20181117-smartlock-guild-separation-clutch-design-of-lock/</guid>
       <description>&lt;p&gt;在指纹锁安装过程中可能会出现一种很特殊的情况，两道门要装1把指纹锁，我就碰到过类似的情况，解决方法在 &lt;strong&gt;把手有一点错位的情况下&lt;/strong&gt;使用
 前后把手不联动方案就可以解决，关于此方案有两个以下的特点：&lt;/p&gt;
 

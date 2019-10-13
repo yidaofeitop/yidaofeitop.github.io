@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>通信技术 on  易道非 Blog</title>
-    <link>https://yidaofei.com/tags/%E9%80%9A%E4%BF%A1%E6%8A%80%E6%9C%AF/</link>
+    <link>http://blog.yidaofei.com/tags/%E9%80%9A%E4%BF%A1%E6%8A%80%E6%9C%AF/</link>
     <description>Recent content in 通信技术 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 15 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://yidaofei.com/tags/%E9%80%9A%E4%BF%A1%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.yidaofei.com/tags/%E9%80%9A%E4%BF%A1%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>LoRa与NB-IoT谁才是下一代的王者？</title>
-      <link>https://yidaofei.com/post/20181127-network-lora-vs-nbiot/</link>
+      <link>http://blog.yidaofei.com/post/20181127-network-lora-vs-nbiot/</link>
       <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181127-network-lora-vs-nbiot/</guid>
+      <guid>http://blog.yidaofei.com/post/20181127-network-lora-vs-nbiot/</guid>
       <description>&lt;p&gt;物联网应用需要考虑许多因素，例如节点成本，网络成本，电池寿命，数据传输速率(吞吐率)，延迟，移动性，网络覆盖范围以及部署类型等。&lt;/p&gt;
 
 &lt;p&gt;NB-IoT和LoRa两种技术具有不同的技术和商业特性，所以在应用场景方面会有不同。&lt;/p&gt;
@@ -28,10 +28,10 @@
     
     <item>
       <title>各大物联网通信技术对比</title>
-      <link>https://yidaofei.com/post/20181127-network-iot-communication-technology/</link>
+      <link>http://blog.yidaofei.com/post/20181127-network-iot-communication-technology/</link>
       <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181127-network-iot-communication-technology/</guid>
+      <guid>http://blog.yidaofei.com/post/20181127-network-iot-communication-technology/</guid>
       <description>&lt;p&gt;主要比较的通信技术如下：&lt;/p&gt;
 
 &lt;ol&gt;

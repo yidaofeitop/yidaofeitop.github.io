@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>个人隐私 on  易道非 Blog</title>
-    <link>https://yidaofei.com/tags/%E4%B8%AA%E4%BA%BA%E9%9A%90%E7%A7%81/</link>
+    <link>http://blog.yidaofei.com/tags/%E4%B8%AA%E4%BA%BA%E9%9A%90%E7%A7%81/</link>
     <description>Recent content in 个人隐私 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 20 Dec 2018 20:05:36 +0800</lastBuildDate>
     
-	<atom:link href="https://yidaofei.com/tags/%E4%B8%AA%E4%BA%BA%E9%9A%90%E7%A7%81/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.yidaofei.com/tags/%E4%B8%AA%E4%BA%BA%E9%9A%90%E7%A7%81/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Windows 技巧3-保护隐私—清除 「windows 10」 快速访问</title>
-      <link>https://yidaofei.com/post/20181221-windows-skill-how-to-remove-quick-access/</link>
+      <link>http://blog.yidaofei.com/post/20181221-windows-skill-how-to-remove-quick-access/</link>
       <pubDate>Thu, 20 Dec 2018 20:05:36 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20181221-windows-skill-how-to-remove-quick-access/</guid>
+      <guid>http://blog.yidaofei.com/post/20181221-windows-skill-how-to-remove-quick-access/</guid>
       <description>&lt;p&gt;[Windows 10]不知道从哪个版本开始引入了「快速访问」的设计，当你点击任务栏中的「文件资源管理器」
 图标时就会默认打开「快速访问」页面，页面中会显示「常用文件夹」和「最近使用的文件」两个项目。这虽然
 方便了我们的日常使用，提高了工作效率，但是也会泄露我们的隐私，如下图！&lt;/p&gt;

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows 教程 on  易道非 Blog</title>
-    <link>https://yidaofei.com/categories/windows-%E6%95%99%E7%A8%8B/</link>
+    <link>http://blog.yidaofei.com/categories/windows-%E6%95%99%E7%A8%8B/</link>
     <description>Recent content in Windows 教程 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sun, 13 Jan 2019 10:14:00 +0800</lastBuildDate>
     
-	<atom:link href="https://yidaofei.com/categories/windows-%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.yidaofei.com/categories/windows-%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Windows 技巧7-保护隐私-关闭微软小娜 Cortana</title>
-      <link>https://yidaofei.com/post/20190113-windows-skill-close-cortana/</link>
+      <link>http://blog.yidaofei.com/post/20190113-windows-skill-close-cortana/</link>
       <pubDate>Sun, 13 Jan 2019 10:14:00 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20190113-windows-skill-close-cortana/</guid>
+      <guid>http://blog.yidaofei.com/post/20190113-windows-skill-close-cortana/</guid>
       <description>&lt;p&gt;一直都知道微软小娜是个人隐私泄露的最大地方，但是由于一直在写其他的文章，所以直到今天才动手完成此项！&lt;/p&gt;
 
 &lt;p&gt;本文内容全部来自&lt;a href=&#34;https://zhuanlan.zhihu.com/p/43902577&#34;&gt;Win10 如何关闭微软小娜 Cortana&lt;/a&gt;，本文仅作内容的调整！&lt;/p&gt;
@@ -34,10 +34,10 @@
     
     <item>
       <title>Windows 教程6-进阶阶段-打造一个高效的浏览器</title>
-      <link>https://yidaofei.com/post/20190113-windows-guild-create-an-efficient-browser/</link>
+      <link>http://blog.yidaofei.com/post/20190113-windows-guild-create-an-efficient-browser/</link>
       <pubDate>Sat, 12 Jan 2019 15:33:00 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20190113-windows-guild-create-an-efficient-browser/</guid>
+      <guid>http://blog.yidaofei.com/post/20190113-windows-guild-create-an-efficient-browser/</guid>
       <description>&lt;p&gt;所以的网络行为基本上是以浏览器发生的，所以选择一个好的浏览器并将其优化是很重要的事情！&lt;/p&gt;
 
 &lt;p&gt;本文就是教会大家如何做到这一步，首先大家了解一下本文的基础框架：&lt;/p&gt;
@@ -53,10 +53,10 @@
     
     <item>
       <title>Windows 教程5-进阶阶段-打造一个安全高效的系统</title>
-      <link>https://yidaofei.com/post/20190111-create-a-safe-and-efficient-system/</link>
+      <link>http://blog.yidaofei.com/post/20190111-create-a-safe-and-efficient-system/</link>
       <pubDate>Fri, 11 Jan 2019 10:27:08 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20190111-create-a-safe-and-efficient-system/</guid>
+      <guid>http://blog.yidaofei.com/post/20190111-create-a-safe-and-efficient-system/</guid>
       <description>&lt;p&gt;经过前面4个教程，相信大家已经基本上将系统环境已经基本搭建完成，能够胜任相关的工作！&lt;/p&gt;
 
 &lt;p&gt;那么我们就进入第一个「进阶阶段」-「-打造一个安全高效的系统」！&lt;/p&gt;
@@ -74,10 +74,10 @@
     
     <item>
       <title>Windows 教程-前言</title>
-      <link>https://yidaofei.com/post/20190110-windows-guild-foreword/</link>
+      <link>http://blog.yidaofei.com/post/20190110-windows-guild-foreword/</link>
       <pubDate>Thu, 10 Jan 2019 10:27:08 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20190110-windows-guild-foreword/</guid>
+      <guid>http://blog.yidaofei.com/post/20190110-windows-guild-foreword/</guid>
       <description>&lt;p&gt;&lt;strong&gt;初心&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;说句实在话，写这个主题主要是基于以下目的：&lt;/p&gt;
@@ -97,10 +97,10 @@
     
     <item>
       <title>Windows 教程3-基础阶段-打造一个高效的文件管理系统</title>
-      <link>https://yidaofei.com/post/20190110-windows-guild-create-a-efficient-file-management-system/</link>
+      <link>http://blog.yidaofei.com/post/20190110-windows-guild-create-a-efficient-file-management-system/</link>
       <pubDate>Thu, 10 Jan 2019 10:27:08 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20190110-windows-guild-create-a-efficient-file-management-system/</guid>
+      <guid>http://blog.yidaofei.com/post/20190110-windows-guild-create-a-efficient-file-management-system/</guid>
       <description>&lt;p&gt;经过&lt;a href=&#34;https://yidaofei.com/post/20181216-windows-guide-how-download-iso/&#34;&gt;Windows 教程1-如何下载官方 ISO&lt;/a&gt;及&lt;a href=&#34;https://yidaofei.com/post/20181217-windows-guild-how-to-install-windows-iso/&#34;&gt;Windows 教程2-如何安装 Windows 系统&lt;/a&gt;我们已经将 「Windows 系统」安装到「C 盘」，后续的步骤无非就是「分盘、安装相关软件、系统调优」！&lt;/p&gt;
 
 &lt;p&gt;分盘是后续步骤的第一步：「分盘」，后续所有的操作都建立于此，但是如果仅仅是「分盘」我就没要单独成篇，我在本文想要做的告诉大家如何搭建一个「高效的文件管理系统」！&lt;/p&gt;
@@ -117,10 +117,10 @@
     
     <item>
       <title>Windows 教程4-基础阶段-好的软件改变你的生活</title>
-      <link>https://yidaofei.com/post/20181222-windows-guild-software-list/</link>
+      <link>http://blog.yidaofei.com/post/20181222-windows-guild-software-list/</link>
       <pubDate>Sat, 22 Dec 2018 12:12:35 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20181222-windows-guild-software-list/</guid>
+      <guid>http://blog.yidaofei.com/post/20181222-windows-guild-software-list/</guid>
       <description>&lt;p&gt;由于计算机专业出身，很多的时候我会下意识的去寻找更好的软件，尤其是在2017年接触到「小众软件」等后更是将自己的软件列表完全更新了一遍！&lt;/p&gt;
 
 &lt;p&gt;Why？因为我坚信 &lt;strong&gt;「一个好的软件能够改变你的习惯、思维、生活」&lt;/strong&gt;！&lt;/p&gt;
@@ -143,10 +143,10 @@
     
     <item>
       <title>Windows 技巧6-调优-如何关闭 Windows 10 更新</title>
-      <link>https://yidaofei.com/post/20181221-windows-skill-how-to-close-windows-update/</link>
+      <link>http://blog.yidaofei.com/post/20181221-windows-skill-how-to-close-windows-update/</link>
       <pubDate>Fri, 21 Dec 2018 21:05:36 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20181221-windows-skill-how-to-close-windows-update/</guid>
+      <guid>http://blog.yidaofei.com/post/20181221-windows-skill-how-to-close-windows-update/</guid>
       <description>&lt;p&gt;就像 「Windows 7」一样，非常讨厌在使用电脑时总是跳出更新系统的提示！&lt;/p&gt;
 
 &lt;p&gt;有时自动更新的时间，恰好是需要急用电脑的时候，而且系统更新比较慢，等待的时间长 😹&lt;/p&gt;
@@ -158,10 +158,10 @@
     
     <item>
       <title>Windows 技巧5-保护隐私—关闭并清理 Windows 10 磁贴</title>
-      <link>https://yidaofei.com/post/20181221-windows-skill-how-to-close-dynamic-tile/</link>
+      <link>http://blog.yidaofei.com/post/20181221-windows-skill-how-to-close-dynamic-tile/</link>
       <pubDate>Fri, 21 Dec 2018 20:05:36 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20181221-windows-skill-how-to-close-dynamic-tile/</guid>
+      <guid>http://blog.yidaofei.com/post/20181221-windows-skill-how-to-close-dynamic-tile/</guid>
       <description>&lt;p&gt;「windows 10」开始菜单中的动态磁贴虽然为我们即时查看信息提供了方便，例如可以在不打开应用的情况下，
 查看到天气、日历、邮件、照片等信息，但是在公共场所使用电脑的情况下，就有可能泄露我们的隐私。&lt;/p&gt;
 
@@ -174,10 +174,10 @@
     
     <item>
       <title>Windows 技巧4-美化-清除 「windows 10」 图片等6个文件夹/oneDrive</title>
-      <link>https://yidaofei.com/post/20181221-windows-skill-how-to-do-delete-6-files-and-onedrive/</link>
+      <link>http://blog.yidaofei.com/post/20181221-windows-skill-how-to-do-delete-6-files-and-onedrive/</link>
       <pubDate>Fri, 21 Dec 2018 19:05:36 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20181221-windows-skill-how-to-do-delete-6-files-and-onedrive/</guid>
+      <guid>http://blog.yidaofei.com/post/20181221-windows-skill-how-to-do-delete-6-files-and-onedrive/</guid>
       <description>&lt;p&gt;完成&lt;a href=&#34;https://yidaofei.com/post/20181221-windows-skill-how-to-remove-quick-access/&#34;&gt;《Windows 技巧3-保护隐私—清除 「windows 10」 快速访问》&lt;/a&gt;相关操作后发现「图片、视频等文件夹」
 很是碍眼（如下图），决定清理！&lt;/p&gt;
 
@@ -195,10 +195,10 @@
     
     <item>
       <title>Windows 技巧3-保护隐私—清除 「windows 10」 快速访问</title>
-      <link>https://yidaofei.com/post/20181221-windows-skill-how-to-remove-quick-access/</link>
+      <link>http://blog.yidaofei.com/post/20181221-windows-skill-how-to-remove-quick-access/</link>
       <pubDate>Thu, 20 Dec 2018 20:05:36 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20181221-windows-skill-how-to-remove-quick-access/</guid>
+      <guid>http://blog.yidaofei.com/post/20181221-windows-skill-how-to-remove-quick-access/</guid>
       <description>&lt;p&gt;[Windows 10]不知道从哪个版本开始引入了「快速访问」的设计，当你点击任务栏中的「文件资源管理器」
 图标时就会默认打开「快速访问」页面，页面中会显示「常用文件夹」和「最近使用的文件」两个项目。这虽然
 方便了我们的日常使用，提高了工作效率，但是也会泄露我们的隐私，如下图！&lt;/p&gt;
@@ -212,10 +212,10 @@
     
     <item>
       <title>Windows 技巧2-美化-如何去除快捷方式箭头</title>
-      <link>https://yidaofei.com/post/20181221-windows-skill-how-to-remove-shortcut-arrow/</link>
+      <link>http://blog.yidaofei.com/post/20181221-windows-skill-how-to-remove-shortcut-arrow/</link>
       <pubDate>Thu, 20 Dec 2018 19:05:36 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20181221-windows-skill-how-to-remove-shortcut-arrow/</guid>
+      <guid>http://blog.yidaofei.com/post/20181221-windows-skill-how-to-remove-shortcut-arrow/</guid>
       <description>&lt;p&gt;Windows 安装完成之后如没有在安装之时进行相关的优化（具体的细节可以查看&lt;a href=&#34;https://yidaofei.com/post/20181217-how-to-install-windows-iso/#正式安装工作&#34;&gt;「微PE」安装Windows-第三步：Windows 安装器输入选项安装-优化调整&lt;/a&gt;）创建的快捷方式
 都会有一个「箭头」，如下：&lt;/p&gt;
 
@@ -228,10 +228,10 @@
     
     <item>
       <title>Windows 教程2-基础阶段-如何安装 Windows 系统</title>
-      <link>https://yidaofei.com/post/20181217-windows-guild-how-to-install-windows-iso/</link>
+      <link>http://blog.yidaofei.com/post/20181217-windows-guild-how-to-install-windows-iso/</link>
       <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181217-windows-guild-how-to-install-windows-iso/</guid>
+      <guid>http://blog.yidaofei.com/post/20181217-windows-guild-how-to-install-windows-iso/</guid>
       <description>&lt;p&gt;Windows 安装大致可以分为以下几种情况：&lt;/p&gt;
 
 &lt;ol&gt;
@@ -261,10 +261,10 @@
     
     <item>
       <title>Windows 技巧1-如何创建软连接</title>
-      <link>https://yidaofei.com/post/20181129-windows-skill-soft-connection/</link>
+      <link>http://blog.yidaofei.com/post/20181129-windows-skill-soft-connection/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181129-windows-skill-soft-connection/</guid>
+      <guid>http://blog.yidaofei.com/post/20181129-windows-skill-soft-connection/</guid>
       <description>&lt;h3 id=&#34;软连接&#34;&gt;软连接&lt;/h3&gt;
 
 &lt;p&gt;此需求来自 &lt;a href=&#34;https://chrome.google.com/webstore/detail/maoxian-web-clipper/kjahokgdcbohofgdidndeiaigkehdjdc?hl=en&#34;&gt;MaoXian Web Clipper &lt;/a&gt;&lt;/p&gt;
@@ -278,10 +278,10 @@
     
     <item>
       <title>Windows 教程1-基础阶段-如何下载官方 ISO</title>
-      <link>https://yidaofei.com/post/20181216-windows-guide-how-download-iso/</link>
+      <link>http://blog.yidaofei.com/post/20181216-windows-guide-how-download-iso/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181216-windows-guide-how-download-iso/</guid>
+      <guid>http://blog.yidaofei.com/post/20181216-windows-guide-how-download-iso/</guid>
       <description>&lt;p&gt;大家重装系统会去哪里下载镜像呢？百度搜索是不可能的，一辈子都不可能！（具体见&lt;a href=&#34;http://yidaofei.com/post/20160503-event-hotspot-baidu-paid-listing/&#34;&gt;《百度竞价排名思考 - 血友病》&lt;/a&gt;）&lt;/p&gt;
 
 &lt;p&gt;后续查询相关的资料整理如下2种比较好的方式给大家：&lt;/p&gt;

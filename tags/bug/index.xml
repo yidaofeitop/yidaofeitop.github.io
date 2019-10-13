@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bug on  易道非 Blog</title>
-    <link>https://yidaofei.com/tags/bug/</link>
+    <link>http://blog.yidaofei.com/tags/bug/</link>
     <description>Recent content in Bug on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Wed, 07 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://yidaofei.com/tags/bug/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.yidaofei.com/tags/bug/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>JavaScript-修复由导航栏固定导致的页面锚点偏差 Bug</title>
-      <link>https://yidaofei.com/post/20181107-js-fix-anchor-of-fixed-nav-header/</link>
+      <link>http://blog.yidaofei.com/post/20181107-js-fix-anchor-of-fixed-nav-header/</link>
       <pubDate>Wed, 07 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181107-js-fix-anchor-of-fixed-nav-header/</guid>
+      <guid>http://blog.yidaofei.com/post/20181107-js-fix-anchor-of-fixed-nav-header/</guid>
       <description>&lt;p&gt;问题现象：点击侧面 TOC 的链接跳转到锚点内容的下方，在手机浏览器上效果偏移更大&lt;br /&gt;
 分析现象：参考相关资料后并对应网站是由于 &lt;strong&gt;头部导航栏采用的绝对布局——固定在顶部&lt;/strong&gt;，页面上滑动的距离需要减去头部导航栏的高度&lt;br /&gt;
 解决方法：在页面锚点上前加上一个隐藏的 &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; 标签，采用相对布局固定在锚点上方，并设定相关的 &lt;code&gt;top&lt;/code&gt;数据&lt;/p&gt;

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>投资理财 on  易道非 Blog</title>
-    <link>https://yidaofei.com/categories/%E6%8A%95%E8%B5%84%E7%90%86%E8%B4%A2/</link>
+    <link>http://blog.yidaofei.com/categories/%E6%8A%95%E8%B5%84%E7%90%86%E8%B4%A2/</link>
     <description>Recent content in 投资理财 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 06 May 2019 22:02:44 +0800</lastBuildDate>
     
-	<atom:link href="https://yidaofei.com/categories/%E6%8A%95%E8%B5%84%E7%90%86%E8%B4%A2/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.yidaofei.com/categories/%E6%8A%95%E8%B5%84%E7%90%86%E8%B4%A2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>购房基础流程</title>
-      <link>https://yidaofei.com/post/20190506-buy-house-basic-process/</link>
+      <link>http://blog.yidaofei.com/post/20190506-buy-house-basic-process/</link>
       <pubDate>Mon, 06 May 2019 22:02:44 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20190506-buy-house-basic-process/</guid>
+      <guid>http://blog.yidaofei.com/post/20190506-buy-house-basic-process/</guid>
       <description>&lt;p&gt;本文主要是记录一下购房的整体流程，并没有深入的了解内部的一些细节，所以请大家多多指教！&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://136.244.110.202/galleries/201905/buy-house-flowchart.jpg&#34; alt=&#34;二手房公积金购房流程&#34; /&gt;&lt;/p&gt;
@@ -26,10 +26,10 @@
     
     <item>
       <title>认识商业保险-0-前言</title>
-      <link>https://yidaofei.com/drafts/20190130-insurance-guild-foreword/</link>
+      <link>http://blog.yidaofei.com/drafts/20190130-insurance-guild-foreword/</link>
       <pubDate>Wed, 30 Jan 2019 21:07:17 +0800</pubDate>
       
-      <guid>https://yidaofei.com/drafts/20190130-insurance-guild-foreword/</guid>
+      <guid>http://blog.yidaofei.com/drafts/20190130-insurance-guild-foreword/</guid>
       <description>&lt;p&gt;本系列文章为&lt;a href=&#34;https://yidaofei.com/post/20150620-financial-management-how-buy-insurance/&#34;&gt;如何购买保险&lt;/a&gt;的细化版本（拆分内容、补充细节、追加内容），整体的思维导图如下：&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://136.244.110.202/galleries/201901/insurance-guild-xmind.png&#34; alt=&#34;商业保险思维导图&#34; /&gt;&lt;/p&gt;</description>
@@ -37,10 +37,10 @@
     
     <item>
       <title>认识商业保险-1-商业保险姓「保」</title>
-      <link>https://yidaofei.com/drafts/20190130-insurance-guild-basis-architecture/</link>
+      <link>http://blog.yidaofei.com/drafts/20190130-insurance-guild-basis-architecture/</link>
       <pubDate>Wed, 30 Jan 2019 21:03:51 +0800</pubDate>
       
-      <guid>https://yidaofei.com/drafts/20190130-insurance-guild-basis-architecture/</guid>
+      <guid>http://blog.yidaofei.com/drafts/20190130-insurance-guild-basis-architecture/</guid>
       <description>&lt;p&gt;本文主要解决的问题是：&lt;/p&gt;
 
 &lt;ul&gt;
@@ -57,10 +57,10 @@
     
     <item>
       <title>如何购买保险</title>
-      <link>https://yidaofei.com/post/20150620-financial-management-how-buy-insurance/</link>
+      <link>http://blog.yidaofei.com/post/20150620-financial-management-how-buy-insurance/</link>
       <pubDate>Sat, 20 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20150620-financial-management-how-buy-insurance/</guid>
+      <guid>http://blog.yidaofei.com/post/20150620-financial-management-how-buy-insurance/</guid>
       <description>&lt;h2 id=&#34;导言&#34;&gt;导言&lt;/h2&gt;
 
 &lt;p&gt;为何写这篇文章？在动笔写这篇文章之前我还在心底问自己这个问题，其实很好解答——一方面是由于在确定自己保险方案时亲朋好友（包含&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E4%BF%9D%E9%99%A9%E4%B8%AD%E4%BB%8B#.E4.BF.9D.E9.99.A9.E4.BB.A3.E7.90.86.E4.BA.BA&#34;&gt;保险代理人&lt;/a&gt;）都对于保险的了解流于表面，另外一部分也是将自己保险知识做一个梳理，而输出是最好的梳理:）!&lt;/p&gt;

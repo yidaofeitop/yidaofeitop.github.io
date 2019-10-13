@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Drafts on  易道非 Blog</title>
-    <link>https://yidaofei.com/drafts/</link>
+    <link>http://blog.yidaofei.com/drafts/</link>
     <description>Recent content in Drafts on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Wed, 30 Jan 2019 21:07:17 +0800</lastBuildDate>
     
-	<atom:link href="https://yidaofei.com/drafts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.yidaofei.com/drafts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>认识商业保险-0-前言</title>
-      <link>https://yidaofei.com/drafts/20190130-insurance-guild-foreword/</link>
+      <link>http://blog.yidaofei.com/drafts/20190130-insurance-guild-foreword/</link>
       <pubDate>Wed, 30 Jan 2019 21:07:17 +0800</pubDate>
       
-      <guid>https://yidaofei.com/drafts/20190130-insurance-guild-foreword/</guid>
+      <guid>http://blog.yidaofei.com/drafts/20190130-insurance-guild-foreword/</guid>
       <description>&lt;p&gt;本系列文章为&lt;a href=&#34;https://yidaofei.com/post/20150620-financial-management-how-buy-insurance/&#34;&gt;如何购买保险&lt;/a&gt;的细化版本（拆分内容、补充细节、追加内容），整体的思维导图如下：&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://136.244.110.202/galleries/201901/insurance-guild-xmind.png&#34; alt=&#34;商业保险思维导图&#34; /&gt;&lt;/p&gt;</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>认识商业保险-1-商业保险姓「保」</title>
-      <link>https://yidaofei.com/drafts/20190130-insurance-guild-basis-architecture/</link>
+      <link>http://blog.yidaofei.com/drafts/20190130-insurance-guild-basis-architecture/</link>
       <pubDate>Wed, 30 Jan 2019 21:03:51 +0800</pubDate>
       
-      <guid>https://yidaofei.com/drafts/20190130-insurance-guild-basis-architecture/</guid>
+      <guid>http://blog.yidaofei.com/drafts/20190130-insurance-guild-basis-architecture/</guid>
       <description>&lt;p&gt;本文主要解决的问题是：&lt;/p&gt;
 
 &lt;ul&gt;

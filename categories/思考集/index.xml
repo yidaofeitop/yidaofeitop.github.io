@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>思考集 on  易道非 Blog</title>
-    <link>https://yidaofei.com/categories/%E6%80%9D%E8%80%83%E9%9B%86/</link>
+    <link>http://blog.yidaofei.com/categories/%E6%80%9D%E8%80%83%E9%9B%86/</link>
     <description>Recent content in 思考集 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 14 Jan 2019 17:04:17 +0800</lastBuildDate>
     
-	<atom:link href="https://yidaofei.com/categories/%E6%80%9D%E8%80%83%E9%9B%86/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.yidaofei.com/categories/%E6%80%9D%E8%80%83%E9%9B%86/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>互联网时代，保护自己的个人隐私：进阶篇</title>
-      <link>https://yidaofei.com/post/20190114-how-to-protect-personal-privacy-advanced/</link>
+      <link>http://blog.yidaofei.com/post/20190114-how-to-protect-personal-privacy-advanced/</link>
       <pubDate>Mon, 14 Jan 2019 17:04:17 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20190114-how-to-protect-personal-privacy-advanced/</guid>
+      <guid>http://blog.yidaofei.com/post/20190114-how-to-protect-personal-privacy-advanced/</guid>
       <description>&lt;p&gt;前段时间完成的&lt;a href=&#34;https://yidaofei.com/post/20190112-how-to-protect-personal-privacy-base/&#34; title=&#34;互联网时代，保护自己的个人隐私：基础篇&#34;&gt;互联网时代，保护自己的个人隐私：基础篇&lt;/a&gt;不知道大家是否有吸收实际运用？&lt;/p&gt;
 
 &lt;p&gt;本篇在上篇的基础上更进一步，提出以下的隐私防护：&lt;/p&gt;
@@ -37,10 +37,10 @@
     
     <item>
       <title>互联网时代，保护自己的个人隐私：基础篇</title>
-      <link>https://yidaofei.com/post/20190112-how-to-protect-personal-privacy-base/</link>
+      <link>http://blog.yidaofei.com/post/20190112-how-to-protect-personal-privacy-base/</link>
       <pubDate>Sat, 12 Jan 2019 13:23:16 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20190112-how-to-protect-personal-privacy-base/</guid>
+      <guid>http://blog.yidaofei.com/post/20190112-how-to-protect-personal-privacy-base/</guid>
       <description>&lt;p&gt;昨天再写&lt;a href=&#34;https://yidaofei.com/post/20190111-create-a-safe-and-efficient-system/&#34;&gt;Windows 教程5-进阶阶段-打造一个安全高效的系统&lt;/a&gt;「第二章节 系统隐私篇」时查询相关的关于「互联网隐私」泄密的资料时发现这是一个非常大的命题，而由于此教程的主题是「如何高效使用 windows」，不能做过多的展开，所以就将「如何保护个人隐私」抽离出来形成本文！&lt;/p&gt;
 
 &lt;p&gt;本文会一下方面系统的梳理一下关于「如何保护个人隐私」，让大家知道「个人隐私」的重要性以及如何最大程度的防范泄露！&lt;/p&gt;
@@ -60,10 +60,10 @@
     
     <item>
       <title>「Topbook」，你究竟在干嘛？</title>
-      <link>https://yidaofei.com/post/20181223-topbook-what-are-you-doing/</link>
+      <link>http://blog.yidaofei.com/post/20181223-topbook-what-are-you-doing/</link>
       <pubDate>Sun, 23 Dec 2018 18:58:13 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20181223-topbook-what-are-you-doing/</guid>
+      <guid>http://blog.yidaofei.com/post/20181223-topbook-what-are-you-doing/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;道为先，术为后，道术，这个词真的是意义蛮深刻的！&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -75,10 +75,10 @@
     
     <item>
       <title>百度竞价排名思考-血友病</title>
-      <link>https://yidaofei.com/post/20160503-baidu-paid-listing-about-hemophilia/</link>
+      <link>http://blog.yidaofei.com/post/20160503-baidu-paid-listing-about-hemophilia/</link>
       <pubDate>Tue, 03 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20160503-baidu-paid-listing-about-hemophilia/</guid>
+      <guid>http://blog.yidaofei.com/post/20160503-baidu-paid-listing-about-hemophilia/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://baike.so.com/doc/5786194-5998980.html&#34;&gt;凤巢系统&lt;/a&gt;是百度搜索推广服务管理平台的内部开发代号&lt;/p&gt;
 
 &lt;p&gt;2009年4月20日推出，2009年12月1日 全面启用，其用意在于替代原有的搜素营销经典版(即竞价排名)，相对于原有的竞价排名系统提供了更多的功

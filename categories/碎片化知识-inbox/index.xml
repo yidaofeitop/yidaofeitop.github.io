@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>碎片化知识 Inbox on  易道非 Blog</title>
-    <link>https://yidaofei.com/categories/%E7%A2%8E%E7%89%87%E5%8C%96%E7%9F%A5%E8%AF%86-inbox/</link>
+    <link>http://blog.yidaofei.com/categories/%E7%A2%8E%E7%89%87%E5%8C%96%E7%9F%A5%E8%AF%86-inbox/</link>
     <description>Recent content in 碎片化知识 Inbox on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 07 Mar 2019 00:26:23 +0800</lastBuildDate>
     
-	<atom:link href="https://yidaofei.com/categories/%E7%A2%8E%E7%89%87%E5%8C%96%E7%9F%A5%E8%AF%86-inbox/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.yidaofei.com/categories/%E7%A2%8E%E7%89%87%E5%8C%96%E7%9F%A5%E8%AF%86-inbox/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2019年计算机考研书籍推荐</title>
-      <link>https://yidaofei.com/ck/20190307-ckinbox-it-postgraduate-exam-book/</link>
+      <link>http://blog.yidaofei.com/ck/20190307-ckinbox-it-postgraduate-exam-book/</link>
       <pubDate>Thu, 07 Mar 2019 00:26:23 +0800</pubDate>
       
-      <guid>https://yidaofei.com/ck/20190307-ckinbox-it-postgraduate-exam-book/</guid>
+      <guid>http://blog.yidaofei.com/ck/20190307-ckinbox-it-postgraduate-exam-book/</guid>
       <description>&lt;p&gt;本文主要是解决一位朋友考研过程中的书籍问题而做的一个记录页面，后续如果有更多的关于考研或者此类的话题我将重新开一个主题！
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>专业类书籍清单表 Inbox</title>
-      <link>https://yidaofei.com/ck/20181203-ckinbox-professional-book/</link>
+      <link>http://blog.yidaofei.com/ck/20181203-ckinbox-professional-book/</link>
       <pubDate>Sun, 23 Dec 2018 10:30:17 +0800</pubDate>
       
-      <guid>https://yidaofei.com/ck/20181203-ckinbox-professional-book/</guid>
+      <guid>http://blog.yidaofei.com/ck/20181203-ckinbox-professional-book/</guid>
       <description>&lt;p&gt;本文主要是将网络推荐的书籍以及相关的推荐理由记录！&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -34,10 +34,10 @@
     
     <item>
       <title>非专业类书籍清单表 Inbox</title>
-      <link>https://yidaofei.com/ck/20181203-ckinbox-no-professional-book/</link>
+      <link>http://blog.yidaofei.com/ck/20181203-ckinbox-no-professional-book/</link>
       <pubDate>Sun, 23 Dec 2018 10:30:17 +0800</pubDate>
       
-      <guid>https://yidaofei.com/ck/20181203-ckinbox-no-professional-book/</guid>
+      <guid>http://blog.yidaofei.com/ck/20181203-ckinbox-no-professional-book/</guid>
       <description>&lt;p&gt;本文主要是将网络推荐的书籍以及相关的推荐理由记录！&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

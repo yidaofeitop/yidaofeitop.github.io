@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wiki on  易道非 Blog</title>
-    <link>https://yidaofei.com/wiki/</link>
+    <link>http://blog.yidaofei.com/wiki/</link>
     <description>Recent content in Wiki on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sun, 07 Apr 2019 11:04:26 +0800</lastBuildDate>
     
-	<atom:link href="https://yidaofei.com/wiki/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.yidaofei.com/wiki/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>小小的团队游戏</title>
-      <link>https://yidaofei.com/wiki/20190407-wiki-team-game/</link>
+      <link>http://blog.yidaofei.com/wiki/20190407-wiki-team-game/</link>
       <pubDate>Sun, 07 Apr 2019 11:04:26 +0800</pubDate>
       
-      <guid>https://yidaofei.com/wiki/20190407-wiki-team-game/</guid>
+      <guid>http://blog.yidaofei.com/wiki/20190407-wiki-team-game/</guid>
       <description>&lt;p&gt;本文主要是整理一些在团建过程中的小游戏以及相关的惩罚项目&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>「Xmind 8」快捷键</title>
-      <link>https://yidaofei.com/wiki/20181227-wiki-xmind-hot-key/</link>
+      <link>http://blog.yidaofei.com/wiki/20181227-wiki-xmind-hot-key/</link>
       <pubDate>Thu, 27 Dec 2018 18:10:48 +0800</pubDate>
       
-      <guid>https://yidaofei.com/wiki/20181227-wiki-xmind-hot-key/</guid>
+      <guid>http://blog.yidaofei.com/wiki/20181227-wiki-xmind-hot-key/</guid>
       <description>&lt;p&gt;本文主要是记录 XMIND 快捷键，主要参考：&lt;a href=&#34;https://www.xmind.net/blog/cn/2017/07/xmind-8-keys/&#34;&gt;史上最全 XMind 8 快捷键大全&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://136.244.110.202/galleries/201812/xmind-hot-key.png&#34; alt=&#34;xmind8 快捷键&#34; /&gt;&lt;/p&gt;
@@ -37,10 +37,10 @@
     
     <item>
       <title>GFM 表情列表</title>
-      <link>https://yidaofei.com/wiki/20181128-wiki-markdown-github-emoji/</link>
+      <link>http://blog.yidaofei.com/wiki/20181128-wiki-markdown-github-emoji/</link>
       <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/wiki/20181128-wiki-markdown-github-emoji/</guid>
+      <guid>http://blog.yidaofei.com/wiki/20181128-wiki-markdown-github-emoji/</guid>
       <description>&lt;p&gt;GFM(GitHub Flavored Markdown) 表情包，以便随时使用！&lt;/p&gt;
 
 &lt;p&gt;官方网页 &lt;a href=&#34;http://www.emoji-cheat-sheet.com&#34;&gt;http://www.emoji-cheat-sheet.com&lt;/a&gt;&lt;/p&gt;
@@ -52,10 +52,10 @@
     
     <item>
       <title>Maybe read once</title>
-      <link>https://yidaofei.com/wiki/2018-wiki-maybe-read-once/</link>
+      <link>http://blog.yidaofei.com/wiki/2018-wiki-maybe-read-once/</link>
       <pubDate>Tue, 06 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/wiki/2018-wiki-maybe-read-once/</guid>
+      <guid>http://blog.yidaofei.com/wiki/2018-wiki-maybe-read-once/</guid>
       <description>&lt;p&gt;本文主要是记录一些暂时可能用不上也没有做相关整理的好的文章的索引列表，大致分为以下几类：&lt;/p&gt;
 
 &lt;ol&gt;
@@ -71,10 +71,10 @@
     
     <item>
       <title>网站&amp;网站工具</title>
-      <link>https://yidaofei.com/wiki/20181130-wiki-website-tools/</link>
+      <link>http://blog.yidaofei.com/wiki/20181130-wiki-website-tools/</link>
       <pubDate>Tue, 06 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/wiki/20181130-wiki-website-tools/</guid>
+      <guid>http://blog.yidaofei.com/wiki/20181130-wiki-website-tools/</guid>
       <description>&lt;p&gt;本文主要是记录一些比较有意思的网站或者是一些可能用到的网站工具&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

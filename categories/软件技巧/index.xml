@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>软件技巧 on  易道非 Blog</title>
-    <link>https://yidaofei.com/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7/</link>
+    <link>http://blog.yidaofei.com/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7/</link>
     <description>Recent content in 软件技巧 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 11 Mar 2019 12:50:49 +0800</lastBuildDate>
     
-	<atom:link href="https://yidaofei.com/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.yidaofei.com/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>组装电脑如何选购配件</title>
-      <link>https://yidaofei.com/post/20190311-software-skills-how-to-build-up-computer/</link>
+      <link>http://blog.yidaofei.com/post/20190311-software-skills-how-to-build-up-computer/</link>
       <pubDate>Mon, 11 Mar 2019 12:50:49 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20190311-software-skills-how-to-build-up-computer/</guid>
+      <guid>http://blog.yidaofei.com/post/20190311-software-skills-how-to-build-up-computer/</guid>
       <description>&lt;p&gt;本文的启由是一位好朋友说到家里需要组装一台计算机。&lt;/p&gt;
 
 &lt;p&gt;在后续查询资料的过程中发现有些知识还是蛮有意思的，为了避免后续一旦有此类的需求还要重新查询整理资料所以就写了这篇文章！&lt;/p&gt;
@@ -28,10 +28,10 @@
     
     <item>
       <title>Firefox 浏览器简易教程</title>
-      <link>https://yidaofei.com/post/20190113-software-skills-firefox-guild/</link>
+      <link>http://blog.yidaofei.com/post/20190113-software-skills-firefox-guild/</link>
       <pubDate>Sun, 13 Jan 2019 15:08:17 +0800</pubDate>
       
-      <guid>https://yidaofei.com/post/20190113-software-skills-firefox-guild/</guid>
+      <guid>http://blog.yidaofei.com/post/20190113-software-skills-firefox-guild/</guid>
       <description>&lt;p&gt;2019年1月13日 在阅读完&lt;a href=&#34;https://program-think.blogspot.com/2018/09/Why-You-Should-Switch-from-Chrome-to-Firefox.html&#34;&gt;弃用 Chrome 改用 Firefox 的几点理由——关于 Chrome 69 隐私丑闻的随想&lt;/a&gt;决定将浏览器的主力转移至「Firefox」，其原因最为主要的如下：&lt;/p&gt;
 
 &lt;ol&gt;
@@ -46,10 +46,10 @@
     
     <item>
       <title>Markdown 语言教程——GFM</title>
-      <link>https://yidaofei.com/post/20181110-software-skills-markdown-github-flavored-markdown/</link>
+      <link>http://blog.yidaofei.com/post/20181110-software-skills-markdown-github-flavored-markdown/</link>
       <pubDate>Sat, 10 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181110-software-skills-markdown-github-flavored-markdown/</guid>
+      <guid>http://blog.yidaofei.com/post/20181110-software-skills-markdown-github-flavored-markdown/</guid>
       <description>&lt;h2 id=&#34;markdown简易教程&#34;&gt;Markdown简易教程&lt;/h2&gt;
 
 &lt;p&gt;Markdown 是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法实现「易读易写」。&lt;/p&gt;
@@ -94,19 +94,19 @@ HTML区段标签和区块标签不同，在区段标签的范围內，Markdown�
     
     <item>
       <title>翻墙教程之 shadowsocks</title>
-      <link>https://yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/</link>
+      <link>http://blog.yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/</link>
       <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/</guid>
+      <guid>http://blog.yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/</guid>
       <description>本文已于2019年1月15日全面拆解成不同的文章，具体请访问翻墙 chapter 0 - 前言 第一步 购买 VPS 如果纯粹作为翻墙使用建议购买 bandwagon 具体的入口可以可以参考搬瓦工 VPS ,选择最便宜的年 $ 19.99 方案（ KVM 架构）即可 第二步 搭建 shadowsocks 服务器端 进入 VPS 管理页面 MyService-&amp;</description>
     </item>
     
     <item>
       <title>Sublime教程： 第一章 基础配置</title>
-      <link>https://yidaofei.com/post/20180920-software-skills-sublime-base-config/</link>
+      <link>http://blog.yidaofei.com/post/20180920-software-skills-sublime-base-config/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20180920-software-skills-sublime-base-config/</guid>
+      <guid>http://blog.yidaofei.com/post/20180920-software-skills-sublime-base-config/</guid>
       <description>&lt;p&gt;本文主要是介绍 Sublime text 2 的安装以及基本的包、相关快捷键推荐&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

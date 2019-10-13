@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>域名 on  易道非 Blog</title>
-    <link>https://yidaofei.com/tags/%E5%9F%9F%E5%90%8D/</link>
+    <link>http://blog.yidaofei.com/tags/%E5%9F%9F%E5%90%8D/</link>
     <description>Recent content in 域名 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sun, 25 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://yidaofei.com/tags/%E5%9F%9F%E5%90%8D/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.yidaofei.com/tags/%E5%9F%9F%E5%90%8D/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>个人建站2-为 Github 上的 Hugo 博客绑定个性域名</title>
-      <link>https://yidaofei.com/post/20181127-build-website-how-to-bind-blog-domain/</link>
+      <link>http://blog.yidaofei.com/post/20181127-build-website-how-to-bind-blog-domain/</link>
       <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181127-build-website-how-to-bind-blog-domain/</guid>
+      <guid>http://blog.yidaofei.com/post/20181127-build-website-how-to-bind-blog-domain/</guid>
       <description>&lt;p&gt;本文主要是记录使用 Hugo 建站过程中关于域名的一些信息，如 Https 协议 VS http 协议、域名购买渠道、域名配置等信息！&lt;/p&gt;
 
 &lt;p&gt;关键点如下：&lt;/p&gt;

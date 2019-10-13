@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>开源软件 on  易道非 Blog</title>
-    <link>https://yidaofei.com/tags/%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6/</link>
+    <link>http://blog.yidaofei.com/tags/%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6/</link>
     <description>Recent content in 开源软件 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Wed, 28 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://yidaofei.com/tags/%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.yidaofei.com/tags/%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugo 主题 flybird 预览 </title>
-      <link>https://yidaofei.com/post/20181129-build-website-hugo-flybird-preview/</link>
+      <link>http://blog.yidaofei.com/post/20181129-build-website-hugo-flybird-preview/</link>
       <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181129-build-website-hugo-flybird-preview/</guid>
+      <guid>http://blog.yidaofei.com/post/20181129-build-website-hugo-flybird-preview/</guid>
       <description>&lt;p&gt;这篇文章集中说明本人博客主题所支持的 Markdown 语法和 Hugo Shortcodes 插件，你也可以在这里预览到他们的样子。&lt;/p&gt;
 
 &lt;p&gt;另外针对初次接触 Hugo 以及 Markdown 的用户请访问以下链接：&lt;/p&gt;
@@ -33,10 +33,10 @@
     
     <item>
       <title>个人建站-组件-自建图床 Piwigo </title>
-      <link>https://yidaofei.com/post/20181128-build-website-piwigo-guild/</link>
+      <link>http://blog.yidaofei.com/post/20181128-build-website-piwigo-guild/</link>
       <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yidaofei.com/post/20181128-build-website-piwigo-guild/</guid>
+      <guid>http://blog.yidaofei.com/post/20181128-build-website-piwigo-guild/</guid>
       <description>&lt;p&gt;Piwigo是一个开源项目，允许您在网络上创建自己的照片库并上传照片并创建新相册。 该平台包含一些内置的强大功能，如相册，
 标签，水印，地理位置，日历，系统通知，访问控制级别，主题和统计信息。&lt;/p&gt;
 
