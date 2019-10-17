@@ -75,121 +75,92 @@
     },
     {
         "draft": false,
-        "uri": "ck/20181203-ckinbox-no-professional-book",
-        "content": "1984                                                                                                                                                                     1 12                                                                                                                                                                                                                               L                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      2                                                                                                                                                                                                                                                                                                                                                                              12                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Lewis                        20190115                                                                                                          1                  2                                                                               RSS                                     Danny W                                                                                                                                16                                                                                                                                                     Why What                   https   book douban com subject 4105446        https   book douban com review 6868778                                                                                                                                                                                                                                                                                                        loser                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  https   book douban com subject 20273181 reviews                                                                                                                                                                                                                                                                           1                                                                                                                                                                     2                                                         20                                                                                                                                                        2b                                                                                                                          https   book douban com subject 1060025    https   book douban com subject 2376486                                                                                                                                                                                                                                                                                                                       80                                                                                                                                                                                                             ",
-        "objectID": "ck/20181203-ckinbox-no-professional-book",
-        "title": "非专业类书籍清单表 Inbox",
-        "date": "2018-12-23T02:30:17.000Z",
+        "uri": "post/20131208-how-to-solve-the-problem-of-garbled-characters",
+        "content": "JavaWeb                  URL    JSP HTML    Request Response       JSP HTML               html    java    1 3                   Servlet                           request getMethod        Get                 Post                       Get                                                                        CodeFilter java   web xml        xml codeFilter filter CodeFilter codeFilter                    EncodingFilter java  EncodingHttpServletRequest java   web xml        xml EncodingFilter EncodingFilter filter EncodingFilter encoding UTF 8 EncodingFilter                                        request getParameterMap            request getParameter  name                                                  request getParameterMap                Tomcat            apache tomcat 7 0 47 src java org apache catalina connectorRequest java  java public Map getParameterMap      parameterMap isLocked      return parameterMap    Enumeration enumeration   getParameterNames     enumeration hasMoreElements      String name   enumeration nextElement    String   values   getParameterValues name   parameterMap put name  values     parameterMap setLocked true   return parameterMap                                              Version Action  Time                     1 0 init 2013 12 08",
+        "objectID": "post/20131208-how-to-solve-the-problem-of-garbled-characters",
+        "title": "JavaWeb-如何解决乱码问题",
+        "author": "@yidaofeicn",
+        "date": "2014-11-15T00:00:00.000Z",
         "Keywords": [
-            "read",
-            "workflowy"
-        ],
-        "tags": [
-            "readlater"
+            "JavaWeb",
+            "乱码问题"
         ],
         "categories": [
-            "碎片化知识 Inbox"
-        ]
+            "love编程"
+        ],
+        "tags": [
+            "JavaWeb"
+        ],
+        "description": []
     },
     {
         "draft": false,
-        "uri": "ck/20181203-ckinbox-professional-book",
-        "content": "Java                                 Linux  Linux             Linux  Linux                           Linux      Linux                    Linux  Unix             Python  Head First python       Java      Java          Java  Java                   Eudyptula    https   segmentfault com a 1190000000478468   Eudyptula     Linux                         Hello World                    Linux               https   www zhihu com question 19606660 answer 169811328       Linux   https   www linuxidc com Linux 2014 02 96173 htm             Linux         https   www osetc com archives 845 html LPIC 1       https   www ibm com developerworks cn linux l lpic1 map index html",
-        "objectID": "ck/20181203-ckinbox-professional-book",
-        "title": "专业类书籍清单表 Inbox",
-        "date": "2018-12-23T02:30:17.000Z",
+        "uri": "post/20140714-sql-mysql-vs-oracle",
+        "content": "mysql       select              oracle                                  group           select name count money  user              MYSQL                                  ORACLE                                                         MYSQL              ORACLE                                                           SQL      MYSQL       SQL          LIMIT           PHP       SEEK           ORACLE       SQL                     ROWNUM                ROWNUM80                ORACLE    SQL    ID                   SELECT ID   FIELDNAME      TABLENAME ID   SELECT ID  SELECT ROWNUM NUMROW  ID TABLENAME   1 ORDER   2  NUMROW   80 NUMROW 80 NUMROW SUBDATE NOW   INTERVAL 7 DAY  ORACLE        7   DATEFIELD_NAME  SYSDATE   7   MYSQL               NOW     YYYY MM DD HH MM SS                 DATETIME     CURDATE    YYYY MM DD                  DATE    CURTIME   HH MM SS                  TIME      insert tablename  fieldname  values  now       oracle        sysdate        MYSQL            ORACLE                   MYSQL NOT NULL   ORACLE                                   NULL                              MYSQL     like        ORACLE        like                                instr            0                                                   Version Action  Time                     1 0 init 2014 07 14",
+        "objectID": "post/20140714-sql-mysql-vs-oracle",
+        "title": "SQL-MySQL与Oracle异同",
+        "author": "@yidaofeicn",
+        "date": "2014-07-14T00:00:00.000Z",
         "Keywords": [
-            "read",
-            "workflowy"
-        ],
-        "tags": [
-            "readlater"
+            "SQL",
+            "MySQL",
+            "Oracle"
         ],
         "categories": [
-            "碎片化知识 Inbox"
-        ]
-    },
-    {
-        "draft": false,
-        "uri": "ck/20190307-ckinbox-it-postgraduate-exam-book",
-        "content": "C   C    C Primer Plus  https   item jd com 11917487 html dist jd                                                        C         https   www shiyanlou com courses 57                      C     https   www imooc com learn 249  C                                               https   item jd com 12219883 html                     https   item jd com 38237570502 html                                                                                                                       https   www zhihu com question 30230102 https   www zhihu com question 19774914                   https   item jd com 11758229 html                              CPU                                                                                                                                                                      1                     https   www zhihu com question 40821372 answer 113402037               https   www zhihu com question 48076244 answer 108975256                                                                       120    https   zhuanlan zhihu com p 56017281      SQL                                                      https   www zhihu com question 20870410 answer 538178854       Version Action  Time                     1 0 init 2019 03 07",
-        "objectID": "ck/20190307-ckinbox-it-postgraduate-exam-book",
-        "title": "2019年计算机考研书籍推荐",
-        "date": "2019-03-06T16:26:23.000Z",
-        "Keywords": [
-            "计算机",
-            "研究生"
-        ],
-        "tags": [
-            "readlater"
-        ],
-        "categories": [
-            "碎片化知识 Inbox"
-        ],
-        "toc": false
-    },
-    {
-        "draft": false,
-        "uri": "ck",
-        "content": "2019                      Inbox             Inbox        Version Action  Time                     1 0 init 2019 06 25",
-        "objectID": "ck",
-        "title": "2019年6月25日 碎片化知识索引页",
-        "date": "2019-06-25T05:54:52.000Z",
-        "type": "post",
-        "Keywords": [
-            ""
-        ],
-        "categories": [
-            "维基"
+            "love编程"
         ],
         "tags": [
             ""
-        ]
+        ],
+        "description": []
     },
     {
         "draft": false,
-        "uri": "drafts/20190130-insurance-guild-basis-architecture",
-        "content": "Version Action  Time                     1 0 init 2019 01 30",
-        "objectID": "drafts/20190130-insurance-guild-basis-architecture",
-        "title": "认识商业保险-1-商业保险姓「保」",
-        "date": "2019-01-30T13:03:51.000Z",
-        "type": "post",
+        "uri": "post/20140714-sql-oracle-union-query",
+        "content": "Oracle                                                                                                                                      Oracle 9i                           SELECT nvl e ename        ename d dname emp e   dept d e deptno    d deptno  SELECT nvl e ename        ename d dname emp e   dept d e deptno d deptno                                                                                   outer join                                                                                                   Oracle9i       outer join                                SELECT nvl e ename        ename d dname emp e RIGHT JOIN dept d e deptno d deptno                     SELECT nvl e ename        ename d dname emp e LEFT JOIN dept d e deptno d deptno        SELECT nvl e ename        ename d dname emp e FULL JOIN dept d e deptno d deptno  PS                                                                                                                  SELECT e ename emp e e sal 1000                                                                                                                            SQL        SELECT e ename d dname emp e  dept d e deptno d deptno       SELECT e ename d dname emp e natural JOIN dept d                                                  colum           Version Action  Time                     1 0 init 2014 07 14",
+        "objectID": "post/20140714-sql-oracle-union-query",
+        "title": "SQL-Oracle联合查询",
+        "author": "@yidaofeicn",
+        "date": "2014-07-14T00:00:00.000Z",
         "Keywords": [
-            "三行一会",
-            "再保险"
+            "SQL",
+            "Oracle",
+            "联合查询"
         ],
         "categories": [
-            "投资理财"
+            "love编程"
         ],
         "tags": [
-            "商业保险"
-        ]
+            "联合查询"
+        ],
+        "description": []
     },
     {
         "draft": false,
-        "uri": "drafts/20190130-insurance-guild-foreword",
-        "content": "Version Action  Time                     1 0 init 2019 01 30",
-        "objectID": "drafts/20190130-insurance-guild-foreword",
-        "title": "认识商业保险-0-前言",
-        "date": "2019-01-30T13:07:17.000Z",
-        "type": "post",
+        "uri": "post/20141115-poi-create-a-excel",
+        "content": "Workbook                                                                                    java                CellStyle BORDER_DOUBLE      CellStyle BORDER_THIN      CellStyle BORDER_MEDIUM       CellStyle BORDER_DASHED       CellStyle BORDER_HAIR          CellStyle BORDER_THICK        if borderStyle  null   resultStyle setBorderTop borderStyle   resultStyle setBorderRight borderStyle   resultStyle setBorderBottom borderStyle   resultStyle setBorderLeft borderStyle                  if borderColor  null   resultStyle setTopBorderColor borderColor   resultStyle setRightBorderColor borderColor   resultStyle setBottomBorderColor borderColor   resultStyle setLeftBorderColor borderColor                       CellStyle ALIGN_CENTER      CellStyle ALIGN_LEFT     CellStyle ALIGN_RIGHT        if alignStyle  null    resultStyle setAlignment alignStyle                       CellStyle VERTICAL_TOP     CellStyle VERTICAL_CENTER     CellStyle VERTICAL_BOTTOM        if verticalStyle  null    resultStyle setVerticalAlignment verticalStyle     if foreColor  null    resultStyle setFillForegroundColor foreColor    else  resultStyle setFillForegroundColor HSSFColor BLACK index     if backColor  null    resultStyle setFillBackgroundColor backColor    else  resultStyle setFillBackgroundColor HSSFColor WHITE index     if fillPattern  null    resultStyle setFillPattern fillPattern     if font  null    resultStyle setFont font              resultStyle setWrapText wrapped                                                                               2                   java       RegionUtil            param workbook  param sheet  param region  param cellStyle    public static void megerCellAndSetSytle Workbook workbook  Sheet sheet CellRangeAddress region CellStyle cellStyle           sheet addMergedRegion region            RegionUtil setBorderTop cellStyle getBorderTop    region  sheet  workbook   RegionUtil setBorderRight cellStyle getBorderRight    region  sheet  workbook   RegionUtil setBorderBottom cellStyle getBorderBottom    region  sheet  workbook   RegionUtil setBorderLeft cellStyle getBorderLeft    region sheet workbook            RegionUtil setTopBorderColor cellStyle getTopBorderColor    region sheet workbook   RegionUtil setRightBorderColor cellStyle getRightBorderColor    region sheet workbook   RegionUtil setBottomBorderColor cellStyle getBottomBorderColor    region sheet workbook   RegionUtil setLeftBorderColor cellStyle getLeftBorderColor    region sheet workbook                          java public static short createDataFormat Workbook workbook String format   if workbook  null   throw new NullPointerException      CreationHelper createHelper   workbook getCreationHelper    return createHelper createDataFormat   getFormat format               5  PS                    Excel              Workbook                65536    SXSSFWorkbook          HSSFWorkbook         6              workbook    POI             java                   workbook  param excelFilePath  return    public static Workbook createReadWorkBook String excelFilePath   Workbook workbook null  if excelFilePath endsWith   xls     workbook    Workbook  new HSSFWorkbook      else if excelFilePath endsWith   xlsx     workbook    Workbook  new XSSFWorkbook     else  throw new IllegalArgumentException  Excel             return workbook                   excel workBook  param excelFilePath  return    public static Workbook createWriteWorkbook String excelFilePath   Workbook workbook null  if excelFilePath endsWith   xls     workbook    Workbook  new HSSFWorkbook      else if excelFilePath endsWith   xlsx     workbook    Workbook  new SXSSFWorkbook     else  throw new IllegalArgumentException  Excel             return workbook           1 http   loginleft iteye com blog 1820734  2 http   zhouchaofei2010 iteye com blog 1070857  3 http   tonyqus sinaapp com npoi2tutorial  4 http   blog csdn net for_china2012 article details 29844661  5 http   blog csdn net for_china2012 article details 29844661  6 https   xieshaohu wordpress com 2013 05 02  E4 BD BF E7 94 A8poi E8 BE 93 E5 87 BA E8 B6 85 E8 BF 8765536 E8 A1 8C E5 A4 A7excel EF BC 88sxssf E6 8A 80 E6 9C AF EF BC 89         Version Action  Time                     1 0 init 2013 12 08",
+        "objectID": "post/20141115-poi-create-a-excel",
+        "title": "POI-如何创建简单的表格",
+        "author": "@yidaofeicn",
+        "date": "2014-11-15T00:00:00.000Z",
         "Keywords": [
-            "商业保险",
-            "前言"
+            "POI",
+            "表格"
         ],
         "categories": [
-            "投资理财"
+            "love编程"
         ],
         "tags": [
-            "商业保险"
-        ]
+            "POI"
+        ],
+        "description": []
     },
     {
         "draft": false,
         "uri": "post/20150620-financial-management-how-buy-insurance",
         "content": "smile                                                   xmind                                                                                                                                                                                                                                                                                         Of course                                                                                                                                                                                                                                                                               really                                                                                                 1             2                                                                                                                                                                                                                                                                                                                                                                                                                   3           C ross               4                                                5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       3 4                                                                                                                                                                                                                                                                                                                                                                                                         2016                                                                                                                       3                                                                                                                                                                                                                                                                                                                                                                                                          5   8                5 10                     20         80                                                                                                                        10                                                                         20   10   1 0 06  203 118                                                            Buy term invest difference                                                          30                                                                                                                              25                3                       3                  3                                         65   70                                                                                                                                     3                                                     A                      PK          e v s      A                            20181030                                        2018                                                e        e                                                                                                                                                                                   2 3                                                                                                                                                                                                                                                       C           e                                    2018 7 20                                          A B       e        e      2018 7 20                                            0 6                    e         e                      1 https   www zhihu com question 22316395  2 https   www zhihu com question 55738604  3 http   mp weixin qq com s _biz MzI4MjMyNjAwMA   mid 2247483729 idx 1 sn 1faea9ca50edab2f776db393011de7bb scene 21 wechatredirect  4 https   zhuanlan zhihu com p 23254798  5 https   zhuanlan zhihu com p 24195078  6 https   zhuanlan zhihu com p 21488112  7 https   www zhihu com",
         "objectID": "post/20150620-financial-management-how-buy-insurance",
-        "title": "如何购买保险",
+        "title": "商业保险-如何购买保险",
         "date": "2015-06-20T00:00:00.000Z",
         "Keywords": [
             "保险",
@@ -204,6 +175,24 @@
             "投资理财"
         ],
         "Topics": []
+    },
+    {
+        "draft": false,
+        "uri": "post/20150620-financial-management-some-featured-reviews-about-how-to-buy-a-insurance-to-protect-your-life",
+        "content": "2015 6 20                                                                          65                                                     5500                                           60 80             20                       15                                                                               20 30                                                                                                                                                                                                                                                                                                                                                                                                                                                                              https   www zhihu com people yidan 23 56               6         2                                                      2                                                                                                                                         A                                                                                              C                                                                                                                                                  2               3                                                   B                                                        11                                                                                                                                                                                   PS                                                                                                                                                                                                                                                                                                                                                                                                                          20  10000                       6000        10000                                    3 5                                                               20    1            10              6                                                                              E                       2                                                                                                                                                                                                               2 3                                                                            58                        50                                                                                                                                                                                                                                                                                                                                                                                                                       e                                                                                                                                                                                                                                                                                                              10    10                                                                                                                                                                                                                                                                                    C                                                                                                                                                                                                                                                                                                                                                                                                                                                         4               4                                                                                                            20   80  35  4018  50               e                                                                                                                                                                                                                                                                                                                                                                                     1                   1           1                                                              1                                                                       1                                                                                                                                                                                                                                                 30   20               30   30            1 2                  20    20                                                                        ",
+        "objectID": "post/20150620-financial-management-some-featured-reviews-about-how-to-buy-a-insurance-to-protect-your-life",
+        "title": "商业保险-精选评论（如何用保险保障自己的一生）",
+        "date": "2019-10-17T06:35:17.000Z",
+        "type": "post",
+        "Keywords": [
+            "保险"
+        ],
+        "categories": [
+            "投资理财"
+        ],
+        "tags": [
+            "保险"
+        ]
     },
     {
         "draft": false,
@@ -279,7 +268,7 @@
             "个人建站"
         ],
         "categories": [
-            "个人建站"
+            "软件技巧"
         ]
     },
     {
@@ -494,7 +483,7 @@
             "Andriod"
         ],
         "categories": [
-            "智能手机教程"
+            "软件技巧"
         ]
     },
     {
@@ -554,7 +543,7 @@
             "主题优化"
         ],
         "categories": [
-            "个人建站"
+            "软件技巧"
         ],
         "tags": [
             "个人建站",
@@ -577,7 +566,7 @@
             "半角符号"
         ],
         "categories": [
-            "写作精进"
+            "维基"
         ],
         "tags": [
             "排版"
@@ -597,7 +586,7 @@
             "偏差"
         ],
         "categories": [
-            "JavaScript"
+            "love编程"
         ],
         "tags": [
             "JavaScript",
@@ -623,7 +612,7 @@
             "树"
         ],
         "categories": [
-            "JavaScript"
+            "love编程"
         ],
         "tags": [
             "hugo",
@@ -647,7 +636,7 @@
             "主题"
         ],
         "categories": [
-            "个人建站"
+            "软件技巧"
         ],
         "tags": [
             "个人博客建站",
@@ -816,7 +805,7 @@
             "搜索"
         ],
         "categories": [
-            "个人建站"
+            "软件技巧"
         ],
         "tags": [
             "个人博客建站",
@@ -858,7 +847,7 @@
             "纯音乐"
         ],
         "categories": [
-            "音乐殿堂"
+            "love诗歌"
         ]
     },
     {
@@ -872,7 +861,7 @@
             ""
         ],
         "categories": [
-            "个人建站"
+            "软件技巧"
         ],
         "tags": [
             "hugo",
@@ -894,7 +883,7 @@
             "Lora"
         ],
         "categories": [
-            "网络技术"
+            "物联网"
         ],
         "tags": [
             "通信技术"
@@ -915,7 +904,7 @@
             "Lora"
         ],
         "categories": [
-            "网络技术"
+            "物联网"
         ],
         "tags": [
             "通信技术"
@@ -935,7 +924,7 @@
             "自建"
         ],
         "categories": [
-            "个人建站"
+            "软件技巧"
         ],
         "tags": [
             "个人建站",
@@ -955,7 +944,7 @@
             "主题"
         ],
         "categories": [
-            "个人建站"
+            "软件技巧"
         ],
         "tags": [
             "个人建站",
@@ -979,7 +968,7 @@
             "Andriod"
         ],
         "categories": [
-            "智能手机教程"
+            "软件技巧"
         ]
     },
     {
@@ -995,7 +984,7 @@
             "民族落寞"
         ],
         "categories": [
-            "音乐殿堂"
+            "love诗歌"
         ],
         "tags": [
             "纯音乐",
@@ -1013,7 +1002,7 @@
             "互联网隐私"
         ],
         "categories": [
-            "自由斗士"
+            "维基"
         ],
         "tags": [
             "互联网隐私"
@@ -1033,7 +1022,7 @@
             "共产主义"
         ],
         "categories": [
-            "自由斗士"
+            "love诗歌"
         ],
         "tags": [
             "共产主义"
@@ -1053,7 +1042,7 @@
             "软件连接"
         ],
         "categories": [
-            "windows 教程"
+            "软件技巧"
         ],
         "tags": [
             "windows 教程"
@@ -1071,7 +1060,7 @@
             "你为生存做些什么，我不关心"
         ],
         "categories": [
-            "诗歌"
+            "love诗歌"
         ],
         "tags": [
             "诗歌"
@@ -1206,7 +1195,7 @@
             "ISO下载"
         ],
         "categories": [
-            "windows 教程"
+            "软件技巧"
         ],
         "tags": [
             "windows 教程"
@@ -1227,7 +1216,7 @@
             "安装"
         ],
         "categories": [
-            "windows 教程"
+            "软件技巧"
         ],
         "tags": [
             "windows 教程"
@@ -1248,7 +1237,7 @@
             "知识输入端"
         ],
         "categories": [
-            "自我管理系统"
+            "思考集"
         ],
         "tags": [
             "管理系统"
@@ -1269,7 +1258,7 @@
             "知识输入端"
         ],
         "categories": [
-            "自我管理系统"
+            "思考集"
         ],
         "tags": [
             "管理系统"
@@ -1288,7 +1277,7 @@
             "关闭磁贴"
         ],
         "categories": [
-            "windows 教程"
+            "软件技巧"
         ],
         "tags": [
             "windows 教程"
@@ -1309,7 +1298,7 @@
             "windows10"
         ],
         "categories": [
-            "windows 教程"
+            "软件技巧"
         ],
         "tags": [
             "windows 教程"
@@ -1330,7 +1319,7 @@
             "oneDrive快捷方式"
         ],
         "categories": [
-            "windows 教程"
+            "软件技巧"
         ],
         "tags": [
             "windows 教程"
@@ -1349,7 +1338,7 @@
             "windows 10常用/最近项目"
         ],
         "categories": [
-            "windows 教程"
+            "软件技巧"
         ],
         "tags": [
             "windows 教程",
@@ -1369,7 +1358,7 @@
             "快捷方式箭头"
         ],
         "categories": [
-            "windows 教程"
+            "软件技巧"
         ],
         "tags": [
             "windows 教程"
@@ -1388,7 +1377,7 @@
             "软件列表"
         ],
         "categories": [
-            "windows 教程"
+            "软件技巧"
         ],
         "tags": [
             "windows 教程"
@@ -1446,7 +1435,7 @@
             "485"
         ],
         "categories": [
-            "智能家居"
+            "物联网"
         ],
         "tags": [
             "智能家居"
@@ -1647,7 +1636,7 @@
             "文件管理系统"
         ],
         "categories": [
-            "windows 教程"
+            "软件技巧"
         ],
         "tags": [
             "windows 教程"
@@ -1656,17 +1645,17 @@
     {
         "draft": false,
         "uri": "post/20190110-windows-guild-foreword",
-        "content": "1        2                                                                                                                                         Windows   1             ISO Windows   2           Windows    Windows   3                    Windows   4                 Windows   5                        Windows    1           Windows    2                   Windows    3            windows 10       Windows    4            windows 10      6        oneDrive Windows    5              Windows 10    Windows    6             Windows 10          Version Action  Time                     1 0 init 2019 01 10",
+        "content": "1        2                                                                                                                                         Windows   1             ISO Windows   2           Windows    Windows   3                    Windows   4                 Windows   5                        Windows    1           Windows    2                   Windows    3            windows 10       Windows    4            windows 10      6        oneDrive Windows    5              Windows 10    Windows    6             Windows 10          Version Action  Time                     1 0 init 2018 12 10",
         "objectID": "post/20190110-windows-guild-foreword",
         "title": "Windows 教程-前言",
-        "date": "2019-01-10T02:27:08.000Z",
+        "date": "2018-12-10T02:27:08.000Z",
         "type": "post",
         "Keywords": [
             "windows 教程",
             "初心"
         ],
         "categories": [
-            "windows 教程"
+            "软件技巧"
         ],
         "tags": [
             "windows 教程"
@@ -1687,7 +1676,7 @@
             "系统调优"
         ],
         "categories": [
-            "windows 教程"
+            "软件技巧"
         ],
         "tags": [
             "windows 教程"
@@ -1745,7 +1734,7 @@
             "浏览器"
         ],
         "categories": [
-            "windows 教程"
+            "软件技巧"
         ],
         "tags": [
             "windows 教程"
@@ -1766,7 +1755,7 @@
             "微软小娜"
         ],
         "categories": [
-            "windows 教程"
+            "软件技巧"
         ],
         "tags": [
             "windows 教程"
@@ -1798,7 +1787,7 @@
         "content": "2011                                                                                                    VPS       Shadowsocks     v2ray     wireguard       2                            Centos 7  Wireguard        WireGuard           VPN                                shadowsocks        2                                                               5                                              Goagent                                                                   VPN        10000                                 2019 1                                                                                                                                                                                                                                                                                                                                                                                                                                                      VPN                                                                                                                                                                VPN                         youtube ImShuker                                                                                                                                                                 2                                         HTTP    SOCKS    DNS              IP     DNS                     Proxy Hunter       HTTPS    hosts              VPN PPTP SSH           GoAgent          Lantern OpenVPN          VPN wireguard Shadowsocks     V2Ray                 hosts        VPN wireguard   Shadowsocks       V2Ray     hosts                                         VPN wireguard   Shadowsocks       V2Ray         GFW                                                        youtube                           Version Action  Time                     1 0 init 2019 01 15",
         "objectID": "post/20190115-circumvention-technology-guild-foreword",
         "title": "翻墙 chapter 0 - 前言",
-        "date": "2019-01-15T03:57:19.000Z",
+        "date": "2019-01-15T00:57:19.000Z",
         "type": "post",
         "Keywords": [
             "翻墙",
@@ -1806,7 +1795,7 @@
             "自由"
         ],
         "categories": [
-            "翻墙"
+            "软件技巧"
         ],
         "tags": [
             "翻墙",
@@ -1827,7 +1816,7 @@
             "shadowsocks"
         ],
         "categories": [
-            "翻墙"
+            "软件技巧"
         ],
         "tags": [
             "翻墙",
@@ -1848,7 +1837,7 @@
             "v2ray"
         ],
         "categories": [
-            "翻墙"
+            "软件技巧"
         ],
         "tags": [
             "翻墙",
@@ -1860,7 +1849,7 @@
         "uri": "post/20190115-circumvention-technology-guild-vps",
         "content": "VPS                               VPS     VPS               VPS         VPS                          Iaas     bandwagong vultr Linode DigitalOcean    Saas   Paas         AWS    Azure    GCP                             VPS                                bandwagong vultr Linode DigitalOcean                     VPS                              PS                                                             VPS                  bandwagong http   banwagong cn     vultr https   www vultrcn com    Linode http   www xenvpser com     DigitalOcean https   digitalocean youhuima cc    VPS                     VPS                 Xshell 360    SSH    VPS      IP        https   tools ipip net ping php               http   tool chinaz com port                https   www yougetsignal com tools open ports   2 4         VPS     GFW                          CMD     Linux       ping xxxx xxxx xxxx xxxx                     Close                              Close        Open                   Close        Close             VPS          bandwagong              VPS                bandwagon                VPS            19 99     KVM              kiwivm        VPS       MyService           kiwivm Control Panel              Install new OS                 Centos           Main controls        IP     SSH                     root        Root password modification    Generate set new root password             VPS        VPS    IP     SSH      root         XShell          XShell                        VPS    IP      SSH                                           root               batch  root passwd  root                    root          root                                   VPS                             VPS                            kvm  vps            IP       VPS              VPS IP        Vultr   Ping    SSH              VPS                 Version Action  Time                     1 0 init 2019 01 15",
         "objectID": "post/20190115-circumvention-technology-guild-vps",
-        "title": "翻墙 chapter 1 — VPS 篇",
+        "title": "翻墙 chapter 1 - VPS 篇",
         "date": "2019-01-15T03:55:55.000Z",
         "type": "post",
         "Keywords": [
@@ -1869,7 +1858,7 @@
             "VPS"
         ],
         "categories": [
-            "翻墙"
+            "软件技巧"
         ],
         "tags": [
             "翻墙",
@@ -1890,7 +1879,7 @@
             "房产抵押"
         ],
         "categories": [
-            "金融贷款"
+            "投资理财"
         ],
         "tags": [
             "房产抵押"
@@ -1931,7 +1920,7 @@
             "美国电话卡"
         ],
         "categories": [
-            "翻墙"
+            "软件技巧"
         ],
         "tags": [
             "虚拟号码",
@@ -1951,7 +1940,7 @@
             "贷款还款方式"
         ],
         "categories": [
-            "金融贷款"
+            "投资理财"
         ],
         "tags": [
             "还款方式"
@@ -1971,7 +1960,7 @@
             "企业征信"
         ],
         "categories": [
-            "金融贷款"
+            "投资理财"
         ],
         "tags": [
             "征信报告"
@@ -2004,30 +1993,6 @@
         "date": "",
         "layout": "wiki",
         "weight": 40
-    },
-    {
-        "draft": false,
-        "uri": "wiki/2018-wiki-maybe-read-once",
-        "content": "101                               GitLab    Gitlab                    Google                    SSH key            ssh git gitlab com 2farecoverycodes            https   stackoverflow com questions 39142153                 http   love jimmylv info                                                                 Version Action  Time                     1 0 init 2018 11 10",
-        "objectID": "wiki/2018-wiki-maybe-read-once",
-        "type": "post",
-        "title": "Maybe read once",
-        "author": "@yidaofeicn",
-        "date": "2018-11-06T00:00:00.000Z",
-        "Keywords": [
-            "read once"
-        ],
-        "categories": [
-            "维基"
-        ],
-        "tags": [
-            "readlater"
-        ],
-        "Topics": [],
-        "description": [
-            "中文排版指南"
-        ],
-        "comment": false
     },
     {
         "draft": false,
