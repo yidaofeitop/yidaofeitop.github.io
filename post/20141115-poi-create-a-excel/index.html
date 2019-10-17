@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <meta charset="UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" >
+
+  
+  
+    
+    <meta charset="utf-8" name="keywords" content="POI,表格," > 
+  
+   
+  <meta charset="utf-8" name="description" content="本文主要是记录在编程过程中的一个问题：如何创建一个表格，主要涉及的是创建表格的基础问题：
+
+
+单元格样式、合并以及数据格式
+选用Workbook以及兼容性问题
+
+
+" >
+  
+  
+  
+    
+        <link rel="icon" type="image/png" href="https://blog.yidaofei.com//image/favicon-32x32.png" > 
+    
+  
+  
+  
+  
+  <title>POI-如何创建简单的表格- 易道非 Blog</title>  
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-149867135-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+
+  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//css/style.css">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+<body> 
+ 
+
+ 
+<div id="top-element" data-title="到达顶点"></div>
+  
+<header class="site-header fixed-top">
+  <div class="container">
+    <nav id="navigation">  
+      <a href="https://blog.yidaofei.com/" class="site-title">
+        
+        <img title="site-logo" class="site-logo" src="https://blog.yidaofei.com//image/logo.png" >
+           
+         易道非 Blog 
+      </a> 
+      <a aria-label="mobile menu" class="nav-toggle" id="site-nav-toggle"> 
+        <span></span> <span></span> <span></span> 
+      </a>
+      <ul class="menu-left">
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/categories/">Categories</a></li>
+        
+          <li><a href="/tags">Tags</a></li>
+        
+          <li><a href="/wiki">Wiki</a></li>
+        
+          <li><a href="/about">About</a></li>
+        
+
+        
+          <li><a data-remodal-target="searchinput">search</a></li>
+           
+      </ul>
+    </nav>
+  </div>
+</header> 
+
+
+
+<div class="remodal" data-remodal-id="searchinput" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> 
+  <span id="algoliaData" style="display:none;" data-appid="7811M20DVN" 
+		data-searchkey="36e10c95330790bef468eb32fbaab5b0" 
+		data-initindex="blog.yidaofei.com"></span>
+
+<div class="search-input-card" >
+    <input type="search" id="search-input" class="search-input" placeholder="Search for titles or URIs..." name="search" autocomplete="off" />
+     <span class="input-search-icon"><i class="fa fa-search"></i></span> 
+</div>
+
+ 
+
+  
+</div>
+
+  
+
+
+
+<section class="main-content-container">
+<article class="article-card">
+	<header class="article-header"> 
+	   <p class="article-title">POI-如何创建简单的表格</p>
+   		<div class="article-meta">
+			
+			<div><i class="fa fa-calendar" >2014年11月15日</i> </div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://blog.yidaofei.com/categories/love%e7%bc%96%e7%a8%8b">love编程</a> 
+				   
+				</i>  
+			</div> 
+		</div>  
+	</header>  
+	<content class="markdown">
+		<p>本文主要是记录在编程过程中的一个问题：如何创建一个表格，主要涉及的是创建表格的基础问题：</p>
+
+<ul>
+<li>单元格样式、合并以及数据格式</li>
+<li>选用Workbook以及兼容性问题</li>
+</ul>
+
+<p></p>
+
+<h3 id="单元格">单元格</h3>
+
+<h4 id="样式问题">样式问题</h4>
+
+<p>单元格样式主要包含边框样式、边框颜色、对齐方式、前景色、背景色、字体、是否允许换行等,以下部分代码为创建一个单元格样式的核心部分:</p>
+
+<pre><code class="language-java">/*
+*设置单元格边框样式 
+     *CellStyle.BORDER_DOUBLE     双边线 
+     *CellStyle.BORDER_THIN         细边线 
+     *CellStyle.BORDER_MEDIUM       中等边线 
+     *CellStyle.BORDER_DASHED       虚线边线 
+     *CellStyle.BORDER_HAIR         小圆点虚线边线 
+     *CellStyle.BORDER_THICK       粗边线 
+*/
+if(borderStyle!=null){
+resultStyle.setBorderTop(borderStyle);
+resultStyle.setBorderRight(borderStyle);
+resultStyle.setBorderBottom(borderStyle);
+resultStyle.setBorderLeft(borderStyle);
+}
+/*
+* 设置边框颜色
+*/
+if(borderColor!=null){
+resultStyle.setTopBorderColor(borderColor);
+resultStyle.setRightBorderColor(borderColor);
+resultStyle.setBottomBorderColor(borderColor);
+resultStyle.setLeftBorderColor(borderColor);
+}
+/**
+*  设置单元格内容水平对其方式 
+         * CellStyle.ALIGN_CENTER       居中对齐 
+         * CellStyle.ALIGN_LEFT       左对齐 
+         * CellStyle.ALIGN_RIGHT        右对齐  
+*/
+if(alignStyle!=null) { resultStyle.setAlignment(alignStyle); }
+/**
+*  设置单元格内容垂直对其方式 
+         * CellStyle.VERTICAL_TOP       上对齐 
+         * CellStyle.VERTICAL_CENTER    中对齐 
+         * CellStyle.VERTICAL_BOTTOM    下对齐 
+*/
+if(verticalStyle!=null) { resultStyle.setVerticalAlignment(verticalStyle); }
+if(foreColor!=null) { 
+resultStyle.setFillForegroundColor(foreColor);
+}else{
+resultStyle.setFillForegroundColor(HSSFColor.BLACK.index);
+}
+if(backColor!=null) { 
+resultStyle.setFillBackgroundColor(backColor);
+}else{
+resultStyle.setFillBackgroundColor(HSSFColor.WHITE.index);
+}
+if(fillPattern!=null) { resultStyle.setFillPattern(fillPattern); }
+if(font!=null) { resultStyle.setFont(font); }
+//设置是否换行
+resultStyle.setWrapText(wrapped);
+</code></pre>
+
+<h4 id="合并问题">合并问题</h4>
+
+<p>单元格合并有一个最大的问题就是如果表格设定有单元格的边框的样式且采用的全局设置单元格的样式则只有首个单元格才会有相关的样式，解决方式参考【2】,以下将相关的合并公共方法展示:</p>
+
+<pre><code class="language-java">/**
+* 利用RegionUtil设置合并单元格的边框
+* @param workbook
+* @param sheet
+* @param region
+* @param cellStyle
+*/
+public static void megerCellAndSetSytle(Workbook workbook, Sheet sheet,CellRangeAddress region,CellStyle cellStyle){
+//合并单元格
+sheet.addMergedRegion(region);
+//设置边框样式
+RegionUtil.setBorderTop(cellStyle.getBorderTop(), region, sheet, workbook);
+RegionUtil.setBorderRight(cellStyle.getBorderRight(), region, sheet, workbook);
+RegionUtil.setBorderBottom(cellStyle.getBorderBottom(), region, sheet, workbook);
+RegionUtil.setBorderLeft(cellStyle.getBorderLeft(), region,sheet,workbook);
+//设置边框颜色
+RegionUtil.setTopBorderColor(cellStyle.getTopBorderColor(), region,sheet,workbook);
+RegionUtil.setRightBorderColor(cellStyle.getRightBorderColor(), region,sheet,workbook);
+RegionUtil.setBottomBorderColor(cellStyle.getBottomBorderColor(), region,sheet,workbook);
+RegionUtil.setLeftBorderColor(cellStyle.getLeftBorderColor(), region,sheet,workbook);
+}
+</code></pre>
+
+<h4 id="数据格式">数据格式</h4>
+
+<p>公共的数据格式化类创建:</p>
+
+<pre><code class="language-java">public static short createDataFormat(Workbook workbook,String format){
+if(workbook==null){
+throw new NullPointerException();
+}
+CreationHelper createHelper = workbook.getCreationHelper();
+return createHelper.createDataFormat().getFormat(format);
+}
+</code></pre>
+
+<p>其他的内容参考【5】</p>
+
+<p>PS：单元格格式化字符串不知的话可以打开一个Excel右键单元格属性即可知道</p>
+
+<h3 id="选用workbook以及兼容性问题">选用Workbook以及兼容性问题</h3>
+
+<p>一般而言采用大于65536的采用 SXSSFWorkbook 技术，反之则采用 HSSFWorkbook,其相关资料参考【6】，以下为创建一个兼容性的 workbook(关于 POI 兼容性问题不再赘述)</p>
+
+<pre><code class="language-java">/**
+* 创建一个用于读取数据到程序的workbook
+* @param excelFilePath
+* @return
+*/
+public static Workbook createReadWorkBook(String excelFilePath){
+Workbook workbook=null;
+if(excelFilePath.endsWith(&quot;.xls&quot;)){
+workbook = (Workbook) new HSSFWorkbook();
+}
+else if(excelFilePath.endsWith(&quot;.xlsx&quot;)){
+workbook = (Workbook) new XSSFWorkbook();
+}else{
+throw new IllegalArgumentException(&quot;Excel文件后缀名错误&quot;);
+}
+return workbook;
+}
+ 
+ 
+/**
+* 创建一个用于导出数据到excel的workBook
+* @param excelFilePath
+* @return
+*/
+public static Workbook createWriteWorkbook(String excelFilePath){
+Workbook workbook=null;
+if(excelFilePath.endsWith(&quot;.xls&quot;)){
+workbook = (Workbook) new HSSFWorkbook();
+}
+else if(excelFilePath.endsWith(&quot;.xlsx&quot;)){
+workbook = (Workbook) new SXSSFWorkbook();
+}else{
+throw new IllegalArgumentException(&quot;Excel文件后缀名错误&quot;);
+}
+return workbook;
+}
+</code></pre>
+
+<h3 id="参考资料">参考资料</h3>
+
+<p>[1]<a href="http://loginleft.iteye.com/blog/1820734">POI格式化Cell样式</a>
+[2]<a href="http://zhouchaofei2010.iteye.com/blog/1070857">POI合并单元格加边框</a>
+[3]<a href="http://tonyqus.sinaapp.com/npoi2tutorial">NPOI2.0教程</a>
+[4]<a href="http://blog.csdn.net/for_china2012/article/details/29844661">POI HSSFColor 颜色索引对照表 </a>
+[5]<a href="http://blog.csdn.net/for_china2012/article/details/29844661">POI设置EXCEL单元格格式为文本、小数、百分比、货币、日期、科学计数法和中文大写</a>
+[6]<a href="https://xieshaohu.wordpress.com/2013/05/02/%E4%BD%BF%E7%94%A8poi%E8%BE%93%E5%87%BA%E8%B6%85%E8%BF%8765536%E8%A1%8C%E5%A4%A7excel%EF%BC%88sxssf%E6%8A%80%E6%9C%AF%EF%BC%89/">使用POI输出超过65536行大Excel（SXSSF技术）</a></p>
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Version</th>
+<th align="center">Action</th>
+<th align="center">Time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1.0</td>
+<td align="center">init</td>
+<td align="center">2013-12-08</td>
+</tr>
+</tbody>
+</table>
+			  
+		
+		
+			<div class="article-copyright">
+			  	<ul>
+			  		<li><strong>本文作者：</strong>易道非</li>
+			  		<li><strong>本文链接：</strong>https://blog.yidaofei.com/post/20141115-poi-create-a-excel/</li>
+			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
+			  	</ul>
+			</div>
+		 
+	</content>  
+ 	<hr/>
+ 	
+	<div class="article-footer-meta-between"> 
+		 
+		<div>
+			<i class="fa fa-tags">&nbsp;Tags:
+			
+				<a href="https://blog.yidaofei.com/tags/poi">POI</a>
+    		
+    		</i>   
+		</div> 
+		 
+		<div id="i-share" class="btn btn-default  share-widget">
+		    <i class="fa fa-share-alt"></i>
+		</div> 
+	</div>
+	<hr/>
+	<div class="article-footer-meta-between"> 
+		<div class="refArticle-prev" >
+			  
+		    <a href="https://blog.yidaofei.com/post/20131208-how-to-solve-the-problem-of-garbled-characters/">
+		    	<i class="fa fa-angle-double-left"></i>&nbsp;JavaWeb-如何解决乱码问题  
+		    </a> 
+			
+		</div>
+		 <div class="refArticle-next" >
+		  
+		  	<a href="https://blog.yidaofei.com/post/20140714-sql-mysql-vs-oracle/">SQL-MySQL与Oracle异同&nbsp;
+		  		<i class="fa fa-angle-double-right"></i>
+		  	</a> 
+		 
+	    </div>
+	</div>  
+</article> 
+</section>
+ 
+
+  
+ 
+<div class="main-content-container " >
+<div class="comment-card"> 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeitop/comment-utterances-blog.yidaofei.com"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+</div>
+</div>
+
+ 
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+	
+	
+	<span id="tocLevel" data-startLevel="" data-endLevel=""></span>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#单元格">单元格</a>
+<ul>
+<li><a href="#样式问题">样式问题</a></li>
+<li><a href="#合并问题">合并问题</a></li>
+<li><a href="#数据格式">数据格式</a></li>
+</ul></li>
+<li><a href="#选用workbook以及兼容性问题">选用Workbook以及兼容性问题</a></li>
+<li><a href="#参考资料">参考资料</a></li>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
+<footer class="site-footer text-center">
+  <div class="social" > 
+     
+          <a href=" mailto:yidaofeicn@gmail.com "><i class="fa fa-envelope-open-o"></i></span></a>
+      
+       
+          <a href=" https://github.com/yidaofeicn "  ><i class="fa fa-github"></i></span></a>
+      
+    
+      
+                <a href="https://blog.yidaofei.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml" target="_blank"> <i class="fa fa-rss"></i>
+                </a>
+          </div>
+   
+  <div class="copyright"  >
+    Powered by &nbsp;<a href="https://gohugo.io/">Hugo</a>&nbsp;|&nbsp;
+    Theme-<a href="https://github.com/yidaofeicn/hugo-theme-flybird">Flybird</a>  
+  </div>
+  <div class="copyright"> Copyright© 2018 Transparent Thoughts. All rights reserved.</div> 
+  <div class="copyright"> 
+
+      
+    
+      <span id="busuanzi_container">
+        访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+</footer>
+
+ 
+
+<div id="bottom-element" data-title="定位底部"></div>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.css">
+<script type="text/javascript" src="https://blog.yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.js"></script>
+ 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.30.0/algoliasearch.jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.32.0/autocomplete.jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com/thirdParty/algoliasearch/algolia-autocomplete.css">
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.css"> 
+<script type="text/javascript" src="https://blog.yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.css">
+<script type="text/javascript" src="https://blog.yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//thirdParty/prismjs/prism.css">
+
+<script type="text/javascript" src="https://blog.yidaofei.com//thirdParty/prismjs/prism.js"></script>
+
+
+<script type="text/javascript" color="#1D1D1D" opacity='1' zIndex="-2" count="400" src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.3/canvas-nest.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+<span id="isPage" data-isPage="true" style="display: none;"></span>
+
+
+ 
+
+<script type="text/javascript" src="https://blog.yidaofei.com//js/flybird.js"></script> 
+<script type="text/javascript" src="https://blog.yidaofei.com//js/main.js"></script> 
+  
+ 
+</style>
+</body>
+</html>
+
+
+ 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javaweb on  易道非 Blog</title>
+    <link>https://blog.yidaofei.com/tags/javaweb/</link>
+    <description>Recent content in Javaweb on  易道非 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 15 Nov 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.yidaofei.com/tags/javaweb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JavaWeb-如何解决乱码问题</title>
+      <link>https://blog.yidaofei.com/post/20131208-how-to-solve-the-problem-of-garbled-characters/</link>
+      <pubDate>Sat, 15 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20131208-how-to-solve-the-problem-of-garbled-characters/</guid>
+      <description>JavaWeb 编程中乱码大致可以分为以下三种: URL 乱码 JSP、HTML 乱码 Request、Response 乱码 其中 JSP、HTML 乱码可以通过一下方式解决 &amp;lt;meta http-equiv=&amp;quot;Content-Type&amp;quot; content=&amp;quot;text/html; charset=utf-8&amp;quot; /&amp;gt; &amp;lt;%@ page language = &amp;quot;java&amp;quot; contentType = &amp;quot;text/html; charset=UTF-8&amp;quot; pageEncoding = &amp;quot;UTF-8&amp;quot; %&amp;gt; 第1、3中乱码主要是通过程序代码来解决，在 「Servlet」 中通</description>
+    </item>
+    
+  </channel>
+</rss>

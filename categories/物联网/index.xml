@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>物联网 on  易道非 Blog</title>
+    <link>https://blog.yidaofei.com/categories/%E7%89%A9%E8%81%94%E7%BD%91/</link>
+    <description>Recent content in 物联网 on  易道非 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 08 Jan 2019 11:16:12 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.yidaofei.com/categories/%E7%89%A9%E8%81%94%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>20190108 智能家居初级篇-特性与现状</title>
+      <link>https://blog.yidaofei.com/post/20190108-smarthome-feature-and-present-situation/</link>
+      <pubDate>Tue, 08 Jan 2019 11:16:12 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20190108-smarthome-feature-and-present-situation/</guid>
+      <description>&lt;p&gt;本文主要是回答如&lt;a href=&#34;https://www.zhihu.com/question/308289162&#34;&gt;智能家居是一个空壳子吗？到底有没有前景？&lt;/a&gt;等类似
+对于智能家居没有任何了解的知友。&lt;/p&gt;
+
+&lt;p&gt;以下内容主要来自本人在智能锁行业中接触的智能家居知识为脉络查阅部分资料整理而成，可能有部分的遗漏与错误，欢迎大家讨论修正！&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;智能家居特性&lt;/li&gt;
+&lt;li&gt;智能家居现状&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>LoRa与NB-IoT谁才是下一代的王者？</title>
+      <link>https://blog.yidaofei.com/post/20181127-network-lora-vs-nbiot/</link>
+      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20181127-network-lora-vs-nbiot/</guid>
+      <description>&lt;p&gt;物联网应用需要考虑许多因素，例如节点成本，网络成本，电池寿命，数据传输速率(吞吐率)，延迟，移动性，网络覆盖范围以及部署类型等。&lt;/p&gt;
+
+&lt;p&gt;NB-IoT和LoRa两种技术具有不同的技术和商业特性，所以在应用场景方面会有不同。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://image.yidaofei.com/galleries/201811/lora-vs-nb-iot.jpg&#34; alt=&#34;Lora VS NB-IOT&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>各大物联网通信技术对比</title>
+      <link>https://blog.yidaofei.com/post/20181127-network-iot-communication-technology/</link>
+      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20181127-network-iot-communication-technology/</guid>
+      <description>&lt;p&gt;主要比较的通信技术如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;GPRS&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;WIFI&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;蓝牙4.0&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;ZIGBEE&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;433/315射频&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;NB-IOT&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;LoRa&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;eMTC&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;仅有一张图：😄&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://image.yidaofei.com/galleries/201811/communication-technology-compare.jpg&#34; alt=&#34;communication-technology-compare&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

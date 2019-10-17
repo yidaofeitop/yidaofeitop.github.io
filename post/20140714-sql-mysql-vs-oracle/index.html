@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <meta charset="UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" >
+
+  
+  
+    
+    <meta charset="utf-8" name="keywords" content="SQL,MySQL,Oracle," > 
+  
+   
+  <meta charset="utf-8" name="description" content="组函数用法规则 mysql 中组函数在 select 语句中可以随意使用，但在 oracle 中如果查询语句中有组函数，那其他列名必须是组函数处理过的，或者是 group by 子句中的列否则报错 select name,count(money) from user； 自动增长的数据类型处理 MYSQL 有自动增长的数据类型，插入记录时不用操作此字段，会自动获得数" >
+  
+  
+  
+    
+        <link rel="icon" type="image/png" href="https://blog.yidaofei.com//image/favicon-32x32.png" > 
+    
+  
+  
+  
+  
+  <title>SQL-MySQL与Oracle异同- 易道非 Blog</title>  
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-149867135-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+
+  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//css/style.css">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+<body> 
+ 
+
+ 
+<div id="top-element" data-title="到达顶点"></div>
+  
+<header class="site-header fixed-top">
+  <div class="container">
+    <nav id="navigation">  
+      <a href="https://blog.yidaofei.com/" class="site-title">
+        
+        <img title="site-logo" class="site-logo" src="https://blog.yidaofei.com//image/logo.png" >
+           
+         易道非 Blog 
+      </a> 
+      <a aria-label="mobile menu" class="nav-toggle" id="site-nav-toggle"> 
+        <span></span> <span></span> <span></span> 
+      </a>
+      <ul class="menu-left">
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/categories/">Categories</a></li>
+        
+          <li><a href="/tags">Tags</a></li>
+        
+          <li><a href="/wiki">Wiki</a></li>
+        
+          <li><a href="/about">About</a></li>
+        
+
+        
+          <li><a data-remodal-target="searchinput">search</a></li>
+           
+      </ul>
+    </nav>
+  </div>
+</header> 
+
+
+
+<div class="remodal" data-remodal-id="searchinput" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> 
+  <span id="algoliaData" style="display:none;" data-appid="7811M20DVN" 
+		data-searchkey="36e10c95330790bef468eb32fbaab5b0" 
+		data-initindex="blog.yidaofei.com"></span>
+
+<div class="search-input-card" >
+    <input type="search" id="search-input" class="search-input" placeholder="Search for titles or URIs..." name="search" autocomplete="off" />
+     <span class="input-search-icon"><i class="fa fa-search"></i></span> 
+</div>
+
+ 
+
+  
+</div>
+
+  
+
+
+
+<section class="main-content-container">
+<article class="article-card">
+	<header class="article-header"> 
+	   <p class="article-title">SQL-MySQL与Oracle异同</p>
+   		<div class="article-meta">
+			
+			<div><i class="fa fa-calendar" >2014年07月14日</i> </div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://blog.yidaofei.com/categories/love%e7%bc%96%e7%a8%8b">love编程</a> 
+				   
+				</i>  
+			</div> 
+		</div>  
+	</header>  
+	<content class="markdown">
+		
+
+<ol>
+<li><p>组函数用法规则
+mysql 中组函数在 select 语句中可以随意使用，但在 oracle 中如果查询语句中有组函数，那其他列名必须是组函数处理过的，或者是 group by 子句中的列否则报错
+<code>select name,count(money) from user；</code></p></li>
+
+<li><p>自动增长的数据类型处理
+MYSQL 有自动增长的数据类型，插入记录时不用操作此字段，会自动获得数据值。ORACLE 没有自动增长的数据类型，需要建立一个自动增长的序列号，插入记录时要把序列号的下一个值赋于此字段。</p></li>
+
+<li><p>单引号的处理
+MYSQL 里可以用双引号包起字符串，ORACLE 里只可以用单引号包起字符串。在插入和修改字符串前必须做单引号的替换：把所有出现的一个单引号替换成两个单引号。</p></li>
+
+<li><p>翻页的SQL语句的处理
+MYSQL 处理翻页的 SQL 语句比较简单，用 LIMIT 开始位置，记录个数；PHP 里还可以用 SEEK 定位到结果集的位置。ORACLE
+处理翻页的 SQL 语句就比较 繁琐了。每个结果集只有一个 ROWNUM 字段标明它的位置，并且只能用 ROWNUM<100，不能用
+ROWNUM>80。</p>
+
+<p>以下是经过分析后较好的两种 ORACLE 翻页 SQL 语句(ID 是唯一关键字的字段名)：
+语句一：</p>
+
+<pre><code class="language-sql">SELECT ID, [FIELD_NAME,...] FROM TABLE_NAME WHERE ID IN ( SELECT ID FROM (SELECT ROWNUM AS NUMROW, ID FROM TABLE_NAME WHERE 条件1 ORDER BY 条件2) WHERE NUMROW &gt; 80 AND NUMROW &lt; 100 ) ORDER BY 条件3;
+</code></pre>
+
+<p>语句二：</p>
+
+<pre><code class="language-sql">SELECT * FROM (( SELECT ROWNUM AS NUMROW, c.* from (select [FIELD_NAME,...] FROM TABLE_NAME WHERE 条件1 ORDER BY 条件2) c) WHERE NUMROW &gt; 80 AND NUMROW &lt; 100 ) ORDER BY 条件3;
+</code></pre></li>
+
+<li><p>长字符串的处理
+长字符串的处理 ORACLE 也有它特殊的地方。INSERT 和 UPDATE 时最大可操作的字符串长度小于等于4000个单字节，如果要插入更长的字符串，
+请考虑字段用 CLOB 类型，方法借用 ORACLE 里自带的 DBMS_LOB 程序包。插入修改记录前一定要做进行非空和长度判断，不能为空的字段值和
+超出长度字段值都应该提出警告，返回上次操作。</p></li>
+
+<li><p>日期字段的处理</p>
+
+<ul>
+<li>MYSQL 日期字段分 DATE 和 TIME 两种，ORACLE 日期字段只有 DATE，包含年月日时分秒 信息，用当前数据库的系统时间为 SYSDATE，精确到秒，或者用字符串转换成日期型函数</li>
+<li>日期字段的数学运算公式有很大的不同。MYSQL 找到离当前时间7天用 <code>DATE_FIELD_NAME &gt; SUBDATE(NOW()，INTERVAL 7 DAY)</code>，ORACLE 找到离当前时间7天用 <code>DATE_FIELD_NAME &gt;SYSDATE - 7;</code>
+MYSQL 中插入当前时间的几个函数是：NOW()函数以<code>YYYY-MM-DD HH:MM:SS</code>返回当前的日期时间，可以直接存到 DATETIME 字段中。CURDATE() 以<code>YYYY-MM-DD</code>的格式返回今天的日期，可以 直接存到DATE字段中。CURTIME()以<code>HH:MM:SS’的格式返回当前的时间，可以直接存到TIME字段中。例：</code>insert into tablename (fieldname) values (now())`
+而 oracle 中当前时间是 sysdate</li>
+</ul></li>
+
+<li><p>空字符的处理
+MYSQL的非空字段也有空的内容，ORACLE里定义了非空字段就不容许有空的内容。按MYSQL的NOT NULL来定义ORACLE表结构，导数据的时候会产生错误。因此导数据时要对空字符进行判断，如果为NULL或空字符，需要把它改成一个空格的字符串。</p></li>
+
+<li><p>字符串的模糊比较
+MYSQL里用字段名like%‘字符串%’，ORACLE里也可以用字段名like%‘字符串%’但这种方法不能使用索引，速度不快，用字符串比较函数instr(字段名，‘字符串’)&gt;0会得到更精确的查找结果。</p></li>
+
+<li><p>程序和函数里，操作数据库的工作完成后请注意结果集和指针的释放。</p></li>
+</ol>
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Version</th>
+<th align="center">Action</th>
+<th align="center">Time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1.0</td>
+<td align="center">init</td>
+<td align="center">2014-07-14</td>
+</tr>
+</tbody>
+</table>
+
+			  
+		
+		
+			<div class="article-copyright">
+			  	<ul>
+			  		<li><strong>本文作者：</strong>易道非</li>
+			  		<li><strong>本文链接：</strong>https://blog.yidaofei.com/post/20140714-sql-mysql-vs-oracle/</li>
+			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
+			  	</ul>
+			</div>
+		 
+	</content>  
+ 	<hr/>
+ 	
+	<div class="article-footer-meta-between"> 
+		 
+		<div>
+			<i class="fa fa-tags">&nbsp;Tags:
+			
+				<a href="https://blog.yidaofei.com/tags/"></a>
+    		
+    		</i>   
+		</div> 
+		 
+		<div id="i-share" class="btn btn-default  share-widget">
+		    <i class="fa fa-share-alt"></i>
+		</div> 
+	</div>
+	<hr/>
+	<div class="article-footer-meta-between"> 
+		<div class="refArticle-prev" >
+			  
+		    <a href="https://blog.yidaofei.com/post/20141115-poi-create-a-excel/">
+		    	<i class="fa fa-angle-double-left"></i>&nbsp;POI-如何创建简单的表格  
+		    </a> 
+			
+		</div>
+		 <div class="refArticle-next" >
+		  
+		  	<a href="https://blog.yidaofei.com/post/20140714-sql-oracle-union-query/">SQL-Oracle联合查询&nbsp;
+		  		<i class="fa fa-angle-double-right"></i>
+		  	</a> 
+		 
+	    </div>
+	</div>  
+</article> 
+</section>
+ 
+
+  
+ 
+<div class="main-content-container " >
+<div class="comment-card"> 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeitop/comment-utterances-blog.yidaofei.com"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+</div>
+</div>
+
+ 
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+	
+	
+	<span id="tocLevel" data-startLevel="" data-endLevel=""></span>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
+<footer class="site-footer text-center">
+  <div class="social" > 
+     
+          <a href=" mailto:yidaofeicn@gmail.com "><i class="fa fa-envelope-open-o"></i></span></a>
+      
+       
+          <a href=" https://github.com/yidaofeicn "  ><i class="fa fa-github"></i></span></a>
+      
+    
+      
+                <a href="https://blog.yidaofei.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml" target="_blank"> <i class="fa fa-rss"></i>
+                </a>
+          </div>
+   
+  <div class="copyright"  >
+    Powered by &nbsp;<a href="https://gohugo.io/">Hugo</a>&nbsp;|&nbsp;
+    Theme-<a href="https://github.com/yidaofeicn/hugo-theme-flybird">Flybird</a>  
+  </div>
+  <div class="copyright"> Copyright© 2018 Transparent Thoughts. All rights reserved.</div> 
+  <div class="copyright"> 
+
+      
+    
+      <span id="busuanzi_container">
+        访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+</footer>
+
+ 
+
+<div id="bottom-element" data-title="定位底部"></div>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.css">
+<script type="text/javascript" src="https://blog.yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.js"></script>
+ 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.30.0/algoliasearch.jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.32.0/autocomplete.jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com/thirdParty/algoliasearch/algolia-autocomplete.css">
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.css"> 
+<script type="text/javascript" src="https://blog.yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.css">
+<script type="text/javascript" src="https://blog.yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//thirdParty/prismjs/prism.css">
+
+<script type="text/javascript" src="https://blog.yidaofei.com//thirdParty/prismjs/prism.js"></script>
+
+
+<script type="text/javascript" color="#1D1D1D" opacity='1' zIndex="-2" count="400" src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.3/canvas-nest.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+<span id="isPage" data-isPage="true" style="display: none;"></span>
+
+
+ 
+
+<script type="text/javascript" src="https://blog.yidaofei.com//js/flybird.js"></script> 
+<script type="text/javascript" src="https://blog.yidaofei.com//js/main.js"></script> 
+  
+ 
+</style>
+</body>
+</html>
+
+
+ 

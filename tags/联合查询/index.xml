@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>联合查询 on  易道非 Blog</title>
+    <link>https://blog.yidaofei.com/tags/%E8%81%94%E5%90%88%E6%9F%A5%E8%AF%A2/</link>
+    <description>Recent content in 联合查询 on  易道非 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 14 Jul 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.yidaofei.com/tags/%E8%81%94%E5%90%88%E6%9F%A5%E8%AF%A2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SQL-Oracle联合查询</title>
+      <link>https://blog.yidaofei.com/post/20140714-sql-oracle-union-query/</link>
+      <pubDate>Mon, 14 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20140714-sql-oracle-union-query/</guid>
+      <description>Oracle 连接查询可以分为内连接、外连接、交叉连接 内连接 内连接可以分为等值连接、非等值连接、自连接等，主要是用于返回满足条件的记录 外连接 外连接可以分为左连接、右连接、全连接等，其为内连接的一种扩展，他不仅会返回满足连接条件的记录，而且还会返回不满足</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -73,29 +73,6 @@
     </item>
     
     <item>
-      <title>Windows 教程-前言</title>
-      <link>https://blog.yidaofei.com/post/20190110-windows-guild-foreword/</link>
-      <pubDate>Thu, 10 Jan 2019 10:27:08 +0800</pubDate>
-      
-      <guid>https://blog.yidaofei.com/post/20190110-windows-guild-foreword/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;初心&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;说句实在话，写这个主题主要是基于以下目的：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;在以往的解决亲朋好友电脑问题的时候发现大家的问题都比较雷同，按古人说的「授人以鱼不如授人以渔」，那就需要将相关的知识打散梳理形成一个&lt;strong&gt;逐步完善&lt;/strong&gt;的教程&lt;/li&gt;
-&lt;li&gt;有时候查询电脑故障解决方案时常发现查询的1 资料比较陈旧；2 营销为主、干货少，导致查询的资料无用的居多，浪费时间&lt;/li&gt;
-&lt;li&gt;信息如果不经过整理分析、输出修正那么就无法内化成自己的知识&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;目前的主题内容架构如下：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://image.yidaofei.com/galleries/201901/windows-guild-xmind.png&#34; alt=&#34;windows 教程-xmind&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;由于个人精力与知识面有限，有相关遗漏错误请大家指正，另外如有比较有意义的技巧大家可以互相讨论交流&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Windows 教程3-基础阶段-打造一个高效的文件管理系统</title>
       <link>https://blog.yidaofei.com/post/20190110-windows-guild-create-a-efficient-file-management-system/</link>
       <pubDate>Thu, 10 Jan 2019 10:27:08 +0800</pubDate>
@@ -295,6 +272,29 @@
 后者则是利用浏览器模拟手机端的方式获取下载地址，但是截至2018年12月16日为止 &lt;strong&gt;仅适用「Windows 10」&lt;/strong&gt; 具体操作请见下文。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows 教程-前言</title>
+      <link>https://blog.yidaofei.com/post/20190110-windows-guild-foreword/</link>
+      <pubDate>Mon, 10 Dec 2018 10:27:08 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20190110-windows-guild-foreword/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;初心&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;说句实在话，写这个主题主要是基于以下目的：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;在以往的解决亲朋好友电脑问题的时候发现大家的问题都比较雷同，按古人说的「授人以鱼不如授人以渔」，那就需要将相关的知识打散梳理形成一个&lt;strong&gt;逐步完善&lt;/strong&gt;的教程&lt;/li&gt;
+&lt;li&gt;有时候查询电脑故障解决方案时常发现查询的1 资料比较陈旧；2 营销为主、干货少，导致查询的资料无用的居多，浪费时间&lt;/li&gt;
+&lt;li&gt;信息如果不经过整理分析、输出修正那么就无法内化成自己的知识&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;目前的主题内容架构如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://image.yidaofei.com/galleries/201901/windows-guild-xmind.png&#34; alt=&#34;windows 教程-xmind&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;由于个人精力与知识面有限，有相关遗漏错误请大家指正，另外如有比较有意义的技巧大家可以互相讨论交流&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
