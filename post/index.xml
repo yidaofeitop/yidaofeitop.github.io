@@ -6,10 +6,31 @@
     <description>Recent content in Posts on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 17 Oct 2019 14:35:17 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 03 Nov 2019 23:23:17 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.yidaofei.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>打印机-如何设置远程扫描</title>
+      <link>https://blog.yidaofei.com/post/20191103-software-skills-how-to-set-printscan/</link>
+      <pubDate>Sun, 03 Nov 2019 23:23:17 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20191103-software-skills-how-to-set-printscan/</guid>
+      <description>&lt;p&gt;之所以记录如此简单的东西主要是在今年7月份查询很多资料但是仍旧无法配置好打印机的远程扫描，身为一个曾经的程序员深感惭愧 :😢:&lt;/p&gt;
+
+&lt;p&gt;本文内容大致分为三个部分，全部以图片的形式呈现：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;第一部分：电脑端安装打印机驱动&lt;/li&gt;
+&lt;li&gt;第二部分：电脑端配置远程扫描文件&lt;/li&gt;
+&lt;li&gt;第三部分：打印机配置扫描&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Tips&lt;/strong&gt;：电脑系统 &lt;strong&gt;Windows 7 旗舰版&lt;/strong&gt;，打印机型号为 &lt;strong&gt;RICHO MP4001&lt;/strong&gt;，具体到其他型号可能稍有差异，大家理解相关步骤的主要目的即可&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>商业保险-精选评论（如何用保险保障自己的一生）</title>
