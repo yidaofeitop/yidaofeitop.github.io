@@ -6,10 +6,46 @@
     <description>Recent content in Love编程 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 07 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.yidaofei.com/categories/love%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JavaScript-阿里巴巴运费模板定制化需求——第一阶段：Excel To JSON</title>
+      <link>https://blog.yidaofei.com/post/20191112-js-alibaba-shipping-template-excel-to-json/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20191112-js-alibaba-shipping-template-excel-to-json/</guid>
+      <description>&lt;p&gt;本文主要是用于记录解决「阿里巴巴国际站运费模板」输入需求，具体情况如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;问题：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;燕文运输报价单有179条数据，现在需要一个个的输入&lt;/li&gt;
+&lt;li&gt;名下有多家店铺需要同步此模板&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;需求：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;写一个小功能实现Excel数据直接可以创建对应的运费条目&lt;/p&gt;
+
+&lt;p&gt;由于朋友在提交此需求之前就已经定位到能够通过修改特定域的JSON数据达到此目的，所有将解决分解为2个阶段：&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;功能：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;第一阶段：从 EXCEL 生成对应的JSON数据，减少 Excel 一条条建项的重复工作&lt;/li&gt;
+&lt;li&gt;第二阶段：利用油猴等手段，可直接在网页导入 Excel 就可以修改对应的数据&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;本文即为第一阶段的主要实践过程记录，大致可以分为2部分记录：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;分解页面逻辑&lt;/li&gt;
+&lt;li&gt;实现 Excel 到 JSON 的转化&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
     
     <item>
       <title>JavaScript-修复由导航栏固定导致的页面锚点偏差 Bug</title>

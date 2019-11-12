@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <meta charset="UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" >
+
+  
+  
+    
+    <meta charset="utf-8" name="keywords" content="固定导航栏,页面锚点,偏差," > 
+  
+   
+  <meta charset="utf-8" name="description" content="本文主要是用于记录解决「阿里巴巴国际站运费模板」输入需求，具体情况如下：
+
+问题：
+
+
+燕文运输报价单有179条数据，现在需要一个个的输入
+名下有多家店铺需要同步此模板
+
+
+需求：
+
+写一个小功能实现Excel数据直接可以创建对应的运费条目
+
+由于朋友在提交此需求之前就已经定位到能够通过修改特定域的JSON数据达到此目的，所有将解决分解为2个阶段：
+
+功能：
+
+
+第一阶段：从 EXCEL 生成对应的JSON数据，减少 Excel 一条条建项的重复工作
+第二阶段：利用油猴等手段，可直接在网页导入 Excel 就可以修改对应的数据
+
+
+本文即为第一阶段的主要实践过程记录，大致可以分为2部分记录：
+
+
+分解页面逻辑
+实现 Excel 到 JSON 的转化
+" >
+  
+  
+  
+    
+        <link rel="icon" type="image/png" href="https://blog.yidaofei.com//image/favicon-32x32.png" > 
+    
+  
+  
+  
+  
+  <title>JavaScript-阿里巴巴运费模板定制化需求——第一阶段：Excel To JSON- 易道非 Blog</title>  
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-149867135-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+
+  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//css/style.css">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+<body> 
+ 
+
+ 
+<div id="top-element" data-title="到达顶点"></div>
+  
+<header class="site-header fixed-top">
+  <div class="container">
+    <nav id="navigation">  
+      <a href="https://blog.yidaofei.com/" class="site-title">
+        
+        <img title="site-logo" class="site-logo" src="https://blog.yidaofei.com//image/logo.png" >
+           
+         易道非 Blog 
+      </a> 
+      <a aria-label="mobile menu" class="nav-toggle" id="site-nav-toggle"> 
+        <span></span> <span></span> <span></span> 
+      </a>
+      <ul class="menu-left">
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/categories/">Categories</a></li>
+        
+          <li><a href="/tags">Tags</a></li>
+        
+          <li><a href="/wiki">Wiki</a></li>
+        
+          <li><a href="/about">About</a></li>
+        
+
+        
+          <li><a data-remodal-target="searchinput">search</a></li>
+           
+      </ul>
+    </nav>
+  </div>
+</header> 
+
+
+
+<div class="remodal" data-remodal-id="searchinput" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> 
+  <span id="algoliaData" style="display:none;" data-appid="7811M20DVN" 
+		data-searchkey="36e10c95330790bef468eb32fbaab5b0" 
+		data-initindex="blog.yidaofei.com"></span>
+
+<div class="search-input-card" >
+    <input type="search" id="search-input" class="search-input" placeholder="Search for titles or URIs..." name="search" autocomplete="off" />
+     <span class="input-search-icon"><i class="fa fa-search"></i></span> 
+</div>
+
+ 
+
+  
+</div>
+
+  
+
+
+
+<section class="main-content-container">
+<article class="article-card">
+	<header class="article-header"> 
+	   <p class="article-title">JavaScript-阿里巴巴运费模板定制化需求——第一阶段：Excel To JSON</p>
+   		<div class="article-meta">
+			
+			<div><i class="fa fa-calendar" >2019年11月12日</i> </div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://blog.yidaofei.com/categories/love%e7%bc%96%e7%a8%8b">love编程</a> 
+				   
+				</i>  
+			</div> 
+		</div>  
+	</header>  
+	<content class="markdown">
+		<p>本文主要是用于记录解决「阿里巴巴国际站运费模板」输入需求，具体情况如下：</p>
+
+<p><strong>问题：</strong></p>
+
+<ol>
+<li>燕文运输报价单有179条数据，现在需要一个个的输入</li>
+<li>名下有多家店铺需要同步此模板</li>
+</ol>
+
+<p><strong>需求：</strong></p>
+
+<p>写一个小功能实现Excel数据直接可以创建对应的运费条目</p>
+
+<p>由于朋友在提交此需求之前就已经定位到能够通过修改特定域的JSON数据达到此目的，所有将解决分解为2个阶段：</p>
+
+<p><strong>功能：</strong></p>
+
+<ol>
+<li>第一阶段：从 EXCEL 生成对应的JSON数据，减少 Excel 一条条建项的重复工作</li>
+<li>第二阶段：利用油猴等手段，可直接在网页导入 Excel 就可以修改对应的数据</li>
+</ol>
+
+<p>本文即为第一阶段的主要实践过程记录，大致可以分为2部分记录：</p>
+
+<ol>
+<li>分解页面逻辑</li>
+<li>实现 Excel 到 JSON 的转化</li>
+</ol>
+
+<p>
+<hr/></p>
+
+<h3 id="第一次拆解-定位数据位置与结构-20191105">第一次拆解-定位数据位置与结构-20191105</h3>
+
+<p>本次拆解主要是了解相关的 HTML 代码结构是怎样的一个结果，看 <strong>是否符合功能的分阶段设计的要求</strong></p>
+
+<h4 id="某个物流渠道">某个物流渠道</h4>
+
+<p>某个物流渠道的结构如下：</p>
+
+<pre><code class="language-html">  &lt;tr id=&quot;YANWEN_ECONOMY&quot; class=&quot;logistic-row&quot; logisticcompany=&quot;YANWEN_ECONOMY&quot; isdeliverycountryzone=&quot;COUNTRY&quot; companydisplayname=&quot;                    Yanwen Economic Air Mail 
+  &lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;菜鸟超级经济-燕文
+  &quot; logisticsmessage=&quot;&quot;&gt;
+    &lt;!--物流公司勾选框、名称以及相关的隐藏信息--&gt;
+    &lt;td class=&quot;logistic-name&quot; width=&quot;35%&quot;&gt;
+      &lt;input type=&quot;checkbox&quot; class=&quot;logistic-checkbox&quot; id=&quot;YANWEN_ECONOMY-check&quot; name=&quot;logistic-name&quot; value=&quot;YANWEN_ECONOMY&quot; checked=&quot;checked&quot;&gt;
+      &lt;span id=&quot;YANWEN_ECONOMY&quot;&gt;Yanwen Economic Air Mail
+        &lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;菜鸟超级经济-燕文&lt;/span&gt; 
+        …… 
+    &lt;/td&gt;
+    
+    &lt;!--运费价格部分--&gt;
+    &lt;td class=&quot;logistic-commit-standard&quot; width=&quot;35%&quot;&gt;
+        &lt;!--隐藏性说明--&gt;
+          &lt;div class=&quot;set-logistic&quot;&gt;
+               …… 
+          &lt;/div&gt;
+        &lt;div class=&quot;set-logistic&quot;&gt;
+            &lt;input class=&quot;no-logistic&quot; name=&quot;freight-mode-YANWEN_ECONOMY&quot; value=&quot;all_free&quot; type=&quot;radio&quot;&gt;卖家承担运费
+            &lt;span class=&quot;freeshipping-box&quot; style=&quot;display: none;&quot;&gt;Free Shipping&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;!--真正的信息部分--&gt;
+        &lt;div&gt;
+            &lt;input class=&quot;custom-logistic&quot; id=&quot;custom-define-YANWEN_ECONOMY&quot; name=&quot;freight-mode-YANWEN_ECONOMY&quot; value=&quot;self_define&quot; type=&quot;radio&quot; logisticcompany=&quot;YANWEN_ECONOMY&quot; isdeliverycountryzone=&quot;COUNTRY&quot; checked=&quot;checked&quot;&gt;
+            &lt;label class=&quot;custom-logistic-link&quot; for=&quot;custom-define-YANWEN_ECONOMY&quot;&gt;自定义运费&lt;/label&gt;
+            &lt;textarea class=&quot;custom-logistic-content&quot; name=&quot;freight-custom-setting-YANWEN_ECONOMY&quot;&gt;{&quot;defines&quot;:[{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.01&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.09&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632376,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;GE&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.62&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.02&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632377,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;CA&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.61&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.01&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632378,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;US,FR&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.97&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.01&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632379,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;SE&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.69&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.02&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632380,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;PT&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.61&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.01&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632381,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;NL,NO&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.68&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.00&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632382,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;IT&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.69&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.01&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632383,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;CH,UK,DK&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.00&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.04&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632368,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;TH,JP&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.00&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.05&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632369,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;IN,KR,ID,PH&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.00&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.06&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632370,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;FI,TR,HU&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.23&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.07&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632371,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;AR&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.00&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.07&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632372,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;IE,EE,BE,CZ,LV,SI,IL,KZ,CY,RO,BG,GR&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.03&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.10&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632373,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;LT,AL&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.04&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.11&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632374,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;AT,PL,CO&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.62&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.02&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632375,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;DE&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.23&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.08&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632366,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;CL&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.04&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.12&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632367,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;PE&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;}],&quot;freeShipCountry&quot;:&quot;&quot;,&quot;id&quot;:997317305,&quot;notShippedCountries&quot;:&quot;&quot;,&quot;standardShipCountry&quot;:&quot;AU,IS,HR,MD,MX,SK,NZ,PR,MT,BA,CR,LK,ZA,NG,KE,DZ,AF,OM,AZ,EG,ET,AD,AO,PG,PK,PY,BH,PA,BJ,BW,BT,BF,BI,GQ,TL,TG,FO,PF,FJ,CV,FK,GM,GU,GY,MNE,HN,KI,DJ,KG,GN,GW,GH,GA,KH,ZW,CM,QA,KW,LS,LA,LB,LR,RE,LU,RW,MG,MV,MW,ML,MK,MU,MR,MN,BD,MM,MA,MC,MZ,NA,NP,NI,NE,SRB,SN,SC,SM,SZ,SR,SB,TJ,TZ,TO,TN,TM,VU,GT,VE,BN,UG,UY,UZ,CI,NC,AM,JO,VN,ZM,TD,GI,SJ,SX,SV,BO,BZ,TT,EC,AN,LI,MH,AS,FM,PM,VI,GF,GD,AI,LC,GGY,GP,WF,KY,KM,MP,CK,AG&quot;,&quot;standardShipDiscount&quot;:&quot;0&quot;,&quot;standards&quot;:[]}&lt;/textarea&gt;
+            &lt;input type=&quot;hidden&quot; class=&quot;no-send-country&quot; value=&quot;&quot;&gt;&lt;/div&gt;
+    &lt;/td&gt;
+    &lt;!--到达时间--&gt;
+    &lt;td width=&quot;30%&quot;&gt; 
+          …… 
+    &lt;/td&gt;
+  &lt;/tr&gt;
+</code></pre>
+
+<h4 id="html-结构与-json-结构拆解">HTML 结构与 JSON 结构拆解</h4>
+
+<h5 id="html-结构">HTML 结构</h5>
+
+<p>整体的表现结构分解后如下：</p>
+
+<pre><code class="language-html">&lt;tbody&gt;
+    &lt;tr&gt;某个物流渠道的具体信息&lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;物流名称&lt;/td&gt;
+        &lt;td&gt;价格部分
+            &lt;input class=&quot;custom-logistic&quot; id=&quot;custom-define-YANWEN_ECONOMY&quot; name=&quot;freight-mode-YANWEN_ECONOMY&quot; value=&quot;self_define&quot; type=&quot;radio&quot; logisticcompany=&quot;YANWEN_ECONOMY&quot; isdeliverycountryzone=&quot;COUNTRY&quot; checked=&quot;checked&quot;&gt;
+              …… 
+            &lt;textarea class=&quot;custom-logistic-content&quot; name=&quot;freight-custom-setting-YANWEN_ECONOMY&quot;&gt;{&quot;defines&quot;:[{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.01&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.09&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632376,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;GE&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.62&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.02&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632377,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;CA&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.61&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.01&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632378,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;US,FR&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.97&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.01&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632379,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;SE&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.69&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.02&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632380,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;PT&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.61&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.01&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632381,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;NL,NO&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.68&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.00&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632382,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;IT&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.69&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.01&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632383,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;CH,UK,DK&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.00&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.04&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632368,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;TH,JP&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.00&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.05&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632369,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;IN,KR,ID,PH&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.00&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.06&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632370,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;FI,TR,HU&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.23&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.07&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632371,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;AR&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.00&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.07&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632372,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;IE,EE,BE,CZ,LV,SI,IL,KZ,CY,RO,BG,GR&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.03&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.10&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632373,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;LT,AL&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.04&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.11&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632374,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;AT,PL,CO&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.62&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.02&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632375,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;DE&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.23&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.08&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632366,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;CL&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;},{&quot;addFreight&quot;:&quot;&quot;,&quot;defineWeights&quot;:[{&quot;endWeight&quot;:&quot;0.01&quot;,&quot;intervalPrice&quot;:&quot;0.04&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.0&quot;},{&quot;endWeight&quot;:&quot;2.0&quot;,&quot;intervalPrice&quot;:&quot;0.12&quot;,&quot;intervalWeight&quot;:&quot;0.01&quot;,&quot;startWeight&quot;:&quot;0.01&quot;}],&quot;endOrderNum&quot;:&quot;&quot;,&quot;id&quot;:1318632367,&quot;minFreight&quot;:&quot;&quot;,&quot;perAddNum&quot;:&quot;&quot;,&quot;shippingCountry&quot;:&quot;PE&quot;,&quot;startOrderNum&quot;:&quot;&quot;,&quot;type&quot;:&quot;weight&quot;}],&quot;freeShipCountry&quot;:&quot;&quot;,&quot;id&quot;:997317305,&quot;notShippedCountries&quot;:&quot;&quot;,&quot;standardShipCountry&quot;:&quot;AU,IS,HR,MD,MX,SK,NZ,PR,MT,BA,CR,LK,ZA,NG,KE,DZ,AF,OM,AZ,EG,ET,AD,AO,PG,PK,PY,BH,PA,BJ,BW,BT,BF,BI,GQ,TL,TG,FO,PF,FJ,CV,FK,GM,GU,GY,MNE,HN,KI,DJ,KG,GN,GW,GH,GA,KH,ZW,CM,QA,KW,LS,LA,LB,LR,RE,LU,RW,MG,MV,MW,ML,MK,MU,MR,MN,BD,MM,MA,MC,MZ,NA,NP,NI,NE,SRB,SN,SC,SM,SZ,SR,SB,TJ,TZ,TO,TN,TM,VU,GT,VE,BN,UG,UY,UZ,CI,NC,AM,JO,VN,ZM,TD,GI,SJ,SX,SV,BO,BZ,TT,EC,AN,LI,MH,AS,FM,PM,VI,GF,GD,AI,LC,GGY,GP,WF,KY,KM,MP,CK,AG&quot;,&quot;standardShipDiscount&quot;:&quot;0&quot;,&quot;standards&quot;:[]}&lt;/textarea&gt;
+             &lt;!--注意此部分的关键数据项目:id、textarea以及textarea内部的JSON数据--&gt;
+        &lt;/td&gt; 
+        &lt;td&gt;时效部分&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tbody&gt; 
+</code></pre>
+
+<h5 id="json-数据拆解">JSON 数据拆解</h5>
+
+<p>关键的 JSON 数据结构分解后如下：</p>
+
+<pre><code class="language-json">{
+    &quot;defines&quot;:  
+        [{
+            &quot;addFreight&quot;: &quot;&quot;,
+            &quot;defineWeights&quot;: [{
+                &quot;endWeight&quot;: &quot;0.01&quot;,
+                &quot;intervalPrice&quot;: &quot;0.01&quot;,
+                &quot;intervalWeight&quot;: &quot;0.01&quot;,
+                &quot;startWeight&quot;: &quot;0.0&quot;
+            }, {
+                &quot;endWeight&quot;: &quot;2.0&quot;,
+                &quot;intervalPrice&quot;: &quot;0.09&quot;,
+                &quot;intervalWeight&quot;: &quot;0.01&quot;,
+                &quot;startWeight&quot;: &quot;0.01&quot;
+            }],
+            &quot;endOrderNum&quot;: &quot;&quot;,
+            &quot;id&quot;: 1318632376,
+            &quot;minFreight&quot;: &quot;&quot;,
+            &quot;perAddNum&quot;: &quot;&quot;,
+            &quot;shippingCountry&quot;: &quot;GE&quot;,
+            &quot;startOrderNum&quot;: &quot;&quot;,
+            &quot;type&quot;: &quot;weight&quot;
+        }],
+        &quot;freeShipCountry&quot;: &quot;&quot;,
+        &quot;id&quot;: 997317305,
+        &quot;notShippedCountries&quot;: &quot;&quot;,
+        &quot;standardShipCountry&quot;: &quot;AU,IS,HR,MD,MX,SK,NZ,PR,MT,BA,CR,LK,ZA,NG,KE,DZ,AF,OM,AZ,EG,ET,AD,AO,PG,PK,PY,BH,PA,BJ,BW,BT,BF,BI,GQ,TL,TG,FO,PF,FJ,CV,FK,GM,GU,GY,MNE,HN,KI,DJ,KG,GN,GW,GH,GA,KH,ZW,CM,QA,KW,LS,LA,LB,LR,RE,LU,RW,MG,MV,MW,ML,MK,MU,MR,MN,BD,MM,MA,MC,MZ,NA,NP,NI,NE,SRB,SN,SC,SM,SZ,SR,SB,TJ,TZ,TO,TN,TM,VU,GT,VE,BN,UG,UY,UZ,CI,NC,AM,JO,VN,ZM,TD,GI,SJ,SX,SV,BO,BZ,TT,EC,AN,LI,MH,AS,FM,PM,VI,GF,GD,AI,LC,GGY,GP,WF,KY,KM,MP,CK,AG&quot;,
+        &quot;standardShipDiscount&quot;: &quot;0&quot;,
+        &quot;standards&quot;: []
+}
+</code></pre>
+
+<p><strong>Tips</strong>：在此推荐大家使用 <a href="http://www.bejson.com/">JSON 在线工具</a></p>
+
+<h3 id="第二次拆解-数据差异以及整体业务流程-20191109">第二次拆解-数据差异以及整体业务流程-20191109</h3>
+
+<h4 id="数据差异点">数据差异点</h4>
+
+<p>上次已经分解出对应的 JSON 数据，需要做以下事情：</p>
+
+<ol>
+<li>朋友提供的 Excel 数据哪些数据是有用的</li>
+<li>EXCEL 缺少 JSON 中的某些数据从哪里可以获取？缺少能否提交</li>
+</ol>
+
+<p>第一轮对比：阿里巴巴运费设置界面与 Excel 数据对比</p>
+
+<p><img src="https://image.yidaofei.com/galleries/201911/alibaba-shiptemplate-config-price-details.png" alt="阿里巴巴运费设置页面" /></p>
+
+<p><img src="https://image.yidaofei.com/galleries/201911/alibaba-shiptemplate-yanwen-excel-data.png" alt="Excel 数据项" /></p>
+
+<p>从以上2张图可以看出 Excel 中有用的数据为「英文名、首重 10g 价格、续重每10g 价格」，其他都是无用的</p>
+
+<p>第二轮对比：Excel 与 JSON结构对比</p>
+
+<p>这一轮对比应该可以判断 Excel 中仅有 「defineWeights」、「shippingCountry」两个数据点，其他的数据点都无，所以需要逐减少项目来测试是否影响整体的提交</p>
+
+<p>最后经过测试 Excel 的数据基本满足，最简单的 JSON 结构如下：</p>
+
+<pre><code class="language-json">{
+    &quot;defines&quot;: [{ 
+        &quot;defineWeights&quot;: [{
+            &quot;endWeight&quot;: &quot;0.01&quot;,
+            &quot;intervalPrice&quot;: &quot;0.01&quot;,
+            &quot;intervalWeight&quot;: &quot;0.01&quot;,
+            &quot;startWeight&quot;: &quot;0.0&quot;
+        }, {
+            &quot;endWeight&quot;: &quot;2.0&quot;,
+            &quot;intervalPrice&quot;: &quot;0.09&quot;,
+            &quot;intervalWeight&quot;: &quot;0.01&quot;,
+            &quot;startWeight&quot;: &quot;0.01&quot;
+        }], 
+        &quot;shippingCountry&quot;: &quot;GE&quot;, 
+        &quot;type&quot;: &quot;weight&quot;
+    }] 
+}
+</code></pre>
+
+<p>所以最基础的需求就是以 <strong>Excel 的数据生成以上的 JSON 结构</strong></p>
+
+<p>反过头来看看能在 <strong>最简单的 JSON 结构上增加哪些内容呢</strong>，在反复的过程中发现可以增加以下字段：</p>
+
+<ul>
+<li>standardShipCountry：标准邮费国家，系统存储在DOM结构中，在设置完毕之后自动生成</li>
+</ul>
+
+<h4 id="程序逻辑走向-一个错误思考分支走向">程序逻辑走向-一个错误思考分支走向</h4>
+
+<p>上一章节通过对比相关数据提出一个 <strong>构成全新的最简JSON结构填充到textarea</strong>，但是在开始之初不知道是哪种想法导致想要 <strong>模拟真实逻辑找到真正的数据存储点修改对应的数据</strong>所以有如下动作：</p>
+
+<h5 id="分解程序整体业务逻辑">分解程序整体业务逻辑：</h5>
+
+<ol>
+<li>点击某个模板：</li>
+<li>展示模板下所有的物流页面（分解「tbody」的数据可以看到已提交的数据内容如上文分析的「第一次拆解-定位数据位置与结构-20191105-JSON 数据拆解 」）</li>
+<li>点击某个物流编辑跳出弹窗编辑相关数据（<strong>注意此次为同一个页面</strong>）</li>
+<li>点击模板的保存界面，将所有的数据再次提交至于服务器</li>
+</ol>
+
+<p>以下是步骤4业务逻辑的具体呈现：</p>
+
+<ul>
+<li>提交链接：<a href="https://freighttemplate.aliexpress.com/wsproduct/freight/editFreightTemplate.htm?spm=5261.8851807.0.0.60103e5fflbvPR&amp;id=718088447">https://freighttemplate.aliexpress.com/wsproduct/freight/editFreightTemplate.htm?spm=5261.8851807.0.0.60103e5fflbvPR&amp;id=718088447</a></li>
+<li>其 POST 提交的数据如下：</li>
+</ul>
+
+<pre><code class="language-javascript">action=freight/freight_template_action
+event_submit_do_update=save
+isSystemTemplate=false
+type=common
+_csrf_token_=j9j62f8j1f69
+_fmw.f._0.t=TempChina
+_fmw.f._0.i=718088447
+_fmw.f._0.s= 
+freight-custom-setting-AE_CN_SUPER_ECONOMY_G
+arrival-time-custom-setting-AE_CN_SUPER_ECONOMY_G={&quot;defines&quot;:[{&quot;commitDay&quot;:90,&quot;country&quot;:&quot;BR&quot;,&quot;defaultCommitDay&quot;:0,&quot;isAllCountry&quot;:&quot;&quot;,&quot;isOtherCountry&quot;:&quot;&quot;}],&quot;other&quot;:{&quot;commitDay&quot;:60,&quot;country&quot;:&quot;TLS,AL,AR,AW,AZ,BD,BH,BN,CZ,DO,FI,FJ,GE,ID,IN,IR,JO,KH,MU,MV,NL,OM,PE,PK,PR,PT,PY,SK,SRB,UA,VN,FR,UK,US,NZ,BE,CH,DK,IE,IL,NO,SE,TR,AT,MY,SG,TH,KR,JP,AF,DZ,AS,AD,AO,AI,AG,AM,AU,BB,BY,BZ,BJ,BM,BT,BO,BA,BW,BG,BF,BI,CM,CA,IC,CV,KY,CF,TD,CL,CX,CC,CO,KM,CG,CR,HR,CU,CY,ZR,DJ,EC,EG,SV,GQ,ER,EE,ET,FK,FO,PF,GA,GM,DE,GH,GI,GR,GL,GD,GP,GU,GT,GN,GW,GF,GY,HT,HN,HU,IS,IQ,IT,CI,JM,KZ,KE,KI,KW,KG,LA,LV,LB,LS,LR,LY,LI,LT,LU,MK,MG,MW,ML,MT,MH,MQ,MR,YT,MX,FM,MC,MN,MNE,MS,MA,MZ,MM,NA,NR,NP,AN,NC,NI,NE,NG,NU,NF,KP,MP,PW,PA,PG,PH,PL,QA,MD,RE,RO,RU,RW,SH,KN,LC,PM,VC,WS,SM,ST,SA,SN,SC,SL,SI,SB,SO,ZA,SGS,ES,LK,SD,SR,SJ,SZ,SY,TJ,BS,VA,TP,TG,TK,TO,TT,TN,TM,TC,TV,UG,AE,TZ,UM,UY,UZ,VU,VE,VG,VI,WF,EH,YE,ZM,ZW,BV,HM,IO,PN,PS,TF,ASC&quot;,&quot;defaultCommitDay&quot;:0,&quot;isAllCountry&quot;:&quot;&quot;,&quot;isOtherCountry&quot;:&quot;&quot;}} 
+logistic-name=CAINIAO_EXPEDITED_ECONOMY
+freight-reduce-count-CAINIAO_EXPEDITED_ECONOMY=0
+freight-mode-CAINIAO_EXPEDITED_ECONOMY=self_define
+freight-custom-setting-CAINIAO_EXPEDITED_ECONOMY={&quot;defines&quot;:[{&quot;shippingCountry&quot;:&quot;KR&quot;,&quot;type&quot;:&quot;weight&quot;,&quot;defineWeights&quot;:[{&quot;startWeight&quot;:&quot;0&quot;,&quot;endWeight&quot;:&quot;1&quot;,&quot;intervalWeight&quot;:&quot;1&quot;,&quot;intervalPrice&quot;:&quot;23&quot;},{&quot;startWeight&quot;:&quot;1&quot;,&quot;endWeight&quot;:&quot;2&quot;,&quot;intervalWeight&quot;:&quot;0.011&quot;,&quot;intervalPrice&quot;:&quot;11&quot;}]}],&quot;standards&quot;:[],&quot;standardShipCountry&quot;:&quot;ES,RU&quot;,&quot;standardShipDiscount&quot;:&quot;0&quot;}
+……
+</code></pre>
+
+<p>最后证明对于前端框架了解不深的话还是 <strong>不要太复杂了</strong>:😄:</p>
+
+<h3 id="第一次编码-20191109">第一次编码-20191109</h3>
+
+<p>主要的业务逻辑是：</p>
+
+<ol>
+<li>利用 FileReader 以及 js-xlsx 插件读取 Excel 数据</li>
+<li>利用读取数据拼接成相关的代码</li>
+</ol>
+
+<p>以下就是第一步的相关代码</p>
+
+<pre><code class="language-js">$('#shipFile').change(function(e){
+    var files=e.target.files;
+    var fileReader=new FileReader();
+    //读取Excel文件
+    fileReader.onload=function(ev){
+        try{
+            var data = ev.target.result;
+            //以二进制读取整个表格
+            var workbook=XLSX.read(data,{type:&quot;binary&quot;});
+            //物流数据数组
+            var shipDataArray=[]; 
+            var fromTo = '';
+
+            //遍历每张表读取
+            for (var sheet in workbook.Sheets) {
+                if (workbook.Sheets.hasOwnProperty(sheet)) {
+                    fromTo = workbook.Sheets[sheet]['!ref'];
+                    shipDataArray = shipDataArray.concat(XLSX.utils.sheet_to_formulae(workbook.Sheets[sheet]));
+                }
+            }
+        }catch(e){
+            console.log('文件类型不正确');
+            return;
+        }
+    }
+    // 以二进制方式打开文件
+    fileReader.readAsBinaryString(files[0]); 
+}
+</code></pre>
+
+<p><strong>Tips:</strong></p>
+
+<ul>
+<li>FileReader 参考链接：<a href="https://developer.mozilla.org/en-US/docs/Web/API/FileReader">https://developer.mozilla.org/en-US/docs/Web/API/FileReader</a><br /></li>
+<li>XLSX  参考链接：<a href="https://github.com/SheetJS/sheetjs">https://github.com/SheetJS/sheetjs</a></li>
+</ul>
+
+<h4 id="数据排列错误">数据排列错误</h4>
+
+<p>期间主要的错误是：因为 JSON 字段未按照官方排列导致出现提示以下错误</p>
+
+<p><img src="https://image.yidaofei.com/galleries/201911/alibaba-shiptemplate-error1.png" alt="字段排列顺序错误" /></p>
+
+<h3 id="第二次编码-20191112">第二次编码-20191112</h3>
+
+<p>本次主要是优化相关体验，在第一次编码结束之后提出以下问题：</p>
+
+<ol>
+<li>第一次编码未将相同运费的国家归为一个「defines」,导致传输的数据远比官网大而且加载过慢：<strong>必须解决</strong></li>
+<li>国家列表需要手工输入，不合实际请款</li>
+<li>初始重量、续重单位均是固定，不满足后续可扩展性能</li>
+</ol>
+
+<p>分析相关情况之后提出以下的功能调整思路：</p>
+
+<ol>
+<li>建立 Map 存储点，key为运费具体情况，value为国家字符串===&gt;第1个问题</li>
+<li>完成的列出每个物流对应的国家列表，然后用下拉框选择即可</li>
+<li>将初始重量等设置为变量</li>
+</ol>
+
+<p>关键代码：</p>
+
+<pre><code class="language-js">//将数据存储至于Map中
+//key：首重+&quot;|&quot;+首重价格+&quot;|&quot;+续重开始+&quot;|&quot;+续重结束+&quot;|&quot;+续重步增+&quot;|&quot;+续重价格
+var keyShippingPrice=firstWeight+&quot;|&quot;+firstPrice+&quot;|&quot;+continuedWeightStart+&quot;|&quot;+continuedWeightInterval+&quot;|&quot;+continuedWeightEnd+&quot;|&quot;+continuedPrice;
+
+//已经存在
+if(shippingPriceCountryMap.has(keyShippingPrice)){
+    var valueCountries=shippingPriceCountryMap.get(keyShippingPrice);
+    valueCountries=valueCountries.concat(&quot;,&quot;+country); 
+    shippingPriceCountryMap.set(keyShippingPrice,valueCountries);
+}else{
+    shippingPriceCountryMap.set(keyShippingPrice,country);
+} 
+</code></pre>
+
+<p>最后呈现的效果如下：</p>
+
+<p><img src="https://image.yidaofei.com/galleries/201911/alibaba-shiptemplate-excel-to-json-finally.png" alt="阿里巴巴运费模板-ExcelToJSON 最终稿呈现" /></p>
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Version</th>
+<th align="center">Action</th>
+<th align="center">Time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1.0</td>
+<td align="center">init</td>
+<td align="center">2019-11-12</td>
+</tr>
+</tbody>
+</table>
+			  
+		
+		
+			<div class="article-copyright">
+			  	<ul>
+			  		<li><strong>本文作者：</strong>易道非</li>
+			  		<li><strong>本文链接：</strong>https://blog.yidaofei.com/post/20191112-js-alibaba-shipping-template-excel-to-json/</li>
+			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
+			  	</ul>
+			</div>
+		 
+	</content>  
+ 	<hr/>
+ 	
+	<div class="article-footer-meta-between"> 
+		 
+		<div>
+			<i class="fa fa-tags">&nbsp;Tags:
+			
+				<a href="https://blog.yidaofei.com/tags/javascript">JavaScript</a>
+    		
+				<a href="https://blog.yidaofei.com/tags/alibaba">alibaba</a>
+    		
+				<a href="https://blog.yidaofei.com/tags/excel">EXCEL</a>
+    		
+				<a href="https://blog.yidaofei.com/tags/json">JSON</a>
+    		
+    		</i>   
+		</div> 
+		 
+		<div id="i-share" class="btn btn-default  share-widget">
+		    <i class="fa fa-share-alt"></i>
+		</div> 
+	</div>
+	<hr/>
+	<div class="article-footer-meta-between"> 
+		<div class="refArticle-prev" >
+			
+		</div>
+		 <div class="refArticle-next" >
+		  
+		  	<a href="https://blog.yidaofei.com/post/20191110-mobile-skills-x-browser/">Andriod-X浏览器基础设置&nbsp;
+		  		<i class="fa fa-angle-double-right"></i>
+		  	</a> 
+		 
+	    </div>
+	</div>  
+</article> 
+</section>
+ 
+
+  
+ 
+<div class="main-content-container " >
+<div class="comment-card"> 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeitop/comment-utterances-blog.yidaofei.com"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+</div>
+</div>
+
+ 
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+	
+	
+	<span id="tocLevel" data-startLevel="" data-endLevel=""></span>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#第一次拆解-定位数据位置与结构-20191105">第一次拆解-定位数据位置与结构-20191105</a>
+<ul>
+<li><a href="#某个物流渠道">某个物流渠道</a></li>
+<li><a href="#html-结构与-json-结构拆解">HTML 结构与 JSON 结构拆解</a>
+<ul>
+<li><a href="#html-结构">HTML 结构</a></li>
+<li><a href="#json-数据拆解">JSON 数据拆解</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#第二次拆解-数据差异以及整体业务流程-20191109">第二次拆解-数据差异以及整体业务流程-20191109</a>
+<ul>
+<li><a href="#数据差异点">数据差异点</a></li>
+<li><a href="#程序逻辑走向-一个错误思考分支走向">程序逻辑走向-一个错误思考分支走向</a>
+<ul>
+<li><a href="#分解程序整体业务逻辑">分解程序整体业务逻辑：</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#第一次编码-20191109">第一次编码-20191109</a>
+<ul>
+<li><a href="#数据排列错误">数据排列错误</a></li>
+</ul></li>
+<li><a href="#第二次编码-20191112">第二次编码-20191112</a></li>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
+<footer class="site-footer text-center">
+  <div class="social" > 
+     
+          <a href=" mailto:yidaofeicn@gmail.com "><i class="fa fa-envelope-open-o"></i></span></a>
+      
+       
+          <a href=" https://github.com/yidaofeicn "  ><i class="fa fa-github"></i></span></a>
+      
+    
+      
+                <a href="https://blog.yidaofei.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml" target="_blank"> <i class="fa fa-rss"></i>
+                </a>
+          </div>
+   
+  <div class="copyright"  >
+    Powered by &nbsp;<a href="https://gohugo.io/">Hugo</a>&nbsp;|&nbsp;
+    Theme-<a href="https://github.com/yidaofeicn/hugo-theme-flybird">Flybird</a>  
+  </div>
+  <div class="copyright"> Copyright© 2018 Transparent Thoughts. All rights reserved.</div> 
+  <div class="copyright"> 
+
+      
+    
+      <span id="busuanzi_container">
+        访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+</footer>
+
+ 
+
+<div id="bottom-element" data-title="定位底部"></div>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.css">
+<script type="text/javascript" src="https://blog.yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.js"></script>
+ 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.30.0/algoliasearch.jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.32.0/autocomplete.jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com/thirdParty/algoliasearch/algolia-autocomplete.css">
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.css"> 
+<script type="text/javascript" src="https://blog.yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.css">
+<script type="text/javascript" src="https://blog.yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//thirdParty/prismjs/prism.css">
+
+<script type="text/javascript" src="https://blog.yidaofei.com//thirdParty/prismjs/prism.js"></script>
+
+
+<script type="text/javascript" color="#1D1D1D" opacity='1' zIndex="-2" count="400" src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.3/canvas-nest.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+<span id="isPage" data-isPage="true" style="display: none;"></span>
+
+
+ 
+
+<script type="text/javascript" src="https://blog.yidaofei.com//js/flybird.js"></script> 
+<script type="text/javascript" src="https://blog.yidaofei.com//js/main.js"></script> 
+  
+ 
+</style>
+</body>
+</html>
+
+
+ 

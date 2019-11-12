@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>浏览器 on  易道非 Blog</title>
+    <link>https://blog.yidaofei.com/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/</link>
+    <description>Recent content in 浏览器 on  易道非 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 10 Nov 2019 23:30:07 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.yidaofei.com/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Andriod-X浏览器基础设置</title>
+      <link>https://blog.yidaofei.com/post/20191110-mobile-skills-x-browser/</link>
+      <pubDate>Sun, 10 Nov 2019 23:30:07 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20191110-mobile-skills-x-browser/</guid>
+      <description>&lt;p&gt;前天晚上母亲忽然来微信电话说「找不到百度入口」，后来才发现是跳转的链接完全不对&lt;/p&gt;
+
+&lt;p&gt;后续继续分析发现是因为我在购入之时就刷入了「MIUI国际版本」所以导致浏览器也是国外的界面 :😢:&lt;/p&gt;
+
+&lt;p&gt;在母亲无意中解决了之后想想「为什么我自己使用的 X浏览器写一个简单版的教程出来以便大家更好的上网」&lt;/p&gt;
+
+&lt;p&gt;本章无意去比较那个浏览器更加的好，因为每个人的需求都不一样，我选择 「X-浏览器」的原因是在于&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;非常简洁，主页可以设置为只有一个搜索引擎的入口，类似 Google 搜索的入口&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;广告拦截&lt;/strong&gt; 非常给力，相信大家在移动端对于广告应该是深有体会，而该浏览器在这方面可以说超越了绝大部分浏览器&lt;/li&gt;
+&lt;li&gt;可扩展油猴脚本，定制化非常高&lt;/li&gt;
+&lt;li&gt;最后的最后就是体积非常小，仅仅只有&lt;strong&gt;1M&lt;/strong&gt;不到&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

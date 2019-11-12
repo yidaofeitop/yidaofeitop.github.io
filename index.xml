@@ -6,10 +6,70 @@
     <description>Recent content on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 03 Nov 2019 23:23:17 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 12 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.yidaofei.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JavaScript-阿里巴巴运费模板定制化需求——第一阶段：Excel To JSON</title>
+      <link>https://blog.yidaofei.com/post/20191112-js-alibaba-shipping-template-excel-to-json/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20191112-js-alibaba-shipping-template-excel-to-json/</guid>
+      <description>&lt;p&gt;本文主要是用于记录解决「阿里巴巴国际站运费模板」输入需求，具体情况如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;问题：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;燕文运输报价单有179条数据，现在需要一个个的输入&lt;/li&gt;
+&lt;li&gt;名下有多家店铺需要同步此模板&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;需求：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;写一个小功能实现Excel数据直接可以创建对应的运费条目&lt;/p&gt;
+
+&lt;p&gt;由于朋友在提交此需求之前就已经定位到能够通过修改特定域的JSON数据达到此目的，所有将解决分解为2个阶段：&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;功能：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;第一阶段：从 EXCEL 生成对应的JSON数据，减少 Excel 一条条建项的重复工作&lt;/li&gt;
+&lt;li&gt;第二阶段：利用油猴等手段，可直接在网页导入 Excel 就可以修改对应的数据&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;本文即为第一阶段的主要实践过程记录，大致可以分为2部分记录：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;分解页面逻辑&lt;/li&gt;
+&lt;li&gt;实现 Excel 到 JSON 的转化&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>Andriod-X浏览器基础设置</title>
+      <link>https://blog.yidaofei.com/post/20191110-mobile-skills-x-browser/</link>
+      <pubDate>Sun, 10 Nov 2019 23:30:07 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20191110-mobile-skills-x-browser/</guid>
+      <description>&lt;p&gt;前天晚上母亲忽然来微信电话说「找不到百度入口」，后来才发现是跳转的链接完全不对&lt;/p&gt;
+
+&lt;p&gt;后续继续分析发现是因为我在购入之时就刷入了「MIUI国际版本」所以导致浏览器也是国外的界面 :😢:&lt;/p&gt;
+
+&lt;p&gt;在母亲无意中解决了之后想想「为什么我自己使用的 X浏览器写一个简单版的教程出来以便大家更好的上网」&lt;/p&gt;
+
+&lt;p&gt;本章无意去比较那个浏览器更加的好，因为每个人的需求都不一样，我选择 「X-浏览器」的原因是在于&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;非常简洁，主页可以设置为只有一个搜索引擎的入口，类似 Google 搜索的入口&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;广告拦截&lt;/strong&gt; 非常给力，相信大家在移动端对于广告应该是深有体会，而该浏览器在这方面可以说超越了绝大部分浏览器&lt;/li&gt;
+&lt;li&gt;可扩展油猴脚本，定制化非常高&lt;/li&gt;
+&lt;li&gt;最后的最后就是体积非常小，仅仅只有&lt;strong&gt;1M&lt;/strong&gt;不到&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>打印机-如何设置远程扫描</title>
@@ -1719,7 +1779,7 @@ H（车库距控制线）：车身长的1.5倍&lt;/p&gt;
     </item>
     
     <item>
-      <title>小米5S TWRP 刷机教程</title>
+      <title>Andriod-小米5S TWRP 刷机教程</title>
       <link>https://blog.yidaofei.com/post/20181013-mobile-skills-mi5s-twrp-brush/</link>
       <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
       
