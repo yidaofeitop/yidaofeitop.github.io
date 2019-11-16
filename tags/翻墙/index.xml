@@ -6,10 +6,34 @@
     <description>Recent content in 翻墙 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 11 Apr 2019 13:09:38 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 16 Nov 2019 20:36:41 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.yidaofei.com/tags/%E7%BF%BB%E5%A2%99/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>翻墙 chapter 5 - 如何让 SS 更快</title>
+      <link>https://blog.yidaofei.com/post/20191116-circumvention-technology-how-to-faster/</link>
+      <pubDate>Sat, 16 Nov 2019 20:36:41 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20191116-circumvention-technology-how-to-faster/</guid>
+      <description>&lt;p&gt;不知道是从什么时候开始 Shadowsocks 的速度越来越慢，也许是因为使用的网络是公司网络，也许是因为那堵墙的技术越来越厉害了……&lt;/p&gt;
+
+&lt;p&gt;到了2019年11月15日 晚上就出现了等待 N 久 Google 就是无法加载出来，就下定决心要解决这个问题！&lt;/p&gt;
+
+&lt;p&gt;本文主要记录解决的过程，大致分为以下部分：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;确认 VPS 机房质量&lt;/li&gt;
+&lt;li&gt;安装 BBR&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;最后实践的结果是非常的好 :😄:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://image.yidaofei.com/galleries/201911/shadowsocks-speed-speedtest.net.png&#34; alt=&#34;speedtest 本地测试结果&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>翻墙 chapter 4 - Lycamobile 美国电话卡</title>
