@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <meta charset="UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" >
+
+  
+  
+    
+    <meta charset="utf-8" name="keywords" content="油猴插件,阿里巴巴,运费模板," > 
+  
+   
+  <meta charset="utf-8" name="description" content="本文是JavaScript-阿里巴巴运费模板定制化需求——第一阶段：Excel To JSON的进阶版本——移植到油猴
+
+主要修改的地方在于以下方面：
+
+
+页面呈现部分：整体界面修改为单个物流渠道导入按钮
+部分代码逻辑修改：修改存储数据点
+
+
+本文主要呈现的内容如下：
+
+
+油猴脚本开发简介
+阿里巴巴运费模板油猴版本架构
+
+
+" >
+  
+  
+  
+    
+        <link rel="icon" type="image/png" href="https://blog.yidaofei.com//image/favicon-32x32.png" > 
+    
+  
+  
+  
+  
+  <title>JavaScript-阿里巴巴运费模板定制化需求——第二阶段：油猴插件版- 易道非 Blog</title>  
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-149867135-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+
+  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//css/style.css">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+<body> 
+ 
+
+ 
+<div id="top-element" data-title="到达顶点"></div>
+  
+<header class="site-header fixed-top">
+  <div class="container">
+    <nav id="navigation">  
+      <a href="https://blog.yidaofei.com/" class="site-title">
+        
+        <img title="site-logo" class="site-logo" src="https://blog.yidaofei.com//image/logo.png" >
+           
+         易道非 Blog 
+      </a> 
+      <a aria-label="mobile menu" class="nav-toggle" id="site-nav-toggle"> 
+        <span></span> <span></span> <span></span> 
+      </a>
+      <ul class="menu-left">
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/categories/">Categories</a></li>
+        
+          <li><a href="/tags">Tags</a></li>
+        
+          <li><a href="/wiki">Wiki</a></li>
+        
+          <li><a href="/about">About</a></li>
+        
+
+        
+          <li><a data-remodal-target="searchinput">search</a></li>
+           
+      </ul>
+    </nav>
+  </div>
+</header> 
+
+
+
+<div class="remodal" data-remodal-id="searchinput" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> 
+  <span id="algoliaData" style="display:none;" data-appid="7811M20DVN" 
+		data-searchkey="36e10c95330790bef468eb32fbaab5b0" 
+		data-initindex="blog.yidaofei.com"></span>
+
+<div class="search-input-card" >
+    <input type="search" id="search-input" class="search-input" placeholder="Search for titles or URIs..." name="search" autocomplete="off" />
+     <span class="input-search-icon"><i class="fa fa-search"></i></span> 
+</div>
+
+ 
+
+  
+</div>
+
+  
+
+
+
+<section class="main-content-container">
+<article class="article-card">
+	<header class="article-header"> 
+	   <p class="article-title">JavaScript-阿里巴巴运费模板定制化需求——第二阶段：油猴插件版</p>
+   		<div class="article-meta">
+			
+			<div><i class="fa fa-calendar" >2019年11月20日</i> </div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://blog.yidaofei.com/categories/love%e7%bc%96%e7%a8%8b">love编程</a> 
+				   
+				</i>  
+			</div> 
+		</div>  
+	</header>  
+	<content class="markdown">
+		<p>本文是<a href="/post/20191112-js-alibaba-shipping-template-excel-to-json/">JavaScript-阿里巴巴运费模板定制化需求——第一阶段：Excel To JSON</a>的进阶版本——移植到<a href="https://www.greasespot.net/">油猴</a></p>
+
+<p>主要修改的地方在于以下方面：</p>
+
+<ul>
+<li>页面呈现部分：整体界面修改为单个物流渠道导入按钮</li>
+<li>部分代码逻辑修改：修改存储数据点</li>
+</ul>
+
+<p>本文主要呈现的内容如下：</p>
+
+<ul>
+<li>油猴脚本开发简介</li>
+<li>阿里巴巴运费模板油猴版本架构</li>
+</ul>
+
+<p></p>
+
+<h3 id="油猴脚本开发简介">油猴脚本开发简介</h3>
+
+<p>以下内容 COPY 自：<a href="https://www.52pojie.cn/thread-614101-1-1.html">【教程、无技术含量】简单的油猴脚本编写教程</a></p>
+
+<p>元数据块是描述脚本的一个用户脚本部分。它通常包含脚本名称，命名空间，描述和包含和排除规则……</p>
+
+<p>元数据块出现在JavaScript行注释中，可能会出现在脚本内的任何位置， 但通常靠近文件的顶部！</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">键</th>
+<th align="left">示例</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">@name</td>
+<td align="left">@name  脚本名称</td>
+<td align="left">脚本的名称。该项将显示在页面的标题以及链接内容，必填项。</td>
+</tr>
+
+<tr>
+<td align="left">@description</td>
+<td align="left">@description  脚本功能描述</td>
+<td align="left">脚本功能的描述，显示在脚本标题下面，必填项。</td>
+</tr>
+
+<tr>
+<td align="left">@namespace</td>
+<td align="left"></td>
+<td align="left">@namespace 及 @name 这两个属性将帮助用户脚本管理器判断是否已安  装该脚本。</td>
+</tr>
+
+<tr>
+<td align="left">@version</td>
+<td align="left">@version  0.0.1</td>
+<td align="left">脚本的版本标记将使用 Mozilla 版本格式 并显示于脚本的简介页面，必填  项。</td>
+</tr>
+
+<tr>
+<td align="left">@include</td>
+<td align="left">@match  <em>://www.52pojie.cn/</em></td>
+<td align="left">描述脚本将执行的页面。该列表会被分析并展示到脚本的简介页面，以及  用于脚本分类。</td>
+</tr>
+
+<tr>
+<td align="left">@exclude</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">@match</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">@require</td>
+<td align="left">@require <a href="http://cdn.bootcss.com/jquery.min.js">http://cdn.bootcss.com/jquery.min.js</a></td>
+<td align="left">引用外部脚本到您的脚本</td>
+</tr>
+
+<tr>
+<td align="left">@updateURL</td>
+<td align="left"></td>
+<td align="left">告知用户脚本管理器应该在哪个地址获取脚本更新。</td>
+</tr>
+
+<tr>
+<td align="left">@installURL,  @downloadURL</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">@license</td>
+<td align="left"></td>
+<td align="left">脚本所使用的许可协议名称或地址，该协议需包含用户是否允许二次分发  或修改  脚本的权利。不提供许可协议则表示用户仅允许个人使用且不得  二次分发；该协  议将在脚本的简介页面显示。</td>
+</tr>
+
+<tr>
+<td align="left">@supportURL</td>
+<td align="left"></td>
+<td align="left">用户可获得该脚本技术支持的链接地址 (如：错误反馈系统、论坛、电子  邮件)，该链接将显示在脚本的反馈页面。</td>
+</tr>
+
+<tr>
+<td align="left">@contributionURL</td>
+<td align="left"></td>
+<td align="left">用于捐赠脚本作者的链接，该链接将显示在脚本的反馈页面。</td>
+</tr>
+
+<tr>
+<td align="left">@contributionAmount</td>
+<td align="left"></td>
+<td align="left">建议捐赠金额，请配合 @contributionURL 使用。</td>
+</tr>
+
+<tr>
+<td align="left">@compatible</td>
+<td align="left"></td>
+<td align="left">标记此脚本与某个浏览器兼容，兼容性信息将显示在脚本的简介页面上。</td>
+</tr>
+
+<tr>
+<td align="left">@incompatible</td>
+<td align="left"></td>
+<td align="left">标记此脚本与某个浏览器不兼容，兼容性信息将显示在脚本的简介页面  上。</td>
+</tr>
+</tbody>
+</table>
+
+<p>元数据块必须遵循以下格式：</p>
+
+<pre><code class="language-javascript">// ==UserScript==
+// @key value
+// ==/UserScript==
+</code></pre>
+
+<p><strong>Tips</strong>：</p>
+
+<ul>
+<li>Greasy Fork 要读取的脚本元键值：<a href="https://greasyfork.org/zh-CN/help/meta-keys">https://greasyfork.org/zh-CN/help/meta-keys</a></li>
+<li>Metadata Block - GreaseSpot Wiki （api 文档）：<a href="https://wiki.greasespot.net/Metadata_Block">https://wiki.greasespot.net/Metadata_Block</a></li>
+</ul>
+
+<h3 id="阿里巴巴运费模板油猴版本架构">阿里巴巴运费模板油猴版本架构</h3>
+
+<h4 id="元数据块">元数据块</h4>
+
+<p>以下是本模板的元数据块，主要是修改了<code>@require</code>的值</p>
+
+<pre><code class="language-javascript">// ==UserScript==
+// @icon            https://login.aliexpress.com/favicon.ico
+// @name            阿里巴巴国际站物流模板导入程序 
+// @author          yidaofeitop
+// @description     从指定物流模板Excel导入数据到阿里巴巴国际站-第一稿（基础数据导入以及国家数据筛查，无任何验证）
+// @match           *://freighttemplate.aliexpress.com/wsproduct/freight/editFreightTemplate.htm?spm=*&amp;id=* 
+// @require         https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js
+// @require         https://cdn.bootcss.com/xlsx/0.15.1/xlsx.full.min.js
+// @version         0.0.1
+// ==/UserScript==
+</code></pre>
+
+<h4 id="逻辑页面">逻辑页面</h4>
+
+<p>油猴脚本的代码部分入口如下：</p>
+
+<pre><code class="language-javascript">(function () {
+    'use strict'; 
+
+
+    //自己核心代码
+})
+</code></pre>
+
+<p>相比第一版主要修改的代码如下，其他的都是针对部分函数的调整：</p>
+
+<pre><code class="language-javascript">//构建基础
+//按钮
+var $uploadBtn=$('&lt;label for=&quot;ShippingTemplate&quot; style=&quot;position: relative;&quot;&gt;&lt;input type=&quot;button&quot; style=&quot;background-color: rgb(0, 123, 255);  border-color:  #6C757D; border-style: solid; border-radius: 4px;border-width: 0.666667px; color: rgb(255, 255, 255); display: inline-block; font-size: 16px;font-weight: 400;line-height: 24px;margin:4px 0px ;padding: 6px 12px; text-align: center;  vertical-align: middle;     &quot; value=&quot;点我上传&quot;&gt;&lt;span&gt;自定义运费模板上传&lt;/span&gt;&lt;input type=&quot;file&quot; style=&quot;position: absolute;left: 0;top: 0;opacity: 0;&quot; class=&quot;shipPriceExcelSZ&quot;&gt;&lt;/label&gt;');
+//物流对应的国家列表
+var shippingKindCountryMap=new Map();
+shippingKindCountryMap.set(&quot;freight-custom-setting-CN_SUPER_ECONOMY_G&quot;,&quot;DZ,AF,AL,AD,AO,AR,AM,AU,AT,AZ,BH,BD,BE,BZ,BJ,BT,BO,BA,BW,BG,BF,BI,CM,CA,CV,TD,CL,CO,CR,HR,CY,CZ,ZR,DK,DJ,EC,EG,GQ,EE,ET,FK,FO,FJ,FI,FR,PF,GA,GM,DE,GH,GI,GR,GU,GT,GW,GY,HN,HU,IS,IN,ID,IQ,IE,IL,IT,CI,JP,JO,KH,KZ,KE,KI,KW,KG,LA,LV,LB,LS,LR,LY,LI,LT,LU,MK,MG,MW,MY,MV,ML,MT,MR,MU,MX,MC,MN,MNE,MA,MZ,MM,NA,NP,NL,NC,NZ,NI,NE,NG,NO,OM,PK,PA,PG,PY,PE,PH,PL,PT,PR,QA,MD,RE,RO,RW,SM,SN,SRB,SC,SG,SK,SI,SB,ZA,KR,LK,SR,SZ,SE,CH,TJ,TH,TLS,TG,TO,TN,TR,TM,UG,UK,TZ,US,UY,UZ,VU,VE,VN,ZM,ZW,BN,GE,GN,SJ,SX,SV,TT,AN,MH,AS,VI,FM,PM,VG,GF,GD,AI,GGY,GP,WF,KY,KM,MP,CK,AG,LC&quot;);
+shippingKindCountryMap.set(&quot;freight-custom-setting-CAINIAO_EXPEDITED_ECONOMY&quot;,&quot;KR,ES,RU&quot;);
+shippingKindCountryMap.set(&quot;freight-custom-setting-SUPER_ECONOMY_SG&quot;,&quot;BZ,CR,CA,HN,NI,PA,GT,MX,PR,US,RU,ES,AF,AL,DZ,BJ,BF,TD,ZR,LR,ML,SN,TG,TN,AD,AO,BW,LS,MG,MW,NA,RW,SZ,AR,AZ,AM,BG,AU,AT,BH,BD,TR,BO,EC,IQ,LI,BT,BA,BI,FK,CM,CV,PE,CO,HR,CY,CZ,DK,DJ,SC,EG,GQ,GA,GY,SR,EE,ET,FO,FJ,FI,FR,PF,GM,GH,GI,IE,GR,GU,GW,HU,IS,IN,ID,IL,IT,CI,JP,KH,LA,KE,KI,TO,VU,KG,LV,LB,LY,LT,LU,MK,MY,MV,MT,MR,NE,MN,MNE,MZ,MM,NP,NL,NC,NG,NO,OM,PK,PG,PH,PL,QA,MD,SRB,RE,RO,SM,SG,SK,SI,SB,ZA,KR,LK,SE,CH,TJ,TH,TM,UK,TZ,UY,VE,VN,ZM,ZW,BN,MA,MC,KZ,UG,NZ,DE,PY,TLS,MU,PT,UZ,BE,JO,KW&quot;);
+shippingKindCountryMap.set(&quot;freight-custom-setting-SGP_OMP&quot;,&quot;CA,AR,IE,AU,BR,BE,PL,DK,DE,FR,NL,CZ,US,MX,NO,PT,SE,TR,UA,ES,IL,IT,UK,CL,RU,AF,AL,DZ,AS,AD,AO,AI,AG,AM,AW,AT,AZ,BH,BD,BB,BY,BZ,BJ,BM,BT,BA,BW,BG,BF,BI,CV,KY,CF,TD,CX,CC,CO,KM,CG,CR,HR,CY,ZR,DJ,DO,EC,EG,SV,GQ,ER,EE,ET,FK,FO,FJ,FI,PF,GA,GM,GE,GH,GI,GR,GL,GD,GP,GN,GF,HT,HN,HU,IS,IN,ID,IQ,CI,JM,JP,JO,KH,KZ,KE,KI,KW,KG,LA,LV,LB,LS,LR,LY,LI,LT,LU,MK,MG,MW,MY,MV,ML,MT,MH,MQ,MR,MU,MC,MN,MS,MA,MZ,MM,NA,NR,NP,AN,NC,NZ,NI,NE,NG,NF,MP,OM,PK,PA,PG,PY,PE,PH,PR,QA,MD,RE,RO,RW,SH,KN,LC,PM,VC,WS,SM,ST,SN,SRB,SC,SL,SG,SK,SI,SO,ZA,KR,LK,SR,SZ,CH,TJ,TH,BS,VA,TP,TG,TO,TT,TN,TM,TC,TV,UG,TZ,UY,UZ,VU,VE,VN,VG,VI,WF,EH,ZM,ZW,BN,PN,PS,ASC,CK,DM&quot;);
+shippingKindCountryMap.set(&quot;freight-custom-setting-SINOTRANS_PY&quot;,&quot;ES&quot;);
+shippingKindCountryMap.set(&quot;freight-custom-setting-YANWEN_ECONOMY&quot;,&quot;AF,IE,EE,AT,AU,BE,IS,PL,DK,DE,FR,FI,NL,CA,CZ,HR,LV,LT,US,MD,MX,NO,PT,SE,CH,SK,SI,TH,TR,NZ,HU,IL,IT,IN,UK,CL,PR,KZ,CY,RO,PE,MT,BA,CO,CR,LK,ZA,NG,KE,GE,JP,KR,ID,AL,DZ,AR,OM,AZ,EG,ET,AD,AO,PG,PK,PY,BH,PA,BG,BJ,BW,BT,BF,BI,GQ,TL,TG,FO,PF,PH,FJ,CV,FK,GM,GU,GY,MNE,HN,KI,DJ,KG,GN,GW,GH,GA,KH,ZW,CM,QA,KW,LS,LA,LB,LR,RE,LU,RW,MG,MV,MW,ML,MK,MU,MR,MN,BD,MM,MA,MC,MZ,NA,NP,NI,NE,SRB,SN,SC,SM,SZ,SR,SB,TJ,TZ,TO,TN,TM,VU,GT,VE,BN,UG,UY,UZ,GR,CI,NC,AM,JO,VN,ZM,TD,GI,SJ,SX,SV,BO,BZ,TT,EC,AN,LI,MH,AS,VI,FM,PM,VI,GF,GD,AI,LC,GGY,GP,WF,KY,KM,MP,CK,AG&quot;);
+shippingKindCountryMap.set(&quot;freight-custom-setting-SUNYOU_ECONOMY&quot;,&quot;BZ,AF,AL,DZ,BJ,BF,TD,ZR,LR,ML,SN,TG,TN,AD,AO,BW,LS,MG,MW,NA,RW,SZ,AR,AZ,AM,BG,AU,AT,BH,BD,TR,BO,CR,EC,IQ,LI,BT,BA,BI,FK,CM,CA,CV,PE,CO,HR,CY,CZ,DK,DJ,SC,EG,GQ,GA,GY,HN,NI,SR,EE,ET,FO,FJ,FI,FR,PF,GM,PA,GH,GI,IE,GR,GU,GT,GW,HU,IS,IN,ID,IL,IT,CI,JP,KH,LA,KE,KI,TO,VU,KG,LV,LB,LY,LT,LU,MK,MY,MV,MT,MR,NE,MX,MN,MNE,MZ,MM,NP,NL,NC,NG,NO,OM,PK,PG,PH,PL,PR,QA,MD,SRB,RE,RO,SM,SG,SK,SI,SB,ZA,KR,LK,SE,CH,TJ,TH,TM,UK,TZ,UY,VE,VN,ZM,ZW,BN,MA,MC,KZ,UG,NZ,DE,PY,TLS,MU,PT,US,UZ,BE,JO,KW&quot;);
+shippingKindCountryMap.set(&quot;freight-custom-setting-SF_EPARCEL_OM&quot;,&quot;EE,FI,LT,NO,PL,LV,SE&quot;);
+
+ 
+//插入按钮
+var $shippingPriceTdTags=$('table[class=&quot;table-list logistic-list ui-table&quot;]').find(&quot;tbody&quot;).find(&quot;tr&quot;).find(&quot;td:eq(1)&quot;);
+
+$shippingPriceTdTags.append($uploadBtn);
+
+</code></pre>
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Version</th>
+<th align="center">Action</th>
+<th align="center">Time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1.0</td>
+<td align="center">init</td>
+<td align="center">2019-11-20</td>
+</tr>
+</tbody>
+</table>
+			  
+		
+		
+			<div class="article-copyright">
+			  	<ul>
+			  		<li><strong>本文作者：</strong>易道非</li>
+			  		<li><strong>本文链接：</strong>https://blog.yidaofei.com/post/20191120-js-alibaba-shipping-template-greasespot/</li>
+			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
+			  	</ul>
+			</div>
+		 
+	</content>  
+ 	<hr/>
+ 	
+	<div class="article-footer-meta-between"> 
+		 
+		<div>
+			<i class="fa fa-tags">&nbsp;Tags:
+			
+				<a href="https://blog.yidaofei.com/tags/javascript">JavaScript</a>
+    		
+				<a href="https://blog.yidaofei.com/tags/excel">EXCEL</a>
+    		
+				<a href="https://blog.yidaofei.com/tags/json">JSON</a>
+    		
+    		</i>   
+		</div> 
+		 
+		<div id="i-share" class="btn btn-default  share-widget">
+		    <i class="fa fa-share-alt"></i>
+		</div> 
+	</div>
+	<hr/>
+	<div class="article-footer-meta-between"> 
+		<div class="refArticle-prev" >
+			
+		</div>
+		 <div class="refArticle-next" >
+		  
+		  	<a href="https://blog.yidaofei.com/post/20191116-circumvention-technology-how-to-faster/">翻墙 chapter 5 - 如何让 SS 更快&nbsp;
+		  		<i class="fa fa-angle-double-right"></i>
+		  	</a> 
+		 
+	    </div>
+	</div>  
+</article> 
+</section>
+ 
+
+  
+ 
+<div class="main-content-container " >
+<div class="comment-card"> 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeitop/comment-utterances-blog.yidaofei.com"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+</div>
+</div>
+
+ 
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+	
+	
+	<span id="tocLevel" data-startLevel="" data-endLevel=""></span>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#油猴脚本开发简介">油猴脚本开发简介</a></li>
+<li><a href="#阿里巴巴运费模板油猴版本架构">阿里巴巴运费模板油猴版本架构</a>
+<ul>
+<li><a href="#元数据块">元数据块</a></li>
+<li><a href="#逻辑页面">逻辑页面</a></li>
+</ul></li>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
+<footer class="site-footer text-center">
+  <div class="social" > 
+     
+          <a href=" mailto:yidaofeicn@gmail.com "><i class="fa fa-envelope-open-o"></i></span></a>
+      
+       
+          <a href=" https://github.com/yidaofeicn "  ><i class="fa fa-github"></i></span></a>
+      
+    
+      
+                <a href="https://blog.yidaofei.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml" target="_blank"> <i class="fa fa-rss"></i>
+                </a>
+          </div>
+   
+  <div class="copyright"  >
+    Powered by &nbsp;<a href="https://gohugo.io/">Hugo</a>&nbsp;|&nbsp;
+    Theme-<a href="https://github.com/yidaofeicn/hugo-theme-flybird">Flybird</a>  
+  </div>
+  <div class="copyright"> Copyright© 2018 Transparent Thoughts. All rights reserved.</div> 
+  <div class="copyright"> 
+
+      
+    
+      <span id="busuanzi_container">
+        访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+</footer>
+
+ 
+
+<div id="bottom-element" data-title="定位底部"></div>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.css">
+<script type="text/javascript" src="https://blog.yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.js"></script>
+ 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.30.0/algoliasearch.jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.32.0/autocomplete.jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com/thirdParty/algoliasearch/algolia-autocomplete.css">
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.css"> 
+<script type="text/javascript" src="https://blog.yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.css">
+<script type="text/javascript" src="https://blog.yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//thirdParty/prismjs/prism.css">
+
+<script type="text/javascript" src="https://blog.yidaofei.com//thirdParty/prismjs/prism.js"></script>
+
+
+<script type="text/javascript" color="#1D1D1D" opacity='1' zIndex="-2" count="400" src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.3/canvas-nest.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+<span id="isPage" data-isPage="true" style="display: none;"></span>
+
+
+ 
+
+<script type="text/javascript" src="https://blog.yidaofei.com//js/flybird.js"></script> 
+<script type="text/javascript" src="https://blog.yidaofei.com//js/main.js"></script> 
+  
+ 
+</style>
+</body>
+</html>
+
+
+ 

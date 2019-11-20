@@ -6,10 +6,35 @@
     <description>Recent content on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 16 Nov 2019 20:36:41 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 20 Nov 2019 21:13:11 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.yidaofei.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JavaScript-阿里巴巴运费模板定制化需求——第二阶段：油猴插件版</title>
+      <link>https://blog.yidaofei.com/post/20191120-js-alibaba-shipping-template-greasespot/</link>
+      <pubDate>Wed, 20 Nov 2019 21:13:11 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20191120-js-alibaba-shipping-template-greasespot/</guid>
+      <description>&lt;p&gt;本文是&lt;a href=&#34;https://blog.yidaofei.com/post/20191112-js-alibaba-shipping-template-excel-to-json/&#34;&gt;JavaScript-阿里巴巴运费模板定制化需求——第一阶段：Excel To JSON&lt;/a&gt;的进阶版本——移植到&lt;a href=&#34;https://www.greasespot.net/&#34;&gt;油猴&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;主要修改的地方在于以下方面：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;页面呈现部分：整体界面修改为单个物流渠道导入按钮&lt;/li&gt;
+&lt;li&gt;部分代码逻辑修改：修改存储数据点&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;本文主要呈现的内容如下：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;油猴脚本开发简介&lt;/li&gt;
+&lt;li&gt;阿里巴巴运费模板油猴版本架构&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>翻墙 chapter 5 - 如何让 SS 更快</title>
