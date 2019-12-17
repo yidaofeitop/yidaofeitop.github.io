@@ -191,16 +191,9 @@ if (!doNotTrack) {
 yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; bash install.sh
 </code></pre>
 
-<p>安装完成后的相关步骤如下：</p>
+<p>安装完成后访问： <a href="http://VPS_IP:8888">http://VPS_IP:8888</a> ，安装对应的 LAMP 并配置 Piwigo 需要的数据库与 FPT</p>
 
-<ol>
-<li>安装对应的 LAMP</li>
-<li>配置 Piwigo 数据库与 FPT 账号</li>
-<li>新建网站域名为 <strong>VPS IP地址</strong> 或者 <strong>「自有域名」</strong></li>
-<li>访问第三步骤配置好的域名即可进入安装程序</li>
-</ol>
-
-<p><strong>Tips：</strong>步骤2-4均要在「安装 Piwigo」之后才能进行</p>
+<p><strong>此处请注意宝塔界面必须在系统未安装任何其他软件的之前安装，否则会出现无法使用shadowsocks的情况</strong></p>
 
 <h3 id="安装-piwigo">安装 Piwigo</h3>
 
@@ -208,7 +201,7 @@ yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/
 
 <p>下载解压 Piwigo</p>
 
-<pre><code class="language-batch"># wget https://piwigo.org/download/dlcounter.php?code=2.9.5 -O piwigo.zip
+<pre><code class="language-batch"># wget http://piwigo.org/download/dlcounter.php?code=latest -O piwigo.zip
 # ls 
 # unzip piwigo.zip 
 </code></pre>
@@ -221,7 +214,7 @@ yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/
 
 <h4 id="执行安装程序">执行安装程序</h4>
 
-<p>浏览器地址栏输入 <strong>对应的域名</strong> ，出现如下图</p>
+<p>浏览器地址栏输入 <a href="http://VPS_IP/">http://VPS_IP/</a> ，出现如下图</p>
 
 <p><img src="https://image.yidaofei.com/galleries/201809/piwigo-installation-configuration.png" alt="" /></p>
 

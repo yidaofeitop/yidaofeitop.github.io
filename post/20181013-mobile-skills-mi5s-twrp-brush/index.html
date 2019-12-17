@@ -202,16 +202,40 @@ fastboot flash recovery *映像檔路徑*
 
 <p>后者的解决方式是：</p>
 
-<ol>
-<li><strong>在国际版刷入其它系统前</strong>，一定要先退出谷歌账户，退出方法为设置—&gt;同步—&gt;谷歌账户—&gt;移除账户</li>
-<li>WIFI 接入可翻墙的网络，具体的方式如下：
+<p>第一种： <strong>在国际版刷入其它系统前</strong>，一定要先退出谷歌账户，退出方法为设置—&gt;同步—&gt;谷歌账户—&gt;移除账户<br />
+第二种： WIFI 接入可翻墙的网络，具体的方式如下：</p>
 
 <ul>
-<li>获取电脑或路由的IP地址（电脑可用<code>ipconfig</code>获取）并<strong>关闭防火墙（否则手机 WIFI 会出现「已连接，但是无法上网的错误」）</strong></li>
+<li>获取电脑或路由的IP地址（电脑可用<code>ipconfig</code>获取）并<strong>关闭防火墙</strong>（否则手机 WIFI 会出现「已连接，但是无法上网的错误」）</li>
 <li>手机设置WIFI
 <img src="https://image.yidaofei.com/galleries/201904/mobile-wifi-shadowsocks-config.jpg" alt="" /></li>
-</ul></li>
-</ol>
+</ul>
+
+<p>通过翻墙工具日志文件可以判断是否配置好</p>
+
+<pre><code class="language-batch">[2019-12-17 10:16:27] connect to statusapi.micloud.xiaomi.net:80
+[2019-12-17 10:16:28] Socket connected to ss server: 45.32.205.155:5674
+[2019-12-17 10:16:48] connect to api.micloud.xiaomi.net:80
+[2019-12-17 10:16:48] connect to appbackupapi.micloud.xiaomi.net:80
+[2019-12-17 10:16:48] Socket connected to ss server: 45.32.205.155:5674
+[2019-12-17 10:16:51] connect to api.device.xiaomi.net:443
+[2019-12-17 10:16:52] Socket connected to ss server: 45.32.205.155:5674
+[2019-12-17 10:17:21] connect to v10.events.data.microsoft.com:443
+[2019-12-17 10:17:21] Socket connected to ss server: 45.32.205.155:5674
+[2019-12-17 10:18:01] connect to fr.register.xmpush.global.xiaomi.com:443
+[2019-12-17 10:18:01] Socket connected to ss server: 45.32.205.155:5674
+[2019-12-17 10:18:01] connect to android.googleapis.com:443
+[2019-12-17 10:18:01] connect to auditrecording-pa.googleapis.com:443
+[2019-12-17 10:18:01] Socket connected to ss server: 45.32.205.155:5674
+[2019-12-17 10:18:01] connect to www.googleapis.com:443
+[2019-12-17 10:18:01] Socket connected to ss server: 45.32.205.155:5674
+[2019-12-17 10:18:02] connect to googleads.g.doubleclick.net:443
+[2019-12-17 10:18:02] Socket connected to ss server: 45.32.205.155:5674
+[2019-12-17 10:18:02] Socket connected to ss server: 45.32.205.155:5674
+[2019-12-17 10:18:02] connect to android.clients.google.com:443
+[2019-12-17 10:18:02] Socket connected to ss server: 45.32.205.155:5674
+[2019-12-17 10:18:03] connect to firebaseperusertopics-pa.googleapis.com:443
+</code></pre>
 
 <h3 id="miui-其他版本">MIUI 其他版本</h3>
 
@@ -229,7 +253,9 @@ fastboot flash recovery *映像檔路徑*
 <h3 id="参考链接">参考链接</h3>
 
 <p>[1]<a href="http://www.miui.com/thread-15634724-1-1.html">MIUI国际版卡检查更新和Google账户验证的解决办法</a><br />
-[2]<a href="https://www.zhihu.com/question/50231539/answer/530627637">知乎-Gil Chen-怎么刷MIUI国际版Rom？</a>：关于哪个版本更加纯净</p>
+[2]<a href="https://www.zhihu.com/question/50231539/answer/530627637">知乎-Gil Chen-怎么刷MIUI国际版Rom？</a>：关于哪个版本更加纯净
+[3]<a href="https://cn.apkjam.com/blog/magisk-modules.html">一些值得推荐的Magisk 模块 - 安卓果酱</a>
+[4]<a href="https://github.com/taichi-framework/TaiChi/wiki/taichi-magisk-zh">太极·Magisk</a></p>
 
 <h3 id="版本信息">版本信息</h3>
 
@@ -250,6 +276,11 @@ fastboot flash recovery *映像檔路徑*
 <tr>
 <td align="left">2019年04月11日</td>
 <td align="left">补充：卡更新与卡Google账号的解决方案</td>
+</tr>
+
+<tr>
+<td align="left">2019年12月17日</td>
+<td align="left">补充：借助电脑翻墙日志文件/Magisk root方案参考文件</td>
 </tr>
 </tbody>
 </table>
