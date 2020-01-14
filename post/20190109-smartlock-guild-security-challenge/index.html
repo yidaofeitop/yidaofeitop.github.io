@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <meta charset="UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" >
+
+  
+  
+    
+    <meta charset="utf-8" name="keywords" content="指纹锁,安全,小黑盒,假指纹," > 
+  
+   
+  <meta charset="utf-8" name="description" content="本文主要是针对网络或线下接触的终端客户或渠道客户中关于小黑盒与假指纹的质疑，主要内容为：
+
+
+技术开锁——小黑盒事件
+技术开锁——假指纹
+其他破解方式
+
+
+可解答以下问题：
+
+
+知乎-现在的指纹锁怎么样啊？安全吗？会不会卡死？
+
+
+" >
+  
+  
+  
+    
+        <link rel="icon" type="image/png" href="https://blog.yidaofei.com//image/favicon-32x32.png" > 
+    
+  
+  
+  
+  
+  <title>认识智能锁 chapter 1 - 电子部分补充-小黑盒/假指纹- 易道非 Blog</title>  
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-149867135-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+
+  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//css/style.css">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+<body> 
+ 
+
+ 
+<div id="top-element" data-title="到达顶点"></div>
+  
+<header class="site-header fixed-top">
+  <div class="container">
+    <nav id="navigation">  
+      <a href="https://blog.yidaofei.com/" class="site-title">
+        
+        <img title="site-logo" class="site-logo" src="https://blog.yidaofei.com//image/logo.png" >
+           
+         易道非 Blog 
+      </a> 
+      <a aria-label="mobile menu" class="nav-toggle" id="site-nav-toggle"> 
+        <span></span> <span></span> <span></span> 
+      </a>
+      <ul class="menu-left">
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/categories/">Categories</a></li>
+        
+          <li><a href="/tags">Tags</a></li>
+        
+          <li><a href="/wiki">Wiki</a></li>
+        
+          <li><a href="/about">About</a></li>
+        
+
+        
+          <li><a data-remodal-target="searchinput">search</a></li>
+           
+      </ul>
+    </nav>
+  </div>
+</header> 
+
+
+
+<div class="remodal" data-remodal-id="searchinput" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> 
+  <span id="algoliaData" style="display:none;" data-appid="7811M20DVN" 
+		data-searchkey="36e10c95330790bef468eb32fbaab5b0" 
+		data-initindex="blog.yidaofei.com"></span>
+
+<div class="search-input-card" >
+    <input type="search" id="search-input" class="search-input" placeholder="Search for titles or URIs..." name="search" autocomplete="off" />
+     <span class="input-search-icon"><i class="fa fa-search"></i></span> 
+</div>
+
+ 
+
+  
+</div>
+
+  
+
+
+
+<section class="main-content-container">
+<article class="article-card">
+	<header class="article-header"> 
+	   <p class="article-title">认识智能锁 chapter 1 - 电子部分补充-小黑盒/假指纹</p>
+   		<div class="article-meta">
+			
+			<div><i class="fa fa-calendar" >2019年01月09日</i> </div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://blog.yidaofei.com/categories/%e6%8c%87%e7%ba%b9%e9%94%81">指纹锁</a> 
+				   
+				</i>  
+			</div> 
+		</div>  
+	</header>  
+	<content class="markdown">
+		<p>本文主要是针对网络或线下接触的终端客户或渠道客户中关于小黑盒与假指纹的质疑，主要内容为：</p>
+
+<ol>
+<li>技术开锁——小黑盒事件</li>
+<li>技术开锁——假指纹</li>
+<li>其他破解方式</li>
+</ol>
+
+<p>可解答以下问题：</p>
+
+<ul>
+<li><a href="https://www.zhihu.com/question/20741025">知乎-现在的指纹锁怎么样啊？安全吗？会不会卡死？</a></li>
+</ul>
+
+<p></p>
+
+<h3 id="技术开锁-小黑盒事件">技术开锁——小黑盒事件</h3>
+
+<p>@滕腾 小黑盒子事件说句实在话是“一粒老鼠屎坏了一锅粥”的最佳体现，对于指纹锁的销售确实是一次比较大的困难期，但是从另外
+一个层面来讲也促进了指纹锁行业的良性发展——指纹锁曝光度增加、低质量厂家清场、行业标准进度加快等，这是我对于此次事件的一个看法！</p>
+
+<p>但是也请大家理性的看待相关的宣传报答，并不是说所有的指纹锁都有此现象，有很多的厂家都发表了相关的测试视频：</p>
+
+<p><strong>《线圈秒开指纹锁 真有这么神奇?》</strong></p>
+
+<iframe height=498 width=510 src='https://player.youku.com/embed/XMzczOTY3MzUyOA==' frameborder=0 'allowfullscreen'></iframe>
+
+<p><strong>《金指码指纹锁》</strong></p>
+
+<iframe height=498 width=510 src='https://player.youku.com/embed/XMzc0MjM0MzMyNA==' frameborder=0 'allowfullscreen'></iframe>
+
+<p><strong>《野马智能锁悬赏 100 万挑战 “特斯拉线圈” 黑盒子开锁工具》</strong></p>
+
+<iframe height=498 width=510 src='https://player.youku.com/embed/XMzcyMjAxNjE0OA==' frameborder=0 'allowfullscreen'></iframe>
+
+<p>另外附上 《李扬渊及迈瑞微公司对“特斯拉”线圈开锁的情况声明》</p>
+
+<p><img src="https://image.yidaofei.com/galleries/201811/small-black-box.jpg" alt="迈瑞微公司 特斯拉线圈" /></p>
+
+<p>扩展阅读：</p>
+
+<ol>
+<li><a href="http://www.yangtse.com/app/livelihood/2018-07-13/587440.html">紫牛新闻——一个小黑盒就能秒开你家智能锁？权威解释在这里</a><br /></li>
+</ol>
+
+<h3 id="技术开锁-假指纹">技术开锁——假指纹</h3>
+
+<p>好奇实验室 第二季：指纹锁真的能被轻易破解吗?
+可以很清晰的看到复制指纹并没有想象中的那么简单——有谁会傻逼到给别人按住3分钟复制指纹 :😄:</p>
+
+<iframe height=498 width=510 src='https://player.youku.com/embed/XMTUxNDYxNDYwOA==' frameborder=0 'allowfullscreen'></iframe> 
+
+<h3 id="其他破解方式">其他破解方式</h3>
+
+<table>
+<thead>
+<tr>
+<th align="left">破解方式</th>
+<th align="left">应对措施</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">技术开锁——破解钥匙</td>
+<td align="left">C 级别锁芯</td>
+</tr>
+
+<tr>
+<td align="left">暴力开锁——破坏前面板</td>
+<td align="left">真插芯+电子锁体+逻辑处理模块后置（王力智能锁方案）</td>
+</tr>
+
+<tr>
+<td align="left">技术开锁——猫眼开锁</td>
+<td align="left">防猫眼开锁技术</td>
+</tr>
+
+<tr>
+<td align="left">技术开锁——卡住主方钢转动</td>
+<td align="left">方钢套铸造为原型或外加一个圆环、嵌入门面内</td>
+</tr>
+</tbody>
+</table>
+
+<p>另外纠正一个错误的观念：</p>
+
+<p><strong>破解 IC 卡</strong>，指纹锁中的 IC 实质上就是卡的ID输入指纹锁内部存储起来用于对比的一串文字，就相当于一个把钥匙，卡本身没有存储数据的功能无需像公交卡等破解，IC 卡只有遗落的风险&mdash;》指纹锁的便捷性（可删除相关的卡）</p>
+
+<p>扩展阅读：</p>
+
+<ol>
+<li><a href="http://www.gov.cn/fwxx/kp/2009-04/23/content_1293586.htm">科学生活：IC 卡被破解的可能性到底有多大？</a><br /></li>
+<li><a href="http://zhinengsuobaike.com/posts/2349.html">国家最新防盗锁标准告诉你，为什么 C 级锁芯最安全？</a><br /></li>
+</ol>
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Version</th>
+<th align="center">Action</th>
+<th align="center">Time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1.0</td>
+<td align="center">init</td>
+<td align="center">2019-01-09</td>
+</tr>
+</tbody>
+</table>
+			  
+		
+		
+			<div class="article-copyright">
+			  	<ul>
+			  		<li><strong>本文作者：</strong>易道非</li>
+			  		<li><strong>本文链接：</strong>https://blog.yidaofei.com/post/20190109-smartlock-guild-security-challenge/</li>
+			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
+			  	</ul>
+			</div>
+		 
+	</content>  
+ 	<hr/>
+ 	
+	<div class="article-footer-meta-between"> 
+		 
+		<div>
+			<i class="fa fa-tags">&nbsp;Tags:
+			
+				<a href="https://blog.yidaofei.com/tags/%e6%8c%87%e7%ba%b9%e9%94%81">指纹锁</a>
+    		
+				<a href="https://blog.yidaofei.com/tags/%e7%9f%a5%e4%b9%8e">知乎</a>
+    		
+    		</i>   
+		</div> 
+		 
+		<div id="i-share" class="btn btn-default  share-widget">
+		    <i class="fa fa-share-alt"></i>
+		</div> 
+	</div>
+	<hr/>
+	<div class="article-footer-meta-between"> 
+		<div class="refArticle-prev" >
+			  
+		    <a href="https://blog.yidaofei.com/post/20190110-windows-guild-create-a-efficient-file-management-system/">
+		    	<i class="fa fa-angle-double-left"></i>&nbsp;Windows 教程3-基础阶段-打造一个高效的文件管理系统  
+		    </a> 
+			
+		</div>
+		 <div class="refArticle-next" >
+		  
+		  	<a href="https://blog.yidaofei.com/post/20190109-smartlock-guild-remote-unlocking/">认识智能锁 chapter 7 - 远程解决方案&nbsp;
+		  		<i class="fa fa-angle-double-right"></i>
+		  	</a> 
+		 
+	    </div>
+	</div>  
+</article> 
+</section>
+ 
+
+  
+ 
+<div class="main-content-container " >
+<div class="comment-card"> 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeitop/comment-utterances-blog.yidaofei.com"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+</div>
+</div>
+
+ 
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+	
+	
+	<span id="tocLevel" data-startLevel="" data-endLevel=""></span>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#技术开锁-小黑盒事件">技术开锁——小黑盒事件</a></li>
+<li><a href="#技术开锁-假指纹">技术开锁——假指纹</a></li>
+<li><a href="#其他破解方式">其他破解方式</a></li>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
+<footer class="site-footer text-center">
+  <div class="social" > 
+     
+          <a href=" mailto:yidaofeicn@gmail.com "><i class="fa fa-envelope-open-o"></i></span></a>
+      
+       
+          <a href=" https://github.com/yidaofeicn "  ><i class="fa fa-github"></i></span></a>
+      
+    
+      
+                <a href="https://blog.yidaofei.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml" target="_blank"> <i class="fa fa-rss"></i>
+                </a>
+          </div>
+   
+  <div class="copyright"  >
+    Powered by &nbsp;<a href="https://gohugo.io/">Hugo</a>&nbsp;|&nbsp;
+    Theme-<a href="https://github.com/yidaofeicn/hugo-theme-flybird">Flybird</a>  
+  </div>
+  <div class="copyright"> Copyright© 2018 Transparent Thoughts. All rights reserved.</div> 
+  <div class="copyright"> 
+
+      
+    
+      <span id="busuanzi_container">
+        访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+</footer>
+
+ 
+
+<div id="bottom-element" data-title="定位底部"></div>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.css">
+<script type="text/javascript" src="https://blog.yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.js"></script>
+ 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.30.0/algoliasearch.jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.32.0/autocomplete.jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com/thirdParty/algoliasearch/algolia-autocomplete.css">
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.css"> 
+<script type="text/javascript" src="https://blog.yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.css">
+<script type="text/javascript" src="https://blog.yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//thirdParty/prismjs/prism.css">
+
+<script type="text/javascript" src="https://blog.yidaofei.com//thirdParty/prismjs/prism.js"></script>
+
+
+<script type="text/javascript" color="#1D1D1D" opacity='1' zIndex="-2" count="400" src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.3/canvas-nest.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+<span id="isPage" data-isPage="true" style="display: none;"></span>
+
+
+ 
+
+<script type="text/javascript" src="https://blog.yidaofei.com//js/flybird.js"></script> 
+<script type="text/javascript" src="https://blog.yidaofei.com//js/main.js"></script> 
+  
+ 
+</style>
+</body>
+</html>
+
+
+ 

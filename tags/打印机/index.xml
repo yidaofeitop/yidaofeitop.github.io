@@ -6,17 +6,45 @@
     <description>Recent content in 打印机 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 03 Nov 2019 23:23:17 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jan 2020 17:11:17 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.yidaofei.com/tags/%E6%89%93%E5%8D%B0%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>打印机-如何设置远程扫描</title>
-      <link>https://blog.yidaofei.com/post/20191103-software-skills-how-to-set-printscan/</link>
+      <title>打印机-如何设置远程扫描-windows7</title>
+      <link>https://blog.yidaofei.com/drafts/20200104-software-skills-how-to-set-printscan-windows10/</link>
+      <pubDate>Tue, 14 Jan 2020 17:11:17 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/drafts/20200104-software-skills-how-to-set-printscan-windows10/</guid>
+      <description>&lt;p&gt;公司新租用了一台打印机（Aficio MP 3351），租赁公司派遣了一个技术人员过来处理，由于公司的电脑已经基本上全部升级至「 Windows 10」
+所以就和他沟通了一下「 Windows 10」是怎样设置远程扫描的！&lt;/p&gt;
+
+&lt;p&gt;本文就是我在他们公司的基础之上做的技术汇总，以免有人像我一样用3个小时查找资料之后还是没有任何的头绪！&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>打印机-如何设置远程扫描-windows7</title>
+      <link>https://blog.yidaofei.com/post/20200114-software-skills-how-to-set-printscan-windows10/</link>
+      <pubDate>Tue, 14 Jan 2020 17:11:17 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20200114-software-skills-how-to-set-printscan-windows10/</guid>
+      <description>&lt;p&gt;公司新租用了一台打印机（Aficio MP 3351），租赁公司派遣了一个技术人员过来处理，由于公司的电脑已经基本上全部升级至「 Windows 10」
+所以就和他沟通了一下「 Windows 10」是怎样设置远程扫描的！&lt;/p&gt;
+
+&lt;p&gt;本文就是我在他们公司的基础之上做的技术汇总，以免有人像我一样用3个小时查找资料之后还是没有任何的头绪！&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>打印机-如何设置远程扫描-windows7</title>
+      <link>https://blog.yidaofei.com/post/20191103-software-skills-how-to-set-printscan-windows7/</link>
       <pubDate>Sun, 03 Nov 2019 23:23:17 +0800</pubDate>
       
-      <guid>https://blog.yidaofei.com/post/20191103-software-skills-how-to-set-printscan/</guid>
+      <guid>https://blog.yidaofei.com/post/20191103-software-skills-how-to-set-printscan-windows7/</guid>
       <description>&lt;p&gt;之所以记录如此简单的东西主要是在今年7月份查询很多资料但是仍旧无法配置好打印机的远程扫描，身为一个曾经的程序员深感惭愧 :😢:&lt;/p&gt;
 
 &lt;p&gt;本文内容大致分为三个部分，全部以图片的形式呈现：&lt;/p&gt;

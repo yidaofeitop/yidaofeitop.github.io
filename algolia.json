@@ -75,6 +75,24 @@
     },
     {
         "draft": false,
+        "uri": "drafts/20200104-software-skills-how-to-set-printScan-windows10",
+        "content": "Aficio MP 3351                                       Windows 10              Windows 10                                            3                                                                              IP                                windows7         FTP                    Sonic FTP Server V1 06                                           FileZilla Server       https   filezilla project org download php type server            2        FTP        Windows 10        FTP         Filezilla Server  Host    localhost   127 0 0 1           FTP         Connect           Logged on                               FTP         FTP                         1               test                                        FileZilla Server    FTP            Windows 10     Windows                        Windows Defender                                 FileZilla Server          Filazilla server interface exe   Filezilla server exe                        FTP                              windows7                 SMB     FTP         Tab        IP             Tab            1 http   blog sina com cn s blog_4cd978f90102vtwl html  2 https   www cnblogs com APeng2019 p 10719291 html        Version Action  Time                     1 0 init 2020 01 14",
+        "objectID": "drafts/20200104-software-skills-how-to-set-printScan-windows10",
+        "title": "打印机-如何设置远程扫描-windows7",
+        "date": "2020-01-14T09:11:17.000Z",
+        "type": "post",
+        "Keywords": [
+            "打印机"
+        ],
+        "categories": [
+            "软件技巧"
+        ],
+        "tags": [
+            "打印机"
+        ]
+    },
+    {
+        "draft": false,
         "uri": "post/20131208-how-to-solve-the-problem-of-garbled-characters",
         "content": "JavaWeb                  URL    JSP HTML    Request Response       JSP HTML               html    java    1 3                   Servlet                           request getMethod        Get                 Post                       Get                                                                        CodeFilter java   web xml        xml codeFilter filter CodeFilter codeFilter                    EncodingFilter java  EncodingHttpServletRequest java   web xml        xml EncodingFilter EncodingFilter filter EncodingFilter encoding UTF 8 EncodingFilter                                        request getParameterMap            request getParameter  name                                                  request getParameterMap                Tomcat            apache tomcat 7 0 47 src java org apache catalina connectorRequest java  java public Map getParameterMap      parameterMap isLocked      return parameterMap    Enumeration enumeration   getParameterNames     enumeration hasMoreElements      String name   enumeration nextElement    String   values   getParameterValues name   parameterMap put name  values     parameterMap setLocked true   return parameterMap                                              Version Action  Time                     1 0 init 2013 12 08",
         "objectID": "post/20131208-how-to-solve-the-problem-of-garbled-characters",
@@ -1987,10 +2005,10 @@
     },
     {
         "draft": false,
-        "uri": "post/20191103-software-skills-how-to-set-printScan",
+        "uri": "post/20191103-software-skills-how-to-set-printScan-windows7",
         "content": "7                                           cry                                                                          Tips      Windows 7            RICHO MP4001                                                                                                                        a                    b         everyone                          Tips                          Internet                             MP4001                                                                                  SMB                                                                                                                       Version Action  Time                     1 0 init 2019 11 03",
-        "objectID": "post/20191103-software-skills-how-to-set-printScan",
-        "title": "打印机-如何设置远程扫描",
+        "objectID": "post/20191103-software-skills-how-to-set-printScan-windows7",
+        "title": "打印机-如何设置远程扫描-windows7",
         "date": "2019-11-03T15:23:17.000Z",
         "type": "post",
         "Keywords": [
@@ -2088,6 +2106,43 @@
             "JSON"
         ],
         "description": []
+    },
+    {
+        "draft": false,
+        "uri": "post/20200110-beauty-clothes-color",
+        "content": "FunnyLook                                                                                                                                                                                                                                                                                                                                                    4                 2         30                    2         60                   2         120                    2         180                                 T                       T                                   LOGO                                                                     boy                     smile                                                                                                                                                         T                                                                                                                                                                                                                          3                                                           N                                                                                                                                                                                                                                3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      T                                                  Version Action  Time                     1 0 init 2020 01 10",
+        "objectID": "post/20200110-beauty-clothes-color",
+        "title": "健康美丽-衣物搭配-颜色篇",
+        "date": "2020-01-10T13:56:19.000Z",
+        "type": "post",
+        "Keywords": [
+            "颜色",
+            "款式"
+        ],
+        "categories": [
+            "健康美丽"
+        ],
+        "tags": [
+            "美丽人生"
+        ]
+    },
+    {
+        "draft": false,
+        "uri": "post/20200114-software-skills-how-to-set-printScan-windows10",
+        "content": "Aficio MP 3351                                       Windows 10              Windows 10                                            3                                                                              IP                                windows7         FTP                    Sonic FTP Server V1 06                                           FileZilla Server       https   filezilla project org download php type server            2        FTP        Windows 10        FTP         Filezilla Server  Host    localhost   127 0 0 1           FTP         Connect           Logged on                               FTP         FTP                         1               test                                        FileZilla Server    FTP            Windows 10     Windows                        Windows Defender                                 FileZilla Server          Filazilla server interface exe   Filezilla server exe                        FTP                              windows7                 SMB     FTP         Tab        IP             Tab            1 http   blog sina com cn s blog_4cd978f90102vtwl html  2 https   www cnblogs com APeng2019 p 10719291 html        Version Action  Time                     1 0 init 2020 01 14",
+        "objectID": "post/20200114-software-skills-how-to-set-printScan-windows10",
+        "title": "打印机-如何设置远程扫描-windows7",
+        "date": "2020-01-14T09:11:17.000Z",
+        "type": "post",
+        "Keywords": [
+            "打印机"
+        ],
+        "categories": [
+            "软件技巧"
+        ],
+        "tags": [
+            "打印机"
+        ]
     },
     {
         "title": "Wiki",
