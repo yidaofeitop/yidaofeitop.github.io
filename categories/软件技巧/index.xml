@@ -6,13 +6,29 @@
     <description>Recent content in 软件技巧 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 14 Jan 2020 17:11:17 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jan 2020 22:17:43 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.yidaofei.com/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>打印机-如何设置远程扫描-windows7</title>
+      <title>Android&amp;IOS-通讯录同步操作指南</title>
+      <link>https://blog.yidaofei.com/post/20200117-software-skills-contacts-synchronization-operation-guide/</link>
+      <pubDate>Fri, 17 Jan 2020 22:17:43 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20200117-software-skills-contacts-synchronization-operation-guide/</guid>
+      <description>&lt;p&gt;现通用的通讯录导入方式主要分为以下两种：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;工具软件类：利用「和通讯」APP 同步：类似的软件还有 「QQ 同步助手」&lt;/li&gt;
+&lt;li&gt;利用 VCF 跨平台文本+云端平台同步&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>打印机-如何设置远程扫描-windows10</title>
       <link>https://blog.yidaofei.com/drafts/20200104-software-skills-how-to-set-printscan-windows10/</link>
       <pubDate>Tue, 14 Jan 2020 17:11:17 +0800</pubDate>
       
@@ -26,7 +42,7 @@
     </item>
     
     <item>
-      <title>打印机-如何设置远程扫描-windows7</title>
+      <title>打印机-如何设置远程扫描-windows10</title>
       <link>https://blog.yidaofei.com/post/20200114-software-skills-how-to-set-printscan-windows10/</link>
       <pubDate>Tue, 14 Jan 2020 17:11:17 +0800</pubDate>
       

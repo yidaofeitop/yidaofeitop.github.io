@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>手机技巧 on  易道非 Blog</title>
+    <link>https://blog.yidaofei.com/tags/%E6%89%8B%E6%9C%BA%E6%8A%80%E5%B7%A7/</link>
+    <description>Recent content in 手机技巧 on  易道非 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 17 Jan 2020 22:17:43 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.yidaofei.com/tags/%E6%89%8B%E6%9C%BA%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Android&amp;IOS-通讯录同步操作指南</title>
+      <link>https://blog.yidaofei.com/post/20200117-software-skills-contacts-synchronization-operation-guide/</link>
+      <pubDate>Fri, 17 Jan 2020 22:17:43 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20200117-software-skills-contacts-synchronization-operation-guide/</guid>
+      <description>&lt;p&gt;现通用的通讯录导入方式主要分为以下两种：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;工具软件类：利用「和通讯」APP 同步：类似的软件还有 「QQ 同步助手」&lt;/li&gt;
+&lt;li&gt;利用 VCF 跨平台文本+云端平台同步&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
