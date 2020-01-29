@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Drafts on  易道非 Blog</title>
+    <link>https://blog.yidaofei.com/drafts/</link>
+    <description>Recent content in Drafts on  易道非 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 18 Jan 2020 09:45:59 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.yidaofei.com/drafts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sublime教程： 第二章 Markdown 编辑环境搭建</title>
+      <link>https://blog.yidaofei.com/drafts/20200118-software-skills-sublime-markdown-guild/</link>
+      <pubDate>Sat, 18 Jan 2020 09:45:59 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/drafts/20200118-software-skills-sublime-markdown-guild/</guid>
+      <description>&lt;p&gt;作为一个 Markdown  重度使用者，既然使用上了 sublime 那么 Markdown 绝对是第一个要安装的插件，在这里分享一下我
+整个 Markdown 工作环境搭建的过程！&lt;/p&gt;
+
+&lt;p&gt;本文主要内容分为以下方面：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;插件安装及配置&lt;/li&gt;
+&lt;li&gt;安装问题&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
