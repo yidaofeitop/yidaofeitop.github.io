@@ -6,10 +6,47 @@
     <description>Recent content in Posts on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 17 Jan 2020 22:17:43 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jan 2020 00:55:47 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.yidaofei.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>健康美丽-护肤篇</title>
+      <link>https://blog.yidaofei.com/post/20200130-beauty-skin/</link>
+      <pubDate>Thu, 30 Jan 2020 00:55:47 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20200130-beauty-skin/</guid>
+      <description>&lt;p&gt;本文主要用于记录在学习如何让自己形象更好的一些资料，之所以单独成篇是做到有的放矢！&lt;/p&gt;
+
+&lt;p&gt;本文主要摘录以下文章梳理而成，大家如有兴趣可以访问原作者：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/33831373&#34;&gt;知乎上最全的男性变帅攻略！&lt;/a&gt;：总章&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/question/22239539/answer/271910143&#34;&gt;男生怎么护肤，有哪些护肤品值得推荐？&lt;/a&gt;：护肤部分&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sublime教程： 第二章 Markdown 编辑环境搭建</title>
+      <link>https://blog.yidaofei.com/post/20200118-software-skills-sublime-markdown-guild/</link>
+      <pubDate>Sat, 18 Jan 2020 09:45:59 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20200118-software-skills-sublime-markdown-guild/</guid>
+      <description>&lt;p&gt;作为一个 Markdown  重度使用者，既然使用上了 sublime 那么 Markdown 绝对是第一个要安装的插件，在这里分享一下我
+整个 Markdown 工作环境搭建的过程！&lt;/p&gt;
+
+&lt;p&gt;本文主要内容分为以下方面：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;插件安装及配置&lt;/li&gt;
+&lt;li&gt;安装问题&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Android&amp;IOS-通讯录同步操作指南</title>

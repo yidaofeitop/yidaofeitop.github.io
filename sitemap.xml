@@ -12,7 +12,12 @@
   </url>
   
   <url>
-    <loc>https://blog.yidaofei.com/drafts/20200118-software-skills-sublime-markdown-guild/</loc>
+    <loc>https://blog.yidaofei.com/post/20200130-beauty-skin/</loc>
+    <lastmod>2020-01-30T00:55:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.yidaofei.com/post/20200118-software-skills-sublime-markdown-guild/</loc>
     <lastmod>2020-01-18T09:45:59+08:00</lastmod>
   </url>
   
@@ -569,7 +574,7 @@
   
   <url>
     <loc>https://blog.yidaofei.com/</loc>
-    <lastmod>2020-01-18T09:45:59+08:00</lastmod>
+    <lastmod>2020-01-30T00:55:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -593,12 +598,6 @@
   
   <url>
     <loc>https://blog.yidaofei.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yidaofei.com/drafts/</loc>
-    <lastmod>2020-01-18T09:45:59+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -676,7 +675,7 @@
   
   <url>
     <loc>https://blog.yidaofei.com/post/</loc>
-    <lastmod>2020-01-17T22:17:43+08:00</lastmod>
+    <lastmod>2020-01-30T00:55:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -748,7 +747,7 @@
   
   <url>
     <loc>https://blog.yidaofei.com/categories/%E5%81%A5%E5%BA%B7%E7%BE%8E%E4%B8%BD/</loc>
-    <lastmod>2020-01-10T21:56:19+08:00</lastmod>
+    <lastmod>2020-01-30T00:55:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -952,7 +951,7 @@
   
   <url>
     <loc>https://blog.yidaofei.com/tags/%E7%BE%8E%E4%B8%BD%E4%BA%BA%E7%94%9F/</loc>
-    <lastmod>2020-01-10T21:56:19+08:00</lastmod>
+    <lastmod>2020-01-30T00:55:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
