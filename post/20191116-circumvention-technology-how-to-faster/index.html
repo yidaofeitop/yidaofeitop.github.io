@@ -222,6 +222,8 @@ if (!doNotTrack) {
 <pre><code class="language-bash">wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh &amp;&amp; chmod +x bbr.sh &amp;&amp; ./bbr.sh
 </code></pre>
 
+<p>安装完成，提示是否重启系统，输入 「y」，并回车，重启系统，如果不重启的话 「bbr」 是不会生效的</p>
+
 <h4 id="手动安装方式">手动安装方式</h4>
 
 <ol>
@@ -250,9 +252,9 @@ reboot
 echo &quot;net.ipv4.tcp_congestion_control = bbr&quot; &gt;&gt; /etc/sysctl.conf
 sysctl -p 
 </code></pre></li>
-
-<li><p>验证bbr是否已经开启</p></li>
 </ol>
+
+<h4 id="验证bbr是否已经开启">验证bbr是否已经开启</h4>
 
 <table>
 <thead>
@@ -417,6 +419,7 @@ sysctl -p
 <ul>
 <li><a href="#脚本安装方式">脚本安装方式</a></li>
 <li><a href="#手动安装方式">手动安装方式</a></li>
+<li><a href="#验证bbr是否已经开启">验证bbr是否已经开启</a></li>
 </ul></li>
 <li><a href="#参考资料">参考资料</a></li>
 <li><a href="#版本信息">版本信息</a></li>
