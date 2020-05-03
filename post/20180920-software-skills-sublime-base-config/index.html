@@ -150,7 +150,7 @@ Mac 和 Linux 系统都有。</p>
 
 <h3 id="安装包管理器">安装包管理器</h3>
 
-<p>sublime2 最新版本默认配置 Package Control，如在 Preferences 中未看到此项，使用 <code>CTRL+</code> 调出控制台，复制如下 <a href="https：//packagecontrol.io/installation">Package Control</a>对应的代码，回车等待安装完成后重启即可</p>
+<p>sublime2 最新版本默认配置 Package Control，如在 Preferences 中未看到此项，使用 <code>CTRL+</code> 调出控制台，复制如下 <a href="https://packagecontrol.io/installation">Package Control</a>对应的代码，回车等待安装完成后重启即可</p>
 
 <p><strong>20180911 sublime text2 最新代码</strong></p>
 
@@ -163,6 +163,10 @@ Mac 和 Linux 系统都有。</p>
 <blockquote>
 <p>import urllib.request,os,hashlib; h = &lsquo;6f4c264a24d933ce70df5dedcf1dcaee&rsquo; + &lsquo;ebe013ee18cced0ef93d5f746d80ef60&rsquo;; pf = &lsquo;Package Control.sublime-package&rsquo;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &lsquo;http：//packagecontrol.io/&rsquo; + pf.replace(&rsquo; &lsquo;, &lsquo;%20&rsquo;)).read(); dh = hashlib.sha256(by).hexdigest(); print(&lsquo;Error validating download (got %s instead of %s), please try manual install&rsquo; % (dh, h)) if dh != h else open(os.path.join( ipp, pf), &lsquo;wb&rsquo; ).write(by)</p>
 </blockquote>
+
+<p><strong>20200504 修正</strong>：</p>
+
+<p>以上方式现存在问题，建议直接访问：<a href="https://packagecontrol.io/installation">https://packagecontrol.io/installation</a> 下载相关的包安装</p>
 
 <h3 id="包管理器的使用">包管理器的使用</h3>
 
@@ -509,6 +513,11 @@ Mac 和 Linux 系统都有。</p>
 <tr>
 <td align="left">2018年09月20日</td>
 <td align="left">初创</td>
+</tr>
+
+<tr>
+<td align="left">2020年5月4日</td>
+<td align="left">修正控制包安装方式</td>
 </tr>
 </tbody>
 </table>

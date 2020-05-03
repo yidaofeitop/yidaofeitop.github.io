@@ -6,10 +6,26 @@
     <description>Recent content in Posts on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 03 May 2020 22:40:54 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2020 00:54:44 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.yidaofei.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JavaScript-抽离飞瓜达人视频与商品数据-油猴版本</title>
+      <link>https://blog.yidaofei.com/post/20200504-js-lesson-feigua-extra-data/</link>
+      <pubDate>Mon, 04 May 2020 00:54:44 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20200504-js-lesson-feigua-extra-data/</guid>
+      <description>&lt;p&gt;本文主要是用于抽离「飞瓜数据」某达人名下的视频数据以及商品数据而设置的工具！&lt;/p&gt;
+
+&lt;p&gt;抽离的数据内容大致如下：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;视频数据：标题,上传时间,点赞数,评论量,转发数,视频链接&lt;/li&gt;
+&lt;li&gt;商品数据：商品名称, 播主点赞增量,视频浏览量,订单数,单价,链接&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     
     <item>
       <title>抖音-基础理论部分-2：抖音有哪些功能</title>
