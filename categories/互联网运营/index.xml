@@ -6,10 +6,27 @@
     <description>Recent content in 互联网运营 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 22 Apr 2020 19:24:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2020 22:40:54 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.yidaofei.com/categories/%E4%BA%92%E8%81%94%E7%BD%91%E8%BF%90%E8%90%A5/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>抖音-基础理论部分-2：抖音有哪些功能</title>
+      <link>https://blog.yidaofei.com/post/20200503-douyin-lesson-douyin-function/</link>
+      <pubDate>Sun, 03 May 2020 22:40:54 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20200503-douyin-lesson-douyin-function/</guid>
+      <description>&lt;p&gt;本文主要抽取&lt;a href=&#34;https://www.jianshu.com/p/95b703b22c67&#34;&gt;从内容和功能看，抖音还可改进的地方&lt;/a&gt;内容简化而成，如大家想要了解更加的内容，请访问此链接&lt;/p&gt;
+
+&lt;p&gt;抖音短视频 APP 的功能架构整体如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://image.yidaofei.com/galleries/202005/douyin-functional-architecture.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;文中会针对某些比较复杂的项目进行进一步的说明！&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>抖音-账号建设部分-1：通讯录导入</title>
