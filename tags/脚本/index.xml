@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>脚本 on  易道非 Blog</title>
+    <link>https://blog.yidaofei.com/tags/%E8%84%9A%E6%9C%AC/</link>
+    <description>Recent content in 脚本 on  易道非 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 01 May 2020 17:47:01 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.yidaofei.com/tags/%E8%84%9A%E6%9C%AC/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>自用脚本（全）</title>
+      <link>https://blog.yidaofei.com/post/20200501-software-skills-personal-use-script/</link>
+      <pubDate>Fri, 01 May 2020 17:47:01 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20200501-software-skills-personal-use-script/</guid>
+      <description>&lt;p&gt;由于 VPS 在某些时段会出现 IP 地址被封锁的情况，这时候就需要重新配置 SS、Piwigo、宝塔界面等，
+为节省相关的时间所以将相关的操作汇总在此！具体内容如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ss 环境搭建&lt;/li&gt;
+&lt;li&gt;LAMP 基础环境&lt;/li&gt;
+&lt;li&gt;Piwigo 图床搭建&lt;/li&gt;
+&lt;li&gt;域名更换&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

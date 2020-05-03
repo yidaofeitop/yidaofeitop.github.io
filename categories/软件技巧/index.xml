@@ -6,10 +6,29 @@
     <description>Recent content in 软件技巧 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 18 Jan 2020 09:45:59 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2020 17:47:01 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.yidaofei.com/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>自用脚本（全）</title>
+      <link>https://blog.yidaofei.com/post/20200501-software-skills-personal-use-script/</link>
+      <pubDate>Fri, 01 May 2020 17:47:01 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20200501-software-skills-personal-use-script/</guid>
+      <description>&lt;p&gt;由于 VPS 在某些时段会出现 IP 地址被封锁的情况，这时候就需要重新配置 SS、Piwigo、宝塔界面等，
+为节省相关的时间所以将相关的操作汇总在此！具体内容如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ss 环境搭建&lt;/li&gt;
+&lt;li&gt;LAMP 基础环境&lt;/li&gt;
+&lt;li&gt;Piwigo 图床搭建&lt;/li&gt;
+&lt;li&gt;域名更换&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Sublime教程： 第二章 Markdown 编辑环境搭建</title>
@@ -25,22 +44,6 @@
 &lt;ul&gt;
 &lt;li&gt;插件安装及配置&lt;/li&gt;
 &lt;li&gt;安装问题&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Android&amp;IOS-通讯录同步操作指南</title>
-      <link>https://blog.yidaofei.com/post/20200117-software-skills-contacts-synchronization-operation-guide/</link>
-      <pubDate>Fri, 17 Jan 2020 22:17:43 +0800</pubDate>
-      
-      <guid>https://blog.yidaofei.com/post/20200117-software-skills-contacts-synchronization-operation-guide/</guid>
-      <description>&lt;p&gt;现通用的通讯录导入方式主要分为以下两种：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;工具软件类：利用「和通讯」APP 同步：类似的软件还有 「QQ 同步助手」&lt;/li&gt;
-&lt;li&gt;利用 VCF 跨平台文本+云端平台同步&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
