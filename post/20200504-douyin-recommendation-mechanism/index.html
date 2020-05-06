@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <meta charset="UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" >
+
+  
+  
+    
+    <meta charset="utf-8" name="keywords" content="推荐,审核," > 
+  
+   
+  <meta charset="utf-8" name="description" content="抖音推荐算法大致会经过以下步骤：
+
+
+第0步：双重审核：机器审核与人工审核：防违规&#43;消重机制
+第1步：冷启动
+第2步：数据加权
+第3步：加大推荐
+第4步：进入精品推荐池
+
+
+以下内容参考自：
+
+
+图解抖音推荐算法：内容条理清晰，以此为主要脉络填充
+「深度解读」抖音算法机制：简要模型
+抖音算法揭秘，百万粉丝背后的逻辑：算法描述
+
+
+" >
+  
+  
+  
+    
+        <link rel="icon" type="image/png" href="https://blog.yidaofei.com//image/favicon-32x32.png" > 
+    
+  
+  
+  
+  
+  <title>抖音-基础理论部分-3：抖音推荐算法- 易道非 Blog</title>  
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-149867135-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+
+  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//css/style.css">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+<body> 
+ 
+
+ 
+<div id="top-element" data-title="到达顶点"></div>
+  
+<header class="site-header fixed-top">
+  <div class="container">
+    <nav id="navigation">  
+      <a href="https://blog.yidaofei.com/" class="site-title">
+        
+        <img title="site-logo" class="site-logo" src="https://blog.yidaofei.com//image/logo.png" >
+           
+         易道非 Blog 
+      </a> 
+      <a aria-label="mobile menu" class="nav-toggle" id="site-nav-toggle"> 
+        <span></span> <span></span> <span></span> 
+      </a>
+      <ul class="menu-left">
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/categories/">Categories</a></li>
+        
+          <li><a href="/tags">Tags</a></li>
+        
+          <li><a href="/wiki">Wiki</a></li>
+        
+          <li><a href="/about">About</a></li>
+        
+
+        
+          <li><a data-remodal-target="searchinput">search</a></li>
+           
+      </ul>
+    </nav>
+  </div>
+</header> 
+
+
+
+<div class="remodal" data-remodal-id="searchinput" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc"> 
+  <span id="algoliaData" style="display:none;" data-appid="7811M20DVN" 
+		data-searchkey="36e10c95330790bef468eb32fbaab5b0" 
+		data-initindex="blog.yidaofei.com"></span>
+
+<div class="search-input-card" >
+    <input type="search" id="search-input" class="search-input" placeholder="Search for titles or URIs..." name="search" autocomplete="off" />
+     <span class="input-search-icon"><i class="fa fa-search"></i></span> 
+</div>
+
+ 
+
+  
+</div>
+
+  
+
+
+
+<section class="main-content-container">
+<article class="article-card">
+	<header class="article-header"> 
+	   <p class="article-title">抖音-基础理论部分-3：抖音推荐算法</p>
+   		<div class="article-meta">
+			
+			<div><i class="fa fa-calendar" >2020年05月04日</i> </div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://blog.yidaofei.com/categories/%e4%ba%92%e8%81%94%e7%bd%91%e8%bf%90%e8%90%a5">互联网运营</a> 
+				   
+				</i>  
+			</div> 
+		</div>  
+	</header>  
+	<content class="markdown">
+		<p>抖音推荐算法大致会经过以下步骤：</p>
+
+<ul>
+<li>第0步：双重审核：机器审核与人工审核：防违规+消重机制</li>
+<li>第1步：冷启动</li>
+<li>第2步：数据加权</li>
+<li>第3步：加大推荐</li>
+<li>第4步：进入精品推荐池</li>
+</ul>
+
+<p>以下内容参考自：</p>
+
+<ul>
+<li><a href="http://www.199it.com/archives/954402.html">图解抖音推荐算法</a>：内容条理清晰，以此为主要脉络填充</li>
+<li><a href="https://zhuanlan.zhihu.com/p/60605828">「深度解读」抖音算法机制</a>：简要模型</li>
+<li><a href="http://www.woshipm.com/operate/1975366.html">抖音算法揭秘，百万粉丝背后的逻辑</a>：算法描述</li>
+</ul>
+
+<p></p>
+
+<h3 id="算法科普">算法科普</h3>
+
+<h4 id="什么是算法">什么是算法</h4>
+
+<p>简单通俗的讲，算法就是一套评判机制。这套机制对平台的所有用户都有效，无论是内容生产者（拍视频的人）或内容消费者（看视频的人），很多时候我们既是生产者也是消费者。</p>
+
+<p>我们在平台上的每一个动作都像是一个清晰的指令，平台根据这些指令来判断我们的性质。并将我们分为优质用户、沉默用户、流失用户、可挽回用户等；</p>
+
+<p>除此之外，它还会判断我们是否为营销号，有没有违规操作。如果是平台就会将我们的账号关进小黑屋；相反如果判断出我们是一个优质的用户，平台就会给予我们一定扶持。</p>
+
+<h4 id="算法有什么用">算法有什么用</h4>
+
+<p>算法对于平台最大的用处是管理自己平台上的用户数据，并且<strong>根据用户的一系列反馈行为来改进平台功能</strong>，提高用户体验从而使平台吸引更多用户、留住更多用户，最终使平台形成一个可循环的良性生态。</p>
+
+<h4 id="了解算法有什么好处">了解算法有什么好处</h4>
+
+<p><strong>内容生产者</strong>：我们既然想在别人的地盘为自己吸粉，就一定要明白别人的规则！只要我们意识到平台的推荐机制，我们便可以有意识的设计自己的行为，引导平台判定我们是优质用户从而分配给我们更多、更精准的流与更高的权限。</p>
+
+<p><strong>内容消费者</strong>：算法会根据你的行为来分析你的兴趣，然后给你打上一个标签再将同类标签的内容生产者的内容推荐给你，你们便是一个池子里的人！这样就更加能够留住你，这就是为什么大家会说：「刷抖音会中毒的原因」</p>
+
+<h3 id="推荐算法">推荐算法</h3>
+
+<h4 id="基础逻辑">基础逻辑</h4>
+
+<p>头条系产品就是“以用户为中心”，只推送你喜欢的内容，从初期适应用户需求到精确满足用户需求的目标，从而实现内容定制化。</p>
+
+<p>如果你被一个娱乐类型的文章或者视频所吸引并点击阅读，之后你的内容主页就可能被定制成了娱乐类型。而在外后的过程中机器算法，会不断细分采集并记录你的行为标签，从而让你喜欢看的内容越来越精准，可能最后细化到只给你推送”某个明星“的相关新闻或者视频。</p>
+
+<blockquote>
+<p>算法机制下的内容定制，等于为用户找一个“懂你的另一半”。</p>
+</blockquote>
+
+<p>关于抖音热门强相关的作品推荐模式原理图如下：</p>
+
+<p><img src="https://image.yidaofei.com/galleries/202005/douyin-algorithm-model.png" alt="" /></p>
+
+<h4 id="双重审核">双重审核</h4>
+
+<h5 id="机器审核">机器审核</h5>
+
+<p>机器审核：一般是通过提前设置好的<strong>人工智能模型</strong>来识别你的视频画面和关键词，它主要有两个关键作用：</p>
+
+<ol>
+<li><strong>审核作品、文案中是否存在违规行为</strong>，如果疑似存在，就会被机器拦截，通过飘黄、标红等提示人工注意；</li>
+<li>通过抽取视频中的画面、关键帧，<strong>与抖音大数据库中已存在的海量作品进行匹配消重</strong>，内容重复的作品进行低流量推荐，或者降权推荐（仅粉丝可见、仅自己可见）。</li>
+</ol>
+
+<p><img src="https://image.yidaofei.com/galleries/202005/douyin-rebot-review.png" alt="抖音机器人审核-视频、图像、文字" /></p>
+
+<p>详细图请访问以下链接：<a href="https://image.yidaofei.com/galleries/202005/douyin-video-review.png">视频审核</a>、<a href="https://image.yidaofei.com/galleries/202005/douyin-image-review.png">图像审核</a>、<a href="https://image.yidaofei.com/galleries/202005/douyin-txt-review.png">文本审核</a></p>
+
+<h5 id="人工审核">人工审核</h5>
+
+<p>人工审核：主要集中在3块：视频标题、封面截图和视频关键帧！</p>
+
+<p>针对机器审核筛选出疑似违规作品，以及容易出现违规领域的作品，抖音审核人员进行逐个细致审核。如果确定违规，将根据违规账号进行删除视频、降权通告、封禁账号等处罚。</p>
+
+<h4 id="审核结果">审核结果</h4>
+
+<p>机器审核与人工审核通过即可进入流量池，反之就会进入相应的处理！关于审核不通过的原因（除去重复之外）如下：</p>
+
+<p><img src="https://image.yidaofei.com/galleries/202005/douyin-rebot-review-no-cross.png" alt="" /></p>
+
+<p>抖音视频审核不通过的处理方式有四种：</p>
+
+<ol>
+<li>删除视频：这是最严重的，一般是涉及严重违规，这个情况发生一次就要注意了，有禁封账号的风险</li>
+<li>仅自己可见：也就是不给于推荐，而且粉丝也看不见。一般是硬广类视频</li>
+<li>仅粉丝可见：一样是不给于流量推荐，但是粉丝可以看到。一般是重复性较高的视频</li>
+<li>低流量推荐：一般是不清晰视频，或者没有什么新意的简单视频（7s内）</li>
+</ol>
+
+<h4 id="冷启动">冷启动</h4>
+
+<p>关于「冷启动」系统原理可以访问 <a href="https://zhuanlan.zhihu.com/p/60605828">「深度解读」抖音算法机制</a>定位「流量分桶」与「送量测试」,以下采用比较通俗的说法：</p>
+
+<p>通过审核后，第一步叫冷启动流量池曝光，比如你今天上传一个视频，通过双重审核的作品，系统将会分配给你一个初始流量池：<strong>200-300在线用户</strong>（也可能有上千个曝光）。不论你是不是大号，只要你有能力产出优质内容，就有机会跟大号竞争。</p>
+
+<h4 id="数据加权">数据加权</h4>
+
+<p>抖音会根据这1000次曝光所产出的数据，结合你账号分值来分析是否给你加权，比如完播率、点赞、关注、评论、转发、转粉、游览深度等。</p>
+
+<p><img src="https://image.yidaofei.com/galleries/202005/douyin-video-weights-factor.png" alt="" /></p>
+
+<p>以上这些都会对你的短视频数据造成影响，以及对你的短视频作出是否要加权的判断，然后会挑选前10%的视频，再增加1万次曝光。</p>
+
+<p><img src="https://image.yidaofei.com/galleries/202005/douyin-popular-recommendation-mechanism.png" alt="" /></p>
+
+<h4 id="加大推荐">加大推荐</h4>
+
+<p>这一步会给数据好的短视频进行更大的加权，并且会在第三步强化人群标签分发，让内容分发的更加精准，这类似猜你喜欢的打标，视频是有标签的，用户也是有标签的，两者之间会做标签匹配。</p>
+
+<p><img src="https://image.yidaofei.com/galleries/202005/douyin-user-portrait.png" alt="" /></p>
+
+<h4 id="进入精品推荐池">进入精品推荐池</h4>
+
+<p>一旦进入精品推荐后，人群标签就被弱化了，就像当年温婉的视频，几乎每个抖音用户都会刷到温婉的视频。</p>
+
+<h3 id="其他概念">其他概念</h3>
+
+<h4 id="热度强相关的转化率">热度强相关的转化率</h4>
+
+<p><img src="https://image.yidaofei.com/galleries/202005/hot-conversion-rate.png" alt="" /></p>
+
+<p>上图表达了关于<strong>转化比强关系的要素</strong>，那么转化率直接影响的是<strong>作品热度</strong>。</p>
+
+<h4 id="标签与推荐算法关系">标签与推荐算法关系</h4>
+
+<p>上面内容对于作品的基数分值针对哪些会有关联进行介绍，那么在推荐机制中对于内容的标签关联的计算方式是怎么样的？了解内容标签匹配过程，能让我们往后对于自己的作品的用户垂直度能做到更细微的调整，让算法更好的收录自己的作品并进行多次的推荐。</p>
+
+<ol>
+<li><p>分类<br />
+短视频A进入推荐系统后，系统根据上传设定的分类「体验」将其放置体育分类池中；</p></li>
+
+<li><p>标题<br />
+系统抓取短视频A标题《姚明大动作，男篮设两队两主帅》中的关键词：「姚明」「男篮」；</p></li>
+
+<li><p>用户垂直精准度，标题+封面<br />
+系统匹配用户数据中标有「姚明」 「男篮」所对应「体育」「篮球」「男篮」等标签的用户，小量级试探推荐，观察用户是否感兴趣观看并有良性反馈；</p></li>
+
+<li><p>用户垂直精准度<br />
+继而扩大量级推荐，并根据「姚明」，「男篮」关联更多关键词及标签用户，如「NBA,CBA,奥尼尔」等&hellip;&hellip;.</p></li>
+</ol>
+
+<h4 id="流量池概念">流量池概念</h4>
+
+<p>抖音有低级流量池、中级流量池、高级流量池之分，不同权重的账号会被分配到不同的流量池，也就会获得不同的曝光量。被分配的高低取也决于内容的受欢迎程度。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">流量池级别</th>
+<th align="left">分配流量</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">第一级</td>
+<td align="left">200-300</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">第二级</td>
+<td align="left">3000-5000</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">第三级</td>
+<td align="left">1.2W-1.8W</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">第四级</td>
+<td align="left">10-12W</td>
+<td align="left">人工介入</td>
+</tr>
+
+<tr>
+<td align="left">第五级</td>
+<td align="left">40W-60W</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">第六级</td>
+<td align="left">200W-300W</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">第七级</td>
+<td align="left">700W-1100W</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">第八级</td>
+<td align="left">触发标签长期推荐</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="挖坟">挖坟</h4>
+
+<p>不少抖音运营者会发现，有些内容发布的当天、一周甚至一个月内都数据平平，但突然有一天就火了，为什么？两种原因：</p>
+
+<p>第一种，被很多老司机戏称为「挖坟」。它是指抖音会<strong>重新挖掘数据库里的「优质老内容」，并给它更多的曝光</strong>。这些老作品之所以能被「引爆」，首当其冲是它的内容够好，其次，是你的账号已经发布了很多足够垂直的内容，标签变得更清晰，系统能够匹配给你更精准的用户。<strong>优质内容+精准用户</strong>，老作品重新火爆起来就不意外了。</p>
+
+<p>第二种，我们可以称之为「爆款效应」，它是指，你的<strong>某一个作品在获得大量曝光（几百万，甚至千万级）时，会带来巨量用户进入你的个人主页，去翻看你之前的作品</strong>。如果你的某一个作品，能够获得足够多的关注（转评赞），系统将会把这些视频重新放入推荐池。很多垂直内容的创作者，往往都是因为某一个视频的“火爆”，直接把其他几个优质视频“点燃”，形成多点开花，全盘爆炸引流的盛况。</p>
+
+<h4 id="流量触顶">流量触顶</h4>
+
+<p>抖音作品经过双重审核、初始推荐、叠加推荐层层引爆之后，通常会给账号带来大量的曝光、互动和粉丝。而这种<strong>高推荐曝光的时间，一般不会超过一周</strong>。之后，爆款视频乃至整个账号会迅速冷却下来，甚至后续之后发布的一些作品也
+很难有较高的推荐量。为什么？</p>
+
+<p>抖音每天的日活是有限的，也就是说总的推荐量是基本固定的：一方面，跟你内容相关标签的人群基本完成推荐，其他非精准标签人群反馈效果差，所以停止推荐；另一方面，抖音也不希望某个账号迅速火起来，而是通过一轮轮考验，考验你的内容再创新能力，考验你持续输出优质内容的能力。</p>
+
+<h3 id="参考资料">参考资料</h3>
+
+<ul>
+<li><a href="https://www.jianshu.com/p/95b703b22c67">从内容和功能看，抖音还可改进的地方</a>：主讲抖音内容方向的预测</li>
+<li><a href="https://cloud.tencent.com/developer/article/1087421">今日头条推荐算法详解（PDF下载）</a>：深刻了解内部原理</li>
+</ul>
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Version</th>
+<th align="center">Action</th>
+<th align="center">Time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1.0</td>
+<td align="center">init</td>
+<td align="center">2020-05-04</td>
+</tr>
+</tbody>
+</table>
+			  
+		
+		
+			<div class="article-copyright">
+			  	<ul>
+			  		<li><strong>本文作者：</strong>易道非</li>
+			  		<li><strong>本文链接：</strong>https://blog.yidaofei.com/post/20200504-douyin-recommendation-mechanism/</li>
+			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
+			  	</ul>
+			</div>
+		 
+	</content>  
+ 	<hr/>
+ 	
+	<div class="article-footer-meta-between"> 
+		 
+		<div>
+			<i class="fa fa-tags">&nbsp;Tags:
+			
+				<a href="https://blog.yidaofei.com/tags/%e6%8a%96%e9%9f%b3">抖音</a>
+    		
+    		</i>   
+		</div> 
+		 
+		<div id="i-share" class="btn btn-default  share-widget">
+		    <i class="fa fa-share-alt"></i>
+		</div> 
+	</div>
+	<hr/>
+	<div class="article-footer-meta-between"> 
+		<div class="refArticle-prev" >
+			  
+		    <a href="https://blog.yidaofei.com/post/20200504-js-lesson-feigua-extra-data/">
+		    	<i class="fa fa-angle-double-left"></i>&nbsp;JavaScript-抽离飞瓜达人视频与商品数据-油猴版本  
+		    </a> 
+			
+		</div>
+		 <div class="refArticle-next" >
+		  
+		  	<a href="https://blog.yidaofei.com/post/20200503-douyin-lesson-douyin-function/">抖音-基础理论部分-2：抖音有哪些功能&nbsp;
+		  		<i class="fa fa-angle-double-right"></i>
+		  	</a> 
+		 
+	    </div>
+	</div>  
+</article> 
+</section>
+ 
+
+  
+ 
+<div class="main-content-container " >
+<div class="comment-card"> 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeitop/comment-utterances-blog.yidaofei.com"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+</div>
+</div>
+
+ 
+
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+	
+	
+	<span id="tocLevel" data-startLevel="" data-endLevel=""></span>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#算法科普">算法科普</a>
+<ul>
+<li><a href="#什么是算法">什么是算法</a></li>
+<li><a href="#算法有什么用">算法有什么用</a></li>
+<li><a href="#了解算法有什么好处">了解算法有什么好处</a></li>
+</ul></li>
+<li><a href="#推荐算法">推荐算法</a>
+<ul>
+<li><a href="#基础逻辑">基础逻辑</a></li>
+<li><a href="#双重审核">双重审核</a>
+<ul>
+<li><a href="#机器审核">机器审核</a></li>
+<li><a href="#人工审核">人工审核</a></li>
+</ul></li>
+<li><a href="#审核结果">审核结果</a></li>
+<li><a href="#冷启动">冷启动</a></li>
+<li><a href="#数据加权">数据加权</a></li>
+<li><a href="#加大推荐">加大推荐</a></li>
+<li><a href="#进入精品推荐池">进入精品推荐池</a></li>
+</ul></li>
+<li><a href="#其他概念">其他概念</a>
+<ul>
+<li><a href="#热度强相关的转化率">热度强相关的转化率</a></li>
+<li><a href="#标签与推荐算法关系">标签与推荐算法关系</a></li>
+<li><a href="#流量池概念">流量池概念</a></li>
+<li><a href="#挖坟">挖坟</a></li>
+<li><a href="#流量触顶">流量触顶</a></li>
+</ul></li>
+<li><a href="#参考资料">参考资料</a></li>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
+<footer class="site-footer text-center">
+  <div class="social" > 
+     
+          <a href=" mailto:yidaofeicn@gmail.com "><i class="fa fa-envelope-open-o"></i></span></a>
+      
+       
+          <a href=" https://github.com/yidaofeicn "  ><i class="fa fa-github"></i></span></a>
+      
+    
+      
+                <a href="https://blog.yidaofei.com/index.xml" rel="noopener alternate" type="application/rss&#43;xml" target="_blank"> <i class="fa fa-rss"></i>
+                </a>
+          </div>
+   
+  <div class="copyright"  >
+    Powered by &nbsp;<a href="https://gohugo.io/">Hugo</a>&nbsp;|&nbsp;
+    Theme-<a href="https://github.com/yidaofeicn/hugo-theme-flybird">Flybird</a>  
+  </div>
+  <div class="copyright"> Copyright© 2018 Transparent Thoughts. All rights reserved.</div> 
+  <div class="copyright"> 
+
+      
+    
+      <span id="busuanzi_container">
+        访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+</footer>
+
+ 
+
+<div id="bottom-element" data-title="定位底部"></div>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.css">
+<script type="text/javascript" src="https://blog.yidaofei.com//thirdParty/scrollToTopBottom/jquery.elevator.min.js"></script>
+ 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.30.0/algoliasearch.jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.32.0/autocomplete.jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com/thirdParty/algoliasearch/algolia-autocomplete.css">
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.css"> 
+<script type="text/javascript" src="https://blog.yidaofei.com/thirdParty/simpler-sidebar/jquery.simpler-sidebar.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.css">
+<script type="text/javascript" src="https://blog.yidaofei.com//thirdParty/need-more-share2/needsharebutton.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://blog.yidaofei.com//thirdParty/prismjs/prism.css">
+
+<script type="text/javascript" src="https://blog.yidaofei.com//thirdParty/prismjs/prism.js"></script>
+
+
+<script type="text/javascript" color="#1D1D1D" opacity='1' zIndex="-2" count="400" src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.3/canvas-nest.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+<span id="isPage" data-isPage="true" style="display: none;"></span>
+
+
+ 
+
+<script type="text/javascript" src="https://blog.yidaofei.com//js/flybird.js"></script> 
+<script type="text/javascript" src="https://blog.yidaofei.com//js/main.js"></script> 
+  
+ 
+</style>
+</body>
+</html>
+
+
+ 

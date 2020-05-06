@@ -39,6 +39,33 @@
     </item>
     
     <item>
+      <title>抖音-基础理论部分-3：抖音推荐算法</title>
+      <link>https://blog.yidaofei.com/post/20200504-douyin-recommendation-mechanism/</link>
+      <pubDate>Mon, 04 May 2020 00:09:46 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20200504-douyin-recommendation-mechanism/</guid>
+      <description>&lt;p&gt;抖音推荐算法大致会经过以下步骤：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;第0步：双重审核：机器审核与人工审核：防违规+消重机制&lt;/li&gt;
+&lt;li&gt;第1步：冷启动&lt;/li&gt;
+&lt;li&gt;第2步：数据加权&lt;/li&gt;
+&lt;li&gt;第3步：加大推荐&lt;/li&gt;
+&lt;li&gt;第4步：进入精品推荐池&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;以下内容参考自：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.199it.com/archives/954402.html&#34;&gt;图解抖音推荐算法&lt;/a&gt;：内容条理清晰，以此为主要脉络填充&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/60605828&#34;&gt;「深度解读」抖音算法机制&lt;/a&gt;：简要模型&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.woshipm.com/operate/1975366.html&#34;&gt;抖音算法揭秘，百万粉丝背后的逻辑&lt;/a&gt;：算法描述&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>抖音-基础理论部分-2：抖音有哪些功能</title>
       <link>https://blog.yidaofei.com/post/20200503-douyin-lesson-douyin-function/</link>
       <pubDate>Sun, 03 May 2020 22:40:54 +0800</pubDate>
