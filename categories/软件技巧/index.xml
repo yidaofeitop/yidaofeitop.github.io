@@ -6,17 +6,39 @@
     <description>Recent content in 软件技巧 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 01 May 2020 17:47:01 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2020 00:20:01 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.yidaofei.com/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>自用脚本（全）</title>
-      <link>https://blog.yidaofei.com/post/20200501-software-skills-personal-use-script/</link>
+      <title>自用脚本-Windows 篇</title>
+      <link>https://blog.yidaofei.com/post/20200508-software-skills-personal-use-script-windows/</link>
+      <pubDate>Fri, 08 May 2020 00:20:01 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20200508-software-skills-personal-use-script-windows/</guid>
+      <description>&lt;p&gt;上次写了一篇&lt;a href=&#34;https://blog.yidaofei.com/post/20200501-software-skills-personal-use-script-vps/&#34;&gt;自用脚本-VPS 篇&lt;/a&gt;之后出现过一次 Git 配置问题，想想好像在写完成&lt;a href=&#34;https://blog.yidaofei.com/post/20190110-windows-guild-foreword/&#34;&gt;Windows 教程-前言&lt;/a&gt;教程之后很少去想想自己的需求是什么，刚好今晚有时间那就开始干吧，奥力给！&lt;/p&gt;
+
+&lt;p&gt;主要内容分为以下部分：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;开发环境搭建&lt;/li&gt;
+&lt;li&gt;备用系统处理&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Tips&lt;/strong&gt;：本文是针对本人的情况而设定的一些常规动作，所以会存在偶尔想到了就更新的情况，谢谢大家听我啰嗦！&lt;/p&gt;
+
+&lt;hr/&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>自用脚本-VPS 篇</title>
+      <link>https://blog.yidaofei.com/post/20200501-software-skills-personal-use-script-vps/</link>
       <pubDate>Fri, 01 May 2020 17:47:01 +0800</pubDate>
       
-      <guid>https://blog.yidaofei.com/post/20200501-software-skills-personal-use-script/</guid>
+      <guid>https://blog.yidaofei.com/post/20200501-software-skills-personal-use-script-vps/</guid>
       <description>&lt;p&gt;由于 VPS 在某些时段会出现 IP 地址被封锁的情况，这时候就需要重新配置 SS、Piwigo、宝塔界面等，
 为节省相关的时间所以将相关的操作汇总在此！具体内容如下：&lt;/p&gt;
 

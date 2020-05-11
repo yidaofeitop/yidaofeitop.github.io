@@ -11,20 +11,20 @@
   
   
     
-    <meta charset="utf-8" name="keywords" content="抖音," > 
+    <meta charset="utf-8" name="keywords" content="软件技巧,脚本," > 
   
    
-  <meta charset="utf-8" name="description" content="本系列为抖音知识体系，主要是记录在操盘项目的过程中的一些知识点，以便后续能够直接复制
+  <meta charset="utf-8" name="description" content="上次写了一篇自用脚本-VPS 篇之后出现过一次 Git 配置问题，想想好像在写完成Windows 教程-前言教程之后很少去想想自己的需求是什么，刚好今晚有时间那就开始干吧，奥力给！
 
-本文主要分为以下内容：
+主要内容分为以下部分：
 
 
-抖音系列网站
-抖音系列课程-基础理论部分
+开发环境搭建
+备用系统处理
 
-抖音系列课程-账号建设部分
 
-抖音系列课程-工具部分
+Tips：本文是针对本人的情况而设定的一些常规动作，所以会存在偶尔想到了就更新的情况，谢谢大家听我啰嗦！
+
 
 
 " >
@@ -38,7 +38,7 @@
   
   
   
-  <title>抖音-前言- 易道非 Blog</title>  
+  <title>自用脚本-Windows 篇- 易道非 Blog</title>  
   
   
     
@@ -125,10 +125,10 @@ if (!doNotTrack) {
 <section class="main-content-container">
 <article class="article-card">
 	<header class="article-header"> 
-	   <p class="article-title">抖音-前言</p>
+	   <p class="article-title">自用脚本-Windows 篇</p>
    		<div class="article-meta">
 			
-			<div><i class="fa fa-calendar" >2020年04月22日</i> </div>
+			<div><i class="fa fa-calendar" >2020年05月08日</i> </div>
 			  
 
 			 
@@ -141,117 +141,144 @@ if (!doNotTrack) {
 			<div>
 				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
 				
-					<a href="https://blog.yidaofei.com/categories/%e4%ba%92%e8%81%94%e7%bd%91%e8%bf%90%e8%90%a5">互联网运营</a> 
+					<a href="https://blog.yidaofei.com/categories/%e8%bd%af%e4%bb%b6%e6%8a%80%e5%b7%a7">软件技巧</a> 
 				   
 				</i>  
 			</div> 
 		</div>  
 	</header>  
 	<content class="markdown">
-		<p>本系列为抖音知识体系，主要是记录在操盘项目的过程中的一些知识点，以便后续能够直接复制</p>
+		<p>上次写了一篇<a href="/post/20200501-software-skills-personal-use-script-vps/">自用脚本-VPS 篇</a>之后出现过一次 Git 配置问题，想想好像在写完成<a href="/post/20190110-windows-guild-foreword/">Windows 教程-前言</a>教程之后很少去想想自己的需求是什么，刚好今晚有时间那就开始干吧，奥力给！</p>
 
-<p>本文主要分为以下内容：</p>
+<p>主要内容分为以下部分：</p>
 
-<ul>
-<li>抖音系列网站</li>
-<li>抖音系列课程-基础理论部分</li>
+<ol>
+<li>开发环境搭建</li>
+<li>备用系统处理</li>
+</ol>
 
-<li><p>抖音系列课程-账号建设部分</p></li>
+<p><strong>Tips</strong>：本文是针对本人的情况而设定的一些常规动作，所以会存在偶尔想到了就更新的情况，谢谢大家听我啰嗦！</p>
 
-<li><p>抖音系列课程-工具部分</p></li>
-</ul>
+<hr/>
 
 <p></p>
 
-<h3 id="抖音系列网站">抖音系列网站</h3>
+<h3 id="git-环境搭建">Git 环境搭建</h3>
 
-<table>
-<thead>
-<tr>
-<th align="left">抖音工具</th>
-<th align="left">入口</th>
-<th align="left">用途</th>
-<th align="left">要求</th>
-<th align="left">备注</th>
-</tr>
-</thead>
+<h4 id="基础配置部分">基础配置部分</h4>
 
-<tbody>
-<tr>
-<td align="left">企业管理后台</td>
-<td align="left"><a href="https://e.douyin.com">https://e.douyin.com</a></td>
-<td align="left">网页版抖音管理</td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
+<ol>
+<li><p>设置基础信息：用户名与邮箱</p>
 
-<tr>
-<td align="left">抖音小店</td>
-<td align="left"><a href="https://fxg.jinritemai.com/vue#/index/home">https://fxg.jinritemai.com/vue#/index/home</a></td>
-<td align="left">类似淘宝后台</td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
+<pre><code class="language-batch">$ git config --global user.name &quot;Your Name&quot;
+$ git config --global user.email &quot;email@example.com&quot;
+</code></pre></li>
 
-<tr>
-<td align="left">巨量百应</td>
-<td align="left"><a href="https://zhuanlan.zhihu.com/p/121128045">https://zhuanlan.zhihu.com/p/121128045</a></td>
-<td align="left">商品管理平台</td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
+<li><p>创建密钥</p>
 
-<tr>
-<td align="left">抖币充值</td>
-<td align="left">《抖音短视频》公众号&mdash;&gt;抖音直播&mdash;&gt;抖币充值</td>
-<td align="left">直播抖币充值</td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
+<pre><code class="language-batch">$ ssh-keygen -t rsa -C &quot;youremail@example.com&quot;
+</code></pre></li>
 
-<tr>
-<td align="left">抖音认证</td>
-<td align="left"><a href="https://renzheng.douyin.com/">https://renzheng.douyin.com/</a></td>
-<td align="left">企业号机构号认证</td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
+<li><p>成功之后在「我的系统用户」文件夹下出现「.ssh文件夹」，用文本档案打开「id_rsa.pub」，将其填写到对应得应用上</p>
 
-<tr>
-<td align="left">星图</td>
-<td align="left"><a href="https://star.toutiao.com">https://star.toutiao.com</a></td>
-<td align="left">抖音广告平台</td>
-<td align="left">粉丝量大于10万</td>
-<td align="left">单条报价、播放量报价</td>
-</tr>
-</tbody>
-</table>
+<blockquote>
+<ol>
+<li>gitlab：<a href="https://gitlab.com/">https://gitlab.com/</a></li>
+<li>github：<a href="https://github.com/settings/keys">https://github.com/settings/keys</a></li>
+</ol>
+</blockquote></li>
+</ol>
 
-<h3 id="抖音系列课程-抖音基础理论部分">抖音系列课程-抖音基础理论部分</h3>
+<h4 id="git-命令行">Git 命令行</h4>
 
 <ul>
-<li><a href="/post/20200501-douyin-lesson-what-is-douyin/">抖音-基础理论部分-1：抖音是什么</a></li>
-<li><a href="/post/20200503-douyin-lesson-douyin-function/">抖音-基础理论部分-2：抖音有哪些功能</a></li>
-<li><a href="/post/20200504-douyin-recommendation-mechanism/">抖音-基础理论部分-3：抖音推荐算法</a></li>
-<li><a href="/post/20200506-douyin-lesson-which-pits/">抖音-基础理论部分-4：抖音有哪些坑</a></li>
-<li><a href="/post/20200510-douyin-lesson-positioning/">抖音-基础理论部分-5：抖音之定位</a></li>
+<li>查看当前的远程仓库：git remote -v</li>
+<li>查看远程仓库信息：git remote show origin</li>
+<li>设置远程仓库：git remote add [short_name] [url]</li>
+<li>远程仓库重新命名：git remote rename [old_name] [new_name]</li>
+<li>删除某个远程仓库：git remote rm [remote_name]</li>
+<li>从远程仓库抓取数据：git fetch [remote-name]</li>
+<li>显示所有分支：git branch</li>
+<li>创建并切换分支：git checkout -b testing</li>
+
+<li><p>分支合并：</p>
+
+<pre><code class="language-batch">git checkout master
+git merge hotfix
+git branch -d hotfix
+</code></pre></li>
+
+<li><p>查看当前状态：git status</p></li>
 </ul>
 
-<h3 id="抖音系列课程-内容体系">抖音系列课程-内容体系</h3>
+<h3 id="hugo-博客环境搭建">hugo 博客环境搭建</h3>
 
-<h3 id="抖音系列课程-运营体系">抖音系列课程-运营体系</h3>
+<h4 id="go-环境配置">Go 环境配置</h4>
 
-<ul>
-<li><a href="/post/20200422-douyin-lesson-account-address-book-import/">抖音-运营体系-通讯录导入</a></li>
-<li><a href="/post/20200402-douyin-lesson-apply-blue-v/">抖音-运营体系-企业号认证</a></li>
-<li><a href="/post/20200411-douyin-lesson-apply-douyin-shop/">抖音-运营体系-抖音小店申请流程</a></li>
-</ul>
+<p>Hugo 是基于 Go 语言的，所以首先需要搭建 「Go 开发环境」，其命令行如下：</p>
 
-<h3 id="抖音系列课程-工具部分">抖音系列课程-工具部分</h3>
+<ol>
+<li>下载安装包：<a href="https://golang.google.cn/dl/">https://golang.google.cn/dl/</a></li>
+<li>配置环境变量：
 
 <ul>
-<li><a href="/post/20200421-douyin-lesson-unmanned-live-broadcast/">抖音-工具部分-抖音无人直播</a></li>
-<li><a href="/20200504-douyin-lesson-tool-collection/">抖音-工具部分-工具集合</a></li>
+<li>GOPATH：Go的安装目录</li>
+<li>Path：<code>%GOPATH%\bin</code></li>
+</ul></li>
+</ol>
+
+<h4 id="nodejs-环境配置">「Nodejs」 环境配置</h4>
+
+<p>在本人 Hugo 博客系统中需要用到「hugo-algolia」插件，而此插件是基于 「Nodejs」 ，所以需要搭建「Nodejs」开发环境，其操作步骤如下：</p>
+
+<ol>
+<li>下载安装包：<a href="https://nodejs.org/en/">https://nodejs.org/en/</a></li>
+
+<li><p>修改默认的全局目录</p>
+
+<pre><code class="language-batch">//全局包目录 
+npm config set prefix D:/node/nodejs/node_global/ 
+//全局包缓存目录
+npm config set cache D:/ndoe/nodejs/node_cache/   
+</code></pre></li>
+
+<li><p>配置全局变量模块存放位置：<code>PATH: D:/node/nodejs/node_global/;</code></p></li>
+</ol>
+
+<h4 id="其他配置">其他配置</h4>
+
+<ol>
+<li>下载并安装 Hugo</li>
+<li>安装「hugo-algolia」：<code>npm install hugo-algolia -g</code></li>
+</ol>
+
+<h3 id="ruby-环境搭建">Ruby 环境搭建</h3>
+
+<ol>
+<li>下载并安装： <a href="http://www.ruby-lang.org/en/downloads/">http://www.ruby-lang.org/en/downloads/</a></li>
+
+<li><p>配置环境变量</p>
+
+<pre><code class="language-batch">SET RUBY_HOME=D:/ruby
+SET PATH=%PATH%;%RUBY_HOME%/bin
+SET RUBYOPT=rubygems
+</code></pre></li>
+</ol>
+
+<h3 id="python-环境搭建">Python 环境搭建</h3>
+
+<ol>
+<li>下载并安装：<a href="http://www.python.org/download/">http://www.python.org/download/</a></li>
+<li>配置环境变量：<code>path=%path%;C:\Python</code></li>
+</ol>
+
+<h3 id="参考文件">参考文件</h3>
+
+<ul>
+<li><a href="https://www.cnblogs.com/zhouyu2017/p/6485265.html">Node.js安装及环境配置之Windows篇</a></li>
+<li><a href="https://www.cnblogs.com/tocy/p/git-command-line-manual.html">Git命令行基本操作</a></li>
+<li><a href="https://blog.csdn.net/jason314/article/details/6204781">Ruby入门（1）——windows下Ruby开发环境搭建</a></li>
+<li><a href="https://www.w3cschool.cn/python/python-install.html">Python 环境搭建</a></li>
 </ul>
 
 <h3 id="版本信息">版本信息</h3>
@@ -269,7 +296,7 @@ if (!doNotTrack) {
 <tr>
 <td align="center">1.0</td>
 <td align="center">init</td>
-<td align="center">2020-04-22</td>
+<td align="center">2020-05-01</td>
 </tr>
 </tbody>
 </table>
@@ -279,7 +306,7 @@ if (!doNotTrack) {
 			<div class="article-copyright">
 			  	<ul>
 			  		<li><strong>本文作者：</strong>易道非</li>
-			  		<li><strong>本文链接：</strong>https://blog.yidaofei.com/post/20200422-douyin-lesson-guild-foreword/</li>
+			  		<li><strong>本文链接：</strong>https://blog.yidaofei.com/post/20200508-software-skills-personal-use-script-windows/</li>
 			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
 			  	</ul>
 			</div>
@@ -292,7 +319,7 @@ if (!doNotTrack) {
 		<div>
 			<i class="fa fa-tags">&nbsp;Tags:
 			
-				<a href="https://blog.yidaofei.com/tags/%e6%8a%96%e9%9f%b3">抖音</a>
+				<a href="https://blog.yidaofei.com/tags/windows">windows</a>
     		
     		</i>   
 		</div> 
@@ -304,15 +331,11 @@ if (!doNotTrack) {
 	<hr/>
 	<div class="article-footer-meta-between"> 
 		<div class="refArticle-prev" >
-			  
-		    <a href="https://blog.yidaofei.com/post/20200422-software-skills-account-address-book-import/">
-		    	<i class="fa fa-angle-double-left"></i>&nbsp;Andriod：通讯录导入  
-		    </a> 
 			
 		</div>
 		 <div class="refArticle-next" >
 		  
-		  	<a href="https://blog.yidaofei.com/post/20200421-douyin-lesson-unmanned-live-broadcast/">抖音-工具部分-抖音无人直播&nbsp;
+		  	<a href="https://blog.yidaofei.com/post/20200506-douyin-lesson-which-pits/">抖音-理论部分-4：抖音有哪些坑&nbsp;
 		  		<i class="fa fa-angle-double-right"></i>
 		  	</a> 
 		 
@@ -367,11 +390,20 @@ if (!doNotTrack) {
 <ul>
 <li>
 <ul>
-<li><a href="#抖音系列网站">抖音系列网站</a></li>
-<li><a href="#抖音系列课程-抖音基础理论部分">抖音系列课程-抖音基础理论部分</a></li>
-<li><a href="#抖音系列课程-内容体系">抖音系列课程-内容体系</a></li>
-<li><a href="#抖音系列课程-运营体系">抖音系列课程-运营体系</a></li>
-<li><a href="#抖音系列课程-工具部分">抖音系列课程-工具部分</a></li>
+<li><a href="#git-环境搭建">Git 环境搭建</a>
+<ul>
+<li><a href="#基础配置部分">基础配置部分</a></li>
+<li><a href="#git-命令行">Git 命令行</a></li>
+</ul></li>
+<li><a href="#hugo-博客环境搭建">hugo 博客环境搭建</a>
+<ul>
+<li><a href="#go-环境配置">Go 环境配置</a></li>
+<li><a href="#nodejs-环境配置">「Nodejs」 环境配置</a></li>
+<li><a href="#其他配置">其他配置</a></li>
+</ul></li>
+<li><a href="#ruby-环境搭建">Ruby 环境搭建</a></li>
+<li><a href="#python-环境搭建">Python 环境搭建</a></li>
+<li><a href="#参考文件">参考文件</a></li>
 <li><a href="#版本信息">版本信息</a></li>
 </ul></li>
 </ul></li>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on  易道非 Blog</title>
+    <link>https://blog.yidaofei.com/tags/windows/</link>
+    <description>Recent content in Windows on  易道非 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 08 May 2020 00:20:01 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.yidaofei.com/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>自用脚本-Windows 篇</title>
+      <link>https://blog.yidaofei.com/post/20200508-software-skills-personal-use-script-windows/</link>
+      <pubDate>Fri, 08 May 2020 00:20:01 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20200508-software-skills-personal-use-script-windows/</guid>
+      <description>&lt;p&gt;上次写了一篇&lt;a href=&#34;https://blog.yidaofei.com/post/20200501-software-skills-personal-use-script-vps/&#34;&gt;自用脚本-VPS 篇&lt;/a&gt;之后出现过一次 Git 配置问题，想想好像在写完成&lt;a href=&#34;https://blog.yidaofei.com/post/20190110-windows-guild-foreword/&#34;&gt;Windows 教程-前言&lt;/a&gt;教程之后很少去想想自己的需求是什么，刚好今晚有时间那就开始干吧，奥力给！&lt;/p&gt;
+
+&lt;p&gt;主要内容分为以下部分：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;开发环境搭建&lt;/li&gt;
+&lt;li&gt;备用系统处理&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Tips&lt;/strong&gt;：本文是针对本人的情况而设定的一些常规动作，所以会存在偶尔想到了就更新的情况，谢谢大家听我啰嗦！&lt;/p&gt;
+
+&lt;hr/&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

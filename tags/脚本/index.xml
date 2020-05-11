@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>自用脚本（全）</title>
-      <link>https://blog.yidaofei.com/post/20200501-software-skills-personal-use-script/</link>
+      <title>自用脚本-VPS 篇</title>
+      <link>https://blog.yidaofei.com/post/20200501-software-skills-personal-use-script-vps/</link>
       <pubDate>Fri, 01 May 2020 17:47:01 +0800</pubDate>
       
-      <guid>https://blog.yidaofei.com/post/20200501-software-skills-personal-use-script/</guid>
+      <guid>https://blog.yidaofei.com/post/20200501-software-skills-personal-use-script-vps/</guid>
       <description>&lt;p&gt;由于 VPS 在某些时段会出现 IP 地址被封锁的情况，这时候就需要重新配置 SS、Piwigo、宝塔界面等，
 为节省相关的时间所以将相关的操作汇总在此！具体内容如下：&lt;/p&gt;
 

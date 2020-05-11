@@ -11,20 +11,17 @@
   
   
     
-    <meta charset="utf-8" name="keywords" content="抖音," > 
+    <meta charset="utf-8" name="keywords" content="软件技巧,脚本,piwigo," > 
   
    
-  <meta charset="utf-8" name="description" content="本系列为抖音知识体系，主要是记录在操盘项目的过程中的一些知识点，以便后续能够直接复制
+  <meta charset="utf-8" name="description" content="由于 VPS 在某些时段会出现 IP 地址被封锁的情况，这时候就需要重新配置 SS、Piwigo、宝塔界面等，
+为节省相关的时间所以将相关的操作汇总在此！具体内容如下：
 
-本文主要分为以下内容：
 
-
-抖音系列网站
-抖音系列课程-基础理论部分
-
-抖音系列课程-账号建设部分
-
-抖音系列课程-工具部分
+ss 环境搭建
+LAMP 基础环境
+Piwigo 图床搭建
+域名更换
 
 
 " >
@@ -38,7 +35,7 @@
   
   
   
-  <title>抖音-前言- 易道非 Blog</title>  
+  <title>自用脚本-VPS 篇- 易道非 Blog</title>  
   
   
     
@@ -125,10 +122,10 @@ if (!doNotTrack) {
 <section class="main-content-container">
 <article class="article-card">
 	<header class="article-header"> 
-	   <p class="article-title">抖音-前言</p>
+	   <p class="article-title">自用脚本-VPS 篇</p>
    		<div class="article-meta">
 			
-			<div><i class="fa fa-calendar" >2020年04月22日</i> </div>
+			<div><i class="fa fa-calendar" >2020年05月01日</i> </div>
 			  
 
 			 
@@ -141,120 +138,116 @@ if (!doNotTrack) {
 			<div>
 				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
 				
-					<a href="https://blog.yidaofei.com/categories/%e4%ba%92%e8%81%94%e7%bd%91%e8%bf%90%e8%90%a5">互联网运营</a> 
+					<a href="https://blog.yidaofei.com/categories/%e8%bd%af%e4%bb%b6%e6%8a%80%e5%b7%a7">软件技巧</a> 
 				   
 				</i>  
 			</div> 
 		</div>  
 	</header>  
 	<content class="markdown">
-		<p>本系列为抖音知识体系，主要是记录在操盘项目的过程中的一些知识点，以便后续能够直接复制</p>
+		<p>由于 VPS 在某些时段会出现 IP 地址被封锁的情况，这时候就需要重新配置 SS、Piwigo、宝塔界面等，
+为节省相关的时间所以将相关的操作汇总在此！具体内容如下：</p>
 
-<p>本文主要分为以下内容：</p>
-
-<ul>
-<li>抖音系列网站</li>
-<li>抖音系列课程-基础理论部分</li>
-
-<li><p>抖音系列课程-账号建设部分</p></li>
-
-<li><p>抖音系列课程-工具部分</p></li>
-</ul>
+<ol>
+<li>ss 环境搭建</li>
+<li>LAMP 基础环境</li>
+<li>Piwigo 图床搭建</li>
+<li>域名更换</li>
+</ol>
 
 <p></p>
 
-<h3 id="抖音系列网站">抖音系列网站</h3>
+<h3 id="ss-环境搭建">SS 环境搭建</h3>
 
-<table>
-<thead>
-<tr>
-<th align="left">抖音工具</th>
-<th align="left">入口</th>
-<th align="left">用途</th>
-<th align="left">要求</th>
-<th align="left">备注</th>
-</tr>
-</thead>
+<p>利用「v2-ui」一键搭建 ss 环境，安装脚本如下：</p>
 
-<tbody>
-<tr>
-<td align="left">企业管理后台</td>
-<td align="left"><a href="https://e.douyin.com">https://e.douyin.com</a></td>
-<td align="left">网页版抖音管理</td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
+<pre><code class="language-batch">bash &lt;(curl -Ls https://blog.sprov.xyz/v2-ui.sh)
+</code></pre>
 
-<tr>
-<td align="left">抖音小店</td>
-<td align="left"><a href="https://fxg.jinritemai.com/vue#/index/home">https://fxg.jinritemai.com/vue#/index/home</a></td>
-<td align="left">类似淘宝后台</td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
+<p>安装完成之后访问链接为：<a href="http://xxxx.xxxx.xxxx.xxxx:65432/，">http://xxxx.xxxx.xxxx.xxxx:65432/，</a>  账户名与密码均为admin</p>
 
-<tr>
-<td align="left">巨量百应</td>
-<td align="left"><a href="https://zhuanlan.zhihu.com/p/121128045">https://zhuanlan.zhihu.com/p/121128045</a></td>
-<td align="left">商品管理平台</td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
+<p><strong>Tips</strong>：如后续有安装宝塔界面等类似的软件注意<strong>开启相关的端口</strong></p>
 
-<tr>
-<td align="left">抖币充值</td>
-<td align="left">《抖音短视频》公众号&mdash;&gt;抖音直播&mdash;&gt;抖币充值</td>
-<td align="left">直播抖币充值</td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
+<p>常用命令：</p>
 
-<tr>
-<td align="left">抖音认证</td>
-<td align="left"><a href="https://renzheng.douyin.com/">https://renzheng.douyin.com/</a></td>
-<td align="left">企业号机构号认证</td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
+<pre><code class="language-batch">v2-ui                  # 显示管理菜单 (功能更多)
+v2-ui start            # 启动 v2-ui 面板
+v2-ui stop             # 停止 v2-ui 面板
+v2-ui restart          # 重启 v2-ui 面板
+v2-ui status           # 查看 v2-ui 状态
+v2-ui enable           # 设置 v2-ui 开机自启
+v2-ui disable          # 取消 v2-ui 开机自启
+v2-ui log              # 查看 v2-ui 日志
+v2-ui update           # 更新 v2-ui 面板
+v2-ui install          # 安装 v2-ui 面板
+v2-ui uninstall        # 卸载 v2-ui 面板
+</code></pre>
 
-<tr>
-<td align="left">星图</td>
-<td align="left"><a href="https://star.toutiao.com">https://star.toutiao.com</a></td>
-<td align="left">抖音广告平台</td>
-<td align="left">粉丝量大于10万</td>
-<td align="left">单条报价、播放量报价</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="抖音系列课程-抖音基础理论部分">抖音系列课程-抖音基础理论部分</h3>
+<p>扩展阅读：</p>
 
 <ul>
-<li><a href="/post/20200501-douyin-lesson-what-is-douyin/">抖音-基础理论部分-1：抖音是什么</a></li>
-<li><a href="/post/20200503-douyin-lesson-douyin-function/">抖音-基础理论部分-2：抖音有哪些功能</a></li>
-<li><a href="/post/20200504-douyin-recommendation-mechanism/">抖音-基础理论部分-3：抖音推荐算法</a></li>
-<li><a href="/post/20200506-douyin-lesson-which-pits/">抖音-基础理论部分-4：抖音有哪些坑</a></li>
-<li><a href="/post/20200510-douyin-lesson-positioning/">抖音-基础理论部分-5：抖音之定位</a></li>
+<li>github 地址：<a href="https://github.com/sprov065/v2-ui">https://github.com/sprov065/v2-ui</a></li>
+<li>使用说明书：<a href="https://blog.sprov.xyz/2019/08/03/v2-ui/">https://blog.sprov.xyz/2019/08/03/v2-ui/</a></li>
 </ul>
 
-<h3 id="抖音系列课程-内容体系">抖音系列课程-内容体系</h3>
+<h4 id="ss-插件">ss 插件</h4>
 
-<h3 id="抖音系列课程-运营体系">抖音系列课程-运营体系</h3>
+<p>ss 插件大致有 BBR、TLS等，本人仅使用了 BBR 用于加速，安装脚本如下：</p>
+
+<pre><code class="language-batch">wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh &amp;&amp; chmod +x bbr.sh &amp;&amp; ./bbr.sh
+</code></pre>
+
+<p>其后续详细操作访问： <a href="/post/20191116-circumvention-technology-how-to-faster/">翻墙 chapter 5 - 如何让 SS 更快</a></p>
+
+<h3 id="lamp-环境搭建">LAMP 环境搭建</h3>
+
+<p>利用 「宝塔界面」一键搭建 LAMP 环境，安装脚本如下：</p>
+
+<pre><code class="language-batch">yum install -y wget &amp;&amp; wget -O install.sh http://123.129.198.197/install/install_6.0.sh &amp;&amp; sh install.sh
+</code></pre>
+
+<p>安装完成之后建议首先完成<strong>「面板入口、用户名、密码」</strong>修改，否则后续必须使用命令行获取相关
+信息，登入进去之后即可一键安装 LAMP</p>
+
+<p><strong>Tips</strong>：以上脚本安装环境为 Centos，其他环境安装脚本请访问：<a href="https://www.bt.cn/bbs/thread-19376-1-1.html">https://www.bt.cn/bbs/thread-19376-1-1.html</a></p>
+
+<p>常用命令</p>
+
+<pre><code class="language-batch">/etc/init.d/bt default   #查看面板入口
+service bt stop          #停止
+service bt start         #启动
+service bt restart       #重启
+service bt stop &amp;&amp; chkconfig --del bt &amp;&amp; rm -f /etc/init.d/bt &amp;&amp; rm -rf /www/server/panel  #卸载
+</code></pre>
+
+<h3 id="piwigo-环境搭建">Piwigo 环境搭建</h3>
+
+<p>Piwigo 为一款比较好的开源图床软件，主要的优势在：图片迁移之后只需要修改域名即可，<strong>自建博客神器</strong></p>
+
+<p>安装脚本如下：</p>
+
+<pre><code class="language-batch">wget https://piwigo.org/download/dlcounter.php?code=2.9.4 -O piwigo.zip
+ls 
+unzip piwigo.zip 
+cp -rf piwigo /www/wwwroot/
+chmod  777 /www/wwwroot/piwigo
+</code></pre>
+
+<p>其后续详细操作访问： <a href="/post/20181128-build-website-piwigo-guild/">个人建站-组件-自建图床 Piwigo</a></p>
+
+<h3 id="域名更换">域名更换</h3>
+
+<p>本站暂时使用的是 「namesilo 域名服务商」，访问链接为： <a href="https://www.namesilo.com/">https://www.namesilo.com/</a></p>
+
+<p>其后续详细操作访问：<a href="/post/20181127-build-website-how-to-bind-blog-domain/">个人建站2-为 Github 上的 Hugo 博客绑定个性域名</a></p>
+
+<h3 id="参考资料">参考资料</h3>
 
 <ul>
-<li><a href="/post/20200422-douyin-lesson-account-address-book-import/">抖音-运营体系-通讯录导入</a></li>
-<li><a href="/post/20200402-douyin-lesson-apply-blue-v/">抖音-运营体系-企业号认证</a></li>
-<li><a href="/post/20200411-douyin-lesson-apply-douyin-shop/">抖音-运营体系-抖音小店申请流程</a></li>
+<li><p><a href="http://localhost:1313/post/20190115-circumvention-technology-guild-vps/">翻墙 chapter 1 - VPS 篇</a></p>
+
+<h3 id="版本信息">版本信息</h3></li>
 </ul>
-
-<h3 id="抖音系列课程-工具部分">抖音系列课程-工具部分</h3>
-
-<ul>
-<li><a href="/post/20200421-douyin-lesson-unmanned-live-broadcast/">抖音-工具部分-抖音无人直播</a></li>
-<li><a href="/20200504-douyin-lesson-tool-collection/">抖音-工具部分-工具集合</a></li>
-</ul>
-
-<h3 id="版本信息">版本信息</h3>
 
 <table>
 <thead>
@@ -269,7 +262,7 @@ if (!doNotTrack) {
 <tr>
 <td align="center">1.0</td>
 <td align="center">init</td>
-<td align="center">2020-04-22</td>
+<td align="center">2020-05-01</td>
 </tr>
 </tbody>
 </table>
@@ -279,7 +272,7 @@ if (!doNotTrack) {
 			<div class="article-copyright">
 			  	<ul>
 			  		<li><strong>本文作者：</strong>易道非</li>
-			  		<li><strong>本文链接：</strong>https://blog.yidaofei.com/post/20200422-douyin-lesson-guild-foreword/</li>
+			  		<li><strong>本文链接：</strong>https://blog.yidaofei.com/post/20200501-software-skills-personal-use-script-vps/</li>
 			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
 			  	</ul>
 			</div>
@@ -292,7 +285,7 @@ if (!doNotTrack) {
 		<div>
 			<i class="fa fa-tags">&nbsp;Tags:
 			
-				<a href="https://blog.yidaofei.com/tags/%e6%8a%96%e9%9f%b3">抖音</a>
+				<a href="https://blog.yidaofei.com/tags/%e8%84%9a%e6%9c%ac">脚本</a>
     		
     		</i>   
 		</div> 
@@ -305,14 +298,14 @@ if (!doNotTrack) {
 	<div class="article-footer-meta-between"> 
 		<div class="refArticle-prev" >
 			  
-		    <a href="https://blog.yidaofei.com/post/20200422-software-skills-account-address-book-import/">
-		    	<i class="fa fa-angle-double-left"></i>&nbsp;Andriod：通讯录导入  
+		    <a href="https://blog.yidaofei.com/post/20200503-douyin-lesson-douyin-function/">
+		    	<i class="fa fa-angle-double-left"></i>&nbsp;抖音-理论部分-2：抖音有哪些功能  
 		    </a> 
 			
 		</div>
 		 <div class="refArticle-next" >
 		  
-		  	<a href="https://blog.yidaofei.com/post/20200421-douyin-lesson-unmanned-live-broadcast/">抖音-工具部分-抖音无人直播&nbsp;
+		  	<a href="https://blog.yidaofei.com/post/20200501-douyin-lesson-what-is-douyin/">抖音-理论部分-1：抖音是什么&nbsp;
 		  		<i class="fa fa-angle-double-right"></i>
 		  	</a> 
 		 
@@ -367,11 +360,14 @@ if (!doNotTrack) {
 <ul>
 <li>
 <ul>
-<li><a href="#抖音系列网站">抖音系列网站</a></li>
-<li><a href="#抖音系列课程-抖音基础理论部分">抖音系列课程-抖音基础理论部分</a></li>
-<li><a href="#抖音系列课程-内容体系">抖音系列课程-内容体系</a></li>
-<li><a href="#抖音系列课程-运营体系">抖音系列课程-运营体系</a></li>
-<li><a href="#抖音系列课程-工具部分">抖音系列课程-工具部分</a></li>
+<li><a href="#ss-环境搭建">SS 环境搭建</a>
+<ul>
+<li><a href="#ss-插件">ss 插件</a></li>
+</ul></li>
+<li><a href="#lamp-环境搭建">LAMP 环境搭建</a></li>
+<li><a href="#piwigo-环境搭建">Piwigo 环境搭建</a></li>
+<li><a href="#域名更换">域名更换</a></li>
+<li><a href="#参考资料">参考资料</a></li>
 <li><a href="#版本信息">版本信息</a></li>
 </ul></li>
 </ul></li>
