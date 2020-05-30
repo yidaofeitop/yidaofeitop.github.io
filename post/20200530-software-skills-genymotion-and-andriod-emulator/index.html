@@ -11,18 +11,19 @@
   
   
     
-    <meta charset="utf-8" name="keywords" content="软件技巧,脚本,piwigo," > 
+    <meta charset="utf-8" name="keywords" content="Genymotion,Andriod emulator," > 
   
    
-  <meta charset="utf-8" name="description" content="由于 VPS 在某些时段会出现 IP 地址被封锁的情况，这时候就需要重新配置 SS、Piwigo、宝塔界面等，
-为节省相关的时间所以将相关的操作汇总在此！具体内容如下：
+  <meta charset="utf-8" name="description" content="关于 Andirod 模拟器大家耳熟能详的大约有：蓝叠、夜神、雷电……，但是其实只有两大流派：Bluestacks 和 Virutalbox，其代表的产品如下：
 
 
-ss 环境搭建
-LAMP 基础环境
-Piwigo 图床搭建
-域名更换
+Bluestacks：靠谱助手、新浪手游助手
+Virutalbox：海马玩、逍遥安卓、夜神、ITools、Genymotion
 
+
+在经历了「Bluestacks」启动卡死、「Nox」无法装微信等、「雷电」广告过多之后我选择了「Genymotion」，虽然前期配置麻烦，但是真的是用的很溜！
+
+Tips：本次所有数据是基于Windows10操作系统、Genymotion3.0.4版本、VirtualBox 5.2.18 r124319 (Qt5.6.2)版本、Andriod SDK 8
 
 " >
   
@@ -35,7 +36,7 @@ Piwigo 图床搭建
   
   
   
-  <title>自用脚本-VPS 篇- 易道非 Blog</title>  
+  <title>Andriod-Genymotion 与 Andriod 模拟器- 易道非 Blog</title>  
   
   
     
@@ -122,10 +123,10 @@ if (!doNotTrack) {
 <section class="main-content-container">
 <article class="article-card">
 	<header class="article-header"> 
-	   <p class="article-title">自用脚本-VPS 篇</p>
+	   <p class="article-title">Andriod-Genymotion 与 Andriod 模拟器</p>
    		<div class="article-meta">
 			
-			<div><i class="fa fa-calendar" >2020年05月01日</i> </div>
+			<div><i class="fa fa-calendar" >2020年05月30日</i> </div>
 			  
 
 			 
@@ -145,111 +146,105 @@ if (!doNotTrack) {
 		</div>  
 	</header>  
 	<content class="markdown">
-		<p>由于 VPS 在某些时段会出现 IP 地址被封锁的情况，这时候就需要重新配置 SS、Piwigo、宝塔界面等，
-为节省相关的时间所以将相关的操作汇总在此！具体内容如下：</p>
+		<p>关于 Andirod 模拟器大家耳熟能详的大约有：蓝叠、夜神、雷电……，但是其实只有两大流派：Bluestacks 和 Virutalbox，其代表的产品如下：</p>
 
-<ol>
-<li>ss 环境搭建</li>
-<li>LAMP 基础环境</li>
-<li>Piwigo 图床搭建</li>
-<li>域名更换</li>
-</ol>
+<ul>
+<li>Bluestacks：靠谱助手、新浪手游助手</li>
+<li>Virutalbox：海马玩、逍遥安卓、夜神、ITools、Genymotion</li>
+</ul>
+
+<p>在经历了「Bluestacks」启动卡死、「Nox」无法装微信等、「雷电」广告过多之后我选择了「Genymotion」，虽然前期配置麻烦，但是真的是用的很溜！</p>
+
+<p>Tips：本次所有数据是基于<strong>Windows10操作系统、Genymotion3.0.4版本、VirtualBox 5.2.18 r124319 (Qt5.6.2)版本、Andriod SDK 8</strong></p>
 
 <p></p>
 
-<h3 id="ss-环境搭建">SS 环境搭建</h3>
+<h3 id="基础操作">基础操作</h3>
 
-<p>利用「v2-ui」一键搭建 ss 环境，安装脚本如下：</p>
-
-<pre><code class="language-batch">bash &lt;(curl -Ls https://blog.sprov.xyz/v2-ui.sh)
-</code></pre>
-
-<p>安装完成之后访问链接为：<a href="http://xxxx.xxxx.xxxx.xxxx:65432/，">http://xxxx.xxxx.xxxx.xxxx:65432/，</a>  账户名与密码均为admin</p>
-
-<p><strong>Tips</strong>：如后续有安装宝塔界面等类似的软件注意<strong>开启相关的端口</strong></p>
-
-<p>常用命令：</p>
-
-<pre><code class="language-batch">v2-ui                  # 显示管理菜单 (功能更多)
-v2-ui start            # 启动 v2-ui 面板
-v2-ui stop             # 停止 v2-ui 面板
-v2-ui restart          # 重启 v2-ui 面板
-v2-ui status           # 查看 v2-ui 状态
-v2-ui enable           # 设置 v2-ui 开机自启
-v2-ui disable          # 取消 v2-ui 开机自启
-v2-ui log              # 查看 v2-ui 日志
-v2-ui update           # 更新 v2-ui 面板
-v2-ui install          # 安装 v2-ui 面板
-v2-ui uninstall        # 卸载 v2-ui 面板
-</code></pre>
-
-<p>扩展阅读：</p>
+<p>官网下载如下文件：</p>
 
 <ul>
-<li>github 地址：<a href="https://github.com/sprov065/v2-ui">https://github.com/sprov065/v2-ui</a></li>
-<li>使用说明书：<a href="https://blog.sprov.xyz/2019/08/03/v2-ui/">https://blog.sprov.xyz/2019/08/03/v2-ui/</a></li>
+<li>VirtualBox ：<a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></li>
+<li>Genymotion ：<a href="https://www.genymotion.com/">https://www.genymotion.com/</a></li>
+<li>ADB工具：<a href="https://dl.google.com/android/repository/platform-tools-latest-windows.zip">https://dl.google.com/android/repository/platform-tools-latest-windows.zip</a></li>
 </ul>
 
-<h4 id="ss-插件">ss 插件</h4>
+<p>后续需要用到的「Genymotion-ARM-Translation」请到如下链接下载：</p>
 
-<p>ss 插件大致有 BBR、TLS等，本人仅使用了 BBR 用于加速，安装脚本如下：</p>
+<ul>
+<li>可翻墙：<a href="https://github.com/m9rco/Genymotion_ARM_Translation">https://github.com/m9rco/Genymotion_ARM_Translation</a></li>
+<li>不翻墙：
 
-<pre><code class="language-batch">wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh &amp;&amp; chmod +x bbr.sh &amp;&amp; ./bbr.sh
+<ul>
+<li>搜索：Genymotion-ARM-Translation</li>
+<li>直接引用：<a href="https://www.jianshu.com/p/97b8250f359e">Genymotion-ARM-Translation.zip各安卓版本合集</a></li>
+</ul></li>
+</ul>
+
+<h3 id="安装过程">安装过程</h3>
+
+<p>Genymotion 详细安装步骤，请参考以下文章：<a href="https://docs.genymotion.com/Content/01_Get_Started/Installation.htm">Installation</a></p>
+
+<h3 id="进阶操作">进阶操作</h3>
+
+<p>一般而言很容易出现如下的情况：</p>
+
+<p><img src="https://image.yidaofei.com/galleries/202005/genymotion-problem-without-arm-Translation.png" alt="" /></p>
+
+<p>这种情况之下就可以用到我们前面下载的「Genymotion-ARM-Translation」，有两种方式处理：</p>
+
+<h4 id="adb-命令安装">ADB 命令安装</h4>
+
+<p>此安装方法来自官方<a href="https://docs.genymotion.com/desktop/3.0/03_Virtual_devices/032_Deploying_an_application.html#adb-method">032_Deploying_an_application.html#adb-method</a>以及<a href="https://www.cnblogs.com/ring1992/p/7248585.html">解决genymotion-arm-translation.zip无法拖拽安装的问题</a></p>
+
+<ol>
+<li>打开 「Windows」 命令行，切换到「ADB 工具」工具目录之下</li>
+
+<li><p>将「Genymotion-ARM-Translation」移动到「Google Pixel」之下</p>
+
+<pre><code class="language-batch">adb push D:\APK\Genymotion-ARM-Translation_for_8.0.zip /sdcard/Download/ 
+</code></pre></li>
+
+<li><p>刷入程序</p>
+
+<pre><code class="language-batch">adb shell flash-archive.sh /sdcard/Download/Genymotion-ARM-Translation_for_8.0.zip
+</code></pre></li>
+
+<li><p>重启系统</p>
+
+<pre><code class="language-batch">adb reboot
+</code></pre></li>
+
+<li><p>确认是否刷入</p>
+
+<pre><code class="language-batch">adb shell getprop ro.product.cpu.abilist
 </code></pre>
 
-<p>其后续详细操作访问： <a href="/post/20191116-circumvention-technology-how-to-faster/">翻墙 chapter 5 - 如何让 SS 更快</a></p>
+<p>返回值应该为：<strong>x86,armeabi-v7a,armeabi</strong>，如果不是则说明安装失败</p></li>
+</ol>
 
-<h3 id="lamp-环境搭建">LAMP 环境搭建</h3>
+<p><img src="https://image.yidaofei.com/galleries/202005/fix-genymotion-problem-without-arm-Translation-method2.png" alt="" /></p>
 
-<p>利用 「宝塔界面」一键搭建 LAMP 环境，安装脚本如下：</p>
+<h4 id="拖拽安装">拖拽安装</h4>
 
-<pre><code class="language-batch">yum install -y wget &amp;&amp; wget -O install.sh http://123.129.198.197/install/install_6.0.sh &amp;&amp; sh install.sh
-</code></pre>
+<p><img src="https://image.yidaofei.com/galleries/202005/fix-genymotion-problem-without-arm-Translation-method1.png" alt="" /></p>
 
-<p>安装完成之后建议首先完成<strong>「面板入口、用户名、密码」</strong>修改，否则后续必须使用命令行获取相关
-信息，登入进去之后即可一键安装 LAMP</p>
+<p>结果如下：</p>
 
-<p><strong>Tips</strong>：以上脚本安装环境为 Centos，其他环境安装脚本请访问：<a href="https://www.bt.cn/bbs/thread-19376-1-1.html">https://www.bt.cn/bbs/thread-19376-1-1.html</a></p>
+<p><img src="https://image.yidaofei.com/galleries/202005/fix-genymotion-problem-without-arm-Translation-result.png" alt="" /></p>
 
-<p>常用命令</p>
-
-<pre><code class="language-batch">/etc/init.d/bt default   #查看面板入口
-service bt stop          #停止
-service bt start         #启动
-service bt restart       #重启
-service bt stop &amp;&amp; chkconfig --del bt &amp;&amp; rm -f /etc/init.d/bt &amp;&amp; rm -rf /www/server/panel  #卸载
-</code></pre>
-
-<h3 id="piwigo-环境搭建">Piwigo 环境搭建</h3>
-
-<p>Piwigo 为一款比较好的开源图床软件，主要的优势在：图片迁移之后只需要修改域名即可，<strong>自建博客神器</strong></p>
-
-<p>安装脚本如下：</p>
-
-<pre><code class="language-batch">wget https://piwigo.org/download/dlcounter.php?code=2.9.4 -O piwigo.zip
-ls 
-unzip piwigo.zip 
-cp -rf piwigo /www/wwwroot/
-chmod  777 /www/wwwroot/piwigo/*
-</code></pre>
-
-<p>其后续详细操作访问： <a href="/post/20181128-build-website-piwigo-guild/">个人建站-组件-自建图床 Piwigo</a></p>
-
-<p>PS：请注意链接版本<strong>2.9.4</strong>，搭配<a href="https://piwigo.org/ext/extension_view.php?eid=796">Bootstrap Default</a>使用</p>
-
-<h3 id="域名更换">域名更换</h3>
-
-<p>本站暂时使用的是 「namesilo 域名服务商」，访问链接为： <a href="https://www.namesilo.com/">https://www.namesilo.com/</a></p>
-
-<p>其后续详细操作访问：<a href="/post/20181127-build-website-how-to-bind-blog-domain/">个人建站2-为 Github 上的 Hugo 博客绑定个性域名</a></p>
+<p><strong>Tips</strong>：经过测试验证 <a href="https://blog.csdn.net/w605283073/article/details/70597368">win10安装 Genymotion ARM Translation教程（避免掉入大坑）</a>的说法正确，所以大家安装时最好将「Genymotion ARM Translation」放在根目录之下避免此类问题</p>
 
 <h3 id="参考资料">参考资料</h3>
 
 <ul>
-<li><p><a href="http://localhost:1313/post/20190115-circumvention-technology-guild-vps/">翻墙 chapter 1 - VPS 篇</a></p>
-
-<h3 id="版本信息">版本信息</h3></li>
+<li><a href="https://www.zhihu.com/question/24815978/answer/130805145">哪个 Android 模拟器比较流畅？ - 知乎</a>：模拟器流派问题及简单对比</li>
+<li><a href="https://docs.genymotion.com/desktop/3.0/02_Application/021_Configuring_Genymotion.html#adb">Configuring Genymotion - ADB</a></li>
+<li><a href="https://www.cnblogs.com/rainboy2010/p/6387770.html">Android模拟器Genymotion使用详解</a></li>
+<li><a href="https://testerhome.com/topics/14231?order_by=created_at&amp;#replies">Android 模拟器 Genymotion 安装配置与 ARM 支持</a>：linux 环境</li>
 </ul>
+
+<h3 id="版本信息">版本信息</h3>
 
 <table>
 <thead>
@@ -264,7 +259,7 @@ chmod  777 /www/wwwroot/piwigo/*
 <tr>
 <td align="center">1.0</td>
 <td align="center">init</td>
-<td align="center">2020-05-01</td>
+<td align="center">2020-05-30</td>
 </tr>
 </tbody>
 </table>
@@ -274,7 +269,7 @@ chmod  777 /www/wwwroot/piwigo/*
 			<div class="article-copyright">
 			  	<ul>
 			  		<li><strong>本文作者：</strong>易道非</li>
-			  		<li><strong>本文链接：</strong>https://blog.yidaofei.com/post/20200501-software-skills-personal-use-script-vps/</li>
+			  		<li><strong>本文链接：</strong>https://blog.yidaofei.com/post/20200530-software-skills-genymotion-and-andriod-emulator/</li>
 			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
 			  	</ul>
 			</div>
@@ -287,7 +282,7 @@ chmod  777 /www/wwwroot/piwigo/*
 		<div>
 			<i class="fa fa-tags">&nbsp;Tags:
 			
-				<a href="https://blog.yidaofei.com/tags/%e8%84%9a%e6%9c%ac">脚本</a>
+				<a href="https://blog.yidaofei.com/tags/andriod">andriod</a>
     		
     		</i>   
 		</div> 
@@ -299,15 +294,11 @@ chmod  777 /www/wwwroot/piwigo/*
 	<hr/>
 	<div class="article-footer-meta-between"> 
 		<div class="refArticle-prev" >
-			  
-		    <a href="https://blog.yidaofei.com/post/20200503-douyin-lesson-douyin-function/">
-		    	<i class="fa fa-angle-double-left"></i>&nbsp;抖音-理论部分-2：抖音有哪些功能  
-		    </a> 
 			
 		</div>
 		 <div class="refArticle-next" >
 		  
-		  	<a href="https://blog.yidaofei.com/post/20200501-douyin-lesson-what-is-douyin/">抖音-理论部分-1：抖音是什么&nbsp;
+		  	<a href="https://blog.yidaofei.com/post/20200510-douyin-lesson-benchmark-account/">抖音-运营体系-对标账号-待补充案例&nbsp;
 		  		<i class="fa fa-angle-double-right"></i>
 		  	</a> 
 		 
@@ -362,13 +353,13 @@ chmod  777 /www/wwwroot/piwigo/*
 <ul>
 <li>
 <ul>
-<li><a href="#ss-环境搭建">SS 环境搭建</a>
+<li><a href="#基础操作">基础操作</a></li>
+<li><a href="#安装过程">安装过程</a></li>
+<li><a href="#进阶操作">进阶操作</a>
 <ul>
-<li><a href="#ss-插件">ss 插件</a></li>
+<li><a href="#adb-命令安装">ADB 命令安装</a></li>
+<li><a href="#拖拽安装">拖拽安装</a></li>
 </ul></li>
-<li><a href="#lamp-环境搭建">LAMP 环境搭建</a></li>
-<li><a href="#piwigo-环境搭建">Piwigo 环境搭建</a></li>
-<li><a href="#域名更换">域名更换</a></li>
 <li><a href="#参考资料">参考资料</a></li>
 <li><a href="#版本信息">版本信息</a></li>
 </ul></li>

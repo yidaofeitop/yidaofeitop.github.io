@@ -6,10 +6,30 @@
     <description>Recent content in 软件技巧 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 08 May 2020 00:20:01 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2020 23:28:56 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.yidaofei.com/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Andriod-Genymotion 与 Andriod 模拟器</title>
+      <link>https://blog.yidaofei.com/post/20200530-software-skills-genymotion-and-andriod-emulator/</link>
+      <pubDate>Sat, 30 May 2020 23:28:56 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20200530-software-skills-genymotion-and-andriod-emulator/</guid>
+      <description>&lt;p&gt;关于 Andirod 模拟器大家耳熟能详的大约有：蓝叠、夜神、雷电……，但是其实只有两大流派：Bluestacks 和 Virutalbox，其代表的产品如下：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Bluestacks：靠谱助手、新浪手游助手&lt;/li&gt;
+&lt;li&gt;Virutalbox：海马玩、逍遥安卓、夜神、ITools、Genymotion&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;在经历了「Bluestacks」启动卡死、「Nox」无法装微信等、「雷电」广告过多之后我选择了「Genymotion」，虽然前期配置麻烦，但是真的是用的很溜！&lt;/p&gt;
+
+&lt;p&gt;Tips：本次所有数据是基于&lt;strong&gt;Windows10操作系统、Genymotion3.0.4版本、VirtualBox 5.2.18 r124319 (Qt5.6.2)版本、Andriod SDK 8&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>自用脚本-Windows 篇</title>

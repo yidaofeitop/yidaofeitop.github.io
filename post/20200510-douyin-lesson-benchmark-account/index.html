@@ -11,17 +11,29 @@
   
   
     
-    <meta charset="utf-8" name="keywords" content="软件技巧,脚本,piwigo," > 
+    <meta charset="utf-8" name="keywords" content="对标账号," > 
   
    
-  <meta charset="utf-8" name="description" content="由于 VPS 在某些时段会出现 IP 地址被封锁的情况，这时候就需要重新配置 SS、Piwigo、宝塔界面等，
-为节省相关的时间所以将相关的操作汇总在此！具体内容如下：
+  <meta charset="utf-8" name="description" content="在确定完成抖音-理论部分-5：抖音之定位之后有一个非常关键的点——「寻找对标账号」，尤其是对于抖音菜鸟来说尤为重要！
+
+寻找对标账号的主要目的如下：
 
 
-ss 环境搭建
-LAMP 基础环境
-Piwigo 图床搭建
-域名更换
+通过对对标账号呈现内容主题的研究，能够进一步的将自己的思路打开、条理更加的清晰
+通过对对标账号视频结构的研究，能够对同类型的主题如何写脚本等有一定的画面感
+通过对对标账号的标题研究，能够对如何取标题以及如何选取热门话题的技巧有一定的掌握
+……
+
+
+可以说通过对对标账号的研究基本上能够对视频创作会有一个比较全面的了解！
+
+本文主要分为以下内容：
+
+
+对标账号的基本特征
+如何找到对标账号
+如何拆解对标账号
+验证对标账号方法
 
 
 " >
@@ -35,7 +47,7 @@ Piwigo 图床搭建
   
   
   
-  <title>自用脚本-VPS 篇- 易道非 Blog</title>  
+  <title>抖音-运营体系-对标账号-待补充案例- 易道非 Blog</title>  
   
   
     
@@ -122,10 +134,10 @@ if (!doNotTrack) {
 <section class="main-content-container">
 <article class="article-card">
 	<header class="article-header"> 
-	   <p class="article-title">自用脚本-VPS 篇</p>
+	   <p class="article-title">抖音-运营体系-对标账号-待补充案例</p>
    		<div class="article-meta">
 			
-			<div><i class="fa fa-calendar" >2020年05月01日</i> </div>
+			<div><i class="fa fa-calendar" >2020年05月10日</i> </div>
 			  
 
 			 
@@ -138,118 +150,142 @@ if (!doNotTrack) {
 			<div>
 				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
 				
-					<a href="https://blog.yidaofei.com/categories/%e8%bd%af%e4%bb%b6%e6%8a%80%e5%b7%a7">软件技巧</a> 
+					<a href="https://blog.yidaofei.com/categories/%e4%ba%92%e8%81%94%e7%bd%91%e8%bf%90%e8%90%a5">互联网运营</a> 
 				   
 				</i>  
 			</div> 
 		</div>  
 	</header>  
 	<content class="markdown">
-		<p>由于 VPS 在某些时段会出现 IP 地址被封锁的情况，这时候就需要重新配置 SS、Piwigo、宝塔界面等，
-为节省相关的时间所以将相关的操作汇总在此！具体内容如下：</p>
+		<p>在确定完成<a href="/post/20200510-douyin-lesson-positioning/">抖音-理论部分-5：抖音之定位</a>之后有一个非常关键的点——<strong>「寻找对标账号」</strong>，尤其是对于抖音菜鸟来说尤为重要！</p>
+
+<p>寻找对标账号的主要目的如下：</p>
 
 <ol>
-<li>ss 环境搭建</li>
-<li>LAMP 基础环境</li>
-<li>Piwigo 图床搭建</li>
-<li>域名更换</li>
+<li>通过对对标账号呈现内容主题的研究，能够进一步的将自己的思路打开、条理更加的清晰</li>
+<li>通过对对标账号视频结构的研究，能够对同类型的主题如何写脚本等有一定的画面感</li>
+<li>通过对对标账号的标题研究，能够对如何取标题以及如何选取热门话题的技巧有一定的掌握</li>
+<li>……</li>
+</ol>
+
+<p>可以说通过对对标账号的研究基本上能够对视频创作会有一个比较全面的了解！</p>
+
+<p>本文主要分为以下内容：</p>
+
+<ol>
+<li>对标账号的基本特征</li>
+<li>如何找到对标账号</li>
+<li>如何拆解对标账号</li>
+<li>验证对标账号方法</li>
 </ol>
 
 <p></p>
 
-<h3 id="ss-环境搭建">SS 环境搭建</h3>
+<h3 id="对标账号数据指标">对标账号数据指标</h3>
 
-<p>利用「v2-ui」一键搭建 ss 环境，安装脚本如下：</p>
+<p>对标账号的基本要求如下：</p>
 
-<pre><code class="language-batch">bash &lt;(curl -Ls https://blog.sprov.xyz/v2-ui.sh)
-</code></pre>
+<ol>
+<li>总粉丝数超过50万</li>
+<li>单个视频涨粉数据高。</li>
+</ol>
 
-<p>安装完成之后访问链接为：<a href="http://xxxx.xxxx.xxxx.xxxx:65432/，">http://xxxx.xxxx.xxxx.xxxx:65432/，</a>  账户名与密码均为admin</p>
+<p>前者其实是说明账号整体运营能力好，后者说明账号的运营效率高</p>
 
-<p><strong>Tips</strong>：如后续有安装宝塔界面等类似的软件注意<strong>开启相关的端口</strong></p>
+<p>还有一个非常值得注意的点粉丝数据并不是仅仅只看总数还是需要看<strong>近3个月的粉丝数数据变化（增长比率）</strong>，这样就避免「超级IP账号」的影响</p>
 
-<p>常用命令：</p>
+<p><strong>对标账号表格</strong></p>
 
-<pre><code class="language-batch">v2-ui                  # 显示管理菜单 (功能更多)
-v2-ui start            # 启动 v2-ui 面板
-v2-ui stop             # 停止 v2-ui 面板
-v2-ui restart          # 重启 v2-ui 面板
-v2-ui status           # 查看 v2-ui 状态
-v2-ui enable           # 设置 v2-ui 开机自启
-v2-ui disable          # 取消 v2-ui 开机自启
-v2-ui log              # 查看 v2-ui 日志
-v2-ui update           # 更新 v2-ui 面板
-v2-ui install          # 安装 v2-ui 面板
-v2-ui uninstall        # 卸载 v2-ui 面板
-</code></pre>
+<table>
+<thead>
+<tr>
+<th align="left">账户名</th>
+<th align="left">账号ID</th>
+<th align="left">视频个数</th>
+<th align="left">视频主题</th>
+<th align="left">表达形式</th>
+<th align="left">粉丝总量</th>
+<th align="left">近3个月粉丝数量</th>
+<th align="left">1ST 视频数据</th>
+<th align="left">2nd 视频数据</th>
+<th align="left">3rd 视频数据</th>
+</tr>
+</thead>
 
-<p>扩展阅读：</p>
+<tbody>
+</tbody>
+</table>
+
+<h3 id="如何找到对标账号">如何找到对标账号</h3>
+
+<ol>
+<li>向前辈高人请教</li>
+<li>利用抖音搜索栏直接搜索
+在抖音搜索栏直接搜索我们希望了解的行业或者关键词，会搜索到非常多的优质大号</li>
+<li>抖音关注某个账号，系统会自动推送同类型账号</li>
+<li>利用新榜等第三方平台，查询有哪些优质账号
 
 <ul>
-<li>github 地址：<a href="https://github.com/sprov065/v2-ui">https://github.com/sprov065/v2-ui</a></li>
-<li>使用说明书：<a href="https://blog.sprov.xyz/2019/08/03/v2-ui/">https://blog.sprov.xyz/2019/08/03/v2-ui/</a></li>
+<li>百度搜索「抖音大 V」等关键词</li>
+<li>查询抖音分类 KOL 榜单小程序（TooBigData、抖大大）
+<br /></li>
+</ul></li>
+</ol>
+
+<p><strong>Tips</strong>：竭尽全力去寻找同平台的对标账号，你找100对标账号比找10个绝对会物超所值</p>
+
+<h3 id="如何拆解对标账号">如何拆解对标账号</h3>
+
+<ol>
+<li>将搜集的账号按照主题内容或表现形式大致的分一下类，然后在分类内部做对比</li>
+
+<li><p>利用视频拆解表完成对视频的拆解</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">账户名</th>
+<th align="left">账号ID</th>
+<th align="left">视频标题</th>
+<th align="left">视频主题</th>
+<th align="left">时长</th>
+<th align="left">脚本结构</th>
+<th align="left">拍摄手法</th>
+<th align="left">视频剪辑包装</th>
+<th align="left">留言区</th>
+<th align="left">播放数据</th>
+</tr>
+</thead>
+
+<tbody>
+</tbody>
+</table></li>
+
+<li><p>分析账号的爆款选题和其普通选题的差异之处</p></li>
+</ol>
+
+<!--**案例如下：暂未执行，后续补充***-->
+
+<h3 id="验证对标账号方法">验证对标账号方法</h3>
+
+<ul>
+<li>减少变量，先做竞品爆款视频的同类选题<br />
+最开始的几个视频，要无限逼近竞品的拍摄形式、演员状态、选题和结构方式。一般10个视频左右，就能看出来数据是否OK了</li>
+<li>方法论验证OK，大胆创作新选题，拍摄形式、演员结构等都要创新
+
+<ul>
+<li>同类账号做过的爆款选题</li>
+<li>同领域的公众号/知乎/微博热门话题</li>
+</ul></li>
 </ul>
-
-<h4 id="ss-插件">ss 插件</h4>
-
-<p>ss 插件大致有 BBR、TLS等，本人仅使用了 BBR 用于加速，安装脚本如下：</p>
-
-<pre><code class="language-batch">wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh &amp;&amp; chmod +x bbr.sh &amp;&amp; ./bbr.sh
-</code></pre>
-
-<p>其后续详细操作访问： <a href="/post/20191116-circumvention-technology-how-to-faster/">翻墙 chapter 5 - 如何让 SS 更快</a></p>
-
-<h3 id="lamp-环境搭建">LAMP 环境搭建</h3>
-
-<p>利用 「宝塔界面」一键搭建 LAMP 环境，安装脚本如下：</p>
-
-<pre><code class="language-batch">yum install -y wget &amp;&amp; wget -O install.sh http://123.129.198.197/install/install_6.0.sh &amp;&amp; sh install.sh
-</code></pre>
-
-<p>安装完成之后建议首先完成<strong>「面板入口、用户名、密码」</strong>修改，否则后续必须使用命令行获取相关
-信息，登入进去之后即可一键安装 LAMP</p>
-
-<p><strong>Tips</strong>：以上脚本安装环境为 Centos，其他环境安装脚本请访问：<a href="https://www.bt.cn/bbs/thread-19376-1-1.html">https://www.bt.cn/bbs/thread-19376-1-1.html</a></p>
-
-<p>常用命令</p>
-
-<pre><code class="language-batch">/etc/init.d/bt default   #查看面板入口
-service bt stop          #停止
-service bt start         #启动
-service bt restart       #重启
-service bt stop &amp;&amp; chkconfig --del bt &amp;&amp; rm -f /etc/init.d/bt &amp;&amp; rm -rf /www/server/panel  #卸载
-</code></pre>
-
-<h3 id="piwigo-环境搭建">Piwigo 环境搭建</h3>
-
-<p>Piwigo 为一款比较好的开源图床软件，主要的优势在：图片迁移之后只需要修改域名即可，<strong>自建博客神器</strong></p>
-
-<p>安装脚本如下：</p>
-
-<pre><code class="language-batch">wget https://piwigo.org/download/dlcounter.php?code=2.9.4 -O piwigo.zip
-ls 
-unzip piwigo.zip 
-cp -rf piwigo /www/wwwroot/
-chmod  777 /www/wwwroot/piwigo/*
-</code></pre>
-
-<p>其后续详细操作访问： <a href="/post/20181128-build-website-piwigo-guild/">个人建站-组件-自建图床 Piwigo</a></p>
-
-<p>PS：请注意链接版本<strong>2.9.4</strong>，搭配<a href="https://piwigo.org/ext/extension_view.php?eid=796">Bootstrap Default</a>使用</p>
-
-<h3 id="域名更换">域名更换</h3>
-
-<p>本站暂时使用的是 「namesilo 域名服务商」，访问链接为： <a href="https://www.namesilo.com/">https://www.namesilo.com/</a></p>
-
-<p>其后续详细操作访问：<a href="/post/20181127-build-website-how-to-bind-blog-domain/">个人建站2-为 Github 上的 Hugo 博客绑定个性域名</a></p>
 
 <h3 id="参考资料">参考资料</h3>
 
 <ul>
-<li><p><a href="http://localhost:1313/post/20190115-circumvention-technology-guild-vps/">翻墙 chapter 1 - VPS 篇</a></p>
-
-<h3 id="版本信息">版本信息</h3></li>
+<li><a href="niaogebiji.com/article-23265-1.html">不刷量，不买粉，2个月涨粉50万的抖音运营方法论</a></li>
 </ul>
+
+<h3 id="版本信息">版本信息</h3>
 
 <table>
 <thead>
@@ -264,7 +300,7 @@ chmod  777 /www/wwwroot/piwigo/*
 <tr>
 <td align="center">1.0</td>
 <td align="center">init</td>
-<td align="center">2020-05-01</td>
+<td align="center">2020-05-11</td>
 </tr>
 </tbody>
 </table>
@@ -274,7 +310,7 @@ chmod  777 /www/wwwroot/piwigo/*
 			<div class="article-copyright">
 			  	<ul>
 			  		<li><strong>本文作者：</strong>易道非</li>
-			  		<li><strong>本文链接：</strong>https://blog.yidaofei.com/post/20200501-software-skills-personal-use-script-vps/</li>
+			  		<li><strong>本文链接：</strong>https://blog.yidaofei.com/post/20200510-douyin-lesson-benchmark-account/</li>
 			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
 			  	</ul>
 			</div>
@@ -287,7 +323,7 @@ chmod  777 /www/wwwroot/piwigo/*
 		<div>
 			<i class="fa fa-tags">&nbsp;Tags:
 			
-				<a href="https://blog.yidaofei.com/tags/%e8%84%9a%e6%9c%ac">脚本</a>
+				<a href="https://blog.yidaofei.com/tags/%e6%8a%96%e9%9f%b3">抖音</a>
     		
     		</i>   
 		</div> 
@@ -300,14 +336,14 @@ chmod  777 /www/wwwroot/piwigo/*
 	<div class="article-footer-meta-between"> 
 		<div class="refArticle-prev" >
 			  
-		    <a href="https://blog.yidaofei.com/post/20200503-douyin-lesson-douyin-function/">
-		    	<i class="fa fa-angle-double-left"></i>&nbsp;抖音-理论部分-2：抖音有哪些功能  
+		    <a href="https://blog.yidaofei.com/post/20200530-software-skills-genymotion-and-andriod-emulator/">
+		    	<i class="fa fa-angle-double-left"></i>&nbsp;Andriod-Genymotion 与 Andriod 模拟器  
 		    </a> 
 			
 		</div>
 		 <div class="refArticle-next" >
 		  
-		  	<a href="https://blog.yidaofei.com/post/20200501-douyin-lesson-what-is-douyin/">抖音-理论部分-1：抖音是什么&nbsp;
+		  	<a href="https://blog.yidaofei.com/post/20200510-douyin-lesson-positioning/">抖音-理论部分-5：抖音之定位&nbsp;
 		  		<i class="fa fa-angle-double-right"></i>
 		  	</a> 
 		 
@@ -362,13 +398,10 @@ chmod  777 /www/wwwroot/piwigo/*
 <ul>
 <li>
 <ul>
-<li><a href="#ss-环境搭建">SS 环境搭建</a>
-<ul>
-<li><a href="#ss-插件">ss 插件</a></li>
-</ul></li>
-<li><a href="#lamp-环境搭建">LAMP 环境搭建</a></li>
-<li><a href="#piwigo-环境搭建">Piwigo 环境搭建</a></li>
-<li><a href="#域名更换">域名更换</a></li>
+<li><a href="#对标账号数据指标">对标账号数据指标</a></li>
+<li><a href="#如何找到对标账号">如何找到对标账号</a></li>
+<li><a href="#如何拆解对标账号">如何拆解对标账号</a></li>
+<li><a href="#验证对标账号方法">验证对标账号方法</a></li>
 <li><a href="#参考资料">参考资料</a></li>
 <li><a href="#版本信息">版本信息</a></li>
 </ul></li>
