@@ -47,6 +47,16 @@
   </url>
   
   <url>
+    <loc>https://blog.yidaofei.com/drafts/20200510-douyin-lesson-cover-design/</loc>
+    <lastmod>2020-05-10T23:33:52+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.yidaofei.com/post/20200510-douyin-lesson-equipment-recommendations/</loc>
+    <lastmod>2020-05-10T23:33:52+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.yidaofei.com/post/20200510-douyin-lesson-positioning/</loc>
     <lastmod>2020-05-10T22:41:21+08:00</lastmod>
   </url>
@@ -703,6 +713,12 @@
   
   <url>
     <loc>https://blog.yidaofei.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yidaofei.com/drafts/</loc>
+    <lastmod>2020-05-10T23:33:52+08:00</lastmod>
     <priority>0</priority>
   </url>
   
