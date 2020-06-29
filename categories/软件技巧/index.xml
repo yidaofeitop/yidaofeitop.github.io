@@ -240,7 +240,7 @@
       <pubDate>Tue, 19 Feb 2019 11:55:55 +0800</pubDate>
       
       <guid>https://blog.yidaofei.com/post/20190115-circumvention-technology-guild-v2ray/</guid>
-      <description>&lt;p&gt;本篇将介绍三大主流翻墙手段之一 「v2ray」，首先请确认「VPS」是否已经准备妥当，如未准备的人请跳转到&lt;a href=&#34;https://yidaofei.com/post/20190115-circumvention-technology-guild-vps/&#34;&gt;翻墙 chapter 1 - 服务器篇&lt;/a&gt;，其主要内容如下：&lt;/p&gt;
+      <description>&lt;p&gt;本篇将介绍三大主流翻墙手段之一 「v2ray」，首先请确认「VPS」是否已经准备妥当，如未准备的人请跳转到&lt;a href=&#34;https://blog.yidaofei.com/post/20190115-circumvention-technology-guild-vps/&#34;&gt;翻墙 chapter 1 - 服务器篇&lt;/a&gt;，其主要内容如下：&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;「v2ray」简介&lt;/li&gt;
@@ -260,7 +260,7 @@
       <pubDate>Tue, 15 Jan 2019 11:56:07 +0800</pubDate>
       
       <guid>https://blog.yidaofei.com/post/20190115-circumvention-technology-guild-shadowsocks/</guid>
-      <description>&lt;p&gt;本篇将介绍三大主流翻墙手段之一 「shadowsocks」，首先请确认「VPS」是否已经准备妥当，如未准备的人请跳转到&lt;a href=&#34;https://yidaofei.com/post/20190115-circumvention-technology-guild-vps/&#34;&gt;翻墙 chapter 1 - 服务器篇&lt;/a&gt;，其主要内容如下：&lt;/p&gt;
+      <description>&lt;p&gt;本篇将介绍三大主流翻墙手段之一 「shadowsocks」，首先请确认「VPS」是否已经准备妥当，如未准备的人请跳转到&lt;a href=&#34;https://blog.yidaofei.com/post/20190115-circumvention-technology-guild-vps/&#34;&gt;翻墙 chapter 1 - 服务器篇&lt;/a&gt;，其主要内容如下：&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;shadowsocks 的发展历史及脉络&lt;/li&gt;
@@ -268,7 +268,7 @@
 &lt;li&gt;SS/SSR 节点分享网站-无需自建 Shandowsocks&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;PS：本文是在原有文章&lt;a href=&#34;https://yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/&#34;&gt;翻墙教程之 shadowsocks&lt;/a&gt;基基础之上结合&lt;a href=&#34;https://github.com/JadaGates/ShadowsocksBio&#34; title=&#34;记录一下SS的前世今生，以及一个简单的教程总结 &#34;&gt;记录一下SS的前世今生，以及一个简单的教程总结&lt;/a&gt;做相关调整&lt;/p&gt;
+&lt;p&gt;PS：本文是在原有文章&lt;a href=&#34;https://blog.yidaofei.com/post/20181023-software-skills-build-shadowsocks-server/&#34;&gt;翻墙教程之 shadowsocks&lt;/a&gt;基基础之上结合&lt;a href=&#34;https://github.com/JadaGates/ShadowsocksBio&#34; title=&#34;记录一下SS的前世今生，以及一个简单的教程总结 &#34;&gt;记录一下SS的前世今生，以及一个简单的教程总结&lt;/a&gt;做相关调整&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -304,9 +304,9 @@
 &lt;ol&gt;
 &lt;li&gt;翻墙目的以及相关法规：&lt;a href=&#34;#翻墙目的以及相关法规&#34;&gt;链接&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;翻墙技术发展历史：&lt;a href=&#34;#翻墙技术发展历史&#34;&gt;链接&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20190115-circumvention-technology-guild-vps/&#34;&gt;翻墙之 VPS 篇&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20190115-circumvention-technology-guild-shadowsocks/&#34;&gt;翻墙之 Shadowsocks&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20190115-circumvention-technology-guild-v2ray/&#34;&gt;翻墙之 v2ray&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.yidaofei.com/post/20190115-circumvention-technology-guild-vps/&#34;&gt;翻墙之 VPS 篇&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.yidaofei.com/post/20190115-circumvention-technology-guild-shadowsocks/&#34;&gt;翻墙之 Shadowsocks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.yidaofei.com/post/20190115-circumvention-technology-guild-v2ray/&#34;&gt;翻墙之 v2ray&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;翻墙之 wireguard：由于相对前面2个比较简单，无研究的欲望所以请大家访问以下参考文章即可
 
 &lt;ul&gt;
@@ -402,11 +402,11 @@
       <pubDate>Thu, 10 Jan 2019 10:27:08 +0800</pubDate>
       
       <guid>https://blog.yidaofei.com/post/20190110-windows-guild-create-a-efficient-file-management-system/</guid>
-      <description>&lt;p&gt;经过&lt;a href=&#34;https://yidaofei.com/post/20181216-windows-guide-how-download-iso/&#34;&gt;Windows 教程1-如何下载官方 ISO&lt;/a&gt;及&lt;a href=&#34;https://yidaofei.com/post/20181217-windows-guild-how-to-install-windows-iso/&#34;&gt;Windows 教程2-如何安装 Windows 系统&lt;/a&gt;我们已经将 「Windows 系统」安装到「C 盘」，后续的步骤无非就是「分盘、安装相关软件、系统调优」！&lt;/p&gt;
+      <description>&lt;p&gt;经过&lt;a href=&#34;https://blog.yidaofei.com/post/20181216-windows-guide-how-download-iso/&#34;&gt;Windows 教程1-如何下载官方 ISO&lt;/a&gt;及&lt;a href=&#34;https://blog.yidaofei.com/post/20181217-windows-guild-how-to-install-windows-iso/&#34;&gt;Windows 教程2-如何安装 Windows 系统&lt;/a&gt;我们已经将 「Windows 系统」安装到「C 盘」，后续的步骤无非就是「分盘、安装相关软件、系统调优」！&lt;/p&gt;
 
 &lt;p&gt;分盘是后续步骤的第一步：「分盘」，后续所有的操作都建立于此，但是如果仅仅是「分盘」我就没要单独成篇，我在本文想要做的告诉大家如何搭建一个「高效的文件管理系统」！&lt;/p&gt;
 
-&lt;p&gt;本文大部分内容来自&lt;a href=&#34;https://yidaofei.com/post/20181219-knowledge-management-system-storage-and-publish-v1/&#34;&gt;易道非博客-知识管理系统——知识存储及发布端 V1.0 版&lt;/a&gt;，主要区别如下：&lt;/p&gt;
+&lt;p&gt;本文大部分内容来自&lt;a href=&#34;https://blog.yidaofei.com/post/20181219-knowledge-management-system-storage-and-publish-v1/&#34;&gt;易道非博客-知识管理系统——知识存储及发布端 V1.0 版&lt;/a&gt;，主要区别如下：&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;本教程的受众主要是非计算机专业人士/爱好者，所以相对应的做了部分的简化&lt;/li&gt;
@@ -479,7 +479,7 @@
       <pubDate>Fri, 21 Dec 2018 19:05:36 +0800</pubDate>
       
       <guid>https://blog.yidaofei.com/post/20181221-windows-skill-how-to-do-delete-6-files-and-onedrive/</guid>
-      <description>&lt;p&gt;完成&lt;a href=&#34;https://yidaofei.com/post/20181221-windows-skill-how-to-remove-quick-access/&#34;&gt;《Windows 技巧3-保护隐私—清除 「windows 10」 快速访问》&lt;/a&gt;相关操作后发现「图片、视频等文件夹」
+      <description>&lt;p&gt;完成&lt;a href=&#34;https://blog.yidaofei.com/post/20181221-windows-skill-how-to-remove-quick-access/&#34;&gt;《Windows 技巧3-保护隐私—清除 「windows 10」 快速访问》&lt;/a&gt;相关操作后发现「图片、视频等文件夹」
 很是碍眼（如下图），决定清理！&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://image.yidaofei.com/galleries/201812/remove-common-and-recent-project.jpg&#34; alt=&#34;windows 10 文件管理器主页&#34; /&gt;&lt;/p&gt;
@@ -517,7 +517,7 @@
       <pubDate>Thu, 20 Dec 2018 19:05:36 +0800</pubDate>
       
       <guid>https://blog.yidaofei.com/post/20181221-windows-skill-how-to-remove-shortcut-arrow/</guid>
-      <description>&lt;p&gt;Windows 安装完成之后如没有在安装之时进行相关的优化（具体的细节可以查看&lt;a href=&#34;https://yidaofei.com/post/20181217-how-to-install-windows-iso/#正式安装工作&#34;&gt;「微PE」安装Windows-第三步：Windows 安装器输入选项安装-优化调整&lt;/a&gt;）创建的快捷方式
+      <description>&lt;p&gt;Windows 安装完成之后如没有在安装之时进行相关的优化（具体的细节可以查看&lt;a href=&#34;https://blog.yidaofei.com/post/20181217-how-to-install-windows-iso/#正式安装工作&#34;&gt;「微PE」安装Windows-第三步：Windows 安装器输入选项安装-优化调整&lt;/a&gt;）创建的快捷方式
 都会有一个「箭头」，如下：&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://image.yidaofei.com/galleries/201812/shortcut-arrow.png&#34; alt=&#34;难看的快捷方式箭头&#34; /&gt;&lt;/p&gt;
@@ -583,7 +583,7 @@
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://blog.yidaofei.com/post/20181216-windows-guide-how-download-iso/</guid>
-      <description>&lt;p&gt;大家重装系统会去哪里下载镜像呢？百度搜索是不可能的，一辈子都不可能！（具体见&lt;a href=&#34;http://yidaofei.com/post/20160503-event-hotspot-baidu-paid-listing/&#34;&gt;《百度竞价排名思考 - 血友病》&lt;/a&gt;）&lt;/p&gt;
+      <description>&lt;p&gt;大家重装系统会去哪里下载镜像呢？百度搜索是不可能的，一辈子都不可能！（具体见&lt;a href=&#34;https://blog.yidaofei.com/post/20160503-event-hotspot-baidu-paid-listing/&#34;&gt;《百度竞价排名思考 - 血友病》&lt;/a&gt;）&lt;/p&gt;
 
 &lt;p&gt;后续查询相关的资料整理如下2种比较好的方式给大家：&lt;/p&gt;
 
@@ -632,10 +632,10 @@
 &lt;p&gt;另外针对初次接触 Hugo 以及 Markdown 的用户请访问以下链接：&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181106-chinese-copywriting-guidelines/&#34;&gt;中文排版指南&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181110-software-skills-markdown-github-flavored-markdown/&#34;&gt;Markdown 语言教程——GFM&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181128-wiki-markdown-github-emoji/&#34;&gt;GFM 表情列表&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://yidaofei.com/post/20181108-build-website-hugo-quick-start/&#34;&gt;个人建站 - Hugo - 快速开始&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.yidaofei.com/post/20181106-chinese-copywriting-guidelines/&#34;&gt;中文排版指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.yidaofei.com/post/20181110-software-skills-markdown-github-flavored-markdown/&#34;&gt;Markdown 语言教程——GFM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.yidaofei.com/post/20181128-wiki-markdown-github-emoji/&#34;&gt;GFM 表情列表&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.yidaofei.com/post/20181108-build-website-hugo-quick-start/&#34;&gt;个人建站 - Hugo - 快速开始&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
