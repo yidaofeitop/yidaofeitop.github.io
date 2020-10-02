@@ -6,10 +6,50 @@
     <description>Recent content in Posts on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 28 Jun 2020 22:01:32 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2020 16:06:10 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.yidaofei.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Windows-如何在 Win7 原生安装U盘中加入 USB3.0 的驱动</title>
+      <link>https://blog.yidaofei.com/post/20201002-software-skills-how-to-add-usb3.0-driver-to-win7-installation-u-disk/</link>
+      <pubDate>Fri, 02 Oct 2020 16:06:10 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20201002-software-skills-how-to-add-usb3.0-driver-to-win7-installation-u-disk/</guid>
+      <description>&lt;p&gt;此问题主要是发生在一个 HP 台式机上，原有的系统是 WIndows 10 系统，引导采用的 UEFI ，由于卡顿所以需要改装成 Windows 7，在安装过程中出现一个非常有意思的情况：微PE界面可
+正常使用鼠标键盘、进入 Windows 安装程序之后全部失灵，首先是怀疑由于改装 Windows7 导致主板不匹配，整整浪费了一个上午，后续查询才是 &lt;strong&gt;原生Windows7系统不包含 USB3.0 的驱动&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;本文主要是记录如何做成一个 Windows7 含 USB3.0 的安装介质&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Openwrt-编译 Lean 的 Openwrt 固件</title>
+      <link>https://blog.yidaofei.com/post/20201002-openwrt-compile-the-firmware/</link>
+      <pubDate>Fri, 02 Oct 2020 14:55:23 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20201002-openwrt-compile-the-firmware/</guid>
+      <description>&lt;p&gt;本着进一步研究以下的想法所以就查询了一下关于 OpenWrt 的编译，发现蛮有意思的所以就直接新开了一个 VPS 编译，本文主要是记录一下过程，以免后续忘记&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Openwrt-刷入网件 WNDR4700 </title>
+      <link>https://blog.yidaofei.com/post/20201002-openwrt-flash-into-the-wndr4700/</link>
+      <pubDate>Fri, 02 Oct 2020 07:23:49 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20201002-openwrt-flash-into-the-wndr4700/</guid>
+      <description>&lt;p&gt;最近安装了联通的200M的宽带，顺便在闲鱼上淘了一个 网件 Netgear WNDR4700，体验了一下原版的系统感觉很难用，以前有了解过软路由、OpenWrt，所以就刷成了 OpenWrt！&lt;/p&gt;
+
+&lt;p&gt;OpenWrt 是一个适合于嵌入式设备的Linux发行版。它提供了一个可添加软件包的可写的文件系统，使用者可以自由的选择应用程序和配置，并且可以使用一些适合某方面的应用的软件包来定制设备。&lt;/p&gt;
+
+&lt;p&gt;展现一下上网速度：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://image.yidaofei.com/galleries/202010/wndr4700-openwrt-speedtest.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>抖音-运营体系-文案部分</title>

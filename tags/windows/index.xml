@@ -6,10 +6,24 @@
     <description>Recent content in Windows on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 08 May 2020 00:20:01 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2020 16:06:10 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.yidaofei.com/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Windows-如何在 Win7 原生安装U盘中加入 USB3.0 的驱动</title>
+      <link>https://blog.yidaofei.com/post/20201002-software-skills-how-to-add-usb3.0-driver-to-win7-installation-u-disk/</link>
+      <pubDate>Fri, 02 Oct 2020 16:06:10 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20201002-software-skills-how-to-add-usb3.0-driver-to-win7-installation-u-disk/</guid>
+      <description>&lt;p&gt;此问题主要是发生在一个 HP 台式机上，原有的系统是 WIndows 10 系统，引导采用的 UEFI ，由于卡顿所以需要改装成 Windows 7，在安装过程中出现一个非常有意思的情况：微PE界面可
+正常使用鼠标键盘、进入 Windows 安装程序之后全部失灵，首先是怀疑由于改装 Windows7 导致主板不匹配，整整浪费了一个上午，后续查询才是 &lt;strong&gt;原生Windows7系统不包含 USB3.0 的驱动&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;本文主要是记录如何做成一个 Windows7 含 USB3.0 的安装介质&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>自用脚本-Windows 篇</title>

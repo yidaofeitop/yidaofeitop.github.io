@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Openwrt on  易道非 Blog</title>
+    <link>https://blog.yidaofei.com/tags/openwrt/</link>
+    <description>Recent content in Openwrt on  易道非 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 02 Oct 2020 07:23:49 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.yidaofei.com/tags/openwrt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Openwrt-刷入网件 WNDR4700 </title>
+      <link>https://blog.yidaofei.com/post/20201002-openwrt-flash-into-the-wndr4700/</link>
+      <pubDate>Fri, 02 Oct 2020 07:23:49 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20201002-openwrt-flash-into-the-wndr4700/</guid>
+      <description>&lt;p&gt;最近安装了联通的200M的宽带，顺便在闲鱼上淘了一个 网件 Netgear WNDR4700，体验了一下原版的系统感觉很难用，以前有了解过软路由、OpenWrt，所以就刷成了 OpenWrt！&lt;/p&gt;
+
+&lt;p&gt;OpenWrt 是一个适合于嵌入式设备的Linux发行版。它提供了一个可添加软件包的可写的文件系统，使用者可以自由的选择应用程序和配置，并且可以使用一些适合某方面的应用的软件包来定制设备。&lt;/p&gt;
+
+&lt;p&gt;展现一下上网速度：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://image.yidaofei.com/galleries/202010/wndr4700-openwrt-speedtest.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

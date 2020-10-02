@@ -10,8 +10,16 @@
 
   
   
+    
+    <meta charset="utf-8" name="keywords" content="win7,USB," > 
+  
    
-  <meta charset="utf-8" name="description" content="软件技巧" >
+  <meta charset="utf-8" name="description" content="此问题主要是发生在一个 HP 台式机上，原有的系统是 WIndows 10 系统，引导采用的 UEFI ，由于卡顿所以需要改装成 Windows 7，在安装过程中出现一个非常有意思的情况：微PE界面可
+正常使用鼠标键盘、进入 Windows 安装程序之后全部失灵，首先是怀疑由于改装 Windows7 导致主板不匹配，整整浪费了一个上午，后续查询才是 原生Windows7系统不包含 USB3.0 的驱动
+
+本文主要是记录如何做成一个 Windows7 含 USB3.0 的安装介质
+
+" >
   
   
   
@@ -22,7 +30,7 @@
   
   
   
-  <title>软件技巧- 易道非 Blog</title>  
+  <title>Windows-如何在 Win7 原生安装U盘中加入 USB3.0 的驱动- 易道非 Blog</title>  
   
   
     
@@ -49,7 +57,7 @@ if (!doNotTrack) {
 <body> 
  
 
-
+ 
 <div id="top-element" data-title="到达顶点"></div>
   
 <header class="site-header fixed-top">
@@ -103,132 +111,185 @@ if (!doNotTrack) {
 </div>
 
   
+
+
+
+<section class="main-content-container">
+<article class="article-card">
+	<header class="article-header"> 
+	   <p class="article-title">Windows-如何在 Win7 原生安装U盘中加入 USB3.0 的驱动</p>
+   		<div class="article-meta">
+			
+			<div><i class="fa fa-calendar" >2020年10月02日</i> </div>
+			  
+
+			 
+			<div>
+				
+					<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span>&nbsp;read 
+	            
+			</div>  
+			 
+			<div>
+				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://blog.yidaofei.com/categories/%e8%bd%af%e4%bb%b6%e6%8a%80%e5%b7%a7">软件技巧</a> 
+				   
+				</i>  
+			</div> 
+		</div>  
+	</header>  
+	<content class="markdown">
+		<p>此问题主要是发生在一个 HP 台式机上，原有的系统是 WIndows 10 系统，引导采用的 UEFI ，由于卡顿所以需要改装成 Windows 7，在安装过程中出现一个非常有意思的情况：微PE界面可
+正常使用鼠标键盘、进入 Windows 安装程序之后全部失灵，首先是怀疑由于改装 Windows7 导致主板不匹配，整整浪费了一个上午，后续查询才是 <strong>原生Windows7系统不包含 USB3.0 的驱动</strong></p>
+
+<p>本文主要是记录如何做成一个 Windows7 含 USB3.0 的安装介质</p>
+
+<p></p>
+
+<hr />
+
+<p><strong>Step1</strong>：使用软碟通（UltraISO）制作 Windows7 原版安装盘：可参考：<a href="https://jingyan.baidu.com/article/5225f26b0bb45fe6fa0908bc.html">使用UltraISO（软碟通）制作U盘启动盘完整教程</a></p>
+
+<p><strong>Step2</strong>：下载<a href="http://download.gigabyte.cn/FileList/Utility/mb_utility_windowsimagetool.zip">Windows USB Installation Tool</a></p>
+
+<p><strong>Step3</strong>：打开解压缩后生成的「 WindowsImageTool」文件夹；鼠标右击「 WindowsImageTool.exe」，选择「以管理员身份运行」；</p>
+
+<p><strong>Step4</strong>：按照下图箭头指示和文字说明操作；</p>
+
+<p><img src="https://image.yidaofei.com/galleries/202010/windows-iso-install-usb3.0-step1.png" alt="" /></p>
+
+<p><strong>Step4</strong>：制作过程需要数分钟，看到「Creating Windows USB Installation Disk is complete」提示时代表已操作完成，点击「Close」关闭工具软件。</p>
+
+<p><img src="https://image.yidaofei.com/galleries/202010/windows-iso-install-usb3.0-step2.png" alt="" /></p>
+
+<h3 id="参考资料">参考资料</h3>
+
+<ol>
+<li><a href="https://iknow.lenovo.com.cn/app/detail/dc_143417.html">如何在Win7安装U盘中加入USB3.0驱动的支持</a></li>
+</ol>
+
+<h3 id="版本信息">版本信息</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Version</th>
+<th align="center">Action</th>
+<th align="center">Time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1.0</td>
+<td align="center">init</td>
+<td align="center">2020-10-02</td>
+</tr>
+</tbody>
+</table>
+			  
+		
+		
+			<div class="article-copyright">
+			  	<ul>
+			  		<li><strong>本文作者：</strong>易道非</li>
+			  		<li><strong>本文链接：</strong>https://blog.yidaofei.com/post/20201002-software-skills-how-to-add-usb3.0-driver-to-win7-installation-u-disk/</li>
+			  		<li><strong>版权申明：</strong>本博客所有文章除特别声明外，均采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'>[CC BY-NC-SA 4.0 CN ]</a> 许可协议。转载请注明出处！</li>
+			  	</ul>
+			</div>
+		 
+	</content>  
+ 	<hr/>
+ 	
+	<div class="article-footer-meta-between"> 
+		 
+		<div>
+			<i class="fa fa-tags">&nbsp;Tags:
+			
+				<a href="https://blog.yidaofei.com/tags/windows">windows</a>
+    		
+    		</i>   
+		</div> 
+		 
+		<div id="i-share" class="btn btn-default  share-widget">
+		    <i class="fa fa-share-alt"></i>
+		</div> 
+	</div>
+	<hr/>
+	<div class="article-footer-meta-between"> 
+		<div class="refArticle-prev" >
+			
+		</div>
+		 <div class="refArticle-next" >
+		  
+		  	<a href="https://blog.yidaofei.com/post/20201002-openwrt-compile-the-firmware/">Openwrt-编译 Lean 的 Openwrt 固件&nbsp;
+		  		<i class="fa fa-angle-double-right"></i>
+		  	</a> 
+		 
+	    </div>
+	</div>  
+</article> 
+</section>
  
 
-
-
-<section class="main-content-container ">
-  <div class="categories-card">
-    <header class="text-center">
-      <h4>软件技巧</h4>
-    </header>  
-     
+  
  
-
-     
-    
-    
-        
-    
-    
-    
-
-      <ul class="article-list">
-        
-          <li>
-            <time datetime="2018-12-16 00:00:00 &#43;0000 UTC">2018年12月16日</time>
-            <a href="https://blog.yidaofei.com/post/20181129-windows-skill-soft-connection/"> Windows 技巧1-如何创建软连接</a> 
-          </li>  
-        
-          <li>
-            <time datetime="2018-12-10 10:27:08 &#43;0800 CST">2018年12月10日</time>
-            <a href="https://blog.yidaofei.com/post/20190110-windows-guild-foreword/"> Windows 教程-前言</a> 
-          </li>  
-        
-          <li>
-            <time datetime="2018-11-28 00:00:00 &#43;0000 UTC">2018年11月28日</time>
-            <a href="https://blog.yidaofei.com/post/20181128-build-website-piwigo-guild/"> 个人建站-组件-自建图床 Piwigo </a> 
-          </li>  
-        
-          <li>
-            <time datetime="2018-11-28 00:00:00 &#43;0000 UTC">2018年11月28日</time>
-            <a href="https://blog.yidaofei.com/post/20181129-build-website-hugo-flybird-preview/"> Hugo 主题 flybird 预览 </a> 
-          </li>  
-        
-          <li>
-            <time datetime="2018-11-25 00:00:00 &#43;0000 UTC">2018年11月25日</time>
-            <a href="https://blog.yidaofei.com/post/20181127-build-website-how-to-bind-blog-domain/"> 个人建站2-为 Github 上的 Hugo 博客绑定个性域名</a> 
-          </li>  
-        
-          <li>
-            <time datetime="2018-11-19 00:00:00 &#43;0000 UTC">2018年11月19日</time>
-            <a href="https://blog.yidaofei.com/post/20181119-build-website-hugo-algolia-search/"> 个人建站3-Hugo 集成 Algolia 搜索</a> 
-          </li>  
-        
-          <li>
-            <time datetime="2018-11-10 00:00:00 &#43;0000 UTC">2018年11月10日</time>
-            <a href="https://blog.yidaofei.com/post/20181110-software-skills-markdown-github-flavored-markdown/"> Markdown 语言教程——GFM</a> 
-          </li>  
-        
-          <li>
-            <time datetime="2018-11-09 00:00:00 &#43;0000 UTC">2018年11月09日</time>
-            <a href="https://blog.yidaofei.com/post/201811-todo-hugo/"> 201811 Hugo Todo</a> 
-          </li>  
-        
-          <li>
-            <time datetime="2018-11-08 00:00:00 &#43;0000 UTC">2018年11月08日</time>
-            <a href="https://blog.yidaofei.com/post/20181108-build-website-hugo-quick-start/"> 个人建站1-Hugo 快速开始</a> 
-          </li>  
-        
-          <li>
-            <time datetime="2018-11-06 00:00:00 &#43;0000 UTC">2018年11月06日</time>
-            <a href="https://blog.yidaofei.com/post/20181129-mobile-skills-own-app-list/"> Andriod-自用优秀 APP 清单</a> 
-          </li>  
-       
-      </ul>   
-  </div>
-</section>  
-
-
-
-
-
+<div class="main-content-container " >
+<div class="comment-card"> 
   
   
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <div class="pagination-content-container">
-    <div class="pagination " > 
-        
-          
-            <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7/" class="page-link "> 1</a> 
-           
-        
-          
-            <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7/page/2/" class="page-link "> 2</a> 
-           
-        
-          
-            <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7/page/3/" class="page-link "> 3</a> 
-           
-        
-          
-            <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7/page/4/" class="page-link page-link-visited"> 4</a> 
-           
-        
-          
-            <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7/page/5/" class="page-link "> 5</a> 
-           
-         
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "yidaofeitop/comment-utterances-blog.yidaofei.com"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
     </div>
-  </div>
   
-   
+
+  
+
+  
+
+  
+</div>
+</div>
 
  
 
- 
+<aside>
+	
+	 
+	
+	<div id="sidebar-main-trigger" class="tableContentToc">
+	  	<i class="fa fa-anchor"></i> 
+	</div>
+	
+	
+	<span id="tocLevel" data-startLevel="2" data-endLevel="4"></span>
+
+	<div class="sidebar main right" id="sidebar-main"> 
+		<div class="wrapper">  
+		    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#参考资料">参考资料</a></li>
+<li><a href="#版本信息">版本信息</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav> 
+		</div> 
+	</div> 
+	
+	  
+</aside>
+
 <footer class="site-footer text-center">
   <div class="social" > 
      
@@ -303,12 +364,18 @@ if (!doNotTrack) {
 
 
 
+<span id="isPage" data-isPage="true" style="display: none;"></span>
+
+
  
 
 <script type="text/javascript" src="https://blog.yidaofei.com//js/flybird.js"></script> 
 <script type="text/javascript" src="https://blog.yidaofei.com//js/main.js"></script> 
+  
  
+</style>
 </body>
 </html>
- 
 
+
+ 
