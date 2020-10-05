@@ -11,7 +11,7 @@
   
   
     
-    <meta charset="utf-8" name="keywords" content="," > 
+    <meta charset="utf-8" name="keywords" content="openwrt,编译,wndr4700," > 
   
    
   <meta charset="utf-8" name="description" content="本着进一步研究以下的想法所以就查询了一下关于 OpenWrt 的编译，发现蛮有意思的所以就直接新开了一个 VPS 编译，本文主要是记录一下过程，以免后续忘记" >
@@ -127,6 +127,8 @@ if (!doNotTrack) {
 			 
 			<div>
 				&nbsp;&nbsp;<i class="fa fa-th">&nbsp;Categories:
+				
+					<a href="https://blog.yidaofei.com/categories/%e8%bd%af%e4%bb%b6%e6%8a%80%e5%b7%a7">软件技巧</a> 
 				   
 				</i>  
 			</div> 
@@ -156,14 +158,14 @@ if (!doNotTrack) {
 <li><p>配置一个用户，赋予超级权限</p>
 
 <pre><code class="language-batch">//新建用户并设置密码
-sudo useradd -m vagrant -d /home/vagrant -s /bin/bash
-sudo passwd vagrant
+sudo useradd -m ydf -d /home/ydf -s /bin/bash
+sudo passwd ydf
 //为sudoers增加写入权限
 sudo chmod +w /etc/sudoers
 sudo vim /etc/sudoers
 //为用户vagrant添加读写权限
 root　ALL=(ALL:ALL) ALL
-vagrant ALL=(ALL:ALL) ALL    
+ydf ALL=(ALL:ALL) ALL    
 </code></pre></li>
 
 <li><p>搭建基础编译环境</p>
@@ -194,168 +196,50 @@ src-git small https://github.com/kenzok8/small
 
 <li><p>Step3：执行如下命令</p>
 
-<pre><code class="language-batch">./scripts/feeds update -a
+<pre><code class="language-batch">//下载 feeds 源中的软件包源码
+./scripts/feeds update -a
+//安装 feeds 中的软件包
 ./scripts/feeds install -a
+//调整 Open­Wrt 系统组件
 make menuconfig
-</code></pre>
-
-<p>跳出配置界面，根据自己的硬件以及需要的插件，进行配置，配置好选save，会保存到在 lede 目录下，文件名默认为.config</p>
-
-<p>关于配置项目含义清单如下（主要配置项：Target System (x86) 、Subtarget (x8664)、LuCI  ）：</p>
-
-<table>
-<thead>
-<tr>
-<th align="left">项目</th>
-<th align="left">含义</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td align="left">Target System (x86)</td>
-<td align="left">目标系统（x86）</td>
-</tr>
-
-<tr>
-<td align="left">Subtarget (x8664)</td>
-<td align="left">子目标（x86_64）</td>
-</tr>
-
-<tr>
-<td align="left">Target Profile (Generic)</td>
-<td align="left">目标配置文件（通用）</td>
-</tr>
-
-<tr>
-<td align="left">Target Images</td>
-<td align="left">保存目标镜像的格式</td>
-</tr>
-
-<tr>
-<td align="left">Global build settings</td>
-<td align="left">全局构建设置</td>
-</tr>
-
-<tr>
-<td align="left">Advanced configuration options (for developers)</td>
-<td align="left">高级配置选项（适用于开发人员）</td>
-</tr>
-
-<tr>
-<td align="left">Build the OpenWrt Image Builder</td>
-<td align="left">构建OpenWrt图像生成器</td>
-</tr>
-
-<tr>
-<td align="left">Build the OpenWrt SDK</td>
-<td align="left">构建OpenWrt SDK</td>
-</tr>
-
-<tr>
-<td align="left">Package the OpenWrt-based Toolchain</td>
-<td align="left">打包基于OpenWrt的工具链</td>
-</tr>
-
-<tr>
-<td align="left">Image configuration</td>
-<td align="left">图像配置</td>
-</tr>
-
-<tr>
-<td align="left">Base system</td>
-<td align="left">基本系统</td>
-</tr>
-
-<tr>
-<td align="left">Administration</td>
-<td align="left">管理</td>
-</tr>
-
-<tr>
-<td align="left">Boot Loaders</td>
-<td align="left">引导加载程序</td>
-</tr>
-
-<tr>
-<td align="left">Development</td>
-<td align="left">开发</td>
-</tr>
-
-<tr>
-<td align="left">Extra packages</td>
-<td align="left">额外包</td>
-</tr>
-
-<tr>
-<td align="left">Firmware</td>
-<td align="left">固件</td>
-</tr>
-
-<tr>
-<td align="left">Fonts</td>
-<td align="left">字体</td>
-</tr>
-
-<tr>
-<td align="left">Kernel modules</td>
-<td align="left">内核模块</td>
-</tr>
-
-<tr>
-<td align="left">Languages</td>
-<td align="left">语言</td>
-</tr>
-
-<tr>
-<td align="left">Libraries</td>
-<td align="left">图书馆</td>
-</tr>
-
-<tr>
-<td align="left">LuCI</td>
-<td align="left">LuCI</td>
-</tr>
-
-<tr>
-<td align="left">Mail</td>
-<td align="left">邮件</td>
-</tr>
-
-<tr>
-<td align="left">Multimedia</td>
-<td align="left">多媒体</td>
-</tr>
-
-<tr>
-<td align="left">Network</td>
-<td align="left">网络</td>
-</tr>
-
-<tr>
-<td align="left">Sound</td>
-<td align="left">声音</td>
-</tr>
-
-<tr>
-<td align="left">Utilities</td>
-<td align="left">实用程序</td>
-</tr>
-
-<tr>
-<td align="left">Xorg</td>
-<td align="left">Xorg</td>
-</tr>
-</tbody>
-</table></li>
-
-<li><p>Step4：输入命令 <code>make -j8 download V=s</code> 下载dl库（国内请尽量全局科学上网）</p></li>
-
-<li><p>Step5：输入命令 <code>make -j1 V=s</code>（-j1 后面是线程数。第一次编译推荐用单线程）即可开始编译固件，编译
-完成后输出路径：<code>/lede/bin/targets</code></p></li>
+//预下载编译所需的软件包
+make download -j8 V=s
+//检查文件完整性
+find dl -size -1024c -exec ls -l {} \;
+//开始编译
+make -j1 V=s 
+</code></pre></li>
 </ul>
 
-<p>PS：第一次编译非常的慢，要花上<strong>一两个小时</strong></p>
+<p>相关说明：</p>
+
+<ul>
+<li><p>执行 <code>make menuconfig</code> 会跳出配置界面，根据自己的硬件以及需要的插件，进行配置，配置好选save，会保存到在 lede 目录下，文件名默认为.config
+主要的配置项目为：</p>
+
+<ul>
+<li>Target System (x86)：目标系统（x86），芯片平台，如 「Wndr4700」属于 apm821xx</li>
+<li>Subtarget (x8664)：子目标（x86_64），一般可选择到具体的型号，如 「Wndr4700」</li>
+<li>LuCI-Applications：应用，如 ssr-plus 等插件应用选择的地方，需要知道每个插件应用的具体作用，如<a href="https://www.right.com.cn/forum/thread-344825-1-1.html">OpenWrt 编译 LuCI -&gt; Applications 添加插件应用说明-L大【2020.8.12】</a>：
+<br /></li>
+</ul></li>
+
+<li><p>LuCI-Applications：有时候会出现选择不上或者选择某个整个就无法安装的情况，如 「ssr-plus」无法选择「v2ray」，是因为<a href="https://github.com/felix-fly/v2ray-openwrt">「v2ray-openwrt」</a>暂时不支持「Wndr 4700」路由器 CPU，不要像我一样有强迫症，又没对比试验看源代码说明浪费了整整4天
+时间:😢:</p></li>
+
+<li><p>由于编译内容比较多（至少2个小时），所以建议大家执行如下操作：</p>
+
+<ul>
+<li>选用高频 VPS 执行编译，我选用的 「Vultr」的 「high-frequency」主机，与「Cloud Computer」完全不一样的感觉，另外尽量高配能够节省更多的时间，毕竟只是短时间用比自己安装虚拟机、SS全局……方便多了</li>
+<li>修改 SSH 心跳包时间，否则会断线，那么一旦错误就无法直观知晓原因：参考自<a href="https://www.jianshu.com/p/92d60c6c92ef">解决SSH自动断线，无响应的问题。</a>
+<br /></li>
+</ul>
+
+<pre><code class="language-batch">sudo vim /etc/ssh/sshd_config
+//修改ClientAliveInterval 300，#指定服务端向客户端请求消息的时间间隔，单位是秒，服务端主动发起
+sudo /etc/init.d/ssh restart
+</code></pre></li>
+</ul>
 
 <hr />
 
@@ -376,14 +260,17 @@ make menuconfig
 make -j$(($(nproc) + 1)) V=s
 </code></pre>
 
+<p>最后的最后，在此感谢 <a href="https://github.com/coolsnowwolf">coolsnowwolf</a>及为这个项目付出的开源者们！</p>
+
+<p>关联<a href="https://github.com/coolsnowwolf/lede/issues/2648">终归到底，这个又是一个失败的项目而已</a></p>
+
 <h3 id="参考资料">参考资料</h3>
 
 <ol>
 <li><a href="https://imgki.com/archives/openwrt-lean.html">编译Lean的Openwrt固件全攻略</a>：文章主脉络</li>
 <li><a href="https://www.jianshu.com/p/26c29711f3e2">如何编译OpenWRT固件</a></li>
-<li><a href="https://www.right.com.cn/forum/thread-344825-1-1.html">OpenWrt 编译 LuCI -&gt; Applications 添加插件应用说明-L大【2020.8.12】</a>：lean 插件清单列表</li>
 <li><a href="https://post.smzdm.com/p/a07o345z/">新手向 篇七：你的路由器真的发挥100%作用了吗？</a>:关于类似平台即可</li>
-<li><a href="https://p3terx.com/archives/openwrt-compilation-steps-and-commands.html">OpenWrt 编译步骤与命令详解</a>：如题</li>
+<li><a href="https://p3terx.com/archives/openwrt-compilation-steps-and-commands.html">OpenWrt 编译步骤与命令详解</a>：每一条命令的含义解释非常详细</li>
 </ol>
 
 <h3 id="版本信息">版本信息</h3>
@@ -424,6 +311,8 @@ make -j$(($(nproc) + 1)) V=s
 		<div>
 			<i class="fa fa-tags">&nbsp;Tags:
 			
+				<a href="https://blog.yidaofei.com/tags/openwrt">openwrt</a>
+    		
     		</i>   
 		</div> 
 		 

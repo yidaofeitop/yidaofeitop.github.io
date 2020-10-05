@@ -26,6 +26,15 @@
     </item>
     
     <item>
+      <title>Openwrt-编译 Lean 的 Openwrt 固件</title>
+      <link>https://blog.yidaofei.com/post/20201002-openwrt-compile-the-firmware/</link>
+      <pubDate>Fri, 02 Oct 2020 14:55:23 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20201002-openwrt-compile-the-firmware/</guid>
+      <description>&lt;p&gt;本着进一步研究以下的想法所以就查询了一下关于 OpenWrt 的编译，发现蛮有意思的所以就直接新开了一个 VPS 编译，本文主要是记录一下过程，以免后续忘记&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Openwrt-刷入网件 WNDR4700 </title>
       <link>https://blog.yidaofei.com/post/20201002-openwrt-flash-into-the-wndr4700/</link>
       <pubDate>Fri, 02 Oct 2020 07:23:49 +0800</pubDate>

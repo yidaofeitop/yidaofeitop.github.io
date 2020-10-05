@@ -6,10 +6,19 @@
     <description>Recent content in Openwrt on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 02 Oct 2020 07:23:49 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2020 14:55:23 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.yidaofei.com/tags/openwrt/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Openwrt-编译 Lean 的 Openwrt 固件</title>
+      <link>https://blog.yidaofei.com/post/20201002-openwrt-compile-the-firmware/</link>
+      <pubDate>Fri, 02 Oct 2020 14:55:23 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20201002-openwrt-compile-the-firmware/</guid>
+      <description>&lt;p&gt;本着进一步研究以下的想法所以就查询了一下关于 OpenWrt 的编译，发现蛮有意思的所以就直接新开了一个 VPS 编译，本文主要是记录一下过程，以免后续忘记&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Openwrt-刷入网件 WNDR4700 </title>
