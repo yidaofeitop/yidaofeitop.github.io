@@ -185,6 +185,15 @@ fastboot flash recovery *映像檔路徑*
 
 <h3 id="问题列表">问题列表</h3>
 
+<h4 id="镜像传输方式">镜像传输方式</h4>
+
+<p>一般而言大家都会刷机之前将镜像复制到手机存储空间，但是偶尔会出现由于操作失误导致镜像未复制，比如我安装完成之后删除镜像作死搞死了系统:😢:</p>
+
+<p>参考<a href="https://www.zhihu.com/question/50231539/answer/530627637">怎么刷MIUI国际版Rom？ - Gil Chen的回答 - 知乎</a>提供如下验证了的解决方案：</p>
+
+<p>打开命令窗口将 ROM 推送至手机 <code>adb push xiaomi.eu_multi_MI8_V12.0.1.0.QEACNXM_v12-10.zip /sdcard/ 
+</code></p>
+
 <h4 id="关于-google-账号问题">关于 Google 账号问题</h4>
 
 <p>国际版刷入之后可能会出现以下2个问题：</p>
@@ -381,6 +390,7 @@ fastboot flash recovery *映像檔路徑*
 <li><a href="#twrp-刷入第三方-rom">TWRP 刷入第三方 ROM</a></li>
 <li><a href="#问题列表">问题列表</a>
 <ul>
+<li><a href="#镜像传输方式">镜像传输方式</a></li>
 <li><a href="#关于-google-账号问题">关于 Google 账号问题</a></li>
 </ul></li>
 <li><a href="#miui-其他版本">MIUI 其他版本</a></li>

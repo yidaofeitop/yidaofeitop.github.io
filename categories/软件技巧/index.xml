@@ -6,10 +6,21 @@
     <description>Recent content in 软件技巧 on  易道非 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 02 Oct 2020 16:06:10 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2020 21:55:35 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.yidaofei.com/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>个人建站—wordpress-基础配置</title>
+      <link>https://blog.yidaofei.com/post/20201108-build-website-wordpress-base-config/</link>
+      <pubDate>Sun, 08 Nov 2020 21:55:35 +0800</pubDate>
+      
+      <guid>https://blog.yidaofei.com/post/20201108-build-website-wordpress-base-config/</guid>
+      <description>&lt;p&gt;在使用 wordpress 搭建一个官网时，发现网络上的教程一般都比较零散，所以将本次搭建的过程记录以下，可能会分解出多篇，大家可以自行搜索&lt;/p&gt;
+
+&lt;p&gt;本篇为开篇，主要内容是介绍基础环境的搭建以及初步的配置。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Windows-如何在 Win7 原生安装U盘中加入 USB3.0 的驱动</title>
